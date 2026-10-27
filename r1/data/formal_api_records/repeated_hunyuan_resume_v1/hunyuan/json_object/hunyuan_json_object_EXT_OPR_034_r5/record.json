@@ -1,0 +1,111 @@
+{
+  "task_id": "hunyuan_json_object_EXT_OPR_034_r5",
+  "case_id": "EXT_OPR_034",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 5,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "f3cbfed50232458a0564881e8bf2e47aa37f3437c521942f232c066200c31fb4",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:00:05.162328+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 650,
+    "completion_tokens": 2862,
+    "total_tokens": 3512,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2591
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "2a7042bd-91a0-4254-a7d8-f95c029ffe1d",
+  "provider_created": 1791619206,
+  "system_fingerprint": null,
+  "response_sha256": "0e43b3cac10b741c54f5faf3b79488454717a0b569a3bb276e9d9977f809bb3e",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_034",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Operator requested ERCO and CISO together for one-hour upward reserve, but region_id must be one allowed region; multi-region joint study is unsupported and cannot be processed without splitting, which operator forbade. Numerical outputs are produced by the verified workflow when relevant; this request is rejected because the specified multi-region combination is not supported under the single-region study schema. {\"triggered_rules\": [\"unsupported_regions: operator provided multiple region identifiers (ERCO, CISO) but only a single region from allowed list ['CISO','ERCO','GD','ISNE','MISO','SWPP'] is permitted\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "triggered_rules": [
+        "unsupported_regions: operator provided multiple region identifiers (ERCO, CISO) but only a single region from allowed list ['CISO','ERCO','GD','ISNE','MISO','SWPP'] is permitted"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant; this request is rejected because the specified multi-region combination is not supported under the single-region study schema.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Operator requested ERCO and CISO together for one-hour upward reserve, but region_id must be one allowed region; multi-region joint study is unsupported and cannot be processed without splitting, which operator forbade.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 25.1037032000022,
+  "request_finished_at": "2026-10-10T08:00:30.266641+00:00"
+}

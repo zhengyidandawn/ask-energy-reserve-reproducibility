@@ -1,0 +1,25 @@
+{
+  "id": "as-tkdqkvd1pi",
+  "object": "chat.completion",
+  "created": 1791733083,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"Please specify the region_id (GD, ERCO, CISO, ISNE, MISO, SWPP), horizon_minutes (60, 120, 180), and cost_shortfall (10, 20, 40) for the energy study.\",\n    \"reason\": \"The request does not provide explicit values for region_id, horizon_minutes, and cost_shortfall, which are required for the energy study.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 176,
+    "total_tokens": 542,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

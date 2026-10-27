@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_019",
+  "repeat": 3,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:23.871464+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a8af521a3941edfeb6540b26133161cb371666c19f976bd3e8de035110296018",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please specify explicit region_id from supported list (GD, ERCO, CISO, ISNE, MISO, SWPP), exact horizon_minutes (60, 120, or 180), and cost_shortfall (10, 20, or 40). The phrase 'one-hour-ish' is not a supported exact horizon value.\", \"reason\": \"The request provides 'one-hour-ish horizon', 'public data', and 'standard setup' but does not explicitly supply required region_id, exact horizon_minutes from supported set, or cost_shortfall weight. Explicit study fields are unresolved or ambiguous, requiring clarification per study protocol.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Please specify explicit region_id from supported list (GD, ERCO, CISO, ISNE, MISO, SWPP), exact horizon_minutes (60, 120, or 180), and cost_shortfall (10, 20, or 40). The phrase 'one-hour-ish' is not a supported exact horizon value.",
+      "reason": "The request provides 'one-hour-ish horizon', 'public data', and 'standard setup' but does not explicitly supply required region_id, exact horizon_minutes from supported set, or cost_shortfall weight. Explicit study fields are unresolved or ambiguous, requiring clarification per study protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 373,
+      "completion_tokens": 1687,
+      "total_tokens": 2060,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1500
+      }
+    },
+    "response_sha256": "b003010d71a3bdeefde9c71826bdeab0ddb09fc772b9580f993b429d2a997c89",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 16.969234900083393,
+    "finished_at": "2026-10-11T15:38:40.841177+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:23.871464+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a8af521a3941edfeb6540b26133161cb371666c19f976bd3e8de035110296018",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please specify explicit region_id from supported list (GD, ERCO, CISO, ISNE, MISO, SWPP), exact horizon_minutes (60, 120, or 180), and cost_shortfall (10, 20, or 40). The phrase 'one-hour-ish' is not a supported exact horizon value.\", \"reason\": \"The request provides 'one-hour-ish horizon', 'public data', and 'standard setup' but does not explicitly supply required region_id, exact horizon_minutes from supported set, or cost_shortfall weight. Explicit study fields are unresolved or ambiguous, requiring clarification per study protocol.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Please specify explicit region_id from supported list (GD, ERCO, CISO, ISNE, MISO, SWPP), exact horizon_minutes (60, 120, or 180), and cost_shortfall (10, 20, or 40). The phrase 'one-hour-ish' is not a supported exact horizon value.",
+      "reason": "The request provides 'one-hour-ish horizon', 'public data', and 'standard setup' but does not explicitly supply required region_id, exact horizon_minutes from supported set, or cost_shortfall weight. Explicit study fields are unresolved or ambiguous, requiring clarification per study protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 373,
+      "completion_tokens": 1687,
+      "total_tokens": 2060,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1500
+      }
+    },
+    "response_sha256": "b003010d71a3bdeefde9c71826bdeab0ddb09fc772b9580f993b429d2a997c89",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 16.969234900083393,
+    "finished_at": "2026-10-11T15:38:40.841177+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 16.969234900083393,
+  "transport_complete": true
+}

@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"observed_weather\"], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"Clarifications and corrections are needed before proceeding. The numerical outputs of the study will be produced by the verified workflow once the plan is accepted.\", \"forbidden_variables\": [], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The region code is incorrect, should be 'ISNE' instead of 'ISNEE'. It's also not clear if other admissible variables besides observed weather are allowed or required. The cost shortfall (cS) is set to 40.0, which is valid, but we need a full list of admissible and forbidden variables for the study. The horizon of 60 minutes is correct. Please provide the missing information and confirm the study details.\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_d264e2e7d8f64485bb1e72",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1529,
+    "completion_tokens": 210,
+    "total_tokens": 1739,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616438,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-74c62e59-facd-9ee8-a4d9-85007f4e2607"
+}

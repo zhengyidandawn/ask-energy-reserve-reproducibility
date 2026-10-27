@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"需要进一步明确地区和缺额罚款的具体数值。当前请求未提供足够的信息以完成向上备用容量的研究配置。\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"区域ID（region_id）和短缺成本（cost_shortfall）未指定或不明确。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 643,
+    "completion_tokens": 140,
+    "total_tokens": 783,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791615720,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-d32130e8-82e4-9029-a048-8ad7a2988f63"
+}

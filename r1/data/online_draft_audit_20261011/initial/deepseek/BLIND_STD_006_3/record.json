@@ -1,0 +1,52 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_STD_006",
+  "repeat": 3,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:03.283649+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "ea7e9baa0a2be6bf0804c3f71f53271fbdb00d5e3b5058ceb303f215b0b51a9d",
+  "returned_model": "deepseek-flash",
+  "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ERCO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":10},\"clarification_question\":null,\"reason\":\"The request specifies a supported region (ERCO), a supported horizon (120 minutes), and a supported shortfall weight (10). The reserve cost is fixed at 1 by the study protocol. The request explicitly says not to estimate MW, so numerical reserve quantities remain for the numerical program. The '730/30/30 rolling split' is treated as study content and does not conflict with the supported schema.\",\"human_approval_required\":true}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "The request specifies a supported region (ERCO), a supported horizon (120 minutes), and a supported shortfall weight (10). The reserve cost is fixed at 1 by the study protocol. The request explicitly says not to estimate MW, so numerical reserve quantities remain for the numerical program. The '730/30/30 rolling split' is treated as study content and does not conflict with the supported schema.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 418,
+    "completion_tokens": 135,
+    "total_tokens": 553,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 290
+  },
+  "response_sha256": "3c7fdbd363b3a28fab8ea23fd5cc6be7408c260aa099695aa4596b7459e9176a",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.2929250999586657,
+  "finished_at": "2026-10-11T15:37:04.576079+00:00"
+}

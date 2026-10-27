@@ -1,0 +1,46 @@
+{
+  "case_id": "SF-03",
+  "service": "deepseek",
+  "repeat": 4,
+  "phase": "initial",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:54:47.386069+00:00",
+  "status": "success",
+  "request_sha256": "cf8496c503170f05e33204340fbab8eb56a7fc66c84756adb451c59f63770a0e",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 318,
+    "completion_tokens": 121,
+    "total_tokens": 439,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 190
+  },
+  "content": "{\n  \"decision\": \"accept\",\n  \"study\": {\n    \"region\": \"DE\",\n    \"horizon_minutes\": 120,\n    \"feature_mode\": \"full\",\n    \"shortfall_weight\": 20,\n    \"required_coverage\": 0.95,\n    \"reporting\": \"standard\",\n    \"human_authorization_required\": true\n  },\n  \"missing_fields\": [],\n  \"reason\": \"All required study fields are explicitly provided and supported. The request does not ask for future realized information, bypass human authorization, or an unsupported horizon.\"\n}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "DE",
+      "horizon_minutes": 120,
+      "feature_mode": "full",
+      "shortfall_weight": 20,
+      "required_coverage": 0.95,
+      "reporting": "standard",
+      "human_authorization_required": true
+    },
+    "missing_fields": [],
+    "reason": "All required study fields are explicitly provided and supported. The request does not ask for future realized information, bypass human authorization, or an unsupported horizon."
+  },
+  "checks": {
+    "decision": "accept",
+    "execution_ready": true,
+    "corrections": 0,
+    "rules": []
+  },
+  "response_sha256": "fa15c5cf2832a3ac85494ac732c7db1ed5c246189337be35dec400896ca21a53",
+  "latency_seconds": 0.9317444999469444,
+  "request_finished_at": "2026-10-11T10:54:48.317768+00:00"
+}

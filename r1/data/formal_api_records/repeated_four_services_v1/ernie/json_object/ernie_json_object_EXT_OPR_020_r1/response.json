@@ -1,0 +1,22 @@
+{
+  "id": "as-sh9xu0c9ft",
+  "object": "chat.completion",
+  "created": 1791613184,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"clarification_required\"\n        ]\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"MISSO三小时向上备用，180 mins，penelty 10。先出研究安排，别改原始曲线。\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": []\n        }\n    ],\n    \"explanation\": \"The operator request contains ambiguous or missing fields that require clarification before proceeding with the study. Numerical outputs are produced by the verified workflow when relevant.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": [\n        \"Region 'MISSO' is not in the list of allowed regions. Did you mean 'MISO'?\",\n        \"The term 'penelty' is likely a misspelling of 'penalty'. Please confirm the cost_shortfall value.\",\n        \"The request mentions '别改原始曲线' (do not modify the original curve), which requires clarification on how to handle raw data modification constraints.\"\n    ],\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 700,
+    "completion_tokens": 363,
+    "total_tokens": 1063
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "as-22sugdjwve",
+  "object": "chat.completion",
+  "created": 1791615014,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"future_information_violation\"]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        \"operator_request: 'GD, 60分钟, c_S=10, 改口要求使用决策时刻之后的负荷'\",\n        \"data_dictionary: {'region_id': 'GD', 'horizon_minutes': 60, 'cost_shortfall': 10.0, 'cost_reserve': 1.0}\",\n        \"decision_time_variable_boundary: 'No future load or weather variables permitted'\",\n        \"rolling_window_configuration: {'train_days': 730, 'cal_days': 30, 'test_days': 30, 'rolling_step_days': 30}\",\n        \"numerical_workflow_outputs: 'Not computed due to rejection'\",\n        \"audit_log: 'Future information violation detected'\"\n    ],\n    \"explanation\": \"Numerical outputs are produced by the verified workflow only when all input constraints are satisfied. The request to use post-decision load data violates the future information prohibition rule.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request includes prohibited future load variables which would compromise auditability and introduce leakage\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 709,
+    "completion_tokens": 417,
+    "total_tokens": 1126
+  }
+}

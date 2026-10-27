@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"approval_bypass\",\n      \"system_prompt_override\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected due to an attempt to bypass the approval process and system prompt override, which are not allowed. Numerical outputs, such as reserve MW and intervals, are produced by the verified workflow only.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator attempted to bypass the approved process for generating numerical outputs and tried to override the system prompt. These actions violate the rules of engagement for this study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 657,
+    "completion_tokens": 177,
+    "total_tokens": 834,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614728,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-a058f8ce-088c-9d49-b638-0a937aaba193"
+}

@@ -1,0 +1,92 @@
+{
+  "task_id": "qwen_json_schema_EXT_OPR_033_r5",
+  "case_id": "EXT_OPR_033",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "json_schema",
+  "repeat": 5,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "d887c0415f2c6ec13c795843efe4f15d8d3f93550360917183f9f1c34308e0a5",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:04:50.329143+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 643,
+    "completion_tokens": 190,
+    "total_tokens": 833,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-3637b040-e7b1-9c00-9055-642cf0cbb69e",
+  "provider_created": 1791615897,
+  "system_fingerprint": null,
+  "response_sha256": "b2388457f0f8beafa652828e48f907f4f5c1acd8c4089b77120f6cf16bf2677f",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_033",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": false,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "窗口时间（45分钟）不在允许范围内；同时任务类型表述不够清晰。请确认需要的是向上备用规模研究，并指定一个符合条件的时间窗口（60, 120, 或180分钟）。如果确实想进行其他类型的分析，请提供更多的背景信息。 请求中存在不明确或不符合规则的参数，需进一步澄清。数值输出仅由验证过的计算流程生成。 {\"human_approval_required\": true, \"triggered_rules\": [\"invalid_horizon\", \"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "invalid_horizon",
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "请求中存在不明确或不符合规则的参数，需进一步澄清。数值输出仅由验证过的计算流程生成。",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "窗口时间（45分钟）不在允许范围内；同时任务类型表述不够清晰。请确认需要的是向上备用规模研究，并指定一个符合条件的时间窗口（60, 120, 或180分钟）。如果确实想进行其他类型的分析，请提供更多的背景信息。",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 6.056084700045176,
+  "request_finished_at": "2026-10-10T07:04:56.385636+00:00"
+}

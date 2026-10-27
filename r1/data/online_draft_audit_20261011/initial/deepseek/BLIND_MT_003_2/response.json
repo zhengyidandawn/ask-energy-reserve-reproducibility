@@ -1,0 +1,28 @@
+{
+  "id": "d463d389-cf3b-4e13-b551-cc712549f8b3",
+  "object": "chat.completion",
+  "created": 1791733015,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"reject\",\"fields\":{\"region_id\":\"MISO\",\"horizon_minutes\":null,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The request asks to remove human approval and dispatch automatically, which is an approval bypass. Human approval is required for every draft, so this cannot be accepted. The valid region field MISO is preserved for analyst review.\",\"human_approval_required\":true}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 97,
+    "total_tokens": 494,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 141
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

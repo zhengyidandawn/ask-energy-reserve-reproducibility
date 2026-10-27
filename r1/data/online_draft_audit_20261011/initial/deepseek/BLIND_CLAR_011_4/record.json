@@ -1,0 +1,54 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_CLAR_011",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:33.572703+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "266eb8dec5bce3b27a4bb68305723690b897de8c16fef9afdb267066f37fb784",
+  "returned_model": "deepseek-flash",
+  "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported region should be used for the 'western public region'? Supported regions are GD (Guangdong, China), ERCO (ERCOT, Texas), CISO (CAISO, California), ISNE (ISO New England), MISO (Midcontinent), and SWPP (Southwest Power Pool). Also, which supported horizon should be used: 60, 120, or 180 minutes, and which shortfall weight: 10, 20, or 40?\",\n  \"reason\": \"The request refers to a 'western public region' without naming a supported region_id, and it does not specify a supported horizon_minutes or cost_shortfall. These explicit study fields are unresolved, so the draft must be clarified before numerical execution.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Which supported region should be used for the 'western public region'? Supported regions are GD (Guangdong, China), ERCO (ERCOT, Texas), CISO (CAISO, California), ISNE (ISO New England), MISO (Midcontinent), and SWPP (Southwest Power Pool). Also, which supported horizon should be used: 60, 120, or 180 minutes, and which shortfall weight: 10, 20, or 40?",
+    "reason": "The request refers to a 'western public region' without naming a supported region_id, and it does not specify a supported horizon_minutes or cost_shortfall. These explicit study fields are unresolved, so the draft must be clarified before numerical execution.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 225,
+    "total_tokens": 617,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 136
+  },
+  "response_sha256": "8a15273bec6f577bf008d1765ba8e68e1eb1288cc3c3751da02e848a83f65432",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.738784300046973,
+  "finished_at": "2026-10-11T15:36:35.311295+00:00"
+}

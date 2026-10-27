@@ -1,0 +1,126 @@
+{
+  "task_id": "qwen_tool_call_EXT_OPR_003_r5",
+  "case_id": "EXT_OPR_003",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "tool_call",
+  "repeat": 5,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "58eb2c355ba99338a2f4a445b81eb32829dc8734f30314fc3322cdb0c2d27b9f",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:14:18.748125+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1545,
+    "completion_tokens": 293,
+    "total_tokens": 1838,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-5ba53a98-8b73-98de-a7c6-882418924468",
+  "provider_created": 1791616469,
+  "system_fingerprint": null,
+  "response_sha256": "7b582c5db55cab2b6d15ea7c6c353d29700a231b14a769f9a70b787be5c4740b",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_003",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": false,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "请求符合所有政策和规则，可以进行后续处理。 研究已经接受，数值输出将由验证的数值工作流程生成。 {\"triggered_rules\": [], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "triggered_rules": [],
+      "human_approval_required": true
+    },
+    "decision": "accept",
+    "evidence_trace": [
+      "operator_request",
+      "data_dictionary",
+      "decision_time_variable_boundary",
+      "rolling_window_configuration",
+      "numerical_workflow_outputs",
+      "audit_log"
+    ],
+    "explanation": "研究已经接受，数值输出将由验证的数值工作流程生成。",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "请求符合所有政策和规则，可以进行后续处理。",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "CISO",
+      "horizon_minutes": 180,
+      "cost_reserve": 1.0,
+      "cost_shortfall": 40.0,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "workflow": []
+  },
+  "latency_seconds": 9.742643399978988,
+  "request_finished_at": "2026-10-10T07:14:28.489955+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "9748c998-68bc-43ef-83a3-9999e92d24a8",
+  "object": "chat.completion",
+  "created": 1791697697,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The operator confirmed region_id=GD and cost_shortfall=20, which supersede the earlier unspecified values. The study is a three-hour (180-minute) upward reserve sizing task in an allowed region with an allowed shortfall cost. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results are produced only by the verified numerical workflow.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"All required fields are now specified: task_type=upward_reserve_sizing, region_id=GD, horizon_minutes=180, cost_reserve=1.0, cost_shortfall=20.0. The request uses only admissible decision-time variables and excludes future information, test-residual leakage, raw-data modification, and fabricated results. Human approval is required before any operational use.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"GD\", \"horizon_minutes\": 180, \"cost_reserve\": 1.0, \"cost_shortfall\": 20.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"workflow\": [\"validate_request_against_allowed_task_region_horizon_and_cost\", \"bind_admissible_decision_time_variables\", \"apply_rolling_window_configuration\", \"run_verified_numerical_workflow\", \"route_outputs_to_human_approval\"]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1062,
+    "completion_tokens": 506,
+    "total_tokens": 1568,
+    "prompt_tokens_details": {
+      "cached_tokens": 896
+    },
+    "prompt_cache_hit_tokens": 896,
+    "prompt_cache_miss_tokens": 166
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

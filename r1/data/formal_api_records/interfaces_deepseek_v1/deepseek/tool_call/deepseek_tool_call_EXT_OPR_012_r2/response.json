@@ -1,0 +1,39 @@
+{
+  "id": "336dd5d7-f3da-4744-bf10-ff3368fb879e",
+  "object": "chat.completion",
+  "created": 1791613080,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_0OGCIwgMnvAUDjizL8vd5285",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"reject\", \"reason\": \"The request specifies region \\\"ERCOT\\\", which is not an allowed region. Allowed regions are CISO, ERCO, GD, ISNE, MISO, SWPP. The three-hour horizon (180 minutes) is supported, but the requested shortfall cost of \\\"ten times\\\" (cost_shortfall=10.0 with cost_reserve=1.0) is not among the allowed shortfall costs [10.0, 20.0, 40.0] as a ratio interpretation; the operator must select one of the allowed values explicitly. Because the region is unsupported and the cost is ambiguous/unsupported, the study cannot be accepted or partially accepted.\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"The request was rejected because it names an unsupported region (ERCOT) and an unsupported/ambiguous shortfall cost. No reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results are produced here; any such numerical outputs are computed only by the verified numerical workflow. The operator may resubmit using an allowed region (ERCO for ERCOT-like footprint) and an explicit allowed shortfall cost of 10.0, 20.0, or 40.0 with cost_reserve=1.0.\", \"audit_log\": {\"triggered_rules\": [\"unsupported_region\", \"unsupported_or_ambiguous_shortfall_cost\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1654,
+    "completion_tokens": 556,
+    "total_tokens": 2210,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 246
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

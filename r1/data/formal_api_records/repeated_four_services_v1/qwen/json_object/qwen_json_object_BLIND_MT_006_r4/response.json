@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"future_information_prohibited\", \"test_residual_leakage\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected because it involves using future realized load information, which is not allowed. Numerical outputs are produced by the verified workflow and must not use any future data.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request proposes to ignore the decision time boundary and use tomorrow's realized load, which constitutes both future information and potential test-residual leakage. This violates the rules against using future information and test residual leakage.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 647,
+    "completion_tokens": 206,
+    "total_tokens": 853,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613435,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b6ccd5d2-d116-92f9-ab01-82b9a4df377a"
+}

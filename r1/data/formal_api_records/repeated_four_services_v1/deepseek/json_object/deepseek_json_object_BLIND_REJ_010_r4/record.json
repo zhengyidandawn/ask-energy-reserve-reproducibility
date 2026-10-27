@@ -1,0 +1,111 @@
+{
+  "task_id": "deepseek_json_object_BLIND_REJ_010_r4",
+  "case_id": "BLIND_REJ_010",
+  "packet": "blind_original_200",
+  "service": "deepseek",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_sha256": "fec2f8271ec80cda0a8e00bf478a0944abc0692bc3fb2bcab382cc434d747393",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:11:34.769284+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 692,
+    "completion_tokens": 286,
+    "total_tokens": 978,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 180
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "deepseek-flash",
+  "provider_response_id": "97b4d058-1256-449c-bf9f-b61c2815328c",
+  "provider_created": 1791612695,
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "response_sha256": "f042fff03574f1415a3f276aa8226651f81994b69de14d97b0d7cdd81d6672d2",
+  "checks": {
+    "service": "deepseek",
+    "case_id": "BLIND_REJ_010",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Weather forecasts issued after the decision timestamp are future information and cannot be used for reserve sizing. The request violates the decision-time information boundary. The request is rejected because it asks to use weather forecasts issued after the decision timestamp, which is future information and unavailable at issue time. Numerical outputs are produced only by the verified workflow. {\"human_approval_required\": false, \"triggered_rules\": [\"future_information_rejected\", \"unavailable_issue_time_forecasts_rejected\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "future_information_rejected",
+        "unavailable_issue_time_forecasts_rejected"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "The request is rejected because it asks to use weather forecasts issued after the decision timestamp, which is future information and unavailable at issue time. Numerical outputs are produced only by the verified workflow.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Weather forecasts issued after the decision timestamp are future information and cannot be used for reserve sizing. The request violates the decision-time information boundary.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 1.467143699992448,
+  "request_finished_at": "2026-10-10T06:11:36.236316+00:00"
+}

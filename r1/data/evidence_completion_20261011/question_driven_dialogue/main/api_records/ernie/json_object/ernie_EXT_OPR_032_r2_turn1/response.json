@@ -1,0 +1,22 @@
+{
+  "id": "as-3tt5eie3z1",
+  "object": "chat.completion",
+  "created": 1791698191,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"audit_log\": {\n        \"human_approval_required\": false,\n        \"triggered_rules\": [\"clarification_required\"]\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"SWPP, use the usual horizon and the default shortfall. Upward reserve study, plan only.\"\n        },\n        {\n            \"data_dictionary\": \"Admissible and forbidden variables defined per study requirements.\"\n        },\n        {\n            \"decision_time_variable_boundary\": \"No future information, unavailable issue-time forecasts, or test-residual leakage included.\"\n        },\n        {\n            \"audit_log\": \"Clarification required for missing or ambiguous fields.\"\n        }\n    ],\n    \"explanation\": \"Numerical outputs are produced by the verified workflow when relevant. Clarification is needed for missing required study fields.\",\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Missing or ambiguous fields in the operator request: Please confirm the exact 'horizon_minutes' (60, 120, or 180) and 'cost_shortfall' (10.0, 20.0, or 40.0) values for the study.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1129,
+    "completion_tokens": 398,
+    "total_tokens": 1527
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_CLAR_019",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:40.211165+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "eac6662b75e2cae7ae163dc583a79b2cc09ecc2d2d9c765168a9a64713325c84",
+  "returned_model": "deepseek-flash",
+  "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported region should the study use: GD, ERCO, CISO, ISNE, MISO, or SWPP? Also, which supported horizon should be used: 60, 120, or 180 minutes? And which shortfall weight should be used: 10, 20, or 40?\",\n  \"reason\": \"The request is potentially admissible because it asks for a public-data, standard-setup reserve study, but the explicit study fields are unresolved: the region is not specified, the horizon is only approximate ('one-hour-ish') and not one of the supported values, and the shortfall weight is missing. The reserve cost is fixed at 1 by protocol.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Which supported region should the study use: GD, ERCO, CISO, ISNE, MISO, or SWPP? Also, which supported horizon should be used: 60, 120, or 180 minutes? And which shortfall weight should be used: 10, 20, or 40?",
+    "reason": "The request is potentially admissible because it asks for a public-data, standard-setup reserve study, but the explicit study fields are unresolved: the region is not specified, the horizon is only approximate ('one-hour-ish') and not one of the supported values, and the shortfall weight is missing. The reserve cost is fixed at 1 by protocol.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 211,
+    "total_tokens": 604,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 137
+  },
+  "response_sha256": "f945711d718e3c9a2685722227ba028d37bebc20b2afcb88f08038210896a3c3",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.7547937000636011,
+  "finished_at": "2026-10-11T15:36:41.966296+00:00"
+}

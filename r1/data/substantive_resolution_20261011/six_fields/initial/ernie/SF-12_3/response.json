@@ -1,0 +1,22 @@
+{
+  "id": "as-m9cgzp5xcj",
+  "object": "chat.completion",
+  "created": 1791716154,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"feature_mode\",\n        \"reporting\"\n    ],\n    \"reason\": \"Please provide the missing fields: feature_mode and reporting.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 293,
+    "completion_tokens": 60,
+    "total_tokens": 353
+  }
+}

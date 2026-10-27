@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"unsupported_region\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"数值输出将由验证过的工作流程生成，但本请求因使用了不支持的区域被拒绝。\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"请求中指定了一个不受支持的研究地区（广东）。请从以下列表选择一个受支持的区域：['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 191,
+    "total_tokens": 836,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612918,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-3c55acaf-e01c-9c16-8db5-9f72bcd4883c"
+}

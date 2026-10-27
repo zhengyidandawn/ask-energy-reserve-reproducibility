@@ -1,0 +1,25 @@
+{
+  "id": "as-p8yh73nppa",
+  "object": "chat.completion",
+  "created": 1791615131,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\n        \"calendar\",\n        \"cost_ratio\",\n        \"current_load\",\n        \"horizon\",\n        \"lagged_load\",\n        \"load_statistics\",\n        \"observed_weather\",\n        \"recent_ramp\",\n        \"region_id\"\n    ],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"region_id_mismatch_detected\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        \"operator_request: MISSO三小时向上备用，180 mins，penelty 10。先出研究安排，别改原始曲线\",\n        \"data_dictionary: region_id MISSO not in ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']\"\n    ],\n    \"explanation\": \"The operator request contains an unsupported region identifier 'MISSO'. Numerical outputs are produced by the verified workflow when relevant.\",\n    \"forbidden_variables\": [\n        \"fabricated_result\",\n        \"future_load\",\n        \"future_weather\",\n        \"raw_data_modification\",\n        \"realized_target\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Region identifier 'MISSO' is not in the list of admissible regions\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 700,
+    "completion_tokens": 352,
+    "total_tokens": 1052,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

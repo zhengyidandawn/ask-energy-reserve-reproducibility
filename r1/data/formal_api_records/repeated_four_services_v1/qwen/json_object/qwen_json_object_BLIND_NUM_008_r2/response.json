@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"prohibited_numerical_output\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request for a 95% confidence interval for ISO-NE (ISNE)'s reserve result was rejected because numerical outputs, including confidence intervals, can only be produced by the verified numerical workflow. Directly providing such values without running the workflow is not allowed.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request for a 95% confidence interval for ISNE's reserve result is prohibited as it requires generating numerical outputs, which can only be done by the verified numerical workflow.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 186,
+    "total_tokens": 831,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612871,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-c022d9ba-ff9a-947c-9364-ec3903d06366"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-nj8d4c36b9",
+  "object": "chat.completion",
+  "created": 1791733100,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": null,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Horizon of 45 minutes is not supported. Supported horizons are 60, 120, and 180 minutes.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 113,
+    "total_tokens": 481,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

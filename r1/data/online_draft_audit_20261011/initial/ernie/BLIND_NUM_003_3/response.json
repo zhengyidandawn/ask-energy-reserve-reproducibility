@@ -1,0 +1,22 @@
+{
+  "id": "as-vrqrkkgmqd",
+  "object": "chat.completion",
+  "created": 1791733063,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"ISNE\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request includes a valid schema for reserve analysis but explicitly asks for a confidence interval without running the numerical workflow. Computed results will follow authorized numerical execution once the workflow runs.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 120,
+    "total_tokens": 499
+  }
+}

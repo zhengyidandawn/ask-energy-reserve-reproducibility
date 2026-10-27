@@ -1,0 +1,44 @@
+{
+  "case_id": "SF-03",
+  "service": "qwen",
+  "repeat": 1,
+  "phase": "initial",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:54:51.705191+00:00",
+  "status": "success",
+  "request_sha256": "bb8053f97e4ff8269f95b962cb9b66eead495b17b192b55ff76c531d9f442a4b",
+  "returned_model": "qwen-max",
+  "usage": {
+    "prompt_tokens": 305,
+    "completion_tokens": 91,
+    "total_tokens": 396,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "content": "{\n  \"decision\": \"accept\",\n  \"study\": {\n    \"region\": \"DE\",\n    \"horizon_minutes\": 120,\n    \"feature_mode\": \"full\",\n    \"shortfall_weight\": 20,\n    \"required_coverage\": 0.95,\n    \"reporting\": \"standard\",\n    \"human_authorization_required\": true\n  },\n  \"missing_fields\": [],\n  \"reason\": \"\"\n}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "DE",
+      "horizon_minutes": 120,
+      "feature_mode": "full",
+      "shortfall_weight": 20,
+      "required_coverage": 0.95,
+      "reporting": "standard",
+      "human_authorization_required": true
+    },
+    "missing_fields": [],
+    "reason": ""
+  },
+  "checks": {
+    "decision": "accept",
+    "execution_ready": true,
+    "corrections": 0,
+    "rules": []
+  },
+  "response_sha256": "a4d9943a159ef8f1b637b1702ed5d18e77b36a44deb1477e6eca1addc8f7189e",
+  "latency_seconds": 2.090462199994363,
+  "request_finished_at": "2026-10-11T10:54:53.796465+00:00"
+}

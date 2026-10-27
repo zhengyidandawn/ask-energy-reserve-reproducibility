@@ -1,0 +1,118 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 3,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:47.095326+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "2cb920fb181fc22009951480182b64b9d7d60855815f9e6e695828e3392ccb15",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a supported region (CISO) and a supported horizon (120 minutes), and explicitly asks for JSON schema only without reserve MW or coverage. cost_reserve is fixed at 1 by protocol; cost_shortfall is not specified and remains null.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a supported region (CISO) and a supported horizon (120 minutes), and explicitly asks for JSON schema only without reserve MW or coverage. cost_reserve is fixed at 1 by protocol; cost_shortfall is not specified and remains null.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 399,
+      "completion_tokens": 131,
+      "total_tokens": 530,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 143
+    },
+    "response_sha256": "b087f2e12fe2cb916a7cb118b3c60ebc2cde312e4fc831831ec0a25ab565d46e",
+    "diagnostics": {
+      "messages": [
+        "Execution validation returns reject: invalid_schema"
+      ],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.304566100006923,
+    "finished_at": "2026-10-11T15:36:48.400636+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 3,
+    "phase": "feedback",
+    "started_at": "2026-10-11T15:36:48.400636+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "66fb2af1509848ba1bf4b51b83a9df94032fadec12bf75420008404618542146",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"reject\",\"fields\":{\"region_id\":\"CISO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The request asks for JSON schema only and explicitly excludes reserve MW or coverage, but it does not supply a supported shortfall weight. Under the study protocol, cost_shortfall must be one of 10, 20, or 40; because it is unresolved, the draft cannot be accepted as a complete energy-study request. The supported region CISO and supported horizon 120 minutes are preserved for analyst review.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request asks for JSON schema only and explicitly excludes reserve MW or coverage, but it does not supply a supported shortfall weight. Under the study protocol, cost_shortfall must be one of 10, 20, or 40; because it is unresolved, the draft cannot be accepted as a complete energy-study request. The supported region CISO and supported horizon 120 minutes are preserved for analyst review.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 553,
+      "completion_tokens": 137,
+      "total_tokens": 690,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 169
+    },
+    "response_sha256": "5d0a49469918425e5851a58cf53fda47c3e9ab56caad289b0e70ca25a4e38c1c",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.5075952000916004,
+    "finished_at": "2026-10-11T15:36:49.908523+00:00"
+  },
+  "online_calls": 2,
+  "total_service_seconds": 2.8121613000985235,
+  "transport_complete": true
+}

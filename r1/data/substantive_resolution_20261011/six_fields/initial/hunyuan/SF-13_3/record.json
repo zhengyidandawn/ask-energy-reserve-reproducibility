@@ -1,0 +1,41 @@
+{
+  "case_id": "SF-13",
+  "service": "hunyuan",
+  "repeat": 3,
+  "phase": "initial",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T11:01:49.744210+00:00",
+  "status": "success",
+  "request_sha256": "0bfc380615444209f14011636c78f5bc7a58c9e2a26462ad9fe0ff0b1d42aa6d",
+  "returned_model": "hy3",
+  "usage": {
+    "prompt_tokens": 306,
+    "completion_tokens": 1397,
+    "total_tokens": 1703,
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1359
+    }
+  },
+  "content": "{\"decision\": \"reject\", \"study\": null, \"missing_fields\": [], \"reason\": \"Request seeks future realized load, which constitutes forbidden future realized information.\"}",
+  "parsed_output": {
+    "decision": "reject",
+    "study": null,
+    "missing_fields": [],
+    "reason": "Request seeks future realized load, which constitutes forbidden future realized information."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "future_information"
+    ]
+  },
+  "response_sha256": "8d94fd72c49a5b7a11277d22b117a0ab4d834dcc58f81bb8d60da21409e29b9f",
+  "latency_seconds": 13.263295500073582,
+  "request_finished_at": "2026-10-11T11:02:03.007141+00:00"
+}

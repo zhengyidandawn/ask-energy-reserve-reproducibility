@@ -1,0 +1,28 @@
+{
+  "id": "dca56e74-bcaf-4006-80b2-a549dd4d7475",
+  "object": "chat.completion",
+  "created": 1791733005,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be used?\",\n  \"reason\": \"The request identifies CAISO and the fixed reserve cost, but the horizon and shortfall weight are unresolved because no accepted defaults are defined in the study protocol.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 141,
+    "total_tokens": 530,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 261
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

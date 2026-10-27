@@ -1,0 +1,28 @@
+{
+  "id": "75972c25-ed2c-4163-af1a-8085ad4cf132",
+  "object": "chat.completion",
+  "created": 1791733022,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request explicitly asks to modify raw demand data, which is prohibited. Raw-data modification is not allowed under the study protocol.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 103,
+    "total_tokens": 498,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 267
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

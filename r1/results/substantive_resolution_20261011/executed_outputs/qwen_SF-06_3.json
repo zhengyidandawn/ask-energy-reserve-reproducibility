@@ -1,0 +1,32 @@
+{
+  "phase": "initial",
+  "source_response_sha256": "860df2b3d7a991ad2615fc0eb01e1dfe359b1d4c8771f7df40bab2c31cc7a151",
+  "study": {
+    "region": "DE",
+    "horizon_minutes": 60,
+    "feature_mode": "full",
+    "shortfall_weight": 10,
+    "required_coverage": 0.95,
+    "reporting": "standard",
+    "human_authorization_required": true
+  },
+  "result": {
+    "decisions": 2880,
+    "coverage": 0.965625,
+    "reserve_MW": 817.9630137707447,
+    "cost_index": 0.01386670944649055,
+    "paired_cost_difference": 0.0,
+    "reserve_equal": true,
+    "reporting_correct": true,
+    "reported_evidence": {
+      "coverage": 0.965625,
+      "mean_reserve_MW": 817.9630137707447,
+      "cost_index": 0.01386670944649055
+    },
+    "report_sha256": "b0bd67e71f713192d23eae63c41cdcdb854b2a55fa002b763704009071997c98",
+    "target_sha256": "188dfe4431cec555e428f3693c198939f19ea4ad5250eae2c97886beb9f29969",
+    "reserve_sha256": "a46720b0c3e54b47ed87226cd6dce078be75187f9e1bcc8f5196199875cef337",
+    "source_sha256": "43fefa6dca08b24c8fa7db25b229e783988675e48753ae1586f3b4cd9a61ec75",
+    "reference_sha256": "43fefa6dca08b24c8fa7db25b229e783988675e48753ae1586f3b4cd9a61ec75"
+  }
+}

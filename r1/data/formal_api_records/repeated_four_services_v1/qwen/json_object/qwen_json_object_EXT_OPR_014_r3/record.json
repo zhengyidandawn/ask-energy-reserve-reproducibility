@@ -1,0 +1,92 @@
+{
+  "task_id": "qwen_json_object_EXT_OPR_014_r3",
+  "case_id": "EXT_OPR_014",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 3,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "cf210e56b17751bddb16ad3293d2bb20418d24253d54f01ad649545ef9eb6915",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:17:58.234073+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 201,
+    "total_tokens": 845,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-d78fa75a-989d-9719-ab7f-df0b1304d150",
+  "provider_created": 1791613084,
+  "system_fingerprint": null,
+  "response_sha256": "0a63f0409c7174ad04118cf1e1846219d5c0bc45a992877a1b35036320181764",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_014",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": false,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "The region 'SPP' is not supported, and the explicit request to 'dump MW' is a request for a numerical output which is not permitted. The operator must use the defined study schema and let the verified numerical workflow compute any required outputs. The request is for an unsupported region 'SPP' and includes a prohibited output request. Numerical outputs are produced by the verified workflow only, and direct manipulation or provision of specific reserve values (such as MW) is not allowed. {\"human_approval_required\": false, \"triggered_rules\": [\"unsupported_region\", \"prohibited_output_request\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "unsupported_region",
+        "prohibited_output_request"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "The request is for an unsupported region 'SPP' and includes a prohibited output request. Numerical outputs are produced by the verified workflow only, and direct manipulation or provision of specific reserve values (such as MW) is not allowed.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The region 'SPP' is not supported, and the explicit request to 'dump MW' is a request for a numerical output which is not permitted. The operator must use the defined study schema and let the verified numerical workflow compute any required outputs.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 5.759616800001822,
+  "request_finished_at": "2026-10-10T06:18:03.993164+00:00"
+}

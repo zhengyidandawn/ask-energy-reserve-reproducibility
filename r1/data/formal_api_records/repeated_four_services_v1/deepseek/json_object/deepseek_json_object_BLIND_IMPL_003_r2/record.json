@@ -1,0 +1,110 @@
+{
+  "task_id": "deepseek_json_object_BLIND_IMPL_003_r2",
+  "case_id": "BLIND_IMPL_003",
+  "packet": "blind_original_200",
+  "service": "deepseek",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_sha256": "b4ba3ed8821110a6c554f68e6a93a6f5db92019acf86b3ac15eaaf66230c7835",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:09:42.639541+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 318,
+    "total_tokens": 1009,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 179
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "deepseek-flash",
+  "provider_response_id": "f5621c19-38bb-4272-84d6-2843dfd7a8db",
+  "provider_created": 1791612583,
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "response_sha256": "2d357a4cec3048357be221f98544696039458225780a0d26ae624ce0a71652d5",
+  "checks": {
+    "service": "deepseek",
+    "case_id": "BLIND_IMPL_003",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Missing or ambiguous field: horizon_minutes. The request must specify a supported horizon of 60, 120, or 180 minutes. The region ISO-NE is supported as ISNE, but the horizon is not specified. The request is ambiguous because the horizon is not specified as one of the allowed values (60, 120, or 180 minutes). The phrase 'whatever the paper normally uses' does not provide a concrete horizon and cannot be resolved by the ASK knowledge layer. Numerical outputs are produced only by the verified numerical workflow. {\"human_approval_required\": false, \"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "The request is ambiguous because the horizon is not specified as one of the allowed values (60, 120, or 180 minutes). The phrase 'whatever the paper normally uses' does not provide a concrete horizon and cannot be resolved by the ASK knowledge layer. Numerical outputs are produced only by the verified numerical workflow.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Missing or ambiguous field: horizon_minutes. The request must specify a supported horizon of 60, 120, or 180 minutes. The region ISO-NE is supported as ISNE, but the horizon is not specified.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 1.7792774999979883,
+  "request_finished_at": "2026-10-10T06:09:44.418624+00:00"
+}

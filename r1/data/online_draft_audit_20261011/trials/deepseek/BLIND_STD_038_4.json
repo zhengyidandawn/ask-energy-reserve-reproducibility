@@ -1,0 +1,112 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_STD_038",
+  "repeat": 4,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_STD_038",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:07.240266+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "df9e8a2d035a0c5a9543b76cf2d049ea2a6413ca9364e524717a3e843b01268d",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ISNE\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":40},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported and resolved: region ISNE, horizon 120 minutes, and shortfall weight 40. The reserve cost is fixed at 1 by protocol. The request explicitly says not to estimate MW, so numerical reserve quantities remain for authorized numerical execution.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "All explicit study fields are supported and resolved: region ISNE, horizon 120 minutes, and shortfall weight 40. The reserve cost is fixed at 1 by protocol. The request explicitly says not to estimate MW, so numerical reserve quantities remain for authorized numerical execution.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 418,
+      "completion_tokens": 108,
+      "total_tokens": 526,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 162
+    },
+    "response_sha256": "f9400d66e90cc368f187aca79a169cf2e778bcbe08602deb6512583eb9c6f171",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.5781419000122696,
+    "finished_at": "2026-10-11T15:37:08.818397+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_STD_038",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:07.240266+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "df9e8a2d035a0c5a9543b76cf2d049ea2a6413ca9364e524717a3e843b01268d",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ISNE\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":40},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported and resolved: region ISNE, horizon 120 minutes, and shortfall weight 40. The reserve cost is fixed at 1 by protocol. The request explicitly says not to estimate MW, so numerical reserve quantities remain for authorized numerical execution.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "All explicit study fields are supported and resolved: region ISNE, horizon 120 minutes, and shortfall weight 40. The reserve cost is fixed at 1 by protocol. The request explicitly says not to estimate MW, so numerical reserve quantities remain for authorized numerical execution.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 418,
+      "completion_tokens": 108,
+      "total_tokens": 526,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 162
+    },
+    "response_sha256": "f9400d66e90cc368f187aca79a169cf2e778bcbe08602deb6512583eb9c6f171",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.5781419000122696,
+    "finished_at": "2026-10-11T15:37:08.818397+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.5781419000122696,
+  "transport_complete": true
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request for CAISO with the default settings (60 minutes horizon, and a cost shortfall of 10) is valid. The user has not specified a different time horizon or shortfall cost, thus defaults are used.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 119,
+    "total_tokens": 489,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733040,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-a43d2054-fd46-9d67-90a1-9b7aeffa9463"
+}

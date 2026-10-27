@@ -1,0 +1,54 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_REJ_022",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:00.868105+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "77d487fb55388d1ae47313357c7ea451571b4163749fad4d257457c268467502",
+  "returned_model": "deepseek-flash",
+  "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request uses tomorrow's realized load, which is future information not available at study time. Only observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather are allowed. The region and horizon are valid, but the future-information requirement makes the request unsupported.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 60,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The request uses tomorrow's realized load, which is future information not available at study time. Only observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather are allowed. The region and horizon are valid, but the future-information requirement makes the request unsupported.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 140,
+    "total_tokens": 533,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 265
+  },
+  "response_sha256": "07bc54d2fa0e3920a1c49db5d31246db1b4c3bdd5c1a30e742a84d9ebb1494fe",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.3989266999997199,
+  "finished_at": "2026-10-11T15:37:02.267786+00:00"
+}

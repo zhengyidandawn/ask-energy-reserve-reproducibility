@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_016",
+  "repeat": 3,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_CLAR_016",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:51.349443+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "cae6008bf73e8ed975f5393aff0d45ac5260c9f7c69669122a71a82d68c7b331",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The phrase 'western public region' does not correspond to a supported region_id (GD, ERCO, CISO, ISNE, MISO, SWPP). Also horizon_minutes and cost_shortfall are not provided. Please specify supported region_id, horizon_minutes (60, 120, 180), and cost_shortfall (10, 20, 40) to finalize the draft.\", \"reason\": \"Explicit study fields region_id, horizon_minutes, cost_shortfall are unresolved; 'western public region' is not a supported region. cost_reserve is fixed at 1 by study protocol. Clarification needed to proceed.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The phrase 'western public region' does not correspond to a supported region_id (GD, ERCO, CISO, ISNE, MISO, SWPP). Also horizon_minutes and cost_shortfall are not provided. Please specify supported region_id, horizon_minutes (60, 120, 180), and cost_shortfall (10, 20, 40) to finalize the draft.",
+      "reason": "Explicit study fields region_id, horizon_minutes, cost_shortfall are unresolved; 'western public region' is not a supported region. cost_reserve is fixed at 1 by study protocol. Clarification needed to proceed.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 371,
+      "completion_tokens": 2093,
+      "total_tokens": 2464,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1905
+      }
+    },
+    "response_sha256": "4c0151e954565cb4a72f1a9c353188d3292090139fc8bfb9b9de29f4ef07e49c",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 18.353279100032523,
+    "finished_at": "2026-10-11T15:38:09.701936+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_CLAR_016",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:51.349443+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "cae6008bf73e8ed975f5393aff0d45ac5260c9f7c69669122a71a82d68c7b331",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The phrase 'western public region' does not correspond to a supported region_id (GD, ERCO, CISO, ISNE, MISO, SWPP). Also horizon_minutes and cost_shortfall are not provided. Please specify supported region_id, horizon_minutes (60, 120, 180), and cost_shortfall (10, 20, 40) to finalize the draft.\", \"reason\": \"Explicit study fields region_id, horizon_minutes, cost_shortfall are unresolved; 'western public region' is not a supported region. cost_reserve is fixed at 1 by study protocol. Clarification needed to proceed.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The phrase 'western public region' does not correspond to a supported region_id (GD, ERCO, CISO, ISNE, MISO, SWPP). Also horizon_minutes and cost_shortfall are not provided. Please specify supported region_id, horizon_minutes (60, 120, 180), and cost_shortfall (10, 20, 40) to finalize the draft.",
+      "reason": "Explicit study fields region_id, horizon_minutes, cost_shortfall are unresolved; 'western public region' is not a supported region. cost_reserve is fixed at 1 by study protocol. Clarification needed to proceed.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 371,
+      "completion_tokens": 2093,
+      "total_tokens": 2464,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1905
+      }
+    },
+    "response_sha256": "4c0151e954565cb4a72f1a9c353188d3292090139fc8bfb9b9de29f4ef07e49c",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 18.353279100032523,
+    "finished_at": "2026-10-11T15:38:09.701936+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 18.353279100032523,
+  "transport_complete": true
+}

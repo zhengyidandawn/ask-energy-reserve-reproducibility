@@ -1,0 +1,175 @@
+{
+  "initial_task_id": "hunyuan_json_object_EXT_OPR_026_r4",
+  "initial_response_sha256": "8053c8d78449e73a57eda1fcc5ae86ec80b1e08179ad8ca69356ce41a82aac1a",
+  "initial_record": {
+    "task_id": "hunyuan_json_object_EXT_OPR_026_r4",
+    "case_id": "EXT_OPR_026",
+    "packet": "independently_authored_48",
+    "service": "hunyuan",
+    "interface": "json_object",
+    "repeat": 4,
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "request_sha256": "236638ae138186ca3832b150b74f71cce05162950ee9ecdfe2b12a777824f6f9",
+    "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+    "parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 4096
+    },
+    "request_started_at": "2026-10-10T07:50:44.951451+00:00",
+    "seed_setting": "not_sent",
+    "thinking_setting": "not_sent_provider_default",
+    "attempt": 1,
+    "automatic_retries": 0,
+    "provider_api_version": "v1",
+    "usage": {
+      "prompt_tokens": 645,
+      "completion_tokens": 2608,
+      "total_tokens": 3253,
+      "prompt_tokens_details": {
+        "cached_tokens": 576
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2601
+      }
+    },
+    "billed_cost": null,
+    "billed_cost_status": "billing_record_unavailable",
+    "http_status": 200,
+    "status": "success",
+    "returned_model": "hy3",
+    "provider_response_id": "27e68f8e-6af4-4093-859c-8c757d77b2f8",
+    "provider_created": 1791618646,
+    "system_fingerprint": null,
+    "response_sha256": "8053c8d78449e73a57eda1fcc5ae86ec80b1e08179ad8ca69356ce41a82aac1a",
+    "checks": {
+      "service": "hunyuan",
+      "case_id": "EXT_OPR_026",
+      "case_group": "",
+      "conversation_id": "",
+      "turn_id": "",
+      "expected_decision": "clarify",
+      "decision": "",
+      "schema_completeness": false,
+      "semantic_correctness": false,
+      "admissible_variable_correctness": true,
+      "forbidden_variable_action_handling": false,
+      "rejection_correctness": true,
+      "clarification_correctness": false,
+      "partial_acceptance_correctness": true,
+      "evidence_trace_completeness": false,
+      "explanation_grounding": false,
+      "human_gate_correctness": true,
+      "numerical_contamination": false,
+      "unsupported_acceptance": false,
+      "parse_error": false,
+      "parse_error_message": "",
+      "joint_success": false,
+      "risk_type": "",
+      "checker_response": "{}",
+      "json_valid": true,
+      "exact_json_schema_valid": false,
+      "finish_reason": "stop",
+      "tool_name": null,
+      "strict_decision_correct": false,
+      "tool_call_returned": false
+    },
+    "parsed_output": {
+      "": ""
+    },
+    "latency_seconds": 23.34308159991633,
+    "request_finished_at": "2026-10-10T07:51:08.294379+00:00"
+  },
+  "expected_confirmation": {
+    "region_id": "GD",
+    "horizon_minutes": "60",
+    "cost_shortfall": "20"
+  },
+  "turns": [
+    {
+      "round": 1,
+      "questioned_fields": [],
+      "answer": "Please ask me for any remaining required study fields.",
+      "supplied_fields": [],
+      "task_id": "hunyuan_EXT_OPR_026_r4_turn1",
+      "record_sha256": "91fb043124ee1742e92e4b71185fbb57dac12f7d7f02c6fc59148e67c04d3e91",
+      "matching_completed_plan": false
+    },
+    {
+      "round": 2,
+      "questioned_fields": [
+        "horizon_minutes",
+        "region_id"
+      ],
+      "answer": "My confirmed answers to your requested fields are: horizon_minutes=60; region_id=GD. These answers supersede earlier unspecified or alternative values for these fields.",
+      "supplied_fields": [
+        "horizon_minutes",
+        "region_id"
+      ],
+      "task_id": "hunyuan_EXT_OPR_026_r4_turn2",
+      "record_sha256": "c3382544f0c0638a2dc52762efe89ba6228c3d623355368e175e21dcda934464",
+      "matching_completed_plan": false
+    },
+    {
+      "round": 3,
+      "questioned_fields": [],
+      "answer": "Please ask me for any remaining required study fields.",
+      "supplied_fields": [
+        "horizon_minutes",
+        "region_id"
+      ],
+      "task_id": "hunyuan_EXT_OPR_026_r4_turn3",
+      "record_sha256": "2c2842dafccb3864076a50d44f386c834c1cf0d552028f00c71e06da2630f658",
+      "matching_completed_plan": false
+    }
+  ],
+  "messages": [
+    {
+      "role": "user",
+      "content": "向上备用那个研究成本按20来。region和horizon我还在跟调度确认，先别自己填。"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"\": \"\"}"
+    },
+    {
+      "role": "user",
+      "content": "Please ask me for any remaining required study fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"Numerical outputs are produced by the verified workflow only; this clarify decision defers region and horizon pending operator confirmation with dispatch.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"Missing required fields: region_id and horizon_minutes. Operator explicitly requested not to fill them, so clarification required.\", \"study_schema\": null, \"workflow\": []}"
+    },
+    {
+      "role": "user",
+      "content": "My confirmed answers to your requested fields are: horizon_minutes=60; region_id=GD. These answers supersede earlier unspecified or alternative values for these fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"\": \"\"}"
+    },
+    {
+      "role": "user",
+      "content": "Please ask me for any remaining required study fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"Numerical outputs are produced by the verified workflow only; all required study fields are now provided (upward reserve sizing, region GD, horizon 60 minutes, shortfall cost 20.0, reserve cost 1.0, rolling window as defined).\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"Operator confirmed horizon_minutes=60 and region_id=GD, superseding earlier hold; cost_shortfall=20.0 was given; all required schema fields are present.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"GD\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 20.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"workflow\": []}"
+    }
+  ],
+  "summary": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_026",
+    "repeat": 4,
+    "initial_decision": "invalid",
+    "initially_explicit_fields": 0,
+    "additional_turns": 3,
+    "confirmed_fields": 2,
+    "matching_completed_plan": 0,
+    "total_service_seconds": 86.14347239979543,
+    "answer_characters": 276,
+    "final_decision": "accept",
+    "all_initial_trials_retained": true
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_json_object_BLIND_CLAR_003_r4",
+  "case_id": "BLIND_CLAR_003",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "820058645efe0ed788a9ae786932253b0087bf34f63c010617c5e18a6871630e",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:19:21.784296+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 643,
+    "completion_tokens": 153,
+    "total_tokens": 796,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-96da6b9e-0b3f-979d-82f8-e3da172a7bb6",
+  "provider_created": 1791613166,
+  "system_fingerprint": null,
+  "response_sha256": "5a0fdd5aa7c4265be83169bedd2c23126611bad71bf6adb6d8afcc8d7d54e3a9",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_CLAR_003",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The region and cost parameters are not clearly specified in the request. Please provide the exact region ID and the shortfall cost value. The numerical outputs are produced by the verified workflow, but the current request lacks specific details required for the schema. Missing or ambiguous fields need to be clarified before proceeding. {\"human_approval_required\": false, \"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "The numerical outputs are produced by the verified workflow, but the current request lacks specific details required for the schema. Missing or ambiguous fields need to be clarified before proceeding.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The region and cost parameters are not clearly specified in the request. Please provide the exact region ID and the shortfall cost value.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 3.9988902999321,
+  "request_finished_at": "2026-10-10T06:19:25.783775+00:00"
+}

@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_json_object_BLIND_REJ_012_r4",
+  "case_id": "BLIND_REJ_012",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "0107a188dbdd9e3c7f31f1b73454e0f798f9955c63d22d1409e10f42e37cf752",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:21:48.032485+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 635,
+    "completion_tokens": 183,
+    "total_tokens": 818,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-e1f31ba2-3c88-9d2b-b32b-ef3b7805b0dd",
+  "provider_created": 1791613313,
+  "system_fingerprint": null,
+  "response_sha256": "b66400d8c5fc0e24ed06894e87963df8f67c76a95a4202f8bb97411426667cc5",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_REJ_012",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The cost shortfall (c_S=17) is not supported. It must be one of [10.0, 20.0, 40.0]. The provided cost shortfall (c_S=17) is not in the allowed set [10.0, 20.0, 40.0]. Numerical outputs are produced by the verified workflow when all requirements are met. {\"human_approval_required\": false, \"triggered_rules\": [\"unsupported_cost_shortfall\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "unsupported_cost_shortfall"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "The provided cost shortfall (c_S=17) is not in the allowed set [10.0, 20.0, 40.0]. Numerical outputs are produced by the verified workflow when all requirements are met.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The cost shortfall (c_S=17) is not supported. It must be one of [10.0, 20.0, 40.0].",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 4.914147299947217,
+  "request_finished_at": "2026-10-10T06:21:52.946730+00:00"
+}

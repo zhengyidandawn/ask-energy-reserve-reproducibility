@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"请提供更多关于研究设置的具体信息，例如具体的时长和成本比例。这些参数对于准确配置研究是必要的。\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"缺少明确的时长(horizon)和成本比例(cost ratio)的具体数值。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 641,
+    "completion_tokens": 199,
+    "total_tokens": 840,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612726,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-4baacb90-ce7c-961f-bbc7-b65d3f839bd2"
+}

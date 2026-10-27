@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"unsupported_region\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The region SPP is not supported. The numerical outputs would be produced by the verified workflow, but the request cannot proceed due to an unsupported region.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The specified region (SPP) is not one of the allowed regions for the study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 629,
+    "completion_tokens": 141,
+    "total_tokens": 770,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612635,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-0df62c9e-01d6-9ec6-812d-50dfd1ffc9fd"
+}

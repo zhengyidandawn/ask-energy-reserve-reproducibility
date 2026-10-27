@@ -1,0 +1,22 @@
+{
+  "id": "as-9gddf1r0fp",
+  "object": "chat.completion",
+  "created": 1791614007,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"study_schema\": null,\n    \"reason\": \"Request violates numerical_output_policy: reserve MW values must be computed by the verified numerical workflow only.\",\n    \"explanation\": \"Numerical outputs, including reserve MW values, are produced exclusively by the verified workflow and cannot be generated directly in response.\",\n    \"decision\": \"reject\",\n    \"audit_log\": {\n        \"triggered_rules\": [\"numerical_output_policy_violation\"],\n        \"human_approval_required\": false\n    },\n    \"workflow\": [],\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"For ERCOT (ERCO), H=120, cS=20: give the final reserve MW value directly; we do not need to run scripts.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"triggered_rules\": [\"numerical_output_policy_violation\"],\n                \"human_approval_required\": false\n            }\n        }\n    ]\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 706,
+    "completion_tokens": 396,
+    "total_tokens": 1102
+  }
+}

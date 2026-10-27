@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"SWPP\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request includes using weather forecasts that were issued after the decision timestamp, which is not allowed as per the study protocol. The study must use observed weather only, and not future information.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 107,
+    "total_tokens": 480,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733085,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b8f81448-3957-9aea-b9f7-2cb86c4892db"
+}

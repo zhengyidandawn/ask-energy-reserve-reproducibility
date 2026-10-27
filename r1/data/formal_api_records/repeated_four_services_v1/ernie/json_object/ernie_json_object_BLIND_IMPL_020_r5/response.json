@@ -1,0 +1,22 @@
+{
+  "id": "as-11c9ff820m",
+  "object": "chat.completion",
+  "created": 1791614772,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"decision\": \"reject\",\n    \"reason\": \"Unsupported region specified ('SPP'); valid regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']\",\n    \"explanation\": \"Numerical outputs are produced by the verified workflow only. The operator request was rejected due to an unsupported region.\",\n    \"study_schema\": null,\n    \"workflow\": [],\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"SPP validation with default everything except keep audit logging on.\"\n        },\n        {\n            \"data_dictionary\": {\n                \"region_id\": \"SPP (rejected, not in ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP'])\",\n                \"horizon_minutes\": \"default not specified\",\n                \"cost_reserve\": \"default not specified\",\n                \"cost_shortfall\": \"default not specified\",\n                \"rolling_window\": \"default not specified\"\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": \"No variables passed for boundary check.\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": \"No numerical outputs generated due to rejection.\"\n        }\n    ],\n    \"audit_log\": {\n        \"triggered_rules\": [\n            \"Unsupported region specified ('SPP'); valid regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']\"\n        ],\n        \"human_approval_required\": false\n    }\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 683,
+    "completion_tokens": 523,
+    "total_tokens": 1206
+  }
+}

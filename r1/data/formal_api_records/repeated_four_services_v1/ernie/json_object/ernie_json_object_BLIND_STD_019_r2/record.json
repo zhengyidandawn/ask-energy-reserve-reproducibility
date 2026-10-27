@@ -1,0 +1,176 @@
+{
+  "task_id": "ernie_json_object_BLIND_STD_019_r2",
+  "case_id": "BLIND_STD_019",
+  "packet": "blind_original_200",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "9267976c72b243e928b3d6cb0221401ad87d435d7ab188166fb972823c582172",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:21:02.932914+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 711,
+    "completion_tokens": 717,
+    "total_tokens": 1428,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-9fdhwxfhr0",
+  "provider_created": 1791613263,
+  "system_fingerprint": null,
+  "response_sha256": "496e2367b1c440bb2a65279c29951d9355fc1d186ac5cc030f17683e6dc05384",
+  "checks": {
+    "service": "ernie",
+    "case_id": "BLIND_STD_019",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Operator request meets all criteria for upward reserve sizing in MISO with valid horizon and costs. Numerical outputs are produced by the verified workflow only. {\"human_approval_required\": true, \"triggered_rules\": []}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "decision": "accept",
+    "reason": "Operator request meets all criteria for upward reserve sizing in MISO with valid horizon and costs.",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "MISO",
+      "horizon_minutes": 60,
+      "cost_reserve": 1.0,
+      "cost_shortfall": 20.0,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": []
+    },
+    "workflow": [
+      "validate_inputs",
+      "execute_reserve_sizing_model",
+      "generate_audit_report"
+    ],
+    "evidence_trace": [
+      {
+        "operator_request": {
+          "task": "upward_reserve_sizing",
+          "region": "MISO",
+          "horizon": "60-minute",
+          "cost_reserve": 1,
+          "cost_shortfall": 20
+        }
+      },
+      {
+        "data_dictionary": {
+          "admissible_variables": [
+            "calendar",
+            "cost_ratio",
+            "current_load",
+            "horizon",
+            "lagged_load",
+            "load_statistics",
+            "observed_weather",
+            "recent_ramp",
+            "region_id"
+          ],
+          "forbidden_variables": [
+            "fabricated_result",
+            "future_load",
+            "future_weather",
+            "raw_data_modification",
+            "realized_target",
+            "test_period_residual"
+          ]
+        }
+      },
+      {
+        "decision_time_variable_boundary": "All variables are within admissible boundaries and no forbidden variables are present."
+      },
+      {
+        "rolling_window_configuration": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        }
+      },
+      {
+        "numerical_workflow_outputs": "Numerical outputs are produced by the verified workflow only."
+      },
+      {
+        "audit_log": {
+          "human_approval_required": true,
+          "triggered_rules": []
+        }
+      }
+    ],
+    "explanation": "Numerical outputs are produced by the verified workflow only."
+  },
+  "latency_seconds": 24.762710300041363,
+  "request_finished_at": "2026-10-10T06:21:27.696452+00:00"
+}

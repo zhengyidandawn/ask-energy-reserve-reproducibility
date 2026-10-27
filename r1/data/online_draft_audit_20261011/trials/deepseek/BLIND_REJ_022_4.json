@@ -1,0 +1,116 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_REJ_022",
+  "repeat": 4,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_REJ_022",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:01.555853+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "77d487fb55388d1ae47313357c7ea451571b4163749fad4d257457c268467502",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request uses tomorrow's realized load, which is future information not available at study time. Supported inputs are observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather only. The region CISO and horizon 60 minutes are valid and preserved, but the future-information dependency makes the request unsupported.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request uses tomorrow's realized load, which is future information not available at study time. Supported inputs are observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather only. The region CISO and horizon 60 minutes are valid and preserved, but the future-information dependency makes the request unsupported.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 148,
+      "total_tokens": 541,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 137
+    },
+    "response_sha256": "f1b5ee5663aa0de85409e5fd2a3ba74b2545d011701992fe7f419f73acd85046",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.5456241000210866,
+    "finished_at": "2026-10-11T15:37:03.101920+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_REJ_022",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:01.555853+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "77d487fb55388d1ae47313357c7ea451571b4163749fad4d257457c268467502",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request uses tomorrow's realized load, which is future information not available at study time. Supported inputs are observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather only. The region CISO and horizon 60 minutes are valid and preserved, but the future-information dependency makes the request unsupported.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request uses tomorrow's realized load, which is future information not available at study time. Supported inputs are observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather only. The region CISO and horizon 60 minutes are valid and preserved, but the future-information dependency makes the request unsupported.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 148,
+      "total_tokens": 541,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 137
+    },
+    "response_sha256": "f1b5ee5663aa0de85409e5fd2a3ba74b2545d011701992fe7f419f73acd85046",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.5456241000210866,
+    "finished_at": "2026-10-11T15:37:03.101920+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.5456241000210866,
+  "transport_complete": true
+}

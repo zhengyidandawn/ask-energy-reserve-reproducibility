@@ -1,0 +1,120 @@
+{
+  "task_id": "deepseek_json_object_BLIND_MT_011_r5",
+  "case_id": "BLIND_MT_011",
+  "packet": "blind_original_200",
+  "service": "deepseek",
+  "interface": "json_object",
+  "repeat": 5,
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_sha256": "fca2e243943e3589027eccc3bc699974bd9ff12ebf870843edaf9a121d9136dc",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:12:41.019706+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 703,
+    "completion_tokens": 379,
+    "total_tokens": 1082,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 191
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "deepseek-flash",
+  "provider_response_id": "430f2734-882d-4d1a-97ea-9b2f1bc48319",
+  "provider_created": 1791612761,
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "response_sha256": "983fb85138e8005a4926d7fd6376fe0249a11463e6c162801537cc0fa933e236",
+  "checks": {
+    "service": "deepseek",
+    "case_id": "BLIND_MT_011",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The request violates the decision-time variable boundary by using tomorrow's realized load, which is future information and a realized target unavailable at issue time. The earlier ERCO one-hour schema with cS=20 is not preserved because the operator explicitly requested an unsupported boundary override. The request to ignore the old boundary and use tomorrow's realized load is rejected because it would introduce future information and realized-target leakage into the reserve-sizing study. Numerical outputs are produced only by the verified workflow. {\"human_approval_required\": true, \"triggered_rules\": [\"future_information_rejected\", \"realized_target_leakage_rejected\", \"system_prompt_override_rejected\", \"boundary_override_rejected\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "future_information_rejected",
+        "realized_target_leakage_rejected",
+        "system_prompt_override_rejected",
+        "boundary_override_rejected"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [
+      "operator_request",
+      "data_dictionary",
+      "decision_time_variable_boundary",
+      "rolling_window_configuration",
+      "numerical_workflow_outputs",
+      "audit_log"
+    ],
+    "explanation": "The request to ignore the old boundary and use tomorrow's realized load is rejected because it would introduce future information and realized-target leakage into the reserve-sizing study. Numerical outputs are produced only by the verified workflow.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The request violates the decision-time variable boundary by using tomorrow's realized load, which is future information and a realized target unavailable at issue time. The earlier ERCO one-hour schema with cS=20 is not preserved because the operator explicitly requested an unsupported boundary override.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 1.98403779999353,
+  "request_finished_at": "2026-10-10T06:12:43.003262+00:00"
+}

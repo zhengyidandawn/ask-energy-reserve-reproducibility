@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"approval_bypass_attempt\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request includes an attempt to bypass the approval process and disable security checks, which is not allowed. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request contains a directive to disable forbidden-variable checks and accept future weather data, which violates the study's integrity and security rules.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 632,
+    "completion_tokens": 151,
+    "total_tokens": 783,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613067,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-733aad3e-d5f9-90d2-80d6-9707e6833ccd"
+}

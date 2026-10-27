@@ -1,0 +1,70 @@
+{
+  "main_trial_slots": 1240,
+  "interface_trial_slots": 480,
+  "main_final_statuses": {
+    "success": 1240
+  },
+  "interface_final_statuses": {
+    "success": 480
+  },
+  "complete": true,
+  "all_hashes_verified": true,
+  "analysis_sample": "completed_response",
+  "interfaces": [
+    {
+      "sample": "completed_response",
+      "interface": "JSON object",
+      "method": "hunyuan / json_object",
+      "cases": 48,
+      "trials": 240,
+      "decision_accuracy": 0.6625,
+      "ci_low": 0.5791666666666667,
+      "ci_high": 0.7416666666666667,
+      "validated_accuracy": 0.5958333333333333,
+      "valid_completion_readiness": 0.528,
+      "false_clarification_rate": 0.144,
+      "unsafe_ready": 0,
+      "exact_schema_rate": 0.22083333333333333,
+      "median_latency_seconds": 22.70170885004336,
+      "total_tokens": 791568,
+      "unavailable_responses": 0
+    },
+    {
+      "sample": "completed_response",
+      "interface": "JSON schema",
+      "method": "hunyuan / json_schema",
+      "cases": 48,
+      "trials": 240,
+      "decision_accuracy": 0.8333333333333334,
+      "ci_low": 0.7416666666666666,
+      "ci_high": 0.9166666666666666,
+      "validated_accuracy": 0.775,
+      "valid_completion_readiness": 0.656,
+      "false_clarification_rate": 0.12,
+      "unsafe_ready": 0,
+      "exact_schema_rate": 0.9708333333333333,
+      "median_latency_seconds": 22.071222149999812,
+      "total_tokens": 792031,
+      "unavailable_responses": 0
+    },
+    {
+      "sample": "completed_response",
+      "interface": "Function call",
+      "method": "hunyuan / tool_call",
+      "cases": 48,
+      "trials": 240,
+      "decision_accuracy": 0.9041666666666668,
+      "ci_low": 0.8291666666666666,
+      "ci_high": 0.9666666666666668,
+      "validated_accuracy": 0.8041666666666667,
+      "valid_completion_readiness": 0.688,
+      "false_clarification_rate": 0.2,
+      "unsafe_ready": 0,
+      "exact_schema_rate": 0.9916666666666667,
+      "median_latency_seconds": 10.453016950050369,
+      "total_tokens": 702250,
+      "unavailable_responses": 0
+    }
+  ],
+  "selection_rule": "Each planned slot contributes one completed response; model content is scored without response selection."
+}

@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"The numerical outputs, such as the reserve values, mean costs, coverage values, confidence intervals, and bootstrap claims, are produced by the verified workflow and not provided within this response. Clarification is needed before proceeding with the study plan.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The region specified, CAIOS, is not recognized within the list of allowed regions. A valid region must be selected from ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. The horizon (120 minutes) and shortfall cost (20.0) appear to be acceptable, but a correct region is necessary for the study to be properly configured.\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_b18e6d76a53b4d50b2eb75",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1527,
+    "completion_tokens": 279,
+    "total_tokens": 1806,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616124,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-308dcca8-f6bb-9b0c-be37-bef7e257ea32"
+}

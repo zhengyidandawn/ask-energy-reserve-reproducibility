@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_019",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:38:27.719774+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "a8af521a3941edfeb6540b26133161cb371666c19f976bd3e8de035110296018",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request mentions 'one-hour-ish horizon', 'public data', 'standard setup' but does not explicitly specify required study fields. Please provide: 1) region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP); 2) exact horizon_minutes (60, 120, or 180) to replace 'one-hour-ish'; 3) cost_shortfall from supported weights (10, 20, 40). Confirm that 'public data' restricts inputs to observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather.\", \"reason\": \"Explicit study fields are unresolved: region_id absent, horizon_minutes ambiguous ('one-hour-ish' not a supported exact value), cost_shortfall absent. Cost_reserve is set to 1 per study protocol. Clarification required before draft can be accepted.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "The request mentions 'one-hour-ish horizon', 'public data', 'standard setup' but does not explicitly specify required study fields. Please provide: 1) region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP); 2) exact horizon_minutes (60, 120, or 180) to replace 'one-hour-ish'; 3) cost_shortfall from supported weights (10, 20, 40). Confirm that 'public data' restricts inputs to observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather.",
+    "reason": "Explicit study fields are unresolved: region_id absent, horizon_minutes ambiguous ('one-hour-ish' not a supported exact value), cost_shortfall absent. Cost_reserve is set to 1 per study protocol. Clarification required before draft can be accepted.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 1891,
+    "total_tokens": 2264,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1649
+    }
+  },
+  "response_sha256": "f9363678adcb5188ae163392b5d55157fc2fbb0826ad303bcd8cb4946366dde2",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 18.82800760003738,
+  "finished_at": "2026-10-11T15:38:46.548041+00:00"
+}

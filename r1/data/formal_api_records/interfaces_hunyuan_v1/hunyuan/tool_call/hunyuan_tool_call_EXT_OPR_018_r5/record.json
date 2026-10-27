@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_018_r5",
+  "case_id": "EXT_OPR_018",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 5,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "cca4c0bfdbc7fea39251583446f241e62e49b4f97fffe57d94ba3963bd0076c5",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:30:02.831502+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1498,
+    "completion_tokens": 1448,
+    "total_tokens": 2946,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1254
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "e9155873-3b08-4ee2-8e72-5cd914797943",
+  "provider_created": 1791621003,
+  "system_fingerprint": null,
+  "response_sha256": "a52de0f85d9ada28713205631530f2700177ff532ec0269d03254bd6212794d2",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_018",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": false,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "The requested region 'CAIOS' is not among the supported regions (CISO, ERCO, GD, ISNE, MISO, SWPP). Per policy, requests referencing unsupported regions must be rejected. The horizon (120 min) and shortfall cost (20.0) are otherwise valid, but the region identifier is invalid and cannot be safely mapped without operator confirmation. Numerical outputs are produced by the verified workflow when relevant; this request is rejected prior to workflow execution due to an unsupported region identifier, so no numerical outputs are generated. {\"triggered_rules\": [\"unsupported_region_identifier\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": false,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "reject",
+    "reason": "The requested region 'CAIOS' is not among the supported regions (CISO, ERCO, GD, ISNE, MISO, SWPP). Per policy, requests referencing unsupported regions must be rejected. The horizon (120 min) and shortfall cost (20.0) are otherwise valid, but the region identifier is invalid and cannot be safely mapped without operator confirmation.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant; this request is rejected prior to workflow execution due to an unsupported region identifier, so no numerical outputs are generated.",
+    "audit_log": {
+      "triggered_rules": [
+        "unsupported_region_identifier"
+      ],
+      "human_approval_required": false
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 11.475738100009039,
+  "request_finished_at": "2026-10-10T08:30:14.306761+00:00"
+}

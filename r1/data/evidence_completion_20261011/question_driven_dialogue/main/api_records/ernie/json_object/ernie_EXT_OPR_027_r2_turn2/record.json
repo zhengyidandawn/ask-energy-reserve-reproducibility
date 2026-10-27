@@ -1,0 +1,148 @@
+{
+  "task_id": "ernie_EXT_OPR_027_r2_turn2",
+  "case_id": "EXT_OPR_027",
+  "packet": "question_driven_clarification_14",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "5dfcbb448ba6ab5caee89d9efe53b86906d25477e7cd0538db26d03922311158",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-11T05:51:17.372297+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 1507,
+    "completion_tokens": 583,
+    "total_tokens": 2090
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-eyv55nb25b",
+  "provider_created": 1791697879,
+  "system_fingerprint": null,
+  "response_sha256": "6b3bf850b454269e755296536a6e9b0ad80f35be44656d5266e149c2b092ed6e",
+  "checks": {
+    "service": "ernie",
+    "case_id": "EXT_OPR_027",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Numerical outputs are produced by the verified workflow. {\"human_approval_required\": true, \"triggered_rules\": []}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": []
+    },
+    "decision": "accept",
+    "evidence_trace": [
+      {
+        "operator_request": "GD向上备用，缺额惩罚20。时域就用平时那套usual horizon，别再问我要分钟数。"
+      },
+      {
+        "data_dictionary": {
+          "region_id": "GD",
+          "cost_shortfall": 20.0,
+          "cost_reserve": 1.0,
+          "horizon_minutes": 60
+        }
+      },
+      {
+        "decision_time_variable_boundary": "No future information or unavailable issue-time forecasts used."
+      },
+      {
+        "rolling_window_configuration": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        }
+      },
+      {
+        "numerical_workflow_outputs": "Computed by verified workflow only."
+      },
+      {
+        "audit_log": {
+          "human_approval_required": true,
+          "triggered_rules": []
+        }
+      }
+    ],
+    "explanation": "Numerical outputs are produced by the verified workflow.",
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "GD",
+      "horizon_minutes": 60,
+      "cost_reserve": 1.0,
+      "cost_shortfall": 20.0,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "workflow": []
+  },
+  "latency_seconds": 18.148081599967554,
+  "request_finished_at": "2026-10-11T05:51:35.519639+00:00"
+}

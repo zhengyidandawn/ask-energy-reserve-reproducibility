@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"缺少明确的成本参数，需要指定cost_shortfall的确切数值。同时，确认研究任务horizon是120分钟。\", \"study_schema\": null, \"admissible_variables\": [], \"forbidden_variables\": [], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"需要进一步澄清成本参数和任务时长后才能继续进行。请提供缺失的信息以完成请求。\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}",
+              "name": "submit_plan"
+            },
+            "id": "call_ee1f349273074004961aeb",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1516,
+    "completion_tokens": 134,
+    "total_tokens": 1650,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616443,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-8bf5534e-c24c-9592-8893-3637816af5db"
+}

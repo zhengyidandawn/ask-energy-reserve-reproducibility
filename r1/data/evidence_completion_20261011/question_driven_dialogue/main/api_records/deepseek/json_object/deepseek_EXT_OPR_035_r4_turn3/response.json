@@ -1,0 +1,28 @@
+{
+  "id": "4deed137-a9b7-46cc-a067-f40b530a54c8",
+  "object": "chat.completion",
+  "created": 1791698298,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\": [], \"audit_log\": {\"human_approval_required\": false, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"No numerical outputs are produced at this stage; reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results are computed only by the verified numerical workflow. The request is clarified because required study fields remain missing or ambiguous.\", \"forbidden_variables\": [], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"Confirmed so far: horizon_minutes=60. Still missing or ambiguous: (1) task_type is not explicitly stated; the allowed task is upward_reserve_sizing, please confirm. (2) region_id is not stated; allowed regions are CISO, ERCO, GD, ISNE, MISO, SWPP. (3) cost_shortfall is not stated; allowed values are 10.0, 20.0, 40.0 with cost_reserve=1.0. (4) rolling_window is not stated; the required rolling design is train_days=730, cal_days=30, test_days=30, rolling_step_days=30, please confirm. (5) human approval requirement is not acknowledged; requires_human_approval must be true.\", \"study_schema\": null, \"workflow\": []}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2024,
+    "completion_tokens": 310,
+    "total_tokens": 2334,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792
+    },
+    "prompt_cache_hit_tokens": 1792,
+    "prompt_cache_miss_tokens": 232
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

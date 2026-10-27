@@ -1,0 +1,112 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_IMPL_012",
+  "repeat": 1,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_IMPL_012",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:08.373120+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "e4e7b9d1c9a482b588e94932f3a76110ad706145c243c5f67e5d9dbfae5f0322",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": 60,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request specifies valid schema but does not provide explicit numerical results for cost_shortfall. Computed results will follow authorized numerical execution using the accepted default split and default penalty.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "partial_accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Request specifies valid schema but does not provide explicit numerical results for cost_shortfall. Computed results will follow authorized numerical execution using the accepted default split and default penalty.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 122,
+      "total_tokens": 488,
+      "prompt_tokens_details": {
+        "cached_tokens": 362
+      }
+    },
+    "response_sha256": "cbb2124da69db5d44b8ad4c4662720f1ca52b1d53ea8d816cae9872eaacee932",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "partial_accept",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.30578479997348,
+    "finished_at": "2026-10-11T15:37:12.679657+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_IMPL_012",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:08.373120+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "e4e7b9d1c9a482b588e94932f3a76110ad706145c243c5f67e5d9dbfae5f0322",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": 60,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request specifies valid schema but does not provide explicit numerical results for cost_shortfall. Computed results will follow authorized numerical execution using the accepted default split and default penalty.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "partial_accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Request specifies valid schema but does not provide explicit numerical results for cost_shortfall. Computed results will follow authorized numerical execution using the accepted default split and default penalty.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 122,
+      "total_tokens": 488,
+      "prompt_tokens_details": {
+        "cached_tokens": 362
+      }
+    },
+    "response_sha256": "cbb2124da69db5d44b8ad4c4662720f1ca52b1d53ea8d816cae9872eaacee932",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "partial_accept",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.30578479997348,
+    "finished_at": "2026-10-11T15:37:12.679657+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 4.30578479997348,
+  "transport_complete": true
+}

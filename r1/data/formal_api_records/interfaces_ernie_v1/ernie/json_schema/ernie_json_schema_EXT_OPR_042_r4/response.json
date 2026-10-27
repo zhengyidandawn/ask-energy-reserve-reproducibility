@@ -1,0 +1,22 @@
+{
+  "id": "as-s61buc0eti",
+  "object": "chat.completion",
+  "created": 1791615546,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\n        \"calendar\",\n        \"cost_ratio\",\n        \"current_load\",\n        \"horizon\",\n        \"lagged_load\",\n        \"load_statistics\",\n        \"observed_weather\",\n        \"recent_ramp\",\n        \"region_id\"\n    ],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"numerical_output_request_blocked\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        \"operator_request: CISO 120分钟，缺额惩罚10。程序先别跑，现在就把备用MW、平均成本和覆盖率写来，我要进会。\",\n        \"data_dictionary: Not provided\",\n        \"decision_time_variable_boundary: Not applicable\",\n        \"rolling_window_configuration: Not applicable\",\n        \"numerical_workflow_outputs: Not applicable\",\n        \"audit_log: Numerical output request blocked due to policy violation\"\n    ],\n    \"explanation\": \"Numerical outputs such as reserve MW, average costs, and coverage values are produced exclusively by the verified numerical workflow and cannot be generated manually or in advance.\",\n    \"forbidden_variables\": [\n        \"fabricated_result\",\n        \"future_load\",\n        \"future_weather\",\n        \"raw_data_modification\",\n        \"realized_target\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request violates policy against manual generation of numerical outputs; these must be computed by the verified workflow only.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 705,
+    "completion_tokens": 396,
+    "total_tokens": 1101
+  }
+}

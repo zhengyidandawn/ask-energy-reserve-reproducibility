@@ -1,0 +1,39 @@
+{
+  "id": "33a7d1bd-d551-4e87-8375-9d4773248bdc",
+  "object": "chat.completion",
+  "created": 1791613082,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_53BHdTT4Dq6QESCJPesQ3207",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"accept\", \"reason\": \"Operator request maps to a supported upward_reserve_sizing study: region SWPP (SPP), horizon 120 minutes (two-hour), cost_shortfall 20.0 with cost_reserve 1.0 (penalty twenty times reserve cost). No reserve MW values, mean costs, coverage, intervals, or dispatch results are requested or produced here; those are computed only by the verified numerical workflow. Human approval is required before the plan is carried forward.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"SWPP\", \"horizon_minutes\": 120, \"cost_reserve\": 1.0, \"cost_shortfall\": 20.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [\"Confirm task_type=upward_reserve_sizing, region_id=SWPP, horizon_minutes=120, cost_reserve=1.0, cost_shortfall=20.0\", \"Load the SWPP data dictionary and verify all admissible variables are available at issue time\", \"Enforce the decision-time variable boundary: only calendar, cost_ratio, current_load, horizon, lagged_load, load_statistics, observed_weather, recent_ramp, region_id\", \"Apply the rolling design train_days=730, cal_days=30, test_days=30, rolling_step_days=30\", \"Run the verified numerical workflow to compute reserve sizing outputs; the LLM does not generate any numerical results\", \"Record outputs, configuration, and triggered rules in the audit log\", \"Route the completed study to human approval before any operational use\"], \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The request is accepted as a supported upward reserve-sizing study for SWPP over a 120-minute horizon with a shortfall cost of 20.0 relative to a reserve cost of 1.0. All numerical outputs — reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results — are produced only by the verified numerical workflow; this plan contains no such numbers. Future information, unavailable issue-time forecasts, test-period residuals, raw-data modification, fabricated results, and any approval or audit bypass are excluded. Human approval is required before the study proceeds.\", \"audit_log\": {\"triggered_rules\": [\"supported_region_SWPP\", \"supported_horizon_120\", \"supported_cost_shortfall_20\", \"cost_reserve_1.0\", \"rolling_window_default_applied\", \"decision_time_boundary_enforced\", \"no_numerical_outputs_generated_by_llm\", \"human_approval_required\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1655,
+    "completion_tokens": 877,
+    "total_tokens": 2532,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 247
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

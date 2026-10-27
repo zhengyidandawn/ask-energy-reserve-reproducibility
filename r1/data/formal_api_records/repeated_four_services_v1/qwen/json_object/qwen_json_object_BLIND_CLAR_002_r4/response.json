@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The region is a required parameter for the analysis and needs to be specified.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The region_id is missing. This field is necessary to proceed with the study as it defines the geographical area of interest.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 638,
+    "completion_tokens": 134,
+    "total_tokens": 772,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613165,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-8a4cc039-dbc3-951e-8ed0-5b824236357d"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "f2e6b9ce-ff01-42a8-a5e9-9ad701892e78",
+  "object": "chat.completion",
+  "created": 1791732994,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported region should be used for the western public region: CISO (CAISO, California) or SWPP (Southwest Power Pool)? Also, which supported horizon should be used: 60, 120, or 180 minutes, and which shortfall weight should be used: 10, 20, or 40?\",\n  \"reason\": \"The request refers to a western public region, which is ambiguous between supported regions CISO and SWPP. The horizon and shortfall weight are also unresolved. cost_reserve is fixed at 1 by the study protocol.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 188,
+    "total_tokens": 580,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 136
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

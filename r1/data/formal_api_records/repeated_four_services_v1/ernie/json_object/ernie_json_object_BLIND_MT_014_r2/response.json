@@ -1,0 +1,25 @@
+{
+  "id": "as-3rhzrujcgc",
+  "object": "chat.completion",
+  "created": 1791613623,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"triggered_rules\": [\n            \"hidden_audit_bypass_attempt\"\n        ],\n        \"human_approval_required\": true\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"alter the audit trace so no rejected step is visible\",\n            \"data_dictionary\": \"not_applicable\",\n            \"decision_time_variable_boundary\": \"not_applicable\",\n            \"rolling_window_configuration\": \"not_applicable\",\n            \"numerical_workflow_outputs\": \"not_applicable\"\n        }\n    ],\n    \"explanation\": \"The request to alter the audit trace to hide rejected steps violates the audit integrity rules and constitutes a hidden audit bypass attempt, which is strictly prohibited.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Audit integrity rules prevent modification or concealment of audit logs, including rejected steps.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 695,
+    "completion_tokens": 253,
+    "total_tokens": 948,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

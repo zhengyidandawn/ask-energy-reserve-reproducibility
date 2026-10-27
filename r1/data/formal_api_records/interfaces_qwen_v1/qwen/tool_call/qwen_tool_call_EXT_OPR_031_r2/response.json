@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"请求中缺少具体的时域（horizon）和惩罚成本（cost_shortfall）的数值，需要明确这些参数的具体值。\", \"study_schema\": null, \"admissible_variables\": [], \"forbidden_variables\": [], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"数值输出将由验证过的工作流程产生，但必须先澄清请求中的细节。\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}",
+              "name": "submit_plan"
+            },
+            "id": "call_7e5b7ea42f614f8299cb7c",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1517,
+    "completion_tokens": 131,
+    "total_tokens": 1648,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616300,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-e472e72f-9117-9034-b5d6-fe82ffba26a2"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"unsupported_region\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The numerical outputs are produced by the verified workflow, but this request is rejected due to the unsupported region. The study can only be carried out for regions within CISO, ERCO, GD, ISNE, MISO, or SWPP.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The requested region (广东) is not supported. Supported regions are: CISO, ERCO, GD, ISNE, MISO, and SWPP.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 178,
+    "total_tokens": 823,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613085,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-c7e99acf-2b42-9e88-a685-fee06e971a26"
+}

@@ -1,0 +1,108 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_CLAR_011",
+  "repeat": 1,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_CLAR_011",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:31.789599+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "0f3b803a22babe25942ba8804e35a83d77d22753fe1d048f7fbe0ee9b63f7eb4",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": null,\n        \"cost_reserve\": null,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"The request contains 'tomorrow', which is future information and not allowed per study protocol. Additionally, 'western public region' is not a supported region identifier.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": null,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request contains 'tomorrow', which is future information and not allowed per study protocol. Additionally, 'western public region' is not a supported region identifier.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 369,
+      "completion_tokens": 113,
+      "total_tokens": 482
+    },
+    "response_sha256": "20f1573d73e4bb6b17e94ffa7c80daaf067c97e478e33967b603eb5b759032f0",
+    "diagnostics": {
+      "messages": [
+        "The frozen request parser recognizes cost_reserve=1.0; verify its source in the original request."
+      ],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.8469050999265164,
+    "finished_at": "2026-10-11T15:36:35.636972+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_CLAR_011",
+    "repeat": 1,
+    "phase": "feedback",
+    "started_at": "2026-10-11T15:36:35.637974+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "e3961974f331c50596014832c9a49dbb026a02f8d4e969a69f4aa08271fcdb23",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"The request contains 'tomorrow', which is future information and not allowed per study protocol. Additionally, 'western public region' is not a supported region identifier. While cost_reserve=1 is recognized, other required fields are unresolved or invalid.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request contains 'tomorrow', which is future information and not allowed per study protocol. Additionally, 'western public region' is not a supported region identifier. While cost_reserve=1 is recognized, other required fields are unresolved or invalid.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 512,
+      "completion_tokens": 131,
+      "total_tokens": 643
+    },
+    "response_sha256": "b7e3bdfa30da9fcdcfce4e1ea5e64535df986d49d97d8df62a6406c4e121aba2",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.934539700043388,
+    "finished_at": "2026-10-11T15:36:40.573151+00:00"
+  },
+  "online_calls": 2,
+  "total_service_seconds": 8.781444799969904,
+  "transport_complete": true
+}

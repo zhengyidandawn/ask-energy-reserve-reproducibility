@@ -1,0 +1,25 @@
+{
+  "id": "as-188qn17tfi",
+  "object": "chat.completion",
+  "created": 1791733031,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request specifies valid schema but does not provide numerical values for horizon_minutes and cost_shortfall. Computed results will follow authorized numerical execution with accepted default values.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 119,
+    "total_tokens": 485,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

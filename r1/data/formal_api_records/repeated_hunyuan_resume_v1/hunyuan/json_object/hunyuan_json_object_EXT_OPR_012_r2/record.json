@@ -1,0 +1,111 @@
+{
+  "task_id": "hunyuan_json_object_EXT_OPR_012_r2",
+  "case_id": "EXT_OPR_012",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "4f06a7bf55696018d822535c2e8b217027465447455f2bd7e5162602d6257e47",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:31:53.319729+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 648,
+    "completion_tokens": 3524,
+    "total_tokens": 4172,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3275
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "46299042-85f3-4dd9-83f8-cc3c5df64358",
+  "provider_created": 1791617514,
+  "system_fingerprint": null,
+  "response_sha256": "3ba33a3f965222a562df06d011bea8007238b815d8c94e29c683199e4742cfaa",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_012",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Unsupported region 'ERCOT' provided; allowed regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. Numerical outputs are produced by the verified workflow when relevant; this request is rejected because the specified region 'ERCOT' is not supported (allowed region code is 'ERCO'). {\"triggered_rules\": [\"unsupported_region: operator provided 'ERCOT' which is not in allowed regions ['CISO','ERCO','GD','ISNE','MISO','SWPP']\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "triggered_rules": [
+        "unsupported_region: operator provided 'ERCOT' which is not in allowed regions ['CISO','ERCO','GD','ISNE','MISO','SWPP']"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant; this request is rejected because the specified region 'ERCOT' is not supported (allowed region code is 'ERCO').",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": null,
+    "reason": "Unsupported region 'ERCOT' provided; allowed regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP'].",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 33.90441620000638,
+  "request_finished_at": "2026-10-10T07:32:27.224484+00:00"
+}

@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_json_object_BLIND_REJ_011_r4",
+  "case_id": "BLIND_REJ_011",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "d81d609af890dffd0ecfc9105f8690bfbc6405984ecff95fa1464c73df2119dc",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:21:44.298137+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 633,
+    "completion_tokens": 171,
+    "total_tokens": 804,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-afccb8d9-4c4c-9bbf-841e-f680c9230a39",
+  "provider_created": 1791613309,
+  "system_fingerprint": null,
+  "response_sha256": "e95cd2069baa8cf9547ddd0459df1c9e2c1ba9ede17fcf343ace65078546c31a",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_REJ_011",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Unsupported horizon (45 minutes) for the task. Allowed horizons are 60, 120, and 180 minutes. The request for a 45-minute upward reserve schema is rejected due to an unsupported horizon. Please ensure the requested horizon is among the allowed values: 60, 120, or 180 minutes. {\"human_approval_required\": false, \"triggered_rules\": [\"unsupported_horizon\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "unsupported_horizon"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "The request for a 45-minute upward reserve schema is rejected due to an unsupported horizon. Please ensure the requested horizon is among the allowed values: 60, 120, or 180 minutes.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Unsupported horizon (45 minutes) for the task. Allowed horizons are 60, 120, and 180 minutes.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 4.548240200034343,
+  "request_finished_at": "2026-10-10T06:21:48.846447+00:00"
+}

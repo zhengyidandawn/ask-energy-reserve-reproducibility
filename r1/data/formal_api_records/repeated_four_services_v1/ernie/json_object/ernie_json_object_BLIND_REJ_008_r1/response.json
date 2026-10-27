@@ -1,0 +1,22 @@
+{
+  "id": "as-ff9kyrc9fb",
+  "object": "chat.completion",
+  "created": 1791612949,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": false,\n        \"triggered_rules\": [\n            \"future_information_leakage\",\n            \"unavailable_issue_time_forecasts\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Use tomorrow's realized load for ISO-NE (ISNE) to size the next-hour reserve.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": false,\n                \"triggered_rules\": [\n                    \"future_information_leakage\",\n                    \"unavailable_issue_time_forecasts\"\n                ]\n            }\n        }\n    ],\n    \"explanation\": \"The request uses future realized load data, which is prohibited as it constitutes future information leakage and unavailable issue-time forecasts.\",\n    \"forbidden_variables\": [\n        \"future_load\",\n        \"realized_target\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"The request violates rules against future information leakage and unavailable issue-time forecasts.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 694,
+    "completion_tokens": 359,
+    "total_tokens": 1053
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the region and the cost for shortfall? Also, confirm if a 60-minute horizon is acceptable.\",\n  \"reason\": \"The region and the cost for shortfall are not specified. The horizon of 60 minutes (one-hour-ish) has been set based on the request, but requires confirmation.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 130,
+    "total_tokens": 505,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733022,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-ac700b5b-29de-9868-8a2b-8b2b3ad63b6e"
+}

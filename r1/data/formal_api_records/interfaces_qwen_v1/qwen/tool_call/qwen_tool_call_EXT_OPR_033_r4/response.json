@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"数值输出将由验证工作流产生。但是，需要澄清一些研究参数。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"请求中的时段被指定为45分钟，但允许的时段是60、120或180分钟。请确认是否应使用最接近的允许值60分钟继续。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_5a1632289c0a4e0389831b",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1520,
+    "completion_tokens": 211,
+    "total_tokens": 1731,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616447,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-ff115bf6-3d1b-916f-9e62-fa539a35a96b"
+}

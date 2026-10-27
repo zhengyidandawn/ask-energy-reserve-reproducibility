@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_029_r4",
+  "case_id": "EXT_OPR_029",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 4,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "ed1919416520cbdf5b806a270c4496279c473b9a65b447f1b2366fe79a464529",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:28:54.432637+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1489,
+    "completion_tokens": 1382,
+    "total_tokens": 2871,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1133
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "59e5c127-9e01-40a9-88fb-a1a644ba6da8",
+  "provider_created": 1791620935,
+  "system_fingerprint": null,
+  "response_sha256": "d444f852d7da8667b70b3ec2e04a4c141b7c1ffbeb971c2a28a7806ee32abe4a",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_029",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The request specifies region CISO and task upward_reserve_sizing but does not specify horizon_minutes or cost_shortfall. No default horizon or shortfall cost is defined in the study schema; the instruction to 'use the usual ones' does not map to a single admissible value among allowed horizons [60,120,180] and costs [10.0,20.0,40.0]. These required fields are missing/ambiguous and must be clarified before the study can be accepted. Numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced exclusively by the verified numerical workflow and are not generated here. This request is returned for clarification because required study parameters (horizon_minutes, cost_shortfall) are unspecified and no schema-defined default exists. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "The request specifies region CISO and task upward_reserve_sizing but does not specify horizon_minutes or cost_shortfall. No default horizon or shortfall cost is defined in the study schema; the instruction to 'use the usual ones' does not map to a single admissible value among allowed horizons [60,120,180] and costs [10.0,20.0,40.0]. These required fields are missing/ambiguous and must be clarified before the study can be accepted.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "Numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced exclusively by the verified numerical workflow and are not generated here. This request is returned for clarification because required study parameters (horizon_minutes, cost_shortfall) are unspecified and no schema-defined default exists.",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 12.381941200001165,
+  "request_finished_at": "2026-10-10T08:29:06.814203+00:00"
+}

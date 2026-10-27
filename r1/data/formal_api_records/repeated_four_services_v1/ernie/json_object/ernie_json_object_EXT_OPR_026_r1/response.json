@@ -1,0 +1,22 @@
+{
+  "id": "as-fs2q5kxd6y",
+  "object": "chat.completion",
+  "created": 1791613192,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        \"operator_request\",\n        \"data_dictionary\",\n        \"decision_time_variable_boundary\",\n        \"rolling_window_configuration\",\n        \"numerical_workflow_outputs\",\n        \"audit_log\"\n    ],\n    \"explanation\": \"Numerical outputs are produced by the verified workflow when relevant. Region and horizon values are missing and need confirmation from the operator.\",\n    \"reason\": \"Missing or ambiguous fields: region_id, horizon_minutes\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"study_schema\": null,\n    \"workflow\": [],\n    \"audit_log\": {\n        \"triggered_rules\": [\"clarification_required\"],\n        \"human_approval_required\": false\n    }\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 694,
+    "completion_tokens": 282,
+    "total_tokens": 976
+  }
+}

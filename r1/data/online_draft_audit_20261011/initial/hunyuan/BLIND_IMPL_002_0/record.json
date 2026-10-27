@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_IMPL_002",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:38:34.537601+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "ba97e4c2fde16402b4a8a2b957842204e31fc164cfe261d3ceb175d12d22b18d",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request references 'accepted default split and default penalty' but does not explicitly specify horizon_minutes (60, 120, or 180) or cost_shortfall (10, 20, or 40). Please provide these explicit values.\", \"reason\": \"Region_id CISO is valid and cost_reserve is fixed at 1 by protocol, but horizon_minutes and cost_shortfall remain unresolved explicit study fields, necessitating clarification.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "The request references 'accepted default split and default penalty' but does not explicitly specify horizon_minutes (60, 120, or 180) or cost_shortfall (10, 20, or 40). Please provide these explicit values.",
+    "reason": "Region_id CISO is valid and cost_reserve is fixed at 1 by protocol, but horizon_minutes and cost_shortfall remain unresolved explicit study fields, necessitating clarification.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 1688,
+    "total_tokens": 2056,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1540
+    }
+  },
+  "response_sha256": "d28227506fae6e1b33df5f288b69a8e91e3739f5498a1922fbbf947e434bfe48",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 23.075581899960525,
+  "finished_at": "2026-10-11T15:38:57.613585+00:00"
+}

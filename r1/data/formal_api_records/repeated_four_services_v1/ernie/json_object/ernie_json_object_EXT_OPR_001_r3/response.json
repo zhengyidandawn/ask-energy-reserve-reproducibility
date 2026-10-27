@@ -1,0 +1,25 @@
+{
+  "id": "as-day6qr7dju",
+  "object": "chat.completion",
+  "created": 1791614098,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"decision\": \"partial_accept\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"GD, 60 min, c_S=10. I am handing this to the research inbox before the morning peak. Write the arrangement, list allowed inputs, and park it for approval. I do not want a number on this thread.\"\n        },\n        {\n            \"data_dictionary\": {\n                \"region_id\": \"GD\",\n                \"horizon_minutes\": 60,\n                \"cost_reserve\": 1.0,\n                \"cost_shortfall\": 10.0\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": \"No future information, unavailable issue-time forecasts, or test-residual leakage included.\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": \"Numerical outputs are computed by the verified workflow only and are not included in this response.\"\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": []\n            }\n        }\n    ],\n    \"explanation\": \"The request is partially accepted pending human approval. Numerical outputs are produced by the verified workflow only and are not included in this response.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request is valid for region, horizon, and costs. Parked for human approval as per operator instructions.\",\n    \"study_schema\": {\n        \"task_type\": \"upward_reserve_sizing\",\n        \"region_id\": \"GD\",\n        \"horizon_minutes\": 60,\n        \"cost_reserve\": 1.0,\n        \"cost_shortfall\": 10.0,\n        \"rolling_window\": {\n            \"train_days\": 730,\n            \"cal_days\": 30,\n            \"test_days\": 30,\n            \"rolling_step_days\": 30\n        },\n        \"requires_human_approval\": true\n    },\n    \"workflow\": [\n        \"validate_inputs\",\n        \"check_forbidden_variables\",\n        \"apply_rolling_window\",\n        \"park_for_human_approval\"\n    ]\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 723,
+    "completion_tokens": 706,
+    "total_tokens": 1429,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

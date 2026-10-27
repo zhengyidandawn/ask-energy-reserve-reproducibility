@@ -1,0 +1,112 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_CLAR_012",
+  "repeat": 4,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_CLAR_012",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:44.722649+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "6912898e60c025c74f507a492a1c051bd75efcd751aa91a2363c2cc857232919",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 20\n  },\n  \"clarification_question\": \"Could you please specify the region for this analysis from the supported list: GD (Guangdong, China), ERCO (ERCOT, Texas), CISO (CAISO, California), ISNE (ISO New England), MISO (Midcontinent), and SWPP (Southwest Power Pool)?\",\n  \"reason\": \"The region is a required field and was not provided in the request.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": 20
+      },
+      "clarification_question": "Could you please specify the region for this analysis from the supported list: GD (Guangdong, China), ERCO (ERCOT, Texas), CISO (CAISO, California), ISNE (ISO New England), MISO (Midcontinent), and SWPP (Southwest Power Pool)?",
+      "reason": "The region is a required field and was not provided in the request.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 376,
+      "completion_tokens": 147,
+      "total_tokens": 523,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "d9ba2716bd92f2277e68162966c57301ef055598f5b97b3df940e59edf38fd3c",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.6472829000558704,
+    "finished_at": "2026-10-11T15:36:48.370217+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_CLAR_012",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:44.722649+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "6912898e60c025c74f507a492a1c051bd75efcd751aa91a2363c2cc857232919",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 20\n  },\n  \"clarification_question\": \"Could you please specify the region for this analysis from the supported list: GD (Guangdong, China), ERCO (ERCOT, Texas), CISO (CAISO, California), ISNE (ISO New England), MISO (Midcontinent), and SWPP (Southwest Power Pool)?\",\n  \"reason\": \"The region is a required field and was not provided in the request.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": 20
+      },
+      "clarification_question": "Could you please specify the region for this analysis from the supported list: GD (Guangdong, China), ERCO (ERCOT, Texas), CISO (CAISO, California), ISNE (ISO New England), MISO (Midcontinent), and SWPP (Southwest Power Pool)?",
+      "reason": "The region is a required field and was not provided in the request.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 376,
+      "completion_tokens": 147,
+      "total_tokens": 523,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "d9ba2716bd92f2277e68162966c57301ef055598f5b97b3df940e59edf38fd3c",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.6472829000558704,
+    "finished_at": "2026-10-11T15:36:48.370217+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 3.6472829000558704,
+  "transport_complete": true
+}

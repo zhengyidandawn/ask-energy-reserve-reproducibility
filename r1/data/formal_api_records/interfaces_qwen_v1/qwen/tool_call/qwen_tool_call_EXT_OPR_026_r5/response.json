@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"数值输出将由经过验证的工作流产生。目前需要澄清region_id和horizon_minutes的值。\", \"forbidden_variables\": [], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"请求中缺少区域ID（region_id）和时间范围（horizon_minutes），无法确定研究参数。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_428cf12f7f53418ca51c0b",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1519,
+    "completion_tokens": 130,
+    "total_tokens": 1649,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616485,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-3bc43abc-3349-9c8b-b2c5-de2eeae580ec"
+}

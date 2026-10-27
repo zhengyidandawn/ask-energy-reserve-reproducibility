@@ -1,0 +1,47 @@
+{
+  "case_id": "SF-09",
+  "service": "hunyuan",
+  "repeat": 2,
+  "phase": "initial",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:59:18.598826+00:00",
+  "status": "success",
+  "request_sha256": "d7ba43f50be06758eb88b4342d4654c531ae269a20dd8b92084a8e3417512add",
+  "returned_model": "hy3",
+  "usage": {
+    "prompt_tokens": 302,
+    "completion_tokens": 1499,
+    "total_tokens": 1801,
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1378
+    }
+  },
+  "content": "{\"decision\": \"accept\", \"study\": {\"region\": \"DE\", \"horizon_minutes\": 60, \"feature_mode\": \"full\", \"shortfall_weight\": 20, \"required_coverage\": 0.95, \"reporting\": \"tail\", \"human_authorization_required\": true}, \"missing_fields\": [], \"reason\": \"All required study fields explicitly supplied: region DE, horizon 60, full features, shortfall weight 20, coverage 0.95, tail reporting, human authorization required. Request uses supported horizon and keeps authorization.\"}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "DE",
+      "horizon_minutes": 60,
+      "feature_mode": "full",
+      "shortfall_weight": 20,
+      "required_coverage": 0.95,
+      "reporting": "tail",
+      "human_authorization_required": true
+    },
+    "missing_fields": [],
+    "reason": "All required study fields explicitly supplied: region DE, horizon 60, full features, shortfall weight 20, coverage 0.95, tail reporting, human authorization required. Request uses supported horizon and keeps authorization."
+  },
+  "checks": {
+    "decision": "accept",
+    "execution_ready": true,
+    "corrections": 0,
+    "rules": []
+  },
+  "response_sha256": "f08f6aee5c69a9e0a496b82639cab44c168f1dc00255c95eb5882287dc86e034",
+  "latency_seconds": 17.58805509994272,
+  "request_finished_at": "2026-10-11T10:59:36.187306+00:00"
+}

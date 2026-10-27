@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"triggered_rules\": [\"invalid_cost_shortfall\"],\n    \"human_approval_required\": true\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The cost shortfall value of 17 is not within the allowed values [10.0, 20.0, 40.0]. Numerical outputs are produced by the verified workflow, but this request cannot proceed due to an invalid cost shortfall value.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The specified cost shortfall (c_S) of 17 is not one of the allowed values [10.0, 20.0, 40.0].\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 635,
+    "completion_tokens": 188,
+    "total_tokens": 823,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614160,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-8d8ec4c1-254e-986c-8c5c-31cf754e0e8c"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "as-h1m0ghiypa",
+  "object": "chat.completion",
+  "created": 1791613632,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"evidence_trace_not_included_for_demonstration\"]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [],\n    \"explanation\": \"Numerical outputs are produced by the verified workflow only. Evidence trace omitted per operator request for demonstration.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Evidence trace intentionally excluded to demonstrate audit log structure\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 154,
+    "total_tokens": 845
+  }
+}

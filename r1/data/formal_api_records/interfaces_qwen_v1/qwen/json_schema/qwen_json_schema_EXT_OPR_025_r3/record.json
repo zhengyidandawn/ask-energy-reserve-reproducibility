@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_json_schema_EXT_OPR_025_r3",
+  "case_id": "EXT_OPR_025",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "json_schema",
+  "repeat": 3,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "576ad6d000e7efd50c92d8b7d622d8d4834f49f09bc8f94572aff518d8396ff6",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:53:14.051020+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 649,
+    "completion_tokens": 156,
+    "total_tokens": 805,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-40b948c1-a95c-9d9c-a28e-304aa7c23ca4",
+  "provider_created": 1791615198,
+  "system_fingerprint": null,
+  "response_sha256": "a11aaf4029cfc1a69ce11ba4cf64cdf75298d50dce3a354d55fe32639a52cba2",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_025",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The horizon is not clearly specified, and it needs to be one of 60, 120, or 180 minutes. Please provide a clear and specific horizon value for the study. The numerical outputs will be produced by the verified workflow once all required details are clarified and approved. {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "The numerical outputs will be produced by the verified workflow once all required details are clarified and approved.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The horizon is not clearly specified, and it needs to be one of 60, 120, or 180 minutes. Please provide a clear and specific horizon value for the study.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 4.078651300049387,
+  "request_finished_at": "2026-10-10T06:53:18.128938+00:00"
+}

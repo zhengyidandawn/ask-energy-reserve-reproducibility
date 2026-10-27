@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"current_load\", \"lagged_load\", \"recent_ramp\"], \"audit_log\": {\"triggered_rules\": [], \"human_approval_required\": true}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The numerical outputs will be produced by the verified workflow, which follows the approved study schema and adheres to the policy of requiring human approval before proceeding.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The request is clear and complies with the constraints. It specifies a valid region, horizon, and cost, and it does not include any prohibited variables or actions. The plan is ready for review by the human approval process as per the operator's request.\", \"study_schema\": {\"cost_reserve\": 1, \"cost_shortfall\": 40, \"horizon_minutes\": 60, \"region_id\": \"SWPP\", \"requires_human_approval\": true, \"rolling_window\": {\"cal_days\": 30, \"rolling_step_days\": 30, \"test_days\": 30, \"train_days\": 730}, \"task_type\": \"upward_reserve_sizing\"}, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_c8da9f1ebc094022b4a115",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1537,
+    "completion_tokens": 319,
+    "total_tokens": 1856,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616502,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-1a19f680-fb4a-90b1-ae46-4adaf09ba746"
+}

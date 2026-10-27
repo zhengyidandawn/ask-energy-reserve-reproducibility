@@ -1,0 +1,116 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_NUM_003",
+  "repeat": 3,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_NUM_003",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:53.428112+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "b8742b294f3eb78c2e713e0eee7a438c2ddf6425288e86de4d3108530503879c",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request asks for a 95% confidence interval for ISNE's reserve result before the workflow has run, which requires future information and computed numerical results. Numerical reserve quantities, costs, coverage, and intervals are reserved for the numerical program and cannot be produced in this draft.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request asks for a 95% confidence interval for ISNE's reserve result before the workflow has run, which requires future information and computed numerical results. Numerical reserve quantities, costs, coverage, and intervals are reserved for the numerical program and cannot be produced in this draft.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 133,
+      "total_tokens": 534,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 145
+    },
+    "response_sha256": "f7128ed10a49171e336e437868fe7e517b5e8f283dcd4ef6d579675f4b2d0037",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.3833242999389768,
+    "finished_at": "2026-10-11T15:36:54.811840+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_NUM_003",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:53.428112+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "b8742b294f3eb78c2e713e0eee7a438c2ddf6425288e86de4d3108530503879c",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request asks for a 95% confidence interval for ISNE's reserve result before the workflow has run, which requires future information and computed numerical results. Numerical reserve quantities, costs, coverage, and intervals are reserved for the numerical program and cannot be produced in this draft.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request asks for a 95% confidence interval for ISNE's reserve result before the workflow has run, which requires future information and computed numerical results. Numerical reserve quantities, costs, coverage, and intervals are reserved for the numerical program and cannot be produced in this draft.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 133,
+      "total_tokens": 534,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 145
+    },
+    "response_sha256": "f7128ed10a49171e336e437868fe7e517b5e8f283dcd4ef6d579675f4b2d0037",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.3833242999389768,
+    "finished_at": "2026-10-11T15:36:54.811840+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.3833242999389768,
+  "transport_complete": true
+}

@@ -1,0 +1,126 @@
+{
+  "task_id": "qwen_json_object_BLIND_CLAR_020_r1",
+  "case_id": "BLIND_CLAR_020",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 1,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "13d0a9a734d761210b8b49e17ee4c2768cfcb0b5164c4b9fb34685a4dfbedc4b",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:10:11.196781+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 633,
+    "completion_tokens": 321,
+    "total_tokens": 954,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-2d6ee174-664f-966b-a904-f16c95826757",
+  "provider_created": 1791612619,
+  "system_fingerprint": null,
+  "response_sha256": "a4cb2a5569723dacce619e605cced162d1a9f8434fe88f079a1bf3d74594b6e5",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_CLAR_020",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": false,
+    "rejection_correctness": true,
+    "clarification_correctness": false,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": true,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "The request has been accepted with all default parameters. Numerical outputs will be produced by the verified workflow. {\"human_approval_required\": true, \"triggered_rules\": []}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": []
+    },
+    "decision": "accept",
+    "evidence_trace": [
+      "operator_request",
+      "data_dictionary",
+      "decision_time_variable_boundary",
+      "rolling_window_configuration",
+      "numerical_workflow_outputs",
+      "audit_log"
+    ],
+    "explanation": "The request has been accepted with all default parameters. Numerical outputs will be produced by the verified workflow.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "CISO",
+      "horizon_minutes": 60,
+      "cost_reserve": 1.0,
+      "cost_shortfall": 10.0,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "workflow": []
+  },
+  "latency_seconds": 8.023985599982552,
+  "request_finished_at": "2026-10-10T06:10:19.220812+00:00"
+}

@@ -1,0 +1,52 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_STD_011",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:04.577601+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "435a67a4e02b0351502a42f93c5c8aef6e69f3634a2a904da3526626ab93b453",
+  "returned_model": "deepseek-flash",
+  "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ERCO\",\"horizon_minutes\":180,\"cost_reserve\":1,\"cost_shortfall\":10},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported and resolved: region ERCO, horizon 180 minutes, reserve cost fixed at 1 by protocol, and shortfall weight 10. Evidence trace is a valid audit requirement.\",\"human_approval_required\":true}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 180,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "All explicit study fields are supported and resolved: region ERCO, horizon 180 minutes, reserve cost fixed at 1 by protocol, and shortfall weight 10. Evidence trace is a valid audit requirement.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 415,
+    "completion_tokens": 95,
+    "total_tokens": 510,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 159
+  },
+  "response_sha256": "86f6255f554d3b0cd896503ad5fc6232883ca7acc1001855225b9970e3d056c3",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.255944999982603,
+  "finished_at": "2026-10-11T15:37:05.833815+00:00"
+}

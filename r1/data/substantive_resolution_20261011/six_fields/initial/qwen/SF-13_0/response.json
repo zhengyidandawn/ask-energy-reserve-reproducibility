@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"reject\",\n  \"study\": null,\n  \"missing_fields\": [],\n  \"reason\": \"The request for future realized load to improve the fit is not possible, as it bypasses the requirement for using only authorized and available data.\"\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 313,
+    "completion_tokens": 54,
+    "total_tokens": 367,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791716141,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-bb0c583c-f421-99a3-886a-c100d2e6d2eb"
+}

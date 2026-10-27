@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"decision\": \"accept\", \"study\": {\"region\": \"DE\", \"horizon_minutes\": 60, \"feature_mode\": \"history_calendar\", \"shortfall_weight\": 20, \"required_coverage\": 0.95, \"reporting\": \"standard\", \"human_authorization_required\": true}, \"missing_fields\": [], \"reason\": \"All six required study fields explicitly supplied; human authorization retained; supported horizon and no future realized information requested.\"}",
+        "reasoning_content": "We need to parse the user request and produce a JSON object with keys: decision, study, missing_fields, reason.\n\nUser says: \"Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use features restricted to load history and calendar. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.\"\n\nWe need to map to required study fields:\n- region: DE or AT. User says Germany => DE.\n- horizon_minutes: 60,120,180. User says 60-minute horizon => 60.\n- feature_mode: full or history_calendar. User says \"features restricted to load history and calendar\" => that matches \"history_calendar\" (as defined: history_calendar means the restricted load history and calendar set). So feature_mode = \"history_calendar\".\n- shortfall_weight: 10,20,40. User says shortfall weight 20 => 20.\n- required_coverage: 0.95 or 0.975. User says 0.95 => 0.95.\n- reporting: standard or tail. User says \"Report coverage, mean reserve and cost.\" That is standard reporting (standard gives coverage, mean reserve and cost; tail also adds tail shortfall). So reporting = \"standard\".\n- human_authorization_required: true. User says \"Keep human authorization before the recorded calculation.\" That implies human_authorization_required = true. Also the instruction says \"Keep human authorization in an accepted plan.\" So we set true.\n\nAll six study fields are explicitly supplied? Let's check:\nregion: DE (explicit from Germany)\nhorizon_minutes: 60 (explicit)\nfeature_mode: history_calendar (explicit from restricted load history and calendar)\nshortfall_weight: 20 (explicit)\nrequired_coverage: 0.95 (explicit)\nreporting: standard (explicit from report coverage, mean reserve and cost)\nhuman_authorization_required: true (explicit from keep human authorization)\n\nSo missing_fields = [].\n\nDecision: accept? Check for reject conditions: \"Reject requests for future realized information, bypassing human authorization, or an unsupported horizon.\" There's no future realized info requested. Human authorization is required and kept, not bypassed. Horizon is 60, supported. So accept.\n\nAlso note: \"Every study uses reserve weight one.\" The user said reserve weight 1, which matches. But reserve weight is not a field in study object; it's just a constant. The instruction says \"Every study uses reserve weight one.\" So we don't include it in study object; it's implied. The study object has exactly the listed keys. So we must output study with exactly those keys.\n\nNow we need to output the JSON object with those keys. The instruction: \"Output the plan fields only.\" Means just the JSON object, no extra text.\n\nWe need to ensure JSON format correct.\n\nLet's construct:\n\n{\n  \"decision\": \"accept\",\n  \"study\": {\n    \"region\": \"DE\",\n    \"horizon_minutes\": 60,\n    \"feature_mode\": \"history_calendar\",\n    \"shortfall_weight\": 20,\n    \"required_coverage\": 0.95,\n    \"reporting\": \"standard\",\n    \"human_authorization_required\": true\n  },\n  \"missing_fields\": [],\n  \"reason\": \"All required study fields supplied and request compliant with constraints.\"\n}\n\nBut reason should be a string. Could be something like \"All six study fields explicitly provided; human authorization retained; supported horizon; no future realized info.\" But we can keep concise.\n\nThe instruction: \"Clarify missing fields by naming them in missing_fields and asking for them in reason.\" Not needed. For accept, reason can be explanatory.\n\nMake sure no extra keys. The decision is \"accept\". study is object. missing_fields array. reason string.\n\nDouble-check feature_mode: \"full or history_calendar\". The user said \"restricted to load history and calendar\". That is exactly history_calendar as defined: \"history_calendar means the restricted load history and calendar set.\" So correct.\n\nReporting: \"standard or tail\". User: \"Report coverage, mean reserve and cost.\" That's standard. So correct.\n\nRegion: DE.\n\nHorizon: 60.\n\nShortfall weight: 20.\n\nRequired coverage: 0.95.\n\nHuman authorization required: true.\n\nAll good.\n\nNow output only JSON.\n\nWe should ensure numeric types: horizon_minutes is number 60, shortfall_weight number 20, required_coverage number 0.95 (not string). human_authorization_required boolean true.\n\nNow produce final.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791716240,
+  "id": "3a347ac0-c91c-4a4a-a792-613d14c007a0",
+  "model": "hy3",
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 290,
+    "completion_tokens": 1104,
+    "total_tokens": 1394,
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1004
+    }
+  }
+}

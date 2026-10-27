@@ -1,0 +1,25 @@
+{
+  "id": "as-ehix3fu7ce",
+  "object": "chat.completion",
+  "created": 1791716160,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"future realized load cannot be added as it is future realized information\"\n    ],\n    \"reason\": \"Future realized information cannot be used in the study. Please provide clarification or remove unsupported features. All six study fields must be explicitly supplied: region, horizon_minutes, feature_mode, shortfall_weight, required_coverage, and reporting.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 101,
+    "total_tokens": 411,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

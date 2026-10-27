@@ -1,0 +1,22 @@
+{
+  "id": "as-zhj4y4ngpm",
+  "object": "chat.completion",
+  "created": 1791733049,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"MISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"Please specify the horizon_minutes (supported values: 60, 120, 180) and cost_shortfall (supported values: 10, 20, 40) for the energy study.\",\n    \"reason\": \"The request lacks explicit values for horizon_minutes and cost_shortfall, which are required fields for the energy study. The cost_reserve is fixed at 1 as per the study protocol.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 174,
+    "total_tokens": 546
+  }
+}

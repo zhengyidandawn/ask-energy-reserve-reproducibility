@@ -1,0 +1,372 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2026-10-10T23:50:12Z",
+      "timestamp": 1791676212185,
+      "version": "4.3.4"
+    },
+    "reference-count": 35,
+    "publisher": "Institute of Mathematical Statistics",
+    "issue": "2",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Ann. Statist."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Conformal prediction is a popular, modern technique for providing valid predictive inference for arbitrary machine learning models. Its validity relies on the assumptions of exchangeability of the data, and symmetry of the given model fitting algorithm as a function of the data. However, exchangeability is often violated when predictive models are deployed in practice. For example, if the data distribution drifts over time, then the data points are no longer exchangeable; moreover, in such settings, we might want to use a nonsymmetric algorithm that treats recent observations as more relevant. This paper generalizes conformal prediction to deal with both aspects: we employ weighted quantiles to introduce robustness against distribution drift, and design a new randomization technique to allow for algorithms that do not treat data points symmetrically. Our new methods are provably robust, with substantially less loss of coverage when exchangeability is violated due to distribution drift or other challenging features of real data, while also achieving the same coverage guarantees as existing conformal prediction methods if the data points are in fact exchangeable. We demonstrate the practical utility of these new tools with simulations and real-data experiments on electricity and election forecasting.</jats:p>",
+    "DOI": "10.1214/23-aos2276",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          13
+        ]
+      ],
+      "date-time": "2023-06-13T03:15:46Z",
+      "timestamp": 1686626146000
+    },
+    "page": "816-845",
+    "source": "Crossref",
+    "is-referenced-by-count": 317,
+    "title": [
+      "Conformal prediction beyond exchangeability"
+    ],
+    "prefix": "10.1214",
+    "volume": "51",
+    "author": [
+      {
+        "given": "Rina Foygel",
+        "family": "Barber",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Statistics, University of Chicago"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Emmanuel J.",
+        "family": "Candès",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Departments of Statistics and Mathematics, Stanford University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Aaditya",
+        "family": "Ramdas",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Departments of Statistics and Machine Learning, Carnegie Mellon University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ryan J.",
+        "family": "Tibshirani",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Departments of Statistics and Machine Learning, Carnegie Mellon University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "108",
+    "reference": [
+      {
+        "key": "32",
+        "unstructured": "<small>Vovk, V.</small>, <small>Nouretdinov, I.</small>, <small>Manokhin, V.</small> and <small>Gammerman, A.</small> (2018). Cross-conformal predictive distributions. In <i>Conformal and Probabilistic Prediction and Applications</i> 37–51. PMLR."
+      },
+      {
+        "key": "5",
+        "unstructured": "<small>Burnaev, E.</small> and <small>Vovk, V.</small> (2014). Efficiency of conformalized ridge regression. In <i>Conference on Learning Theory</i> 605–622."
+      },
+      {
+        "key": "19",
+        "doi-asserted-by": "publisher",
+        "unstructured": "<small>Lei, J.</small>, <small>Robins, J.</small> and <small>Wasserman, L.</small> (2013). Distribution-free prediction sets. <i>J. Amer. Statist. Assoc.</i> <b>108</b> 278–287.",
+        "DOI": "10.1080/01621459.2012.751873"
+      },
+      {
+        "key": "20",
+        "doi-asserted-by": "publisher",
+        "unstructured": "<small>Lei, J.</small> and <small>Wasserman, L.</small> (2014). Distribution-free prediction bands for non-parametric regression. <i>J. R. Stat. Soc. Ser. B. Stat. Methodol.</i> <b>76</b> 71–96.",
+        "DOI": "10.1111/rssb.12021"
+      },
+      {
+        "key": "18",
+        "doi-asserted-by": "publisher",
+        "unstructured": "<small>Lei, J.</small>, <small>G’Sell, M.</small>, <small>Rinaldo, A.</small>, <small>Tibshirani, R. J.</small> and <small>Wasserman, L.</small> (2018). Distribution-free predictive inference for regression. <i>J. Amer. Statist. Assoc.</i> <b>113</b> 1094–1111.",
+        "DOI": "10.1080/01621459.2017.1307116"
+      },
+      {
+        "key": "17",
+        "doi-asserted-by": "publisher",
+        "unstructured": "<small>LEI, J.</small> (2019). Fast exact conformalization of the lasso using piecewise linear homotopy. <i>Biometrika</i> <b>106</b> 749–764.",
+        "DOI": "10.1093/biomet/asz046"
+      },
+      {
+        "key": "25",
+        "unstructured": "<small>SHAFER, G.</small> and <small>VOVK, V.</small> (2008). A tutorial on conformal prediction. <i>J. Mach. Learn. Res.</i> <b>9</b> 371–421."
+      },
+      {
+        "key": "2",
+        "doi-asserted-by": "publisher",
+        "unstructured": "<small>BARBER, R. F.</small>, <small>CANDÈS, E. J.</small>, <small>RAMDAS, A.</small> and <small>TIBSHIRANI, R. J.</small> (2021). Predictive inference with the jackknife+. <i>Ann. Statist.</i> <b>49</b> 486–507.",
+        "DOI": "10.1214/20-AOS1965"
+      },
+      {
+        "key": "29",
+        "doi-asserted-by": "publisher",
+        "unstructured": "<small>VOVK, V.</small> (2015). Cross-conformal predictors. <i>Ann. Math. Artif. Intell.</i> <b>74</b> 9–28.",
+        "DOI": "10.1007/s10472-013-9368-4"
+      },
+      {
+        "key": "30",
+        "doi-asserted-by": "publisher",
+        "unstructured": "<small>VOVK, V.</small> (2021). Testing randomness online. <i>Statist. Sci.</i> <b>36</b> 595–611.",
+        "DOI": "10.1214/20-sts817"
+      },
+      {
+        "key": "1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "<small>ANGELOPOULOS, A.</small> and <small>BATES, S.</small> (2023). Conformal prediction: A gentle introduction. <i>Found. Trends Mach. Learn.</i> <b>16</b> 495–591.",
+        "DOI": "10.1561/2200000101"
+      },
+      {
+        "key": "3",
+        "doi-asserted-by": "crossref",
+        "unstructured": "<small>BARBER, R. F.</small>, <small>CANDÈS, E. J.</small>, <small>RAMDAS, A.</small> and <small>TIBSHIRANI, R. J.</small> (2023). Supplement to “Conformal prediction beyond exchangeability.” <a href=\"https://doi.org/10.1214/23-AOS2276SUPP\">https://doi.org/10.1214/23-AOS2276SUPP</a>",
+        "DOI": "10.1214/23-AOS2276SUPP"
+      },
+      {
+        "key": "4",
+        "doi-asserted-by": "publisher",
+        "unstructured": "<small>BATES, S.</small>, <small>CANDÈS, E.</small>, <small>LEI, L.</small>, <small>ROMANO, Y.</small> and <small>SESIA, M.</small> (2023). Testing for outliers with conformal p-values. <i>Ann. Statist.</i> <b>51</b> 149–178.",
+        "DOI": "10.1214/22-aos2244"
+      },
+      {
+        "key": "6",
+        "doi-asserted-by": "publisher",
+        "unstructured": "<small>CANDÈS, E. J.</small>, <small>LEI, L.</small> and <small>REN, Z.</small> (2023). Conformalized survival analysis. <i>J. R. Stat. Soc. Ser. B. Stat. Methodol.</i> <b>85</b> 24–45.",
+        "DOI": "10.1093/jrsssb/qkac004"
+      },
+      {
+        "key": "7",
+        "unstructured": "<small>CAUCHOIS, M.</small>, <small>GUPTA, S.</small> and <small>ALI, A.</small> (2020). Robust validation: Confident predictions even when distributions shift. arXiv preprint, <a href=\"https://arxiv.org/abs/arXiv:2008.04267\">arXiv:2008.04267</a>."
+      },
+      {
+        "key": "8",
+        "unstructured": "<small>CHERIAN, J.</small> and <small>BRONNER, L.</small> (2020). How the Washington Post estimates outstanding votes for the 2020 presidential election. Available at <a href=\"https://s3.us-east-1.amazonaws.com/elex-models-prod/2020-general/write-up/election_model_writeup.pdf\">https://s3.us-east-1.amazonaws.com/elex-models-prod/2020-general/write-up/election_model_writeup.pdf</a>."
+      },
+      {
+        "key": "9",
+        "doi-asserted-by": "crossref",
+        "unstructured": "<small>CHERNOZHUKOV, V.</small>, <small>WÜTHRICH, K.</small> and <small>YINCHU, Z.</small> (2018). Exact and robust conformal inference methods for predictive machine learning with dependent data. In <i>Conference on Learning Theory</i> 732–749. PMLR.",
+        "DOI": "10.1920/wp.cem.2018.1618"
+      },
+      {
+        "key": "10",
+        "doi-asserted-by": "crossref",
+        "unstructured": "<small>DUNN, R.</small>, <small>WASSERMAN, L.</small> and <small>RAMDAS, A.</small> (2022). Distribution-free prediction sets for two-layer hierarchical models. <i>J. Amer. Statist. Assoc.</i> To appear.",
+        "DOI": "10.1080/01621459.2022.2060112"
+      },
+      {
+        "key": "11",
+        "unstructured": "<small>FANNJIANG, C.</small>, <small>BATES, S.</small>, <small>ANGELOPOULOS, A. N.</small>, <small>LISTGARTEN, J.</small> and <small>JORDAN, M. I.</small> (2022). Conformal prediction for the design problem. arXiv preprint <a href=\"https://arxiv.org/abs/arXiv:2202.03613\">arXiv:2202.03613</a>."
+      },
+      {
+        "key": "12",
+        "unstructured": "<small>GIBBS, I.</small> and <small>CANDÈS, E. J.</small> (2021). Adaptive conformal inference under distribution shift. <i>Adv. Neural Inf. Process. Syst.</i> <b>34</b>."
+      },
+      {
+        "key": "13",
+        "doi-asserted-by": "publisher",
+        "unstructured": "<small>GUAN, L.</small> (2023). Localized conformal prediction: A generalized inference framework for conformal prediction. <i>Biometrika</i> <b>110</b> 33–50.",
+        "DOI": "10.1093/biomet/asac040"
+      },
+      {
+        "key": "14",
+        "unstructured": "<small>HARRIES, M.</small> (1999). Splice-2 comparative evaluation: Electricity pricing. Tech. rept., Univ.New South Wales."
+      },
+      {
+        "key": "15",
+        "doi-asserted-by": "publisher",
+        "unstructured": "<small>HARRISON, M. T.</small> (2012). Conservative hypothesis tests and confidence intervals using importance sampling. <i>Biometrika</i> <b>99</b> 57–69.",
+        "DOI": "10.1093/biomet/asr079"
+      },
+      {
+        "key": "16",
+        "unstructured": "<small>KIVARANOVIC, D.</small>, <small>JOHNSON, K. D.</small> and <small>LEEB, H.</small> (2020). Adaptive, distribution-free prediction intervals for deep networks. In <i>International Conference on Artificial Intelligence and Statistics</i>. PMLR."
+      },
+      {
+        "key": "21",
+        "doi-asserted-by": "crossref",
+        "unstructured": "<small>LEI, L.</small> and <small>CANDÈS, E. J.</small> (2021). Conformal inference of counterfactuals and individual treatment effects. <i>J. R. Stat. Soc. Ser. B. Stat. Methodol.</i> <b>83</b> 911–938.",
+        "DOI": "10.1111/rssb.12445"
+      },
+      {
+        "key": "22",
+        "unstructured": "<small>MAO, H.</small>, <small>MARTIN, R.</small> and <small>REICH, B.</small> (2023). Valid model-free spatial prediction. <i>J. Amer. Statist. Assoc.</i> To appear."
+      },
+      {
+        "key": "23",
+        "unstructured": "<small>PODKOPAEV, A.</small> and <small>RAMDAS, A.</small> (2021). Distribution-free uncertainty quantification for classification under label shift. In <i>Uncertainty in Artificial Intelligence</i>. PMLR."
+      },
+      {
+        "key": "24",
+        "unstructured": "<small>ROMANO, Y.</small>, <small>PATTERSON, E.</small> and <small>CANDÈS, E. J.</small> (2019). Conformalized quantile regression. <i>Adv. Neural Inf. Process. Syst.</i> <b>32</b>."
+      },
+      {
+        "key": "26",
+        "unstructured": "<small>STANKEVICIUTE, K.</small>, <small>ALAA, A. M.</small> and <small>VAN DER SCHAAR, M.</small> (2021). Conformal time-series forecasting. <i>Adv. Neural Inf. Process. Syst.</i> <b>34</b>."
+      },
+      {
+        "key": "27",
+        "unstructured": "<small>TIBSHIRANI, R. J.</small>, <small>BARBER, R. F.</small>, <small>CANDÈS, E. J.</small> and <small>RAMDAS, A.</small> (2019). Conformal prediction under covariate shift. <i>Adv. Neural Inf. Process. Syst.</i> <b>32</b>."
+      },
+      {
+        "key": "28",
+        "unstructured": "<small>VOLKHONSKIY, D.</small>, <small>BURNAEV, E.</small>, <small>NOURETDINOV, I.</small>, <small>GAMMERMAN, A.</small> and <small>VOVK, V.</small> (2017). Inductive conformal martingales for change-point detection. In <i>Conformal and Probabilistic Prediction and Applications</i> 132–153. PMLR."
+      },
+      {
+        "key": "33",
+        "unstructured": "<small>VOVK, V.</small>, <small>PETEJ, I.</small> and <small>GAMMERMAN, A.</small> (2021). Protected probabilistic classification. In <i>Conformal and Probabilistic Prediction and Applications</i> 297–299. PMLR."
+      },
+      {
+        "key": "34",
+        "unstructured": "<small>XU, C.</small> and <small>XIE, Y.</small> (2021). Conformal prediction interval for dynamic time-series. In <i>International Conference on Machine Learning</i>. PMLR."
+      },
+      {
+        "key": "35",
+        "unstructured": "<small>ZAFFRAN, M.</small>, <small>FÉRON, O.</small>, <small>GOUDE, Y.</small> and <small>JOSSE, J.</small> (2022). Adaptive conformal predictions for time series. In <i>International Conference on Machine Learning</i>. PMLR."
+      },
+      {
+        "key": "31",
+        "unstructured": "<small>Vovk, V.</small>, <small>Gammerman, A.</small> and <small>Shafer, G.</small> (2005). <i>Algorithmic Learning in a Random World</i>. Springer, New York."
+      }
+    ],
+    "container-title": [
+      "The Annals of Statistics"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          7
+        ]
+      ],
+      "date-time": "2026-10-07T18:46:08Z",
+      "timestamp": 1791398768000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://projecteuclid.org/journals/annals-of-statistics/volume-51/issue-2/Conformal-prediction-beyond-exchangeability/10.1214/23-AOS2276.full"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          1
+        ]
+      ]
+    },
+    "references-count": 35,
+    "journal-issue": {
+      "issue": "2",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1214/23-aos2276",
+    "relation": {},
+    "ISSN": [
+      "0090-5364",
+      "2168-8966"
+    ],
+    "issn-type": [
+      {
+        "value": "0090-5364",
+        "type": "print"
+      },
+      {
+        "value": "2168-8966",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          1
+        ]
+      ]
+    }
+  }
+}

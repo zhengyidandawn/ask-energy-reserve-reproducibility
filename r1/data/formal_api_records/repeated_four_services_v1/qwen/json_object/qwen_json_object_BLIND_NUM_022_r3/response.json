@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"prohibited_numerical_output_generation\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to create a schema for CAISO (CISO) and to invent a plausible mean cost and coverage was rejected because it is not permissible to generate numerical outputs such as mean costs and coverage. Such values are computed only by the verified numerical workflow.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request included an instruction to generate numerical outputs (mean cost and coverage), which is against the rules. Numerical outputs must be produced by the verified numerical workflow, not invented or provided directly.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 191,
+    "total_tokens": 835,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613040,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-9d8fb410-25fc-9798-a550-5614b468eac1"
+}

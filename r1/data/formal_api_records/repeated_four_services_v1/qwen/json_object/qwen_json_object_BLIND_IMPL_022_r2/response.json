@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is unclear regarding the specific region, horizon, and cost parameters. Numerical outputs will be produced by the verified workflow once all required details are provided.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request does not specify the region (CISO, ERCO, GD, ISNE, MISO, SWPP), the horizon (60, 120, 180 minutes), or the shortfall cost (10.0, 20.0, 40.0). Clarification is required for these fields.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 632,
+    "completion_tokens": 195,
+    "total_tokens": 827,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612843,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-397c7341-a31e-9f1b-8030-fa608bacbb4a"
+}

@@ -1,0 +1,106 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_IMPL_012",
+  "repeat": 3,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_IMPL_012",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:08.381900+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "e4e7b9d1c9a482b588e94932f3a76110ad706145c243c5f67e5d9dbfae5f0322",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"The request explicitly asks for a valid schema but does not specify numerical values for horizon_minutes or cost_shortfall. Computed results will follow authorized numerical execution using accepted default values.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "partial_accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request explicitly asks for a valid schema but does not specify numerical values for horizon_minutes or cost_shortfall. Computed results will follow authorized numerical execution using accepted default values.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 123,
+      "total_tokens": 489
+    },
+    "response_sha256": "ecfc1130c9003f721b7acd5021d517e2c64837e77e60ba4aef297e6a2c829650",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "partial_accept",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.530310999951325,
+    "finished_at": "2026-10-11T15:37:12.912829+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_IMPL_012",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:08.381900+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "e4e7b9d1c9a482b588e94932f3a76110ad706145c243c5f67e5d9dbfae5f0322",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"The request explicitly asks for a valid schema but does not specify numerical values for horizon_minutes or cost_shortfall. Computed results will follow authorized numerical execution using accepted default values.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "partial_accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request explicitly asks for a valid schema but does not specify numerical values for horizon_minutes or cost_shortfall. Computed results will follow authorized numerical execution using accepted default values.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 123,
+      "total_tokens": 489
+    },
+    "response_sha256": "ecfc1130c9003f721b7acd5021d517e2c64837e77e60ba4aef297e6a2c829650",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "partial_accept",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.530310999951325,
+    "finished_at": "2026-10-11T15:37:12.912829+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 4.530310999951325,
+  "transport_complete": true
+}

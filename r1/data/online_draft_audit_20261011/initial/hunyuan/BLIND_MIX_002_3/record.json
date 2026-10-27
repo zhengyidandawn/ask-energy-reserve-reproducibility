@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 3,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:40:19.250467+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "0cae1b1b9a9dd47e37f7c2b24a521795fa5d0a36552f91704d9dfbf3ea497bcd",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request specifies region CISO and horizon 120 minutes, with cost_reserve fixed at 1, but does not provide cost_shortfall weight. Please specify cost_shortfall from supported values {10, 20, 40} to proceed. Also confirm that output should be schema-only without reserve MW or coverage as requested.\", \"reason\": \"Region CISO and horizon 120 minutes are supported. cost_reserve is set to 1 per study protocol. cost_shortfall is unresolved (null) because the user did not specify a shortfall weight (supported 10,20,40). The user explicitly requested JSON schema only and negation of reserve MW/coverage output, which is permissible but the study parameter cost_shortfall is required for the schema. Clarification needed before execution.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "The request specifies region CISO and horizon 120 minutes, with cost_reserve fixed at 1, but does not provide cost_shortfall weight. Please specify cost_shortfall from supported values {10, 20, 40} to proceed. Also confirm that output should be schema-only without reserve MW or coverage as requested.",
+    "reason": "Region CISO and horizon 120 minutes are supported. cost_reserve is set to 1 per study protocol. cost_shortfall is unresolved (null) because the user did not specify a shortfall weight (supported 10,20,40). The user explicitly requested JSON schema only and negation of reserve MW/coverage output, which is permissible but the study parameter cost_shortfall is required for the schema. Clarification needed before execution.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 2007,
+    "total_tokens": 2385,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1787
+    }
+  },
+  "response_sha256": "1e328dfc7e21ed15bfebf99f0e4aa29384e0381f3929007a8fc677194cb0bb04",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 18.601454899995588,
+  "finished_at": "2026-10-11T15:40:37.851694+00:00"
+}

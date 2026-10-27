@@ -1,0 +1,113 @@
+{
+  "task_id": "deepseek_tool_call_EXT_OPR_025_r4",
+  "case_id": "EXT_OPR_025",
+  "packet": "independently_authored_48",
+  "service": "deepseek",
+  "interface": "tool_call",
+  "repeat": 4,
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_sha256": "0d18a7f0c13b12529a010e0dae9ecaa3d3ee1d26671aec64659fc990cade4586",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:18:56.070640+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1658,
+    "completion_tokens": 578,
+    "total_tokens": 2236,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 250
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "deepseek-flash",
+  "provider_response_id": "2f754f4b-3d8e-464b-b98d-1a6226c5ed2d",
+  "provider_created": 1791613136,
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "response_sha256": "d14d994d5fa8b6fc0dc68d57fd3ac015f05eb8785a8ae5a1f7f64b499332e92b",
+  "checks": {
+    "service": "deepseek",
+    "case_id": "EXT_OPR_025",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The request is missing or ambiguous on required fields: (1) horizon_minutes is not specified — the operator says it \"depends on how the evening peak looks\" and explicitly instructs not to assume 60, so no allowed horizon (60, 120, or 180) can be selected; (2) cost_reserve is not stated (only cost_shortfall c_S=10 is given), and cost_reserve must be 1.0; (3) the rolling window configuration is not confirmed (defaults train_days=730, cal_days=30, test_days=30, rolling_step_days=30). Region SWPP and cost_shortfall=10 are valid and preserved. Please confirm the horizon in minutes (60, 120, or 180), confirm cost_reserve=1.0, and confirm the rolling window. No numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, or dispatch results) are produced here; all such quantities are computed only by the verified numerical workflow. The request cannot be accepted as-is because the horizon is undetermined and cost_reserve and the rolling window are unconfirmed. Region SWPP and cost_shortfall=10 are valid and retained for the eventual schema. {\"triggered_rules\": [\"clarification_required\", \"horizon_minutes_unspecified\", \"cost_reserve_unspecified\", \"rolling_window_unconfirmed\"], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "The request is missing or ambiguous on required fields: (1) horizon_minutes is not specified — the operator says it \"depends on how the evening peak looks\" and explicitly instructs not to assume 60, so no allowed horizon (60, 120, or 180) can be selected; (2) cost_reserve is not stated (only cost_shortfall c_S=10 is given), and cost_reserve must be 1.0; (3) the rolling window configuration is not confirmed (defaults train_days=730, cal_days=30, test_days=30, rolling_step_days=30). Region SWPP and cost_shortfall=10 are valid and preserved. Please confirm the horizon in minutes (60, 120, or 180), confirm cost_reserve=1.0, and confirm the rolling window.",
+    "study_schema": null,
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "No numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, or dispatch results) are produced here; all such quantities are computed only by the verified numerical workflow. The request cannot be accepted as-is because the horizon is undetermined and cost_reserve and the rolling window are unconfirmed. Region SWPP and cost_shortfall=10 are valid and retained for the eventual schema.",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required",
+        "horizon_minutes_unspecified",
+        "cost_reserve_unspecified",
+        "rolling_window_unconfirmed"
+      ],
+      "human_approval_required": true
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 2.9550952999852598,
+  "request_finished_at": "2026-10-10T06:18:59.025881+00:00"
+}

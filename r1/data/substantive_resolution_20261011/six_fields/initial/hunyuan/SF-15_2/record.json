@@ -1,0 +1,41 @@
+{
+  "case_id": "SF-15",
+  "service": "hunyuan",
+  "repeat": 2,
+  "phase": "initial",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T11:02:47.008151+00:00",
+  "status": "success",
+  "request_sha256": "38834fdf3227c4b192447b8035a47e82ebea2cee1d3a7fd1ddc56078ed45a4fe",
+  "returned_model": "hy3",
+  "usage": {
+    "prompt_tokens": 297,
+    "completion_tokens": 1016,
+    "total_tokens": 1313,
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 964
+    }
+  },
+  "content": "{\"decision\": \"reject\", \"study\": null, \"missing_fields\": [], \"reason\": \"Unsupported horizon_minutes: 45. Allowed values are 60, 120, 180. Please select a supported horizon.\"}",
+  "parsed_output": {
+    "decision": "reject",
+    "study": null,
+    "missing_fields": [],
+    "reason": "Unsupported horizon_minutes: 45. Allowed values are 60, 120, 180. Please select a supported horizon."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "unsupported_horizon"
+    ]
+  },
+  "response_sha256": "082c2b97d9da6970be942414862178ec9c626b76e28b11759981b0b7c002f536",
+  "latency_seconds": 10.921652600052767,
+  "request_finished_at": "2026-10-11T11:02:57.929533+00:00"
+}

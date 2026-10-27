@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The operator request is missing the region, which is a required field for the study. Further details on the penalty and horizon are also needed to proceed.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The region is not specified in the request. The terms 'normal penalty' and 'normal horizon' are ambiguous and should be clarified with specific values.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 638,
+    "completion_tokens": 155,
+    "total_tokens": 793,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612815,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-c83326d7-9712-9f5e-a6c1-d83206e3081e"
+}

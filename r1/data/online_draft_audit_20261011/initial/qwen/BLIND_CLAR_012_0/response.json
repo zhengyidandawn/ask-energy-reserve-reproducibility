@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the region and the exact horizon in minutes (60, 120, or 180) for the standard reserve analysis? The normal penalty is understood to be a cost shortfall of 10, 20, or 40. Please confirm which one you'd like to use.\",\n  \"reason\": \"The region and the exact horizon are not specified. Also, the normal penalty needs to be clarified as one of the supported values: 10, 20, or 40.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 174,
+    "total_tokens": 550,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733005,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-14c04b5a-e2bd-98d6-a8bd-e1a9d37afa1c"
+}

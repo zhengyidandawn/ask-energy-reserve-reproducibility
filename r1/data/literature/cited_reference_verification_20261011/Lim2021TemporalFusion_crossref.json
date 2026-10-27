@@ -1,0 +1,643 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2026-10-10T15:25:22Z",
+      "timestamp": 1791645922839,
+      "version": "4.3.4"
+    },
+    "reference-count": 43,
+    "publisher": "Elsevier BV",
+    "issue": "4",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2021-10-01T00:00:00Z",
+          "timestamp": 1633046400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2021-10-01T00:00:00Z",
+          "timestamp": 1633046400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              21
+            ]
+          ],
+          "date-time": "2021-04-21T00:00:00Z",
+          "timestamp": 1618963200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100006785",
+        "name": "Google Inc",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100006785",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "International Journal of Forecasting"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.ijforecast.2021.03.012",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          16
+        ]
+      ],
+      "date-time": "2021-06-16T00:09:15Z",
+      "timestamp": 1623802155000
+    },
+    "page": "1748-1764",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 3045,
+    "title": [
+      "Temporal Fusion Transformers for interpretable multi-horizon time series forecasting"
+    ],
+    "prefix": "10.1016",
+    "volume": "37",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-2779-4122",
+        "authenticated-orcid": false,
+        "given": "Bryan",
+        "family": "Lim",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sercan Ö.",
+        "family": "Arık",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nicolas",
+        "family": "Loeff",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tomas",
+        "family": "Pfister",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b1",
+        "series-title": "NIPS",
+        "article-title": "Attentive state-space modeling of disease progression",
+        "author": "Alaa",
+        "year": "2019"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.ijforecast.2021.03.012_b2",
+        "doi-asserted-by": "crossref",
+        "first-page": "313",
+        "DOI": "10.1146/annurev-financial-110311-101808",
+        "article-title": "Regime changes and financial markets",
+        "volume": "4",
+        "author": "Ang",
+        "year": "2012",
+        "journal-title": "Annual Review of Financial Economics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b3",
+        "series-title": "TabNet: Attentive interpretable tabular learning",
+        "author": "Arik",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b4",
+        "series-title": "The unprecedented stock market impact of COVID-19",
+        "author": "Baker",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b5",
+        "series-title": "Econometrics",
+        "first-page": "129",
+        "article-title": "Distributed lags and dynamic models",
+        "author": "Baltagi",
+        "year": "2008"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.ijforecast.2021.03.012_b6",
+        "doi-asserted-by": "crossref",
+        "first-page": "1694",
+        "DOI": "10.14778/3137765.3137775",
+        "article-title": "Probabilistic demand forecasting at scale",
+        "volume": "10",
+        "author": "Böse",
+        "year": "2017",
+        "journal-title": "Proceedings in VLDB Endowment"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.ijforecast.2021.03.012_b7",
+        "doi-asserted-by": "crossref",
+        "first-page": "666",
+        "DOI": "10.1016/j.econmod.2010.01.006",
+        "article-title": "Multi-horizon inflation forecasts using disaggregated data",
+        "volume": "27",
+        "author": "Capistran",
+        "year": "2010",
+        "journal-title": "Economic Modelling"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b8",
+        "series-title": "NIPS",
+        "article-title": "RETAIN: An interpretable predictive model for healthcare using reverse time attention mechanism",
+        "author": "Choi",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b9",
+        "series-title": "ICLR",
+        "article-title": "Fast and accurate deep network learning by exponential linear units (ELUs)",
+        "author": "Clevert",
+        "year": "2016"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.ijforecast.2021.03.012_b10",
+        "doi-asserted-by": "crossref",
+        "first-page": "564",
+        "DOI": "10.1109/TPAMI.2003.1195991",
+        "article-title": "Kernel-based object tracking",
+        "volume": "25",
+        "author": "Comaniciu",
+        "year": "2003",
+        "journal-title": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.ijforecast.2021.03.012_b11",
+        "doi-asserted-by": "crossref",
+        "first-page": "545",
+        "DOI": "10.1086/209627",
+        "article-title": "Timing of seasonal sales",
+        "volume": "72",
+        "author": "Courty",
+        "year": "1999",
+        "journal-title": "Journal of Business"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b12",
+        "series-title": "What explains the COVID-19 stock market?",
+        "author": "Cox",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b13",
+        "series-title": "ICML",
+        "article-title": "Language modeling with gated convolutional networks",
+        "author": "Dauphin",
+        "year": "2017"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.ijforecast.2021.03.012_b14",
+        "doi-asserted-by": "crossref",
+        "first-page": "271",
+        "DOI": "10.1162/neco_a_01028",
+        "article-title": "Temporal causal inference with time lag",
+        "volume": "30",
+        "author": "Du",
+        "year": "2018",
+        "journal-title": "Neural Computation"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b15",
+        "series-title": "KDD",
+        "article-title": "Multi-horizon time series forecasting with temporal attention learning",
+        "author": "Fan",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b16",
+        "series-title": "Corporacion favorita grocery sales forecasting competition",
+        "author": "Favorita",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b17",
+        "series-title": "NIPS",
+        "article-title": "A theoretically grounded application of dropout in recurrent neural networks",
+        "author": "Gal",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b18",
+        "first-page": "43",
+        "article-title": "The turn-of-the-month-effect: Evidence from periodic generalized autoregressive conditional heteroskedasticity (PGARCH) model",
+        "volume": "7",
+        "author": "Giovanis",
+        "year": "2014",
+        "journal-title": "International Journal of Economic Sciences and Applied Research"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b19",
+        "series-title": "ICML",
+        "article-title": "Exploring interpretable LSTM neural networks over multi-variable data",
+        "author": "Guo",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b20",
+        "series-title": "Oxford-man institute’s realized library",
+        "author": "Heber",
+        "year": "2009"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.ijforecast.2021.03.012_b21",
+        "doi-asserted-by": "crossref",
+        "first-page": "1735",
+        "DOI": "10.1162/neco.1997.9.8.1735",
+        "article-title": "Long short-term memory",
+        "volume": "9",
+        "author": "Hochreiter",
+        "year": "1997",
+        "journal-title": "Neural Computation"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b22",
+        "series-title": "Modelling seasonality",
+        "year": "1992"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.ijforecast.2021.03.012_b23",
+        "doi-asserted-by": "crossref",
+        "first-page": "52",
+        "DOI": "10.1109/TCOM.1967.1089532",
+        "article-title": "The divergence and bhattacharyya distance measures in signal selection",
+        "volume": "15",
+        "author": "Kailath",
+        "year": "1967",
+        "journal-title": "IEEE Transactions on Communication Technology"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b24",
+        "series-title": "ICML",
+        "article-title": "A clockwork RNN",
+        "author": "Koutník",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b25",
+        "series-title": "Layer normalization",
+        "author": "Lei Ba",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b26",
+        "series-title": "NeurIPS",
+        "article-title": "Enhancing the locality and breaking the memory bottleneck of transformer on time series forecasting",
+        "author": "Li",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b27",
+        "series-title": "NeurIPS",
+        "article-title": "Forecasting treatment responses over time using recurrent marginal structural networks",
+        "author": "Lim",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b28",
+        "series-title": "NIPS",
+        "article-title": "A unified approach to interpreting model predictions",
+        "author": "Lundberg",
+        "year": "2017"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.ijforecast.2021.03.012_b29",
+        "doi-asserted-by": "crossref",
+        "first-page": "54",
+        "DOI": "10.1016/j.ijforecast.2019.04.014",
+        "article-title": "The M4 competition: 100,000 time series and 61 forecasting methods",
+        "volume": "36",
+        "author": "Makridakis",
+        "year": "2020",
+        "journal-title": "International Journal of Forecasting"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b30",
+        "doi-asserted-by": "crossref",
+        "first-page": "499",
+        "DOI": "10.1016/j.jeconom.2005.07.020",
+        "article-title": "A comparison of direct and iterated multistep AR methods for forecasting macroeconomic time series",
+        "volume": "135",
+        "author": "Marcellino",
+        "year": "2006",
+        "journal-title": "Journal of Econometrics"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b31",
+        "series-title": "NIPS",
+        "article-title": "Phased LSTM: Accelerating recurrent network training for long or event-based sequences",
+        "author": "Neil",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b32",
+        "series-title": "NIPS",
+        "article-title": "Deep state space models for time series forecasting",
+        "author": "Rangapuram",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b33",
+        "series-title": "KDD",
+        "article-title": "“Why should I trust you?” Explaining the Predictions of any classifier",
+        "author": "Ribeiro",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b34",
+        "article-title": "DeepAR: Probabilistic forecasting with autoregressive recurrent networks",
+        "author": "Salinas",
+        "year": "2019",
+        "journal-title": "International Journal of Forecasting"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b35",
+        "series-title": "Attend and diagnose: Clinical time series analysis using attention models",
+        "author": "Song",
+        "year": "2018"
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.ijforecast.2021.03.012_b36",
+        "doi-asserted-by": "crossref",
+        "first-page": "1950",
+        "DOI": "10.1016/j.neucom.2009.11.030",
+        "article-title": "Multiple-output modeling for multi-step-ahead time series forecasting",
+        "volume": "73",
+        "author": "Taieb",
+        "year": "2010",
+        "journal-title": "Neurocomputing"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b37",
+        "series-title": "NIPS",
+        "article-title": "Attention is all you need",
+        "author": "Vaswani",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b38",
+        "series-title": "CVPR",
+        "article-title": "Residual attention network for image classification",
+        "author": "Wang",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b39",
+        "series-title": "ICML",
+        "article-title": "Deep factors for forecasting",
+        "author": "Wang",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b40",
+        "unstructured": "Wen, R., et al. (2017). A multi-horizon quantile recurrent forecaster. In NIPS 2017 time series workshop."
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b41",
+        "series-title": "RL-LIM: Reinforcement learning-based locally interpretable modeling",
+        "author": "Yoon",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.ijforecast.2021.03.012_b42",
+        "series-title": "NIPS",
+        "article-title": "Temporal regularized matrix factorization for high-dimensional time series prediction",
+        "author": "Yu",
+        "year": "2016"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.ijforecast.2021.03.012_b43",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1017/S0950268818000705",
+        "article-title": "Multi-step prediction for influenza outbreak by an adjusted long short-term memory",
+        "volume": "146",
+        "author": "Zhang",
+        "year": "2018",
+        "journal-title": "Epidemiology and Infection"
+      }
+    ],
+    "container-title": [
+      "International Journal of Forecasting"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0169207021000637?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0169207021000637?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          30
+        ]
+      ],
+      "date-time": "2025-09-30T03:35:27Z",
+      "timestamp": 1759203327000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0169207021000637"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          10
+        ]
+      ]
+    },
+    "references-count": 43,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            10
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0169207021000637"
+    ],
+    "URL": "https://doi.org/10.1016/j.ijforecast.2021.03.012",
+    "relation": {},
+    "ISSN": [
+      "0169-2070"
+    ],
+    "issn-type": [
+      {
+        "value": "0169-2070",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          10
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Temporal Fusion Transformers for interpretable multi-horizon time series forecasting",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "International Journal of Forecasting",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.ijforecast.2021.03.012",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2021 The Authors. Published by Elsevier B.V. on behalf of International Institute of Forecasters.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

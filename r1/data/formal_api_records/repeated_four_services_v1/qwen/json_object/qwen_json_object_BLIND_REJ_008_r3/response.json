@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"future_information\", \"test_period_residual\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to use tomorrow's realized load for ISO-NE (ISNE) to size the next-hour reserve is rejected. Numerical outputs are produced by the verified workflow, but future information and test period residuals cannot be used in the study.\",\n  \"forbidden_variables\": [\"future_load\", \"realized_target\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request includes future information (tomorrow's realized load) which is not permissible. Additionally, using realized target data from a future time period to inform the current decision is also prohibited as it represents a form of test period residual leakage.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 202,
+    "total_tokens": 839,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613013,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-ceec0c70-8034-95cb-a613-d0ff6fa570fe"
+}

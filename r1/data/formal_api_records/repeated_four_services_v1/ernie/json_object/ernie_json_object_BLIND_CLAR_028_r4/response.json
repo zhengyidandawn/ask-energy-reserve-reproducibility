@@ -1,0 +1,22 @@
+{
+  "id": "as-nes463ic6m",
+  "object": "chat.completion",
+  "created": 1791614316,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\n        \"calendar\",\n        \"cost_ratio\",\n        \"current_load\",\n        \"horizon\",\n        \"lagged_load\",\n        \"load_statistics\",\n        \"observed_weather\",\n        \"recent_ramp\",\n        \"region_id\"\n    ],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Please produce an ASK schema for the public case using the usual split, normal costs, and the region we discussed last week.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        }\n    ],\n    \"explanation\": \"The operator request is missing specific details required to construct the ASK schema, such as the exact region, horizon, and shortfall cost values.\",\n    \"forbidden_variables\": [\n        \"fabricated_result\",\n        \"future_load\",\n        \"future_weather\",\n        \"raw_data_modification\",\n        \"realized_target\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": [\n        \"Missing exact region_id value.\",\n        \"Missing horizon_minutes value.\",\n        \"Missing cost_shortfall value.\"\n    ],\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 697,
+    "completion_tokens": 392,
+    "total_tokens": 1089
+  }
+}

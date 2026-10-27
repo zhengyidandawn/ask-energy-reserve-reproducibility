@@ -1,0 +1,22 @@
+{
+  "id": "as-h8uffjq760",
+  "object": "chat.completion",
+  "created": 1791615288,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\n        \"observed_weather\"\n    ],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"region_id_mismatch_detected\",\n            \"clarification_required\"\n        ]\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        \"operator_request\",\n        \"data_dictionary\",\n        \"decision_time_variable_boundary\",\n        \"rolling_window_configuration\",\n        \"audit_log\"\n    ],\n    \"explanation\": \"The operator request contains an ambiguous region identifier ('ISO-NE / ISNEE'). Numerical outputs are produced by the verified workflow when relevant.\",\n    \"forbidden_variables\": [\n        \"fabricated_result\",\n        \"future_load\",\n        \"future_weather\",\n        \"raw_data_modification\",\n        \"realized_target\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Region identifier contains ambiguous values ('ISO-NE / ISNEE'). Please clarify the correct region identifier from the allowed regions: ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP'].\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 707,
+    "completion_tokens": 316,
+    "total_tokens": 1023
+  }
+}

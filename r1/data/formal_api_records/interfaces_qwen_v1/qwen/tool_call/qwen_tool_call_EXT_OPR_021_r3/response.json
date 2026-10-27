@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"数值输出将由经验证的工作流产生，但当前请求缺少区域信息。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"缺失或模棱两可的字段：region_id\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_bf5544b5bebf4ea9815af9",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1526,
+    "completion_tokens": 180,
+    "total_tokens": 1706,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616375,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-711c346a-bbb1-9840-b322-9c153590d128"
+}

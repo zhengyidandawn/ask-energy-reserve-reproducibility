@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "E:\Advanced Engineering Informatics\修改R1\工程_AEI_R1\src\r1\validate_submission_delivery.py", line 390, in <module>
+    main()
+  File "E:\Advanced Engineering Informatics\修改R1\工程_AEI_R1\src\r1\validate_submission_delivery.py", line 378, in main
+    "positive_evidence": check_positive_evidence(), "substantive_evidence": check_substantive_evidence(),
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Advanced Engineering Informatics\修改R1\工程_AEI_R1\src\r1\validate_submission_delivery.py", line 159, in check_substantive_evidence
+    plans = regression["new_value_checks"]
+            ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+KeyError: 'new_value_checks'

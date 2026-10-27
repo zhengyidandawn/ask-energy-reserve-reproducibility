@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_REJ_010",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:45:23.633817+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "1c46c0858a36f94d118d4ac5f4375388905ea4d5ca5f005d6a7244bac382c851",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"SWPP\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Request specifies weather forecasts issued after the decision timestamp, which are unsupported (only observed weather permitted) and constitute future information, both requiring reject per protocol.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "SWPP",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "Request specifies weather forecasts issued after the decision timestamp, which are unsupported (only observed weather permitted) and constitute future information, both requiring reject per protocol.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 1246,
+    "total_tokens": 1617,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1152
+    }
+  },
+  "response_sha256": "2212591f7cca26807404e3fc84e4fa4c8e3d2c549cb94e2363de966d917e36aa",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 11.208554200013168,
+  "finished_at": "2026-10-11T15:45:34.842027+00:00"
+}

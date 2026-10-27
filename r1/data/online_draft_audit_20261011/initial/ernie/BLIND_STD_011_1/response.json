@@ -1,0 +1,22 @@
+{
+  "id": "as-j2kaxayr5f",
+  "object": "chat.completion",
+  "created": 1791733110,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 180,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 10\n    },\n    \"clarification_question\": null,\n    \"reason\": \"The request specifies a supported region (ERCOT/ERCO), a valid horizon (180 minutes), and valid cost parameters (reserve cost 1, shortfall cost 10). No additional clarification is needed.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 135,
+    "total_tokens": 528
+  }
+}

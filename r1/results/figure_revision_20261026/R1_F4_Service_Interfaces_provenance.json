@@ -1,0 +1,43 @@
+{
+  "figure": "R1_F4_Service_Interfaces",
+  "artifacts": {
+    "pdf": {
+      "path": "results/figure_revision_20261026/R1_F4_Service_Interfaces.pdf",
+      "sha256": "067b887cb1751ae7f94e0985c8be5d1d0b344db7ecf7bba3d4a2b3143dc7721f"
+    },
+    "svg": {
+      "path": "results/figure_revision_20261026/R1_F4_Service_Interfaces.svg",
+      "sha256": "d1326b5f9d64cfa5c309fbd267c2c226b10b65142f9c39b21a0bcd398b23561f"
+    },
+    "png": {
+      "path": "results/figure_revision_20261026/R1_F4_Service_Interfaces.png",
+      "sha256": "b63adcb954738d20da8c9b32ee7e9b3497bb48cee37174e29e414c954e3c400f"
+    }
+  },
+  "data_csv": "results/figure_revision_20261026/R1_F4_Service_Interfaces_data.csv",
+  "data_sha256": "945069f2e3cf54280637f3cef493dee2861141521aeb9bd012b774adcf429732",
+  "source_files": {
+    "joint": {
+      "source": "results/strengthening_20261011/joint_summary.csv",
+      "sha256": "f3ede5adf2f2cff80dac8af88bab93151c46908d4cd865da2d3931dc4c5a350e",
+      "archived_csv": "source_csv/joint.csv",
+      "package_source_path": "results/strengthening_20261011/joint_summary.csv"
+    },
+    "services": {
+      "source": "results/paired_evidence/service_summary.csv",
+      "sha256": "fe485f8787050ce85bfe2cffcb008142dbe62ac0bf188653f3a50414ca0f7794",
+      "archived_csv": "source_csv/services.csv",
+      "package_source_path": "results/paired_evidence/service_summary.csv"
+    },
+    "parser_pairs": {
+      "source": "results/remaining_review_questions_20261011/parser_paired_comparison.csv",
+      "sha256": "7736d7d19bc651573f115a63a3c9767d35f9ff83942ddae53667175349567b41",
+      "archived_csv": "source_csv/parser_pairs.csv",
+      "package_source_path": "results/remaining_review_questions_20261011/parser_paired_comparison.csv"
+    }
+  },
+  "figure_width_inches": 9.0,
+  "minimum_text_points": 12.0,
+  "intended_print_width_inches": 6.3,
+  "intervals": "Existing CSV endpoints only; no resampling."
+}

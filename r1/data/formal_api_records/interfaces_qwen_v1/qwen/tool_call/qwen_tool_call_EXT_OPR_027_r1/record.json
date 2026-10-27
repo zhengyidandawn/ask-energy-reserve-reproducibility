@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_tool_call_EXT_OPR_027_r1",
+  "case_id": "EXT_OPR_027",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "tool_call",
+  "repeat": 1,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "3484f6f6dc9f7203097194a37e8f0f881ff7a4ff9fe823928e555feaab464637",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:09:08.637720+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1521,
+    "completion_tokens": 154,
+    "total_tokens": 1675,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-77529f91-a2d8-965f-9cf6-cb87ba6a5ac0",
+  "provider_created": 1791616154,
+  "system_fingerprint": null,
+  "response_sha256": "a0d13f458127b6f83fb4f061010691fd064bce616973fc4f1c316ea63ad3867d",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_027",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "请求中的时域（horizon）表述不清楚，需要明确指定为60、120或180分钟之一。同时，需要确认成本缺额的具体数值是否就是20.0。 在收到更具体的信息之前，不会生成任何数值结果，因为这些结果仅由验证过的数值工作流生产。 {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "请求中的时域（horizon）表述不清楚，需要明确指定为60、120或180分钟之一。同时，需要确认成本缺额的具体数值是否就是20.0。",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "在收到更具体的信息之前，不会生成任何数值结果，因为这些结果仅由验证过的数值工作流生产。",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": true
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 5.10159430000931,
+  "request_finished_at": "2026-10-10T07:09:13.739673+00:00"
+}

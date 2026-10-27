@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"future_information_rejection\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"请求被拒绝，因为提议使用决策时刻之后的未来负荷信息。这是不允许的。数值输出仅由验证过的数值工作流程生成。\",\n  \"forbidden_variables\": [\"future_load\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"提出使用决策时刻之后的未来负荷信息，这违反了规则，禁止使用未来信息。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 656,
+    "completion_tokens": 148,
+    "total_tokens": 804,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613570,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-033007a6-09be-9027-9309-32a5a2f1f833"
+}

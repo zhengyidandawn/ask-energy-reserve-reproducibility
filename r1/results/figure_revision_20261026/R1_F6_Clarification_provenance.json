@@ -1,0 +1,49 @@
+{
+  "figure": "R1_F6_Clarification",
+  "artifacts": {
+    "pdf": {
+      "path": "results/figure_revision_20261026/R1_F6_Clarification.pdf",
+      "sha256": "cc495ac42b5781d32d63f6d33debe58ac181a8a99db5c2bfb138e36349c1b545"
+    },
+    "svg": {
+      "path": "results/figure_revision_20261026/R1_F6_Clarification.svg",
+      "sha256": "c245465b4bb338372f58f5aaf67433558b8b978330eb81b09f50a3102b224844"
+    },
+    "png": {
+      "path": "results/figure_revision_20261026/R1_F6_Clarification.png",
+      "sha256": "f88db81cd2104e9da5169d0e101c1bb547e2c005de10cb88a394c6b17168073a"
+    }
+  },
+  "data_csv": "results/figure_revision_20261026/R1_F6_Clarification_data.csv",
+  "data_sha256": "1719b9ba27f7b021de50311c4600173ef159bcea45987d04e179dc80a02f7d8f",
+  "source_files": {
+    "legacy_modes": {
+      "source": "original_study/supplementary_artifacts/blind_end_to_end_holdout/mode_summary.csv",
+      "sha256": "ab533ed7feeef3f3e118a0c4e370f3798c9242e2ef0f78f0a2c65f80c5265238",
+      "archived_csv": "source_csv/legacy_modes.csv",
+      "package_source_path": "data/original_study/supplementary_artifacts/blind_end_to_end_holdout/mode_summary.csv"
+    },
+    "legacy_cases": {
+      "source": "original_study/supplementary_artifacts/blind_end_to_end_holdout/case_execution_results.csv",
+      "sha256": "dac36bef0f590987e92a46e371a3c964b97ae760f49582312ddad40a4e196506",
+      "archived_csv": "source_csv/legacy_cases.csv",
+      "package_source_path": "data/original_study/supplementary_artifacts/blind_end_to_end_holdout/case_execution_results.csv"
+    },
+    "uniform_confirmation": {
+      "source": "results/integrated_r1/clarification_summary.csv",
+      "sha256": "28103ca25a25efe491329d192dfc91d76892e82801f05fdcf7795cbdfb4cf088",
+      "archived_csv": "source_csv/uniform_confirmation.csv",
+      "package_source_path": "results/integrated_r1/clarification_summary.csv"
+    },
+    "question_dialogue": {
+      "source": "results/evidence_completion_20261011/question_driven_dialogue/main/dialogue_trials.csv",
+      "sha256": "0e6f28e7f95c63b289038a2f36b180a7fbe204352d7c4cc450ba259642fa0efb",
+      "archived_csv": "source_csv/question_dialogue.csv",
+      "package_source_path": "results/evidence_completion_20261011/question_driven_dialogue/main/dialogue_trials.csv"
+    }
+  },
+  "figure_width_inches": 9.0,
+  "minimum_text_points": 12.0,
+  "intended_print_width_inches": 6.3,
+  "intervals": "Existing CSV endpoints only; no resampling."
+}

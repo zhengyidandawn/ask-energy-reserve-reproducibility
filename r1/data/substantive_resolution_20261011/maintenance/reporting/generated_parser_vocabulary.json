@@ -1,0 +1,29 @@
+{
+  "region": {
+    "DE": "DE",
+    "AT": "AT"
+  },
+  "horizon_minutes": {
+    "60": 60,
+    "120": 120,
+    "180": 180
+  },
+  "feature_mode": {
+    "full": "full",
+    "history_calendar": "history_calendar"
+  },
+  "shortfall_weight": {
+    "10": 10,
+    "20": 20,
+    "40": 40
+  },
+  "required_coverage": {
+    "0.95": 0.95,
+    "0.975": 0.975
+  },
+  "reporting": {
+    "standard": "standard",
+    "tail": "tail",
+    "prediction_loss": "prediction_loss"
+  }
+}

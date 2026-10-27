@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"universal_cross_region_generalization_claim_rejected\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The claim of universal cross-region generalization cannot be accepted. Numerical outputs and their validation are specific to the region they are computed for, and cross-region generalizations must be explicitly tested and validated for each new region.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Claiming universal cross-region generalization from a single region's validation (SPP) is not supported. Each region requires its own validation and testing due to differing operational, meteorological, and demand characteristics.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 188,
+    "total_tokens": 825,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614457,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b46a9878-3447-96ef-bc68-d884cd10b55a"
+}

@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_032_r1",
+  "case_id": "EXT_OPR_032",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 1,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "4297f3aae6124cf5dabbcdbbce52f45ebfe41350b9028aac3530ea6afadc9a91",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:21:30.374346+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1489,
+    "completion_tokens": 947,
+    "total_tokens": 2436,
+    "prompt_tokens_details": {
+      "cached_tokens": 1344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 701
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "32d41981-1ee8-41c5-809d-1252628c23bf",
+  "provider_created": 1791620491,
+  "system_fingerprint": null,
+  "response_sha256": "00664a1498f0b276815bff309f0dda901bc52510ad5dee6bd54a543a19ba8054",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_032",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Two required study parameters are ambiguous and must be specified explicitly: (1) 'the usual horizon' is not a defined value; horizon_minutes must be one of 60, 120, or 180 minutes. (2) 'the default shortfall' is not a defined value; cost_shortfall must be one of 10.0, 20.0, or 40.0. Region SWPP and task upward_reserve_sizing are valid, but the schema cannot be constructed until these fields are clarified. Numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced exclusively by the verified numerical workflow; this plan layer does not generate them. A study schema cannot be issued until the ambiguous horizon and shortfall cost are clarified. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "Two required study parameters are ambiguous and must be specified explicitly: (1) 'the usual horizon' is not a defined value; horizon_minutes must be one of 60, 120, or 180 minutes. (2) 'the default shortfall' is not a defined value; cost_shortfall must be one of 10.0, 20.0, or 40.0. Region SWPP and task upward_reserve_sizing are valid, but the schema cannot be constructed until these fields are clarified.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "Numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced exclusively by the verified numerical workflow; this plan layer does not generate them. A study schema cannot be issued until the ambiguous horizon and shortfall cost are clarified.",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 7.159545399947092,
+  "request_finished_at": "2026-10-10T08:21:37.534272+00:00"
+}

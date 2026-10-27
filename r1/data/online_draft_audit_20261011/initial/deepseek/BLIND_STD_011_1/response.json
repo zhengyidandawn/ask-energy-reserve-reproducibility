@@ -1,0 +1,28 @@
+{
+  "id": "73ca5378-100e-4196-b735-328b7b0c5627",
+  "object": "chat.completion",
+  "created": 1791733027,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ERCO\",\"horizon_minutes\":180,\"cost_reserve\":1,\"cost_shortfall\":10},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported and resolved: region ERCO, horizon 180 minutes, reserve cost fixed at 1 by protocol, and shortfall weight 10. Evidence trace is a valid audit requirement.\",\"human_approval_required\":true}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 415,
+    "completion_tokens": 95,
+    "total_tokens": 510,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 159
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

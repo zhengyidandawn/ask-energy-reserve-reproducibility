@@ -1,0 +1,28 @@
+{
+  "id": "fe857232-0004-4ca1-8590-460ca17fd0cd",
+  "object": "chat.completion",
+  "created": 1791733025,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 45,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The requested 45-minute horizon is unsupported. Supported horizons are 60, 120, and 180 minutes. The region CISO is supported, and cost_reserve is fixed at 1 by the study protocol.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 124,
+    "total_tokens": 513,
+    "prompt_tokens_details": {
+      "cached_tokens": 255
+    },
+    "prompt_cache_hit_tokens": 255,
+    "prompt_cache_miss_tokens": 134
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

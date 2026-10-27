@@ -1,0 +1,49 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_IMPL_014",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:13.094083+00:00",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "639d511c67d5ee5d7e494da193401d1c70ab9221462ef5c215509bbc175ec0a2",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"MISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request specifies valid region and default cost parameters but lacks explicit horizon and shortfall cost values. Computed results will follow authorized numerical execution with default evidence trace.\",\n    \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "partial_accept",
+    "fields": {
+      "region_id": "MISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "Request specifies valid region and default cost parameters but lacks explicit horizon and shortfall cost values. Computed results will follow authorized numerical execution with default evidence trace.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 117,
+    "total_tokens": 486
+  },
+  "response_sha256": "57ab92599c53fce944a32168e6465b68d1b9864f1757693b93bdd6a7ca6ee365",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "partial_accept",
+      "execution_ready": false,
+      "blocking_rules": [
+        "invalid_schema"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 5.316702399984933,
+  "finished_at": "2026-10-11T15:37:18.410607+00:00"
+}

@@ -1,0 +1,53 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_006",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:46:43.906151+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "a976caa09b42b054c3f3d85d35b63ab57837838701bc9b27cd266f7118f989c8",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 10}, \"clarification_question\": null, \"reason\": \"User requested reserve study for ERCO (supported region) with horizon 120 minutes (supported) and shortfall cost 10 (supported). Cost_reserve fixed at 1 by protocol. Explicit schema fields resolved without conflict. Legitimate negation 'do not estimate MW' and the 730/30/30 rolling split are preserved as study content; no unsupported fields, future data, approval/audit bypass, or raw-data modification present.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "User requested reserve study for ERCO (supported region) with horizon 120 minutes (supported) and shortfall cost 10 (supported). Cost_reserve fixed at 1 by protocol. Explicit schema fields resolved without conflict. Legitimate negation 'do not estimate MW' and the 730/30/30 rolling split are preserved as study content; no unsupported fields, future data, approval/audit bypass, or raw-data modification present.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 1732,
+    "total_tokens": 2129,
+    "prompt_tokens_details": {
+      "cached_tokens": 320
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1576
+    }
+  },
+  "response_sha256": "5b0dacf8d45cc2f748d8fb537bb772191255bcb4f9187b339f04715c5b5bfbc0",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 18.930826199939474,
+  "finished_at": "2026-10-11T15:47:02.836804+00:00"
+}

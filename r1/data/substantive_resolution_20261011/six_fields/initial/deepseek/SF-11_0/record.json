@@ -1,0 +1,42 @@
+{
+  "case_id": "SF-11",
+  "service": "deepseek",
+  "repeat": 0,
+  "phase": "initial",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:54:58.033820+00:00",
+  "status": "success",
+  "request_sha256": "37edee6eb6cbb4e2588b0ddf222c9f3df3724f04a3d1a1ba1bd07dce8d9666e7",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 309,
+    "completion_tokens": 54,
+    "total_tokens": 363,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 181
+  },
+  "content": "{\n  \"decision\": \"clarify\",\n  \"study\": null,\n  \"missing_fields\": [\"required_coverage\"],\n  \"reason\": \"The required_coverage field is missing. Please specify it as either 0.95 or 0.975.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "required_coverage"
+    ],
+    "reason": "The required_coverage field is missing. Please specify it as either 0.95 or 0.975."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 5,
+    "rules": [
+      "required_coverage"
+    ]
+  },
+  "response_sha256": "60f875ff6c6893c153a3b05ebc54680cbfd338390e87f31d27ede3008d2f61b7",
+  "latency_seconds": 0.6931105999974534,
+  "request_finished_at": "2026-10-11T10:54:58.726990+00:00"
+}

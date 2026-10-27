@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"由于要求的窗口时间45分钟不在允许的范围[60, 120, 180]内，因此需要进一步澄清。数值输出将由经过验证的工作流程生成。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"请求中的滚动窗口时间（45分钟）与支持的时间范围不匹配，需要明确是使用最接近的允许值还是有其他意图。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_f6c31db343734aefae147c",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1520,
+    "completion_tokens": 225,
+    "total_tokens": 1745,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616176,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-25c9e4f1-30fe-9ae0-b406-98ca5bba2b70"
+}

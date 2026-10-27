@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"需要进一步澄清研究计划中的一些缺失或不明确部分，特别是成本短缺信息。数值输出将由验证过的工作流程产生。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"在请求中并未提供缺额惩罚成本，这是完成储备规模研究所需的必要参数。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_70134d7806b14f998bc9b5",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1521,
+    "completion_tokens": 198,
+    "total_tokens": 1719,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616442,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-569f1fd3-b7a9-989b-bdc8-b0a671d87190"
+}

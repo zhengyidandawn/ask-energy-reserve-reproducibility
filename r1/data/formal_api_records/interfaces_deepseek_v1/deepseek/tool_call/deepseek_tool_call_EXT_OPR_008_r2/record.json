@@ -1,0 +1,148 @@
+{
+  "task_id": "deepseek_tool_call_EXT_OPR_008_r2",
+  "case_id": "EXT_OPR_008",
+  "packet": "independently_authored_48",
+  "service": "deepseek",
+  "interface": "tool_call",
+  "repeat": 2,
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_sha256": "89b5ab07e5c6f3ac06a8e051f94e5e9977c567b6fc5a96c127c6690e6fa1f838",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:17:56.339610+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1676,
+    "completion_tokens": 929,
+    "total_tokens": 2605,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536
+    },
+    "prompt_cache_hit_tokens": 1536,
+    "prompt_cache_miss_tokens": 140
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "deepseek-flash",
+  "provider_response_id": "3264a80e-d7f7-4d35-b3b7-cf5fa039ddd8",
+  "provider_created": 1791613076,
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "response_sha256": "f1d408c4325bb386d9222e24d3aa0aab807b8260680c44e4e6ab0613ca888201",
+  "checks": {
+    "service": "deepseek",
+    "case_id": "EXT_OPR_008",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Operator request maps cleanly to the allowed upward_reserve_sizing task: region CISO, horizon 120 minutes, shortfall cost 10.0, cost_reserve 1.0, and the standard rolling design (train_days=730, cal_days=30, test_days=30, rolling_step_days=30). The mention of solar drop-off is treated as observed ramp information available at issue time, not as a future forecast, so no future information is introduced. The instruction that finance waits for interval numbers until after the run is consistent with the numerical-output policy: no reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results are produced here; all numerical outputs come only from the verified numerical workflow. The request is accepted as an upward reserve-sizing study for CISO at a 120-minute horizon with shortfall cost 10.0 and cost_reserve 1.0 under the standard rolling window. Solar drop-off is admitted only through the observed ramp variable, which is available at issue time; future load, future weather, realized targets, and test-period residuals remain forbidden. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results are produced only by the verified numerical workflow, not by this planning layer. Human approval is required before any results are released, and finance interval numbers are deferred until after the verified run. {\"triggered_rules\": [\"allowed_task_upward_reserve_sizing\", \"allowed_region_CISO\", \"allowed_horizon_120\", \"allowed_shortfall_cost_10\", \"cost_reserve_1.0\", \"standard_rolling_window\", \"observed_ramp_only_no_future_weather\", \"no_test_residual_leakage\", \"no_raw_data_modification\", \"no_fabricated_results\", \"numerical_outputs_verified_workflow_only\", \"human_approval_required\"], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "accept",
+    "reason": "Operator request maps cleanly to the allowed upward_reserve_sizing task: region CISO, horizon 120 minutes, shortfall cost 10.0, cost_reserve 1.0, and the standard rolling design (train_days=730, cal_days=30, test_days=30, rolling_step_days=30). The mention of solar drop-off is treated as observed ramp information available at issue time, not as a future forecast, so no future information is introduced. The instruction that finance waits for interval numbers until after the run is consistent with the numerical-output policy: no reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results are produced here; all numerical outputs come only from the verified numerical workflow.",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "CISO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1.0,
+      "cost_shortfall": 10.0,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "workflow": [
+      "Validate request against allowed task, region, horizon, and cost domains",
+      "Bind decision-time variable boundary so only issue-time-available inputs are used",
+      "Assemble admissible features: calendar, cost_ratio, current_load, horizon, lagged_load, load_statistics, observed_weather, recent_ramp, region_id",
+      "Apply rolling design train_days=730, cal_days=30, test_days=30, rolling_step_days=30",
+      "Execute verified numerical workflow to compute reserve sizing outputs",
+      "Route computed outputs and audit log to human approval"
+    ],
+    "evidence_trace": [
+      "operator_request",
+      "data_dictionary",
+      "decision_time_variable_boundary",
+      "rolling_window_configuration",
+      "numerical_workflow_outputs",
+      "audit_log"
+    ],
+    "explanation": "The request is accepted as an upward reserve-sizing study for CISO at a 120-minute horizon with shortfall cost 10.0 and cost_reserve 1.0 under the standard rolling window. Solar drop-off is admitted only through the observed ramp variable, which is available at issue time; future load, future weather, realized targets, and test-period residuals remain forbidden. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results are produced only by the verified numerical workflow, not by this planning layer. Human approval is required before any results are released, and finance interval numbers are deferred until after the verified run.",
+    "audit_log": {
+      "triggered_rules": [
+        "allowed_task_upward_reserve_sizing",
+        "allowed_region_CISO",
+        "allowed_horizon_120",
+        "allowed_shortfall_cost_10",
+        "cost_reserve_1.0",
+        "standard_rolling_window",
+        "observed_ramp_only_no_future_weather",
+        "no_test_residual_leakage",
+        "no_raw_data_modification",
+        "no_fabricated_results",
+        "numerical_outputs_verified_workflow_only",
+        "human_approval_required"
+      ],
+      "human_approval_required": true
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 3.608844199916348,
+  "request_finished_at": "2026-10-10T06:17:59.948389+00:00"
+}

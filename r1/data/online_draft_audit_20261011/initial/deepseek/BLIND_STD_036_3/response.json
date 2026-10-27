@@ -1,0 +1,28 @@
+{
+  "id": "7fe0c01d-dd95-48d9-9479-8c0880243bfd",
+  "object": "chat.completion",
+  "created": 1791733028,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request explicitly specifies a supported region (ERCO), a supported horizon (120 minutes), and a supported shortfall weight (40). The reserve cost is fixed at 1 by the study protocol. The request also correctly defers numerical costs, coverage, and intervals to the numerical workflow, so the study kernel can be accepted as a valid schema draft.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 408,
+    "completion_tokens": 150,
+    "total_tokens": 558,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 152
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

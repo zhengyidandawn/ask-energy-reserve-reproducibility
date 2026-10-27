@@ -1,0 +1,9 @@
+﻿service,stage,requests,distinct_texts,trials,raw_correct,validated_correct,field_correct,field_total,manual_entries,retained_entries,required_replacements,unsafe_ready,valid_ready,reference_accept,schema_valid,approval_retained,retained_fraction,retained_ci_low,retained_ci_high,median_service_seconds,online_calls
+deepseek,initial,3,3,3,3,3,6,6,7,7,0,0,1,1,3,3,1.0,1.0,1.0,1.1304740000050515,3
+deepseek,terminal,3,3,3,3,3,6,6,7,7,0,0,1,1,3,3,1.0,1.0,1.0,1.1304740000050515,3
+qwen,initial,3,3,3,3,3,6,6,7,7,0,0,1,1,3,3,1.0,1.0,1.0,4.046564499964006,3
+qwen,terminal,3,3,3,3,3,6,6,7,7,0,0,1,1,3,3,1.0,1.0,1.0,4.046564499964006,3
+ernie,initial,3,3,3,2,2,6,6,7,6,1,0,1,1,3,3,0.8571428571428571,0.5,1.0,4.148703699931502,3
+ernie,terminal,3,3,3,2,2,6,6,7,6,1,0,1,1,3,3,0.8571428571428571,0.5,1.0,4.148703699931502,3
+hunyuan,initial,3,3,3,3,3,6,6,7,7,0,0,1,1,3,3,1.0,1.0,1.0,16.28111620002892,3
+hunyuan,terminal,3,3,3,3,3,6,6,7,7,0,0,1,1,3,3,1.0,1.0,1.0,16.28111620002892,3

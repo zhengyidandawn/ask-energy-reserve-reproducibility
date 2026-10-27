@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region (CAISO, identified as CISO) and horizon (两小时, which translates to 120 minutes). The user explicitly asks for the JSON schema only without numerical results, which is supported by the protocol.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 123,
+    "total_tokens": 503,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733050,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-2c4eb5f7-9697-9e0d-91be-7f9025de061d"
+}

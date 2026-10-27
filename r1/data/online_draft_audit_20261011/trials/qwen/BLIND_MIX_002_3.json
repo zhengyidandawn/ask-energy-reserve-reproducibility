@@ -1,0 +1,114 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 3,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:23.982715+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "99fd6a03f41dae9778f7e9e353315d53c1a69fc3a47cb7535ab728ca5359815c",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region (CAISO, translated to CISO) and a supported horizon of 120 minutes. The user specifically requests the JSON schema only, without outputting reserve MW or coverage, which is in line with the protocol.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a valid region (CAISO, translated to CISO) and a supported horizon of 120 minutes. The user specifically requests the JSON schema only, without outputting reserve MW or coverage, which is in line with the protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 124,
+      "total_tokens": 504,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "9617dea50f669fd521939258c43aee834d65a5a4775e2126c790792df392cba0",
+    "diagnostics": {
+      "messages": [
+        "Execution validation returns reject: invalid_schema"
+      ],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.515905400039628,
+    "finished_at": "2026-10-11T15:37:27.498749+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 3,
+    "phase": "feedback",
+    "started_at": "2026-10-11T15:37:27.499749+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "4ebba126ec91b9d8d66408545be5380957ce0739cf141faf3d5acccb7b4785b4",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"The provided schema was rejected by the frozen checker. Could you please confirm if you need any specific value for the cost_shortfall, or should it be left as null?\",\n  \"reason\": \"The request specifies a valid region (CAISO, translated to CISO) and a supported horizon of 120 minutes. However, the frozen checker has returned an invalid_schema error, indicating that there might be a need for further clarification on the `cost_shortfall` field.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The provided schema was rejected by the frozen checker. Could you please confirm if you need any specific value for the cost_shortfall, or should it be left as null?",
+      "reason": "The request specifies a valid region (CAISO, translated to CISO) and a supported horizon of 120 minutes. However, the frozen checker has returned an invalid_schema error, indicating that there might be a need for further clarification on the `cost_shortfall` field.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 531,
+      "completion_tokens": 164,
+      "total_tokens": 695,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "b781a1b189548a18ad37acd7c8e3758723db332e4fcf15964477fdffa606d919",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.65822930005379,
+    "finished_at": "2026-10-11T15:37:32.158599+00:00"
+  },
+  "online_calls": 2,
+  "total_service_seconds": 8.174134700093418,
+  "transport_complete": true
+}

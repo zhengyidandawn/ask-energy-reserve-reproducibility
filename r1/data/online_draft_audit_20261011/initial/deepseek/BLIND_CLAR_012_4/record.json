@@ -1,0 +1,54 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_CLAR_012",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:36.636456+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "e74dec6a3be2c7d338a71c9b54be3fb7355d5100c68f045869ef527afadb9669",
+  "returned_model": "deepseek-flash",
+  "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported region should be used (GD, ERCO, CISO, ISNE, MISO, or SWPP), and which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be applied?\",\n  \"reason\": \"The request refers to a standard reserve analysis with a normal penalty and normal horizon but does not explicitly resolve the region, horizon, or shortfall weight. The region is deferred, and 'normal' does not map unambiguously to a supported horizon or shortfall weight. cost_reserve is fixed at 1 by the study protocol.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Which supported region should be used (GD, ERCO, CISO, ISNE, MISO, or SWPP), and which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be applied?",
+    "reason": "The request refers to a standard reserve analysis with a normal penalty and normal horizon but does not explicitly resolve the region, horizon, or shortfall weight. The region is deferred, and 'normal' does not map unambiguously to a supported horizon or shortfall weight. cost_reserve is fixed at 1 by the study protocol.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 201,
+    "total_tokens": 596,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 139
+  },
+  "response_sha256": "3e2f9bed080bd2c35abb41279f6d6ccc69d74ac420a6f90c64b7543dfbf6e2c9",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.8499912000261247,
+  "finished_at": "2026-10-11T15:36:38.486425+00:00"
+}

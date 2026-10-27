@@ -1,0 +1,28 @@
+{
+  "id": "03f7f4f9-975f-4792-b6ba-2adbee037dad",
+  "object": "chat.completion",
+  "created": 1791733024,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request uses tomorrow's realized load, which is future information not available at study time. Only observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather are allowed. The region CISO and 60-minute horizon are valid, but the future-information dependency makes the request unsupported.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 145,
+    "total_tokens": 538,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 137
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

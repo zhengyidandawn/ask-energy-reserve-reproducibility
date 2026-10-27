@@ -1,0 +1,138 @@
+{
+  "task_id": "ernie_json_object_BLIND_REJ_012_r4",
+  "case_id": "BLIND_REJ_012",
+  "packet": "blind_original_200",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "36bfbb9a6b937a9b7d729400dd893c843ef004b488882856665017cee89b0ac0",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:39:36.568125+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 692,
+    "completion_tokens": 500,
+    "total_tokens": 1192
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-kbev5335d1",
+  "provider_created": 1791614377,
+  "system_fingerprint": null,
+  "response_sha256": "4f19cb9a901dffc69179c9509eb86d1ec08bec16b424f33c8761dee00da1be91",
+  "checks": {
+    "service": "ernie",
+    "case_id": "BLIND_REJ_012",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The cost_shortfall value 17.0 is not allowed. The request was rejected because the specified cost_shortfall value of 17.0 is not in the allowed set of [10.0, 20.0, 40.0]. Numerical outputs are produced by the verified workflow. {\"human_approval_required\": true, \"triggered_rules\": [\"invalid_shortfall_cost\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "invalid_shortfall_cost"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [
+      {
+        "operator_request": "Set c_R=1 and c_S=17 for CAISO (CISO)."
+      },
+      {
+        "data_dictionary": {
+          "region_id": "CISO",
+          "cost_reserve": 1.0,
+          "cost_shortfall": 17.0
+        }
+      },
+      {
+        "decision_time_variable_boundary": "No future or unavailable data referenced."
+      },
+      {
+        "rolling_window_configuration": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        }
+      },
+      {
+        "numerical_workflow_outputs": []
+      },
+      {
+        "audit_log": {
+          "human_approval_required": true,
+          "triggered_rules": [
+            "invalid_shortfall_cost"
+          ]
+        }
+      }
+    ],
+    "explanation": "The request was rejected because the specified cost_shortfall value of 17.0 is not in the allowed set of [10.0, 20.0, 40.0]. Numerical outputs are produced by the verified workflow.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The cost_shortfall value 17.0 is not allowed.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 16.882733099977486,
+  "request_finished_at": "2026-10-10T06:39:53.450922+00:00"
+}

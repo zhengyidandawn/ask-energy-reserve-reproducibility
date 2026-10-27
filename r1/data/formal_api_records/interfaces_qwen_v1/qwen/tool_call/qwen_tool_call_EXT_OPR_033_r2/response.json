@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"数值输出将由验证过的工作流程产生。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"请求中的时间窗口存在混淆，需要澄清备用储备的时长。指定了一小时计算向上备用储备，但又要求45分钟的时间窗口，这与允许的60、120和180分钟窗口不匹配。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_2ce82e6da33043a6990b7f",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1520,
+    "completion_tokens": 213,
+    "total_tokens": 1733,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616306,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-a4dedfad-e662-9521-a256-e1fc97161460"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "7d8dbd53-1adb-4470-b124-3405ecfd6ee7",
+  "object": "chat.completion",
+  "created": 1791733010,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"reject\",\"fields\":{\"region_id\":\"CISO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The frozen deterministic checker reports invalid_schema for the prior draft. The original request asks for output JSON schema only and explicitly excludes reserve MW or coverage, but it does not supply a supported shortfall weight, so the required study fields are unresolved. Under the protocol, unresolved explicit study fields require clarification rather than acceptance; the corrected disposition is reject for invalid_schema.\",\"human_approval_required\":true}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 529,
+    "completion_tokens": 127,
+    "total_tokens": 656,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 145
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

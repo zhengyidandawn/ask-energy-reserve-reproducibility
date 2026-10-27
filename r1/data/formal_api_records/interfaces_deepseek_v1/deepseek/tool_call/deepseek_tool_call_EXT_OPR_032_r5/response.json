@@ -1,0 +1,39 @@
+{
+  "id": "634a8678-5dba-4d51-9d85-b1cc93224a88",
+  "object": "chat.completion",
+  "created": 1791613155,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_LhR7oGJB3baw9BaHhe9o8431",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"The request is missing or ambiguous on required fields: horizon_minutes is unspecified (\\\"the usual horizon\\\" is not a defined value; allowed values are 60, 120, or 180 minutes), and cost_shortfall is ambiguous (\\\"the default shortfall\\\" is not a defined value; allowed values are 10.0, 20.0, or 40.0). region_id is provided as SWPP, which is supported. Please specify the horizon in minutes (60, 120, or 180) and the shortfall cost (10.0, 20.0, or 40.0).\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"The study cannot be accepted as specified because the horizon and shortfall cost are not determinable from the request. No numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, or dispatch results) are produced here; any such outputs are computed only by the verified numerical workflow once the schema is fully specified and approved.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"ambiguous_horizon\", \"ambiguous_cost_shortfall\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1649,
+    "completion_tokens": 503,
+    "total_tokens": 2152,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 241
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "as-esmbb5masv",
+  "object": "chat.completion",
+  "created": 1791716159,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\"future realized load\"],\n    \"reason\": \"Field 'future realized load' is not supported for inclusion in the study. Please provide clarification or remove this unsupported feature.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 61,
+    "total_tokens": 371
+  }
+}

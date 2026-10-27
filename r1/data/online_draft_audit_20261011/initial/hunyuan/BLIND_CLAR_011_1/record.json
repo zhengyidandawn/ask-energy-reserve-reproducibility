@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_011",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:31.791599+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "cae6008bf73e8ed975f5393aff0d45ac5260c9f7c69669122a71a82d68c7b331",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"western public region\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Request includes future information ('make the reserve study ready for tomorrow') which is prohibited under the protocol, and references an unsupported region description ('western public region') not in the supported set (GD, ERCO, CISO, ISNE, MISO, SWPP). Horizon and shortfall weight are also unresolved.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "western public region",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "Request includes future information ('make the reserve study ready for tomorrow') which is prohibited under the protocol, and references an unsupported region description ('western public region') not in the supported set (GD, ERCO, CISO, ISNE, MISO, SWPP). Horizon and shortfall weight are also unresolved.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 1847,
+    "total_tokens": 2218,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1719
+    }
+  },
+  "response_sha256": "50818c63284947b0bb3eb1d42e535c0a4e3ee95240f392d0d4921764c1645cad",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 16.17877460003365,
+  "finished_at": "2026-10-11T15:36:47.971104+00:00"
+}

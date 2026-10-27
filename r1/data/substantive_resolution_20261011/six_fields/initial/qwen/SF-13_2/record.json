@@ -1,0 +1,38 @@
+{
+  "case_id": "SF-13",
+  "service": "qwen",
+  "repeat": 2,
+  "phase": "initial",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:55:38.863519+00:00",
+  "status": "success",
+  "request_sha256": "3bbc166d0a1965716e5d7d985d722471add7a82833a7c6e9838e1b3fab315aa7",
+  "returned_model": "qwen-max",
+  "usage": {
+    "prompt_tokens": 313,
+    "completion_tokens": 47,
+    "total_tokens": 360,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "content": "{\n  \"decision\": \"reject\",\n  \"study\": null,\n  \"missing_fields\": [],\n  \"reason\": \"The request includes future realized load, which is not authorized. Please remove this requirement and resubmit.\"\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "study": null,
+    "missing_fields": [],
+    "reason": "The request includes future realized load, which is not authorized. Please remove this requirement and resubmit."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "future_information"
+    ]
+  },
+  "response_sha256": "e64093e31eda43e5674109ed1fce22378386be902f54e9960474a558d73f9c06",
+  "latency_seconds": 1.6731966000515968,
+  "request_finished_at": "2026-10-11T10:55:40.536403+00:00"
+}

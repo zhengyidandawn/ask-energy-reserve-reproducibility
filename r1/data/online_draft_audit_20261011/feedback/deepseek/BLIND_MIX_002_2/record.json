@@ -1,0 +1,56 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 2,
+  "phase": "feedback",
+  "started_at": "2026-10-11T15:36:48.336176+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "66fb2af1509848ba1bf4b51b83a9df94032fadec12bf75420008404618542146",
+  "returned_model": "deepseek-flash",
+  "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a supported region (CISO) and a supported horizon (120 minutes), and explicitly asks for JSON schema only without reserve MW or coverage. cost_reserve is fixed at 1 by protocol; cost_shortfall is not specified and remains null.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The request specifies a supported region (CISO) and a supported horizon (120 minutes), and explicitly asks for JSON schema only without reserve MW or coverage. cost_reserve is fixed at 1 by protocol; cost_shortfall is not specified and remains null.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 553,
+    "completion_tokens": 131,
+    "total_tokens": 684,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 169
+  },
+  "response_sha256": "1150a4d8a10af5b5913535b2961bacadf6893b589b88d69b8f7d81c46642e0e3",
+  "diagnostics": {
+    "messages": [
+      "Execution validation returns reject: invalid_schema"
+    ],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "invalid_schema"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.3619576999917626,
+  "finished_at": "2026-10-11T15:36:49.697974+00:00"
+}

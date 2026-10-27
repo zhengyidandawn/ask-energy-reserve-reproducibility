@@ -1,0 +1,92 @@
+{
+  "task_id": "qwen_json_schema_EXT_OPR_033_r4",
+  "case_id": "EXT_OPR_033",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "json_schema",
+  "repeat": 4,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "d887c0415f2c6ec13c795843efe4f15d8d3f93550360917183f9f1c34308e0a5",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:59:11.560059+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 643,
+    "completion_tokens": 197,
+    "total_tokens": 840,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-db9b11f3-9766-9fed-866c-9474609588c5",
+  "provider_created": 1791615558,
+  "system_fingerprint": null,
+  "response_sha256": "1b127d3a3d70c5b391f46ca05dc2bc9742595ad6b0761fac1a0967a88787e066",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_033",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": false,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "The specified horizon (45 minutes) does not match any of the allowed horizons (60, 120, 180 minutes). Further, the phrase '先安排' is unclear and needs to be clarified for a proper understanding of the requirement. The request specifies a horizon of 45 minutes, which is not one of the allowed horizons. Additionally, the expression '先安排' is ambiguous and requires clarification. {\"human_approval_required\": true, \"triggered_rules\": [\"horizon_minutes_mismatch\", \"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "horizon_minutes_mismatch",
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "The request specifies a horizon of 45 minutes, which is not one of the allowed horizons. Additionally, the expression '先安排' is ambiguous and requires clarification.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The specified horizon (45 minutes) does not match any of the allowed horizons (60, 120, 180 minutes). Further, the phrase '先安排' is unclear and needs to be clarified for a proper understanding of the requirement.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 5.795409100013785,
+  "request_finished_at": "2026-10-10T06:59:17.355456+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"hidden_audit_bypasses\", \"numerical_output_policy_violation\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request for a 95% confidence interval for ISO-NE (ISNE)'s reserve result without running the verified numerical workflow is not allowed. Numerical outputs, including confidence intervals, are produced only by the verified workflow.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The requested 95% confidence interval cannot be provided as it violates the policy that all numerical outputs, such as confidence intervals, must be computed by the verified numerical workflow. This request is considered a hidden audit bypass and a violation of the numerical output policy.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 232,
+    "total_tokens": 877,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613370,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b1666dc1-b3cb-9a71-9ff0-f617726b1c34"
+}

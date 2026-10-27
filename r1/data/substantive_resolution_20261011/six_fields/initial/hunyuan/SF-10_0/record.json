@@ -1,0 +1,43 @@
+{
+  "case_id": "SF-10",
+  "service": "hunyuan",
+  "repeat": 0,
+  "phase": "initial",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:59:41.654107+00:00",
+  "status": "success",
+  "request_sha256": "d9d1f70fd5f8aad145b816befae30b9d502ba2dc4010fd0789a0c7dfa728599a",
+  "returned_model": "hy3",
+  "usage": {
+    "prompt_tokens": 281,
+    "completion_tokens": 1486,
+    "total_tokens": 1767,
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1437
+    }
+  },
+  "content": "{\"decision\": \"clarify\", \"study\": null, \"missing_fields\": [\"feature_mode\"], \"reason\": \"Please provide the missing field feature_mode (full or history_calendar) to proceed with the study plan.\"}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "feature_mode"
+    ],
+    "reason": "Please provide the missing field feature_mode (full or history_calendar) to proceed with the study plan."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 5,
+    "rules": [
+      "feature_mode"
+    ]
+  },
+  "response_sha256": "690c544c2e075830b3875695adbbf21d28f29dfb1f3b51c1c7cd091f18035f3a",
+  "latency_seconds": 13.579838500008918,
+  "request_finished_at": "2026-10-11T10:59:55.234115+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The study request needs clarification on the region and missing details before proceeding. Numerical outputs will be produced by the verified workflow once the request is fully specified.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request contains an ambiguous or incorrect region identifier ('CAIOS' is not valid) and lacks a clear statement of the required task, though it seems to aim for 'upward_reserve_sizing'. The cost shortfall value (20) is acceptable but the region must be clarified. The request also does not specify all necessary components for a complete schema.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 650,
+    "completion_tokens": 193,
+    "total_tokens": 843,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791615511,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b6fa6b7e-e2b8-9f36-9032-70f257db1fc1"
+}

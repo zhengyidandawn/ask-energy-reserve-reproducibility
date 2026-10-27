@@ -1,0 +1,29 @@
+{
+  "region": [
+    "DE",
+    "AT",
+    "NL"
+  ],
+  "horizon_minutes": [
+    60,
+    120,
+    180
+  ],
+  "feature_mode": [
+    "full",
+    "history_calendar"
+  ],
+  "shortfall_weight": [
+    10,
+    20,
+    40
+  ],
+  "required_coverage": [
+    0.95,
+    0.975
+  ],
+  "reporting": [
+    "standard",
+    "tail"
+  ]
+}

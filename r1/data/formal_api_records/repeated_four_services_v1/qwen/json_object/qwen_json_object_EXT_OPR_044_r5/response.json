@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"future_information_prohibited\",\n      \"test_period_residual_leakage\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is rejected due to the inclusion of future information (unavailable issue-time forecasts) and test-period residual leakage, which violate the study's requirements. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request includes prohibited future information (tomorrow's not-yet-released forecasts) and test-period residual (post-rolling-window realized ramp).\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 656,
+    "completion_tokens": 207,
+    "total_tokens": 863,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614597,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-6166921b-f01a-9d40-92ca-b1b7825aab05"
+}

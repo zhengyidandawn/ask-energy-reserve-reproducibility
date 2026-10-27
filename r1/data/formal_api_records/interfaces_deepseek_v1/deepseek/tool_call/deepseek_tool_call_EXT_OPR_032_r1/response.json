@@ -1,0 +1,39 @@
+{
+  "id": "7f4dcc32-eaa6-4215-a4b1-250725142a8e",
+  "object": "chat.completion",
+  "created": 1791613057,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_TJMWPDLf3aeaA92IjLvM9826",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"The request is missing or ambiguous on required fields: horizon_minutes is not specified (\\\"the usual horizon\\\" is not a defined value; allowed values are 60, 120, or 180 minutes), and cost_shortfall is not specified (\\\"the default shortfall\\\" is not a defined value; allowed values are 10.0, 20.0, or 40.0). region_id is provided as SWPP, which is supported, and task_type is upward_reserve_sizing. Please confirm the horizon in minutes and the shortfall cost.\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"The plan cannot be finalized until the horizon and shortfall cost are confirmed. No numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, or dispatch results) are produced here; any such outputs are computed only by the verified numerical workflow. The rolling design is fixed at train_days=730, cal_days=30, test_days=30, rolling_step_days=30, and human approval will be required for any accepted plan.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"ambiguous_horizon\", \"ambiguous_cost_shortfall\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1649,
+    "completion_tokens": 516,
+    "total_tokens": 2165,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 241
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

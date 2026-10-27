@@ -1,0 +1,39 @@
+{
+  "id": "f4c6bdc1-4ef1-4906-8b04-94fb046a3179",
+  "object": "chat.completion",
+  "created": 1791613148,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_SAX5KYw19tPhJ1QdqMHa8280",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"accept\", \"reason\": \"Operator request maps to the allowed upward_reserve_sizing task with supported region MISO, horizon 60 minutes, cost_shortfall 40.0, and cost_reserve 1.0. All inputs are admissible issue-time variables; no future information, test-residual leakage, raw-data modification, fabricated results, or approval bypass is requested. The operator's offer to self-approve does not remove the mandatory human-approval gate, which is preserved.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"MISO\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 40.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [\"Validate request against allowed task, region, horizon, and cost sets\", \"Bind admissible issue-time variables only: calendar, cost_ratio, current_load, horizon, lagged_load, load_statistics, observed_weather, recent_ramp, region_id\", \"Enforce decision-time variable boundary excluding future_load, future_weather, realized_target, and test_period_residual\", \"Apply rolling design train_days=730, cal_days=30, test_days=30, rolling_step_days=30\", \"Execute verified numerical workflow to compute reserve values, mean costs, coverage, and intervals\", \"Route computed outputs to human approval before any operational use\"], \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The plan is accepted as an auditable upward reserve-sizing study for MISO at a 60-minute horizon with cost_reserve=1.0 and cost_shortfall=40.0. All numerical outputs, including reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results, are produced only by the verified numerical workflow; this knowledge layer does not generate them. Human approval remains required and cannot be bypassed by the operator's stated intent to self-approve.\", \"audit_log\": {\"triggered_rules\": [\"allowed_task_upward_reserve_sizing\", \"allowed_region_MISO\", \"allowed_horizon_60\", \"allowed_cost_shortfall_40\", \"cost_reserve_1.0\", \"rolling_window_standard\", \"admissible_variables_only\", \"future_information_excluded\", \"test_residual_leakage_excluded\", \"raw_data_modification_excluded\", \"fabricated_results_excluded\", \"human_approval_gate_preserved\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1667,
+    "completion_tokens": 850,
+    "total_tokens": 2517,
+    "prompt_tokens_details": {
+      "cached_tokens": 1533
+    },
+    "prompt_cache_hit_tokens": 1533,
+    "prompt_cache_miss_tokens": 134
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

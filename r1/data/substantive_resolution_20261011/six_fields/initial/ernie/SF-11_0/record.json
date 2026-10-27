@@ -1,0 +1,41 @@
+{
+  "case_id": "SF-11",
+  "service": "ernie",
+  "repeat": 0,
+  "phase": "initial",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_started_at": "2026-10-11T10:55:44.079407+00:00",
+  "status": "success",
+  "request_sha256": "fc00b49ca33534565f68d7b8cb67270fc73a29e53a5b59bb5ec127db16777837",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "usage": {
+    "prompt_tokens": 291,
+    "completion_tokens": 65,
+    "total_tokens": 356,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"required_coverage\",\n        \"reporting\"\n    ],\n    \"reason\": \"Please provide the missing fields: required_coverage and reporting to proceed with the study.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "required_coverage",
+      "reporting"
+    ],
+    "reason": "Please provide the missing fields: required_coverage and reporting to proceed with the study."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 5,
+    "rules": [
+      "required_coverage"
+    ]
+  },
+  "response_sha256": "2d364651d54600e3f9733f0128bd0134c583fc75624c7e886233d89719ea2bdb",
+  "latency_seconds": 2.724289200035855,
+  "request_finished_at": "2026-10-11T10:55:46.803803+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-3e71fi80u6",
+  "object": "chat.completion",
+  "created": 1791733056,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1.0,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request contains valid region_id (CISO), horizon_minutes (120), and cost_reserve (1.0) as recognized by the frozen request parser. No cost_shortfall provided, but this is not required for acceptance.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 556,
+    "completion_tokens": 140,
+    "total_tokens": 696,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

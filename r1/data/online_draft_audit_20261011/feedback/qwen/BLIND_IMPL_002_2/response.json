@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the horizon minutes (60, 120, or 180) and the cost shortfall (10, 20, or 40) for this energy study?\",\n  \"reason\": \"The schema is invalid due to unresolved fields for horizon_minutes and cost_shortfall. These values are required to proceed with the study.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 520,
+    "completion_tokens": 140,
+    "total_tokens": 660,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733030,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-64766bdc-fc9c-970b-811c-2ba4cfa24bb3"
+}

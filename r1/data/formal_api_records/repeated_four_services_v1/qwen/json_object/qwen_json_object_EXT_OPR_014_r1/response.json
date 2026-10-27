@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"unsupported_region\", \"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request has been marked for clarification due to an unsupported region and ambiguous requirements. The numerical outputs will be produced by the verified workflow.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The region 'SPP' is not supported, and the requirement 'Don't dump MW on me' is unclear. Additionally, the term 'Write the plan and I will walk it over' is ambiguous in the context of this study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 174,
+    "total_tokens": 818,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612752,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-7554f4d5-3269-903b-bc9a-6fd05937e527"
+}

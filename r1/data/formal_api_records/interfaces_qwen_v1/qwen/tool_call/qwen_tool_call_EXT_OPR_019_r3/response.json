@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"observed_weather\", \"horizon\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"The numerical outputs will be produced by the verified workflow. However, there are missing or ambiguous fields in the operator request that need to be clarified before proceeding.\", \"forbidden_variables\": [], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The region ID 'ISNEE' is not recognized and may be a typo for 'ISNE'. The cost shortfall (cS) is specified as 40, but it's unclear if this is intended to be one of the allowed values. The term 'reseach packet' is not defined. Only observed weather was mentioned, but other admissible variables were not addressed. A clarification is required on these points.\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_b7067b9d81414d02ab4b0c",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1529,
+    "completion_tokens": 209,
+    "total_tokens": 1738,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616371,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-148ee0b7-bcbd-9572-aaef-09efec654913"
+}

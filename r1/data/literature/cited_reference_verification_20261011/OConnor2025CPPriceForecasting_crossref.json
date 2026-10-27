@@ -1,0 +1,978 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          2
+        ]
+      ],
+      "date-time": "2026-10-02T17:14:50Z",
+      "timestamp": 1790961290559,
+      "version": "4.1.0"
+    },
+    "reference-count": 72,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2025-09-01T00:00:00Z",
+          "timestamp": 1756684800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2025-09-01T00:00:00Z",
+          "timestamp": 1756684800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              7,
+              22
+            ]
+          ],
+          "date-time": "2025-07-22T00:00:00Z",
+          "timestamp": 1753142400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100008530",
+        "name": "European Regional Development Fund",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100008530",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001602",
+        "name": "Taighde Éireann – Research Ireland",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "18/CRT/6223"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "18/CRT/6223"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001602",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Energy and AI"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.egyai.2025.100571",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          4
+        ]
+      ],
+      "date-time": "2025-08-04T14:59:36Z",
+      "timestamp": 1754319576000
+    },
+    "page": "100571",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 25,
+    "special_numbering": "C",
+    "title": [
+      "Conformal Prediction for electricity price forecasting in the day-ahead and real-time balancing market"
+    ],
+    "prefix": "10.1016",
+    "volume": "21",
+    "author": [
+      {
+        "given": "Ciaran",
+        "family": "O’Connor",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mohamed",
+        "family": "Bahloul",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Roberto",
+        "family": "Rossi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Steven",
+        "family": "Prestwich",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3702-4826",
+        "authenticated-orcid": false,
+        "given": "Andrea",
+        "family": "Visentin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.egyai.2025.100571_b1",
+        "doi-asserted-by": "crossref",
+        "first-page": "111",
+        "DOI": "10.1016/j.esr.2019.01.003",
+        "article-title": "The future relevance of electricity balancing markets in Europe",
+        "volume": "24",
+        "author": "Ortner",
+        "year": "2019",
+        "journal-title": "Energy Strat Rev"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b2",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.rser.2017.05.234",
+        "article-title": "Recent advances in electricity price forecasting: A review of probabilistic forecasting",
+        "author": "Nowotarski",
+        "year": "2018",
+        "journal-title": "Renew Sustain Energy Rev"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "251",
+        "DOI": "10.1016/j.rser.2018.05.038",
+        "article-title": "Probabilistic mid-and long-term electricity price forecasting",
+        "volume": "94",
+        "author": "Ziel",
+        "year": "2018",
+        "journal-title": "Renew Sustain Energy Rev"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b4",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/app12041823",
+        "article-title": "Applications of probabilistic forecasting in smart grids: A review",
+        "author": "Khajeh",
+        "year": "2022",
+        "journal-title": "Appl Sci"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b5",
+        "article-title": "Learning by transduction",
+        "author": "Gammerman",
+        "year": "1998",
+        "journal-title": "Proc the 14th Conf Uncertain Artif Intell ( UAI)"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b6",
+        "series-title": "Algorithmic learning in a random world",
+        "author": "Vovk",
+        "year": "2005"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b7",
+        "series-title": "International conference on machine learning",
+        "first-page": "11559",
+        "article-title": "Conformal prediction interval for dynamic time-series",
+        "author": "Xu",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b8",
+        "series-title": "International conference on machine learning",
+        "first-page": "38707",
+        "article-title": "Sequential predictive conformal inference for time series",
+        "author": "Xu",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b9",
+        "doi-asserted-by": "crossref",
+        "first-page": "253",
+        "DOI": "10.1016/j.enpol.2016.03.047",
+        "article-title": "The benefits of integrating European electricity markets",
+        "volume": "94",
+        "author": "Newbery",
+        "year": "2016",
+        "journal-title": "Energy Policy"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b10",
+        "doi-asserted-by": "crossref",
+        "first-page": "80",
+        "DOI": "10.1016/j.epsr.2017.10.003",
+        "article-title": "European day-ahead electricity market coupling: Discussion, modeling, and case study",
+        "volume": "155",
+        "author": "Ilea",
+        "year": "2018",
+        "journal-title": "Electr Power Syst Res"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b11",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.egyai.2024.100459",
+        "article-title": "Probabilistic forecasting of renewable energy and electricity demand using graph-based denoising diffusion probabilistic model",
+        "volume": "19",
+        "author": "Miraki",
+        "year": "2025",
+        "journal-title": "Energy AI"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b12",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.egyai.2024.100463",
+        "article-title": "Probabilistic forecasting of multiple plant day-ahead renewable power generation sequences with data privacy preserving",
+        "volume": "19",
+        "author": "Liu",
+        "year": "2025",
+        "journal-title": "Energy AI"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.egyai.2025.100571_b13",
+        "first-page": "1255",
+        "article-title": "Electricity price forecasting using recurrent neural networks",
+        "volume": "11",
+        "author": "Ugurlu",
+        "year": "2018",
+        "journal-title": "Energ"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b14",
+        "doi-asserted-by": "crossref",
+        "first-page": "386",
+        "DOI": "10.1016/j.apenergy.2018.02.069",
+        "article-title": "Forecasting spot electricity prices: Deep learning approaches and empirical comparison of traditional algorithms",
+        "volume": "221",
+        "author": "Lago",
+        "year": "2018",
+        "journal-title": "Appl Energy"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.egyai.2025.100571_b15",
+        "first-page": "2241",
+        "article-title": "BRIM: An accurate electricity spot price prediction scheme-based bidirectional recurrent neural network and integrated market",
+        "volume": "12",
+        "author": "Chen",
+        "year": "2019",
+        "journal-title": "Energ"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b16",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.energy.2021.121543",
+        "article-title": "Day-ahead electricity price prediction applying hybrid models of LSTM-based deep learning methods and feature selection algorithms under consideration of market coupling",
+        "volume": "237",
+        "author": "Li",
+        "year": "2021",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b17",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.apenergy.2021.116983",
+        "article-title": "Forecasting day-ahead electricity prices: A review of state-of-the-art algorithms, best practices and an open-access benchmark",
+        "author": "Lago",
+        "year": "2021",
+        "journal-title": "Appl Energy"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b18",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.egyai.2024.100438",
+        "article-title": "Federated learning and non-federated learning based power forecasting of photovoltaic/wind power energy systems: A systematic review",
+        "author": "ElRobrini",
+        "year": "2024",
+        "journal-title": "Energy AI"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b19",
+        "first-page": "1",
+        "article-title": "A literature review of intraday electricity markets and prices",
+        "author": "Shinde",
+        "year": "2019",
+        "journal-title": "2019 IEEE Milan PowerTech"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b20",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.egyai.2024.100444",
+        "article-title": "Photovoltaic power forecasting: A transformer based framework",
+        "volume": "18",
+        "author": "Piantadosi",
+        "year": "2024",
+        "journal-title": "Energy AI"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b21",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.egyai.2024.100403",
+        "article-title": "An artificial intelligence framework for explainable drift detection in energy forecasting",
+        "volume": "17",
+        "author": "Samarajeewa",
+        "year": "2024",
+        "journal-title": "Energy AI"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.egyai.2025.100571_b22",
+        "doi-asserted-by": "crossref",
+        "first-page": "1533",
+        "DOI": "10.1016/j.ijforecast.2019.02.001",
+        "article-title": "Understanding intraday electricity markets: Variable selection and very short-term price forecasting using LASSO",
+        "volume": "35",
+        "author": "Uniejewski",
+        "year": "2019",
+        "journal-title": "Int J Forecast"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b23",
+        "article-title": "Econometric modelling and forecasting of intraday electricity prices",
+        "volume": "19",
+        "author": "Narajewski",
+        "year": "2020",
+        "journal-title": "J Commod Mark"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b24",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.rser.2019.109275",
+        "article-title": "Short-term electricity trading for system balancing: An empirical analysis of the role of intraday trading in balancing Germany’s electricity system",
+        "volume": "113",
+        "author": "Koch",
+        "year": "2019",
+        "journal-title": "Renew Sustain Energy Rev"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b25",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.segan.2024.101368",
+        "article-title": "Research areas and methods of interest in European intraday electricity market research—A systematic literature review",
+        "author": "Birkeland",
+        "year": "2024",
+        "journal-title": "Sustain Energy, Grids Netw"
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.egyai.2025.100571_b26",
+        "first-page": "3097",
+        "article-title": "A review of electricity price forecasting models in the day-ahead, intra-day, and balancing markets",
+        "volume": "18",
+        "author": "O’Connor",
+        "year": "2025",
+        "journal-title": "Energ"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b27",
+        "series-title": "Renewable energy forecasting",
+        "article-title": "10 - Wind power in electricity markets and the value of forecasting",
+        "author": "Mazzi",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b28",
+        "series-title": "2019 16th international conference on the European energy market",
+        "first-page": "1",
+        "article-title": "Probabilistic forecasting of imbalance prices in the belgian context",
+        "author": "Dumas",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b29",
+        "article-title": "Probabilistic forecasting of German electricity imbalance prices",
+        "volume": "15",
+        "author": "Narajewski",
+        "year": "2022",
+        "journal-title": "Energ"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b30",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.esr.2024.101436",
+        "article-title": "Electricity price forecasting in the irish balancing market",
+        "volume": "54",
+        "author": "O’Connor",
+        "year": "2024",
+        "journal-title": "Energy Strat Rev"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b31",
+        "series-title": "The design of the European electricity market–Current proposals and ways ahead",
+        "author": "Zachmann",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b32",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/s00180-014-0523-0",
+        "article-title": "Computing electricity spot price prediction intervals using quantile regression and forecast averaging",
+        "author": "Nowotarski",
+        "year": "2015",
+        "journal-title": "Comput Statist"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b33",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.energy.2016.02.025",
+        "article-title": "Modeling the UK electricity price distributions using quantile regression",
+        "volume": "102",
+        "author": "Hagfors",
+        "year": "2016",
+        "journal-title": "Energy"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.egyai.2025.100571_b34",
+        "doi-asserted-by": "crossref",
+        "first-page": "957",
+        "DOI": "10.1016/j.ijforecast.2014.12.004",
+        "article-title": "Probabilistic forecasting of electricity spot prices using factor quantile regression averaging",
+        "volume": "32",
+        "author": "Maciejowska",
+        "year": "2016",
+        "journal-title": "Int J Forecast"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b35",
+        "doi-asserted-by": "crossref",
+        "first-page": "653",
+        "DOI": "10.1016/j.ijepes.2019.03.056",
+        "article-title": "A hybrid electricity price forecasting model with Bayesian optimization for German energy exchange",
+        "volume": "110",
+        "author": "Cheng",
+        "year": "2019",
+        "journal-title": "Int J Electr Power Energy Syst"
+      },
+      {
+        "issue": "20",
+        "key": "10.1016/j.egyai.2025.100571_b36",
+        "first-page": "5420",
+        "article-title": "Price forecasting for the balancing energy market using machine-learning regression",
+        "volume": "13",
+        "author": "Lucas",
+        "year": "2020",
+        "journal-title": "Energ"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.egyai.2025.100571_b37",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijforecast.2019.07.002",
+        "article-title": "Probabilistic electricity price forecasting with NARX networks: Combine point or probabilistic forecasts?",
+        "volume": "36",
+        "author": "Marcjasz",
+        "year": "2020",
+        "journal-title": "Int J Forecast"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b38",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.eneco.2021.105121",
+        "article-title": "Regularized quantile regression averaging for probabilistic electricity price forecasting",
+        "volume": "95",
+        "author": "Uniejewski",
+        "year": "2021",
+        "journal-title": "Energy Econ"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b39",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ijforecast.2020.09.006",
+        "article-title": "Conformal prediction interval estimation and applications to day-ahead and intraday power markets",
+        "author": "Kath",
+        "year": "2021",
+        "journal-title": "Int J Forecast"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b40",
+        "article-title": "Ensemble conformalized quantile regression for probabilistic time series forecasting",
+        "author": "Jensen",
+        "year": "2022",
+        "journal-title": "IEEE Trans Neural Netw Learn Syst"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b41",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.energy.2022.123497",
+        "article-title": "Conformalized temporal convolutional quantile regression networks for wind power interval forecasting",
+        "volume": "248",
+        "author": "Hu",
+        "year": "2022",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b42",
+        "series-title": "International conference on machine learning",
+        "first-page": "25834",
+        "article-title": "Adaptive conformal predictions for time series",
+        "author": "Zaffran",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b43",
+        "series-title": "Smoothing quantile regression averaging: A new approach to probabilistic forecasting of electricity prices",
+        "author": "Uniejewski",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b44",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.eneco.2023.106843",
+        "article-title": "Distributional neural networks for electricity price forecasting",
+        "volume": "125",
+        "author": "Marcjasz",
+        "year": "2023",
+        "journal-title": "Energy Econ"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b45",
+        "unstructured": "Ghosh S, Shi Y, Belkhouja T, Yan Y, Doppa J, Jones B. Probabilistically robust conformal prediction. In: Proceedings of the 39th conference on uncertainty in artificial intelligence. UAI, vol. 216, 2023, p. 681–90."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.egyai.2025.100571_b46",
+        "doi-asserted-by": "crossref",
+        "first-page": "577",
+        "DOI": "10.1007/s10462-022-10178-5",
+        "article-title": "Valid prediction intervals for regression problems",
+        "volume": "56",
+        "author": "Dewolf",
+        "year": "2023",
+        "journal-title": "Artif Intell Rev"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b47",
+        "series-title": "2023 IEEE PES innovative smart grid technologies Europe",
+        "first-page": "1",
+        "article-title": "Probabilistic forecasting of day-ahead electricity prices and their volatility with LSTMs",
+        "author": "Trebbien",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b48",
+        "series-title": "Conformal and probabilistic prediction with applications",
+        "article-title": "Flexible and systematic uncertainty estimation with conformal prediction via the MAPIE library",
+        "author": "Cordier",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b49",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.energy.2023.129925",
+        "article-title": "Wholesale electricity price forecasting by quantile regression and Kalman filter method",
+        "volume": "290",
+        "author": "Monjazeb",
+        "year": "2024",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b50",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1002/ese3.1710",
+        "article-title": "Electricity price forecast in wholesale markets using conformal prediction: Case study in Mexico",
+        "author": "De la Torre",
+        "year": "2024",
+        "journal-title": "Energy Sci Eng"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b51",
+        "series-title": "Transformer conformal prediction for time series",
+        "author": "Lee",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b52",
+        "series-title": "Conformal prediction for multi-dimensional time series by ellipsoidal sets",
+        "author": "Xu",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b53",
+        "article-title": "Conformal pid control for time series prediction",
+        "volume": "36",
+        "author": "Angelopoulos",
+        "year": "2024",
+        "journal-title": "Adv Neural Inf Process Syst"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.egyai.2025.100571_b54",
+        "doi-asserted-by": "crossref",
+        "first-page": "231",
+        "DOI": "10.1002/etep.316",
+        "article-title": "Bayesian neural network model to predict day-ahead electricity prices",
+        "volume": "20",
+        "author": "Vahidinasab",
+        "year": "2010",
+        "journal-title": "Eur Trans Electr Power"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b55",
+        "doi-asserted-by": "crossref",
+        "first-page": "610",
+        "DOI": "10.1016/j.eneco.2019.02.004",
+        "article-title": "Probabilistic electricity price forecasting with Bayesian stochastic volatility models",
+        "volume": "80",
+        "author": "Kostrzewski",
+        "year": "2019",
+        "journal-title": "Energy Econ"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b56",
+        "doi-asserted-by": "crossref",
+        "first-page": "171",
+        "DOI": "10.1016/j.eneco.2018.02.007",
+        "article-title": "On the importance of the long-term seasonal component in day-ahead electricity price forecasting: Part II—Probabilistic forecasting",
+        "volume": "79",
+        "author": "Uniejewski",
+        "year": "2019",
+        "journal-title": "Energy Econ"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b57",
+        "doi-asserted-by": "crossref",
+        "first-page": "120",
+        "DOI": "10.1016/j.apenergy.2013.05.075",
+        "article-title": "Quantifying uncertainties of neural network-based electricity price forecasts",
+        "volume": "112",
+        "author": "Khosravi",
+        "year": "2013",
+        "journal-title": "Appl Energy"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.egyai.2025.100571_b58",
+        "doi-asserted-by": "crossref",
+        "first-page": "493",
+        "DOI": "10.1002/jae.2959",
+        "article-title": "Deep distributional time series models and the probabilistic forecasting of intraday electricity prices",
+        "volume": "38",
+        "author": "Klein",
+        "year": "2023",
+        "journal-title": "J Appl Econometrics"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.egyai.2025.100571_b59",
+        "doi-asserted-by": "crossref",
+        "first-page": "1216",
+        "DOI": "10.1016/j.eneco.2011.05.001",
+        "article-title": "Distributional modeling and short-term forecasting of electricity prices by generalized additive models for location, scale and shape",
+        "volume": "33",
+        "author": "Serinaldi",
+        "year": "2011",
+        "journal-title": "Energy Econ"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b60",
+        "doi-asserted-by": "crossref",
+        "first-page": "483",
+        "DOI": "10.1016/j.ijepes.2018.06.005",
+        "article-title": "New probabilistic price forecasting models: Application to the Iberian electricity market",
+        "volume": "103",
+        "author": "Monteiro",
+        "year": "2018",
+        "journal-title": "Int J Electr Power Energy Syst"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b61",
+        "series-title": "2023 IEEE 6th international conference on automation, electronics and electrical engineering",
+        "first-page": "542",
+        "article-title": "Electricity price forecasting based on Bayesian network and Monte Carlo simulation",
+        "author": "Yuanchen",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b62",
+        "series-title": "Multiple split approach–multidimensional probabilistic forecasting of electricity markets",
+        "author": "Maciejowska",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b63",
+        "series-title": "Expectile regression averaging method for probabilistic forecasting of electricity prices",
+        "author": "Janczura",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b64",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.egyai.2025.100470",
+        "article-title": "Using crafted features and polar bear optimization algorithm for short-term electric load forecast system",
+        "author": "Bhatnagar",
+        "year": "2025",
+        "journal-title": "Energy AI"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b65",
+        "series-title": "Conformal prediction beyond exchangeability",
+        "first-page": "arXiv e",
+        "author": "Foygel Barber",
+        "year": "2022"
+      },
+      {
+        "issue": "13",
+        "key": "10.1016/j.egyai.2025.100571_b66",
+        "first-page": "5152",
+        "article-title": "Day-ahead electricity price probabilistic forecasting based on SHAP feature selection and LSTNet quantile regression",
+        "volume": "16",
+        "author": "Liu",
+        "year": "2023",
+        "journal-title": "Energ"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b67",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.cie.2023.109834",
+        "article-title": "A novel probabilistic forecasting system based on quantile combination in electricity price",
+        "volume": "187",
+        "author": "Xu",
+        "year": "2024",
+        "journal-title": "Comput Ind Eng"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b68",
+        "series-title": "International workshop on advanced analytics and learning on temporal data",
+        "first-page": "1",
+        "article-title": "Conformal prediction techniques for electricity price forecasting",
+        "author": "O’Connor",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b69",
+        "article-title": "Regression quantiles",
+        "author": "Koenker",
+        "year": "1978",
+        "journal-title": "Econ: J Econ Soc"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.egyai.2025.100571_b70",
+        "doi-asserted-by": "crossref",
+        "first-page": "424",
+        "DOI": "10.1109/TPWRS.2019.2924355",
+        "article-title": "An adaptive bilevel programming model for nonparametric prediction intervals of wind power generation",
+        "volume": "35",
+        "author": "Zhao",
+        "year": "2019",
+        "journal-title": "IEEE Trans Power Syst"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b71",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.rser.2022.112212",
+        "article-title": "CE (curtailment–Energy share) map: An objective and quantitative measure to evaluate wind and solar curtailment",
+        "author": "Yasuda",
+        "year": "2022",
+        "journal-title": "Renew Sustain Energy Rev"
+      },
+      {
+        "key": "10.1016/j.egyai.2025.100571_b72",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.egyai.2025.100476",
+        "article-title": "Optimising quantile-based trading strategies in electricity arbitrage",
+        "author": "O’Connor",
+        "year": "2025",
+        "journal-title": "Energy AI"
+      }
+    ],
+    "container-title": [
+      "Energy and AI"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S266654682500103X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S266654682500103X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          16
+        ]
+      ],
+      "date-time": "2026-05-16T08:47:56Z",
+      "timestamp": 1778921276000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S266654682500103X"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "references-count": 72,
+    "alternative-id": [
+      "S266654682500103X"
+    ],
+    "URL": "https://doi.org/10.1016/j.egyai.2025.100571",
+    "relation": {},
+    "ISSN": [
+      "2666-5468"
+    ],
+    "issn-type": [
+      {
+        "value": "2666-5468",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Conformal Prediction for electricity price forecasting in the day-ahead and real-time balancing market",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Energy and AI",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.egyai.2025.100571",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2025 The Authors. Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "100571"
+  }
+}

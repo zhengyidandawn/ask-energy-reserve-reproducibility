@@ -1,0 +1,92 @@
+{
+  "task_id": "qwen_json_schema_EXT_OPR_042_r5",
+  "case_id": "EXT_OPR_042",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "json_schema",
+  "repeat": 5,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "abbb90c4248831ada7509d8f949c21491876267dc66d671931f6932393df492b",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:05:49.646687+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 193,
+    "total_tokens": 845,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-7b4dcc62-ae32-9ccf-8d3e-12409c8ffb1b",
+  "provider_created": 1791615955,
+  "system_fingerprint": null,
+  "response_sha256": "13da630dedcf3b1e751ca9cc9113cd9c180b0636c5846384d858597a423d3ece",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_042",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Request included instructions to generate numerical outputs directly, which is prohibited. The study must use the verified numerical workflow for these computations. Additionally, the request was partially in an unsupported language. The request was denied because the operator asked for immediate generation of numerical outputs (reserve values, mean costs, and coverage values) which is not allowed. Numerical outputs are computed only by the verified numerical workflow. Also, the original request contained unsupported language. {\"human_approval_required\": false, \"triggered_rules\": [\"prohibited_numerical_output_generation\", \"unsupported_language\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "prohibited_numerical_output_generation",
+        "unsupported_language"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "The request was denied because the operator asked for immediate generation of numerical outputs (reserve values, mean costs, and coverage values) which is not allowed. Numerical outputs are computed only by the verified numerical workflow. Also, the original request contained unsupported language.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Request included instructions to generate numerical outputs directly, which is prohibited. The study must use the verified numerical workflow for these computations. Additionally, the request was partially in an unsupported language.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 5.374921999988146,
+  "request_finished_at": "2026-10-10T07:05:55.021459+00:00"
+}

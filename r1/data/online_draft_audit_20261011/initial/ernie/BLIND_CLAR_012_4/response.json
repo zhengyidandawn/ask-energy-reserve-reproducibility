@@ -1,0 +1,22 @@
+{
+  "id": "as-zfnpjdj7ma",
+  "object": "chat.completion",
+  "created": 1791733009,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 20\n    },\n    \"clarification_question\": \"Please specify the region_id from the following supported regions: GD, ERCO, CISO, ISNE, MISO, SWPP.\",\n    \"reason\": \"The region_id is required but was not provided in the request.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 131,
+    "total_tokens": 503
+  }
+}

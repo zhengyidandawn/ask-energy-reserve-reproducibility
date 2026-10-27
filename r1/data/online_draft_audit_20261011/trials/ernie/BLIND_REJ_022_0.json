@@ -1,0 +1,112 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_REJ_022",
+  "repeat": 0,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_REJ_022",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:13.276935+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "ce3ed3d83601002e76a2b3998b9734e4853875152906916013fea3437cc3bb53",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request uses future information ('tomorrow's realized load') which is not permitted under study protocol.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Request uses future information ('tomorrow's realized load') which is not permitted under study protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 372,
+      "completion_tokens": 104,
+      "total_tokens": 476,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "74038d2d8aeae1ecba50e1959e6ab4f0b77dd6484a42f6cbd5b798533c743bf4",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.009526000008918,
+    "finished_at": "2026-10-11T15:38:17.287219+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_REJ_022",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:13.276935+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "ce3ed3d83601002e76a2b3998b9734e4853875152906916013fea3437cc3bb53",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request uses future information ('tomorrow's realized load') which is not permitted under study protocol.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Request uses future information ('tomorrow's realized load') which is not permitted under study protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 372,
+      "completion_tokens": 104,
+      "total_tokens": 476,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "74038d2d8aeae1ecba50e1959e6ab4f0b77dd6484a42f6cbd5b798533c743bf4",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.009526000008918,
+    "finished_at": "2026-10-11T15:38:17.287219+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 4.009526000008918,
+  "transport_complete": true
+}

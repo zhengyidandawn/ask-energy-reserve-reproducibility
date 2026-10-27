@@ -1,0 +1,101 @@
+{
+  "task_id": "hunyuan_json_object_EXT_OPR_027_r3",
+  "case_id": "EXT_OPR_027",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 3,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "3344497dd9c3ef232614fb7d4f668828042727270efebae90be7920332aee08a",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:41:39.813444+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 646,
+    "completion_tokens": 3209,
+    "total_tokens": 3855,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3010
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "a30e665f-5f1b-4c24-98ad-c591c85323b1",
+  "provider_created": 1791618100,
+  "system_fingerprint": null,
+  "response_sha256": "d9492bd0cd1b81db33e5f0888d1362ba9ad705bd9d6f7c0dc4e6931affe2b567",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_027",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Missing/ambiguous field: horizon_minutes (operator said 'usual horizon' and refused to provide minutes; allowed horizons are 60, 120, 180). Request for GD upward reserve sizing with shortfall cost 20 lacks explicit horizon; operator referenced 'usual horizon' which is ambiguous relative to allowed [60,120,180] minutes. Numerical outputs are produced by the verified workflow when relevant. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "Request for GD upward reserve sizing with shortfall cost 20 lacks explicit horizon; operator referenced 'usual horizon' which is ambiguous relative to allowed [60,120,180] minutes. Numerical outputs are produced by the verified workflow when relevant.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Missing/ambiguous field: horizon_minutes (operator said 'usual horizon' and refused to provide minutes; allowed horizons are 60, 120, 180).",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 26.415296399965882,
+  "request_finished_at": "2026-10-10T07:42:06.228170+00:00"
+}

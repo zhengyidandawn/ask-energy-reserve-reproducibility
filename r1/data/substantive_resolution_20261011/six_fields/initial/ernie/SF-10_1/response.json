@@ -1,0 +1,22 @@
+{
+  "id": "as-txbyhskbmn",
+  "object": "chat.completion",
+  "created": 1791716142,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"feature_mode\"\n    ],\n    \"reason\": \"Please specify the feature mode (full or history_calendar) to proceed with the study.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 61,
+    "total_tokens": 347
+  }
+}

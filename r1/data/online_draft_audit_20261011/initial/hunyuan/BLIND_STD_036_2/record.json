@@ -1,0 +1,53 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_036",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:47:25.158816+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "012eebeadd6c4a1ac1067cb87864096f625093017f556ac9014d9dd0dc5bf6d3",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 40}, \"clarification_question\": null, \"reason\": \"All explicitly supplied study fields are supported and resolved: region ERCO is valid, horizon 120 minutes is supported, cost_shortfall 40 is supported, and cost_reserve is fixed at 1 by protocol. The request defers numerical computation of costs, coverage, and intervals to an authorized workflow, which is permissible. No conflicts or unsupported elements detected.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 40
+    },
+    "clarification_question": null,
+    "reason": "All explicitly supplied study fields are supported and resolved: region ERCO is valid, horizon 120 minutes is supported, cost_shortfall 40 is supported, and cost_reserve is fixed at 1 by protocol. The request defers numerical computation of costs, coverage, and intervals to an authorized workflow, which is permissible. No conflicts or unsupported elements detected.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 387,
+    "completion_tokens": 1221,
+    "total_tokens": 1608,
+    "prompt_tokens_details": {
+      "cached_tokens": 320
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1084
+    }
+  },
+  "response_sha256": "14d681c10b7a3d77468c1a0d49142206e7b041b9a1913f61760476d7f536d8d7",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 10.69788360001985,
+  "finished_at": "2026-10-11T15:47:35.856494+00:00"
+}

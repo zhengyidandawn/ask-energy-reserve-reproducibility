@@ -1,0 +1,43 @@
+{
+  "case_id": "SF-12",
+  "service": "hunyuan",
+  "repeat": 0,
+  "phase": "initial",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T11:00:56.837800+00:00",
+  "status": "success",
+  "request_sha256": "42f9b264e372e979a72813483c8f674c3513bfa06d782b73a4b49fb1597c8f37",
+  "returned_model": "hy3",
+  "usage": {
+    "prompt_tokens": 289,
+    "completion_tokens": 1552,
+    "total_tokens": 1841,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1497
+    }
+  },
+  "content": "{\"decision\": \"clarify\", \"study\": null, \"missing_fields\": [\"reporting\"], \"reason\": \"The field 'reporting' is missing. Please specify reporting as 'standard' or 'tail' to complete the study plan.\"}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "reporting"
+    ],
+    "reason": "The field 'reporting' is missing. Please specify reporting as 'standard' or 'tail' to complete the study plan."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 5,
+    "rules": [
+      "reporting"
+    ]
+  },
+  "response_sha256": "d5ee563166eb7ad4347454f22459dbbcd4c7ff5761337208d8ab265d1d987044",
+  "latency_seconds": 15.071749499998987,
+  "request_finished_at": "2026-10-11T11:01:11.910642+00:00"
+}

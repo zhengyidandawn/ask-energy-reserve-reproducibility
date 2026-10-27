@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"unsupported_horizon\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request for a 45-minute upward reserve schema is rejected because the specified horizon of 45 minutes is not supported. Allowed horizons are 60, 120, and 180 minutes.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Unsupported horizon: 45 minutes. The allowed horizons are 60, 120, and 180 minutes.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 633,
+    "completion_tokens": 173,
+    "total_tokens": 806,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613334,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-ddf0c635-b31b-97cc-83a3-ef275ffd7e48"
+}

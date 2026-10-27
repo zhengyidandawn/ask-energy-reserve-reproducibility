@@ -1,0 +1,25 @@
+{
+  "id": "as-f04vtg4d37",
+  "object": "chat.completion",
+  "created": 1791615330,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\n        \"current_load\",\n        \"observed_weather\",\n        \"calendar\",\n        \"horizon\",\n        \"lagged_load\",\n        \"load_statistics\",\n        \"region_id\"\n    ],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"decision\": \"accept\",\n    \"evidence_trace\": [\n        \"operator_request:{\\\"task\\\":\\\"upward_reserve_sizing\\\",\\\"region\\\":\\\"GD\\\",\\\"horizon\\\":\\\"120分钟\\\",\\\"cost_reserve\\\":1,\\\"cost_shortfall\\\":20,\\\"variables\\\":[\\\"current_load\\\",\\\"observed_weather\\\"],\\\"output_request\\\":\\\"study_plan_for_approval\\\"}\",\n        \"data_dictionary:{\\\"current_load\\\":\\\"Observed system load at current time\\\",\\\"observed_weather\\\":\\\"Historical weather data available at study initiation\\\",\\\"calendar\\\":\\\"Temporal features (hour/day/month)\\\",\\\"horizon\\\":\\\"120-minute prediction window\\\",\\\"lagged_load\\\":\\\"Previous 1-6 hours of load data\\\",\\\"load_statistics\\\":\\\"Historical load percentiles/variability\\\",\\\"region_id\\\":\\\"GD\\\"}\",\n        \"decision_time_variable_boundary:{\\\"forbidden_data_cutoff\\\":\\\"All inputs locked at study initiation time. No future load/weather/realized targets permitted.\\\"}\",\n        \"rolling_window_configuration:{\\\"train_days\\\":730,\\\"cal_days\\\":30,\\\"test_days\\\":30,\\\"rolling_step_days\\\":30}\",\n        \"numerical_workflow_outputs:null\",\n        \"audit_log:{\\\"human_approval_required\\\":true,\\\"triggered_rules\\\":[]}\"\n    ],\n    \"explanation\": \"Numerical outputs (reserve capacity values, cost metrics, confidence intervals) will be produced by the verified numerical workflow after human approval of this study plan. No reserve values are computed at this stage.\",\n    \"forbidden_variables\": [\n        \"future_load\",\n        \"future_weather\",\n        \"realized_target\",\n        \"test_period_residual\",\n        \"fabricated_result\",\n        \"raw_data_modification\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request matches all constraints: valid region (GD), valid horizon (120 minutes), valid costs (reserve=1, shortfall=20), admissible variables only, no forbidden variables, proper rolling window configuration.\",\n    \"study_schema\": {\n        \"task_type\": \"upward_reserve_sizing\",\n        \"region_id\": \"GD\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 20,\n        \"rolling_window\": {\n            \"train_days\": 730,\n            \"cal_days\": 30,\n            \"test_days\": 30,\n            \"rolling_step_days\": 30\n        },\n        \"requires_human_approval\": true\n    },\n    \"workflow\": [\n        \"1. Validate input constraints\",\n        \"2. Generate rolling-window training/validation/test sets\",\n        \"3. Train quantile regression models using admissible variables\",\n        \"4. Compute reserve requirements for 120-minute horizon\",\n        \"5. Apply cost function (reserve=1, shortfall=20)\",\n        \"6. Package results for audit verification\",\n        \"7. Await human approval before final output\"\n    ]\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 713,
+    "completion_tokens": 792,
+    "total_tokens": 1505,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

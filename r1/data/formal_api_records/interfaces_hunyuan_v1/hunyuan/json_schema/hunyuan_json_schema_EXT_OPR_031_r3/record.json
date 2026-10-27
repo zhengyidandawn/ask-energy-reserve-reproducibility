@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_json_schema_EXT_OPR_031_r3",
+  "case_id": "EXT_OPR_031",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_schema",
+  "repeat": 3,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "e9f0edaddd3d2476a942f510c58e232153ebe5ef75b637e73f5130dbbb3fc2b6",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:15:50.037271+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 1865,
+    "total_tokens": 2509,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1682
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "30bebf94-1bf4-471c-8594-59d79e710ea9",
+  "provider_created": 1791620150,
+  "system_fingerprint": null,
+  "response_sha256": "3a658507c8b0a2f6765fd5e137f97a21daee77ae674fd61172f5ae9da9627711",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_031",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Missing or ambiguous fields: horizon_minutes (said 'usual', must be one of 60,120,180), cost_shortfall (said 'usual', must be one of 10.0,20.0,40.0). Region MISO and rolling window fixed procedure are acceptable but insufficient. Numerical outputs are produced by the verified workflow when relevant. Operator request uses ambiguous 'usual' for horizon and shortfall cost, requiring clarification before study schema can be defined. {\"human_approval_required\": false, \"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant. Operator request uses ambiguous 'usual' for horizon and shortfall cost, requiring clarification before study schema can be defined.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Missing or ambiguous fields: horizon_minutes (said 'usual', must be one of 60,120,180), cost_shortfall (said 'usual', must be one of 10.0,20.0,40.0). Region MISO and rolling window fixed procedure are acceptable but insufficient.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 16.424047000007704,
+  "request_finished_at": "2026-10-10T08:16:06.461262+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "70e5efca-1c70-49c2-a8dc-07c57111f2a0",
+  "object": "chat.completion",
+  "created": 1791733001,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported region should be used for the 'western public region'? Supported regions are GD (Guangdong, China), ERCO (ERCOT, Texas), CISO (CAISO, California), ISNE (ISO New England), MISO (Midcontinent), and SWPP (Southwest Power Pool). Also, which supported horizon should be used: 60, 120, or 180 minutes, and which shortfall weight should be used: 10, 20, or 40?\",\n  \"reason\": \"The request refers to an ambiguous region and does not explicitly specify the horizon or shortfall weight, so the study fields are unresolved.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 204,
+    "total_tokens": 596,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 136
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

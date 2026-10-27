@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\": [], \"audit_log\": {\"human_approval_required\": false, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"\", \"forbidden_variables\": [], \"numerical_output_policy\": \"\", \"reason\": \"The following fields are missing or ambiguous: cost_shortfall, horizon. Please provide the specific values or confirm the defaults.\", \"study_schema\": null, \"workflow\": []}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 948,
+    "completion_tokens": 98,
+    "total_tokens": 1046,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791698053,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-2a9d2c01-a0c2-91c3-8e26-2dad1a873f66"
+}

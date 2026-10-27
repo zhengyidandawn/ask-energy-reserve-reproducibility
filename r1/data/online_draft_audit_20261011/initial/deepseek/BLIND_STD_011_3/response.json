@@ -1,0 +1,28 @@
+{
+  "id": "65e1755f-5202-4a4b-ad5f-512712bf9fac",
+  "object": "chat.completion",
+  "created": 1791733027,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ERCO\",\"horizon_minutes\":180,\"cost_reserve\":1,\"cost_shortfall\":10},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported and resolved: ERCO is a supported region, 180 minutes is a supported horizon, reserve cost is fixed at 1 by protocol, and shortfall cost 10 is supported. The evidence trace requirement is compatible with the study protocol.\",\"human_approval_required\":true}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 415,
+    "completion_tokens": 107,
+    "total_tokens": 522,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 159
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

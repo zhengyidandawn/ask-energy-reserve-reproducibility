@@ -1,0 +1,25 @@
+{
+  "id": "as-xa68rhgdhy",
+  "object": "chat.completion",
+  "created": 1791614783,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": false,\n        \"triggered_rules\": [\n            \"test_residual_leakage\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Use test-month residuals from CAISO (CISO) during calibration before the test window closes.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        }\n    ],\n    \"explanation\": \"Numerical outputs are produced by the verified workflow only when the request is accepted. The request was rejected due to test-residual leakage, which violates the rule against using test-period residuals during calibration.\",\n    \"forbidden_variables\": [\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"The operator request involves using test-month residuals during calibration, which constitutes test-residual leakage and is prohibited.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 692,
+    "completion_tokens": 299,
+    "total_tokens": 991,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

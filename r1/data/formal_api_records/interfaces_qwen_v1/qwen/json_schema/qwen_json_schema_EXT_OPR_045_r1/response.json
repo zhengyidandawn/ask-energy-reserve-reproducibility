@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"future_information_prohibited\", \"forbidden_variable_used\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"请求被拒绝，因为请求中包含了使用决策时刻之后的负荷信息，这违反了研究的规定。数值输出由验证过的工作流产生。\",\n  \"forbidden_variables\": [\"future_load\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"使用了被禁止的信息（未来的负荷数据）。根据规定，不允许使用决策时刻之后的数据。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 656,
+    "completion_tokens": 155,
+    "total_tokens": 811,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614723,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-9e5ddc59-e3ea-96a0-b9f2-9ccc48350b7b"
+}

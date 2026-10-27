@@ -1,0 +1,27 @@
+{
+  "formal_records": 4960,
+  "complete": true,
+  "bootstrap_draws": 3000,
+  "permutation_draws": 20000,
+  "seed": 20261010,
+  "confidence_unit": "exact request text cluster",
+  "repeated_responses_averaged_within_case": true,
+  "archived_record_count": 4960,
+  "service_counts": {
+    "deepseek": 1240,
+    "ernie": 1240,
+    "hunyuan": 1240,
+    "qwen": 1240
+  },
+  "complete_services": [
+    "deepseek",
+    "qwen",
+    "ernie",
+    "hunyuan"
+  ],
+  "complete_services_only": false,
+  "multiplicity": "Holm within packet and endpoint over all included service pairs",
+  "human_time_is_estimated": true,
+  "billed_cost_not_inferred_from_usage": true,
+  "experts_do_not_show_reduced_classification_errors_relative_to_the_reference_labels": true
+}

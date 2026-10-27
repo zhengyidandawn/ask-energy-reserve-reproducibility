@@ -1,0 +1,53 @@
+{
+  "frozen_at": "2026-10-11T05:39:41.913801+00:00",
+  "phase": "weather",
+  "required_coverage": 0.95,
+  "first_test_start": "2020-01-01",
+  "windows": 8,
+  "method_count": 8,
+  "countries": [
+    "DE"
+  ],
+  "common_margin": [
+    {
+      "country": "DE",
+      "benchmark_windows": 12,
+      "required_coverage": 0.95,
+      "common_margin_load_fraction": 0.0024459099212401406,
+      "margin_definition": "largest nonnegative 95th-percentile residual correction over all eight methods and 12 benchmark windows",
+      "first_new_test_start": "2020-01-01",
+      "new_test_windows": 8
+    },
+    {
+      "country": "AT",
+      "benchmark_windows": 12,
+      "required_coverage": 0.95,
+      "common_margin_load_fraction": 0.009242861987572293,
+      "margin_definition": "largest nonnegative 95th-percentile residual correction over all eight methods and 12 benchmark windows",
+      "first_new_test_start": "2020-01-01",
+      "new_test_windows": 8
+    },
+    {
+      "country": "BE",
+      "benchmark_windows": 12,
+      "required_coverage": 0.95,
+      "common_margin_load_fraction": 0.007083496555294793,
+      "margin_definition": "largest nonnegative 95th-percentile residual correction over all eight methods and 12 benchmark windows",
+      "first_new_test_start": "2020-01-01",
+      "new_test_windows": 8
+    },
+    {
+      "country": "NL",
+      "benchmark_windows": 12,
+      "required_coverage": 0.95,
+      "common_margin_load_fraction": 0.005717204442310271,
+      "margin_definition": "largest nonnegative 95th-percentile residual correction over all eight methods and 12 benchmark windows",
+      "first_new_test_start": "2020-01-01",
+      "new_test_windows": 8
+    }
+  ],
+  "margins_use_2019_benchmark_only": true,
+  "test_outcomes_used_for_selection": false,
+  "weather_features": "equal-weight observed air temperature and humidity over six official DWD stations",
+  "source_sha256": "194f3ee7d110d04389751602132899172cdd8b7ca73c07d6e9009ddac066b2a1"
+}

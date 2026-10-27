@@ -1,0 +1,53 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "region",
+    "horizon_minutes",
+    "feature_mode",
+    "shortfall_weight",
+    "required_coverage",
+    "reporting"
+  ],
+  "properties": {
+    "region": {
+      "enum": [
+        "DE",
+        "AT"
+      ]
+    },
+    "horizon_minutes": {
+      "enum": [
+        60,
+        120,
+        180
+      ]
+    },
+    "feature_mode": {
+      "enum": [
+        "full",
+        "history_calendar"
+      ]
+    },
+    "shortfall_weight": {
+      "enum": [
+        10,
+        20,
+        40
+      ]
+    },
+    "required_coverage": {
+      "enum": [
+        0.95,
+        0.975,
+        0.99
+      ]
+    },
+    "reporting": {
+      "enum": [
+        "standard",
+        "tail"
+      ]
+    }
+  }
+}

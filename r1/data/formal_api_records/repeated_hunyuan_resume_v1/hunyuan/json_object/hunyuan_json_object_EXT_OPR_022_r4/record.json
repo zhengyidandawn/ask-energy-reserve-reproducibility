@@ -1,0 +1,93 @@
+{
+  "task_id": "hunyuan_json_object_EXT_OPR_022_r4",
+  "case_id": "EXT_OPR_022",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "e5db900549fa184cafdc6b57cd01af7a59d30352433b7d3c15e3d27204bf3e56",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:50:31.646228+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 648,
+    "completion_tokens": 1975,
+    "total_tokens": 2623,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1829
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "1cd2fcf2-bc24-4873-92f8-8b1dc3a5a0a1",
+  "provider_created": 1791618635,
+  "system_fingerprint": null,
+  "response_sha256": "a6772ec5cba3820bef00296bbd95a7fb9b18815d3d4d9a13a25ec765ff08c899",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_022",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Missing required field: horizon_minutes. Operator provided region ERCO and shortfall penalty 40.0 (valid) but did not pick horizon. Allowed horizons are 60, 120, or 180 minutes. Numerical outputs are produced by the verified workflow only; this request lacks horizon specification and thus study schema is not built. {\"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow only; this request lacks horizon specification and thus study schema is not built.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Missing required field: horizon_minutes. Operator provided region ERCO and shortfall penalty 40.0 (valid) but did not pick horizon. Allowed horizons are 60, 120, or 180 minutes.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 19.447448900085874,
+  "request_finished_at": "2026-10-10T07:50:51.093836+00:00"
+}

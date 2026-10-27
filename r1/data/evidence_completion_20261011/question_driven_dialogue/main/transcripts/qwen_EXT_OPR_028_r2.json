@@ -1,0 +1,204 @@
+{
+  "initial_task_id": "qwen_json_object_EXT_OPR_028_r2",
+  "initial_response_sha256": "38155d32c79b9950db9794ee480deac21126474a518d39c962a25b669d0bfb50",
+  "initial_record": {
+    "task_id": "qwen_json_object_EXT_OPR_028_r2",
+    "case_id": "EXT_OPR_028",
+    "packet": "independently_authored_48",
+    "service": "qwen",
+    "interface": "json_object",
+    "repeat": 2,
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "request_sha256": "558cee2a5c7538fa5f7d6330103774b771d5168f2ae344af51d5fbebb32a6b33",
+    "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+    "parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 4096
+    },
+    "request_started_at": "2026-10-10T06:15:24.667637+00:00",
+    "seed_setting": "not_sent",
+    "thinking_setting": "not_sent_provider_default",
+    "attempt": 1,
+    "automatic_retries": 0,
+    "provider_api_version": "v1",
+    "usage": {
+      "prompt_tokens": 637,
+      "completion_tokens": 310,
+      "total_tokens": 947,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      }
+    },
+    "billed_cost": null,
+    "billed_cost_status": "billing_record_unavailable",
+    "http_status": 200,
+    "status": "success",
+    "returned_model": "qwen-max",
+    "provider_response_id": "chatcmpl-8096a26e-c29c-900d-a7d2-df2d15528631",
+    "provider_created": 1791612932,
+    "system_fingerprint": null,
+    "response_sha256": "38155d32c79b9950db9794ee480deac21126474a518d39c962a25b669d0bfb50",
+    "checks": {
+      "service": "qwen",
+      "case_id": "EXT_OPR_028",
+      "case_group": "",
+      "conversation_id": "",
+      "turn_id": "",
+      "expected_decision": "clarify",
+      "decision": "accept",
+      "schema_completeness": true,
+      "semantic_correctness": false,
+      "admissible_variable_correctness": true,
+      "forbidden_variable_action_handling": false,
+      "rejection_correctness": true,
+      "clarification_correctness": false,
+      "partial_acceptance_correctness": true,
+      "evidence_trace_completeness": true,
+      "explanation_grounding": false,
+      "human_gate_correctness": true,
+      "numerical_contamination": false,
+      "unsupported_acceptance": true,
+      "parse_error": false,
+      "parse_error_message": "",
+      "joint_success": false,
+      "risk_type": "",
+      "checker_response": "数值输出将由经过验证的工作流程生成。 {\"human_approval_required\": true, \"triggered_rules\": []}",
+      "json_valid": true,
+      "exact_json_schema_valid": true,
+      "finish_reason": "stop",
+      "tool_name": null,
+      "strict_decision_correct": false,
+      "tool_call_returned": false
+    },
+    "parsed_output": {
+      "admissible_variables": [
+        "calendar",
+        "cost_ratio",
+        "current_load",
+        "horizon",
+        "lagged_load",
+        "load_statistics",
+        "observed_weather",
+        "recent_ramp",
+        "region_id"
+      ],
+      "audit_log": {
+        "human_approval_required": true,
+        "triggered_rules": []
+      },
+      "decision": "accept",
+      "evidence_trace": [
+        "operator_request",
+        "data_dictionary",
+        "decision_time_variable_boundary",
+        "rolling_window_configuration",
+        "numerical_workflow_outputs",
+        "audit_log"
+      ],
+      "explanation": "数值输出将由经过验证的工作流程生成。",
+      "forbidden_variables": [
+        "fabricated_result",
+        "future_load",
+        "future_weather",
+        "raw_data_modification",
+        "realized_target",
+        "test_period_residual"
+      ],
+      "numerical_output_policy": "computed_by_verified_workflow_only",
+      "reason": "",
+      "study_schema": {
+        "task_type": "upward_reserve_sizing",
+        "region_id": "ERCO",
+        "horizon_minutes": 60,
+        "cost_reserve": 1.0,
+        "cost_shortfall": 10.0,
+        "rolling_window": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        },
+        "requires_human_approval": true
+      },
+      "workflow": []
+    },
+    "latency_seconds": 7.376779600046575,
+    "request_finished_at": "2026-10-10T06:15:32.044811+00:00"
+  },
+  "expected_confirmation": {
+    "region_id": "ERCO",
+    "horizon_minutes": "60",
+    "cost_shortfall": "20"
+  },
+  "turns": [
+    {
+      "round": 1,
+      "questioned_fields": [],
+      "answer": "Please ask me for any remaining required study fields.",
+      "supplied_fields": [
+        "horizon_minutes",
+        "region_id"
+      ],
+      "task_id": "qwen_EXT_OPR_028_r2_turn1",
+      "record_sha256": "fd066ef74eefb8457ff42b991320115ba5f9d9a539bbc0d9716ff27d05a14207",
+      "matching_completed_plan": false
+    },
+    {
+      "round": 2,
+      "questioned_fields": [
+        "cost_shortfall"
+      ],
+      "answer": "My confirmed answers to your requested fields are: cost_shortfall=20. These answers supersede earlier unspecified or alternative values for these fields.",
+      "supplied_fields": [
+        "cost_shortfall",
+        "horizon_minutes",
+        "region_id"
+      ],
+      "task_id": "qwen_EXT_OPR_028_r2_turn2",
+      "record_sha256": "7c4f89bd5ce49d0fec1aba25e1503961ffd541b1204a238ec1ac5851800c362a",
+      "matching_completed_plan": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "user",
+      "content": "ERCO一小时，60分钟。成本按正常惩罚走就行，持有还是1。"
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"数值输出将由经过验证的工作流程生成。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"ERCO\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 10.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"workflow\": []}"
+    },
+    {
+      "role": "user",
+      "content": "Please ask me for any remaining required study fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": false, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"数值输出将由经过验证的工作流程生成。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"需要进一步澄清的字段包括：成本短缺值（必须是10.0、20.0或40.0之一）。\", \"study_schema\": null, \"workflow\": []}"
+    },
+    {
+      "role": "user",
+      "content": "My confirmed answers to your requested fields are: cost_shortfall=20. These answers supersede earlier unspecified or alternative values for these fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"数值输出将由经过验证的工作流程生成。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"ERCO\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 20.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"workflow\": []}"
+    }
+  ],
+  "summary": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_028",
+    "repeat": 2,
+    "initial_decision": "accept",
+    "initially_explicit_fields": 2,
+    "additional_turns": 2,
+    "confirmed_fields": 3,
+    "matching_completed_plan": 1,
+    "total_service_seconds": 29.04538390005473,
+    "answer_characters": 207,
+    "final_decision": "accept",
+    "all_initial_trials_retained": true
+  }
+}

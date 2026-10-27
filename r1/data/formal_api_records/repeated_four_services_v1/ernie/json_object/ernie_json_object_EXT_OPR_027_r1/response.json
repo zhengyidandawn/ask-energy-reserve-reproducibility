@@ -1,0 +1,22 @@
+{
+  "id": "as-q95nc7fj2f",
+  "object": "chat.completion",
+  "created": 1791613192,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"GD向上备用，缺额惩罚20。时域就用平时那套usual horizon，别再问我要分钟数。\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": []\n        }\n    ],\n    \"explanation\": \"The operator request is missing or ambiguous regarding the horizon specification. The term 'usual horizon' is not a valid input; the horizon must be explicitly stated in minutes (60, 120, or 180).\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"The horizon is not explicitly provided in valid minute units (60, 120, or 180).\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 696,
+    "completion_tokens": 379,
+    "total_tokens": 1075
+  }
+}

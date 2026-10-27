@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"unsupported_region\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected because the SPP region is not supported. The supported regions are CISO, ERCO, GD, ISNE, MISO, and SWPP.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Unsupported region: SPP\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 629,
+    "completion_tokens": 134,
+    "total_tokens": 763,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612841,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-dab5c1e6-8480-91a7-a02c-8a8ec1e1aafd"
+}

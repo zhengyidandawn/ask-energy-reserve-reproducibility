@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is missing specific details about the region, horizon, and cost values. These need to be provided for a complete and accurate schema. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The region, horizon, and cost values are not explicitly specified. Last week's discussion is not available in the context of this request.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 643,
+    "completion_tokens": 225,
+    "total_tokens": 868,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612982,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-48b484e1-6cce-92cf-87ff-14d048a43b5f"
+}

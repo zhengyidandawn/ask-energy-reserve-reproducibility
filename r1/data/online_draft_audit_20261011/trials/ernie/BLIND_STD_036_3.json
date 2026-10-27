@@ -1,0 +1,108 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_STD_036",
+  "repeat": 3,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_STD_036",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:35.293268+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "103891fc614322ee249e328e3e0e44748bae053ff5c233f4a255101d53906ce0",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 40\n    },\n    \"clarification_question\": null,\n    \"reason\": \"The request specifies a valid schema with supported region (ERCOT, mapped to ERCO), horizon (120 minutes), and shortfall cost (40). However, computed results (costs, coverage, intervals) are deferred to numerical execution per the user's instruction. The region_id 'ERCO' is accepted as a valid shorthand for ERCOT.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "partial_accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a valid schema with supported region (ERCOT, mapped to ERCO), horizon (120 minutes), and shortfall cost (40). However, computed results (costs, coverage, intervals) are deferred to numerical execution per the user's instruction. The region_id 'ERCO' is accepted as a valid shorthand for ERCOT.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 386,
+      "completion_tokens": 165,
+      "total_tokens": 551,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "7c4ca1d1901f5983066d80774e3a11f0450bcd33958bc7b095afb699419334f8",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "partial_accept",
+        "execution_ready": false,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 6.41778889996931,
+    "finished_at": "2026-10-11T15:38:41.711210+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_STD_036",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:35.293268+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "103891fc614322ee249e328e3e0e44748bae053ff5c233f4a255101d53906ce0",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 40\n    },\n    \"clarification_question\": null,\n    \"reason\": \"The request specifies a valid schema with supported region (ERCOT, mapped to ERCO), horizon (120 minutes), and shortfall cost (40). However, computed results (costs, coverage, intervals) are deferred to numerical execution per the user's instruction. The region_id 'ERCO' is accepted as a valid shorthand for ERCOT.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "partial_accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a valid schema with supported region (ERCOT, mapped to ERCO), horizon (120 minutes), and shortfall cost (40). However, computed results (costs, coverage, intervals) are deferred to numerical execution per the user's instruction. The region_id 'ERCO' is accepted as a valid shorthand for ERCOT.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 386,
+      "completion_tokens": 165,
+      "total_tokens": 551,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "7c4ca1d1901f5983066d80774e3a11f0450bcd33958bc7b095afb699419334f8",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "partial_accept",
+        "execution_ready": false,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 6.41778889996931,
+    "finished_at": "2026-10-11T15:38:41.711210+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 6.41778889996931,
+  "transport_complete": true
+}

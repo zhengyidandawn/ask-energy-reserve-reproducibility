@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is missing specific details about the region, cost values, and horizons. These are necessary to generate a valid ASK schema. Numerical outputs will be produced by the verified workflow once a valid schema is provided.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The region, cost values, and horizons are not clearly specified in the request. The phrase 'the region we discussed last week' is ambiguous, and 'normal costs' does not directly correspond to a supported value. Please provide the exact region, the horizon in minutes, and the specific shortfall cost.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 643,
+    "completion_tokens": 197,
+    "total_tokens": 840,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612620,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-1b1ed183-e179-97a4-b1eb-f8d5465ded65"
+}

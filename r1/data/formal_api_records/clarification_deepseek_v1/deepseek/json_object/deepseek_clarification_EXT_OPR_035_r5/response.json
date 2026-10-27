@@ -1,0 +1,28 @@
+{
+  "id": "208d45e5-c7f2-41d6-b699-00209233f0a6",
+  "object": "chat.completion",
+  "created": 1791615502,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\":[\"calendar\",\"cost_ratio\",\"current_load\",\"horizon\",\"lagged_load\",\"load_statistics\",\"observed_weather\",\"recent_ramp\",\"region_id\"],\"audit_log\":{\"human_approval_required\":true,\"triggered_rules\":[]},\"decision\":\"accept\",\"evidence_trace\":[\"operator_request\",\"data_dictionary\",\"decision_time_variable_boundary\",\"rolling_window_configuration\",\"numerical_workflow_outputs\",\"audit_log\"],\"explanation\":\"The confirmed request is accepted: ISNE, 60-minute horizon, cost_reserve=1.0, and cost_shortfall=40.0 are all supported. The study uses only admissible decision-time variables and the rolling design train_days=730, cal_days=30, test_days=30, rolling_step_days=30. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results are produced only by the verified numerical workflow. Human approval is required before operational use.\",\"forbidden_variables\":[\"fabricated_result\",\"future_load\",\"future_weather\",\"raw_data_modification\",\"realized_target\",\"test_period_residual\"],\"numerical_output_policy\":\"computed_by_verified_workflow_only\",\"reason\":\"All confirmed fields are supported: region ISNE, horizon 60 minutes, cost_reserve 1.0, and cost_shortfall 40.0. The requested variable set is admissible and contains no future information, test-residual leakage, raw-data modification, fabricated results, or approval bypasses.\",\"study_schema\":{\"task_type\":\"upward_reserve_sizing\",\"region_id\":\"ISNE\",\"horizon_minutes\":60,\"cost_reserve\":1.0,\"cost_shortfall\":40.0,\"rolling_window\":{\"train_days\":730,\"cal_days\":30,\"test_days\":30,\"rolling_step_days\":30},\"requires_human_approval\":true},\"workflow\":[\"validate_request_against_allowed_regions_horizons_and_costs\",\"construct_rolling_window_with_train_days_730_cal_days_30_test_days_30_step_days_30\",\"enforce_decision_time_variable_boundary\",\"run_verified_numerical_workflow_for_upward_reserve_sizing\",\"require_human_approval_before_any_operational_use\"]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1341,
+    "completion_tokens": 507,
+    "total_tokens": 1848,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 701
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

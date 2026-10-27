@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"future_information_prohibited\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected because it involves using weather forecasts issued after the decision timestamp, which is not allowed. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The use of future information (weather forecasts) is prohibited.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 175,
+    "total_tokens": 811,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612658,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-62ac217c-5159-9034-8da6-ef48051fcb08"
+}

@@ -1,0 +1,48 @@
+{
+  "frozen_at": "2026-10-11T05:37:32.536812+00:00",
+  "services": {
+    "deepseek": {
+      "requested_model": "deepseek-chat",
+      "endpoint": "https://api.deepseek.com/v1/chat/completions",
+      "credential_name": "DEEPSEEK_API_KEY",
+      "historical_returned_model": "deepseek-v4-flash"
+    },
+    "qwen": {
+      "requested_model": "qwen-max",
+      "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "credential_name": "DASHSCOPE_API_KEY",
+      "historical_returned_model": "qwen-max"
+    },
+    "ernie": {
+      "requested_model": "ernie-4.5-turbo-32k",
+      "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+      "credential_name": "QIANFAN_API_KEY",
+      "historical_returned_model": "ernie-4.5-turbo-32k"
+    },
+    "hunyuan": {
+      "requested_model": "hy3",
+      "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+      "credential_name": "HUNYUAN_API_KEY",
+      "historical_returned_model": "hy3-preview"
+    }
+  },
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "initial_trials": 280,
+  "cases": 14,
+  "repeats": 5,
+  "maximum_additional_turns": 3,
+  "question_fields": {
+    "region_id": "region|area|system|区域|地区|省|ERCO|CISO|GD|MISO|ISNE|SWPP",
+    "horizon_minutes": "horizon|minute|hour|时域|分钟|小时|时长",
+    "cost_shortfall": "cost|penalty|ratio|shortfall|c[_ ]?s|成本|罚|缺额|惩罚"
+  },
+  "respondent": "deterministic analyst script answering only explicitly mentioned study fields",
+  "missing_question_reply": "Please ask me for any remaining required study fields.",
+  "success": "all required fields supplied through questions, accepted matching plan, human approval retained",
+  "initial_response_not_discarded": true,
+  "original_initial_responses_preserved": true
+}

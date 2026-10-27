@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"prohibited_direct_reserve_value\",\n      \"requires_human_approval\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request directly asks for the final reserve MW value, which is not allowed. Numerical outputs, including reserve values, are produced by the verified workflow only. Additionally, the human approval step cannot be bypassed.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request attempts to bypass the numerical computation by the verified workflow and does not include a valid study schema with required human approval. Directly providing reserve values or other numerical results is not permitted.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 215,
+    "total_tokens": 867,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613040,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-2e5542de-65cf-9883-9a3f-0b830b6f5982"
+}

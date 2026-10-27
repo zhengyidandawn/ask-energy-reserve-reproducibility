@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_031_r2",
+  "case_id": "EXT_OPR_031",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 2,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "31973a382636a7b797d9a4447c7a5f02c432dc58a3b11e2ec8dc3d6314827101",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:24:15.980085+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1491,
+    "completion_tokens": 1209,
+    "total_tokens": 2700,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 913
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "ea7a3f6a-4a35-4171-921c-a0c07417507b",
+  "provider_created": 1791620656,
+  "system_fingerprint": null,
+  "response_sha256": "28bb91037e7cda383852cda6d620c2bd39df3d5f63c245c473c6a72f49d43b24",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_031",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The request specifies region_id=MISO (valid) and defers the rolling window to the fixed protocol (train_days=730, cal_days=30, test_days=30, rolling_step_days=30, valid), but two required study parameters are ambiguous and must be made concrete: (1) horizon_minutes is given as 'usual', which is not a valid value; it must be one of 60, 120, or 180 minutes. (2) cost_shortfall is given as 'usual', which is not a valid value; it must be one of 10.0, 20.0, or 40.0 (with cost_reserve=1.0). These fields must be clarified before a study_schema can be constructed. Numerical outputs such as reserve values, mean costs, coverage, confidence intervals, and dispatch results are produced exclusively by the verified numerical workflow; the LLM does not generate them. This request cannot proceed to a study schema until the ambiguous horizon_minutes and cost_shortfall values are clarified. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "The request specifies region_id=MISO (valid) and defers the rolling window to the fixed protocol (train_days=730, cal_days=30, test_days=30, rolling_step_days=30, valid), but two required study parameters are ambiguous and must be made concrete: (1) horizon_minutes is given as 'usual', which is not a valid value; it must be one of 60, 120, or 180 minutes. (2) cost_shortfall is given as 'usual', which is not a valid value; it must be one of 10.0, 20.0, or 40.0 (with cost_reserve=1.0). These fields must be clarified before a study_schema can be constructed.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "Numerical outputs such as reserve values, mean costs, coverage, confidence intervals, and dispatch results are produced exclusively by the verified numerical workflow; the LLM does not generate them. This request cannot proceed to a study schema until the ambiguous horizon_minutes and cost_shortfall values are clarified.",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 10.724832799984142,
+  "request_finished_at": "2026-10-10T08:24:26.705025+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"clarification_required\"\n    ]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The operator's request is unclear regarding the final decision on the study horizon. The initial request specifies a 60-minute study but also suggests changing to a 90-minute horizon if 60 minutes is deemed insufficient, without providing a clear criterion for this decision. A specific and definitive choice must be made. Numerical outputs are produced by the verified workflow once a clear and admissible schema is defined.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The horizon time is ambiguous. It's initially stated as 60 minutes but with a conditionally suggested change to 90 minutes. The task requires a clear and unambiguous specification of the horizon time which must be among the allowed values (60, 120, 180 minutes). Additionally, 90 minutes is not an allowed value. Clarification is needed to proceed.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 263,
+    "total_tokens": 915,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612934,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-cb7db4e2-930a-9182-b5f4-453d3224e36b"
+}

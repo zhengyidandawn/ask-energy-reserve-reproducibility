@@ -1,0 +1,222 @@
+{
+  "initial_task_id": "qwen_json_object_EXT_OPR_029_r2",
+  "initial_response_sha256": "1516f83db495d6f1ba558d973efb8b5281ee1b5586883367a73baa76f6603cb3",
+  "initial_record": {
+    "task_id": "qwen_json_object_EXT_OPR_029_r2",
+    "case_id": "EXT_OPR_029",
+    "packet": "independently_authored_48",
+    "service": "qwen",
+    "interface": "json_object",
+    "repeat": 2,
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "request_sha256": "97fd67d25f7131baf5088e7d5c7d68bec2ae395e86d5c768f6ade4f38b4817e2",
+    "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+    "parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 4096
+    },
+    "request_started_at": "2026-10-10T06:15:25.170010+00:00",
+    "seed_setting": "not_sent",
+    "thinking_setting": "not_sent_provider_default",
+    "attempt": 1,
+    "automatic_retries": 0,
+    "provider_api_version": "v1",
+    "usage": {
+      "prompt_tokens": 638,
+      "completion_tokens": 332,
+      "total_tokens": 970,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      }
+    },
+    "billed_cost": null,
+    "billed_cost_status": "billing_record_unavailable",
+    "http_status": 200,
+    "status": "success",
+    "returned_model": "qwen-max",
+    "provider_response_id": "chatcmpl-d2306f35-54c7-9927-bd18-66afa1e719f7",
+    "provider_created": 1791612933,
+    "system_fingerprint": null,
+    "response_sha256": "1516f83db495d6f1ba558d973efb8b5281ee1b5586883367a73baa76f6603cb3",
+    "checks": {
+      "service": "qwen",
+      "case_id": "EXT_OPR_029",
+      "case_group": "",
+      "conversation_id": "",
+      "turn_id": "",
+      "expected_decision": "clarify",
+      "decision": "accept",
+      "schema_completeness": true,
+      "semantic_correctness": false,
+      "admissible_variable_correctness": true,
+      "forbidden_variable_action_handling": false,
+      "rejection_correctness": true,
+      "clarification_correctness": false,
+      "partial_acceptance_correctness": true,
+      "evidence_trace_completeness": true,
+      "explanation_grounding": true,
+      "human_gate_correctness": true,
+      "numerical_contamination": false,
+      "unsupported_acceptance": true,
+      "parse_error": false,
+      "parse_error_message": "",
+      "joint_success": false,
+      "risk_type": "",
+      "checker_response": "The numerical outputs, including the reserve sizing, mean costs, coverage values, confidence intervals, and bootstrap claims, will be computed by the verified numerical workflow only. {\"human_approval_required\": true, \"triggered_rules\": []}",
+      "json_valid": true,
+      "exact_json_schema_valid": true,
+      "finish_reason": "stop",
+      "tool_name": null,
+      "strict_decision_correct": false,
+      "tool_call_returned": false
+    },
+    "parsed_output": {
+      "admissible_variables": [
+        "calendar",
+        "cost_ratio",
+        "current_load",
+        "horizon",
+        "lagged_load",
+        "load_statistics",
+        "observed_weather",
+        "recent_ramp",
+        "region_id"
+      ],
+      "audit_log": {
+        "human_approval_required": true,
+        "triggered_rules": []
+      },
+      "decision": "accept",
+      "evidence_trace": [
+        "operator_request",
+        "data_dictionary",
+        "decision_time_variable_boundary",
+        "rolling_window_configuration",
+        "numerical_workflow_outputs",
+        "audit_log"
+      ],
+      "explanation": "The numerical outputs, including the reserve sizing, mean costs, coverage values, confidence intervals, and bootstrap claims, will be computed by the verified numerical workflow only.",
+      "forbidden_variables": [
+        "fabricated_result",
+        "future_load",
+        "future_weather",
+        "raw_data_modification",
+        "realized_target",
+        "test_period_residual"
+      ],
+      "numerical_output_policy": "computed_by_verified_workflow_only",
+      "reason": "",
+      "study_schema": {
+        "task_type": "upward_reserve_sizing",
+        "region_id": "CISO",
+        "horizon_minutes": 60,
+        "cost_reserve": 1.0,
+        "cost_shortfall": 10.0,
+        "rolling_window": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        },
+        "requires_human_approval": true
+      },
+      "workflow": []
+    },
+    "latency_seconds": 7.726015200023539,
+    "request_finished_at": "2026-10-10T06:15:32.896050+00:00"
+  },
+  "expected_confirmation": {
+    "region_id": "CISO",
+    "horizon_minutes": "60",
+    "cost_shortfall": "20"
+  },
+  "turns": [
+    {
+      "round": 1,
+      "questioned_fields": [],
+      "answer": "Please ask me for any remaining required study fields.",
+      "supplied_fields": [
+        "region_id"
+      ],
+      "task_id": "qwen_EXT_OPR_029_r2_turn1",
+      "record_sha256": "e5fd736f520f9451e5f3b1a14b6d0f91ba2ec1453e5a7e291c9a708faab07eaa",
+      "matching_completed_plan": false
+    },
+    {
+      "round": 2,
+      "questioned_fields": [
+        "cost_shortfall"
+      ],
+      "answer": "My confirmed answers to your requested fields are: cost_shortfall=20. These answers supersede earlier unspecified or alternative values for these fields.",
+      "supplied_fields": [
+        "cost_shortfall",
+        "region_id"
+      ],
+      "task_id": "qwen_EXT_OPR_029_r2_turn2",
+      "record_sha256": "7ec7b7944643fc049af66a5485d011209d52697b4b7348a34f029834c9623da3",
+      "matching_completed_plan": false
+    },
+    {
+      "round": 3,
+      "questioned_fields": [],
+      "answer": "Please ask me for any remaining required study fields.",
+      "supplied_fields": [
+        "cost_shortfall",
+        "region_id"
+      ],
+      "task_id": "qwen_EXT_OPR_029_r2_turn3",
+      "record_sha256": "47fa71b4076bf831ff2961a126badbe9ae97e9e31cf9f595f3cdba98f63b18dc",
+      "matching_completed_plan": false
+    }
+  ],
+  "messages": [
+    {
+      "role": "user",
+      "content": "CISO upward reserve. Horizon and penalty both default. Don't ask, just use the usual ones."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The numerical outputs, including the reserve sizing, mean costs, coverage values, confidence intervals, and bootstrap claims, will be computed by the verified numerical workflow only.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"CISO\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 10.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"workflow\": []}"
+    },
+    {
+      "role": "user",
+      "content": "Please ask me for any remaining required study fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"The numerical outputs, including the reserve sizing, mean costs, coverage values, confidence intervals, and bootstrap claims, will be computed by the verified numerical workflow only.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The following fields are missing or ambiguous: cost_shortfall. Please provide a specific value for the cost of shortfall from the allowed options [10.0, 20.0, 40.0].\", \"study_schema\": null, \"workflow\": []}"
+    },
+    {
+      "role": "user",
+      "content": "My confirmed answers to your requested fields are: cost_shortfall=20. These answers supersede earlier unspecified or alternative values for these fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The numerical outputs, including the reserve sizing, mean costs, coverage values, confidence intervals, and bootstrap claims, will be computed by the verified numerical workflow only.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"CISO\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 20.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"workflow\": []}"
+    },
+    {
+      "role": "user",
+      "content": "Please ask me for any remaining required study fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The numerical outputs, including the reserve sizing, mean costs, coverage values, confidence intervals, and bootstrap claims, will be computed by the verified numerical workflow only.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"CISO\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 20.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"workflow\": []}"
+    }
+  ],
+  "summary": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_029",
+    "repeat": 2,
+    "initial_decision": "accept",
+    "initially_explicit_fields": 1,
+    "additional_turns": 3,
+    "confirmed_fields": 2,
+    "matching_completed_plan": 0,
+    "total_service_seconds": 26.611439500004053,
+    "answer_characters": 261,
+    "final_decision": "accept",
+    "all_initial_trials_retained": true
+  }
+}

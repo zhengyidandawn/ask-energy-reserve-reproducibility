@@ -1,0 +1,112 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_CLAR_019",
+  "repeat": 3,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:55.762482+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "895ee6664e0ee10072dea9245f5b23f0c6548eda8ecab9eec85d7be01f5489a3",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the region and the shortfall cost (10, 20, or 40) for your energy study?\",\n  \"reason\": \"The request requires a specific region and a shortfall cost to be fully admissible. The horizon is set to 60 minutes as per 'one-hour-ish' in the request, but the region and the shortfall cost need to be clarified.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Could you please specify the region and the shortfall cost (10, 20, or 40) for your energy study?",
+      "reason": "The request requires a specific region and a shortfall cost to be fully admissible. The horizon is set to 60 minutes as per 'one-hour-ish' in the request, but the region and the shortfall cost need to be clarified.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 146,
+      "total_tokens": 521,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "210a4add26b99e5685dbd5ffeb193e3688a2430d384bf45ab6cd8da30359fff9",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 5.070540099986829,
+    "finished_at": "2026-10-11T15:37:00.832756+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:55.762482+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "895ee6664e0ee10072dea9245f5b23f0c6548eda8ecab9eec85d7be01f5489a3",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the region and the shortfall cost (10, 20, or 40) for your energy study?\",\n  \"reason\": \"The request requires a specific region and a shortfall cost to be fully admissible. The horizon is set to 60 minutes as per 'one-hour-ish' in the request, but the region and the shortfall cost need to be clarified.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Could you please specify the region and the shortfall cost (10, 20, or 40) for your energy study?",
+      "reason": "The request requires a specific region and a shortfall cost to be fully admissible. The horizon is set to 60 minutes as per 'one-hour-ish' in the request, but the region and the shortfall cost need to be clarified.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 146,
+      "total_tokens": 521,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "210a4add26b99e5685dbd5ffeb193e3688a2430d384bf45ab6cd8da30359fff9",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 5.070540099986829,
+    "finished_at": "2026-10-11T15:37:00.832756+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 5.070540099986829,
+  "transport_complete": true
+}

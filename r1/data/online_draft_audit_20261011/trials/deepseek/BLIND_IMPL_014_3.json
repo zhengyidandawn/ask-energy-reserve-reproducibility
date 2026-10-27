@@ -1,0 +1,116 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_IMPL_014",
+  "repeat": 3,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_IMPL_014",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:45.838870+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "c41a31013f7013573bb9f01569d931e90dcc294bc1e0cc1f333b6a392a62fb70",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be used for this MISO study?\",\n  \"reason\": \"The request specifies the MISO region and default reserve cost, but the horizon and shortfall weight are unresolved. The study protocol fixes cost_reserve at 1, while horizon and shortfall weight must be explicitly selected from supported values.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be used for this MISO study?",
+      "reason": "The request specifies the MISO region and default reserve cost, but the horizon and shortfall weight are unresolved. The study protocol fixes cost_reserve at 1, while horizon and shortfall weight must be explicitly selected from supported values.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 389,
+      "completion_tokens": 162,
+      "total_tokens": 551,
+      "prompt_tokens_details": {
+        "cached_tokens": 255
+      },
+      "prompt_cache_hit_tokens": 255,
+      "prompt_cache_miss_tokens": 134
+    },
+    "response_sha256": "befc08539ffa34052333612f2f51cf47d8ea6018f15bf872759c0b61ccac6c06",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.2557686999207363,
+    "finished_at": "2026-10-11T15:36:47.094320+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_IMPL_014",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:45.838870+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "c41a31013f7013573bb9f01569d931e90dcc294bc1e0cc1f333b6a392a62fb70",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be used for this MISO study?\",\n  \"reason\": \"The request specifies the MISO region and default reserve cost, but the horizon and shortfall weight are unresolved. The study protocol fixes cost_reserve at 1, while horizon and shortfall weight must be explicitly selected from supported values.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be used for this MISO study?",
+      "reason": "The request specifies the MISO region and default reserve cost, but the horizon and shortfall weight are unresolved. The study protocol fixes cost_reserve at 1, while horizon and shortfall weight must be explicitly selected from supported values.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 389,
+      "completion_tokens": 162,
+      "total_tokens": 551,
+      "prompt_tokens_details": {
+        "cached_tokens": 255
+      },
+      "prompt_cache_hit_tokens": 255,
+      "prompt_cache_miss_tokens": 134
+    },
+    "response_sha256": "befc08539ffa34052333612f2f51cf47d8ea6018f15bf872759c0b61ccac6c06",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.2557686999207363,
+    "finished_at": "2026-10-11T15:36:47.094320+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.2557686999207363,
+  "transport_complete": true
+}

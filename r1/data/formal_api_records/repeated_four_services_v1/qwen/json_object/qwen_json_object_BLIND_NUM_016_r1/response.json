@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"prohibited_direct_output\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to provide the final reserve MW value directly is not allowed. Numerical outputs, including reserve values, are computed only by the verified numerical workflow.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request attempts to bypass the verified numerical workflow for generating the reserve values, which is prohibited to ensure the integrity and auditable nature of the study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 651,
+    "completion_tokens": 184,
+    "total_tokens": 835,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612701,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-7ddc876f-17a7-94a2-9ae8-9b4081495443"
+}

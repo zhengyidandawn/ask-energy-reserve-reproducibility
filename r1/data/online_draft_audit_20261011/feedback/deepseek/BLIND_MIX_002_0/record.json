@@ -1,0 +1,54 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 0,
+  "phase": "feedback",
+  "started_at": "2026-10-11T15:36:47.368014+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "be163dd530bd64d1369002eec3aa4ea2595c4c529c9dea61e5f518e32a983718",
+  "returned_model": "deepseek-flash",
+  "content": "{\"decision\":\"reject\",\"fields\":{\"region_id\":\"CISO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The frozen deterministic checker reports invalid_schema for the prior draft. The request itself specifies a supported region (CISO) and a supported horizon (120 minutes), and explicitly asks for JSON schema only without reserve MW or coverage. However, the execution validation rejects the draft as invalid_schema, so the corrected disposition is reject. The explicitly supplied fields are preserved for analyst review: region_id CISO, horizon_minutes 120, cost_reserve fixed at 1 by protocol, and cost_shortfall unresolved.\",\"human_approval_required\":true}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The frozen deterministic checker reports invalid_schema for the prior draft. The request itself specifies a supported region (CISO) and a supported horizon (120 minutes), and explicitly asks for JSON schema only without reserve MW or coverage. However, the execution validation rejects the draft as invalid_schema, so the corrected disposition is reject. The explicitly supplied fields are preserved for analyst review: region_id CISO, horizon_minutes 120, cost_reserve fixed at 1 by protocol, and cost_shortfall unresolved.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 530,
+    "completion_tokens": 157,
+    "total_tokens": 687,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 146
+  },
+  "response_sha256": "9204db7fe4857cf0eba9c2f4d03aabca768ab7cfba2d9192c482fda0a8476ceb",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.6273361999774352,
+  "finished_at": "2026-10-11T15:36:48.995501+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-wnbpqynhbk",
+  "object": "chat.completion",
+  "created": 1791716151,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"required_coverage\",\n        \"reporting\"\n    ],\n    \"reason\": \"Please provide the missing fields: required_coverage, reporting.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 291,
+    "completion_tokens": 60,
+    "total_tokens": 351,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

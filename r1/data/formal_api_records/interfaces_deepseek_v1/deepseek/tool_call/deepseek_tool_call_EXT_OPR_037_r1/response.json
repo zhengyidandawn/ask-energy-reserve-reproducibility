@@ -1,0 +1,39 @@
+{
+  "id": "7fe0a48f-e110-460b-9ec3-8cb0340a4112",
+  "object": "chat.completion",
+  "created": 1791613061,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_KSG00cDuGdtjW51F7zRe4803",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"accept\", \"reason\": \"Operator request maps cleanly to the allowed upward_reserve_sizing task: region GD (allowed), horizon 120 minutes (allowed), cost_reserve=1.0, cost_shortfall=20.0 (allowed), and only observed load and weather are used, which respects the decision-time information boundary. No reserve values, mean costs, coverage, confidence intervals, bootstrap claims, or dispatch results are produced here; those are computed only by the verified numerical workflow. The study plan is prepared for human approval and no capacity is reported now.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"GD\", \"horizon_minutes\": 120, \"cost_reserve\": 1.0, \"cost_shortfall\": 20.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [\"Validate operator request against allowed task, region, horizon, and cost sets\", \"Lock decision-time information boundary to observed load and observed weather only\", \"Assemble admissible feature set (calendar, cost_ratio, current_load, horizon, lagged_load, load_statistics, observed_weather, recent_ramp, region_id)\", \"Configure rolling window: train_days=730, cal_days=30, test_days=30, rolling_step_days=30\", \"Run verified numerical workflow to compute reserve sizing outputs\", \"Route computed outputs and audit log to human approval before any operational use\"], \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The request is accepted as an upward reserve-sizing study for GD at a 120-minute horizon with cost_reserve=1.0 and cost_shortfall=20.0, using only observed load and observed weather at issue time. Future load, future weather, realized targets, and test-period residuals are forbidden, and raw data must not be modified. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results are produced only by the verified numerical workflow; this plan reports none of them. The study requires human approval before any operational use.\", \"audit_log\": {\"triggered_rules\": [\"allowed_task_upward_reserve_sizing\", \"allowed_region_GD\", \"allowed_horizon_120\", \"allowed_cost_shortfall_20\", \"observed_information_only\", \"human_approval_required\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1666,
+    "completion_tokens": 816,
+    "total_tokens": 2482,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 258
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

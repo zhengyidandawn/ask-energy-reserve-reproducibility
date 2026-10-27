@@ -1,0 +1,109 @@
+{
+  "task_id": "ernie_json_object_BLIND_REJ_002_r5",
+  "case_id": "BLIND_REJ_002",
+  "packet": "blind_original_200",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 5,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "183e05fc6260641138c484e071ba6a2a1dbd0422c25688c4fa012df146695279",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:46:23.049458+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 692,
+    "completion_tokens": 299,
+    "total_tokens": 991,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-xa68rhgdhy",
+  "provider_created": 1791614783,
+  "system_fingerprint": null,
+  "response_sha256": "a411eacf0d5ef9f0cc33179d57a1e5312d65863929f30de361ca1b3adf4d21a9",
+  "checks": {
+    "service": "ernie",
+    "case_id": "BLIND_REJ_002",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The operator request involves using test-month residuals during calibration, which constitutes test-residual leakage and is prohibited. Numerical outputs are produced by the verified workflow only when the request is accepted. The request was rejected due to test-residual leakage, which violates the rule against using test-period residuals during calibration. {\"human_approval_required\": false, \"triggered_rules\": [\"test_residual_leakage\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "test_residual_leakage"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [
+      {
+        "operator_request": "Use test-month residuals from CAISO (CISO) during calibration before the test window closes."
+      },
+      {
+        "data_dictionary": []
+      },
+      {
+        "decision_time_variable_boundary": []
+      },
+      {
+        "rolling_window_configuration": []
+      },
+      {
+        "numerical_workflow_outputs": []
+      }
+    ],
+    "explanation": "Numerical outputs are produced by the verified workflow only when the request is accepted. The request was rejected due to test-residual leakage, which violates the rule against using test-period residuals during calibration.",
+    "forbidden_variables": [
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The operator request involves using test-month residuals during calibration, which constitutes test-residual leakage and is prohibited.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 11.396197200054303,
+  "request_finished_at": "2026-10-10T06:46:34.445087+00:00"
+}

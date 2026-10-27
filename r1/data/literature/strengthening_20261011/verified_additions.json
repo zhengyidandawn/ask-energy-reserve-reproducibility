@@ -1,0 +1,648 @@
+[
+  {
+    "key": "Elmachtoub2022Smart",
+    "doi": "10.1287/mnsc.2020.3922",
+    "title": "Smart “Predict, then Optimize”",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-0729-4999",
+        "authenticated-orcid": false,
+        "given": "Adam N.",
+        "family": "Elmachtoub",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Industrial Engineering and Operations Research and Data Science Institute, Columbia University, New York, New York 10027;"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5617-1058",
+        "authenticated-orcid": false,
+        "given": "Paul",
+        "family": "Grigas",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Industrial Engineering and Operations Research, University of California, Berkeley, Berkeley, California 94720"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": 2022,
+    "venue": "Management Science",
+    "volume": "68",
+    "pages": "9-26",
+    "abstract": "<jats:p>Many real-world analytics problems involve two significant challenges: prediction and optimization. Because of the typically complex nature of each challenge, the standard paradigm is predict-then-optimize. By and large, machine learning tools are intended to minimize prediction error and do not account for how the predictions will be used in the downstream optimization problem. In contrast, we propose a new and very general framework, called Smart “Predict, then Optimize” (SPO), which directly leverages the optimization problem structure—that is, its objective and constraints—for designing better prediction models. A key component of our framework is the SPO loss function, which measures the decision error induced by a prediction. Training a prediction model with respect to the SPO loss is computationally challenging, and, thus, we derive, using duality theory, a convex surrogate loss function, which we call the SPO+ loss. Most importantly, we prove that the SPO+ loss is statistically consistent with respect to the SPO loss under mild conditions. Our SPO+ loss function can tractably handle any polyhedral, convex, or even mixed-integer optimization problem with a linear objective. Numerical experiments on shortest-path and portfolio-optimization problems show that the SPO framework can lead to significant improvement under the predict-then-optimize paradigm, in particular, when the prediction model being trained is misspecified. We find that linear models trained using SPO+ loss tend to dominate random-forest algorithms, even when the ground truth is highly nonlinear.</jats:p>\n                  <jats:p>This paper was accepted by Yinyu Ye, optimization.</jats:p>\n                  <jats:p>Supplemental Material: Data and the online appendix are available at https://doi.org/10.1287/mnsc.2020.3922</jats:p>",
+    "landing": {
+      "error_type": "HTTPError",
+      "message": "HTTP Error 403: Forbidden"
+    }
+  },
+  {
+    "key": "Bertsimas2020Prescriptive",
+    "doi": "10.1287/mnsc.2018.3253",
+    "title": "From Predictive to Prescriptive Analytics",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1985-1003",
+        "authenticated-orcid": false,
+        "given": "Dimitris",
+        "family": "Bertsimas",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Operations Research Center, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139;"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1672-0507",
+        "authenticated-orcid": false,
+        "given": "Nathan",
+        "family": "Kallus",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Cornell Tech and School of Operations Research and Information Engineering, Cornell University, New York, New York 10044"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": 2020,
+    "venue": "Management Science",
+    "volume": "66",
+    "pages": "1025-1044",
+    "abstract": "<jats:p>We combine ideas from machine learning (ML) and operations research and management science (OR/MS) in developing a framework, along with specific methods, for using data to prescribe optimal decisions in OR/MS problems. In a departure from other work on data-driven optimization, we consider data consisting, not only of observations of quantities with direct effect on costs/revenues, such as demand or returns, but also predominantly of observations of associated auxiliary quantities. The main problem of interest is a conditional stochastic optimization problem, given imperfect observations, where the joint probability distributions that specify the problem are unknown. We demonstrate how our proposed methods are generally applicable to a wide range of decision problems and prove that they are computationally tractable and asymptotically optimal under mild conditions, even when data are not independent and identically distributed and for censored observations. We extend these to the case in which some decision variables, such as price, may affect uncertainty and their causal effects are unknown. We develop the coefficient of prescriptiveness P to measure the prescriptive content of data and the efficacy of a policy from an operations perspective. We demonstrate our approach in an inventory management problem faced by the distribution arm of a large media company, shipping 1 billion units yearly. We leverage both internal data and public data harvested from IMDb, Rotten Tomatoes, and Google to prescribe operational decisions that outperform baseline measures. Specifically, the data we collect, leveraged by our methods, account for an 88% improvement as measured by our coefficient of prescriptiveness.</jats:p>\n                  <jats:p>This paper was accepted by Noah Gans, optimization.</jats:p>",
+    "landing": {
+      "error_type": "HTTPError",
+      "message": "HTTP Error 403: Forbidden"
+    }
+  },
+  {
+    "key": "Lim2021TemporalFusion",
+    "doi": "10.1016/j.ijforecast.2021.03.012",
+    "title": "Temporal Fusion Transformers for interpretable multi-horizon time series forecasting",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-2779-4122",
+        "authenticated-orcid": false,
+        "given": "Bryan",
+        "family": "Lim",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sercan Ö.",
+        "family": "Arık",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nicolas",
+        "family": "Loeff",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tomas",
+        "family": "Pfister",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": 2021,
+    "venue": "International Journal of Forecasting",
+    "volume": "37",
+    "pages": "1748-1764",
+    "abstract": null,
+    "landing": {
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0169207021000637",
+      "bytes_read": 2699
+    }
+  },
+  {
+    "key": "Vazquez2019DemandResponse",
+    "doi": "10.1016/j.apenergy.2018.11.002",
+    "title": "Reinforcement learning for demand response: A review of algorithms and modeling techniques",
+    "authors": [
+      {
+        "given": "José R.",
+        "family": "Vázquez-Canteli",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zoltán",
+        "family": "Nagy",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": 2019,
+    "venue": "Applied Energy",
+    "volume": "235",
+    "pages": "1072-1089",
+    "abstract": null,
+    "landing": {
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0306261918317082",
+      "bytes_read": 2705
+    }
+  },
+  {
+    "key": "Nikseresht2025Hydrogen",
+    "doi": "10.1016/j.renene.2025.122737",
+    "title": "Dynamic hydrogen demand forecasting using hybrid time series models: Insights for renewable energy systems",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-6107-7699",
+        "authenticated-orcid": false,
+        "given": "Ali",
+        "family": "Nikseresht",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": 2025,
+    "venue": "Renewable Energy",
+    "volume": "244",
+    "pages": "122737",
+    "abstract": null,
+    "landing": {
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0960148125003994",
+      "bytes_read": 2721
+    }
+  },
+  {
+    "key": "Yin2024EnergyWater",
+    "doi": "10.1016/j.renene.2024.121836",
+    "title": "Coupled complementary operation and optimal planning of energy-water nexus synergies: Balancing water demand and renewable energy production",
+    "authors": [
+      {
+        "given": "Xiuxing",
+        "family": "Yin",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Farui",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhigao",
+        "family": "Zhao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": 2024,
+    "venue": "Renewable Energy",
+    "volume": "237",
+    "pages": "121836",
+    "abstract": null,
+    "landing": {
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0960148124019049",
+      "bytes_read": 2755
+    }
+  },
+  {
+    "key": "Smets2025Storage",
+    "doi": "10.1109/EEM64765.2025.11050194",
+    "title": "Forecasting Electricity Prices With Decision-Focused Learning for Storage Optimization",
+    "authors": [
+      {
+        "given": "Ruben",
+        "family": "Smets",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "KU Leuven, mechanical engineering"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Erik",
+        "family": "Delarue",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "KU Leuven, mechanical engineering"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jean-François",
+        "family": "Toubeau",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "UMons, electrical engineering"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mihaly",
+        "family": "Dolanyi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "UMons, electrical engineering"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kenneth",
+        "family": "Bruninix",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "TU Delft, TPM - E&#x0026;I"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": 2025,
+    "venue": "2025 21st International Conference on the European Energy Market (EEM)",
+    "volume": null,
+    "pages": "1-7",
+    "abstract": null,
+    "landing": {
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/11050194/",
+      "bytes_read": 0
+    }
+  },
+  {
+    "key": "Hai2026Arbitrage",
+    "doi": "10.1145/3765611.3815386",
+    "title": "Decision-Focused Learning for Energy Arbitrage: From Probabilistic Forecasting to Risk-Averse Stochastic Optimization",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0009-0003-7601-2024",
+        "authenticated-orcid": false,
+        "given": "Steven Oufan",
+        "family": "Hai",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Alberta, Edmonton, Alberta, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6711-5502",
+        "authenticated-orcid": false,
+        "given": "Omid",
+        "family": "Ardakanian",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Alberta, Edmonton, Alberta, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": 2026,
+    "venue": "Proceedings of the 2026 ACM Sustainability Week",
+    "volume": null,
+    "pages": "555-556",
+    "abstract": null,
+    "landing": {
+      "error_type": "HTTPError",
+      "message": "HTTP Error 403: Forbidden"
+    }
+  },
+  {
+    "key": "Taylor2003WeatherEnsemble",
+    "doi": "10.1016/S0169-2070(01)00123-6",
+    "title": "Using weather ensemble predictions in electricity demand forecasting",
+    "authors": [
+      {
+        "given": "James W.",
+        "family": "Taylor",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Roberto",
+        "family": "Buizza",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": 2003,
+    "venue": "International Journal of Forecasting",
+    "volume": "19",
+    "pages": "57-70",
+    "abstract": null,
+    "landing": {
+      "status": 200,
+      "resolved_url": "https://linkinghub.elsevier.com/retrieve/pii/S0169207001001236",
+      "bytes_read": 2683
+    }
+  },
+  {
+    "key": "Fajardo2024SpatialTemporalLoad",
+    "doi": "10.1109/URUCON63440.2024.10850383",
+    "title": "Graph Neural Network Method for Integrating Spatial-Temporal Data in Electricity Demand Forecasting",
+    "authors": [
+      {
+        "given": "Edgar Sebastian",
+        "family": "Fajardo-Barco",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Universidad de Nari&#x00F1;o,Master&#x2019;s Degree in Electronic Engineering,Pasto,Colombia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wilson",
+        "family": "Achicanoy-Martínez",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Universidad de Nari&#x00F1;o,Department of Electronics,Pasto,Colombia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE URUCON",
+    "volume": null,
+    "pages": "1-5",
+    "abstract": null,
+    "landing": {
+      "status": 202,
+      "resolved_url": "https://ieeexplore.ieee.org/document/10850383/",
+      "bytes_read": 0
+    }
+  },
+  {
+    "key": "Noy2023Productivity",
+    "doi": "10.1126/science.adh2586",
+    "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-7814-5184",
+        "authenticated-orcid": true,
+        "given": "Shakked",
+        "family": "Noy",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Economics, Massachusetts Institute of Technology, Cambridge, MA, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-7399-0066",
+        "authenticated-orcid": true,
+        "given": "Whitney",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Economics, Massachusetts Institute of Technology, Cambridge, MA, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": 2023,
+    "venue": "Science",
+    "volume": "381",
+    "pages": "187-192",
+    "abstract": "<jats:p>We examined the productivity effects of a generative artificial intelligence (AI) technology, the assistive chatbot ChatGPT, in the context of midlevel professional writing tasks. In a preregistered online experiment, we assigned occupation-specific, incentivized writing tasks to 453 college-educated professionals and randomly exposed half of them to ChatGPT. Our results show that ChatGPT substantially raised productivity: The average time taken decreased by 40% and output quality rose by 18%. Inequality between workers decreased, and concern and excitement about AI temporarily rose. Workers exposed to ChatGPT during the experiment were 2 times as likely to report using it in their real job 2 weeks after the experiment and 1.6 times as likely 2 months after the experiment.</jats:p>",
+    "landing": {
+      "error_type": "HTTPError",
+      "message": "HTTP Error 403: Forbidden"
+    }
+  },
+  {
+    "key": "Vaccaro2024HumanAI",
+    "doi": "10.1038/s41562-024-02024-1",
+    "title": "When combinations of humans and AI are useful: A systematic review and meta-analysis",
+    "authors": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-6254-9718",
+        "authenticated-orcid": false,
+        "given": "Michelle",
+        "family": "Vaccaro",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8467-9123",
+        "authenticated-orcid": false,
+        "given": "Abdullah",
+        "family": "Almaatouq",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7005-1482",
+        "authenticated-orcid": false,
+        "given": "Thomas",
+        "family": "Malone",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "year": 2024,
+    "venue": "Nature Human Behaviour",
+    "volume": "8",
+    "pages": "2293-2303",
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Inspired by the increasing use of artificial intelligence (AI) to augment humans, researchers have studied human–AI systems involving different tasks, systems and populations. Despite such a large body of work, we lack a broad conceptual understanding of when combinations of humans and AI are better than either alone. Here we addressed this question by conducting a preregistered systematic review and meta-analysis of 106 experimental studies reporting 370 effect sizes. We searched an interdisciplinary set of databases (the Association for Computing Machinery Digital Library, the Web of Science and the Association for Information Systems eLibrary) for studies published between 1 January 2020 and 30 June 2023. Each study was required to include an original human-participants experiment that evaluated the performance of humans alone, AI alone and human–AI combinations. First, we found that, on average, human–AI combinations performed significantly worse than the best of humans or AI alone (Hedges’\n                    <jats:italic>g</jats:italic>\n                     = −0.23; 95% confidence interval, −0.39 to −0.07). Second, we found performance losses in tasks that involved making decisions and significantly greater gains in tasks that involved creating content. Finally, when humans outperformed AI alone, we found performance gains in the combination, but when AI outperformed humans alone, we found losses. Limitations of the evidence assessed here include possible publication bias and variations in the study designs analysed. Overall, these findings highlight the heterogeneity of the effects of human–AI collaboration and point to promising avenues for improving human–AI systems.\n                  </jats:p>",
+    "landing": {
+      "status": 200,
+      "resolved_url": "https://www.nature.com/articles/s41562-024-02024-1?error=cookies_not_supported&code=852ea6aa-830b-4f5e-93e2-52c57dbad372",
+      "bytes_read": 200000
+    }
+  }
+]

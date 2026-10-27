@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"数值输出将由验证过的工作流生成。当前请求缺乏明确指定的区域信息，这阻止了进一步处理。\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"缺少或不明确的字段：region_id。请指定一个有效的区域ID以继续。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 649,
+    "completion_tokens": 139,
+    "total_tokens": 788,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614524,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-057d4892-8a72-9bc6-ae08-bd5b892d3552"
+}

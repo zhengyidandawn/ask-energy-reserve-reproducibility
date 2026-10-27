@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"请求中缺失了成本缺额(cost_shortfall)的具体数值。\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"需要提供具体的成本缺额值才能进一步处理该研究计划。请注意，数值计算将由验证过的工作流产生。\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}",
+              "name": "submit_plan"
+            },
+            "id": "call_4b04a06064d444e6b03301",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1521,
+    "completion_tokens": 218,
+    "total_tokens": 1739,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616141,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-852032b1-446f-98d0-8377-7312a2640548"
+}

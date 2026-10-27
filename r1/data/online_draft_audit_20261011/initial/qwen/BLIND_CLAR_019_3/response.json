@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the region and the shortfall cost (10, 20, or 40) for your energy study?\",\n  \"reason\": \"The request requires a specific region and a shortfall cost to be fully admissible. The horizon is set to 60 minutes as per 'one-hour-ish' in the request, but the region and the shortfall cost need to be clarified.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 146,
+    "total_tokens": 521,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733024,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-c51f98bc-e6a8-9cc3-9b96-6e132227ea28"
+}

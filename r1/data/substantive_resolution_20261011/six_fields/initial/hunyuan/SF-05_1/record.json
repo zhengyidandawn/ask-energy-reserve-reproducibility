@@ -1,0 +1,38 @@
+{
+  "case_id": "SF-05",
+  "service": "hunyuan",
+  "repeat": 1,
+  "phase": "initial",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:56:49.961447+00:00",
+  "status": "success",
+  "request_sha256": "b0b72bead082689e8626017789a75329ef511f1315f0606933d4b2428462c269",
+  "returned_model": "hy3",
+  "usage": {
+    "prompt_tokens": 290,
+    "completion_tokens": 1294,
+    "total_tokens": 1584,
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1287
+    }
+  },
+  "content": "{\"\": \"\"}",
+  "parsed_output": {
+    "": ""
+  },
+  "checks": {
+    "decision": "invalid",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "invalid_output"
+    ]
+  },
+  "response_sha256": "5aceb6927e8afacaceaba609d5aa4721500e58a5268a728afb31d3b06f98cef8",
+  "latency_seconds": 13.366342899971642,
+  "request_finished_at": "2026-10-11T10:57:03.327143+00:00"
+}

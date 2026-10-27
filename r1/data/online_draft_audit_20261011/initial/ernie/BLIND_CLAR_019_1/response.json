@@ -1,0 +1,22 @@
+{
+  "id": "as-raap65hifq",
+  "object": "chat.completion",
+  "created": 1791733017,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": 60,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request specifies a valid horizon (60 minutes) and standard setup, but lacks explicit region and cost_shortfall values. Computed results will follow authorized numerical execution once valid fields are provided.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 125,
+    "total_tokens": 497
+  }
+}

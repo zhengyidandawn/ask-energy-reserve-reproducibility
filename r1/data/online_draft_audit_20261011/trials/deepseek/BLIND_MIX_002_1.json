@@ -1,0 +1,118 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 1,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:46.366491+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "2cb920fb181fc22009951480182b64b9d7d60855815f9e6e695828e3392ccb15",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"CISO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The request explicitly specifies a supported region (CISO) and a supported horizon (120 minutes), and asks only for the JSON schema without reserve MW or coverage. cost_reserve is fixed at 1 by protocol; cost_shortfall is not specified and remains unresolved.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request explicitly specifies a supported region (CISO) and a supported horizon (120 minutes), and asks only for the JSON schema without reserve MW or coverage. cost_reserve is fixed at 1 by protocol; cost_shortfall is not specified and remains unresolved.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 399,
+      "completion_tokens": 107,
+      "total_tokens": 506,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 271
+    },
+    "response_sha256": "c8fb16dcd8af1dc94c5a16a4841a29161728ed8ff1f5bc2e0986a5dca25dfd73",
+    "diagnostics": {
+      "messages": [
+        "Execution validation returns reject: invalid_schema"
+      ],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.233062700019218,
+    "finished_at": "2026-10-11T15:36:47.600211+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 1,
+    "phase": "feedback",
+    "started_at": "2026-10-11T15:36:47.601210+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "3c144dce9024c3ab7ee048750638d817e8ac02390d530738fc5e98fa92c96858",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"reject\",\"fields\":{\"region_id\":\"CISO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The frozen deterministic checker reports invalid_schema for the prior draft. The original request asks for output JSON schema only and explicitly excludes reserve MW or coverage, but it does not supply a supported shortfall weight, so the required study fields are unresolved. Under the protocol, unresolved explicit study fields require clarification rather than acceptance; the corrected disposition is reject for invalid_schema.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The frozen deterministic checker reports invalid_schema for the prior draft. The original request asks for output JSON schema only and explicitly excludes reserve MW or coverage, but it does not supply a supported shortfall weight, so the required study fields are unresolved. Under the protocol, unresolved explicit study fields require clarification rather than acceptance; the corrected disposition is reject for invalid_schema.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 529,
+      "completion_tokens": 127,
+      "total_tokens": 656,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 145
+    },
+    "response_sha256": "56e27ebed4639ad8a0c4b9d412646745e7283a8e0f0e654e153ca32a5673ec49",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.5976465999847278,
+    "finished_at": "2026-10-11T15:36:49.199243+00:00"
+  },
+  "online_calls": 2,
+  "total_service_seconds": 2.830709300003946,
+  "transport_complete": true
+}

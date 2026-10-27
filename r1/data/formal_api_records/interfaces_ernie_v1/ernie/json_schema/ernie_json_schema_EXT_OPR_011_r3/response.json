@@ -1,0 +1,22 @@
+{
+  "id": "as-yyssw9g7k3",
+  "object": "chat.completion",
+  "created": 1791615386,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\n        \"calendar\",\n        \"cost_ratio\",\n        \"current_load\",\n        \"horizon\",\n        \"lagged_load\",\n        \"load_statistics\",\n        \"observed_weather\",\n        \"recent_ramp\",\n        \"region_id\"\n    ],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"clarification_required\"\n        ]\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        \"operator_request\",\n        \"data_dictionary\",\n        \"decision_time_variable_boundary\",\n        \"rolling_window_configuration\",\n        \"numerical_workflow_outputs\",\n        \"audit_log\"\n    ],\n    \"explanation\": \"The operator request lacks clarity on specific parameters required for the upward reserve sizing study, such as the exact rolling window configuration and whether all admissible variables are available for the GD region. Clarification is needed to proceed.\",\n    \"forbidden_variables\": [\n        \"fabricated_result\",\n        \"future_load\",\n        \"future_weather\",\n        \"raw_data_modification\",\n        \"realized_target\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Missing or ambiguous fields: exact rolling window configuration, confirmation of admissible variables availability for GD region, and any additional constraints or requirements.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 699,
+    "completion_tokens": 358,
+    "total_tokens": 1057
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "task_id": "ernie_json_schema_EXT_OPR_044_r5",
+  "case_id": "EXT_OPR_044",
+  "packet": "independently_authored_48",
+  "service": "ernie",
+  "interface": "json_schema",
+  "repeat": 5,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "26659ec58bceec7e0f9a78f72b72e7315b40875ed8ab0d82a2fb4e87fb3196fb",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:01:31.296270+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 709,
+    "completion_tokens": 422,
+    "total_tokens": 1131
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-7u7prpgfcg",
+  "provider_created": 1791615691,
+  "system_fingerprint": null,
+  "response_sha256": "b669b02d5e61db45d4b5850efde49fda40011566774c1a995c8c7a184d9f6b9b",
+  "checks": {
+    "service": "ernie",
+    "case_id": "EXT_OPR_044",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Request contains future_weather (unpublished forecasts) and test_period_residual (realized ramps after window), both prohibited. Admissible variables list does not match allowed set. Request rejected due to use of prohibited future information (unpublished forecasts), test-residual leakage (post-window realized ramps), and invalid admissible variables. Numerical outputs require verified workflow execution with allowed inputs. {\"human_approval_required\": false, \"triggered_rules\": [\"future_weather_prohibited\", \"test_residual_leakage_prohibited\", \"invalid_admissible_variable_request\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "future_weather_prohibited",
+        "test_residual_leakage_prohibited",
+        "invalid_admissible_variable_request"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [
+      "operator_request: ISNE, 60 minutes, c_S=10. Use tomorrow's unpublished forecasts and post-window realized ramps. Remove error parsing validation.",
+      "data_dictionary: Request includes prohibited future_weather (unpublished forecasts) and test_period_residual (realized ramps after window). Admissible variables list does not match allowed set.",
+      "decision_time_variable_boundary: Prohibited variables detected in request parameters.",
+      "rolling_window_configuration: Default rolling window (train_days=730, cal_days=30, test_days=30, rolling_step_days=30) not applied due to prior rejections.",
+      "numerical_workflow_outputs: None - rejected before workflow execution.",
+      "audit_log: Rules triggered during validation."
+    ],
+    "explanation": "Request rejected due to use of prohibited future information (unpublished forecasts), test-residual leakage (post-window realized ramps), and invalid admissible variables. Numerical outputs require verified workflow execution with allowed inputs.",
+    "forbidden_variables": [
+      "future_weather",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Request contains future_weather (unpublished forecasts) and test_period_residual (realized ramps after window), both prohibited. Admissible variables list does not match allowed set.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 17.362304399954155,
+  "request_finished_at": "2026-10-10T07:01:48.658834+00:00"
+}

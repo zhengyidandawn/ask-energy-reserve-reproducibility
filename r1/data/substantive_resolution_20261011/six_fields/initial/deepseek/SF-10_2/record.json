@@ -1,0 +1,48 @@
+{
+  "case_id": "SF-10",
+  "service": "deepseek",
+  "repeat": 2,
+  "phase": "initial",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:54:57.249274+00:00",
+  "status": "success",
+  "request_sha256": "87fc327368e4d25899e52714e240ed5ef47d7a66c81a5bb1fdf830fe02366b03",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 302,
+    "completion_tokens": 106,
+    "total_tokens": 408,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 174
+  },
+  "content": "{\"decision\":\"accept\",\"study\":{\"region\":\"DE\",\"horizon_minutes\":60,\"feature_mode\":\"full\",\"shortfall_weight\":20,\"required_coverage\":0.95,\"reporting\":\"standard\",\"human_authorization_required\":true},\"missing_fields\":[],\"reason\":\"All six study fields are explicitly supplied: region DE, horizon 60 minutes, feature mode full, shortfall weight 20, required coverage 0.95, and standard reporting. Human authorization is required before the recorded calculation.\"}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "DE",
+      "horizon_minutes": 60,
+      "feature_mode": "full",
+      "shortfall_weight": 20,
+      "required_coverage": 0.95,
+      "reporting": "standard",
+      "human_authorization_required": true
+    },
+    "missing_fields": [],
+    "reason": "All six study fields are explicitly supplied: region DE, horizon 60 minutes, feature mode full, shortfall weight 20, required coverage 0.95, and standard reporting. Human authorization is required before the recorded calculation."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 0,
+    "rules": [
+      "feature_mode"
+    ]
+  },
+  "response_sha256": "388faf6b51207ffe63b8a445becaf9017c7f74a99e1b1b7a4d980ce429de9eec",
+  "latency_seconds": 0.7826716999989003,
+  "request_finished_at": "2026-10-11T10:54:58.031814+00:00"
+}

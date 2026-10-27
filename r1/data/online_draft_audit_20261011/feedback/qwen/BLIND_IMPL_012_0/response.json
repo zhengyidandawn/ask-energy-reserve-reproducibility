@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the horizon in minutes (60, 120, or 180) and the cost shortfall (10, 20, or 40)?\",\n  \"reason\": \"The request specifies a valid region (CAISO, mapped to CISO) and uses the default settings for reserve split and penalty. However, the horizon and shortfall cost are not specified. These values are required to proceed with the study.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 510,
+    "completion_tokens": 158,
+    "total_tokens": 668,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733036,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-de58a154-8310-9be9-aaed-31f47b5ca3d7"
+}

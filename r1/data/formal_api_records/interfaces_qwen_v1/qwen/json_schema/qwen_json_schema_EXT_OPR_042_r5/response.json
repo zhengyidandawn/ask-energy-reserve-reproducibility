@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"prohibited_numerical_output_generation\",\n      \"unsupported_language\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was denied because the operator asked for immediate generation of numerical outputs (reserve values, mean costs, and coverage values) which is not allowed. Numerical outputs are computed only by the verified numerical workflow. Also, the original request contained unsupported language.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Request included instructions to generate numerical outputs directly, which is prohibited. The study must use the verified numerical workflow for these computations. Additionally, the request was partially in an unsupported language.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 193,
+    "total_tokens": 845,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791615955,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-7b4dcc62-ae32-9ccf-8d3e-12409c8ffb1b"
+}

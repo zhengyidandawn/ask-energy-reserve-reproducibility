@@ -1,0 +1,108 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_STD_006",
+  "repeat": 4,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_STD_006",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:09.900041+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "1761e9873ffada4980572a5b9f52f2adecd114db7c303414216560d2bc014db0",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request is for a public validation reserve study in the ERCOT (ERCO) region with a 120-minute horizon and a shortfall cost of 10, which are all supported parameters. The user has also specified not to estimate MW, which is noted but does not affect the study setup.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "The request is for a public validation reserve study in the ERCOT (ERCO) region with a 120-minute horizon and a shortfall cost of 10, which are all supported parameters. The user has also specified not to estimate MW, which is noted but does not affect the study setup.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 404,
+      "completion_tokens": 137,
+      "total_tokens": 541,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "43f80959d63a7f7838e58c5269f6a6e81d464215844cd9d7d57053d45df33cc6",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.4706694000633433,
+    "finished_at": "2026-10-11T15:38:13.371271+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_STD_006",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:09.900041+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "1761e9873ffada4980572a5b9f52f2adecd114db7c303414216560d2bc014db0",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request is for a public validation reserve study in the ERCOT (ERCO) region with a 120-minute horizon and a shortfall cost of 10, which are all supported parameters. The user has also specified not to estimate MW, which is noted but does not affect the study setup.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "The request is for a public validation reserve study in the ERCOT (ERCO) region with a 120-minute horizon and a shortfall cost of 10, which are all supported parameters. The user has also specified not to estimate MW, which is noted but does not affect the study setup.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 404,
+      "completion_tokens": 137,
+      "total_tokens": 541,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "43f80959d63a7f7838e58c5269f6a6e81d464215844cd9d7d57053d45df33cc6",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.4706694000633433,
+    "finished_at": "2026-10-11T15:38:13.371271+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 3.4706694000633433,
+  "transport_complete": true
+}

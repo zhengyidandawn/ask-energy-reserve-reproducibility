@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"请求中未指定区域和缺额罚款，且这些信息对执行研究是必要的。数值输出由验证过的计算流程产生，但前提是需要明确所有必需的参数和条件。当前请求缺乏足够信息来继续进行研究设计或执行过程，因此触发了澄清要求规则（clarification_required）。\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"请求中没有提供具体的区域ID（region_id）以及缺额成本（cost_shortfall）。这些信息对于启动向上备用容量研究是必需的。同时，'等交接班的人回来再说'表明关键决策因素仍未确定，这使得当前无法完成一个具体、可审计的研究设计方案。请补充完整所需参数后重新提交申请以供审查与处理。此外，已知的时间范围为180分钟，符合允许的选项之一，但不足以单独支持整个任务定义需求。建议在重新提交时一并明确其他所有参数细节。注意：数值结果将仅通过验证的数值工作流生成，一旦提供了所有必要条件，我们将能够依据更新后的输入数据执行相关分析操作，并遵守既定的审计跟踪及审批流程管理规定执行接下来的任务步骤。目前情况需要进一步的信息补全才能继续推进至下一阶段的工作安排，请及时完善相关信息以便尽快开展后续活动计划安排。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 643,
+    "completion_tokens": 353,
+    "total_tokens": 996,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613196,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-db81265b-ec88-9b51-86ff-48167494dc80"
+}

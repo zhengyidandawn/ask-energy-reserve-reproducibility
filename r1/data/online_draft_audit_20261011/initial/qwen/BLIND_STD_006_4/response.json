@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request is for a public validation reserve study in the ERCOT (ERCO) region with a 120-minute horizon and a shortfall cost of 10, which are all supported parameters. The user has also specified not to estimate MW, which is noted but does not affect the study setup.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 137,
+    "total_tokens": 541,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733096,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-0cdaa8e0-1378-90da-b79b-94785a985607"
+}

@@ -1,0 +1,131 @@
+{
+  "task_id": "hunyuan_json_schema_EXT_OPR_038_r4",
+  "case_id": "EXT_OPR_038",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_schema",
+  "repeat": 4,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "5592a687f514c67b6ff4a0610a210bf534b967927edb192512046b64a81fd831",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:18:28.604256+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 657,
+    "completion_tokens": 2511,
+    "total_tokens": 3168,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2090
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "ddcfaad4-5579-4e3f-8797-f0d79a4e0a7a",
+  "provider_created": 1791620309,
+  "system_fingerprint": null,
+  "response_sha256": "ecaa3d20c18397ee4669ad9c813c63483de93ed09b5140ed0a33e08282fcf60f",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_038",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": false,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Request matches allowed task (upward_reserve_sizing), region (CISO), horizon (180), shortfall cost (40) with fixed cost_reserve=1.0; explicitly forbids post-decision forecasts; rolling window valid; human approval required. Numerical outputs such as reserve MW, mean costs, coverage values are produced exclusively by the verified numerical workflow; this study plan accepts the requested upward reserve sizing for CISO 180 min with shortfall cost 40 and cost reserve 1.0. {\"human_approval_required\": true, \"triggered_rules\": []}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": []
+    },
+    "decision": "accept",
+    "evidence_trace": [
+      ""
+    ],
+    "explanation": "Numerical outputs such as reserve MW, mean costs, coverage values are produced exclusively by the verified numerical workflow; this study plan accepts the requested upward reserve sizing for CISO 180 min with shortfall cost 40 and cost reserve 1.0.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Request matches allowed task (upward_reserve_sizing), region (CISO), horizon (180), shortfall cost (40) with fixed cost_reserve=1.0; explicitly forbids post-decision forecasts; rolling window valid; human approval required.",
+    "study_schema": {
+      "cost_reserve": 1,
+      "cost_shortfall": 40,
+      "horizon_minutes": 180,
+      "region_id": "CISO",
+      "requires_human_approval": true,
+      "rolling_window": {
+        "cal_days": 30,
+        "rolling_step_days": 30,
+        "test_days": 30,
+        "train_days": 730
+      },
+      "task_type": "upward_reserve_sizing"
+    },
+    "workflow": [
+      "Ingest data dictionary restricting to admissible_variables.",
+      "Filter to decision-time boundaries excluding forbidden_variables.",
+      "Configure rolling window: train_days=730, cal_days=30, test_days=30, rolling_step_days=30.",
+      "Train sizing model on historical admissible features without leakage.",
+      "Compute reserve recommendations via verified numerical workflow (no LLM numeric output).",
+      "Generate audit log with human approval required."
+    ]
+  },
+  "latency_seconds": 21.856025099987164,
+  "request_finished_at": "2026-10-10T08:18:50.460511+00:00"
+}

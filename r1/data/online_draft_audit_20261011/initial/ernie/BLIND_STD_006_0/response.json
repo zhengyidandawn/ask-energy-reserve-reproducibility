@@ -1,0 +1,22 @@
+{
+  "id": "as-ebfsn9uszi",
+  "object": "chat.completion",
+  "created": 1791733101,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 10\n    },\n    \"clarification_question\": \"The region identifier 'ERCO' is unsupported; did you mean 'ERCOT'? Also, the '730/30/30 rolling split' is not a recognized parameter for this energy study. Please clarify or provide valid parameters.\",\n    \"reason\": \"The region identifier 'ERCO' is not in the list of supported regions (GD, ERCOT, CISO, ISNE, MISO, SWPP). The '730/30/30 rolling split' is not a recognized parameter for this study.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "completion_tokens": 195,
+    "total_tokens": 595
+  }
+}

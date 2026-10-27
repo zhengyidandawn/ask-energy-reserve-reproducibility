@@ -1,0 +1,41 @@
+{
+  "case_id": "SF-11",
+  "service": "ernie",
+  "repeat": 3,
+  "phase": "confirmation",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_started_at": "2026-10-11T10:56:25.905928+00:00",
+  "status": "success",
+  "request_sha256": "6a82a189ecb9dc2bbc7c6cb01060406a7961ef84c9e1ff8691e0acc6598b9438",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "usage": {
+    "prompt_tokens": 407,
+    "completion_tokens": 92,
+    "total_tokens": 499
+  },
+  "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"region\",\n        \"horizon_minutes\",\n        \"feature_mode\",\n        \"shortfall_weight\",\n        \"reporting\"\n    ],\n    \"reason\": \"Please provide all required study fields: region, horizon_minutes, feature_mode, shortfall_weight, reporting.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "region",
+      "horizon_minutes",
+      "feature_mode",
+      "shortfall_weight",
+      "reporting"
+    ],
+    "reason": "Please provide all required study fields: region, horizon_minutes, feature_mode, shortfall_weight, reporting."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "model_disposition"
+    ]
+  },
+  "response_sha256": "b6727c0746cb19a308cde064b5eb88101fe3d70e1ce73b8ab49140b27b66720f",
+  "latency_seconds": 4.320963599951938,
+  "request_finished_at": "2026-10-11T10:56:30.226829+00:00"
+}

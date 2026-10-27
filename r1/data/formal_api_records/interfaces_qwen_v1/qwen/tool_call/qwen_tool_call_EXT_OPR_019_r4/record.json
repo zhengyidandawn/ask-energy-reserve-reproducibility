@@ -1,0 +1,93 @@
+{
+  "task_id": "qwen_tool_call_EXT_OPR_019_r4",
+  "case_id": "EXT_OPR_019",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "tool_call",
+  "repeat": 4,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "2dc32a7d0f6b19f2fc47c319af27742f28ab8be0ea65527f2c7aed140030eb15",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:13:48.748658+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1529,
+    "completion_tokens": 210,
+    "total_tokens": 1739,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-74c62e59-facd-9ee8-a4d9-85007f4e2607",
+  "provider_created": 1791616438,
+  "system_fingerprint": null,
+  "response_sha256": "05d6a7c4f1bb56c2437f00d0dac8e36ee1d9ec747617e8a842d0ccb9266361ac",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_019",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": false,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "The region code is incorrect, should be 'ISNE' instead of 'ISNEE'. It's also not clear if other admissible variables besides observed weather are allowed or required. The cost shortfall (cS) is set to 40.0, which is valid, but we need a full list of admissible and forbidden variables for the study. The horizon of 60 minutes is correct. Please provide the missing information and confirm the study details. Clarifications and corrections are needed before proceeding. The numerical outputs of the study will be produced by the verified workflow once the plan is accepted. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": false,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "observed_weather"
+    ],
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "Clarifications and corrections are needed before proceeding. The numerical outputs of the study will be produced by the verified workflow once the plan is accepted.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The region code is incorrect, should be 'ISNE' instead of 'ISNEE'. It's also not clear if other admissible variables besides observed weather are allowed or required. The cost shortfall (cS) is set to 40.0, which is valid, but we need a full list of admissible and forbidden variables for the study. The horizon of 60 minutes is correct. Please provide the missing information and confirm the study details.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 8.767872199998237,
+  "request_finished_at": "2026-10-10T07:13:57.516772+00:00"
+}

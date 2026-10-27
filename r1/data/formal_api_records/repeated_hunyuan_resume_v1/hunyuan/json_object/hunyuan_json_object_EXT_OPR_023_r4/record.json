@@ -1,0 +1,110 @@
+{
+  "task_id": "hunyuan_json_object_EXT_OPR_023_r4",
+  "case_id": "EXT_OPR_023",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "6a470e8a20719be145748dbca43c2126e458f59781000003c4944b88cc539cdc",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:50:40.352704+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 2680,
+    "total_tokens": 3325,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2428
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "6faa1336-f5b1-4f72-9ed5-481473aa206b",
+  "provider_created": 1791618642,
+  "system_fingerprint": null,
+  "response_sha256": "dead4e1e0613f8a42b68cb4bad5ae6f292a34c5791bcb021d6d4be8d0e6ba1e4",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_023",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Missing or ambiguous field: cost_shortfall (shortfall penalty) not specified; operator explicitly deferred filling cost ('先别填成本'). Must be selected from allowed [10.0, 20.0, 40.0] with cost_reserve=1.0. Clarification required before study schema can be built. Numerical outputs are produced by the verified workflow when relevant; the LLM does not generate reserve values, mean costs, coverage, or dispatch results. This request is missing required shortfall cost parameter. {\"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant; the LLM does not generate reserve values, mean costs, coverage, or dispatch results. This request is missing required shortfall cost parameter.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Missing or ambiguous field: cost_shortfall (shortfall penalty) not specified; operator explicitly deferred filling cost ('先别填成本'). Must be selected from allowed [10.0, 20.0, 40.0] with cost_reserve=1.0. Clarification required before study schema can be built.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 29.305655399919488,
+  "request_finished_at": "2026-10-10T07:51:09.658245+00:00"
+}

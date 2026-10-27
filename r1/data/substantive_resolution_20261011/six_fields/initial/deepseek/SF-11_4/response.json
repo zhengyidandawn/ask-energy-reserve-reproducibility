@@ -1,0 +1,28 @@
+{
+  "id": "3a23884f-922a-4e0c-aeb4-ec16f48bb3b7",
+  "object": "chat.completion",
+  "created": 1791716101,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"study\": null,\n  \"missing_fields\": [\"required_coverage\"],\n  \"reason\": \"The required_coverage field is missing. Please specify it as either 0.95 or 0.975.\"\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 309,
+    "completion_tokens": 54,
+    "total_tokens": 363,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 181
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

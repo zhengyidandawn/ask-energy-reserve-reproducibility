@@ -1,0 +1,39 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "",
+        "reasoning_content": "The user request: \"ERCO upward reserve, shortfall penalty 40. I have not picked the horizon yet. Draft what you can and ping me.\"\n\nSo this is a clarify decision because the horizon is missing/ambiguous. Region is ERCO (valid), shortfall penalty 40 (valid cost_shortfall=40), task_type upward_reserve_sizing. But horizon not picked.\n\nFor clarify: study_schema must be null, reason must identify each missing or ambiguous field, and audit_log.triggered_rules must include clarification_required. admissible_variables, forbidden_variables, workflow, and evidence_trace must remain JSON arrays even when empty.\n\nLet me construct the JSON.\n\ndecision: \"clarify\"\nreason: identify missing/ambiguous field (horizon_minutes).\nstudy_schema: null\nadmissible_variables: [] (empty array)\nforbidden_variables: [] (empty array)\nworkflow: [] (empty array)\nevidence_trace: [] (empty array)\nexplanation: state that numerical outputs are produced by the verified workflow when relevant.\naudit_log: triggered_rules include \"clarification_required\", human_approval_required: false (since clarify, no human approval required? The spec says for accept/partial_accept audit_log.human_approval_required must be true. For clarify/reject, it doesn't specify. I'll set false.)\n\nLet me write the reason: \"Missing required field: horizon_minutes. The operator has not selected a horizon (60, 120, or 180 minutes). Region ERCO and cost_shortfall=40 are valid; horizon must be specified before the study schema can be finalized.\"\n\nLet me build the object.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"Missing required field: horizon_minutes. The operator specified region_id=ERCO and cost_shortfall=40 (both valid), but explicitly stated the horizon has not been picked. A valid study requires horizon_minutes in {60, 120, 180}. Please confirm the horizon so the study schema can be finalized.\", \"study_schema\": null, \"admissible_variables\": [], \"forbidden_variables\": [], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"Numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced by the verified numerical workflow only, not by the LLM. The study cannot proceed until the missing horizon is supplied.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}",
+              "name": "submit_plan"
+            },
+            "id": "chatcmpl-tool-99b86c62c73c067a",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      }
+    }
+  ],
+  "created": 1791621009,
+  "id": "2016ffd3-1f88-4f20-9e8c-1cf14267ec59",
+  "model": "hy3",
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1495,
+    "completion_tokens": 537,
+    "total_tokens": 2032,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 340
+    }
+  }
+}

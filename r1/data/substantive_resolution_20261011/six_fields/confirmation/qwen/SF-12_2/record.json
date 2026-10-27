@@ -1,0 +1,45 @@
+{
+  "case_id": "SF-12",
+  "service": "qwen",
+  "repeat": 2,
+  "phase": "confirmation",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:56:01.309399+00:00",
+  "status": "success",
+  "request_sha256": "e4c5b1a159fdf87fef4aca94fee325cf3500098a755fafca34e8ebf4880297cd",
+  "returned_model": "qwen-max",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 84,
+    "total_tokens": 488,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "content": "{\n  \"decision\": \"clarify\",\n  \"study\": null,\n  \"missing_fields\": [\"region\", \"horizon_minutes\", \"feature_mode\", \"shortfall_weight\", \"required_coverage\", \"human_authorization_required\"],\n  \"reason\": \"Please provide the values for region, horizon_minutes, feature_mode, shortfall_weight, required_coverage, and human_authorization_required to proceed with the study plan.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "region",
+      "horizon_minutes",
+      "feature_mode",
+      "shortfall_weight",
+      "required_coverage",
+      "human_authorization_required"
+    ],
+    "reason": "Please provide the values for region, horizon_minutes, feature_mode, shortfall_weight, required_coverage, and human_authorization_required to proceed with the study plan."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "model_disposition"
+    ]
+  },
+  "response_sha256": "19d1debbd6d351068b81d0f9e8cc71c9a923f179c6571588baeb8213c529d428",
+  "latency_seconds": 2.146709099994041,
+  "request_finished_at": "2026-10-11T10:56:03.455975+00:00"
+}

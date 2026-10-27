@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_IMPL_002",
+  "repeat": 3,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_IMPL_002",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:57.614585+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "ba97e4c2fde16402b4a8a2b957842204e31fc164cfe261d3ceb175d12d22b18d",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request references 'accepted default split and default penalty' but does not explicitly provide numeric values for horizon_minutes (supported: 60, 120, 180) or cost_shortfall (supported: 10, 20, 40). Please specify these explicit study fields.\", \"reason\": \"Explicit study fields horizon_minutes and cost_shortfall are unresolved because the request uses non‑numeric default references; region_id 'CISO' is valid and cost_reserve is fixed at 1 by study protocol. Clarification is required before execution.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The request references 'accepted default split and default penalty' but does not explicitly provide numeric values for horizon_minutes (supported: 60, 120, 180) or cost_shortfall (supported: 10, 20, 40). Please specify these explicit study fields.",
+      "reason": "Explicit study fields horizon_minutes and cost_shortfall are unresolved because the request uses non‑numeric default references; region_id 'CISO' is valid and cost_reserve is fixed at 1 by study protocol. Clarification is required before execution.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 1192,
+      "total_tokens": 1560,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1020
+      }
+    },
+    "response_sha256": "a9a07486f3c47eae79443ca801b88dd12f1f72ca116112ac7d42ca033f6bc191",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 16.12668109999504,
+    "finished_at": "2026-10-11T15:39:13.740989+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_IMPL_002",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:57.614585+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "ba97e4c2fde16402b4a8a2b957842204e31fc164cfe261d3ceb175d12d22b18d",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request references 'accepted default split and default penalty' but does not explicitly provide numeric values for horizon_minutes (supported: 60, 120, 180) or cost_shortfall (supported: 10, 20, 40). Please specify these explicit study fields.\", \"reason\": \"Explicit study fields horizon_minutes and cost_shortfall are unresolved because the request uses non‑numeric default references; region_id 'CISO' is valid and cost_reserve is fixed at 1 by study protocol. Clarification is required before execution.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The request references 'accepted default split and default penalty' but does not explicitly provide numeric values for horizon_minutes (supported: 60, 120, 180) or cost_shortfall (supported: 10, 20, 40). Please specify these explicit study fields.",
+      "reason": "Explicit study fields horizon_minutes and cost_shortfall are unresolved because the request uses non‑numeric default references; region_id 'CISO' is valid and cost_reserve is fixed at 1 by study protocol. Clarification is required before execution.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 1192,
+      "total_tokens": 1560,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1020
+      }
+    },
+    "response_sha256": "a9a07486f3c47eae79443ca801b88dd12f1f72ca116112ac7d42ca033f6bc191",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 16.12668109999504,
+    "finished_at": "2026-10-11T15:39:13.740989+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 16.12668109999504,
+  "transport_complete": true
+}

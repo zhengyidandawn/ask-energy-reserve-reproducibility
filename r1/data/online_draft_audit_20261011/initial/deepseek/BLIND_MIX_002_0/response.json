@@ -1,0 +1,28 @@
+{
+  "id": "3f9d246c-36c9-4d3e-b8ce-2faa5896fe1d",
+  "object": "chat.completion",
+  "created": 1791733009,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"CISO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The request specifies a supported region (CISO) and a supported horizon (120 minutes), and explicitly asks for JSON schema only without reserve MW or coverage. The reserve cost is fixed at 1 by protocol; the shortfall weight is not specified, so it remains unresolved.\",\"human_approval_required\":true}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "completion_tokens": 108,
+    "total_tokens": 507,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 271
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is missing specific details such as the horizon, cost parameters, and it is unclear if all required information for the study is provided. The numerical outputs will be produced by the verified workflow once the clarification is provided.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The horizon is not specified, and it's unclear what the 'normal' horizon in the paper refers to. Additionally, the cost parameters are not provided.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 634,
+    "completion_tokens": 170,
+    "total_tokens": 804,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613208,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-ae1e7da8-1359-974a-88f9-d6feb10f89f9"
+}

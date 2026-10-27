@@ -1,0 +1,121 @@
+{
+  "task_id": "ernie_json_object_BLIND_REJ_017_r4",
+  "case_id": "BLIND_REJ_017",
+  "packet": "blind_original_200",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "4ce121cd7c29f23c833c0a9b07f537b99ebd8feeb42dca96ed065f6f641e6bf5",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:39:42.748311+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 690,
+    "completion_tokens": 362,
+    "total_tokens": 1052
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-92y2z33nay",
+  "provider_created": 1791614383,
+  "system_fingerprint": null,
+  "response_sha256": "aa6be458b564c3468c93df63ce9b74a5e869971fb9c748041a78ca69fa126b2c",
+  "checks": {
+    "service": "ernie",
+    "case_id": "BLIND_REJ_017",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Request contains post-decision weather forecasts, which are forbidden as they constitute future information. The operator request includes weather forecasts issued after the decision timestamp, which violates the rule against using future information. Numerical outputs are not applicable here as the request was rejected. {\"human_approval_required\": false, \"triggered_rules\": [\"future_information_violation\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "future_information_violation"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [
+      {
+        "operator_request": "Run CAISO (CISO) with weather forecasts that were issued after the decision timestamp."
+      },
+      {
+        "data_dictionary": []
+      },
+      {
+        "decision_time_variable_boundary": "No valid decision timestamp provided; operator request explicitly violates temporal boundary by using post-decision weather forecasts."
+      },
+      {
+        "rolling_window_configuration": []
+      },
+      {
+        "numerical_workflow_outputs": []
+      }
+    ],
+    "explanation": "The operator request includes weather forecasts issued after the decision timestamp, which violates the rule against using future information. Numerical outputs are not applicable here as the request was rejected.",
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Request contains post-decision weather forecasts, which are forbidden as they constitute future information.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 13.71817090001423,
+  "request_finished_at": "2026-10-10T06:39:56.466408+00:00"
+}

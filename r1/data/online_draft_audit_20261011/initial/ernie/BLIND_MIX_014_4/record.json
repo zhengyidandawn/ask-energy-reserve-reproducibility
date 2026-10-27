@@ -1,0 +1,49 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_MIX_014",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:26.933925+00:00",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "9a351f39bdd7d5a2a748fa8fa299777635696abb35962e1ae635a2aa344155fa",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"MISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"Please specify the horizon_minutes (supported values: 60, 120, 180) and cost_shortfall (supported values: 10, 20, 40) for the energy study.\",\n    \"reason\": \"The request lacks explicit values for horizon_minutes and cost_shortfall, which are required fields for the energy study. The cost_reserve is fixed at 1 as per the study protocol.\",\n    \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "MISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Please specify the horizon_minutes (supported values: 60, 120, 180) and cost_shortfall (supported values: 10, 20, 40) for the energy study.",
+    "reason": "The request lacks explicit values for horizon_minutes and cost_shortfall, which are required fields for the energy study. The cost_reserve is fixed at 1 as per the study protocol.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 174,
+    "total_tokens": 546
+  },
+  "response_sha256": "605ab1106d92d2a7d93158bfe6f87ea9197e89a348671c88dfe3e327f3e52600",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 6.121798199950717,
+  "finished_at": "2026-10-11T15:37:33.055408+00:00"
+}

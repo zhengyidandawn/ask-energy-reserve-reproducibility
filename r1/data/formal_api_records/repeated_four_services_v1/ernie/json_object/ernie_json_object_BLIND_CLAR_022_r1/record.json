@@ -1,0 +1,131 @@
+{
+  "task_id": "ernie_json_object_BLIND_CLAR_022_r1",
+  "case_id": "BLIND_CLAR_022",
+  "packet": "blind_original_200",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 1,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "ce5e5768a6a3839f89a25a1b3f47b2e046fe9dbe1346416e74d78bd8b65b0b70",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:13:48.512130+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 693,
+    "completion_tokens": 386,
+    "total_tokens": 1079
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-yib77377dg",
+  "provider_created": 1791612828,
+  "system_fingerprint": null,
+  "response_sha256": "79e06549931470a8cd08994bc9b740d4b568dda6deda98889fb871ee292d53d6",
+  "checks": {
+    "service": "ernie",
+    "case_id": "BLIND_CLAR_022",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The operator request is missing the region_id, which is a required field for reserve sizing analysis. Numerical outputs are produced by the verified workflow when all inputs are valid and complete. {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\", \"region_id_missing\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "clarification_required",
+        "region_id_missing"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [
+      {
+        "operator_request": "Run the standard reserve analysis with the normal penalty and normal horizon; I will tell you the region later."
+      },
+      {
+        "data_dictionary": []
+      },
+      {
+        "decision_time_variable_boundary": []
+      },
+      {
+        "rolling_window_configuration": []
+      },
+      {
+        "numerical_workflow_outputs": []
+      },
+      {
+        "audit_log": {
+          "human_approval_required": true,
+          "triggered_rules": [
+            "clarification_required",
+            "region_id_missing"
+          ]
+        }
+      }
+    ],
+    "explanation": "Numerical outputs are produced by the verified workflow when all inputs are valid and complete.",
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The operator request is missing the region_id, which is a required field for reserve sizing analysis.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 13.0289687999757,
+  "request_finished_at": "2026-10-10T06:14:01.540918+00:00"
+}

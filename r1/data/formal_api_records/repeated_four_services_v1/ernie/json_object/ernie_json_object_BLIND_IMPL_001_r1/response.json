@@ -1,0 +1,22 @@
+{
+  "id": "as-rzy75gqhtb",
+  "object": "chat.completion",
+  "created": 1791612854,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"clarification_required\"]\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"ERCOT reserve schema, normal horizon, normal cS, standard public validation.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        }\n    ],\n    \"explanation\": \"The operator request is missing or ambiguous in specifying the region_id, horizon_minutes, cost_shortfall, and rolling_window parameters. Clarification is required to proceed.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": [\n        \"Region ID not specified (expected one of ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP'])\",\n        \"Horizon not specified (expected one of [60, 120, 180] minutes)\",\n        \"Cost shortfall not specified (expected one of [10.0, 20.0, 40.0])\",\n        \"Rolling window configuration not specified (expected train_days=730, cal_days=30, test_days=30, rolling_step_days=30)\"\n    ],\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 688,
+    "completion_tokens": 462,
+    "total_tokens": 1150
+  }
+}

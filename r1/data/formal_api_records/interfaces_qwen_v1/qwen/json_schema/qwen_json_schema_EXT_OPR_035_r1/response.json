@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"clarification_required\"\n    ]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request for a 60-minute study with an option to increase to 90 minutes is ambiguous. A specific horizon must be chosen. Additionally, the cost shortfall value (c_S) of 40 is valid, but the horizon needs clarification before proceeding. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The horizon is not clearly specified. It is requested to be 60 minutes, but there is an option to increase it to 90 minutes, which is not a supported horizon. Please specify a single, supported horizon.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 209,
+    "total_tokens": 861,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614702,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-7d28505d-c590-9e21-a9d6-c859213bbb41"
+}

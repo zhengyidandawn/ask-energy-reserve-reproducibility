@@ -1,0 +1,42 @@
+{
+  "case_id": "SF-15",
+  "service": "qwen",
+  "repeat": 2,
+  "phase": "initial",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:55:45.716963+00:00",
+  "status": "success",
+  "request_sha256": "f81e2c738d24da8311ff82e511e465d240b4161966776afd613cd985e516e5a8",
+  "returned_model": "qwen-max",
+  "usage": {
+    "prompt_tokens": 304,
+    "completion_tokens": 83,
+    "total_tokens": 387,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    }
+  },
+  "content": "{\n  \"decision\": \"clarify\",\n  \"study\": null,\n  \"missing_fields\": [\"horizon_minutes\", \"feature_mode\", \"reporting\"],\n  \"reason\": \"Please provide a supported horizon (60, 120, or 180 minutes), specify the feature_mode (full or history_calendar) and the reporting type (standard or tail) for your study.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "horizon_minutes",
+      "feature_mode",
+      "reporting"
+    ],
+    "reason": "Please provide a supported horizon (60, 120, or 180 minutes), specify the feature_mode (full or history_calendar) and the reporting type (standard or tail) for your study."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "unsupported_horizon"
+    ]
+  },
+  "response_sha256": "6fdb2dc8e49e53e940c023142c6e008ae235f5a9cdc782002650f9806aa294ea",
+  "latency_seconds": 2.227241599932313,
+  "request_finished_at": "2026-10-11T10:55:47.944241+00:00"
+}

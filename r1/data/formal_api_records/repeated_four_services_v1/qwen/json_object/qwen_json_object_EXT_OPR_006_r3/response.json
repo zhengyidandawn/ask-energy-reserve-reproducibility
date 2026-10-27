@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"accept\",\n  \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"],\n  \"explanation\": \"The numerical outputs for this study, including reserve values and mean costs, will be produced by the verified numerical workflow only.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"\",\n  \"study_schema\": {\n    \"task_type\": \"upward_reserve_sizing\",\n    \"region_id\": \"SWPP\",\n    \"horizon_minutes\": 180,\n    \"cost_reserve\": 1.0,\n    \"cost_shortfall\": 20.0,\n    \"rolling_window\": {\n      \"train_days\": 730,\n      \"cal_days\": 30,\n      \"test_days\": 30,\n      \"rolling_step_days\": 30\n    },\n    \"requires_human_approval\": true\n  },\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 677,
+    "completion_tokens": 316,
+    "total_tokens": 993,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613080,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-0195a826-2c62-9569-8f53-9b6a5716be7a"
+}

@@ -1,0 +1,38 @@
+{
+  "case_id": "SF-06",
+  "service": "ernie",
+  "repeat": 4,
+  "phase": "initial",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_started_at": "2026-10-11T10:55:19.347581+00:00",
+  "status": "success",
+  "request_sha256": "b6d3e3db3bee36dfea55cba16bd6bfcf72ea2af3cb5495fcc1b07f335b88f88b",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "usage": {
+    "prompt_tokens": 301,
+    "completion_tokens": 69,
+    "total_tokens": 370
+  },
+  "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\"feature_mode\", \"reporting\"],\n    \"reason\": \"Please specify 'feature_mode' (full or history_calendar) and 'reporting' (standard or tail) to proceed with the study.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "feature_mode",
+      "reporting"
+    ],
+    "reason": "Please specify 'feature_mode' (full or history_calendar) and 'reporting' (standard or tail) to proceed with the study."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "model_disposition"
+    ]
+  },
+  "response_sha256": "a1a574acb16cf6f26d8df79158f036cac13dbd6222dccc3e5414becba32699a8",
+  "latency_seconds": 2.5922488999785855,
+  "request_finished_at": "2026-10-11T10:55:21.940065+00:00"
+}

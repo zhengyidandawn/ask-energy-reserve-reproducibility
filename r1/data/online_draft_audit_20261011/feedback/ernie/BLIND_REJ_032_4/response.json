@@ -1,0 +1,25 @@
+{
+  "id": "as-v0e521wcp9",
+  "object": "chat.completion",
+  "created": 1791733105,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": 45,\n        \"cost_reserve\": 1.0,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"The requested horizon of 45 minutes is not supported. Supported horizons are 60, 120, and 180 minutes. Please confirm the desired horizon or provide a supported value.\",\n    \"reason\": \"The requested horizon is not supported, and clarification is needed to proceed with a valid schema.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 514,
+    "completion_tokens": 149,
+    "total_tokens": 663,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

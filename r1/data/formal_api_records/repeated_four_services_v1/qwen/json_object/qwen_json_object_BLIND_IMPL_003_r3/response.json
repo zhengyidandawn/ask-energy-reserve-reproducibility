@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The operator request is unclear about the specific horizon to be used for the study. Additionally, the region is mentioned as 'ISO-NE' which needs confirmation if it refers to a valid region (ISNE). Further details are required to proceed.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The horizon and region need to be explicitly specified. The term 'ISO-NE' should be confirmed as 'ISNE'.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 634,
+    "completion_tokens": 170,
+    "total_tokens": 804,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612995,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-90c7e2d5-5223-9ac3-89bd-3d35628d77ca"
+}

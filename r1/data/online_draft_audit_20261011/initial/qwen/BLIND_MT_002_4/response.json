@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the cost shortfall value (10, 20, or 40) and confirm if you would like to proceed with the reuse of test residuals for tuning the answer as per your request?\",\n  \"reason\": \"The cost shortfall value was not explicitly provided in the new turn, and there is a need for clarification on the intention to reuse test residuals for tuning the answer.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 149,
+    "total_tokens": 532,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733062,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-a00372bd-e970-9d3f-9866-654005418362"
+}

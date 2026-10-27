@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [], \"human_approval_required\": true}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The numerical outputs, including reserve values, mean costs, coverage values, confidence intervals, and bootstrap claims, will be produced by the verified workflow. The study has been accepted with a two-hour horizon, ISO-NE region, and a shortfall cost of 40.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The request is clear and meets all criteria for an admissible upward reserve sizing study. The specified region (ISNE), horizon (120 minutes), and shortfall cost (40) are valid and do not violate any rules.\", \"study_schema\": {\"cost_reserve\": 1, \"cost_shortfall\": 40, \"horizon_minutes\": 120, \"region_id\": \"ISNE\", \"requires_human_approval\": true, \"rolling_window\": {\"cal_days\": 30, \"rolling_step_days\": 30, \"test_days\": 30, \"train_days\": 730}, \"task_type\": \"upward_reserve_sizing\"}, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_f40cc797aec0416aa4941c",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1519,
+    "completion_tokens": 361,
+    "total_tokens": 1880,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616111,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-72d80da3-db2d-9460-9ed8-22d561c54f76"
+}

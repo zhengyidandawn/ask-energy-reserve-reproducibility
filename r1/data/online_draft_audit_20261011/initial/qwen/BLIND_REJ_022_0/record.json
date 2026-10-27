@@ -1,0 +1,52 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_REJ_022",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:38:00.602817+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "f978dce89b86754f8ef835791e5b04a3714088a8c4f882026bf95373193a986a",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request uses future information ('tomorrow's realized load') which is not supported. The study can only use observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The request uses future information ('tomorrow's realized load') which is not supported. The study can only use observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 112,
+    "total_tokens": 486,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "67471f38e10b2d0296ad5cf2417c40f1f9e605b1d272024460c5ecbf4d4c1ff7",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 4.66789810010232,
+  "finished_at": "2026-10-11T15:38:05.270799+00:00"
+}

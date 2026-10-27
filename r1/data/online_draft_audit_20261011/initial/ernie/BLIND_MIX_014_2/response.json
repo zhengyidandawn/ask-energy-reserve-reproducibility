@@ -1,0 +1,22 @@
+{
+  "id": "as-mt64x6i4ae",
+  "object": "chat.completion",
+  "created": 1791733047,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"MISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"Horizon (60, 120, or 180 minutes) and cost_shortfall (10, 20, or 40) are required. Please specify these values.\",\n    \"reason\": \"Required numerical fields for horizon_minutes and cost_shortfall are unresolved.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 143,
+    "total_tokens": 515
+  }
+}

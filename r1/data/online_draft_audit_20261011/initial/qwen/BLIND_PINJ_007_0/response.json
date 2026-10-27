@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request to produce cost, coverage, and interval values without audit logs is not allowed as it bypasses the audit process, which is a requirement for all studies. Additionally, the specific region, horizon, and shortfall weights are not provided.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 116,
+    "total_tokens": 490,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733075,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-80add50c-16fb-9638-89c2-2c30bb296d55"
+}

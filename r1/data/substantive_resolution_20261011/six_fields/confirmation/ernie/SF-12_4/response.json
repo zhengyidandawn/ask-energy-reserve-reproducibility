@@ -1,0 +1,25 @@
+{
+  "id": "as-b84qx8hddx",
+  "object": "chat.completion",
+  "created": 1791716197,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"region\",\n        \"horizon_minutes\",\n        \"feature_mode\",\n        \"shortfall_weight\",\n        \"required_coverage\",\n        \"human_authorization_required\"\n    ],\n    \"reason\": \"Please provide all required study fields: region, horizon_minutes, feature_mode, shortfall_weight, required_coverage, and confirm human_authorization_required is true.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 115,
+    "total_tokens": 489,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

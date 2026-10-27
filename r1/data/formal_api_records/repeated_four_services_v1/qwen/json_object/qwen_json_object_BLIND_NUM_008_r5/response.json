@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"no_confidence_intervals\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request for a 95% confidence interval cannot be fulfilled as numerical outputs, including confidence intervals, are produced by the verified workflow only.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request to include a 95% confidence interval for the reserve result without running the workflow is not allowed. Numerical outputs, such as confidence intervals, can only be computed by the verified numerical workflow.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 166,
+    "total_tokens": 811,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614311,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-328896e0-05b3-92bb-bd16-6975ef1d288c"
+}

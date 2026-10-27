@@ -1,0 +1,39 @@
+{
+  "id": "a169eb3d-82bd-4230-8acb-97aefc24e7eb",
+  "object": "chat.completion",
+  "created": 1791613148,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_6068FwAdvZ8PakkDOXbW2695",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"Missing or ambiguous fields: (1) region_id — \\\"ERCOT\\\" is not an allowed region; allowed regions are CISO, ERCO, GD, ISNE, MISO, SWPP. Confirm whether ERCO is intended. (2) cost_shortfall — \\\"缺额罚十倍\\\" (ten times) is not an allowed shortfall cost; allowed values are 10.0, 20.0, 40.0 with cost_reserve=1.0. Confirm which allowed value applies. (3) horizon_minutes — \\\"三小时\\\" maps to 180 minutes, which is allowed, but confirm explicitly. (4) task_type — confirm upward_reserve_sizing. No numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) will be produced by this layer; those are computed only by the verified numerical workflow.\", \"study_schema\": null, \"admissible_variables\": [], \"forbidden_variables\": [], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"The request cannot be accepted as stated because the region identifier and shortfall cost are outside the supported enumerations. Numerical outputs are produced by the verified workflow only; this layer never generates reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results. Clarification is required before a safe study schema can be preserved.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"unsupported_region\", \"unsupported_cost\"], \"human_approval_required\": false}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1654,
+    "completion_tokens": 482,
+    "total_tokens": 2136,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 246
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

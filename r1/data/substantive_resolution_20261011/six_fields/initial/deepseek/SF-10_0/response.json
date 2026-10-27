@@ -1,0 +1,28 @@
+{
+  "id": "417e935e-66f4-4dc1-bc53-2bbd2707c699",
+  "object": "chat.completion",
+  "created": 1791716098,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"study\": null,\n  \"missing_fields\": [\"feature_mode\"],\n  \"reason\": \"The request is missing the required field: feature_mode. Please specify whether to use full features (observed load and calendar with recent ramps and load statistics) or history_calendar (restricted load history and calendar set).\"\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 302,
+    "completion_tokens": 76,
+    "total_tokens": 378,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 174
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

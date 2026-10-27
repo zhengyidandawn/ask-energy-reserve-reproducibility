@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"prohibited_numerical_output_generation\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request for a coverage number is not allowed as numerical outputs, such as coverage values, are produced by the verified workflow only. The study cannot be accepted with this requirement.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Request included generation of a prohibited numerical output (coverage number).\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 640,
+    "completion_tokens": 145,
+    "total_tokens": 785,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "created": 1791654848,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-dfa3e2f3-ade1-9cc4-9437-37760ae7e44f"
+}

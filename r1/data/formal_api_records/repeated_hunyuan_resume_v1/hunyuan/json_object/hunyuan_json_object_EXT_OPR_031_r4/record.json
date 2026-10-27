@@ -1,0 +1,101 @@
+{
+  "task_id": "hunyuan_json_object_EXT_OPR_031_r4",
+  "case_id": "EXT_OPR_031",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "0f24bcd6f306602b54b0389792111412d2f15e8910f4f47d84cee35993d9972d",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:50:51.511446+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 2603,
+    "total_tokens": 3247,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2407
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "d0d407ea-1494-40cb-85a3-8ee21bab0e5c",
+  "provider_created": 1791618652,
+  "system_fingerprint": null,
+  "response_sha256": "fb59f88304a06ecf3827d9b945468fddef6359a6a3252084f79eaf1925ef4892",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_031",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": false,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Operator specified 'usual' for time horizon and shortfall cost, which are not among allowed horizons [60,120,180] minutes nor allowed shortfall costs [10.0,20.0,40.0]; policy requires reject for unsupported horizons or costs. Request rejected due to unsupported horizon and cost values; numerical outputs are produced by the verified workflow when relevant, but none are generated for this rejected request. {\"triggered_rules\": [\"unsupported_horizon\", \"unsupported_shortfall_cost\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "unsupported_horizon",
+        "unsupported_shortfall_cost"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Request rejected due to unsupported horizon and cost values; numerical outputs are produced by the verified workflow when relevant, but none are generated for this rejected request.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "none",
+    "reason": "Operator specified 'usual' for time horizon and shortfall cost, which are not among allowed horizons [60,120,180] minutes nor allowed shortfall costs [10.0,20.0,40.0]; policy requires reject for unsupported horizons or costs.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 23.157959199976176,
+  "request_finished_at": "2026-10-10T07:51:14.669278+00:00"
+}

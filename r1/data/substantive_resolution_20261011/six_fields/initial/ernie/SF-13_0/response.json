@@ -1,0 +1,25 @@
+{
+  "id": "as-ak36ttsqx8",
+  "object": "chat.completion",
+  "created": 1791716157,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"future realized information\"\n    ],\n    \"reason\": \"Future realized information cannot be included in the study. Please provide clarification or remove unsupported fields to proceed.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 63,
+    "total_tokens": 373,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

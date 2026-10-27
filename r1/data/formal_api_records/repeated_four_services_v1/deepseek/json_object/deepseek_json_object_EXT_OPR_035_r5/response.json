@@ -1,0 +1,28 @@
+{
+  "id": "af1fe5e9-c97f-4b13-a479-56170d12a7c8",
+  "object": "chat.completion",
+  "created": 1791612771,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\n    \"calendar\",\n    \"cost_ratio\",\n    \"current_load\",\n    \"horizon\",\n    \"lagged_load\",\n    \"load_statistics\",\n    \"observed_weather\",\n    \"recent_ramp\",\n    \"region_id\"\n  ],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"horizon_ambiguity_resolved_to_60_minutes\",\n      \"conditional_90_minute_horizon_not_supported\"\n    ]\n  },\n  \"decision\": \"partial_accept\",\n  \"evidence_trace\": [\n    \"operator_request\",\n    \"data_dictionary\",\n    \"decision_time_variable_boundary\",\n    \"rolling_window_configuration\",\n    \"numerical_workflow_outputs\",\n    \"audit_log\"\n  ],\n  \"explanation\": \"The request is partially accepted: the supported 60-minute horizon for ISNE with cost_shortfall=40.0 is preserved. The conditional 90-minute horizon is not supported because allowed horizons are 60, 120, or 180 minutes. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results are produced only by the verified numerical workflow.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"ISNE is a supported region and 60 minutes is a supported horizon, so the safe part is accepted. The conditional 90-minute horizon is unsupported and therefore rejected; the study proceeds with the 60-minute horizon. cost_shortfall=40.0 is allowed with cost_reserve=1.0.\",\n  \"study_schema\": {\n    \"task_type\": \"upward_reserve_sizing\",\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1.0,\n    \"cost_shortfall\": 40.0,\n    \"rolling_window\": {\n      \"train_days\": 730,\n      \"cal_days\": 30,\n      \"test_days\": 30,\n      \"rolling_step_days\": 30\n    },\n    \"requires_human_approval\": true\n  },\n  \"workflow\": [\n    \"validate_request_against_allowed_regions_horizons_and_costs\",\n    \"construct_rolling_window_with_train_days_730_cal_days_30_test_days_30_step_days_30\",\n    \"enforce_decision_time_variable_boundary\",\n    \"run_verified_numerical_workflow_for_upward_reserve_sizing\",\n    \"require_human_approval_before_any_operational_use\"\n  ]\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 705,
+    "completion_tokens": 632,
+    "total_tokens": 1337,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 193
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

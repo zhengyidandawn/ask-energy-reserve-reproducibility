@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"unsupported_region\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected because PJM is not an approved region for the reserve sizing study. The numerical outputs are produced by the verified workflow when the request is accepted.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"PJM is not an allowed region. Allowed regions are CISO, ERCO, GD, ISNE, MISO, SWPP.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 154,
+    "total_tokens": 790,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612862,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-806440e7-a3c6-95fa-908f-d6b67911ec3d"
+}

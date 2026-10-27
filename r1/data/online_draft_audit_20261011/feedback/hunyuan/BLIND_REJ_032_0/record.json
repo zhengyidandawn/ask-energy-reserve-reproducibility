@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_REJ_032",
+  "repeat": 0,
+  "phase": "feedback",
+  "started_at": "2026-10-11T15:46:09.398397+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "134deb5bb4f6b14a164a456bfcf0d7e7a772dd91faeda5a84b7afe8f2a7481b3",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": 45, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Unsupported field: horizon_minutes=45 is not in supported set {60,120,180}; per protocol return reject for unsupported fields. Region CISO explicitly supplied and supported, preserved. cost_reserve fixed at 1 by study protocol. cost_shortfall not supplied, set null.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 45,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "Unsupported field: horizon_minutes=45 is not in supported set {60,120,180}; per protocol return reject for unsupported fields. Region CISO explicitly supplied and supported, preserved. cost_reserve fixed at 1 by study protocol. cost_shortfall not supplied, set null.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 463,
+    "completion_tokens": 1364,
+    "total_tokens": 1827,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1241
+    }
+  },
+  "response_sha256": "04351c35766e5f1e1187eba3befeb6ca59db11dc876e0ce5b028315bf1837264",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 12.72703820001334,
+  "finished_at": "2026-10-11T15:46:22.125788+00:00"
+}

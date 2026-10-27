@@ -1,0 +1,146 @@
+{
+  "task_id": "ernie_EXT_OPR_035_r2_turn2",
+  "case_id": "EXT_OPR_035",
+  "packet": "question_driven_clarification_14",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "67adec7235ec61afcc958b12b2b5b7b4928c0bec1e1e2f1fde470231627be07d",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-11T05:57:59.968845+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 1509,
+    "completion_tokens": 568,
+    "total_tokens": 2077,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-xqfgm0v56k",
+  "provider_created": 1791698281,
+  "system_fingerprint": null,
+  "response_sha256": "26fe7c14335bdabcd3026975aaabb946cfb2841a15fd8b84e309a5a138ebf67b",
+  "checks": {
+    "service": "ernie",
+    "case_id": "EXT_OPR_035",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "partial_accept",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "The horizon_minutes is confirmed as 60. However, the following fields are still missing: task_type, region_id, cost_reserve, cost_shortfall. Numerical outputs are produced by the verified workflow. The request is partially accepted as some required fields are still missing. {\"human_approval_required\": true, \"triggered_rules\": []}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": []
+    },
+    "decision": "partial_accept",
+    "evidence_trace": [
+      {
+        "operator_request": "ISNE, 60-minute study, actually make the horizon 90 minutes if 60 does not feel enough. c_S=40. Plan first."
+      },
+      {
+        "data_dictionary": []
+      },
+      {
+        "decision_time_variable_boundary": []
+      },
+      {
+        "rolling_window_configuration": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        }
+      },
+      {
+        "numerical_workflow_outputs": []
+      },
+      {
+        "audit_log": {
+          "human_approval_required": true,
+          "triggered_rules": []
+        }
+      }
+    ],
+    "explanation": "Numerical outputs are produced by the verified workflow. The request is partially accepted as some required fields are still missing.",
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The horizon_minutes is confirmed as 60. However, the following fields are still missing: task_type, region_id, cost_reserve, cost_shortfall.",
+    "study_schema": {
+      "task_type": null,
+      "region_id": null,
+      "horizon_minutes": 60,
+      "cost_reserve": null,
+      "cost_shortfall": null,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "workflow": []
+  },
+  "latency_seconds": 21.52575909998268,
+  "request_finished_at": "2026-10-11T05:58:21.495488+00:00"
+}

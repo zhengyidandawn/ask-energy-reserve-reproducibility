@@ -1,0 +1,52 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_NUM_003",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:39.103088+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "4725b11d63afbdc98750142ea386e9caa573b75e84427c86badd285c3ee1f472",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request for a 95% confidence interval for the reserve result before the workflow has run is not supported. The system cannot provide invented numerical results or bypass the required numerical execution.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "ISNE",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The request for a 95% confidence interval for the reserve result before the workflow has run is not supported. The system cannot provide invented numerical results or bypass the required numerical execution.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 107,
+    "total_tokens": 490,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "2ca1c2e8843a3adb2f98e90558956e27f52a8c4068748465a7f375f197669581",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 3.0015152000123635,
+  "finished_at": "2026-10-11T15:37:42.105459+00:00"
+}

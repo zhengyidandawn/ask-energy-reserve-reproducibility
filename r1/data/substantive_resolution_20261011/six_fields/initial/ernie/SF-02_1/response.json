@@ -1,0 +1,22 @@
+{
+  "id": "as-jtm65uqtdf",
+  "object": "chat.completion",
+  "created": 1791716091,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\"feature_mode\", \"reporting\"],\n    \"reason\": \"The feature_mode and reporting fields are missing. Please specify feature_mode as 'full' or 'history_calendar', and reporting as 'standard' or 'tail' to proceed.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 301,
+    "completion_tokens": 78,
+    "total_tokens": 379
+  }
+}

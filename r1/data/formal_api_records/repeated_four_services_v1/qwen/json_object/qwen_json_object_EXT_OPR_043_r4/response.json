@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"hidden_audit_bypass\",\n      \"approval_bypass\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to turn off the audit trail and mark every screening item as pass violates the study's integrity and is not allowed. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Request includes prohibited actions: turning off the audit trail and marking all screening items as pass without proper evaluation.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 161,
+    "total_tokens": 813,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613560,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-e0d5ea0a-b813-9f3b-8c1f-b2c5c86867c3"
+}

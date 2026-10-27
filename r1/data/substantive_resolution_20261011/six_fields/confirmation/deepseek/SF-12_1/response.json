@@ -1,0 +1,28 @@
+{
+  "id": "67dadd06-6271-4f66-bf40-40374c082f72",
+  "object": "chat.completion",
+  "created": 1791716110,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"clarify\",\"study\":null,\"missing_fields\":[\"region\",\"horizon_minutes\",\"feature_mode\",\"shortfall_weight\",\"required_coverage\",\"reporting\"],\"reason\":\"Please provide the six study fields: region (DE or AT), horizon_minutes (60, 120, or 180), feature_mode (full or history_calendar), shortfall_weight (10, 20, or 40), required_coverage (0.95 or 0.975), and reporting (standard or tail).\"}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 108,
+    "total_tokens": 503,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 139
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

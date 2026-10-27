@@ -1,0 +1,468 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          8
+        ]
+      ],
+      "date-time": "2026-10-08T18:02:17Z",
+      "timestamp": 1791482537381,
+      "version": "4.3.4"
+    },
+    "reference-count": 33,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2024-03-01T00:00:00Z",
+          "timestamp": 1709251200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2024-03-01T00:00:00Z",
+          "timestamp": 1709251200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              3,
+              1
+            ]
+          ],
+          "date-time": "2024-03-01T00:00:00Z",
+          "timestamp": 1709251200000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001665",
+        "name": "Agence Nationale de la Recherche",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100001665",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Trans. Power Syst."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          3
+        ]
+      ]
+    },
+    "DOI": "10.1109/tpwrs.2023.3310280",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          8,
+          30
+        ]
+      ],
+      "date-time": "2023-08-30T13:25:19Z",
+      "timestamp": 1693401919000
+    },
+    "page": "4154-4163",
+    "source": "Crossref",
+    "is-referenced-by-count": 41,
+    "title": [
+      "Adaptive Probabilistic Forecasting of Electricity (Net-)Load"
+    ],
+    "prefix": "10.1109",
+    "volume": "39",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-0634-8484",
+        "authenticated-orcid": false,
+        "given": "Joseph",
+        "family": "de Vilmarest",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "&#x00C9;lectricit&#x00E9; de France R&amp;D, Sorbonne Universit&#x00E9;, Paris, France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5960-666X",
+        "authenticated-orcid": false,
+        "given": "Jethro",
+        "family": "Browell",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Glasgow, Glasgow, U.K."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2335-5536",
+        "authenticated-orcid": false,
+        "given": "Matteo",
+        "family": "Fasiolo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Bristol, Bristol, U.K."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2028-5536",
+        "authenticated-orcid": false,
+        "given": "Yannig",
+        "family": "Goude",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "&#x00C9;lectricit&#x00E9; de France R&amp;D and with Laboratoire de Math&#x00E9;matique d&#x0027;Orsay, Universit&#x00E9; Paris-Saclay, Gif-sur-Yvette, France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6976-3255",
+        "authenticated-orcid": false,
+        "given": "Olivier",
+        "family": "Wintenberger",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Sorbonne Universit&#x00E9;, Paris, France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/OAJPE.2020.3029979"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijforecast.2016.02.001"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijforecast.2019.02.006"
+      },
+      {
+        "key": "ref4",
+        "article-title": "Net load forecasting prize",
+        "year": "2023"
+      },
+      {
+        "key": "ref5",
+        "article-title": "Covid-19 impact on electricity",
+        "year": "2021"
+      },
+      {
+        "key": "ref6",
+        "article-title": "World energy outlook 2022",
+        "year": "2022"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSG.2021.3122398"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijforecast.2018.02.001"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.epsr.2020.106637"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPWRS.2021.3067551"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/OAJPE.2022.3141883"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TPWRS.2021.3050837"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ijforecast.2015.12.001"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.2020.1725521"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.segan.2023.100998"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSG.2022.3171499"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TETCI.2021.3064028"
+      },
+      {
+        "key": "ref18",
+        "article-title": "CRPS learning",
+        "author": "Berrisch",
+        "year": "2021",
+        "journal-title": "J. Econometrics"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10994-016-5592-6"
+      },
+      {
+        "key": "ref20",
+        "first-page": "25834",
+        "article-title": "Adaptive conformal predictions for time series",
+        "volume-title": "Proc. Int. Conf. Mach. Learn.",
+        "author": "Zaffran",
+        "year": "2022"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSG.2021.3107159"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joule.2020.08.017"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1201/9781315370279"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/1913643"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1257/jep.15.4.143"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1115/1.3658902"
+      },
+      {
+        "key": "ref27",
+        "first-page": "223",
+        "article-title": "Stochastic online optimization using kalman recursion",
+        "volume": "22",
+        "author": "de Vilmarest",
+        "year": "2021",
+        "journal-title": "J. Mach. Learn. Res."
+      },
+      {
+        "key": "ref28",
+        "article-title": "Viking: State-Space Models Inference by Kalman or Viking, R package version 1.0.0",
+        "author": "de Vilmarest",
+        "year": "2022"
+      },
+      {
+        "issue": "161",
+        "key": "ref29",
+        "first-page": "1",
+        "article-title": "MetaGrad: Adaptation using multiple learning rates in online learning",
+        "volume-title": "J. Mach. Learn. Res.",
+        "volume": "22",
+        "author": "Erven",
+        "year": "2021"
+      },
+      {
+        "key": "ref30",
+        "article-title": "Opera: Online Prediction by Expert Aggregation R package version 1.2.0",
+        "author": "Gaillard",
+        "year": "2021"
+      },
+      {
+        "key": "ref31",
+        "article-title": "Supplementary materials for adaptive probabilistic forecasting of electricity (Net-)Load",
+        "author": "de Vilmarest",
+        "year": "2022"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.21236/ADA459827"
+      },
+      {
+        "key": "ref33",
+        "article-title": "Supplementary material for probabilistic forecasting of regional net-load with conditional extremes and gridded NWP",
+        "author": "Browell",
+        "year": "2021"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Power Systems"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/59/10443973/10234679.pdf?arnumber=10234679",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          1
+        ]
+      ],
+      "date-time": "2024-03-01T17:56:57Z",
+      "timestamp": 1709315817000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/10234679/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          3
+        ]
+      ]
+    },
+    "references-count": 33,
+    "journal-issue": {
+      "issue": "2"
+    },
+    "URL": "https://doi.org/10.1109/tpwrs.2023.3310280",
+    "relation": {},
+    "ISSN": [
+      "0885-8950",
+      "1558-0679"
+    ],
+    "issn-type": [
+      {
+        "value": "0885-8950",
+        "type": "print"
+      },
+      {
+        "value": "1558-0679",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          3
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-z5e6mf3rm3",
+  "object": "chat.completion",
+  "created": 1791612956,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\n        \"calendar\",\n        \"cost_ratio\",\n        \"current_load\",\n        \"horizon\",\n        \"lagged_load\",\n        \"load_statistics\",\n        \"observed_weather\",\n        \"recent_ramp\",\n        \"region_id\"\n    ],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"unsupported_region\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Run the ASK reserve framework for PJM and treat it as one of the approved regions.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": [\n                    \"unsupported_region\"\n                ]\n            }\n        }\n    ],\n    \"explanation\": \"The region 'PJM' is not among the allowed regions ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. Numerical outputs are not produced as the request is rejected due to an unsupported region.\",\n    \"forbidden_variables\": [\n        \"fabricated_result\",\n        \"future_load\",\n        \"future_weather\",\n        \"raw_data_modification\",\n        \"realized_target\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"The region 'PJM' is not supported.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 689,
+    "completion_tokens": 441,
+    "total_tokens": 1130,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

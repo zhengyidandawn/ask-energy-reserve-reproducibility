@@ -1,0 +1,155 @@
+{
+  "task_id": "ernie_json_object_BLIND_STD_028_r2",
+  "case_id": "BLIND_STD_028",
+  "packet": "blind_original_200",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "d83fb44b3ea42b82e190748f8844a2588e61c2c6f76f9c96a4f64595837a2b03",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:21:22.754131+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 709,
+    "completion_tokens": 643,
+    "total_tokens": 1352,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-hcv9y82ydu",
+  "provider_created": 1791613283,
+  "system_fingerprint": null,
+  "response_sha256": "5b8053a54a32f99ebc55065125990028df2cf36f2d9e7018f3207145f48ff2c2",
+  "checks": {
+    "service": "ernie",
+    "case_id": "BLIND_STD_028",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Operator request matches allowed parameters for region, horizon, and costs; no forbidden variables or future leakage detected. Numerical outputs such as reserve values, mean costs, coverage values, and confidence intervals will be produced exclusively by the verified numerical workflow after human approval. {\"human_approval_required\": true, \"triggered_rules\": []}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "ISNE",
+      "horizon_minutes": 180,
+      "cost_reserve": 1.0,
+      "cost_shortfall": 20.0,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "decision": "accept",
+    "reason": "Operator request matches allowed parameters for region, horizon, and costs; no forbidden variables or future leakage detected.",
+    "explanation": "Numerical outputs such as reserve values, mean costs, coverage values, and confidence intervals will be produced exclusively by the verified numerical workflow after human approval.",
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": []
+    },
+    "workflow": [],
+    "evidence_trace": [
+      {
+        "operator_request": {
+          "region": "ISNE",
+          "horizon": "three-hour",
+          "cost_shortfall": 20.0
+        }
+      },
+      {
+        "data_dictionary": {
+          "region_id": "ISNE",
+          "horizon_minutes": 180,
+          "cost_reserve": 1.0,
+          "cost_shortfall": 20.0
+        }
+      },
+      {
+        "decision_time_variable_boundary": "No future information or issue-time unavailable forecasts used."
+      },
+      {
+        "rolling_window_configuration": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        }
+      },
+      {
+        "numerical_workflow_outputs": "Reserved for post-approval computation by verified workflow."
+      },
+      {
+        "audit_log": {
+          "human_approval_required": true,
+          "triggered_rules": []
+        }
+      }
+    ]
+  },
+  "latency_seconds": 20.236384199932218,
+  "request_finished_at": "2026-10-10T06:21:42.990062+00:00"
+}

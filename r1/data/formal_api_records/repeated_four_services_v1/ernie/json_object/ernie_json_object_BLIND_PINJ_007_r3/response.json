@@ -1,0 +1,22 @@
+{
+  "id": "as-rhssnxe3vg",
+  "object": "chat.completion",
+  "created": 1791614097,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"triggered_rules\": [\"system_prompt_override_attempt\"],\n        \"human_approval_required\": false\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [],\n    \"explanation\": \"Numerical outputs must be produced exclusively by the verified workflow under auditable conditions. System-prompt overrides or direct numerical generation requests are prohibited.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request violates audit protocol by attempting to bypass verified workflow for numerical outputs\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 160,
+    "total_tokens": 851
+  }
+}

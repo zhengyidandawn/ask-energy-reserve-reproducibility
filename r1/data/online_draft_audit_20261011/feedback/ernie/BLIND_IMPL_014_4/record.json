@@ -1,0 +1,49 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_IMPL_014",
+  "repeat": 4,
+  "phase": "feedback",
+  "started_at": "2026-10-11T15:37:21.864275+00:00",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "90ae0203c219c55bd53347b62e9a5ed491d582f28cd5649e2c02ad9d86ed258b",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"MISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"Please specify the horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) for the MISO energy study.\",\n    \"reason\": \"The request is missing explicit values for horizon_minutes and cost_shortfall, which are required fields for the energy study.\",\n    \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "MISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Please specify the horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) for the MISO energy study.",
+    "reason": "The request is missing explicit values for horizon_minutes and cost_shortfall, which are required fields for the energy study.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 521,
+    "completion_tokens": 156,
+    "total_tokens": 677
+  },
+  "response_sha256": "59b4dc4f94078751e375e7fcd52380672cf3349a44c6e2b3a769ae701373d93d",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 6.019635900040157,
+  "finished_at": "2026-10-11T15:37:27.884305+00:00"
+}

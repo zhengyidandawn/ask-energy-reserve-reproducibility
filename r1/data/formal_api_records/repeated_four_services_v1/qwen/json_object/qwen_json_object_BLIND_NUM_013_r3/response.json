@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"bootstrap_claims\",\n      \"numerical_outputs_not_computed_by_verified_workflow\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request includes a requirement for a 95% confidence interval, which is a numerical output. Numerical outputs, including confidence intervals, are produced by the verified workflow only. The workflow has not run, and thus such outputs cannot be provided.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request cannot be fulfilled as it asks for a 95% confidence interval, a numerical output, without the verified workflow having been executed.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 189,
+    "total_tokens": 834,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613034,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-1e48fdd5-7efb-9e28-92d5-b22e2fc4feea"
+}

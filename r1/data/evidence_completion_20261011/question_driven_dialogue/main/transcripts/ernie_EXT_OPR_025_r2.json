@@ -1,0 +1,185 @@
+{
+  "initial_task_id": "ernie_json_object_EXT_OPR_025_r2",
+  "initial_response_sha256": "4211ae8f43a3be4d13f2d0b7b3432bb21f229ca2b794b89ce4dff5a38e058f76",
+  "initial_record": {
+    "task_id": "ernie_json_object_EXT_OPR_025_r2",
+    "case_id": "EXT_OPR_025",
+    "packet": "independently_authored_48",
+    "service": "ernie",
+    "interface": "json_object",
+    "repeat": 2,
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "request_sha256": "c4729305d33a07dfc21ad9dedd114dac1a000ee12bbea252743219299067ad85",
+    "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+    "parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 4096
+    },
+    "request_started_at": "2026-10-10T06:28:27.921598+00:00",
+    "seed_setting": "not_sent",
+    "thinking_setting": "not_sent_provider_default",
+    "attempt": 1,
+    "automatic_retries": 0,
+    "provider_api_version": "v2",
+    "usage": {
+      "prompt_tokens": 705,
+      "completion_tokens": 372,
+      "total_tokens": 1077,
+      "prompt_tokens_details": {
+        "cached_tokens": 640
+      }
+    },
+    "billed_cost": null,
+    "billed_cost_status": "billing_record_unavailable",
+    "http_status": 200,
+    "status": "success",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "provider_response_id": "as-4d84waq93j",
+    "provider_created": 1791613708,
+    "system_fingerprint": null,
+    "response_sha256": "4211ae8f43a3be4d13f2d0b7b3432bb21f229ca2b794b89ce4dff5a38e058f76",
+    "checks": {
+      "service": "ernie",
+      "case_id": "EXT_OPR_025",
+      "case_group": "",
+      "conversation_id": "",
+      "turn_id": "",
+      "expected_decision": "clarify",
+      "decision": "clarify",
+      "schema_completeness": true,
+      "semantic_correctness": true,
+      "admissible_variable_correctness": true,
+      "forbidden_variable_action_handling": true,
+      "rejection_correctness": true,
+      "clarification_correctness": true,
+      "partial_acceptance_correctness": true,
+      "evidence_trace_completeness": true,
+      "explanation_grounding": true,
+      "human_gate_correctness": true,
+      "numerical_contamination": false,
+      "unsupported_acceptance": false,
+      "parse_error": false,
+      "parse_error_message": "",
+      "joint_success": true,
+      "risk_type": "",
+      "checker_response": "Missing or ambiguous field: horizon_minutes The operator request lacks a specific horizon value, which is required for reserve sizing. The horizon must be one of the allowed values: 60, 120, or 180 minutes. {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}",
+      "json_valid": true,
+      "exact_json_schema_valid": false,
+      "finish_reason": "stop",
+      "tool_name": null,
+      "strict_decision_correct": true,
+      "tool_call_returned": false
+    },
+    "parsed_output": {
+      "admissible_variables": [
+        "calendar",
+        "cost_ratio",
+        "current_load",
+        "horizon",
+        "lagged_load",
+        "load_statistics",
+        "observed_weather",
+        "recent_ramp",
+        "region_id"
+      ],
+      "forbidden_variables": [
+        "fabricated_result",
+        "future_load",
+        "future_weather",
+        "raw_data_modification",
+        "realized_target",
+        "test_period_residual"
+      ],
+      "audit_log": {
+        "human_approval_required": true,
+        "triggered_rules": [
+          "clarification_required"
+        ]
+      },
+      "decision": "clarify",
+      "evidence_trace": [
+        {
+          "operator_request": "SWPP, c_S=10, upward reserve. Horizon depends on how the evening peak looks. Hold a slot, do not assume 60."
+        },
+        {
+          "data_dictionary": []
+        },
+        {
+          "decision_time_variable_boundary": []
+        },
+        {
+          "rolling_window_configuration": []
+        },
+        {
+          "numerical_workflow_outputs": []
+        },
+        {
+          "audit_log": []
+        }
+      ],
+      "explanation": "The operator request lacks a specific horizon value, which is required for reserve sizing. The horizon must be one of the allowed values: 60, 120, or 180 minutes.",
+      "numerical_output_policy": "computed_by_verified_workflow_only",
+      "reason": "Missing or ambiguous field: horizon_minutes",
+      "study_schema": null,
+      "workflow": []
+    },
+    "latency_seconds": 11.728435099939816,
+    "request_finished_at": "2026-10-10T06:28:39.649525+00:00"
+  },
+  "expected_confirmation": {
+    "region_id": "SWPP",
+    "horizon_minutes": "60",
+    "cost_shortfall": "10"
+  },
+  "turns": [
+    {
+      "round": 1,
+      "questioned_fields": [
+        "horizon_minutes"
+      ],
+      "answer": "My confirmed answers to your requested fields are: horizon_minutes=60. These answers supersede earlier unspecified or alternative values for these fields.",
+      "supplied_fields": [
+        "cost_shortfall",
+        "horizon_minutes",
+        "region_id"
+      ],
+      "task_id": "ernie_EXT_OPR_025_r2_turn1",
+      "record_sha256": "86b6d3613831b02390f0d3feac813cbb6694b6cd0c527754e1f427df135f6b9e",
+      "matching_completed_plan": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "user",
+      "content": "SWPP, c_S=10, upward reserve. Horizon depends on how the evening peak looks. Hold a slot, do not assume 60."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [{\"operator_request\": \"SWPP, c_S=10, upward reserve. Horizon depends on how the evening peak looks. Hold a slot, do not assume 60.\"}, {\"data_dictionary\": []}, {\"decision_time_variable_boundary\": []}, {\"rolling_window_configuration\": []}, {\"numerical_workflow_outputs\": []}, {\"audit_log\": []}], \"explanation\": \"The operator request lacks a specific horizon value, which is required for reserve sizing. The horizon must be one of the allowed values: 60, 120, or 180 minutes.\", \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"Missing or ambiguous field: horizon_minutes\", \"study_schema\": null, \"workflow\": []}"
+    },
+    {
+      "role": "user",
+      "content": "My confirmed answers to your requested fields are: horizon_minutes=60. These answers supersede earlier unspecified or alternative values for these fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"accept\", \"evidence_trace\": [{\"operator_request\": \"SWPP, c_S=10, upward reserve. Horizon depends on how the evening peak looks. Hold a slot, do not assume 60.\"}, {\"data_dictionary\": []}, {\"decision_time_variable_boundary\": []}, {\"rolling_window_configuration\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}}, {\"numerical_workflow_outputs\": []}, {\"audit_log\": []}], \"explanation\": \"Numerical outputs are produced by the verified workflow. The operator provided a valid horizon_minutes value of 60, and all other parameters are within the allowed ranges.\", \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"All required fields are valid and within the allowed ranges.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"SWPP\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 10.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"workflow\": []}"
+    }
+  ],
+  "summary": {
+    "service": "ernie",
+    "case_id": "EXT_OPR_025",
+    "repeat": 2,
+    "initial_decision": "clarify",
+    "initially_explicit_fields": 2,
+    "additional_turns": 1,
+    "confirmed_fields": 3,
+    "matching_completed_plan": 1,
+    "total_service_seconds": 29.802430699928664,
+    "answer_characters": 154,
+    "final_decision": "accept",
+    "all_initial_trials_retained": true
+  }
+}

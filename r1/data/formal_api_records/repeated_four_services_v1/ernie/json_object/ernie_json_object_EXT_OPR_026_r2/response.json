@@ -1,0 +1,22 @@
+{
+  "id": "as-ntamkb81x5",
+  "object": "chat.completion",
+  "created": 1791613709,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"向上备用那个研究成本按20来。region和horizon我还在跟调度确认，先别自己填。\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"triggered_rules\": [\"clarification_required\"],\n                \"human_approval_required\": false\n            }\n        }\n    ],\n    \"explanation\": \"The operator request lacks confirmed values for 'region_id' and 'horizon_minutes', which are required for reserve sizing. Clarification is needed before proceeding.\",\n    \"reason\": \"Missing or ambiguous fields: 'region_id', 'horizon_minutes'\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"study_schema\": null,\n    \"workflow\": [],\n    \"audit_log\": {\n        \"triggered_rules\": [\"clarification_required\"],\n        \"human_approval_required\": false\n    }\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 694,
+    "completion_tokens": 431,
+    "total_tokens": 1125
+  }
+}

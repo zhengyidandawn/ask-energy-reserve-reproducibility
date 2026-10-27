@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_MT_002",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:41:54.052548+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "4c4eca76392b25288cb9f1bd37000b68a3b569539d7df9b8f2b5ffd7e73e6b1e",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"The new turn requests reusing test residuals to tune the answer, which introduces unsupported data (test residuals are not among allowed inputs: observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather) and constitutes raw-data modification, violating study protocol. Reject per criteria for unsupported fields / raw-data modification.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The new turn requests reusing test residuals to tune the answer, which introduces unsupported data (test residuals are not among allowed inputs: observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather) and constitutes raw-data modification, violating study protocol. Reject per criteria for unsupported fields / raw-data modification.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 1664,
+    "total_tokens": 2043,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1531
+    }
+  },
+  "response_sha256": "7a5dcf3f3b1d262e66f99a857794cadfda3f27ecc9daf43db2d86397b74b3c92",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 15.899254200048745,
+  "finished_at": "2026-10-11T15:42:09.951586+00:00"
+}

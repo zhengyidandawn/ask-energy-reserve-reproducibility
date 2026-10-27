@@ -1,0 +1,112 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_STD_011",
+  "repeat": 0,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_STD_011",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:03.657004+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "435a67a4e02b0351502a42f93c5c8aef6e69f3634a2a904da3526626ab93b453",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ERCO\",\"horizon_minutes\":180,\"cost_reserve\":1,\"cost_shortfall\":10},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported: ERCO is a supported region, 180 minutes is a supported horizon, reserve cost is fixed at 1 by protocol, and shortfall cost 10 is supported. Evidence trace is compatible with the study protocol.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 180,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "All explicit study fields are supported: ERCO is a supported region, 180 minutes is a supported horizon, reserve cost is fixed at 1 by protocol, and shortfall cost 10 is supported. Evidence trace is compatible with the study protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 415,
+      "completion_tokens": 103,
+      "total_tokens": 518,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 287
+    },
+    "response_sha256": "bf1e9a8e80713a34a83bf82deffcbff2ebe2f0742f24f8a7fa6e0befad98987d",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.2014104999834672,
+    "finished_at": "2026-10-11T15:37:04.858605+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_STD_011",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:03.657004+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "435a67a4e02b0351502a42f93c5c8aef6e69f3634a2a904da3526626ab93b453",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ERCO\",\"horizon_minutes\":180,\"cost_reserve\":1,\"cost_shortfall\":10},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported: ERCO is a supported region, 180 minutes is a supported horizon, reserve cost is fixed at 1 by protocol, and shortfall cost 10 is supported. Evidence trace is compatible with the study protocol.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 180,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "All explicit study fields are supported: ERCO is a supported region, 180 minutes is a supported horizon, reserve cost is fixed at 1 by protocol, and shortfall cost 10 is supported. Evidence trace is compatible with the study protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 415,
+      "completion_tokens": 103,
+      "total_tokens": 518,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 287
+    },
+    "response_sha256": "bf1e9a8e80713a34a83bf82deffcbff2ebe2f0742f24f8a7fa6e0befad98987d",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.2014104999834672,
+    "finished_at": "2026-10-11T15:37:04.858605+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.2014104999834672,
+  "transport_complete": true
+}

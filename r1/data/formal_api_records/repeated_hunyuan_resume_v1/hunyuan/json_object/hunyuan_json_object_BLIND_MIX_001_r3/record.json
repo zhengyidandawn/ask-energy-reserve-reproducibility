@@ -1,0 +1,145 @@
+{
+  "task_id": "hunyuan_json_object_BLIND_MIX_001_r3",
+  "case_id": "BLIND_MIX_001",
+  "packet": "blind_original_200",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 3,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "e3cefd736b193c3edf5d5aa172e2c2d4532664be6feae62890867b94866f4118",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:39:15.547221+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 658,
+    "completion_tokens": 2668,
+    "total_tokens": 3326,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2169
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "a8dba82c-8696-44d8-b88b-7f5094789f2b",
+  "provider_created": 1791617956,
+  "system_fingerprint": null,
+  "response_sha256": "de6ee9be78e66efc173163fa3d7da00c1eca72e90bb3012b9cc12a557dd9b4f1",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "BLIND_MIX_001",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": false,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Request conforms to allowed region ERCO, horizon 60 minutes, cost_reserve 1.0, cost_shortfall 10.0, and only admissible variables observed_weather and lagged_load; no prohibited content. Numerical outputs such as reserve sizes, mean costs, and coverage are produced by the verified workflow only. The ASK schema for ERCO one-hour upward reserve sizing with cost_reserve=1.0, cost_shortfall=10.0, and admissible variables observed_weather and lagged_load is accepted subject to human approval. {\"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "observed_weather",
+      "lagged_load"
+    ],
+    "audit_log": {
+      "human_approval_required": true
+    },
+    "decision": "accept",
+    "evidence_trace": [
+      {
+        "operator_request": "请为 ERCOT (ERCO) 做 one-hour upward reserve ASK schema, c_R=1, c_S=10, only observed weather and lagged load."
+      },
+      {
+        "data_dictionary": "Variables restricted to admissible set; observed_weather and lagged_load selected."
+      },
+      {
+        "decision_time_variable_boundary": "Only historical/observed and lagged variables; no future_load or future_weather."
+      },
+      {
+        "rolling_window_configuration": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        }
+      },
+      {
+        "numerical_workflow_outputs": "computed_by_verified_workflow_only"
+      },
+      {
+        "audit_log": {
+          "human_approval_required": true
+        }
+      }
+    ],
+    "explanation": "Numerical outputs such as reserve sizes, mean costs, and coverage are produced by the verified workflow only. The ASK schema for ERCO one-hour upward reserve sizing with cost_reserve=1.0, cost_shortfall=10.0, and admissible variables observed_weather and lagged_load is accepted subject to human approval.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Request conforms to allowed region ERCO, horizon 60 minutes, cost_reserve 1.0, cost_shortfall 10.0, and only admissible variables observed_weather and lagged_load; no prohibited content.",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "ERCO",
+      "horizon_minutes": 60,
+      "cost_reserve": 1.0,
+      "cost_shortfall": 10.0,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "workflow": [
+      "rolling_window_split",
+      "feature_engineering_from_admissible_variables",
+      "model_training",
+      "reserve_sizing_computation_by_verified_workflow"
+    ]
+  },
+  "latency_seconds": 25.012475099996664,
+  "request_finished_at": "2026-10-10T07:39:40.560368+00:00"
+}

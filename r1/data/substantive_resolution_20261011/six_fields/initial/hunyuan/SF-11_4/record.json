@@ -1,0 +1,43 @@
+{
+  "case_id": "SF-11",
+  "service": "hunyuan",
+  "repeat": 4,
+  "phase": "initial",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T11:00:47.586629+00:00",
+  "status": "success",
+  "request_sha256": "8f792b949bf308c0c6e1aebab014b56cdf0487e49be27964731ccb1125e3cf32",
+  "returned_model": "hy3",
+  "usage": {
+    "prompt_tokens": 288,
+    "completion_tokens": 1200,
+    "total_tokens": 1488,
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1140
+    }
+  },
+  "content": "{\"decision\": \"clarify\", \"study\": null, \"missing_fields\": [\"required_coverage\"], \"reason\": \"The required_coverage field is missing. Please explicitly specify required_coverage as either 0.95 or 0.975 to proceed with the study.\"}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "required_coverage"
+    ],
+    "reason": "The required_coverage field is missing. Please explicitly specify required_coverage as either 0.95 or 0.975 to proceed with the study."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 5,
+    "rules": [
+      "required_coverage"
+    ]
+  },
+  "response_sha256": "dcb81c51564b7936b9a937af9c01275e1b43e4d58a5ed1f71df8f32d9cd17d1f",
+  "latency_seconds": 12.181659499998204,
+  "request_finished_at": "2026-10-11T11:00:59.767629+00:00"
+}

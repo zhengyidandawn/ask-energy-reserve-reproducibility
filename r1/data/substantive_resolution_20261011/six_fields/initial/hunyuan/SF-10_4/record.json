@@ -1,0 +1,43 @@
+{
+  "case_id": "SF-10",
+  "service": "hunyuan",
+  "repeat": 4,
+  "phase": "initial",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T11:00:09.738757+00:00",
+  "status": "success",
+  "request_sha256": "d9d1f70fd5f8aad145b816befae30b9d502ba2dc4010fd0789a0c7dfa728599a",
+  "returned_model": "hy3",
+  "usage": {
+    "prompt_tokens": 281,
+    "completion_tokens": 1655,
+    "total_tokens": 1936,
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1578
+    }
+  },
+  "content": "{\"decision\": \"clarify\", \"study\": null, \"missing_fields\": [\"feature_mode\"], \"reason\": \"The feature_mode field is missing. Please explicitly specify feature_mode as either 'full' (observed load and calendar with recent ramps and load statistics) or 'history_calendar' (restricted load history and calendar set) for the study.\"}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "feature_mode"
+    ],
+    "reason": "The feature_mode field is missing. Please explicitly specify feature_mode as either 'full' (observed load and calendar with recent ramps and load statistics) or 'history_calendar' (restricted load history and calendar set) for the study."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 5,
+    "rules": [
+      "feature_mode"
+    ]
+  },
+  "response_sha256": "5602eeabca6133a14bc5521bf4169efdb31175336281f7ee4d75d33a66723b58",
+  "latency_seconds": 14.146223400020972,
+  "request_finished_at": "2026-10-11T11:00:23.885600+00:00"
+}

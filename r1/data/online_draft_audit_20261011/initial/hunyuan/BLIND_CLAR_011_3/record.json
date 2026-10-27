@@ -1,0 +1,52 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_011",
+  "repeat": 3,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:47.973103+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "cae6008bf73e8ed975f5393aff0d45ac5260c9f7c69669122a71a82d68c7b331",
+  "returned_model": "hy3",
+  "content": "{\"\": \"\"}",
+  "parsed_output": {
+    "": ""
+  },
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 2339,
+    "total_tokens": 2710,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2332
+    }
+  },
+  "response_sha256": "1203ad7f2a170202b5f62692934ee5e0f1be35abe075b43e200ab3147106c51f",
+  "diagnostics": {
+    "messages": [
+      "Return the five required object properties.",
+      "Return all four field properties, using null for unresolved values.",
+      "The frozen request parser recognizes cost_reserve=1.0; verify its source in the original request.",
+      "Keep the required human approval in the draft.",
+      "Execution validation returns invalid: malformed_output"
+    ],
+    "validation": {
+      "decision": "invalid",
+      "execution_ready": false,
+      "blocking_rules": [
+        "malformed_output"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 20.922788699972443,
+  "finished_at": "2026-10-11T15:37:08.895079+00:00"
+}

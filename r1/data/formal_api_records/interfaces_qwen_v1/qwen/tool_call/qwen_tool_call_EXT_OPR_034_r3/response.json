@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [\"invalid_region_combination\"], \"human_approval_required\": true}, \"decision\": \"reject\", \"evidence_trace\": [], \"explanation\": \"本研究计划请求被拒绝，由于尝试在单个任务中为多个区域（ERCO 和 CISO）指定向上备用容量。每个向上备用容量研究必须单独针对一个支持的区域。数值输出将由验证的工作流程生成。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"不允许在一个研究任务中同时为多个独立地区设置参数。请分别为每一个区域提交单独的研究请求。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_09ff3878faf84c52a893b9",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1526,
+    "completion_tokens": 224,
+    "total_tokens": 1750,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616393,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-2b7879e4-8268-9ab9-b34a-f530cf4340fd"
+}

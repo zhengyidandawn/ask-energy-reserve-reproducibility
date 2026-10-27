@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"test_period_residual\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to use test-month residuals from CAISO (CISO) during calibration before the test window closes is rejected. This is because using test period residuals for any purpose outside of the final testing phase is not allowed, as it can lead to data leakage and compromise the integrity of the study.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request involves using test-period residuals in the calibration process, which is prohibited to prevent data leakage and ensure the study's validity.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 216,
+    "total_tokens": 852,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612658,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-0a5c2fa9-88d4-94d5-bb86-18863b0211de"
+}

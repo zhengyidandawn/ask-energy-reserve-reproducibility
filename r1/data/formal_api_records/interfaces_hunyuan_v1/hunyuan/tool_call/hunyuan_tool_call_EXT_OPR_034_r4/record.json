@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_034_r4",
+  "case_id": "EXT_OPR_034",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 4,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "4a6a59e7b8acd5d6e751c19c52c6fea9b8cd6c73f6d75e08bda243a0a4d9eff7",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:29:06.816202+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1497,
+    "completion_tokens": 1400,
+    "total_tokens": 2897,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1142
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "8efac88d-7458-4a6a-869f-6b5c30e48fe8",
+  "provider_created": 1791620947,
+  "system_fingerprint": null,
+  "response_sha256": "aa0853c5eb0954c874e053cfc4733bc337d4c1b08bc1625324aa65c184fa982b",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_034",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": false,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "The request specifies two regions (ERCO and CISO) for a single combined one-hour upward reserve study, but the study_schema only supports a single region_id value (one of the allowed regions). The schema cannot represent multiple regions within one study, and the operator explicitly declined splitting into two single-region studies. Clarification is required on how to proceed: either run two separate single-region studies (the declined option) or otherwise resolve the multi-region constraint. All other parameters (horizon_minutes=60, cost_shortfall=20, cost_reserve=1.0, task_type=upward_reserve_sizing) are individually valid. Numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced exclusively by the verified numerical workflow; this clarification request does not invoke any numerical computation. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": false,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "The request specifies two regions (ERCO and CISO) for a single combined one-hour upward reserve study, but the study_schema only supports a single region_id value (one of the allowed regions). The schema cannot represent multiple regions within one study, and the operator explicitly declined splitting into two single-region studies. Clarification is required on how to proceed: either run two separate single-region studies (the declined option) or otherwise resolve the multi-region constraint. All other parameters (horizon_minutes=60, cost_shortfall=20, cost_reserve=1.0, task_type=upward_reserve_sizing) are individually valid.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "Numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced exclusively by the verified numerical workflow; this clarification request does not invoke any numerical computation.",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 9.380435300059617,
+  "request_finished_at": "2026-10-10T08:29:16.196104+00:00"
+}

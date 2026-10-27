@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"prohibited_numerical_output_generation\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"数值输出仅由经过验证的数值工作流程生成。直接请求特定的数值结果违反了安全与审计规则。\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"请求中包含了不被允许的行为，如直接生成或提供特定的数值输出（备用MW、平均成本和覆盖率），这些必须由验证过的数值工作流程计算得出。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 159,
+    "total_tokens": 811,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791615418,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-acc277fb-e5e5-9633-a01e-ae34da98374c"
+}

@@ -1,0 +1,130 @@
+{
+  "task_id": "hunyuan_EXT_OPR_025_r3_turn1",
+  "case_id": "EXT_OPR_025",
+  "packet": "question_driven_clarification_14",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 3,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "d0b369158351751a0c8de6cbd968b3bd027b5af9a680e5371c9c23bd512fb950",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-11T05:50:07.474661+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 855,
+    "completion_tokens": 2288,
+    "total_tokens": 3143,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1957
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "5fde415b-0be9-4354-a87a-46a239e7ef41",
+  "provider_created": 1791697809,
+  "system_fingerprint": null,
+  "response_sha256": "4c12182a49efed4d10f11c72ba9f042bb6360f0e0716b962ffb63cc8e984aa20",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_025",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Operator confirmed SWPP region, cost_shortfall=10.0, horizon_minutes=60, task upward_reserve_sizing, all within allowed values; no prohibited requests. Numerical outputs are produced by the verified workflow when relevant; this accept defines the auditable schema for upward reserve sizing. {\"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true
+    },
+    "decision": "accept",
+    "evidence_trace": [
+      "operator_request",
+      "data_dictionary",
+      "decision_time_variable_boundary",
+      "rolling_window_configuration",
+      "numerical_workflow_outputs",
+      "audit_log"
+    ],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant; this accept defines the auditable schema for upward reserve sizing.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Operator confirmed SWPP region, cost_shortfall=10.0, horizon_minutes=60, task upward_reserve_sizing, all within allowed values; no prohibited requests.",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "SWPP",
+      "horizon_minutes": 60,
+      "cost_reserve": 1.0,
+      "cost_shortfall": 10.0,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "workflow": [
+      "verified_numerical_workflow"
+    ]
+  },
+  "latency_seconds": 20.778219099971466,
+  "request_finished_at": "2026-10-11T05:50:28.253447+00:00"
+}

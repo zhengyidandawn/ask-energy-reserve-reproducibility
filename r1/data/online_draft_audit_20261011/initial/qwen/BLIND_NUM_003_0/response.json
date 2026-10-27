@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the horizon in minutes (60, 120, or 180) and the cost of shortfall (10, 20, or 40) for the study? Also, generating a 95% confidence interval requires running the workflow. Can you confirm if the request is to set up the parameters for the study or to get an estimated result without executing the numerical program?\",\n  \"reason\": \"Horizon and cost of shortfall are missing. A 95% confidence interval cannot be provided without running the numerical program.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 182,
+    "total_tokens": 565,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733068,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-f9024404-ff84-996f-9490-59e7c84f90e2"
+}

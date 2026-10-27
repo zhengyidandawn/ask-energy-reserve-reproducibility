@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"unsupported_horizon\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The requested 45-minute horizon is not supported. Supported horizons are 60, 120, and 180 minutes.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The specified 45-minute horizon is not among the allowed values of 60, 120, or 180 minutes.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 633,
+    "completion_tokens": 155,
+    "total_tokens": 788,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612864,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-43b5d445-13a4-90a0-9dc1-dcc7083c6dfe"
+}

@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"reject\", \"evidence_trace\": [], \"explanation\": \"The numerical outputs including reserve values are produced by the verified workflow only. The rejection is due to an invalid region ID and an unsupported shortfall cost.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"Invalid region ID 'CAIOS' which is not one of the allowed regions, and the specified shortfall penalty 20 does not match any of the permitted shortfall costs [10.0, 20.0, 40.0].\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_72c4cb9d786e47bc9f6d4f",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1527,
+    "completion_tokens": 226,
+    "total_tokens": 1753,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616370,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-e47f4a5e-7c5a-9348-9f71-ee598d0c18e6"
+}

@@ -1,0 +1,53 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_011",
+  "repeat": 0,
+  "phase": "feedback",
+  "started_at": "2026-10-11T15:47:03.099601+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "3e8f125a39e2a5338f866016068412f671ba35cef4ba5fd76d600800102da061",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 180, \"cost_reserve\": 1, \"cost_shortfall\": 10}, \"clarification_question\": null, \"reason\": \"Original request explicitly provides supported region_id ERCO, horizon_minutes 180, cost_reserve 1 (aligned with protocol fixed value), and cost_shortfall 10 (supported weight). No unresolved or conflicting study fields; evidence trace is a permissible requirement not constituting audit bypass. All explicit values preserved for analyst review.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 180,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "Original request explicitly provides supported region_id ERCO, horizon_minutes 180, cost_reserve 1 (aligned with protocol fixed value), and cost_shortfall 10 (supported weight). No unresolved or conflicting study fields; evidence trace is a permissible requirement not constituting audit bypass. All explicit values preserved for analyst review.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 530,
+    "completion_tokens": 1420,
+    "total_tokens": 1950,
+    "prompt_tokens_details": {
+      "cached_tokens": 320
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1290
+    }
+  },
+  "response_sha256": "76cc120d0502510ae3fb7d14ffe314d5dbd7e16e9b61636b4632dd364ebaee79",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 11.69292790000327,
+  "finished_at": "2026-10-11T15:47:14.793569+00:00"
+}

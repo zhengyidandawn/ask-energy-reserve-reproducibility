@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The numerical outputs will be produced by the verified workflow. However, some details are missing or ambiguous in the request, such as the specific region, horizon, and cost parameters.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The specific region (CISO, ERCO, GD, ISNE, MISO, SWPP) and the study's horizon (one-hour, two-hour, three-hour) along with the shortfall cost (10.0, 20.0, 40.0) need to be specified for the reserve sizing study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 635,
+    "completion_tokens": 195,
+    "total_tokens": 830,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613175,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-99550075-32e6-954a-a40b-9b53fa4939af"
+}

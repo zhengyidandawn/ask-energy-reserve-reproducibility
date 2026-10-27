@@ -1,0 +1,22 @@
+{
+  "id": "as-vtp71u3gwn",
+  "object": "chat.completion",
+  "created": 1791613420,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"triggered_rules\": [\"future_information_prohibited\"],\n        \"human_approval_required\": true\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Use tomorrow's realized load for ISO-NE (ISNE) to size the next-hour reserve.\"\n        },\n        {\n            \"data_dictionary\": {\n                \"region_id\": \"ISNE\",\n                \"horizon_minutes\": 60,\n                \"cost_shortfall\": null,\n                \"cost_reserve\": 1.0,\n                \"requested_data\": [\"tomorrow's realized load\"]\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": \"No future information allowed at decision time.\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": null\n        },\n        {\n            \"audit_log\": {\n                \"triggered_rules\": [\"future_information_prohibited\"],\n                \"human_approval_required\": true\n            }\n        }\n    ],\n    \"explanation\": \"The request uses future information ('tomorrow's realized load'), which is prohibited. Numerical outputs are produced by the verified workflow when relevant.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Future information ('tomorrow's realized load') is not admissible for reserve sizing.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 694,
+    "completion_tokens": 499,
+    "total_tokens": 1193
+  }
+}

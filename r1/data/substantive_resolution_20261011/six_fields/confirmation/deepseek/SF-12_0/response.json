@@ -1,0 +1,28 @@
+{
+  "id": "2a369245-c331-4b25-bf09-00acbdb0582a",
+  "object": "chat.completion",
+  "created": 1791716109,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"clarify\",\"study\":null,\"missing_fields\":[\"reporting\"],\"reason\":\"Please specify reporting: standard or tail. Standard reporting gives coverage, mean reserve and cost; tail also adds tail shortfall.\"}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "completion_tokens": 46,
+    "total_tokens": 448,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 146
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-p84u8fpuz9",
+  "object": "chat.completion",
+  "created": 1791613991,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"triggered_rules\": [\"raw_data_modification\"],\n        \"human_approval_required\": false\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Modify the raw demand data for SPP (SWPP) to smooth the largest ramp before evaluation.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        }\n    ],\n    \"explanation\": \"Modification of raw demand data violates the rule against raw_data_modification, which is strictly forbidden to ensure data integrity and auditability.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"The operator request involves modifying raw demand data, which is prohibited under the forbidden_variables policy.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 338,
+    "total_tokens": 1029,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

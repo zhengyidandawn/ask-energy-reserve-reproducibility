@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_011",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:46:46.751374+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "65208ac012225a25c2dcd6b6a0d19063a932cc0072ce12f0c044c34d4f90f747",
+  "returned_model": "hy3",
+  "content": "{\"\": \"\"}",
+  "parsed_output": {
+    "": ""
+  },
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 1809,
+    "total_tokens": 2203,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1802
+    }
+  },
+  "response_sha256": "31bcf9bc73e22896aa4ea08cc8cde4150f126f3314c2e3d0d1583a31ba1902c3",
+  "diagnostics": {
+    "messages": [
+      "Return the five required object properties.",
+      "Return all four field properties, using null for unresolved values.",
+      "The frozen request parser recognizes region_id=ERCO; verify its source in the original request.",
+      "The frozen request parser recognizes horizon_minutes=180; verify its source in the original request.",
+      "The frozen request parser recognizes cost_reserve=1.0; verify its source in the original request.",
+      "The frozen request parser recognizes cost_shortfall=10.0; verify its source in the original request.",
+      "Keep the required human approval in the draft.",
+      "Execution validation returns invalid: malformed_output"
+    ],
+    "validation": {
+      "decision": "invalid",
+      "execution_ready": false,
+      "blocking_rules": [
+        "malformed_output"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 16.3475459999172,
+  "finished_at": "2026-10-11T15:47:03.099601+00:00"
+}

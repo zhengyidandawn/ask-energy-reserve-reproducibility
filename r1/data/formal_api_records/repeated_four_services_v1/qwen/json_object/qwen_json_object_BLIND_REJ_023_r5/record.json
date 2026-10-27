@@ -1,0 +1,98 @@
+{
+  "task_id": "qwen_json_object_BLIND_REJ_023_r5",
+  "case_id": "BLIND_REJ_023",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 5,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "4f38c369bfbd47009733ca4189644adce83529ea5ef9d538070ce24ecc6c3aba",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:37:24.095689+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 190,
+    "total_tokens": 827,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-8b38c693-4535-9213-b46b-4c0a3122692a",
+  "provider_created": 1791614249,
+  "system_fingerprint": null,
+  "response_sha256": "1012db16d6b901a51263b0fd7d5007e5b368fb0a14e77aac6863a75ff3c2d4b5",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_REJ_023",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The study cannot proceed as requested due to the inclusion of a forbidden variable: 'test_period_residual'. The request to use test-month residuals from ISO-NE (ISNE) during calibration before the test window closes is rejected because it involves test-period residual leakage, which is not allowed. Numerical outputs are produced by the verified workflow. {\"human_approval_required\": true, \"triggered_rules\": [\"test_period_residual\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "test_period_residual"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "The request to use test-month residuals from ISO-NE (ISNE) during calibration before the test window closes is rejected because it involves test-period residual leakage, which is not allowed. Numerical outputs are produced by the verified workflow.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The study cannot proceed as requested due to the inclusion of a forbidden variable: 'test_period_residual'.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 4.74270850000903,
+  "request_finished_at": "2026-10-10T06:37:28.838410+00:00"
+}

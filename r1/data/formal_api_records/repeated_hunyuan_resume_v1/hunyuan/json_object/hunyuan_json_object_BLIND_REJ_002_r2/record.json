@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_json_object_BLIND_REJ_002_r2",
+  "case_id": "BLIND_REJ_002",
+  "packet": "blind_original_200",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "4546f81d6489e8f76753fd942f0c08e4140e122bba807f322e86b4432d9ef047",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:24:41.156814+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 640,
+    "completion_tokens": 2769,
+    "total_tokens": 3409,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2596
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "9ca08154-943d-4203-9fb7-5c8aeab29832",
+  "provider_created": 1791617082,
+  "system_fingerprint": null,
+  "response_sha256": "22cfb053f3b5e660a885b4e15313ca2529bd7dbbb52a73ba78f926d684531001",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "BLIND_REJ_002",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Operator requested use of test-month residuals from CISO during calibration before test window closes, violating prohibition on test-residual leakage and forbidden_variables (test_period_residual). Request rejected due to attempted use of test-month residuals (test_period_residual) during calibration, which constitutes test-residual leakage and uses a forbidden variable. Numerical outputs are produced by the verified workflow when relevant, but this request is rejected prior to any workflow execution. {\"triggered_rules\": [\"test_residual_leakage\", \"forbidden_variable_test_period_residual\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "test_residual_leakage",
+        "forbidden_variable_test_period_residual"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Request rejected due to attempted use of test-month residuals (test_period_residual) during calibration, which constitutes test-residual leakage and uses a forbidden variable. Numerical outputs are produced by the verified workflow when relevant, but this request is rejected prior to any workflow execution.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "not_applicable",
+    "reason": "Operator requested use of test-month residuals from CISO during calibration before test window closes, violating prohibition on test-residual leakage and forbidden_variables (test_period_residual).",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 17.269240400055423,
+  "request_finished_at": "2026-10-10T07:24:58.425923+00:00"
+}

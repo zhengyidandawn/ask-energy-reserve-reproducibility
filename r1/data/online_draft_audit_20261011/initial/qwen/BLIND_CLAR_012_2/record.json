@@ -1,0 +1,52 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_CLAR_012",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:41.813980+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "6912898e60c025c74f507a492a1c051bd75efcd751aa91a2363c2cc857232919",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 20\n  },\n  \"clarification_question\": \"Could you please specify the region for the analysis? (Supported regions: GD, ERCO, CISO, ISNE, MISO, SWPP)\",\n  \"reason\": \"The region is a required field and has not been specified in your request.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": 60,
+      "cost_reserve": 1,
+      "cost_shortfall": 20
+    },
+    "clarification_question": "Could you please specify the region for the analysis? (Supported regions: GD, ERCO, CISO, ISNE, MISO, SWPP)",
+    "reason": "The region is a required field and has not been specified in your request.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 118,
+    "total_tokens": 494,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "response_sha256": "300c498c50fcca931ac04c026c4dc037cba8b42896ab69e9b9a44a4906a0d239",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 2.907720600022003,
+  "finished_at": "2026-10-11T15:36:44.721646+00:00"
+}

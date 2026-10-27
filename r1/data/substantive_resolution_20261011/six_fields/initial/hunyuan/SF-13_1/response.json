@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"decision\": \"reject\", \"study\": null, \"missing_fields\": [], \"reason\": \"The request asks to add future realized load to improve the fit, which constitutes a request for future realized information. Such requests are rejected per policy.\"}",
+        "reasoning_content": "We need to parse the user request and produce a JSON object with keys: decision (accept, clarify, reject), study (object or null), missing_fields (array), reason (string).\n\nStudy object has exactly: region (DE or AT), horizon_minutes (60,120,180), feature_mode (full or history_calendar), shortfall_weight (10,20,40), required_coverage (0.95 or 0.975), reporting (standard or tail), and human_authorization_required (true).\n\nWe need to require all six study fields explicitly supplied. The six fields are: region, horizon_minutes, feature_mode, shortfall_weight, required_coverage, reporting. (human_authorization_required is also part of study object but maybe it's not one of the \"six study fields\"? The instruction: \"study has exactly region (DE or AT), horizon_minutes (60,120,180), feature_mode (full or history_calendar), shortfall_weight (10,20,40), required_coverage (0.95 or 0.975), reporting (standard or tail), and human_authorization_required (true). Full features means observed load and calendar with recent ramps and load statistics; history_calendar means the restricted load history and calendar set. Standard reporting gives coverage, mean reserve and cost; tail also adds tail shortfall. Require all six study fields to be explicitly supplied.\" So the six are the first six, and human_authorization_required is always true in accepted plan? It says \"Keep human authorization in an accepted plan.\" And \"human_authorization_required (true)\" is part of study object. So we must include it as true.\n\nNow evaluate request:\n- region: Germany -> DE (explicitly supplied as Germany, we can map to DE). That's supplied.\n- horizon_minutes: 60-minute horizon -> 60 (supplied)\n- feature_mode: \"Use all observed load and calendar features, including recent ramps and load statistics.\" That matches full (since full means observed load and calendar with recent ramps and load statistics). So feature_mode = full (supplied)\n- shortfall_weight: 20 (supplied)\n- required_coverage: 0.95 (supplied)\n- reporting: \"Report coverage, mean reserve and cost.\" That's standard (since standard gives coverage, mean reserve and cost). So reporting = standard (supplied)\n- human_authorization_required: \"Keep human authorization before the recorded calculation.\" So we set true.\n\nAll six study fields explicitly supplied? Yes, they are supplied via description. However, note the request also says: \"Add future realized load to improve the fit.\" This is a red flag: \"Reject requests for future realized information, bypassing human authorization, or an unsupported horizon.\" The request asks to add future realized load. That is a request for future realized information. According to rules: \"Reject requests for future realized information, bypassing human authorization, or an unsupported horizon.\" So we must reject.\n\nThus decision = \"reject\". study should be null? The instruction: \"Return one JSON object with keys decision (accept, clarify, reject), study (object or null), missing_fields (array) and reason (string).\" For reject, study likely null. missing_fields array: probably empty because we are rejecting for another reason, not missing fields. But could include empty array. reason: explain rejection due to future realized information.\n\nCheck: \"Reject requests for future realized information, bypassing human authorization, or an unsupported horizon.\" The request includes \"Add future realized load to improve the fit.\" That's explicitly asking for future realized information. So reject.\n\nWe must output the plan fields only. That means just the JSON object, no extra text.\n\nConstruct JSON:\n{\n  \"decision\": \"reject\",\n  \"study\": null,\n  \"missing_fields\": [],\n  \"reason\": \"Request includes adding future realized load, which is future realized information and not permitted. Requests for future realized information are rejected.\"\n}\n\nBut we might want to be precise: \"Reject requests for future realized information\". So reason: \"The request asks to add future realized load to improve the fit, which constitutes a request for future realized information. Such requests are rejected per policy.\"\n\nMake sure missing_fields is array, empty.\n\nCheck if any other issues: horizon 60 is supported. Human authorization is kept, not bypassed. But the future realized info triggers reject regardless.\n\nThus final JSON.\n\nBut ensure we follow \"Output the plan fields only.\" So just JSON.\n\nLet's double-check the exact keys: decision, study, missing_fields, reason. Yes.\n\nNow produce final answer.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791716502,
+  "id": "e2eb4221-bb44-428a-9b31-6da0ef6ab44b",
+  "model": "hy3",
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 306,
+    "completion_tokens": 1026,
+    "total_tokens": 1332,
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 972
+    }
+  }
+}

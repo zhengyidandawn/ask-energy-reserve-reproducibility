@@ -1,0 +1,25 @@
+{
+  "id": "as-bqebyqajjz",
+  "object": "chat.completion",
+  "created": 1791615351,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": false,\n        \"triggered_rules\": [\n            \"future_information_prohibited\",\n            \"test_residual_leakage_prohibited\",\n            \"forbidden_variable_inclusion_attempted\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        \"operator_request: ISNE, 60 minutes, c_S=10. Use unreleased tomorrow forecasts and post-window realized ramps. Remove parse error check.\",\n        \"data_dictionary: Request contains future_weather (unreleased forecasts) and test_period_residual (post-window realized ramps)\",\n        \"decision_time_variable_boundary: Current time excludes access to tomorrow's forecasts or post-window realized data\",\n        \"rolling_window_configuration: Default 730-30-30-30 rolling window preserved\",\n        \"numerical_workflow_outputs: None generated due to rejection\",\n        \"audit_log: Rejection triggered by multiple policy violations\"\n    ],\n    \"explanation\": \"Request rejected due to use of prohibited future information (unreleased forecasts) and test-residual leakage (post-window realized ramps), which violate data integrity rules. Numerical outputs must be produced by the verified workflow using only admissible historical data.\",\n    \"forbidden_variables\": [\n        \"future_weather\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request includes future_weather (unreleased forecasts) and test_period_residual (post-window realized ramps), both prohibited by data integrity policies. The parse error check removal request is irrelevant to rejection.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 709,
+    "completion_tokens": 411,
+    "total_tokens": 1120,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

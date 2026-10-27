@@ -1,0 +1,39 @@
+{
+  "id": "e45eb7c5-d6ca-4b34-8ed3-4984d84c7b94",
+  "object": "chat.completion",
+  "created": 1791613114,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_hiyJUezK0zk2COGfHPR92426",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"Missing required field: horizon_minutes. The operator has not selected a reserve horizon, and the allowed horizons are 60, 120, or 180 minutes. Region (ERCO) and cost_shortfall (40.0) are valid and unambiguous, but the study cannot be fully specified without the horizon. Please confirm the horizon in minutes (one-hour = 60, two-hour = 120, three-hour = 180).\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"The request is for an upward_reserve_sizing study in ERCO with cost_shortfall=40.0 and cost_reserve=1.0. The horizon is unspecified, so the plan is returned as clarify rather than accept. No reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results are produced here; all numerical outputs are produced only by the verified numerical workflow once the horizon is confirmed. The rolling design is fixed at train_days=730, cal_days=30, test_days=30, rolling_step_days=30, and human approval will be required.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"missing_horizon_minutes\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1655,
+    "completion_tokens": 517,
+    "total_tokens": 2172,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 247
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

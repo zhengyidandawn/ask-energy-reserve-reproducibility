@@ -1,0 +1,15 @@
+{
+  "source_sha256_verified": true,
+  "countries": 4,
+  "rolling_windows": 48,
+  "methods_per_window": 8,
+  "test_decisions": 138240,
+  "finite_metrics": true,
+  "same_selection_constraint": true,
+  "each_country_test_n": 34560,
+  "target_definition": "maximum future positive one-step increment",
+  "empirical_test_coverage_not_guaranteed": true,
+  "usable_evidence": "reproducible physical-unit evaluation, common selection constraints, conditional reliability and plan-field sensitivity",
+  "selected_method_best_in_every_country": false,
+  "all_test_windows_and_methods_retained_in_statistics": true
+}

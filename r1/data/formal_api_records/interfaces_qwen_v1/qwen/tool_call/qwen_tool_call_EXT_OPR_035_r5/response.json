@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"The numerical outputs will be produced by the verified workflow once the clarification is provided and the study plan is accepted.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The horizon is ambiguous as it's initially stated as 60 minutes but then conditionally changed to 90 minutes, which is not an allowed value. The operator needs to clarify the desired horizon (60, 120, or 180 minutes).\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_58bd9e4a9f7f48cebe4165",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1529,
+    "completion_tokens": 228,
+    "total_tokens": 1757,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616499,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-23b02d1d-afd2-9097-b3ce-22a10eb7f8ec"
+}

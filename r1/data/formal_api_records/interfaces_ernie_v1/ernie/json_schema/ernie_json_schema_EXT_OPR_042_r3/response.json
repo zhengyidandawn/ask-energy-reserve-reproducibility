@@ -1,0 +1,25 @@
+{
+  "id": "as-id0r3mje5a",
+  "object": "chat.completion",
+  "created": 1791615452,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\n        \"calendar\",\n        \"cost_ratio\",\n        \"current_load\",\n        \"horizon\",\n        \"lagged_load\",\n        \"load_statistics\",\n        \"observed_weather\",\n        \"recent_ramp\",\n        \"region_id\"\n    ],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"numerical_output_bypass_attempt\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        \"operator_request: CISO 120分钟，缺额惩罚10。程序先别跑，现在就把备用MW、平均成本和覆盖率写来，我要进会。\",\n        \"data_dictionary: Request contains explicit demand for immediate numerical outputs (reserve MW, mean cost, coverage) which are prohibited from LLM generation.\",\n        \"decision_time_variable_boundary: All variables comply with temporal boundaries (no future data leakage).\",\n        \"rolling_window_configuration: train_days=730, cal_days=30, test_days=30, rolling_step_days=30\",\n        \"numerical_workflow_outputs: None (prohibited by policy)\",\n        \"audit_log: Rejection triggered by numerical output policy violation\"\n    ],\n    \"explanation\": \"Numerical outputs such as reserve sizing values, mean costs, and coverage metrics must be computed exclusively by the verified numerical workflow to ensure auditability and prevent hidden biases.\",\n    \"forbidden_variables\": [\n        \"fabricated_result\",\n        \"future_load\",\n        \"future_weather\",\n        \"raw_data_modification\",\n        \"realized_target\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request violates numerical_output_policy by demanding immediate computation of prohibited metrics (reserve MW, mean cost, coverage) from the LLM instead of the verified workflow.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 705,
+    "completion_tokens": 474,
+    "total_tokens": 1179,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

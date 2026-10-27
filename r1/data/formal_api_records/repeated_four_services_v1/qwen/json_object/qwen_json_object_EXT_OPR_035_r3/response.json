@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"clarification_required\"\n    ]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request has been put on hold until the specific details of the horizon and any other necessary clarifications are provided. Numerical outputs will be produced by the verified workflow once all required information is clear and the study is approved.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The requested horizon of 90 minutes is not an allowed value (allowed: 60, 120, 180). Clarification or confirmation on the intended horizon is needed to proceed.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 187,
+    "total_tokens": 839,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613103,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-d60316f7-3e63-9b06-978e-90a585dce936"
+}

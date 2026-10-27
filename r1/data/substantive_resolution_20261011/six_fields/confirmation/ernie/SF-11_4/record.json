@@ -1,0 +1,37 @@
+{
+  "case_id": "SF-11",
+  "service": "ernie",
+  "repeat": 4,
+  "phase": "confirmation",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_started_at": "2026-10-11T10:56:29.766002+00:00",
+  "status": "success",
+  "request_sha256": "0f61f68c0443708b6eef38eeb035157183a7c0ffddb5d3b016f09ba4911a5f40",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "usage": {
+    "prompt_tokens": 360,
+    "completion_tokens": 49,
+    "total_tokens": 409
+  },
+  "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"reporting\"\n    ],\n    \"reason\": \"Please provide the missing field: reporting.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "reporting"
+    ],
+    "reason": "Please provide the missing field: reporting."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "model_disposition"
+    ]
+  },
+  "response_sha256": "e1fca70af192add7b2fb1f81b7e94ab52db1fbd58f06b9d39ab5415fc97c532b",
+  "latency_seconds": 3.977288700058125,
+  "request_finished_at": "2026-10-11T10:56:33.743176+00:00"
+}

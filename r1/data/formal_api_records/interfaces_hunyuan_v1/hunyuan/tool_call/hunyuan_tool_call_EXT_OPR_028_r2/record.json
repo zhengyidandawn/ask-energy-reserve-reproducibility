@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_028_r2",
+  "case_id": "EXT_OPR_028",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 2,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "43ee73d1bead4b2ee4671799ea4541fef4f403749b95a49db37ca6944658a363",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:23:59.425502+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1486,
+    "completion_tokens": 988,
+    "total_tokens": 2474,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 776
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "0e5ad048-eb6c-4d11-9ae4-873bf1e74392",
+  "provider_created": 1791620640,
+  "system_fingerprint": null,
+  "response_sha256": "fc4089a97fa84c73006e6a8fe87cbe7a59d4a9da0746b03e45f9d1b2c522d98f",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_028",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "cost_shortfall is ambiguous: the phrase '正常惩罚' (normal penalty) is not mapped to a specific allowed shortfall cost value among [10.0, 20.0, 40.0]. Region (ERCO), horizon (60 minutes), and cost_reserve (1.0) are specified, but the required cost_shortfall field cannot be determined. Please specify one of the allowed shortfall costs. Numerical outputs (reserve values, mean costs, coverage, confidence intervals, dispatch results) are produced by the verified numerical workflow only; this request is returned as a clarification because a required parameter is ambiguous. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "cost_shortfall is ambiguous: the phrase '正常惩罚' (normal penalty) is not mapped to a specific allowed shortfall cost value among [10.0, 20.0, 40.0]. Region (ERCO), horizon (60 minutes), and cost_reserve (1.0) are specified, but the required cost_shortfall field cannot be determined. Please specify one of the allowed shortfall costs.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "Numerical outputs (reserve values, mean costs, coverage, confidence intervals, dispatch results) are produced by the verified numerical workflow only; this request is returned as a clarification because a required parameter is ambiguous.",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 7.674297499936074,
+  "request_finished_at": "2026-10-10T08:24:07.099151+00:00"
+}

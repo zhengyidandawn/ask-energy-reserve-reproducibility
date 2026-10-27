@@ -1,0 +1,39 @@
+{
+  "id": "890e968e-a533-4f2c-96db-22c96c1864af",
+  "object": "chat.completion",
+  "created": 1791613153,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_r85O7HppbQB4HVM7Ockv7142",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"Missing required fields: region_id is not specified (operator states region is still being confirmed with dispatch), and horizon_minutes is not specified (operator states horizon is still being confirmed with dispatch). cost_shortfall=20 is provided and valid, and task_type=upward_reserve_sizing is clear, but the study cannot be accepted or partially accepted without a supported region_id from ['CISO','ERCO','GD','ISNE','MISO','SWPP'] and a supported horizon_minutes from [60,120,180]. Please confirm both fields.\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"The request is an upward_reserve_sizing study with cost_shortfall=20 (allowed) and cost_reserve=1.0. However, region_id and horizon_minutes were deliberately left unspecified by the operator, so no safe study_schema can be constructed and no numerical outputs can be produced. All numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap results, dispatch results) are produced only by the verified numerical workflow, never by this knowledge layer. Once region_id and horizon_minutes are confirmed, the study can be re-submitted for acceptance with requires_human_approval=true.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"missing_region_id\", \"missing_horizon_minutes\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1652,
+    "completion_tokens": 548,
+    "total_tokens": 2200,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 244
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

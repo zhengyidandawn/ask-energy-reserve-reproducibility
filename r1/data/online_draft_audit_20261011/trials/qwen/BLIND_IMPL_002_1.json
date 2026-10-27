@@ -1,0 +1,114 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_IMPL_002",
+  "repeat": 1,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_IMPL_002",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:57.249134+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "7024d0421b0f29aaf15d948f534064698b06be8c0a2312f02be0fc414c36c99e",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies the region as CAISO (corrected to 'CISO' per supported regions) and asks for default settings, which are acceptable. The horizon and shortfall cost need to be specified, but since the defaults can be assumed, this is marked as 'accept' with those values to be filled in by the analyst.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request specifies the region as CAISO (corrected to 'CISO' per supported regions) and asks for default settings, which are acceptable. The horizon and shortfall cost need to be specified, but since the defaults can be assumed, this is marked as 'accept' with those values to be filled in by the analyst.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 370,
+      "completion_tokens": 136,
+      "total_tokens": 506,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "91357d9e5d6bd2ed1ca83fa2616f4c1130982c8712a2d77805a67905073c41ff",
+    "diagnostics": {
+      "messages": [
+        "Execution validation returns reject: invalid_schema"
+      ],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.526052900007926,
+    "finished_at": "2026-10-11T15:37:01.774498+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_IMPL_002",
+    "repeat": 1,
+    "phase": "feedback",
+    "started_at": "2026-10-11T15:37:01.776006+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "630b85a0649bca91a3c3e7f543deaa6cfc32a2073eee6a3cd013dbcc3f9b6bfd",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the horizon in minutes (60, 120, or 180) and the shortfall weight (10, 20, or 40)?\",\n  \"reason\": \"The request specifies the region as CAISO (corrected to 'CISO' per supported regions) and asks for default settings. However, the horizon and shortfall cost are required fields and need to be explicitly specified to form a valid schema.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Could you please specify the horizon in minutes (60, 120, or 180) and the shortfall weight (10, 20, or 40)?",
+      "reason": "The request specifies the region as CAISO (corrected to 'CISO' per supported regions) and asks for default settings. However, the horizon and shortfall cost are required fields and need to be explicitly specified to form a valid schema.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 533,
+      "completion_tokens": 159,
+      "total_tokens": 692,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "response_sha256": "ee1bbde32c5c623793d137ff0e39049fc30190d99bddf4dfc6843e0db5dd935a",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 5.4145806999877095,
+    "finished_at": "2026-10-11T15:37:07.190632+00:00"
+  },
+  "online_calls": 2,
+  "total_service_seconds": 9.940633599995635,
+  "transport_complete": true
+}

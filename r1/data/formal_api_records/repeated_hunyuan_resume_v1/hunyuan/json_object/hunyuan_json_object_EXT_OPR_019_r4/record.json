@@ -1,0 +1,101 @@
+{
+  "task_id": "hunyuan_json_object_EXT_OPR_019_r4",
+  "case_id": "EXT_OPR_019",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "c4505735987217e0b26bdd1ef14f0ff3706c325b4b8edfa3b060a593023638b1",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:50:26.725944+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 653,
+    "completion_tokens": 2808,
+    "total_tokens": 3461,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2569
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "196d9bd6-66a4-4247-a79d-71b9355ed80f",
+  "provider_created": 1791618630,
+  "system_fingerprint": null,
+  "response_sha256": "2ccd024427b99580df68a6ead8374301080f875f4aa437386c1a876e6f9a3f42",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_019",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Region identifier is ambiguous/unsupported: operator provided 'ISO-NE' (not in allowed regions) and 'ISNEE' (misspelling of allowed 'ISNE'). No valid region_id can be determined. Horizon=60 min and cost_shortfall=40.0 are valid, and 'observed weather only' suggests observed_weather variable, but study_schema cannot be constructed until region is clarified. Numerical outputs, if the study is later accepted, are produced by the verified workflow only; the LLM does not generate reserve values, mean costs, or coverage. Clarification needed before schema build. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs, if the study is later accepted, are produced by the verified workflow only; the LLM does not generate reserve values, mean costs, or coverage. Clarification needed before schema build.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Region identifier is ambiguous/unsupported: operator provided 'ISO-NE' (not in allowed regions) and 'ISNEE' (misspelling of allowed 'ISNE'). No valid region_id can be determined. Horizon=60 min and cost_shortfall=40.0 are valid, and 'observed weather only' suggests observed_weather variable, but study_schema cannot be constructed until region is clarified.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 30.306160800042562,
+  "request_finished_at": "2026-10-10T07:50:57.032911+00:00"
+}

@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"数值输出将由验证过的工作流程产生。但是，需要调度确认的region_id和horizon_minutes必须先明确才能继续进行研究。\", \"forbidden_variables\": [], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"请求者尚未提供region_id（区域）和horizon_minutes（时间范围），这些是定义研究计划所必需的信息。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_2af72d89746542baa77f24",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1519,
+    "completion_tokens": 142,
+    "total_tokens": 1661,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616297,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-988fc8f3-4771-9c9d-93fd-714335e1fe43"
+}

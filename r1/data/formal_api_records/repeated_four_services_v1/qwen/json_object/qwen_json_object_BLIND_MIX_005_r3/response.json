@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"prohibited_output_request\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is rejected because it asks for a coverage number, which is not allowed. Numerical outputs, including coverage values, are produced by the verified workflow only.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator requested a numerical output (coverage number) directly, which is not permitted as per the rules. All such numerical outputs must be computed by the verified numerical workflow.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 640,
+    "completion_tokens": 190,
+    "total_tokens": 830,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613044,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-8902a1c1-b324-96b8-accf-579b33e03ab8"
+}

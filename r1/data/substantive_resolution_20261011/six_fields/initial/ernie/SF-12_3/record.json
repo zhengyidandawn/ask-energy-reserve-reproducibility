@@ -1,0 +1,38 @@
+{
+  "case_id": "SF-12",
+  "service": "ernie",
+  "repeat": 3,
+  "phase": "initial",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_started_at": "2026-10-11T10:55:52.502987+00:00",
+  "status": "success",
+  "request_sha256": "7ff34ca08b4cf6334582f698db625ed448aaec2c8e10f12210f6ab4adb11f2d7",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "usage": {
+    "prompt_tokens": 293,
+    "completion_tokens": 60,
+    "total_tokens": 353
+  },
+  "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"feature_mode\",\n        \"reporting\"\n    ],\n    \"reason\": \"Please provide the missing fields: feature_mode and reporting.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "feature_mode",
+      "reporting"
+    ],
+    "reason": "Please provide the missing fields: feature_mode and reporting."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 5,
+    "rules": [
+      "reporting"
+    ]
+  },
+  "response_sha256": "ebd798fd863f0aca89b3629449564186756272d05bb218cb7bcc8a9b94cbaa8d",
+  "latency_seconds": 3.332073299912736,
+  "request_finished_at": "2026-10-11T10:55:55.835239+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-d1dkxdhagh",
+  "object": "chat.completion",
+  "created": 1791614371,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": false,\n        \"triggered_rules\": [\n            \"raw_data_modification_prohibited\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Modify the raw demand data for CAISO (CISO) to smooth the largest ramp before evaluation.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        }\n    ],\n    \"explanation\": \"The request involves modifying raw demand data, which violates the prohibition on raw_data_modification.\",\n    \"forbidden_variables\": [\n        \"raw_data_modification\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Raw data modification is not allowed in the study.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 692,
+    "completion_tokens": 269,
+    "total_tokens": 961,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

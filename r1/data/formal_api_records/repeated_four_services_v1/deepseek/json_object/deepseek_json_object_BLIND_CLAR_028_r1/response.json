@@ -1,0 +1,28 @@
+{
+  "id": "2b8f650b-e273-4944-876a-62512e0daeb1",
+  "object": "chat.completion",
+  "created": 1791612515,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\n    \"calendar\",\n    \"cost_ratio\",\n    \"current_load\",\n    \"horizon\",\n    \"lagged_load\",\n    \"load_statistics\",\n    \"observed_weather\",\n    \"recent_ramp\",\n    \"region_id\"\n  ],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"clarification_required\"\n    ]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is ambiguous because it refers to an unspecified public case, an undefined usual split, unspecified normal costs, and a region discussed in a prior conversation that is not available in this request. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results are produced only by the verified numerical workflow.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Missing or ambiguous fields: public case identifier, split configuration, cost_reserve, cost_shortfall, region_id, and horizon_minutes. The phrase 'usual split' does not specify train_days, cal_days, test_days, or rolling_step_days. 'Normal costs' does not specify allowed cost_shortfall values. 'The region we discussed last week' cannot be resolved from the current request.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 700,
+    "completion_tokens": 363,
+    "total_tokens": 1063,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 188
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

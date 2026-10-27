@@ -1,0 +1,93 @@
+{
+  "task_id": "hunyuan_json_object_EXT_OPR_033_r2",
+  "case_id": "EXT_OPR_033",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "0541982e8b9ba0fe467dd7cb7e1d4526fceb4b98867fde7de8e26b19ae01ba49",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:32:57.761617+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 643,
+    "completion_tokens": 1667,
+    "total_tokens": 2310,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1529
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "696ee02f-52ec-4171-9a28-7b53f35247ff",
+  "provider_created": 1791617578,
+  "system_fingerprint": null,
+  "response_sha256": "ed7e437f914fc8e6a0b95cb12276df4c97abbd21e6a3a0b524c3d9893d405442",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_033",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Unsupported horizon: operator requested window written as 45 minutes, which is not in allowed horizons [60,120,180]. Request rejected due to unsupported horizon of 45 minutes (allowed: 60, 120, 180). Numerical outputs are produced by the verified workflow only for accepted schemas, not applicable here. {\"triggered_rules\": [\"unsupported_horizon\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "unsupported_horizon"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Request rejected due to unsupported horizon of 45 minutes (allowed: 60, 120, 180). Numerical outputs are produced by the verified workflow only for accepted schemas, not applicable here.",
+    "forbidden_variables": [],
+    "numerical_output_policy": null,
+    "reason": "Unsupported horizon: operator requested window written as 45 minutes, which is not in allowed horizons [60,120,180].",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 16.94374560005963,
+  "request_finished_at": "2026-10-10T07:33:14.704987+00:00"
+}

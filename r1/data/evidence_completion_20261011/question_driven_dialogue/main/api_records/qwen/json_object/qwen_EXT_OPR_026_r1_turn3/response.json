@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"数值输出将仅通过验证的工作流生成。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"需要确认所有其他所需字段是否已提供。请提供以下字段的信息：\\\\\\\\n- 任务类型（task_type）\\\\\\\\n- 地区ID（region_id）\\\\\\\\n- 预留时间（horizon_minutes）\\\\\\\\n- 成本储备（cost_reserve）\\\\\\\\n- 成本短缺（cost_shortfall）\\\\\\\\n- 滚动窗口配置（rolling_window）\", \"study_schema\": null, \"workflow\": []}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1285,
+    "completion_tokens": 242,
+    "total_tokens": 1527,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791697821,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-276537b1-56c3-997b-9b23-3f7ce5c64ed5"
+}

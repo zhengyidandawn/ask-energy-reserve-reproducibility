@@ -1,0 +1,13 @@
+﻿service,case_id,repeat,phase,returned_model,currency,input_tokens,cached_tokens,output_tokens,input_rate,cache_rate,output_rate,price_condition,list_price_cost
+deepseek,BLIND_CLAR_011,0,smoke_v2_initial,deepseek-flash,USD,392,256,185,0.15,0.003,0.6,published off-peak schedule,0.000132168
+deepseek,BLIND_NUM_007,0,smoke_v2_initial,deepseek-flash,USD,401,256,156,0.15,0.003,0.6,published off-peak schedule,0.00011611799999999999
+deepseek,BLIND_STD_038,0,smoke_v2_initial,deepseek-flash,USD,418,256,111,0.15,0.003,0.6,published off-peak schedule,9.166799999999999e-05
+ernie,BLIND_CLAR_011,0,smoke_v2_initial,ernie-4.5-turbo-32k,CNY,369,0,102,0.8,0.2,3.2,online inference tariff,0.0006216
+ernie,BLIND_NUM_007,0,smoke_v2_initial,ernie-4.5-turbo-32k,CNY,377,0,114,0.8,0.2,3.2,online inference tariff,0.0006664
+ernie,BLIND_STD_038,0,smoke_v2_initial,ernie-4.5-turbo-32k,CNY,402,0,158,0.8,0.2,3.2,online inference tariff,0.0008272
+hunyuan,BLIND_CLAR_011,0,smoke_v2_initial,hy3,CNY,371,256,2869,1.0,0.25,4.0,TokenHub online inference tariff,0.011655
+hunyuan,BLIND_NUM_007,0,smoke_v2_initial,hy3,CNY,380,256,1567,1.0,0.25,4.0,TokenHub online inference tariff,0.006456
+hunyuan,BLIND_STD_038,0,smoke_v2_initial,hy3,CNY,397,320,1614,1.0,0.25,4.0,TokenHub online inference tariff,0.006613
+qwen,BLIND_CLAR_011,0,smoke_v2_initial,qwen-max,CNY,373,0,145,2.4,2.4,9.6,mainland standard online inference tariff,0.0022871999999999997
+qwen,BLIND_NUM_007,0,smoke_v2_initial,qwen-max,CNY,382,0,159,2.4,2.4,9.6,mainland standard online inference tariff,0.0024432
+qwen,BLIND_STD_038,0,smoke_v2_initial,qwen-max,CNY,405,0,126,2.4,2.4,9.6,mainland standard online inference tariff,0.0021816

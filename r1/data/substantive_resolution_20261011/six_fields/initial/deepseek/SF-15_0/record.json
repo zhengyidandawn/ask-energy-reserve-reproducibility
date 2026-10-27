@@ -1,0 +1,40 @@
+{
+  "case_id": "SF-15",
+  "service": "deepseek",
+  "repeat": 0,
+  "phase": "initial",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:55:03.386507+00:00",
+  "status": "success",
+  "request_sha256": "80a2ded2e30bb83f5131e2b5f5d3ff562c73d734000e1e6ea78073622aaa7902",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 318,
+    "completion_tokens": 53,
+    "total_tokens": 371,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 190
+  },
+  "content": "{\n  \"decision\": \"reject\",\n  \"study\": null,\n  \"missing_fields\": [],\n  \"reason\": \"Unsupported horizon: 45 minutes is not one of the allowed horizons (60, 120, or 180 minutes).\"\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "study": null,
+    "missing_fields": [],
+    "reason": "Unsupported horizon: 45 minutes is not one of the allowed horizons (60, 120, or 180 minutes)."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "unsupported_horizon"
+    ]
+  },
+  "response_sha256": "89a7b9bfc7609ee70f58520545f5bc7f76a9432b895c9b0cd52268e7d0b50e9f",
+  "latency_seconds": 0.6626883000135422,
+  "request_finished_at": "2026-10-11T10:55:04.048488+00:00"
+}

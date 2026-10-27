@@ -1,0 +1,48 @@
+{
+  "case_id": "SF-10",
+  "service": "deepseek",
+  "repeat": 0,
+  "phase": "smoke",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:53:26.302802+00:00",
+  "status": "success",
+  "request_sha256": "87fc327368e4d25899e52714e240ed5ef47d7a66c81a5bb1fdf830fe02366b03",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 302,
+    "completion_tokens": 106,
+    "total_tokens": 408,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 302
+  },
+  "content": "{\"decision\":\"accept\",\"study\":{\"region\":\"DE\",\"horizon_minutes\":60,\"feature_mode\":\"full\",\"shortfall_weight\":20,\"required_coverage\":0.95,\"reporting\":\"standard\",\"human_authorization_required\":true},\"missing_fields\":[],\"reason\":\"All six study fields are explicitly supplied: region DE, horizon 60 minutes, feature mode full, shortfall weight 20, required coverage 0.95, and standard reporting. Human authorization is retained before the recorded calculation.\"}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "DE",
+      "horizon_minutes": 60,
+      "feature_mode": "full",
+      "shortfall_weight": 20,
+      "required_coverage": 0.95,
+      "reporting": "standard",
+      "human_authorization_required": true
+    },
+    "missing_fields": [],
+    "reason": "All six study fields are explicitly supplied: region DE, horizon 60 minutes, feature mode full, shortfall weight 20, required coverage 0.95, and standard reporting. Human authorization is retained before the recorded calculation."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 0,
+    "rules": [
+      "feature_mode"
+    ]
+  },
+  "response_sha256": "b9b01953ae32ed5d1166c6898a4b476c876ec6715e2232a40e92d8e2b51750d7",
+  "latency_seconds": 0.8715011000167578,
+  "request_finished_at": "2026-10-11T10:53:27.174728+00:00"
+}

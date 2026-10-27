@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"unsupported_horizon\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The requested 45-minute horizon is not supported. Supported horizons are 60, 120, and 180 minutes. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The requested 45-minute horizon is not one of the allowed values [60, 120, 180] minutes.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 633,
+    "completion_tokens": 169,
+    "total_tokens": 802,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612854,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-72b37c49-1d99-90ad-8793-b96f9eaa1d46"
+}

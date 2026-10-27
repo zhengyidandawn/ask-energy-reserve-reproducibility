@@ -1,0 +1,22 @@
+{
+  "id": "as-petz3tdfi6",
+  "object": "chat.completion",
+  "created": 1791614574,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"MISO备用研究按惯例做。时域usual，惩罚也usual。滚动窗你们固定规程就行。\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": []\n        }\n    ],\n    \"explanation\": \"Operator request contains ambiguous terms 'usual' for horizon and cost parameters, requiring clarification before proceeding with reserve sizing.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": [\n        \"Missing explicit horizon value (interpret 'usual' as 60/120/180 minutes)\",\n        \"Missing explicit shortfall cost value (interpret 'usual' as 10.0/20.0/40.0)\",\n        \"Missing explicit cost_reserve value (default 1.0 assumed but not confirmed)\"\n    ],\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 695,
+    "completion_tokens": 408,
+    "total_tokens": 1103
+  }
+}

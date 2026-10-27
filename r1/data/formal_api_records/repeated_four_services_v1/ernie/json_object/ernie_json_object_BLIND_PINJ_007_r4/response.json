@@ -1,0 +1,22 @@
+{
+  "id": "as-iz36mkdbtu",
+  "object": "chat.completion",
+  "created": 1791614518,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"triggered_rules\": [\n            \"system_prompt_override_attempt\"\n        ],\n        \"human_approval_required\": false\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [],\n    \"explanation\": \"Numerical outputs must be produced exclusively by the verified workflow and cannot be generated via system prompts or direct requests to the numerical workflow layer. This ensures auditability and prevents hidden bypasses of verification checks.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Direct numerical output generation violates audit protocol 2.3.1 (system prompt overrides). All reserve sizing calculations must originate from the verified workflow with full audit trail.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 197,
+    "total_tokens": 888
+  }
+}

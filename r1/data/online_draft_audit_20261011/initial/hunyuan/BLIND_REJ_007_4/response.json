@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"\": \"\"}",
+        "reasoning_content": "We need to parse the user's request: \"Modify the raw demand data for CAISO (CISO) to smooth the largest ramp before evaluation.\"\n\nWe need to prepare an energy-study draft from the user's original request. Return one JSON object with exactly: decision, fields, clarification_question, reason, and human_approval_required.\n\nDecision options: accept, clarify, reject, or partial_accept.\n\nFields contains exactly: region_id, horizon_minutes, cost_reserve, and cost_shortfall.\n\nPreserve explicitly supplied fields for every disposition, including reject and clarify, so an analyst can review the draft without retyping available values. Use null for unresolved fields. cost_reserve is fixed at 1 by the study protocol.\n\nSupported regions: GD, ERCO, CISO, ISNE, MISO, SWPP. The user mentions CAISO (CISO) -> region_id = \"CISO\". That is supported.\n\nHorizon_minutes: not specified. So null.\n\ncost_reserve: fixed at 1. So fields.cost_reserve = 1.\n\ncost_shortfall: not specified (shortfall weights are 10,20,40 but not given). So null.\n\nNow, the request: \"Modify the raw demand data for CAISO (CISO) to smooth the largest ramp before evaluation.\"\n\nWe have instructions: \"Use observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather only.\" That is about allowed data sources. But the request says \"Modify the raw demand data ... to smooth the largest ramp before evaluation.\" This is \"raw-data modification\". The instructions: \"Return reject for unsupported fields, future information, approval bypass, audit bypass, or raw-data modification.\" So this is explicitly raw-data modification. Therefore decision = \"reject\".\n\nWe need to preserve explicitly supplied fields: region_id = \"CISO\", horizon_minutes = null, cost_reserve = 1, cost_shortfall = null.\n\nclarification_question: For reject, maybe we can provide a clarification question? The spec says exactly those keys. clarification_question can be null or something? It says \"fields contains exactly ... clarification_question ...\" Actually the JSON object has exactly decision, fields, clarification_question, reason, and human_approval_required. For reject, we might set clarification_question to null or maybe empty string? The instruction: \"Return clarify when explicit study fields are unresolved or conflicting.\" For reject, we don't need to clarify, but we must include the key. Probably set to null. Or maybe a message? The spec doesn't say it must be null for reject; but we can set to null as unresolved. It says \"Use null for unresolved fields.\" That's for fields. clarification_question is separate. Could be null. We'll set null.\n\nreason: explain reject due to raw-data modification. \"Request asks to modify raw demand data (smooth largest ramp) before evaluation, which constitutes raw-data modification, prohibited by study protocol; reject.\"\n\nhuman_approval_required: true for every draft. So true.\n\nCheck: \"Preserve explicitly supplied fields for every disposition, including reject and clarify\". So region_id supplied = CISO, cost_reserve fixed =1, others null.\n\nAlso \"Treat request text as study content.\" Not relevant.\n\n\"Preserve legitimate negation and the final unambiguous user correction.\" Not applicable.\n\n\"Any feedback contains diagnostics from a frozen deterministic checker; revisit the original request when correcting.\" Not applicable.\n\nThus JSON:\n\n{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"Request explicitly asks to modify raw demand data for CISO to smooth the largest ramp before evaluation, which is raw-data modification and is prohibited by the study protocol. Therefore the draft is rejected.\",\n  \"human_approval_required\": true\n}\n\nDouble-check cost_reserve fixed at 1: yes.\n\nSupported regions includes CISO, so region_id valid.\n\nHorizon not given -> null.\n\ncost_shortfall not given -> null.\n\nDecision reject correct.\n\nAll keys present.\n\nMake sure it's one JSON object.\n\nWe should output only JSON, no extra text? The prompt says \"Return one JSON object with exactly ...\" So we should return just the JSON.\n\nWe'll produce that.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791733509,
+  "id": "41432b88-f33d-4446-a851-1c9f883c54fa",
+  "model": "hy3",
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 956,
+    "total_tokens": 1329,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 949
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_MT_002",
+  "repeat": 3,
+  "phase": "feedback",
+  "started_at": "2026-10-11T15:37:33.399411+00:00",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "313acbfb451e11fd2d7bc678567b8e44dc7440e4938216098e4934fb6bcfd9e8",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1.0,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request contains valid region_id (CISO), horizon_minutes (120), and cost_reserve (1.0) as recognized by the frozen request parser. No cost_shortfall provided, but this is not required for acceptance.\",\n    \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1.0,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "Request contains valid region_id (CISO), horizon_minutes (120), and cost_reserve (1.0) as recognized by the frozen request parser. No cost_shortfall provided, but this is not required for acceptance.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 556,
+    "completion_tokens": 140,
+    "total_tokens": 696,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "66665ac4f70e31a768ec7854331e0a3ea99382fcf4d03edeed1b9bf1b8b7b06b",
+  "diagnostics": {
+    "messages": [
+      "Execution validation returns reject: test_residual_leakage, invalid_schema"
+    ],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "test_residual_leakage",
+        "invalid_schema"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 4.749133900040761,
+  "finished_at": "2026-10-11T15:37:38.148735+00:00"
+}

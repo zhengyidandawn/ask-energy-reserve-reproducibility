@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"缺额惩罚成本不明确，请求中先指定为20后又改为40。请确认研究应采用的成本值。\", \"study_schema\": null, \"admissible_variables\": [], \"forbidden_variables\": [], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"需根据明确的参数进行研究安排，目前缺额惩罚成本存在矛盾。\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}",
+              "name": "submit_plan"
+            },
+            "id": "call_96e42d3a1fb34f9a8d30c5",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1529,
+    "completion_tokens": 130,
+    "total_tokens": 1659,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616494,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-7a34c54e-a1e6-9feb-8a26-6fe3ee643fb4"
+}

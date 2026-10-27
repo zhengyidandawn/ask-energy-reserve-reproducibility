@@ -1,0 +1,53 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_NUM_003",
+  "repeat": 3,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:39.438416+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "4725b11d63afbdc98750142ea386e9caa573b75e84427c86badd285c3ee1f472",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request for a 95% confidence interval for the reserve result of ISNE is accepted, but the actual numerical execution to compute this interval must follow an authorized run. The other fields are either unspecified or need to be resolved through the standard workflow.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "partial_accept",
+    "fields": {
+      "region_id": "ISNE",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The request for a 95% confidence interval for the reserve result of ISNE is accepted, but the actual numerical execution to compute this interval must follow an authorized run. The other fields are either unspecified or need to be resolved through the standard workflow.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 122,
+    "total_tokens": 505,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "0f3a8ae82886a85d550d57688e681dc2fa438c00cca41d9e1f56c9fdbe756a2b",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "partial_accept",
+      "execution_ready": false,
+      "blocking_rules": [
+        "fabricated_result",
+        "invalid_schema"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 4.185209899907932,
+  "finished_at": "2026-10-11T15:37:43.623449+00:00"
+}

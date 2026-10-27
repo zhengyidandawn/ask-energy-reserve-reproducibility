@@ -1,0 +1,52 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_IMPL_014",
+  "repeat": 1,
+  "phase": "feedback",
+  "started_at": "2026-10-11T15:37:17.758495+00:00",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "223bf4ed2aa93d357892f66b818ff0bcacc42b21cc58fc203760a306892559d1",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": null,\n        \"cost_reserve\": null,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Execution validation returns 'invalid_schema', indicating the request does not fully conform to the required structure or contains unsupported fields. The draft cannot proceed without resolving schema issues.\",\n    \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": null,
+      "cost_reserve": null,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "Execution validation returns 'invalid_schema', indicating the request does not fully conform to the required structure or contains unsupported fields. The draft cannot proceed without resolving schema issues.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 520,
+    "completion_tokens": 115,
+    "total_tokens": 635
+  },
+  "response_sha256": "4dbf1ecf66065cb6e54188e37c76531faba631f276e3e738e50851b0b55f58e5",
+  "diagnostics": {
+    "messages": [
+      "The frozen request parser recognizes region_id=MISO; verify its source in the original request.",
+      "The frozen request parser recognizes cost_reserve=1.0; verify its source in the original request."
+    ],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 4.400661000050604,
+  "finished_at": "2026-10-11T15:37:22.159433+00:00"
+}

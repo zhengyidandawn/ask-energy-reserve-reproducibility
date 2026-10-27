@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"unsupported_region\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The region 'SPP' is not supported. The numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The region 'SPP' is not in the allowed list of regions. Allowed regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP'].\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 629,
+    "completion_tokens": 155,
+    "total_tokens": 784,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612846,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-5f42f192-f331-9235-b429-593cf143e97f"
+}

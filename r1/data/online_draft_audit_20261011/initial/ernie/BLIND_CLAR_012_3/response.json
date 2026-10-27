@@ -1,0 +1,22 @@
+{
+  "id": "as-n9qpcmeasw",
+  "object": "chat.completion",
+  "created": 1791733007,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 20\n    },\n    \"clarification_question\": \"Please specify the region_id for the analysis.\",\n    \"reason\": \"The region_id is unresolved and is required for the analysis.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 111,
+    "total_tokens": 483
+  }
+}

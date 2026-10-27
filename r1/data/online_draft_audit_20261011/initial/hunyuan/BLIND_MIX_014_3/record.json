@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_MIX_014",
+  "repeat": 3,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:40:58.922800+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "27761da36b713ae392b4b406a38931e052ccdb845ecd6fd5631b3e30d0998f31",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"MISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Horizon minutes and cost_shortfall (referred to as cost ratio) were not explicitly specified; please provide explicit horizon (60, 120, or 180) and cost_shortfall (10, 20, or 40) or confirm system-chosen defaults.\", \"reason\": \"Explicit study fields horizon_minutes and cost_shortfall are unresolved (user delegated defaulting but no explicit values supplied). Protocol requires clarify when explicit fields are unresolved or conflicting.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "MISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Horizon minutes and cost_shortfall (referred to as cost ratio) were not explicitly specified; please provide explicit horizon (60, 120, or 180) and cost_shortfall (10, 20, or 40) or confirm system-chosen defaults.",
+    "reason": "Explicit study fields horizon_minutes and cost_shortfall are unresolved (user delegated defaulting but no explicit values supplied). Protocol requires clarify when explicit fields are unresolved or conflicting.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 2758,
+    "total_tokens": 3135,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2607
+    }
+  },
+  "response_sha256": "da340bdf0c477b5b86fe183e5a9a7a64e313a4e688e535f77db0ae47b7c6bed8",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 28.264439199934714,
+  "finished_at": "2026-10-11T15:41:27.187765+00:00"
+}

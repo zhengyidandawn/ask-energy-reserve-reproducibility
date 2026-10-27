@@ -1,0 +1,117 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 2,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:40:14.388453+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "0cae1b1b9a9dd47e37f7c2b24a521795fa5d0a36552f91704d9dfbf3ea497bcd",
+    "returned_model": "hy3",
+    "content": "{\"\": \"\"}",
+    "parsed_output": {
+      "": ""
+    },
+    "usage": {
+      "prompt_tokens": 378,
+      "completion_tokens": 1716,
+      "total_tokens": 2094,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1709
+      }
+    },
+    "response_sha256": "827b7a16082661eca6c34d60e46620344bf427cbec16aacf2e97e8ff41e487d4",
+    "diagnostics": {
+      "messages": [
+        "Return the five required object properties.",
+        "Return all four field properties, using null for unresolved values.",
+        "The frozen request parser recognizes region_id=CISO; verify its source in the original request.",
+        "The frozen request parser recognizes horizon_minutes=120; verify its source in the original request.",
+        "The frozen request parser recognizes cost_reserve=1.0; verify its source in the original request.",
+        "Keep the required human approval in the draft.",
+        "Execution validation returns invalid: malformed_output"
+      ],
+      "validation": {
+        "decision": "invalid",
+        "execution_ready": false,
+        "blocking_rules": [
+          "malformed_output"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 14.972200900083408,
+    "finished_at": "2026-10-11T15:40:29.360555+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 2,
+    "phase": "feedback",
+    "started_at": "2026-10-11T15:40:29.360555+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a2b3c3881491938f9cdd9d9e6990ee94d1b023c09ecd3d9b5e77693aaed86335",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The cost_shortfall (shortfall weight) is unresolved. Please specify one of the supported values: 10, 20, or 40.\", \"reason\": \"Original request explicitly states region CAISO (CISO) and two-hour horizon (120 minutes). Cost_reserve is fixed at 1 by study protocol. Cost_shortfall is not provided, leaving an explicit study field unresolved. User asked to output JSON schema only without reserve MW or coverage, which is permissible but does not resolve the missing parameter. Clarification is required before acceptance.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The cost_shortfall (shortfall weight) is unresolved. Please specify one of the supported values: 10, 20, or 40.",
+      "reason": "Original request explicitly states region CAISO (CISO) and two-hour horizon (120 minutes). Cost_reserve is fixed at 1 by study protocol. Cost_shortfall is not provided, leaving an explicit study field unresolved. User asked to output JSON schema only without reserve MW or coverage, which is permissible but does not resolve the missing parameter. Clarification is required before acceptance.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 492,
+      "completion_tokens": 1927,
+      "total_tokens": 2419,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1757
+      }
+    },
+    "response_sha256": "025efae04e1719afa1c035864a2a0796383fcc90af01f463174426b4d31a3efa",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 16.945893600001,
+    "finished_at": "2026-10-11T15:40:46.307079+00:00"
+  },
+  "online_calls": 2,
+  "total_service_seconds": 31.918094500084408,
+  "transport_complete": true
+}

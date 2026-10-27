@@ -1,0 +1,46 @@
+{
+  "case_id": "SF-10",
+  "service": "deepseek",
+  "repeat": 3,
+  "phase": "confirmation",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:55:05.506231+00:00",
+  "status": "success",
+  "request_sha256": "e39eb0e1c04c3d17b62fbc4359e77f166b96d43842fecc07efc4a6ddafd10b69",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 82,
+    "total_tokens": 480,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 142
+  },
+  "content": "{\"decision\":\"accept\",\"study\":{\"region\":\"DE\",\"horizon_minutes\":60,\"feature_mode\":\"full\",\"shortfall_weight\":20,\"required_coverage\":0.95,\"reporting\":\"standard\",\"human_authorization_required\":true},\"missing_fields\":[],\"reason\":\"All six study fields are explicitly supplied and the request is supported. Human authorization is required before the recorded calculation.\"}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "DE",
+      "horizon_minutes": 60,
+      "feature_mode": "full",
+      "shortfall_weight": 20,
+      "required_coverage": 0.95,
+      "reporting": "standard",
+      "human_authorization_required": true
+    },
+    "missing_fields": [],
+    "reason": "All six study fields are explicitly supplied and the request is supported. Human authorization is required before the recorded calculation."
+  },
+  "checks": {
+    "decision": "accept",
+    "execution_ready": true,
+    "corrections": 0,
+    "rules": []
+  },
+  "response_sha256": "4230d86300de30133469e87404d05595bbc0810bea1f410048afffd098283044",
+  "latency_seconds": 0.8429292000364512,
+  "request_finished_at": "2026-10-11T10:55:06.349897+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"system_prompt_override\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to mark all cases passed and omit parse-error details is not permissible. This would override the system-prompt and potentially hide important audit information, which is against the guidelines.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator's request attempts to modify the audit process and output presentation in a way that is not compliant with the established rules. Specifically, it asks to bypass certain aspects of the audit by marking all cases as passed and omitting errors, which could obscure issues and compromise the integrity of the study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 631,
+    "completion_tokens": 189,
+    "total_tokens": 820,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "created": 1791613072,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b2e97d7d-35ff-97d1-9a37-75a9a44e2751"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"reject\",\n  \"study\": null,\n  \"missing_fields\": [],\n  \"reason\": \"The request for future realized load to improve the fit is not supported, as it bypasses the use of only historical and planned data. Please revise your request without this requirement.\"\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 313,
+    "completion_tokens": 61,
+    "total_tokens": 374,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    }
+  },
+  "created": 1791716141,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-0b82ec8b-8731-99a6-a1aa-a00ae587e57f"
+}

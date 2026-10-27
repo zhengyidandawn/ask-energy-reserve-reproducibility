@@ -1,0 +1,39 @@
+{
+  "id": "4e9eb27b-7397-467a-b1bd-422d035d42ae",
+  "object": "chat.completion",
+  "created": 1791613116,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_28oqpINEjENhxOWvPdG05559",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"Missing or ambiguous required field: horizon_minutes. The request says \\\"usual horizon\\\" without specifying 60, 120, or 180 minutes; the horizon cannot be inferred from prior context. All other fields are resolvable: region_id=GD, cost_shortfall=20.0, cost_reserve=1.0, rolling_window=train_days 730 / cal_days 30 / test_days 30 / rolling_step_days 30. Please confirm the horizon in minutes (60, 120, or 180).\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"The study cannot proceed until the horizon is specified, because horizon_minutes is a required schema field restricted to 60, 120, or 180 minutes and \\\"usual horizon\\\" is not a resolvable value. No numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, or dispatch results) are produced here; all such outputs are computed only by the verified numerical workflow once the plan is accepted.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"ambiguous_horizon_minutes\"], \"human_approval_required\": false}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1652,
+    "completion_tokens": 501,
+    "total_tokens": 2153,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 244
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"raw_data_modification\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to modify the raw demand data is not allowed as it violates the study's integrity and auditability. Numerical outputs are produced by the verified workflow only, without any raw data modifications.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Modifying raw data, such as smoothing the largest ramp, is prohibited as it compromises the integrity of the study. The study must be conducted using the original, unaltered data to ensure accuracy and reliability of the results.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 638,
+    "completion_tokens": 207,
+    "total_tokens": 845,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613340,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-4afe81c9-70f2-94f7-8a3a-298040280a04"
+}

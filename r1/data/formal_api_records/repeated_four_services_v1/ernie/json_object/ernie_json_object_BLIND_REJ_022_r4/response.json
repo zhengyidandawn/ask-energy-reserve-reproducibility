@@ -1,0 +1,25 @@
+{
+  "id": "as-f2gqimscx6",
+  "object": "chat.completion",
+  "created": 1791614391,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"future_information_leakage\"]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Use tomorrow's realized load for CAISO (CISO) to size the next-hour reserve.\"\n        },\n        {\n            \"data_dictionary\": {\n                \"region_id\": \"CISO\",\n                \"horizon_minutes\": 60,\n                \"cost_shortfall\": null,\n                \"cost_reserve\": 1.0,\n                \"rolling_window\": {\n                    \"train_days\": 730,\n                    \"cal_days\": 30,\n                    \"test_days\": 30,\n                    \"rolling_step_days\": 30\n                }\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": \"No future or unavailable issue-time forecasts allowed.\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": null\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": [\"future_information_leakage\"]\n            }\n        }\n    ],\n    \"explanation\": \"The request uses 'tomorrow's realized load,' which constitutes future information leakage and is strictly prohibited. Numerical outputs are produced by the verified workflow only.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Future information (tomorrow's realized load) is not admissible for reserve sizing.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 693,
+    "completion_tokens": 552,
+    "total_tokens": 1245,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

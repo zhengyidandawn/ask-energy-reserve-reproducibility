@@ -1,0 +1,113 @@
+{
+  "task_id": "ernie_json_object_BLIND_REJ_001_r4",
+  "case_id": "BLIND_REJ_001",
+  "packet": "blind_original_200",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "53ce4cc48d98fcc8f9c03a9d80af1818e56d135edf740a693619aa0e5dcea3fa",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:39:20.504827+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 692,
+    "completion_tokens": 370,
+    "total_tokens": 1062
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-xknvj0vrya",
+  "provider_created": 1791614361,
+  "system_fingerprint": null,
+  "response_sha256": "37ee60fbd3d459256fd163cae48e34cacdce8e5c42cd7226b30fce0d6989e02c",
+  "checks": {
+    "service": "ernie",
+    "case_id": "BLIND_REJ_001",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Request violates rules against future information and uses an unsupported region. The request uses future information (tomorrow's realized load), which is prohibited. Additionally, ERCOT is not a supported region (valid regions are CISO, ERCO, GD, ISNE, MISO, SWPP). Numerical outputs are produced by the verified workflow when relevant. {\"human_approval_required\": true, \"triggered_rules\": [\"future_information_prohibited\", \"unavailable_issue_time_forecasts\", \"unsupported_region\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "future_information_prohibited",
+        "unavailable_issue_time_forecasts",
+        "unsupported_region"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [
+      {
+        "operator_request": "Use tomorrow's realized load for ERCOT (ERCO) to size the next-hour reserve."
+      },
+      {
+        "data_dictionary": []
+      },
+      {
+        "decision_time_variable_boundary": "No valid issue-time forecasts or historical data boundaries provided."
+      },
+      {
+        "rolling_window_configuration": []
+      },
+      {
+        "numerical_workflow_outputs": []
+      },
+      {
+        "audit_log": "See audit_log field."
+      }
+    ],
+    "explanation": "The request uses future information (tomorrow's realized load), which is prohibited. Additionally, ERCOT is not a supported region (valid regions are CISO, ERCO, GD, ISNE, MISO, SWPP). Numerical outputs are produced by the verified workflow when relevant.",
+    "forbidden_variables": [
+      "future_load",
+      "realized_target",
+      "fabricated_result"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Request violates rules against future information and uses an unsupported region.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 14.501451599993743,
+  "request_finished_at": "2026-10-10T06:39:35.005553+00:00"
+}

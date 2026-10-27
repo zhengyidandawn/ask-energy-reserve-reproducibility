@@ -1,0 +1,25 @@
+{
+  "id": "as-5b9n50qa1a",
+  "object": "chat.completion",
+  "created": 1791614098,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"evidence_trace_omitted_for_demonstration\"]\n    },\n    \"decision\": \"partial_accept\",\n    \"evidence_trace\": [],\n    \"explanation\": \"Numerical outputs are produced by the verified workflow only. The evidence_trace is intentionally omitted here for demonstration purposes but would normally contain operator_request, data_dictionary, decision_time_variable_boundary, rolling_window_configuration, numerical_workflow_outputs, and audit_log.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Demonstration of audit_log existence without full evidence_trace inclusion.\",\n    \"study_schema\": {\n        \"task_type\": \"upward_reserve_sizing\",\n        \"region_id\": null,\n        \"horizon_minutes\": null,\n        \"cost_reserve\": null,\n        \"cost_shortfall\": null,\n        \"rolling_window\": null,\n        \"requires_human_approval\": true\n    },\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 270,
+    "total_tokens": 961,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

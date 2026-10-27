@@ -1,0 +1,25 @@
+{
+  "id": "as-u2w16gz32z",
+  "object": "chat.completion",
+  "created": 1791614938,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [],\n    \"explanation\": \"The audit log exists, but the evidence_trace is intentionally excluded from this response as per the operator request. Numerical outputs are produced by the verified workflow when relevant.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"The operator requested a response with an audit log but without evidence_trace.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 160,
+    "total_tokens": 851,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

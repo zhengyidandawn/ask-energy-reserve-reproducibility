@@ -1,0 +1,25 @@
+{
+  "id": "as-b52t74fch8",
+  "object": "chat.completion",
+  "created": 1791716158,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"future realized information\"\n    ],\n    \"reason\": \"Future realized information cannot be included in the study request. Please provide the remaining required fields: region, horizon_minutes, feature_mode, shortfall_weight, required_coverage, reporting, and confirm human_authorization_required is true.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 92,
+    "total_tokens": 402,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

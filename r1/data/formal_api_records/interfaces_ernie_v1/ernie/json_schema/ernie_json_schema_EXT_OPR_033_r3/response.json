@@ -1,0 +1,22 @@
+{
+  "id": "as-dgdyti06i9",
+  "object": "chat.completion",
+  "created": 1791615431,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": false,\n        \"triggered_rules\": [\n            \"invalid_horizon_minutes\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        \"operator_request: GD upward reserve sizing for 1 hour but with 45-minute window, c_S=10\",\n        \"decision_time_variable_boundary: horizon_minutes must be 60, 120, or 180; 45 is invalid\",\n        \"rolling_window_configuration: train_days=730, cal_days=30, test_days=30, rolling_step_days=30\",\n        \"audit_log: invalid horizon violates study rules\"\n    ],\n    \"explanation\": \"Numerical outputs are produced by the verified workflow only after valid schema approval.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Requested horizon_minutes=45 is invalid; only 60, 120, or 180 are allowed.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 697,
+    "completion_tokens": 290,
+    "total_tokens": 987
+  }
+}

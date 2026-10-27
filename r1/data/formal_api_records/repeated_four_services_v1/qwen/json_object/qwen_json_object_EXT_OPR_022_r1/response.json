@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The numerical outputs, including reserve values and cost estimates, are produced by the verified workflow. The horizon is a required parameter that has not been specified, preventing the completion of the study schema.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The horizon (in minutes) is missing from the request, which is necessary to proceed with the study. Please provide a specific horizon value from the allowed options: 60, 120, or 180 minutes.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 181,
+    "total_tokens": 825,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612758,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-78c4983e-a108-9bf9-b3d6-ffcfad735de5"
+}

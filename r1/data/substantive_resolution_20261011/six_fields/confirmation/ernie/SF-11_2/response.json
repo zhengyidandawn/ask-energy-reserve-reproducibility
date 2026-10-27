@@ -1,0 +1,22 @@
+{
+  "id": "as-0gibevevwe",
+  "object": "chat.completion",
+  "created": 1791716188,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"accept\",\n    \"study\": {\n        \"region\": \"DE\",\n        \"horizon_minutes\": 60,\n        \"feature_mode\": \"full\",\n        \"shortfall_weight\": 20,\n        \"required_coverage\": 0.95,\n        \"reporting\": \"standard\",\n        \"human_authorization_required\": true\n    },\n    \"missing_fields\": null,\n    \"reason\": \"\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "completion_tokens": 107,
+    "total_tokens": 514
+  }
+}

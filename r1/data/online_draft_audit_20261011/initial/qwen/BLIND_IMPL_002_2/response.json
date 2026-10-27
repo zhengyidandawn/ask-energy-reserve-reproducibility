@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region (CAISO, mapped to CISO) and mentions using the default split and default penalty. Since the specific horizon minutes and cost shortfall are not mentioned, they would be filled in based on standard protocol or defaults during the study setup.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 123,
+    "total_tokens": 493,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733026,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-9b75073f-6a60-919a-9373-eb6be3a8c2a3"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "8bc9ba60-1aea-44c2-8f02-535f3444e179",
+  "object": "chat.completion",
+  "created": 1791716093,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"study\": {\n    \"region\": \"DE\",\n    \"horizon_minutes\": 60,\n    \"feature_mode\": \"full\",\n    \"shortfall_weight\": 10,\n    \"required_coverage\": 0.95,\n    \"reporting\": \"standard\",\n    \"human_authorization_required\": true\n  },\n  \"missing_fields\": [],\n  \"reason\": \"All required study fields are explicitly provided and supported. The request uses observed load and calendar features with recent ramps and load statistics, a 60-minute horizon, shortfall weight 10, required coverage 0.95, standard reporting, and retains human authorization before the recorded calculation.\"\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 318,
+    "completion_tokens": 148,
+    "total_tokens": 466,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 190
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

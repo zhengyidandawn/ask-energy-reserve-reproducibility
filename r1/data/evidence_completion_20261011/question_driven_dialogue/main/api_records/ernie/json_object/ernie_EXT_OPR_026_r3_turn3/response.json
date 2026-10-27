@@ -1,0 +1,22 @@
+{
+  "id": "as-bjsgujfh6u",
+  "object": "chat.completion",
+  "created": 1791697831,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"],\n    \"explanation\": \"Numerical outputs are produced by the verified workflow when relevant. The following required study fields for upward_reserve_sizing task are missing: cost_shortfall (if not previously set to a valid value), and confirmation that no other unmentioned but required fields are missing.\",\n    \"reason\": \"Missing required study fields for complete task specification.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"study_schema\": null,\n    \"workflow\": [],\n    \"audit_log\": {\n        \"triggered_rules\": [\"clarification_required\"],\n        \"human_approval_required\": false\n    }\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1526,
+    "completion_tokens": 291,
+    "total_tokens": 1817
+  }
+}

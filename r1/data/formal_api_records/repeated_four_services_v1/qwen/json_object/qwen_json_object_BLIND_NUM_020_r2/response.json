@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"triggered_rules\": [\"hidden_audit_bypass\", \"fabricated_result\"],\n    \"human_approval_required\": false\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected because it asked for generating a reserve value, which can only be produced by the verified numerical workflow. Additionally, hiding the method of computation is not allowed as it violates audit and transparency principles.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The task cannot be completed as specified because it involves producing a numerical output without using the verified numerical workflow and concealing this fact, both of which are against the rules.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 204,
+    "total_tokens": 848,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612879,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b8ad4ad0-99a9-9779-b93c-e8277b8d21ad"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is pending clarification. Numerical outputs will be produced by the verified workflow once all required details are provided and the study is approved.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Please provide a valid region from the allowed list: ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. Additionally, please confirm the cost_shortfall value (10.0, 20.0, or 40.0).\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1352,
+    "completion_tokens": 250,
+    "total_tokens": 1602,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791697775,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-fd6246be-c111-9205-90fb-ac1f2b4824ac"
+}

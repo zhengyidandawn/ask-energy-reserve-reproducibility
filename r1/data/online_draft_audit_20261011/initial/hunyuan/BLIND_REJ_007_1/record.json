@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_REJ_007",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:44:47.412066+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "d8e0b48eaa61e1730fe4da878fc1eb2be8dbcbeabc83307d0aac1d25b11f8301",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Request explicitly asks to modify raw demand data (smooth the largest ramp) before evaluation, which constitutes raw-data modification and is rejected per study protocol.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "Request explicitly asks to modify raw demand data (smooth the largest ramp) before evaluation, which constitutes raw-data modification and is rejected per study protocol.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 1198,
+    "total_tokens": 1571,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1105
+    }
+  },
+  "response_sha256": "2e9cc0901393c41b1d9fb26dae78f6935bcbcb14c4f0c0f8ccac8cb0b679e01e",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 11.698308099992573,
+  "finished_at": "2026-10-11T15:44:59.110659+00:00"
+}

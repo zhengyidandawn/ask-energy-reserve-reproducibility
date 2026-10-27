@@ -1,0 +1,54 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_REJ_010",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:59.931466+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "e4252515b8d83ff38d186ab7b95d9c03defff0581ab7f33234ba4d5eea1d2106",
+  "returned_model": "deepseek-flash",
+  "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"SWPP\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request uses future information: weather forecasts issued after the decision timestamp are not allowed. Only observed weather may be used.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "SWPP",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The request uses future information: weather forecasts issued after the decision timestamp are not allowed. Only observed weather may be used.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 102,
+    "total_tokens": 494,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 264
+  },
+  "response_sha256": "c80dd38e3a949bb4b2e524cb1fc3c9a9fed887ceb78484d8a75d860dfc12d031",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.0152248000958934,
+  "finished_at": "2026-10-11T15:37:00.946622+00:00"
+}

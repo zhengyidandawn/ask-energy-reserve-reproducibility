@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"unsupported_regions\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"\",\n  \"reason\": \"请求中包含的区域组合不被支持。每个任务只能针对一个指定的区域。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 649,
+    "completion_tokens": 106,
+    "total_tokens": 755,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612930,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-1e554d1f-fcef-917e-9b67-4429e66d7d74"
+}

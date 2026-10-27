@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"Clarification is required to proceed with the study. The horizon must be specified as either 60, 120, or 180 minutes which corresponds to one-hour, two-hour, or three-hour, respectively. Once the horizon is provided, the study can be further processed.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The horizon for the reserve sizing has not been specified. It needs to be set to a supported value (one of 60, 120, or 180 minutes) to continue with the study.\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_589ad0eeaee14867a0710a",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1521,
+    "completion_tokens": 254,
+    "total_tokens": 1775,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616140,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b5646715-e5f5-9ea3-aead-6969b7574289"
+}

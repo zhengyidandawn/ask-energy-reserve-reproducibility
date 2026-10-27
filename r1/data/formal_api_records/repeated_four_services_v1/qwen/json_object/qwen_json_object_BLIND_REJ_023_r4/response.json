@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"test_period_residual\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The use of test-month residuals during the calibration phase is not allowed as it constitutes a form of data leakage, which can lead to overly optimistic and invalid results. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request involves using test-month residuals in the calibration process, which is prohibited to ensure study integrity and prevent data leakage.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 188,
+    "total_tokens": 825,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613330,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-8fcedb0a-33ca-9b9b-a445-949d71f54c60"
+}

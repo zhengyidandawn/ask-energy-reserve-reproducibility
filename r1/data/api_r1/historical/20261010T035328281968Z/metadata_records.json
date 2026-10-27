@@ -1,0 +1,282 @@
+[
+  {
+    "service": "deepseek",
+    "case_set": "blind",
+    "responses": 200,
+    "unique_case_ids": 200,
+    "responses_per_case": [
+      1
+    ],
+    "requested_model": "deepseek-chat",
+    "returned_models": {
+      "deepseek-v4-flash": 200
+    },
+    "batch_configuration_time": "2026-07-13T05:38:31.230263+00:00",
+    "endpoint_base_url": "https://api.deepseek.com/v1",
+    "prompt_version": "ask-boundary-v2.0",
+    "benchmark_config_version": "ask-benchmark-v2",
+    "system_prompt_sha256": [
+      "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e"
+    ],
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 1400,
+    "response_format": {
+      "type": "json_object"
+    },
+    "model_outputs_sha256": "6a31a806bf992563f89b9857e9351fd56b29ecd3d5db33b0958623b83c0391a5",
+    "invocation_config_sha256": "ee192c5811064e711fe7f0e4567c752fcaa35a6c1d1fd58ead4d7e0dc80d92ec",
+    "provider_model_field_mismatches": 0,
+    "records_with_usage": 200,
+    "historical_seed_setting": "not_recorded",
+    "historical_thinking_setting": "not_recorded",
+    "historical_latency_setting": "not_recorded",
+    "independent_multiple_run_evidence": false,
+    "immutable_provider_weights_established": false
+  },
+  {
+    "service": "qwen",
+    "case_set": "blind",
+    "responses": 200,
+    "unique_case_ids": 200,
+    "responses_per_case": [
+      1
+    ],
+    "requested_model": "qwen-max",
+    "returned_models": {
+      "qwen-max": 200
+    },
+    "batch_configuration_time": "2026-07-13T05:48:54.899266+00:00",
+    "endpoint_base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "prompt_version": "ask-boundary-v2.0",
+    "benchmark_config_version": "ask-benchmark-v2",
+    "system_prompt_sha256": [
+      "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e"
+    ],
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 1400,
+    "response_format": {
+      "type": "json_object"
+    },
+    "model_outputs_sha256": "b82596ad51f2ead6b46ac3e84c8799d21d90fefcfc362de04845cd6a5bb99211",
+    "invocation_config_sha256": "4a215584debdc5606369833082ab3a1d10dc6b01b97c76b4faf915ffdb195129",
+    "provider_model_field_mismatches": 0,
+    "records_with_usage": 200,
+    "historical_seed_setting": "not_recorded",
+    "historical_thinking_setting": "not_recorded",
+    "historical_latency_setting": "not_recorded",
+    "independent_multiple_run_evidence": false,
+    "immutable_provider_weights_established": false
+  },
+  {
+    "service": "ernie",
+    "case_set": "blind",
+    "responses": 200,
+    "unique_case_ids": 200,
+    "responses_per_case": [
+      1
+    ],
+    "requested_model": "ernie-4.5-turbo-32k",
+    "returned_models": {
+      "ernie-4.5-turbo-32k": 200
+    },
+    "batch_configuration_time": "2026-07-13T06:07:20.762215+00:00",
+    "endpoint_base_url": "https://qianfan.baidubce.com/v2",
+    "prompt_version": "ask-boundary-v2.0",
+    "benchmark_config_version": "ask-benchmark-v2",
+    "system_prompt_sha256": [
+      "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e"
+    ],
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 1400,
+    "response_format": {
+      "type": "json_object"
+    },
+    "model_outputs_sha256": "04e5c6975931d0a0aabf46380d84e08b07c583a0b437f5f2f59db7c06c74deed",
+    "invocation_config_sha256": "b88428d98e73de1fe9cd81d20a6d1f375f836185388ae19483792ac33e89a49f",
+    "provider_model_field_mismatches": 0,
+    "records_with_usage": 200,
+    "historical_seed_setting": "not_recorded",
+    "historical_thinking_setting": "not_recorded",
+    "historical_latency_setting": "not_recorded",
+    "independent_multiple_run_evidence": false,
+    "immutable_provider_weights_established": false
+  },
+  {
+    "service": "hunyuan",
+    "case_set": "blind",
+    "responses": 200,
+    "unique_case_ids": 200,
+    "responses_per_case": [
+      1
+    ],
+    "requested_model": "hy3-preview",
+    "returned_models": {
+      "hy3-preview": 200
+    },
+    "batch_configuration_time": "2026-07-13T07:08:36.534666+00:00",
+    "endpoint_base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_version": "ask-boundary-v2.0",
+    "benchmark_config_version": "ask-benchmark-v2",
+    "system_prompt_sha256": [
+      "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e"
+    ],
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 1400,
+    "response_format": {
+      "type": "json_object"
+    },
+    "model_outputs_sha256": "0826e1d3992862229f2b608812aacfd3745228a663274ad051cefb1fa9d44e1a",
+    "invocation_config_sha256": "e955959f32e9995d1ec561eb02e35265bb3a7346bf7ca532670334a059685ec1",
+    "provider_model_field_mismatches": 0,
+    "records_with_usage": 200,
+    "historical_seed_setting": "not_recorded",
+    "historical_thinking_setting": "not_recorded",
+    "historical_latency_setting": "not_recorded",
+    "independent_multiple_run_evidence": false,
+    "immutable_provider_weights_established": false
+  },
+  {
+    "service": "deepseek",
+    "case_set": "five_service",
+    "responses": 150,
+    "unique_case_ids": 150,
+    "responses_per_case": [
+      1
+    ],
+    "requested_model": "deepseek-chat",
+    "returned_models": {
+      "deepseek-v4-flash": 150
+    },
+    "batch_configuration_time": "2026-07-13T03:26:27.546520+00:00",
+    "endpoint_base_url": "https://api.deepseek.com/v1",
+    "prompt_version": "ask-boundary-v2.0",
+    "benchmark_config_version": "ask-benchmark-v2",
+    "system_prompt_sha256": [
+      "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e"
+    ],
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 1400,
+    "response_format": {
+      "type": "json_object"
+    },
+    "model_outputs_sha256": "f1d60cf8af2722cfa6e88568a0af86b8cb14edbe28878a7b73bf9d0be937711d",
+    "invocation_config_sha256": "e6624110941ac3309e53ae750ffa1cb3b2b15d8d193a580ca78fa59294b77d04",
+    "provider_model_field_mismatches": 0,
+    "records_with_usage": 150,
+    "historical_seed_setting": "not_recorded",
+    "historical_thinking_setting": "not_recorded",
+    "historical_latency_setting": "not_recorded",
+    "independent_multiple_run_evidence": false,
+    "immutable_provider_weights_established": false
+  },
+  {
+    "service": "qwen",
+    "case_set": "five_service",
+    "responses": 150,
+    "unique_case_ids": 150,
+    "responses_per_case": [
+      1
+    ],
+    "requested_model": "qwen-max",
+    "returned_models": {
+      "qwen-max": 150
+    },
+    "batch_configuration_time": "2026-07-13T03:35:05.103917+00:00",
+    "endpoint_base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "prompt_version": "ask-boundary-v2.0",
+    "benchmark_config_version": "ask-benchmark-v2",
+    "system_prompt_sha256": [
+      "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e"
+    ],
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 1400,
+    "response_format": {
+      "type": "json_object"
+    },
+    "model_outputs_sha256": "5646ac87ac5b90b5ba08111df0dfb6a534436995065acf3a2e92d35d52bacbfe",
+    "invocation_config_sha256": "a7cd38adbf6f204b4fa2a4616525852a8f7d2f9cc987b5cbf915d17a91950b85",
+    "provider_model_field_mismatches": 0,
+    "records_with_usage": 150,
+    "historical_seed_setting": "not_recorded",
+    "historical_thinking_setting": "not_recorded",
+    "historical_latency_setting": "not_recorded",
+    "independent_multiple_run_evidence": false,
+    "immutable_provider_weights_established": false
+  },
+  {
+    "service": "ernie",
+    "case_set": "five_service",
+    "responses": 150,
+    "unique_case_ids": 150,
+    "responses_per_case": [
+      1
+    ],
+    "requested_model": "ernie-4.5-turbo-32k",
+    "returned_models": {
+      "ernie-4.5-turbo-32k": 150
+    },
+    "batch_configuration_time": "2026-07-13T03:51:26.482672+00:00",
+    "endpoint_base_url": "https://qianfan.baidubce.com/v2",
+    "prompt_version": "ask-boundary-v2.0",
+    "benchmark_config_version": "ask-benchmark-v2",
+    "system_prompt_sha256": [
+      "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e"
+    ],
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 1400,
+    "response_format": {
+      "type": "json_object"
+    },
+    "model_outputs_sha256": "457ddadea7c697d8ce03fe8f3f9a04de09e0e0d1ecdaaef0a65be69ca9c9a5e4",
+    "invocation_config_sha256": "b0f721e4260b9f294b1cad492385a613b917c6d9ba2a90bcb28b95f91d1869e6",
+    "provider_model_field_mismatches": 0,
+    "records_with_usage": 150,
+    "historical_seed_setting": "not_recorded",
+    "historical_thinking_setting": "not_recorded",
+    "historical_latency_setting": "not_recorded",
+    "independent_multiple_run_evidence": false,
+    "immutable_provider_weights_established": false
+  },
+  {
+    "service": "hunyuan",
+    "case_set": "five_service",
+    "responses": 150,
+    "unique_case_ids": 150,
+    "responses_per_case": [
+      1
+    ],
+    "requested_model": "hy3-preview",
+    "returned_models": {
+      "hy3-preview": 150
+    },
+    "batch_configuration_time": "2026-07-13T04:41:06.483630+00:00",
+    "endpoint_base_url": "https://tokenhub.tencentmaas.com/v1",
+    "prompt_version": "ask-boundary-v2.0",
+    "benchmark_config_version": "ask-benchmark-v2",
+    "system_prompt_sha256": [
+      "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e"
+    ],
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 1400,
+    "response_format": {
+      "type": "json_object"
+    },
+    "model_outputs_sha256": "3656c1e835dad834d4e01aff482d89ce799e594dd3326a3ddbb8bbc4644f6e9a",
+    "invocation_config_sha256": "917275c4653ff8beaf14f8f6bc0f77bc979365247e7126faf62f271e297cc06f",
+    "provider_model_field_mismatches": 0,
+    "records_with_usage": 150,
+    "historical_seed_setting": "not_recorded",
+    "historical_thinking_setting": "not_recorded",
+    "historical_latency_setting": "not_recorded",
+    "independent_multiple_run_evidence": false,
+    "immutable_provider_weights_established": false
+  }
+]

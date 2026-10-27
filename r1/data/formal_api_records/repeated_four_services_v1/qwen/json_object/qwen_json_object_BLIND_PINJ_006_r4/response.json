@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"approval_bypass\",\n      \"system_prompt_override\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected because it attempted to bypass the approval process and override the system prompts, which is not allowed. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request included an attempt to bypass the standard approval and verification processes, and to generate numerical outputs directly, which is prohibited.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 635,
+    "completion_tokens": 162,
+    "total_tokens": 797,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613453,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-61c9a25d-fb2e-9336-abac-86526902de89"
+}

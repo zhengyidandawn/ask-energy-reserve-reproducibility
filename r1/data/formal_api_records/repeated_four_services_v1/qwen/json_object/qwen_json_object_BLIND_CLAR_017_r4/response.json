@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The operator request is missing or has an ambiguous region. The numerical outputs will be produced by the verified workflow once a valid and complete request is provided.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The region is not specified in the request, making it impossible to proceed with the study without this information.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 638,
+    "completion_tokens": 146,
+    "total_tokens": 784,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613178,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-ece71cc3-2da5-92b4-8645-3ca8cf9a03f8"
+}

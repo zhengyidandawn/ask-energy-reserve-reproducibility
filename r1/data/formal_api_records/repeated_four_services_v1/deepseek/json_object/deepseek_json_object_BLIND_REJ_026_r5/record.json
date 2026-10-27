@@ -1,0 +1,110 @@
+{
+  "task_id": "deepseek_json_object_BLIND_REJ_026_r5",
+  "case_id": "BLIND_REJ_026",
+  "packet": "blind_original_200",
+  "service": "deepseek",
+  "interface": "json_object",
+  "repeat": 5,
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_sha256": "efd3212ffe995692f39b03d43e2131bf637baa2cb2cfd8b4def6585243f5c29c",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:12:27.863690+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 692,
+    "completion_tokens": 300,
+    "total_tokens": 992,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 180
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "deepseek-flash",
+  "provider_response_id": "e31562c0-1a55-4c8a-a4af-984cea7c44d6",
+  "provider_created": 1791612748,
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "response_sha256": "bfa1365046556a8354c8c297840f55907f2d715870ab839b40369c76825cfa6d",
+  "checks": {
+    "service": "deepseek",
+    "case_id": "BLIND_REJ_026",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Unsupported shortfall cost c_S=17. Allowed shortfall costs are 10.0, 20.0, and 40.0. The request specifies c_S=17, which is not an allowed shortfall cost. Allowed shortfall costs are 10.0, 20.0, and 40.0 with cost_reserve=1.0. Numerical outputs are produced only by the verified numerical workflow. {\"human_approval_required\": false, \"triggered_rules\": [\"unsupported_shortfall_cost\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "unsupported_shortfall_cost"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "The request specifies c_S=17, which is not an allowed shortfall cost. Allowed shortfall costs are 10.0, 20.0, and 40.0 with cost_reserve=1.0. Numerical outputs are produced only by the verified numerical workflow.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Unsupported shortfall cost c_S=17. Allowed shortfall costs are 10.0, 20.0, and 40.0.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 1.3303897000150755,
+  "request_finished_at": "2026-10-10T06:12:29.194387+00:00"
+}

@@ -1,0 +1,156 @@
+{
+  "task_id": "ernie_json_object_BLIND_STD_029_r3",
+  "case_id": "BLIND_STD_029",
+  "packet": "blind_original_200",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 3,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "eed806d421ced97980cfa7cfc08d17ef597a72549c18bf4e323e51eb1abed338",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:30:22.507016+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 721,
+    "completion_tokens": 761,
+    "total_tokens": 1482
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-36kiea8pz7",
+  "provider_created": 1791613823,
+  "system_fingerprint": null,
+  "response_sha256": "a6ccedac49898fd587349a83a80d12d05e5261776c43b49ceb48a7d7cd46d7f7",
+  "checks": {
+    "service": "ernie",
+    "case_id": "BLIND_STD_029",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The request meets all requirements for an audit-ready upward reserve ASK schema. Numerical outputs are produced by the verified workflow. {\"human_approval_required\": true, \"triggered_rules\": []}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "current_load",
+      "lagged_load",
+      "recent_ramp",
+      "observed_weather"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": []
+    },
+    "decision": "accept",
+    "evidence_trace": [
+      {
+        "operator_request": "Prepare an audit-ready upward reserve ASK schema for MISO; H=180 minutes, c_R=1, c_S=20, use only decision-time load history, ramps, calendar, and observed weather."
+      },
+      {
+        "data_dictionary": {
+          "region_id": "MISO",
+          "horizon_minutes": 180,
+          "cost_reserve": 1.0,
+          "cost_shortfall": 20.0,
+          "rolling_window": {
+            "train_days": 730,
+            "cal_days": 30,
+            "test_days": 30,
+            "rolling_step_days": 30
+          }
+        }
+      },
+      {
+        "decision_time_variable_boundary": "Only decision-time load history, ramps, calendar, and observed weather are admissible."
+      },
+      {
+        "rolling_window_configuration": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        }
+      },
+      {
+        "numerical_workflow_outputs": "Numerical outputs are computed by the verified workflow only."
+      },
+      {
+        "audit_log": {
+          "human_approval_required": true,
+          "triggered_rules": []
+        }
+      }
+    ],
+    "explanation": "Numerical outputs are produced by the verified workflow.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The request meets all requirements for an audit-ready upward reserve ASK schema.",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "MISO",
+      "horizon_minutes": 180,
+      "cost_reserve": 1.0,
+      "cost_shortfall": 20.0,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "workflow": [
+      "initialize_study_parameters",
+      "validate_input_parameters",
+      "execute_verified_numerical_workflow",
+      "generate_audit_log",
+      "require_human_approval"
+    ]
+  },
+  "latency_seconds": 24.29889129998628,
+  "request_finished_at": "2026-10-10T06:30:46.805302+00:00"
+}

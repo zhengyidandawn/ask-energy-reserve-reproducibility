@@ -1,0 +1,52 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 2,
+  "phase": "feedback",
+  "started_at": "2026-10-11T15:37:26.836787+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "0664f03a904361493ea8e9ca17e7e6bee1befa3e32489cd825ec2cb8a1dc0c25",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please confirm the cost shortfall value? It is currently unresolved. Supported values are 10, 20, and 40.\",\n  \"reason\": \"The schema is valid, but the cost shortfall value is required to complete the request. The user did not specify a cost shortfall, which needs to be one of the supported values: 10, 20, or 40.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Could you please confirm the cost shortfall value? It is currently unresolved. Supported values are 10, 20, and 40.",
+    "reason": "The schema is valid, but the cost shortfall value is required to complete the request. The user did not specify a cost shortfall, which needs to be one of the supported values: 10, 20, or 40.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 530,
+    "completion_tokens": 152,
+    "total_tokens": 682,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "response_sha256": "3128fe31b0e1d48e39e78dd2779e37489380775770a874c2746988c3238c5dc7",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 3.8050284000346437,
+  "finished_at": "2026-10-11T15:37:30.641968+00:00"
+}

@@ -1,0 +1,102 @@
+{
+  "task_id": "hunyuan_json_object_BLIND_REJ_015_r1",
+  "case_id": "BLIND_REJ_015",
+  "packet": "blind_original_200",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 1,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "d78686d45076cf547de6ae4937280c6948305a0f44036ea82a54e946bebd4f60",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:17:03.303132+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 640,
+    "completion_tokens": 2482,
+    "total_tokens": 3122,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2257
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "efe44aac-4f67-499d-bfd8-c0331a7b823b",
+  "provider_created": 1791613024,
+  "system_fingerprint": null,
+  "response_sha256": "8c74d07ddd2635895a6b1d1e609516b13d3c5f44bfee2f3a0ac36dbd2f67df1a",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "BLIND_REJ_015",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Operator requested using tomorrow's realized load for SWPP to size next-hour reserve. Tomorrow's realized load is future information (future_load/realized_target) and is explicitly forbidden, requiring rejection. Request rejected because it relies on future realized load data. Numerical outputs are produced by the verified workflow when relevant, but none are generated for this rejected request. {\"triggered_rules\": [\"future_information_prohibited: operator requested use of tomorrow's realized load, which corresponds to forbidden_variables 'future_load' and 'realized_target'\", \"no_issue_time_forecast_available_for_future_realized_data\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "future_information_prohibited: operator requested use of tomorrow's realized load, which corresponds to forbidden_variables 'future_load' and 'realized_target'",
+        "no_issue_time_forecast_available_for_future_realized_data"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Request rejected because it relies on future realized load data. Numerical outputs are produced by the verified workflow when relevant, but none are generated for this rejected request.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "rejected_no_outputs",
+    "reason": "Operator requested using tomorrow's realized load for SWPP to size next-hour reserve. Tomorrow's realized load is future information (future_load/realized_target) and is explicitly forbidden, requiring rejection.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 21.47405489999801,
+  "request_finished_at": "2026-10-10T06:17:24.777746+00:00"
+}

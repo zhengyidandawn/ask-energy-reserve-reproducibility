@@ -1,0 +1,39 @@
+{
+  "id": "91330ecc-246e-4345-b874-49d82c957423",
+  "object": "chat.completion",
+  "created": 1791613136,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_MEoTq9pwu3er1At1q1XM5578",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"Missing required fields: region_id is not specified (must be one of CISO, ERCO, GD, ISNE, MISO, SWPP); cost_shortfall is not specified (must be one of 10.0, 20.0, 40.0). The horizon is unambiguous: three-hour = 180 minutes. cost_reserve is fixed at 1.0 and the rolling window is fixed at train_days=730, cal_days=30, test_days=30, rolling_step_days=30, so those need no clarification. Please confirm the region and the shortfall cost before the study can be accepted.\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"The request is a three-hour (180-minute) upward reserve sizing study, but two required schema fields are missing: the region and the shortfall cost. No numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, or dispatch results) are produced here; when the study is accepted, all such numerical outputs are produced only by the verified numerical workflow. The rolling design (train_days=730, cal_days=30, test_days=30, rolling_step_days=30) and cost_reserve=1.0 are fixed by policy and require no clarification.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"missing_region_id\", \"missing_cost_shortfall\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1652,
+    "completion_tokens": 563,
+    "total_tokens": 2215,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 244
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

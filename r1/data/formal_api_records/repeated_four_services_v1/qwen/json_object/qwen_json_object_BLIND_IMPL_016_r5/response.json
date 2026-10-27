@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is not fully specified and requires clarification on several points to ensure the study can be accurately and safely conducted. The numerical outputs, if any, are produced by the verified workflow.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The terms 'normal horizon', 'normal cS', and 'standard public validation' need to be clarified. Specifically, the exact values for the horizon (in minutes), the cost shortfall, and the details of the validation method should be provided. Additionally, the region needs to be confirmed as ERCOT was mentioned, but it's not clear if this is the intended region for the study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 633,
+    "completion_tokens": 206,
+    "total_tokens": 839,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614066,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-461c5206-8e6e-92a9-b369-77810dd99379"
+}

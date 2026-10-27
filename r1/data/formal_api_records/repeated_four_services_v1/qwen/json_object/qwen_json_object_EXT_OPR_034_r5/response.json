@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\n    \"calendar\",\n    \"cost_ratio\",\n    \"current_load\",\n    \"horizon\",\n    \"lagged_load\",\n    \"load_statistics\",\n    \"observed_weather\",\n    \"recent_ramp\",\n    \"region_id\"\n  ],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"clarification_required\"\n    ]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"在当前请求中，指定了两个区域（ERCO和CISO）同时进行一个研究任务。根据规则，每个任务必须指定单一的区域代码。因此，需要进一步澄清是希望为这两个区域分别创建独立的任务还是有其他意图。\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"请求中同时包含了两个区域(ERCO, CISO)用于同一项研究，这与要求每一任务仅涉及单个区域相冲突。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 649,
+    "completion_tokens": 269,
+    "total_tokens": 918,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614568,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-5623654f-0e07-9795-9168-9159032d8189"
+}

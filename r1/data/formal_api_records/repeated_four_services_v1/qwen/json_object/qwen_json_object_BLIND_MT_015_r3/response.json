@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"universal_cross_region_generalization_claim\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The numerical outputs are produced by the verified workflow, and this request is rejected because it claims universal cross-region generalization, which is not supported by the standard validation in a single region. Each region must be validated independently due to varying operational conditions and characteristics.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"\",\n  \"reason\": \"The claim of universal cross-region generalization cannot be substantiated by a standard validation in a single region (SPP).\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 167,
+    "total_tokens": 804,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613067,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-0c25e55c-ba27-9abc-acf3-30cb81511885"
+}

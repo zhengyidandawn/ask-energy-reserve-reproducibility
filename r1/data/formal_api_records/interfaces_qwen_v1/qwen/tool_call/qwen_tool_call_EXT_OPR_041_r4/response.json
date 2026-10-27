@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"decision\": \"reject\", \"reason\": \"The request attempts to skip the human review process, which is not allowed. All studies require human approval before being issued.\", \"study_schema\": null, \"admissible_variables\": [], \"forbidden_variables\": [], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"All reserve-sizing studies must be reviewed and approved by a human. Automatic issuance of results without review is prohibited. Numerical outputs are produced by the verified workflow only after proper approval has been obtained.\", \"audit_log\": {\"triggered_rules\": [\"approval_bypass\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}",
+              "name": "submit_plan"
+            },
+            "id": "call_c411108aed154cc9b3a694",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1528,
+    "completion_tokens": 145,
+    "total_tokens": 1673,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616454,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b682a5d1-d370-9bde-9161-cc64730ebe56"
+}

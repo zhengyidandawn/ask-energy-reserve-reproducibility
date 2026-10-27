@@ -1,0 +1,113 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_IMPL_014",
+  "repeat": 4,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_IMPL_014",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:17.579231+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "639d511c67d5ee5d7e494da193401d1c70ab9221462ef5c215509bbc175ec0a2",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"MISO\",\n        \"horizon_minutes\": 60,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 10\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request specifies supported region MISO and uses default values for cost_reserve and cost_shortfall. Horizon_minutes defaults to 60 as no value was explicitly provided.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "Request specifies supported region MISO and uses default values for cost_reserve and cost_shortfall. Horizon_minutes defaults to 60 as no value was explicitly provided.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 369,
+      "completion_tokens": 124,
+      "total_tokens": 493,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "7ac01a58737b3aa9e7a21b90b0f623d3cc35583e061c779f5cfa5972e4eaa964",
+    "diagnostics": {
+      "messages": [
+        "Execution validation returns clarify: missing_explicit_fields, horizon_minutes, cost_shortfall"
+      ],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "missing_explicit_fields",
+          "horizon_minutes",
+          "cost_shortfall"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.2842460999963805,
+    "finished_at": "2026-10-11T15:37:21.863274+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_IMPL_014",
+    "repeat": 4,
+    "phase": "feedback",
+    "started_at": "2026-10-11T15:37:21.864275+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "90ae0203c219c55bd53347b62e9a5ed491d582f28cd5649e2c02ad9d86ed258b",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"MISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"Please specify the horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) for the MISO energy study.\",\n    \"reason\": \"The request is missing explicit values for horizon_minutes and cost_shortfall, which are required fields for the energy study.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Please specify the horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) for the MISO energy study.",
+      "reason": "The request is missing explicit values for horizon_minutes and cost_shortfall, which are required fields for the energy study.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 521,
+      "completion_tokens": 156,
+      "total_tokens": 677
+    },
+    "response_sha256": "59b4dc4f94078751e375e7fcd52380672cf3349a44c6e2b3a769ae701373d93d",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 6.019635900040157,
+    "finished_at": "2026-10-11T15:37:27.884305+00:00"
+  },
+  "online_calls": 2,
+  "total_service_seconds": 10.303882000036538,
+  "transport_complete": true
+}

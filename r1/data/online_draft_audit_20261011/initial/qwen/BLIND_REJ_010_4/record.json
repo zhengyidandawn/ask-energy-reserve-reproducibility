@@ -1,0 +1,52 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_REJ_010",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:59.939580+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "ee35e7e5cccc593eeeba0d4de658c02e954f5449e9b1483a905f9c8770a3ccc7",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"SWPP\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request includes future information (weather forecasts issued after the decision timestamp), which is not supported. Only observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather are allowed.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "SWPP",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The request includes future information (weather forecasts issued after the decision timestamp), which is not supported. Only observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather are allowed.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 112,
+    "total_tokens": 485,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "40bf1c84a4b17d0cf0bb0ef3dc5aef940f0cf3ed212ef07564e2e56463f8a6b1",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 4.759629699983634,
+  "finished_at": "2026-10-11T15:38:04.699687+00:00"
+}

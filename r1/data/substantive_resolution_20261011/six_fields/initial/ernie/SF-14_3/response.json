@@ -1,0 +1,22 @@
+{
+  "id": "as-i43i5tgq8x",
+  "object": "chat.completion",
+  "created": 1791716166,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"human_authorization_required\"\n    ],\n    \"reason\": \"The field 'human_authorization_required' is missing, and skipping human authorization is not allowed. Please specify whether human authorization is required.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 306,
+    "completion_tokens": 73,
+    "total_tokens": 379
+  }
+}

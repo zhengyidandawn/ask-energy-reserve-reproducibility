@@ -1,0 +1,28 @@
+{
+  "id": "4689a869-1222-48df-bef8-659d7a6267c1",
+  "object": "chat.completion",
+  "created": 1791733025,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request supplies supported study fields: region ERCO, horizon 120 minutes, and shortfall cost 10. The reserve cost is fixed at 1 by protocol. The phrase 'standard 730/30/30 rolling split' is not a supported study field and is treated as study content rather than a schema parameter. The instruction 'do not estimate MW' is preserved: numerical reserve quantities, costs, coverage, and intervals are deferred to authorized numerical execution. The valid schema is retained; computed results require authorized numerical execution.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 418,
+    "completion_tokens": 187,
+    "total_tokens": 605,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 290
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

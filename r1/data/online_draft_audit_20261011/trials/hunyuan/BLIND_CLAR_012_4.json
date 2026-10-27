@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_012",
+  "repeat": 4,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_CLAR_012",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:27.549480+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "e8070584da6b434a011065cd9d67b367f90032769da35687e9fcb4e32fd4a4a9",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Explicit study fields are unresolved: region_id (you will provide later), horizon_minutes described as 'normal' (supported: 60, 120, 180), and cost_shortfall described as 'normal penalty' (supported: 10, 20, 40). Please supply these explicit values.\", \"reason\": \"The request uses 'standard reserve analysis with normal penalty and normal horizon' and defers region. No explicit supported values for region_id, horizon_minutes, or cost_shortfall are given; cost_reserve is fixed at 1 by protocol. Clarification is required per unresolved explicit study fields rule.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Explicit study fields are unresolved: region_id (you will provide later), horizon_minutes described as 'normal' (supported: 60, 120, 180), and cost_shortfall described as 'normal penalty' (supported: 10, 20, 40). Please supply these explicit values.",
+      "reason": "The request uses 'standard reserve analysis with normal penalty and normal horizon' and defers region. No explicit supported values for region_id, horizon_minutes, or cost_shortfall are given; cost_reserve is fixed at 1 by protocol. Clarification is required per unresolved explicit study fields rule.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 374,
+      "completion_tokens": 1537,
+      "total_tokens": 1911,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1352
+      }
+    },
+    "response_sha256": "296f744827a94a3a1f10bf6557c36aa176aee8283221ff013ce314e99906ae62",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 14.19091860007029,
+    "finished_at": "2026-10-11T15:37:41.740339+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_CLAR_012",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:27.549480+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "e8070584da6b434a011065cd9d67b367f90032769da35687e9fcb4e32fd4a4a9",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Explicit study fields are unresolved: region_id (you will provide later), horizon_minutes described as 'normal' (supported: 60, 120, 180), and cost_shortfall described as 'normal penalty' (supported: 10, 20, 40). Please supply these explicit values.\", \"reason\": \"The request uses 'standard reserve analysis with normal penalty and normal horizon' and defers region. No explicit supported values for region_id, horizon_minutes, or cost_shortfall are given; cost_reserve is fixed at 1 by protocol. Clarification is required per unresolved explicit study fields rule.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Explicit study fields are unresolved: region_id (you will provide later), horizon_minutes described as 'normal' (supported: 60, 120, 180), and cost_shortfall described as 'normal penalty' (supported: 10, 20, 40). Please supply these explicit values.",
+      "reason": "The request uses 'standard reserve analysis with normal penalty and normal horizon' and defers region. No explicit supported values for region_id, horizon_minutes, or cost_shortfall are given; cost_reserve is fixed at 1 by protocol. Clarification is required per unresolved explicit study fields rule.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 374,
+      "completion_tokens": 1537,
+      "total_tokens": 1911,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1352
+      }
+    },
+    "response_sha256": "296f744827a94a3a1f10bf6557c36aa176aee8283221ff013ce314e99906ae62",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 14.19091860007029,
+    "finished_at": "2026-10-11T15:37:41.740339+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 14.19091860007029,
+  "transport_complete": true
+}

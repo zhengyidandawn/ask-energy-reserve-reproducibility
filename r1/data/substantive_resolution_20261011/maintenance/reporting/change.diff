@@ -1,0 +1,14 @@
+--- before.json
+
++++ after.json
+
+@@ -23,6 +23,7 @@
+
+   ],
+   "reporting": [
+     "standard",
+-    "tail"
++    "tail",
++    "prediction_loss"
+   ]
+ }

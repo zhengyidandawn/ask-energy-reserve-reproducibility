@@ -1,0 +1,227 @@
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>LightGBM: A Highly Efficient Gradient Boosting Decision Tree</title>
+    <!-- Bootstrap CSS -->
+    <!-- https://codepen.io/surjithctly/pen/PJqKzQ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Custom CSS (after Bootstrap so it can override) -->
+    <link rel="stylesheet" href="/static/papers/css/papers.css">
+    <link rel="stylesheet" href="/static/papers/css/modern-theme.css?v=12">
+
+    
+
+    <meta name="citation_title" content="LightGBM: A Highly Efficient Gradient Boosting Decision Tree">
+    
+        <meta name="citation_author" content="Ke, Guolin">
+    
+        <meta name="citation_author" content="Meng, Qi">
+    
+        <meta name="citation_author" content="Finley, Thomas">
+    
+        <meta name="citation_author" content="Wang, Taifeng">
+    
+        <meta name="citation_author" content="Chen, Wei">
+    
+        <meta name="citation_author" content="Ma, Weidong">
+    
+        <meta name="citation_author" content="Ye, Qiwei">
+    
+        <meta name="citation_author" content="Liu, Tie-Yan">
+    
+    <meta name="citation_journal_title" content="Advances in Neural Information Processing Systems">
+    <meta name="citation_volume" content="30">
+    
+    
+        
+        
+    
+    
+    <meta name="citation_pdf_url" content="https://proceedings.neurips.cc/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf">
+    <meta name="citation_publication_date" content="2017">
+
+
+
+
+
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+      "tex2jax": {
+        "inlineMath": [["$","$"], ["\\(","\\)"]],
+        "displayMath": [["\\[","\\]"]],
+        "processEscapes": true
+      }
+    }
+    );
+
+    </script>
+
+    <style>
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #333;
+                color: #eee;
+            }
+        }
+
+        .btn-spacer {
+            margin: 2px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #eee;
+            color: black;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body class="modern-theme">
+
+
+<nav class="navbar navbar-expand-md bg-body-tertiary">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">NeurIPS Proceedings</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                <a class="nav-link" href="/admin/login/?next=/admin/"><i class="fas fa-sign-in-alt" title="Login"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/admin/logout/?nextp=/admin"><i class="fas fa-sign-out-alt" title="Logout"></i></a>
+            </li>
+
+            </ul>
+            <form class="d-flex" role="search" method="get" role="search" action="/papers/search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<div class="container-fluid">
+    <div class="col p-3 paper-detail">
+
+    
+        <header class="paper-header">
+            <h1 class="paper-title">LightGBM: A Highly Efficient Gradient Boosting Decision Tree</h1>
+            <p class="paper-authors">Guolin Ke, Qi Meng, Thomas Finley, Taifeng Wang, Wei Chen, Weidong Ma, Qiwei Ye, Tie-Yan Liu</p>
+            <p class="paper-meta">
+                <a href="/paper_files/paper/2017">Advances in Neural Information Processing Systems 30  (NIPS 2017)</a>
+                
+            </p>
+        </header>
+
+        <div class="paper-actions"><a class='btn btn-light btn-spacer' href='/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Bibtex.bib'>Bibtex</a> <a class='btn btn-light btn-spacer' href='/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Metadata.json'>Metadata</a> <a class='btn btn-light btn-spacer' href='/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Paper.pdf'>Paper</a> <a class='btn btn-light btn-spacer' href='/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Reviews.html'>Reviews</a> <a class='btn btn-light btn-spacer' href='/paper_files/paper/2017/file/6449f44a102fde848669bdd9eb6b76fa-Supplemental.zip'>Supplemental</a></div>
+
+        
+
+        <section class="paper-section">
+            <h2 class="section-label">Abstract</h2>
+            <p class="paper-abstract"><p>Gradient Boosting Decision Tree (GBDT) is a popular machine learning algorithm, and has quite a few effective implementations such as XGBoost and pGBRT. Although many engineering optimizations have been adopted in these implementations, the efficiency and scalability are still unsatisfactory when the feature dimension is high and data size is large. A major reason is that for each feature, they need to scan all the data instances to estimate the information gain of all possible split points, which is very time consuming. To tackle this problem, we propose two novel techniques: \emph{Gradient-based One-Side Sampling} (GOSS) and \emph{Exclusive Feature Bundling} (EFB). With GOSS, we exclude a significant proportion of data instances with small gradients, and only use the rest to estimate the information gain. We prove that, since the data instances with larger gradients play a more important role in the computation of information gain, GOSS can obtain quite accurate estimation of the information gain with a much smaller data size. With EFB, we bundle mutually exclusive features (i.e., they rarely take nonzero values simultaneously), to reduce the number of features. We prove that finding the optimal bundling of exclusive features is NP-hard, but a greedy algorithm can achieve quite good approximation ratio (and thus can effectively reduce the number of features without hurting the accuracy of split point determination by much). We call our new GBDT implementation with GOSS and EFB \emph{LightGBM}. Our experiments on multiple public datasets show that, LightGBM speeds up the training process of conventional GBDT by up to over 20 times while achieving almost the same accuracy.</p>
+</p>
+        </section>
+
+        
+
+    
+
+    </div>
+</div>
+
+
+<script   src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="   crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script>
+    $('.dropdown-menu a.dropdown-toggle').on('click', function (e) {
+        if (!$(this).next().hasClass('show')) {
+            $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+        }
+        var $subMenu = $(this).next(".dropdown-menu");
+        $subMenu.toggleClass('show');
+
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function (e) {
+            $('.dropdown-submenu .show').removeClass("show");
+        });
+
+
+        return false;
+    });
+</script>
+
+
+
+
+<br> 
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Name Change Policy</h4>
+                <button type="button pull-right" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              </div>
+              <div class="modal-body">
+                <p>Requests for name changes in the electronic proceedings will be accepted with no questions asked.  However name changes may cause bibliographic tracking issues.  Authors are asked to consider this carefully and discuss it with their co-authors prior to requesting a name change in the electronic proceedings.</p>
+
+<p>Use the "Report an Issue" link to request a name change.</p>
+
+              </div> 
+              <div class="modal-footer">
+
+
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
+
+<footer class="footer">
+    <div class="btn-spacer">
+        <a href="https://neurips.cc/Help/Contact?select=Conference">Report an Issue</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;        <a href="#" class="modal-link" data-toggle="modal" data-target="#myModal">Name Change Policy</a>
+    </div>
+
+</footer>
+<div class='hidden'>Do not remove: This comment is monitored to verify that the site is working properly</div>
+<!-- Do not remove: This comment is monitored to verify that the site is working properly -->
+
+</body>
+</html>

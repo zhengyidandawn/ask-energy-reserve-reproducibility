@@ -1,0 +1,116 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_CLAR_019",
+  "repeat": 3,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:40.532351+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "eac6662b75e2cae7ae163dc583a79b2cc09ecc2d2d9c765168a9a64713325c84",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"clarify\",\"fields\":{\"region_id\":null,\"horizon_minutes\":null,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":\"Which supported region should the study use: GD, ERCO, CISO, ISNE, MISO, or SWPP? Also, which supported horizon should be used: 60, 120, or 180 minutes?\",\"reason\":\"The request is broadly admissible in intent, but explicit study fields are unresolved: the region is not specified, and 'one-hour-ish' does not map unambiguously to a supported horizon. The reserve cost is fixed at 1 by protocol. The shortfall weight is not specified.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Which supported region should the study use: GD, ERCO, CISO, ISNE, MISO, or SWPP? Also, which supported horizon should be used: 60, 120, or 180 minutes?",
+      "reason": "The request is broadly admissible in intent, but explicit study fields are unresolved: the region is not specified, and 'one-hour-ish' does not map unambiguously to a supported horizon. The reserve cost is fixed at 1 by protocol. The shortfall weight is not specified.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 155,
+      "total_tokens": 548,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 137
+    },
+    "response_sha256": "dfbf49cb4a383006c0455ffc5a195b7f29a4a846d2aef0cbc91a37a7d068b3de",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.6995936000021175,
+    "finished_at": "2026-10-11T15:36:42.232484+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:40.532351+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "eac6662b75e2cae7ae163dc583a79b2cc09ecc2d2d9c765168a9a64713325c84",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"clarify\",\"fields\":{\"region_id\":null,\"horizon_minutes\":null,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":\"Which supported region should the study use: GD, ERCO, CISO, ISNE, MISO, or SWPP? Also, which supported horizon should be used: 60, 120, or 180 minutes?\",\"reason\":\"The request is broadly admissible in intent, but explicit study fields are unresolved: the region is not specified, and 'one-hour-ish' does not map unambiguously to a supported horizon. The reserve cost is fixed at 1 by protocol. The shortfall weight is not specified.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Which supported region should the study use: GD, ERCO, CISO, ISNE, MISO, or SWPP? Also, which supported horizon should be used: 60, 120, or 180 minutes?",
+      "reason": "The request is broadly admissible in intent, but explicit study fields are unresolved: the region is not specified, and 'one-hour-ish' does not map unambiguously to a supported horizon. The reserve cost is fixed at 1 by protocol. The shortfall weight is not specified.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 155,
+      "total_tokens": 548,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 137
+    },
+    "response_sha256": "dfbf49cb4a383006c0455ffc5a195b7f29a4a846d2aef0cbc91a37a7d068b3de",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.6995936000021175,
+    "finished_at": "2026-10-11T15:36:42.232484+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.6995936000021175,
+  "transport_complete": true
+}

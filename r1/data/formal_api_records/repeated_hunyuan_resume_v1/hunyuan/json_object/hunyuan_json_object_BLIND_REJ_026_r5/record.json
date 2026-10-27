@@ -1,0 +1,110 @@
+{
+  "task_id": "hunyuan_json_object_BLIND_REJ_026_r5",
+  "case_id": "BLIND_REJ_026",
+  "packet": "blind_original_200",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 5,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "022c9577b44df39003edd7922e1583ea3769c60ca04d4f243f126d6d35d43340",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:56:08.400548+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 639,
+    "completion_tokens": 2472,
+    "total_tokens": 3111,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2247
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "7d153b48-e796-4c8d-af0b-052709665a2e",
+  "provider_created": 1791618969,
+  "system_fingerprint": null,
+  "response_sha256": "dfd37e312925aedb5b8b2431d111f4bf6948f8330f8395887b5e9392ad6eef8a",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "BLIND_REJ_026",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Unsupported shortfall cost c_S=17 for region ERCO; allowed costs are [10.0, 20.0, 40.0]. Request rejected due to unsupported shortfall cost; numerical outputs are produced by the verified workflow when relevant. {\"triggered_rules\": [\"unsupported_cost: c_S=17 not in allowed [10.0, 20.0, 40.0]\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "triggered_rules": [
+        "unsupported_cost: c_S=17 not in allowed [10.0, 20.0, 40.0]"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Request rejected due to unsupported shortfall cost; numerical outputs are produced by the verified workflow when relevant.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "no_numerical_output_due_to_reject",
+    "reason": "Unsupported shortfall cost c_S=17 for region ERCO; allowed costs are [10.0, 20.0, 40.0].",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 17.186579499975778,
+  "request_finished_at": "2026-10-10T07:56:25.587224+00:00"
+}

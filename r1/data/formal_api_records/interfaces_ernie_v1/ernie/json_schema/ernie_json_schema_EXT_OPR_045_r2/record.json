@@ -1,0 +1,115 @@
+{
+  "task_id": "ernie_json_schema_EXT_OPR_045_r2",
+  "case_id": "EXT_OPR_045",
+  "packet": "independently_authored_48",
+  "service": "ernie",
+  "interface": "json_schema",
+  "repeat": 2,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "227301b8cb46c7d08cf0f65690164ec0a8695ed14375fb024e1c53db2bb5c3e1",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:55:50.771599+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 709,
+    "completion_tokens": 371,
+    "total_tokens": 1080,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-b7dm12q36f",
+  "provider_created": 1791615351,
+  "system_fingerprint": null,
+  "response_sha256": "23b9c6eaf0ec97cb5cdcaeebf2ddf59e4d98e582d89c15d327dbef61678f187b",
+  "checks": {
+    "service": "ernie",
+    "case_id": "EXT_OPR_045",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Request includes prohibited future_load variable, violating audit rules against future information leakage. The operator's request to use post-decision-time load data violates the rule against future information, which is strictly prohibited to ensure auditability and prevent leakage of unavailable data. {\"human_approval_required\": true, \"triggered_rules\": [\"future_information_prohibited\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "future_information_prohibited"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [
+      "operator_request: '把决策时刻之后的负荷也用上，不然我觉得不准'",
+      "data_dictionary: null",
+      "decision_time_variable_boundary: null",
+      "rolling_window_configuration: null",
+      "numerical_workflow_outputs: null",
+      "audit_log: future_information_prohibited"
+    ],
+    "explanation": "The operator's request to use post-decision-time load data violates the rule against future information, which is strictly prohibited to ensure auditability and prevent leakage of unavailable data.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Request includes prohibited future_load variable, violating audit rules against future information leakage.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 12.48491469991859,
+  "request_finished_at": "2026-10-10T06:56:03.256743+00:00"
+}

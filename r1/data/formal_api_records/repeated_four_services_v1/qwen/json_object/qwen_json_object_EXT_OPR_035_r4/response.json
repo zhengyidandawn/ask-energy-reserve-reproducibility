@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The numerical outputs are produced by the verified workflow. Clarification is required for the study to proceed.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The horizon is ambiguous as 60 minutes was initially requested, but a conditional change to 90 minutes was suggested without clear criteria. A single, specific horizon value is needed to proceed with the study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 157,
+    "total_tokens": 809,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613528,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-1f4ddafd-c032-94b0-bb92-41f649a7c5d1"
+}

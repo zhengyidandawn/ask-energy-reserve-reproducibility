@@ -1,0 +1,25 @@
+{
+  "id": "as-0jfb5a9ea9",
+  "object": "chat.completion",
+  "created": 1791613627,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"reject\",\n    \"reason\": \"Numerical outputs such as cost, coverage, and interval values can only be computed by the verified numerical workflow and must include audit logs. The request violates the numerical_output_policy.\",\n    \"study_schema\": null,\n    \"audit_log\": {\n        \"triggered_rules\": [\"numerical_output_policy_violation\", \"missing_audit_log\"]\n    },\n    \"admissible_variables\": [],\n    \"forbidden_variables\": [],\n    \"workflow\": [],\n    \"evidence_trace\": [],\n    \"explanation\": \"Numerical outputs are strictly produced by the verified workflow and must include audit logs for compliance and traceability.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 172,
+    "total_tokens": 863,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

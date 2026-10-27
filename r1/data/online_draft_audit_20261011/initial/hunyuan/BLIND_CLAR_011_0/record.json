@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_011",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:31.791599+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "cae6008bf73e8ed975f5393aff0d45ac5260c9f7c69669122a71a82d68c7b331",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request mentions 'western public region' which is not a supported region code (supported: GD, ERCO, CISO, ISNE, MISO, SWPP). Horizon minutes (60, 120, 180) and cost shortfall weights (10, 20, 40) are also unspecified. Please provide explicit region_id, horizon_minutes, and cost_shortfall values.\", \"reason\": \"Explicit study fields are unresolved: region_id not given as a supported code, horizon_minutes missing, cost_shortfall missing. Cost_reserve is fixed at 1 by protocol. Clarification required before draft can be finalized.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "The request mentions 'western public region' which is not a supported region code (supported: GD, ERCO, CISO, ISNE, MISO, SWPP). Horizon minutes (60, 120, 180) and cost shortfall weights (10, 20, 40) are also unspecified. Please provide explicit region_id, horizon_minutes, and cost_shortfall values.",
+    "reason": "Explicit study fields are unresolved: region_id not given as a supported code, horizon_minutes missing, cost_shortfall missing. Cost_reserve is fixed at 1 by protocol. Clarification required before draft can be finalized.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 2562,
+    "total_tokens": 2933,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2375
+    }
+  },
+  "response_sha256": "374fcc6b0b3ab57957b5e55c77bbe6db7425fe478f2d089ee9522f84e0f1b08e",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 22.086968799936585,
+  "finished_at": "2026-10-11T15:36:53.880155+00:00"
+}

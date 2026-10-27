@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": false, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"需要进一步澄清剩余的必要研究字段。数值输出将由验证过的工作流计算。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"缺少以下字段：task_type, cost_reserve, rolling_window, requires_human_approval。请提供这些字段的具体值。\", \"study_schema\": null, \"workflow\": []}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1225,
+    "completion_tokens": 190,
+    "total_tokens": 1415,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "created": 1791697817,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-a5a1d8f7-52be-9b6c-9532-01b2e26cd87a"
+}

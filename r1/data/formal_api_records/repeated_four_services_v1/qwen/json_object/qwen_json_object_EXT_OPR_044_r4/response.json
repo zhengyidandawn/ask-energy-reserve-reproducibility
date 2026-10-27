@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"no_future_information\",\n      \"no_realized_target\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request cannot proceed because it includes the use of future information, which is not allowed. Additionally, using realized ramp data after the rolling window has passed is prohibited.\",\n  \"forbidden_variables\": [\n    \"future_weather\",\n    \"realized_target\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator requested to use tomorrow's not-yet-released forecast and realized target data after the rolling window, both of which are forbidden due to the rules against future information and test-residual leakage. These violations led to the rejection of the request.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 656,
+    "completion_tokens": 201,
+    "total_tokens": 857,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613566,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-f8509db1-05cd-91b7-b981-5092e80098da"
+}

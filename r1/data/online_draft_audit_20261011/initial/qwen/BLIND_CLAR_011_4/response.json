@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you specify which of the western public regions (e.g., CISO, ISNE, MISO, SWPP) and the horizon (60, 120, or 180 minutes) you'd like to use for the reserve study?\",\n  \"reason\": \"The region and the time horizon are not specified in the request. The term 'western public region' could refer to multiple supported regions, and a specific choice is required.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 156,
+    "total_tokens": 529,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733005,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-daa0bf4a-48af-9750-a8fd-1840c31d272d"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-hy2fbwn2ei",
+  "object": "chat.completion",
+  "created": 1791716136,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\"feature_mode\", \"reporting\"],\n    \"reason\": \"Please clarify the feature_mode (full or history_calendar) and reporting (standard or tail) for the study.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 306,
+    "completion_tokens": 64,
+    "total_tokens": 370,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

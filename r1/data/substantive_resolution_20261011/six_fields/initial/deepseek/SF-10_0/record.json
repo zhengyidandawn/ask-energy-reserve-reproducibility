@@ -1,0 +1,42 @@
+{
+  "case_id": "SF-10",
+  "service": "deepseek",
+  "repeat": 0,
+  "phase": "initial",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:54:56.590035+00:00",
+  "status": "success",
+  "request_sha256": "87fc327368e4d25899e52714e240ed5ef47d7a66c81a5bb1fdf830fe02366b03",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 302,
+    "completion_tokens": 76,
+    "total_tokens": 378,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 174
+  },
+  "content": "{\n  \"decision\": \"clarify\",\n  \"study\": null,\n  \"missing_fields\": [\"feature_mode\"],\n  \"reason\": \"The request is missing the required field: feature_mode. Please specify whether to use full features (observed load and calendar with recent ramps and load statistics) or history_calendar (restricted load history and calendar set).\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "feature_mode"
+    ],
+    "reason": "The request is missing the required field: feature_mode. Please specify whether to use full features (observed load and calendar with recent ramps and load statistics) or history_calendar (restricted load history and calendar set)."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 5,
+    "rules": [
+      "feature_mode"
+    ]
+  },
+  "response_sha256": "3ff9bd2a01cb1d812cf87ad2db8aa86bb9e0026c4ab40021bb13221b70ef8af5",
+  "latency_seconds": 0.8327490999363363,
+  "request_finished_at": "2026-10-11T10:54:57.423044+00:00"
+}

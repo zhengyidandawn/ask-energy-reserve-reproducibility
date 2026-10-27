@@ -1,0 +1,25 @@
+{
+  "id": "as-gx6qs04qb2",
+  "object": "chat.completion",
+  "created": 1791614809,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"Unsupported cost_shortfall value\"]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Set c_R=1 and c_S=17 for MISO.\"\n        },\n        {\n            \"data_dictionary\": {\n                \"allowed_shortfall_costs\": [10.0, 20.0, 40.0],\n                \"allowed_regions\": [\"CISO\", \"ERCO\", \"GD\", \"ISNE\", \"MISO\", \"SWPP\"],\n                \"allowed_horizons\": [60, 120, 180],\n                \"cost_reserve\": 1.0\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": {\n                \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"]\n            }\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": [\"Unsupported cost_shortfall value\"]\n            }\n        }\n    ],\n    \"explanation\": \"The requested cost_shortfall value of 17 is not supported. Allowed values are [10.0, 20.0, 40.0]. Numerical outputs are produced by the verified workflow.\",\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"The cost_shortfall value of 17 is not in the allowed set of [10.0, 20.0, 40.0].\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 689,
+    "completion_tokens": 604,
+    "total_tokens": 1293,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

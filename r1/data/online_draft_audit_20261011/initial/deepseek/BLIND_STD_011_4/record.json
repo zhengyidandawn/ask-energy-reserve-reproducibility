@@ -1,0 +1,52 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_STD_011",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:04.830887+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "435a67a4e02b0351502a42f93c5c8aef6e69f3634a2a904da3526626ab93b453",
+  "returned_model": "deepseek-flash",
+  "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ERCO\",\"horizon_minutes\":180,\"cost_reserve\":1,\"cost_shortfall\":10},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported and resolved: ERCO is a supported region, 180 minutes is a supported horizon, reserve cost is fixed at 1 by protocol, and shortfall cost 10 is a supported weight. The evidence trace requirement is compatible with the study protocol.\",\"human_approval_required\":true}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 180,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "All explicit study fields are supported and resolved: ERCO is a supported region, 180 minutes is a supported horizon, reserve cost is fixed at 1 by protocol, and shortfall cost 10 is a supported weight. The evidence trace requirement is compatible with the study protocol.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 415,
+    "completion_tokens": 109,
+    "total_tokens": 524,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 159
+  },
+  "response_sha256": "d8bfd6799cb14fffb8a551d8b323b466fc3f64fe3f91c3465d6e03b3d1229957",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.1954208000097424,
+  "finished_at": "2026-10-11T15:37:06.025932+00:00"
+}

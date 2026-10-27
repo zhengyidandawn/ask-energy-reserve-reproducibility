@@ -1,0 +1,112 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 4,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:25.408434+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "99fd6a03f41dae9778f7e9e353315d53c1a69fc3a47cb7535ab728ca5359815c",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"您希望使用的成本不足权重是多少？支持的选项为10、20和40。\",\n  \"reason\": \"用户请求了一个有效的研究方案，但是没有指定成本不足（cost_shortfall）的具体数值。根据要求，不会输出储备容量（MW）或覆盖率。\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "partial_accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "您希望使用的成本不足权重是多少？支持的选项为10、20和40。",
+      "reason": "用户请求了一个有效的研究方案，但是没有指定成本不足（cost_shortfall）的具体数值。根据要求，不会输出储备容量（MW）或覆盖率。",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 127,
+      "total_tokens": 507,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "fd019b2fe13799f25fcc11a78ed00efd72cbbac84dd6f99b640c13094cc67239",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "partial_accept",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.8292618999257684,
+    "finished_at": "2026-10-11T15:37:29.237212+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:25.408434+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "99fd6a03f41dae9778f7e9e353315d53c1a69fc3a47cb7535ab728ca5359815c",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"您希望使用的成本不足权重是多少？支持的选项为10、20和40。\",\n  \"reason\": \"用户请求了一个有效的研究方案，但是没有指定成本不足（cost_shortfall）的具体数值。根据要求，不会输出储备容量（MW）或覆盖率。\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "partial_accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "您希望使用的成本不足权重是多少？支持的选项为10、20和40。",
+      "reason": "用户请求了一个有效的研究方案，但是没有指定成本不足（cost_shortfall）的具体数值。根据要求，不会输出储备容量（MW）或覆盖率。",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 127,
+      "total_tokens": 507,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "fd019b2fe13799f25fcc11a78ed00efd72cbbac84dd6f99b640c13094cc67239",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "partial_accept",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.8292618999257684,
+    "finished_at": "2026-10-11T15:37:29.237212+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 3.8292618999257684,
+  "transport_complete": true
+}

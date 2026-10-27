@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"prohibited_confidence_interval_generation\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request for a 95% confidence interval for ISO-NE's reserve result cannot be fulfilled as it requires the generation of numerical outputs, which is strictly computed by the verified numerical workflow. The LLM is not authorized to generate or provide such values.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator requested a 95% confidence interval, which is prohibited because it involves generating numerical outputs that are solely the responsibility of the verified numerical workflow, and not the LLM.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 186,
+    "total_tokens": 831,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612702,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b11d3ebb-8074-9e09-bc0d-39d586b9a3c1"
+}

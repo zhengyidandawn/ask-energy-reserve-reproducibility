@@ -1,0 +1,108 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_STD_038",
+  "repeat": 4,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_STD_038",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:17.744775+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a27dacb3e8fb7fa4285a0672b00d4a71d178804ce524350742a7443472a56695",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region, horizon, and shortfall cost. The standard 730/30/30 rolling split is noted but not included in the fields as it pertains to the study's methodology rather than its parameters. The request does not ask for estimation of MW, which is consistent with an energy reserve study setup.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a valid region, horizon, and shortfall cost. The standard 730/30/30 rolling split is noted but not included in the fields as it pertains to the study's methodology rather than its parameters. The request does not ask for estimation of MW, which is consistent with an energy reserve study setup.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 144,
+      "total_tokens": 549,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "2c8a8dd871cbc6dfa2e63c621765411aae5f7f5d1f1407eaa69b2e543e8a70d1",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.026656100060791,
+    "finished_at": "2026-10-11T15:38:21.771758+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_STD_038",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:17.744775+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a27dacb3e8fb7fa4285a0672b00d4a71d178804ce524350742a7443472a56695",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region, horizon, and shortfall cost. The standard 730/30/30 rolling split is noted but not included in the fields as it pertains to the study's methodology rather than its parameters. The request does not ask for estimation of MW, which is consistent with an energy reserve study setup.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a valid region, horizon, and shortfall cost. The standard 730/30/30 rolling split is noted but not included in the fields as it pertains to the study's methodology rather than its parameters. The request does not ask for estimation of MW, which is consistent with an energy reserve study setup.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 144,
+      "total_tokens": 549,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "2c8a8dd871cbc6dfa2e63c621765411aae5f7f5d1f1407eaa69b2e543e8a70d1",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.026656100060791,
+    "finished_at": "2026-10-11T15:38:21.771758+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 4.026656100060791,
+  "transport_complete": true
+}

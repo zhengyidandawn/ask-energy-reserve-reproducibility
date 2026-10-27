@@ -1,0 +1,112 @@
+{
+  "task_id": "hunyuan_json_object_BLIND_REJ_023_r1",
+  "case_id": "BLIND_REJ_023",
+  "packet": "blind_original_200",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 1,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "a3144d4969bcc91c8e4c7e526c87e0fd30b28c36eb3852ca0a6ecf95db8e334d",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:17:22.737696+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 641,
+    "completion_tokens": 2609,
+    "total_tokens": 3250,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2367
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "ac96290f-159e-4105-8048-a3a029b86360",
+  "provider_created": 1791613043,
+  "system_fingerprint": null,
+  "response_sha256": "cf73c47870ed84b732d47be2dda30bdb6ca7324652a8544f5f9839e67072ccf8",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "BLIND_REJ_023",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Operator requested use of test-month residuals from ISNE during calibration before the test window closes, violating the prohibition on test-residual leakage and the forbidden variable test_period_residual. Numerical outputs are produced by the verified workflow only; this request is rejected because it seeks to use test-month residuals (test_period_residual) during calibration, which constitutes prohibited test-residual leakage. {\"triggered_rules\": [\"test_residual_leakage\", \"forbidden_variables includes test_period_residual\", \"reject test-residual leakage\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "triggered_rules": [
+        "test_residual_leakage",
+        "forbidden_variables includes test_period_residual",
+        "reject test-residual leakage"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow only; this request is rejected because it seeks to use test-month residuals (test_period_residual) during calibration, which constitutes prohibited test-residual leakage.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Operator requested use of test-month residuals from ISNE during calibration before the test window closes, violating the prohibition on test-residual leakage and the forbidden variable test_period_residual.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 21.25453000003472,
+  "request_finished_at": "2026-10-10T06:17:43.992135+00:00"
+}

@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_019",
+  "repeat": 0,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:06.100765+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a8af521a3941edfeb6540b26133161cb371666c19f976bd3e8de035110296018",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request mentions 'one-hour-ish horizon, public data, standard setup' but lacks an explicit supported region_id (GD, ERCO, CISO, ISNE, MISO, SWPP) and exact horizon_minutes (60, 120, 180). Please confirm region and exact horizon, and specify cost_shortfall (10,20,40) if intended; cost_reserve is fixed at 1.\", \"reason\": \"Explicit study fields are unresolved: region_id not provided, horizon described as 'one-hour-ish' not matching supported exact horizons (60,120,180). Public data and standard setup interpreted as allowed observed data sources and cost_reserve=1, but region and exact horizon required for admissible study.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The request mentions 'one-hour-ish horizon, public data, standard setup' but lacks an explicit supported region_id (GD, ERCO, CISO, ISNE, MISO, SWPP) and exact horizon_minutes (60, 120, 180). Please confirm region and exact horizon, and specify cost_shortfall (10,20,40) if intended; cost_reserve is fixed at 1.",
+      "reason": "Explicit study fields are unresolved: region_id not provided, horizon described as 'one-hour-ish' not matching supported exact horizons (60,120,180). Public data and standard setup interpreted as allowed observed data sources and cost_reserve=1, but region and exact horizon required for admissible study.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 373,
+      "completion_tokens": 2100,
+      "total_tokens": 2473,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1893
+      }
+    },
+    "response_sha256": "364d679685cad2ce2c17cedf7d9724c0acd6ade0a9ed731f33bd28a9f72ee942",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 21.617312100017443,
+    "finished_at": "2026-10-11T15:38:27.718774+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:06.100765+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a8af521a3941edfeb6540b26133161cb371666c19f976bd3e8de035110296018",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request mentions 'one-hour-ish horizon, public data, standard setup' but lacks an explicit supported region_id (GD, ERCO, CISO, ISNE, MISO, SWPP) and exact horizon_minutes (60, 120, 180). Please confirm region and exact horizon, and specify cost_shortfall (10,20,40) if intended; cost_reserve is fixed at 1.\", \"reason\": \"Explicit study fields are unresolved: region_id not provided, horizon described as 'one-hour-ish' not matching supported exact horizons (60,120,180). Public data and standard setup interpreted as allowed observed data sources and cost_reserve=1, but region and exact horizon required for admissible study.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The request mentions 'one-hour-ish horizon, public data, standard setup' but lacks an explicit supported region_id (GD, ERCO, CISO, ISNE, MISO, SWPP) and exact horizon_minutes (60, 120, 180). Please confirm region and exact horizon, and specify cost_shortfall (10,20,40) if intended; cost_reserve is fixed at 1.",
+      "reason": "Explicit study fields are unresolved: region_id not provided, horizon described as 'one-hour-ish' not matching supported exact horizons (60,120,180). Public data and standard setup interpreted as allowed observed data sources and cost_reserve=1, but region and exact horizon required for admissible study.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 373,
+      "completion_tokens": 2100,
+      "total_tokens": 2473,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1893
+      }
+    },
+    "response_sha256": "364d679685cad2ce2c17cedf7d9724c0acd6ade0a9ed731f33bd28a9f72ee942",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 21.617312100017443,
+    "finished_at": "2026-10-11T15:38:27.718774+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 21.617312100017443,
+  "transport_complete": true
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-ij7q7zsqdu",
+  "object": "chat.completion",
+  "created": 1791733120,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"ISNE\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 40\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request matches supported region, horizon, and cost parameters; no estimation of MW requested aligns with protocol constraints.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "completion_tokens": 111,
+    "total_tokens": 513,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

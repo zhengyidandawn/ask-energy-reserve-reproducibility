@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region, horizon, and shortfall cost. The standard 730/30/30 rolling split is noted but not included in the fields as it pertains to the study's methodology rather than its parameters. The request does not ask for estimation of MW, which is consistent with an energy reserve study setup.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 144,
+    "total_tokens": 549,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733105,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-24b6d68c-ae31-94a3-a5da-89305a3b4b85"
+}

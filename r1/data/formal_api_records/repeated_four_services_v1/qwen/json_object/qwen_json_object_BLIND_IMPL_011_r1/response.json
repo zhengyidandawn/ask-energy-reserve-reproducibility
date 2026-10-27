@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is unclear and requires more specific details to proceed. Numerical outputs are produced by the verified workflow when relevant.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The terms 'normal horizon', 'normal cS', and 'standard public validation' are ambiguous and need to be specified with exact values or parameters.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 633,
+    "completion_tokens": 145,
+    "total_tokens": 778,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612642,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-42c5616b-0e63-9cee-bfb6-eb4dc549fc7b"
+}

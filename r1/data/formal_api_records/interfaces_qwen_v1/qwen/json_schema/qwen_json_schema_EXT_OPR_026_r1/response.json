@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"数值输出将由验证过的工作流产生，但需要首先澄清或补充请求中的信息。\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"缺少或待确认的字段包括：region_id, horizon_minutes。这些信息对于完成向上备用研究是必要的。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 642,
+    "completion_tokens": 139,
+    "total_tokens": 781,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614671,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-493665bd-1589-96a1-8b04-4b325b8b1ad6"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "as-0imqfxu1xa",
+  "object": "chat.completion",
+  "created": 1791733115,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 40\n    },\n    \"clarification_question\": \"Region identifier 'ERCO' is not supported. Did you mean 'ERCOT'?\",\n    \"reason\": \"The region identifier provided does not match any of the supported regions. Supported regions are GD, ERCOT, CISO, ISNE, MISO, and SWPP.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 141,
+    "total_tokens": 527
+  }
+}

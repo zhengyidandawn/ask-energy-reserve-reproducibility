@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_026_r5",
+  "case_id": "EXT_OPR_026",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 5,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "4d8534734436ec095ac8d542f939c379c1299311977ed4ae36ce1e63a79e3bcf",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:30:14.308761+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1492,
+    "completion_tokens": 794,
+    "total_tokens": 2286,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 610
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "14274404-9417-4293-a28a-66aebfb1f16f",
+  "provider_created": 1791621015,
+  "system_fingerprint": null,
+  "response_sha256": "06c6993275c909bd805ec75c4753087a12c6f5206ca7bb919e270f08d70770b8",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_026",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Missing or ambiguous fields: region_id and horizon_minutes. The operator specified cost_shortfall=20 (valid) but explicitly stated region and horizon are still being confirmed with dispatch and must not be auto-filled. These two required schema fields cannot be inferred or defaulted. Numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced by the verified numerical workflow only; this request is held for clarification pending confirmed region_id and horizon_minutes. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "Missing or ambiguous fields: region_id and horizon_minutes. The operator specified cost_shortfall=20 (valid) but explicitly stated region and horizon are still being confirmed with dispatch and must not be auto-filled. These two required schema fields cannot be inferred or defaulted.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "Numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced by the verified numerical workflow only; this request is held for clarification pending confirmed region_id and horizon_minutes.",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": true
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 6.263256500009447,
+  "request_finished_at": "2026-10-10T08:30:20.571791+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-avgapaeg5e",
+  "object": "chat.completion",
+  "created": 1791733040,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"MISO\",\n        \"horizon_minutes\": 60,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 10\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request specifies supported region MISO and uses default values for cost_reserve and cost_shortfall. Horizon_minutes defaults to 60 as no value was explicitly provided.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 124,
+    "total_tokens": 493,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

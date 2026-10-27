@@ -1,0 +1,22 @@
+{
+  "id": "as-14w108iq7b",
+  "object": "chat.completion",
+  "created": 1791614293,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"study_schema\": null,\n    \"decision\": \"accept\",\n    \"reason\": \"Operator request aligns with defaults; no prohibited elements detected.\",\n    \"explanation\": \"Numerical outputs are produced by the verified workflow only.\",\n    \"audit_log\": {\n        \"triggered_rules\": [],\n        \"human_approval_required\": true\n    },\n    \"workflow\": [],\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Normal reserve workflow without changing defaults.\",\n            \"data_dictionary\": \"Default admissible and forbidden variables applied.\",\n            \"decision_time_variable_boundary\": \"No future or unavailable data present in request.\",\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            },\n            \"numerical_workflow_outputs\": \"None (computed by verified workflow only)\",\n            \"audit_log\": \"Human approval required; no triggered rules.\"\n        }\n    ]\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 689,
+    "completion_tokens": 360,
+    "total_tokens": 1049
+  }
+}

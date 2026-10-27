@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_NUM_003",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:42:23.201545+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "15db12cd809e779006d83acc1e329fb6ad79f60b9f4159f845047a81192f831f",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"ISNE\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Request demands a 95% confidence interval for ISNE reserve result despite workflow not having run, which constitutes future information and is explicitly rejected by protocol. Region ISNE is supported, but horizon_minutes and cost_shortfall are unresolved; the future-information condition mandates reject. Cost_reserve fixed at 1 per study protocol.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "ISNE",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "Request demands a 95% confidence interval for ISNE reserve result despite workflow not having run, which constitutes future information and is explicitly rejected by protocol. Region ISNE is supported, but horizon_minutes and cost_shortfall are unresolved; the future-information condition mandates reject. Cost_reserve fixed at 1 per study protocol.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 1884,
+    "total_tokens": 2264,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1754
+    }
+  },
+  "response_sha256": "daadcd37d461da3b4d8a1de0c13b5af2c7a017792fa9c69b03a6b5b1acc154fc",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 17.08202699990943,
+  "finished_at": "2026-10-11T15:42:40.284367+00:00"
+}

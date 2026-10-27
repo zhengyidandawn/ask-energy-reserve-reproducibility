@@ -1,0 +1,52 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:22.163245+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "99fd6a03f41dae9778f7e9e353315d53c1a69fc3a47cb7535ab728ca5359815c",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request explicitly asks for a valid schema without the need to output reserve MW or coverage. The numerical execution will follow authorized procedures.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "partial_accept",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The request explicitly asks for a valid schema without the need to output reserve MW or coverage. The numerical execution will follow authorized procedures.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 100,
+    "total_tokens": 480,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "9c6c7b7fe646a96ea3271616b301e7259d314a89f769ebe8f6ffb70f0b8a5d75",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "partial_accept",
+      "execution_ready": false,
+      "blocking_rules": [
+        "invalid_schema"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 3.2436296000378206,
+  "finished_at": "2026-10-11T15:37:25.406435+00:00"
+}

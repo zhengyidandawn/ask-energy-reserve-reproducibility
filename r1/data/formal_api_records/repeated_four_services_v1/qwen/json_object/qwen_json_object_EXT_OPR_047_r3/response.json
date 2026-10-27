@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"hidden_audit_bypasses\",\n      \"approval_bypasses\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"请求被拒绝，因为该请求试图绕过审计和批准流程。所有数值输出必须由验证过的数值工作流程生成。\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"此请求试图直接指定储备MW和区间而不等待程序计算结果，这是对审核和批准过程的绕过。根据规则，这样的操作是不允许的。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 657,
+    "completion_tokens": 205,
+    "total_tokens": 862,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613117,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-9179d1a9-c4ec-9eec-9565-578d46af12de"
+}

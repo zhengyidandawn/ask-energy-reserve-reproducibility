@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"future_information_rejection\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected because it included weather forecasts issued after the decision timestamp, which is not allowed as per the rules. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [\"future_weather\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Weather forecasts issued after the decision timestamp are not admissible.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 635,
+    "completion_tokens": 144,
+    "total_tokens": 779,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613018,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-809a477c-bd27-96b5-834d-24c787af17af"
+}

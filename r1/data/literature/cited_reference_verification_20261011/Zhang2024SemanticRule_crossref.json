@@ -1,0 +1,558 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          2
+        ]
+      ],
+      "date-time": "2026-10-02T20:15:07Z",
+      "timestamp": 1790972107255,
+      "version": "4.1.0"
+    },
+    "reference-count": 30,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2024-10-01T00:00:00Z",
+          "timestamp": 1727740800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2024-10-01T00:00:00Z",
+          "timestamp": 1727740800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              8
+            ]
+          ],
+          "date-time": "2024-05-08T00:00:00Z",
+          "timestamp": 1715126400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100009123",
+        "name": "Norges Teknisk-Naturvitenskapelige Universitet",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100009123",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Advanced Engineering Informatics"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.aei.2024.102587",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          17
+        ]
+      ],
+      "date-time": "2024-05-17T08:42:05Z",
+      "timestamp": 1715935325000
+    },
+    "page": "102587",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 16,
+    "special_numbering": "PA",
+    "title": [
+      "Semantic Web Rule Language-based approach for implementing Knowledge-Based Engineering systems"
+    ],
+    "prefix": "10.1016",
+    "volume": "62",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4201-8535",
+        "authenticated-orcid": false,
+        "given": "Liang",
+        "family": "Zhang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2729-489X",
+        "authenticated-orcid": false,
+        "given": "Andrei",
+        "family": "Lobov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "2",
+        "key": "10.1016/j.aei.2024.102587_b1",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.1016/j.aei.2012.02.002",
+        "article-title": "Knowledge based engineering: Between AI and CAD. Review of a language based technology to support engineering design",
+        "volume": "26",
+        "author": "La Rocca",
+        "year": "2012",
+        "journal-title": "Adv. Eng. Inform."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b2",
+        "series-title": "Multidisciplinary Design Optimization Supported by Knowledge Based Engineering",
+        "author": "Sobieszczanski-Sobieski",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "45",
+        "DOI": "10.1016/j.cad.2014.06.001",
+        "article-title": "Semantic interoperability of knowledge in feature-based CAD models",
+        "volume": "56",
+        "author": "Abdul-Ghafour",
+        "year": "2014",
+        "journal-title": "Comput. Aided Des."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b4",
+        "doi-asserted-by": "crossref",
+        "first-page": "1021",
+        "DOI": "10.1016/j.promfg.2020.10.143",
+        "article-title": "Ontology-based model generation to support customizable KBE frameworks",
+        "volume": "51",
+        "author": "Tran",
+        "year": "2020",
+        "journal-title": "Procedia Manuf."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b5",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.rcim.2021.102173",
+        "article-title": "Ontology-based information modeling method for digital twin creation of as-fabricated machining parts",
+        "volume": "72",
+        "author": "Dai",
+        "year": "2021",
+        "journal-title": "Robot. Comput.-Integr. Manuf."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b6",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.aei.2021.101260",
+        "article-title": "Feature-based ontological framework for semantic interoperability in product development",
+        "volume": "48",
+        "author": "Gupta",
+        "year": "2021",
+        "journal-title": "Adv. Eng. Inform."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b7",
+        "doi-asserted-by": "crossref",
+        "first-page": "270",
+        "DOI": "10.1016/j.jmsy.2023.02.012",
+        "article-title": "An ontology-based engineering system to support aircraft manufacturing system design",
+        "volume": "68",
+        "author": "Arista",
+        "year": "2023",
+        "journal-title": "J. Manuf. Syst."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b8",
+        "doi-asserted-by": "crossref",
+        "unstructured": "A. Raju Kulkarni, M. Hoogreef, G. La Rocca, Combining semantic web technologies and KBE to solve industrial MDO problems, in: 18th AIAA/ISSMO Multidisciplinary Analysis and Optimization Conference, 2017, p. 3823.",
+        "DOI": "10.2514/6.2017-3823"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.aei.2024.102587_b9",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.1016/j.aei.2011.06.004",
+        "article-title": "A critical review of knowledge-based engineering: An identification of research challenges",
+        "volume": "26",
+        "author": "Verhagen",
+        "year": "2012",
+        "journal-title": "Adv. Eng. Inform."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b10",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.aei.2023.101892",
+        "article-title": "The evolution of knowledge-based engineering from a design research perspective: Literature review 2012–2021",
+        "volume": "55",
+        "author": "Kügler",
+        "year": "2023",
+        "journal-title": "Adv. Eng. Inform."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b11",
+        "series-title": "Artificial Intelligence: a Modern Approach",
+        "author": "Russell",
+        "year": "2021"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.aei.2024.102587_b12",
+        "doi-asserted-by": "crossref",
+        "first-page": "131",
+        "DOI": "10.1080/09544828.2018.1448927",
+        "article-title": "Task categorisation for identification of design automation opportunities",
+        "volume": "29",
+        "author": "Rigger",
+        "year": "2018",
+        "journal-title": "J. Eng. Des."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b13",
+        "article-title": "Procedural attachment",
+        "volume": "543",
+        "author": "Steels",
+        "year": "1979",
+        "journal-title": "Proc. Artif. Intell. Memo"
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b14",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.aei.2021.101492",
+        "article-title": "Integration of parametric modelling in web-based knowledge-based engineering applications",
+        "volume": "51",
+        "author": "Ortner-Pichler",
+        "year": "2022",
+        "journal-title": "Adv. Eng. Inform."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b15",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.aei.2020.101088",
+        "article-title": "From form features to semantic features in existing MCAD: An ontological approach",
+        "volume": "44",
+        "author": "Mandorli",
+        "year": "2020",
+        "journal-title": "Adv. Eng. Inform."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b16",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.aei.2022.101537",
+        "article-title": "Engineering knowledge formalization and proposition for informatics development towards a CAD-integrated DfX system for product design",
+        "volume": "51",
+        "author": "Favi",
+        "year": "2022",
+        "journal-title": "Adv. Eng. Inform."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b17",
+        "doi-asserted-by": "crossref",
+        "first-page": "2121",
+        "DOI": "10.1007/s00170-018-2099-2",
+        "article-title": "An ontology-based product design framework for manufacturability verification and knowledge reuse",
+        "volume": "99",
+        "author": "Li",
+        "year": "2018",
+        "journal-title": "Int. J. Adv. Manuf. Technol."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.aei.2024.102587_b18",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1115/1.4048127",
+        "article-title": "An ontology-based framework for decision support in assembly variant design",
+        "volume": "21",
+        "author": "Das",
+        "year": "2021",
+        "journal-title": "J. Comput. Inf. Sci. Eng."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.aei.2024.102587_b19",
+        "doi-asserted-by": "crossref",
+        "first-page": "1416",
+        "DOI": "10.1002/spe.2961",
+        "article-title": "Reusability affecting factors and software metrics for reusability: A systematic literature review",
+        "volume": "51",
+        "author": "Mehboob",
+        "year": "2021",
+        "journal-title": "Softw. - Pract. Exp."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b20",
+        "series-title": "Systems and Software Engineering - Systems and Software Quality Requirements and Evaluation (SQuaRE) - System and Software Quality Models",
+        "author": "ISO",
+        "year": "2011"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.aei.2024.102587_b21",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1038/sdata.2016.18",
+        "article-title": "The FAIR guiding principles for scientific data management and stewardship",
+        "volume": "3",
+        "author": "Wilkinson",
+        "year": "2016",
+        "journal-title": "Sci. Data"
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b22",
+        "doi-asserted-by": "crossref",
+        "first-page": "946",
+        "DOI": "10.1016/j.future.2019.10.006",
+        "article-title": "Implementation-independent function reuse",
+        "volume": "110",
+        "author": "De Meester",
+        "year": "2020",
+        "journal-title": "Future Gener. Comput. Syst."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.aei.2024.102587_b23",
+        "doi-asserted-by": "crossref",
+        "first-page": "153",
+        "DOI": "10.1145/62061.62062",
+        "article-title": "Semantic data models",
+        "volume": "20",
+        "author": "Peckham",
+        "year": "1988",
+        "journal-title": "ACM Comput. Surv."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.aei.2024.102587_b24",
+        "doi-asserted-by": "crossref",
+        "first-page": "34",
+        "DOI": "10.1038/scientificamerican0501-34",
+        "article-title": "The semantic web",
+        "volume": "284",
+        "author": "Berners-Lee",
+        "year": "2001",
+        "journal-title": "Sci. Am."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b25",
+        "article-title": "Concept of product complexity modeling in the development of a machine shaft",
+        "author": "Pokojski",
+        "year": "2017",
+        "journal-title": "Manag. Prod. Eng. Rev."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b26",
+        "doi-asserted-by": "crossref",
+        "first-page": "10",
+        "DOI": "10.1016/j.cad.2014.10.008",
+        "article-title": "Identifying and constructing elemental parts of shafts based on conditional random fields model",
+        "volume": "62",
+        "author": "Wen",
+        "year": "2015",
+        "journal-title": "Comput. Aided Des."
+      },
+      {
+        "issue": "5–6",
+        "key": "10.1016/j.aei.2024.102587_b27",
+        "doi-asserted-by": "crossref",
+        "first-page": "549",
+        "DOI": "10.1080/01969720701346132",
+        "article-title": "Design information handling in a knowledge based intelligent design system",
+        "volume": "38",
+        "author": "Yang",
+        "year": "2007",
+        "journal-title": "Cybern. Syst. Int. J."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.aei.2024.102587_b28",
+        "doi-asserted-by": "crossref",
+        "first-page": "4",
+        "DOI": "10.1145/2757001.2757003",
+        "article-title": "The protégé project: a look back and a look forward",
+        "volume": "1",
+        "author": "Musen",
+        "year": "2015",
+        "journal-title": "AI Matter."
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b29",
+        "series-title": "Apache Jena Fuseki SPARQL server",
+        "author": "Apache.org",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.aei.2024.102587_b30",
+        "series-title": "Integrate Openllet SWRL reasoner to Apache Jena Fuseki: Step by step guide",
+        "author": "Miguel2617@Github.com",
+        "year": "2023"
+      }
+    ],
+    "container-title": [
+      "Advanced Engineering Informatics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1474034624002350?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1474034624002350?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          2
+        ]
+      ],
+      "date-time": "2024-12-02T03:57:23Z",
+      "timestamp": 1733111843000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1474034624002350"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          10
+        ]
+      ]
+    },
+    "references-count": 30,
+    "alternative-id": [
+      "S1474034624002350"
+    ],
+    "URL": "https://doi.org/10.1016/j.aei.2024.102587",
+    "relation": {},
+    "ISSN": [
+      "1474-0346"
+    ],
+    "issn-type": [
+      {
+        "value": "1474-0346",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          10
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Semantic Web Rule Language-based approach for implementing Knowledge-Based Engineering systems",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Advanced Engineering Informatics",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.aei.2024.102587",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2024 The Author(s). Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "102587"
+  }
+}

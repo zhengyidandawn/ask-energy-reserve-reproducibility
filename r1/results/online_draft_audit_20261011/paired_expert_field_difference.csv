@@ -1,0 +1,5 @@
+﻿service,requests_with_fields,field_accuracy_difference,ci_low,ci_high,p_value,p_holm,expert_reference,scope
+deepseek,18,0.05833333333333333,0.017094017094017096,0.10205389848246971,0.06244687765611719,0.24978751062446877,mean of three existing expert plans per request,field agreement in the recorded packet; human verification time remains separate
+qwen,18,0.033333333333333326,-0.04504504504504505,0.09420631665299418,0.5299235038248088,1.0,mean of three existing expert plans per request,field agreement in the recorded packet; human verification time remains separate
+ernie,18,0.023333333333333327,-0.05417214912280702,0.08372093023255812,0.6877156142192891,1.0,mean of three existing expert plans per request,field agreement in the recorded packet; human verification time remains separate
+hunyuan,18,0.048333333333333325,0.007017543859649127,0.09,0.12379381030948453,0.37138143092845355,mean of three existing expert plans per request,field agreement in the recorded packet; human verification time remains separate

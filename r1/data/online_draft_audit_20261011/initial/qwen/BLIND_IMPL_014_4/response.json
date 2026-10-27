@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a MISO case with default values for cost_reserve (c_R) and cost_shortfall (c_S). The default evidence trace is understood to be the supported set of data: observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather. Since no specific horizon was mentioned, the shortest supported horizon (60 minutes) is used.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 152,
+    "total_tokens": 522,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733048,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-a62b43bf-46f6-9960-87a7-e554a18da440"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"approval_bypass\", \"system_prompt_override\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was to produce numerical outputs directly, bypassing the required audit and approval process. This is not acceptable as it violates the requirement for all numerical outputs to be generated only by the verified numerical workflow with proper auditing.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The instruction attempts to override the system's policy, requiring the LLM to generate numerical values which is strictly prohibited. The generation of such outputs must be done by the verified numerical workflow, ensuring integrity and adherence to the study's standards.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 190,
+    "total_tokens": 826,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613449,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-5313eb79-e735-9e65-b7e9-b25edd916e9d"
+}

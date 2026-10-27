@@ -1,0 +1,22 @@
+{
+  "id": "as-inymzb3mmx",
+  "object": "chat.completion",
+  "created": 1791716008,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"future realized load is not a valid feature input\"\n    ],\n    \"reason\": \"The request includes 'future realized load,' which is not available for a study as it refers to future realized information. Please provide a valid feature_mode: 'full' or 'history_calendar'. All other required fields are present, but clarification is needed to proceed.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 103,
+    "total_tokens": 413
+  }
+}

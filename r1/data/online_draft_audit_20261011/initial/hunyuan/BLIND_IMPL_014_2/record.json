@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_IMPL_014",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:39:52.782397+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "421dc075bcdf70eeb7f3b475290b0c2b266681b22148dd85b219988f02abd76b",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"MISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please specify horizon_minutes (supported: 60, 120, 180) and cost_shortfall (supported: 10, 20, 40) for the MISO case, as the protocol does not define defaults for these fields.\", \"reason\": \"Region MISO is supported and cost_reserve is fixed at 1 per study protocol, but horizon_minutes and cost_shortfall are explicitly unresolved (user referenced 'default' which is not defined for these fields in the protocol). Clarification is required before the study can proceed.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "MISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Please specify horizon_minutes (supported: 60, 120, 180) and cost_shortfall (supported: 10, 20, 40) for the MISO case, as the protocol does not define defaults for these fields.",
+    "reason": "Region MISO is supported and cost_reserve is fixed at 1 per study protocol, but horizon_minutes and cost_shortfall are explicitly unresolved (user referenced 'default' which is not defined for these fields in the protocol). Clarification is required before the study can proceed.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 1507,
+    "total_tokens": 1875,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1336
+    }
+  },
+  "response_sha256": "2ebe56107681b142093df0fec139f1201dc36ffc705ba73b699e92f0e244db5c",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 13.185966999968514,
+  "finished_at": "2026-10-11T15:40:05.968712+00:00"
+}

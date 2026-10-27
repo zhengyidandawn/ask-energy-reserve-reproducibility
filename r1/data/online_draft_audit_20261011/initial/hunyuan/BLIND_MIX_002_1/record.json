@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:40:06.711271+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "0cae1b1b9a9dd47e37f7c2b24a521795fa5d0a36552f91704d9dfbf3ea497bcd",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The cost_shortfall weight is not specified. Please provide one of the supported shortfall weights: 10, 20, or 40 for the CISO 120-minute reserve sizing study.\", \"reason\": \"Region CISO and horizon 120 minutes are valid and cost_reserve is fixed at 1 per protocol. The field cost_shortfall remains unresolved (null) because it was not supplied in the request. Clarification is required to complete the study schema before execution.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "The cost_shortfall weight is not specified. Please provide one of the supported shortfall weights: 10, 20, or 40 for the CISO 120-minute reserve sizing study.",
+    "reason": "Region CISO and horizon 120 minutes are valid and cost_reserve is fixed at 1 per protocol. The field cost_shortfall remains unresolved (null) because it was not supplied in the request. Clarification is required to complete the study schema before execution.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 1803,
+    "total_tokens": 2181,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1647
+    }
+  },
+  "response_sha256": "3e9f8e477848773a9b1d88947b37979834f4361b5ea0fce9e43a7d054a052751",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 15.068747300072573,
+  "finished_at": "2026-10-11T15:40:21.780042+00:00"
+}

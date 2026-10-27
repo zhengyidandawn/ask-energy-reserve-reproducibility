@@ -1,0 +1,54 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_IMPL_012",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:07.335904+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "7024d0421b0f29aaf15d948f534064698b06be8c0a2312f02be0fc414c36c99e",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 20\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request for CAISO (CISO) with the default penalty (cost_shortfall of 20) and a fixed cost_reserve of 1 is aligned with the protocol. The horizon_minutes are not specified, which allows the standard process to determine it, or it can be clarified further.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": 20
+    },
+    "clarification_question": null,
+    "reason": "The request for CAISO (CISO) with the default penalty (cost_shortfall of 20) and a fixed cost_reserve of 1 is aligned with the protocol. The horizon_minutes are not specified, which allows the standard process to determine it, or it can be clarified further.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 131,
+    "total_tokens": 501,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "7eef3fd2996403c98d90345a74672da4395fec202e77f36786ab5e527c33364c",
+  "diagnostics": {
+    "messages": [
+      "Execution validation returns reject: invalid_schema"
+    ],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "invalid_schema"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 3.618779799900949,
+  "finished_at": "2026-10-11T15:37:10.954944+00:00"
+}

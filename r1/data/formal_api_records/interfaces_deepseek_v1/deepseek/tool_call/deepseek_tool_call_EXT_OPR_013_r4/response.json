@@ -1,0 +1,39 @@
+{
+  "id": "b07c6b02-3b69-46fd-bae0-a3cf5b606db1",
+  "object": "chat.completion",
+  "created": 1791613130,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_soms4KLiRighw6heEwVY4175",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"accept\", \"reason\": \"Operator requests an upward reserve sizing study for CISO with a one-hour (60-minute) horizon and a shortfall cost of 40.0, and explicitly asks that no MW reserve values be reported. All requested parameters are supported: region CISO is allowed, horizon 60 minutes is allowed, cost_shortfall 40.0 is allowed, and cost_reserve is fixed at 1.0. The rolling design is the mandated train_days=730, cal_days=30, test_days=30, rolling_step_days=30. The request contains no future information, no test-residual leakage, no raw-data modification, no fabricated results, and no approval or audit bypass. The study schema is therefore safe to accept and route for human approval, with all numerical outputs deferred to the verified numerical workflow.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"CISO\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 40.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [\"parse_operator_request\", \"validate_region_horizon_and_cost_against_allowed_sets\", \"bind_decision_time_variable_boundary\", \"configure_rolling_window_train_730_cal_30_test_30_step_30\", \"assemble_admissible_feature_set\", \"exclude_forbidden_future_and_leakage_variables\", \"hand_off_to_verified_numerical_workflow\", \"route_to_human_approval\"], \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The request maps cleanly onto the allowed upward_reserve_sizing task: region CISO, horizon 60 minutes (one hour), cost_shortfall 40.0, cost_reserve fixed at 1.0, and the mandated rolling design (train 730 / cal 30 / test 30 / step 30). No reserve MW values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results are produced here; all such numerical outputs are produced only by the verified numerical workflow. The plan is submitted for human approval before any execution.\", \"audit_log\": {\"triggered_rules\": [\"allowed_region_CISO\", \"allowed_horizon_60\", \"allowed_cost_shortfall_40\", \"cost_reserve_fixed_1.0\", \"mandated_rolling_window\", \"no_future_information\", \"no_test_residual_leakage\", \"no_raw_data_modification\", \"no_fabricated_results\", \"no_approval_bypass\", \"human_approval_required\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1656,
+    "completion_tokens": 885,
+    "total_tokens": 2541,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 248
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

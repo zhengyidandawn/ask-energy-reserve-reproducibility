@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The region is a required field for the study and must be one of the allowed regions. The numerical outputs will be produced by the verified workflow once all necessary information is provided.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The region_id is missing, which is a required parameter for the study. Please specify one of the following allowed regions: 'CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP'.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 638,
+    "completion_tokens": 178,
+    "total_tokens": 816,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612983,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-056e052c-c107-9216-8242-fea4c1be88d7"
+}

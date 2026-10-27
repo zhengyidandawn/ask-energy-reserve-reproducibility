@@ -1,0 +1,80 @@
+{
+  "task_id": "hunyuan_EXT_OPR_031_r1_turn1",
+  "case_id": "EXT_OPR_031",
+  "packet": "question_driven_clarification_14",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 1,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "1f1cba0b375507a679b61f03ef3c185a956144e54d6de791614f67fbdabd2ef7",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-11T05:56:05.177798+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 663,
+    "completion_tokens": 3041,
+    "total_tokens": 3704,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3034
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "2b731ef6-b468-4fdd-a6a6-957e6f11c0ea",
+  "provider_created": 1791698167,
+  "system_fingerprint": null,
+  "response_sha256": "d82013fd91b768d7b7f8075b0e42ce2665ec35285444ec54506cbd766dc35aed",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_031",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "",
+    "schema_completeness": false,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": false,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": false,
+    "explanation_grounding": false,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "{}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "": ""
+  },
+  "latency_seconds": 28.083344399929047,
+  "request_finished_at": "2026-10-11T05:56:33.260948+00:00"
+}

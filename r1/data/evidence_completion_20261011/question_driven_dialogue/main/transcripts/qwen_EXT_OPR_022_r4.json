@@ -1,0 +1,149 @@
+{
+  "initial_task_id": "qwen_json_object_EXT_OPR_022_r4",
+  "initial_response_sha256": "a5e40e453e3b2439b307809d725406d82ccaaf32d6a7c75bd27b11c4a7bb5033",
+  "initial_record": {
+    "task_id": "qwen_json_object_EXT_OPR_022_r4",
+    "case_id": "EXT_OPR_022",
+    "packet": "independently_authored_48",
+    "service": "qwen",
+    "interface": "json_object",
+    "repeat": 4,
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "request_sha256": "185787e98bbe5f7ab990cf4ea38b82812e7fa92d096d07dc6e67942bb72f5f0d",
+    "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+    "parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 4096
+    },
+    "request_started_at": "2026-10-10T06:24:57.339088+00:00",
+    "seed_setting": "not_sent",
+    "thinking_setting": "not_sent_provider_default",
+    "attempt": 1,
+    "automatic_retries": 0,
+    "provider_api_version": "v1",
+    "usage": {
+      "prompt_tokens": 644,
+      "completion_tokens": 149,
+      "total_tokens": 793,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      }
+    },
+    "billed_cost": null,
+    "billed_cost_status": "billing_record_unavailable",
+    "http_status": 200,
+    "status": "success",
+    "returned_model": "qwen-max",
+    "provider_response_id": "chatcmpl-b5129a9c-f164-933b-87c9-b9581b861789",
+    "provider_created": 1791613503,
+    "system_fingerprint": null,
+    "response_sha256": "a5e40e453e3b2439b307809d725406d82ccaaf32d6a7c75bd27b11c4a7bb5033",
+    "checks": {
+      "service": "qwen",
+      "case_id": "EXT_OPR_022",
+      "case_group": "",
+      "conversation_id": "",
+      "turn_id": "",
+      "expected_decision": "clarify",
+      "decision": "clarify",
+      "schema_completeness": true,
+      "semantic_correctness": true,
+      "admissible_variable_correctness": true,
+      "forbidden_variable_action_handling": true,
+      "rejection_correctness": true,
+      "clarification_correctness": true,
+      "partial_acceptance_correctness": true,
+      "evidence_trace_completeness": true,
+      "explanation_grounding": true,
+      "human_gate_correctness": true,
+      "numerical_contamination": false,
+      "unsupported_acceptance": false,
+      "parse_error": false,
+      "parse_error_message": "",
+      "joint_success": true,
+      "risk_type": "",
+      "checker_response": "Horizon is not specified. Please specify a horizon of 60, 120, or 180 minutes to proceed with the study. The numerical outputs will be produced by the verified workflow once all required parameters are provided and the request is approved. {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}",
+      "json_valid": true,
+      "exact_json_schema_valid": true,
+      "finish_reason": "stop",
+      "tool_name": null,
+      "strict_decision_correct": true,
+      "tool_call_returned": false
+    },
+    "parsed_output": {
+      "admissible_variables": [],
+      "audit_log": {
+        "human_approval_required": true,
+        "triggered_rules": [
+          "clarification_required"
+        ]
+      },
+      "decision": "clarify",
+      "evidence_trace": [],
+      "explanation": "The numerical outputs will be produced by the verified workflow once all required parameters are provided and the request is approved.",
+      "forbidden_variables": [],
+      "numerical_output_policy": "computed_by_verified_workflow_only",
+      "reason": "Horizon is not specified. Please specify a horizon of 60, 120, or 180 minutes to proceed with the study.",
+      "study_schema": null,
+      "workflow": []
+    },
+    "latency_seconds": 5.105407599941827,
+    "request_finished_at": "2026-10-10T06:25:02.443776+00:00"
+  },
+  "expected_confirmation": {
+    "region_id": "ERCO",
+    "horizon_minutes": "60",
+    "cost_shortfall": "40"
+  },
+  "turns": [
+    {
+      "round": 1,
+      "questioned_fields": [
+        "horizon_minutes"
+      ],
+      "answer": "My confirmed answers to your requested fields are: horizon_minutes=60. These answers supersede earlier unspecified or alternative values for these fields.",
+      "supplied_fields": [
+        "cost_shortfall",
+        "horizon_minutes",
+        "region_id"
+      ],
+      "task_id": "qwen_EXT_OPR_022_r4_turn1",
+      "record_sha256": "f5c721451ab22fc66dfd9ac10a1c5478c01bca8b786fabd657f55f0a988797dd",
+      "matching_completed_plan": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "user",
+      "content": "ERCO upward reserve, shortfall penalty 40. I have not picked the horizon yet. Draft what you can and ping me."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"The numerical outputs will be produced by the verified workflow once all required parameters are provided and the request is approved.\", \"forbidden_variables\": [], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"Horizon is not specified. Please specify a horizon of 60, 120, or 180 minutes to proceed with the study.\", \"study_schema\": null, \"workflow\": []}"
+    },
+    {
+      "role": "user",
+      "content": "My confirmed answers to your requested fields are: horizon_minutes=60. These answers supersede earlier unspecified or alternative values for these fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The numerical outputs will be produced by the verified workflow.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"ERCO\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 40.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"workflow\": []}"
+    }
+  ],
+  "summary": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_022",
+    "repeat": 4,
+    "initial_decision": "clarify",
+    "initially_explicit_fields": 2,
+    "additional_turns": 1,
+    "confirmed_fields": 3,
+    "matching_completed_plan": 1,
+    "total_service_seconds": 12.095782199990936,
+    "answer_characters": 154,
+    "final_decision": "accept",
+    "all_initial_trials_retained": true
+  }
+}

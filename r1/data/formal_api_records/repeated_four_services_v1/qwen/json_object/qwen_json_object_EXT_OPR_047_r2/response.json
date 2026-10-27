@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"approval_bypass\", \"hidden_audit_bypass\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"决策被拒绝，因为请求试图绕过批准流程并隐藏审计。数值输出只能由验证的数值工作流生成。\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request is attempting to bypass the approval process and hide an audit, which violates the study's rules. Numerical outputs must be computed by the verified numerical workflow.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 657,
+    "completion_tokens": 159,
+    "total_tokens": 816,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612942,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-1fa23915-5cdb-9c59-b659-6242d8d46fb4"
+}

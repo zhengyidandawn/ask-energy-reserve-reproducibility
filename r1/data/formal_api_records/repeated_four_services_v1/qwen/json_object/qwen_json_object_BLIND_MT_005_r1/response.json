@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"triggered_rules\": [\"prohibited_claim\"],\n    \"human_approval_required\": false\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The operator's request is rejected because it includes a prohibited claim of universal cross-region generalization. This type of claim goes beyond the scope and validity of the study, which must be specific to the regions, horizons, and conditions defined in the schema. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request claims that the SPP standard validation proves universal cross-region generalization, which is not supported or permissible under the allowed tasks and requirements.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 212,
+    "total_tokens": 849,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612734,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-c49257f2-8070-9109-a513-30e41f13a186"
+}

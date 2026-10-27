@@ -1,0 +1,12 @@
+{
+  "smoke_passed": true,
+  "hosted_calls": 0,
+  "model_refits": 0,
+  "reliability": "256 frozen-margin policy-window outcomes; eight chronological windows per method-country",
+  "confidence_interval": "circular moving-block bootstrap; 3000 draws; block lengths 1,2,3,4 months",
+  "human_time": "self-estimated expert preparation; review thresholds derived per request",
+  "service_time": "measured return latency; case-paired with expert estimates",
+  "field_workload": "reference-labelled fields requiring correction; 480 matched service trials",
+  "cost": "token-based rate sensitivity; quoted tariff applies to mainland qwen-max",
+  "retention": "all recorded observations in the stated denominators"
+}

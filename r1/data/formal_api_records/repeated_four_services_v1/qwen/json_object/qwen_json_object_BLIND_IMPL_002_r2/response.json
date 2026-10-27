@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is missing or ambiguous on several required details including the specific region, horizon, and cost parameters. Further clarification is needed to proceed with the study.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Missing or ambiguous fields: region_id, horizon_minutes, cost_reserve, cost_shortfall. The operator needs to specify these values for a valid study request.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 632,
+    "completion_tokens": 153,
+    "total_tokens": 785,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612830,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-36228976-92b7-9009-b288-41b025ce4bba"
+}

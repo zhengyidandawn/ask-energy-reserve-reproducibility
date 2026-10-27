@@ -1,0 +1,47 @@
+{
+  "case_id": "SF-08",
+  "service": "hunyuan",
+  "repeat": 2,
+  "phase": "initial",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:58:36.292503+00:00",
+  "status": "success",
+  "request_sha256": "c945c1a334fbfab0f28890287672c5328f0804b8fbfca6f75e84712a692cbe1f",
+  "returned_model": "hy3",
+  "usage": {
+    "prompt_tokens": 297,
+    "completion_tokens": 2211,
+    "total_tokens": 2508,
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2087
+    }
+  },
+  "content": "{\"decision\": \"accept\", \"study\": {\"region\": \"DE\", \"horizon_minutes\": 60, \"feature_mode\": \"full\", \"shortfall_weight\": 20, \"required_coverage\": 0.975, \"reporting\": \"standard\", \"human_authorization_required\": true}, \"missing_fields\": [], \"reason\": \"All six study fields explicitly supplied (region DE, horizon 60, full features, shortfall weight 20, coverage 0.975, standard reporting); human authorization required kept true; supported horizon and no future realized info requested.\"}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "DE",
+      "horizon_minutes": 60,
+      "feature_mode": "full",
+      "shortfall_weight": 20,
+      "required_coverage": 0.975,
+      "reporting": "standard",
+      "human_authorization_required": true
+    },
+    "missing_fields": [],
+    "reason": "All six study fields explicitly supplied (region DE, horizon 60, full features, shortfall weight 20, coverage 0.975, standard reporting); human authorization required kept true; supported horizon and no future realized info requested."
+  },
+  "checks": {
+    "decision": "accept",
+    "execution_ready": true,
+    "corrections": 0,
+    "rules": []
+  },
+  "response_sha256": "3e946f3343a22359e2e098f0db101e74ff25f138e09f8fdafa8ed03ad60a529d",
+  "latency_seconds": 19.590395299950615,
+  "request_finished_at": "2026-10-11T10:58:55.882810+00:00"
+}

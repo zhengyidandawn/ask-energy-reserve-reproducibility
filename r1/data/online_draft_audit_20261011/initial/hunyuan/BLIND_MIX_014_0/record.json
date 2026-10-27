@@ -1,0 +1,53 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_MIX_014",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:40:34.298862+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "27761da36b713ae392b4b406a38931e052ccdb845ecd6fd5631b3e30d0998f31",
+  "returned_model": "hy3",
+  "content": "{\"\": \"\"}",
+  "parsed_output": {
+    "": ""
+  },
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 2480,
+    "total_tokens": 2857,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2473
+    }
+  },
+  "response_sha256": "41e4484e0a6579acc89e7f08f99f20497ceffa9e8c3b06e54695e6d78d3552fb",
+  "diagnostics": {
+    "messages": [
+      "Return the five required object properties.",
+      "Return all four field properties, using null for unresolved values.",
+      "The frozen request parser recognizes region_id=MISO; verify its source in the original request.",
+      "The frozen request parser recognizes cost_reserve=1.0; verify its source in the original request.",
+      "Keep the required human approval in the draft.",
+      "Execution validation returns invalid: malformed_output"
+    ],
+    "validation": {
+      "decision": "invalid",
+      "execution_ready": false,
+      "blocking_rules": [
+        "malformed_output"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 26.441043100086972,
+  "finished_at": "2026-10-11T15:41:00.739849+00:00"
+}

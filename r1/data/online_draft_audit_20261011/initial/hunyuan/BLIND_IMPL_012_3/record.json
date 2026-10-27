@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_IMPL_012",
+  "repeat": 3,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:39:22.085501+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "ba97e4c2fde16402b4a8a2b957842204e31fc164cfe261d3ceb175d12d22b18d",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please specify horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) for the CISO upward reserve study.\", \"reason\": \"Region CISO is supported and cost_reserve is fixed at 1 by protocol, but horizon_minutes and cost_shortfall are not explicitly provided as numeric values (default penalty not a specified weight). Clarification required for unresolved explicit study fields.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Please specify horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) for the CISO upward reserve study.",
+    "reason": "Region CISO is supported and cost_reserve is fixed at 1 by protocol, but horizon_minutes and cost_shortfall are not explicitly provided as numeric values (default penalty not a specified weight). Clarification required for unresolved explicit study fields.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 1381,
+    "total_tokens": 1749,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1232
+    }
+  },
+  "response_sha256": "4efd8098f879b2c9462ea103e1dff0589cd07c68f06b1bb48728145a6cf67015",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 15.873917300021276,
+  "finished_at": "2026-10-11T15:39:37.959554+00:00"
+}

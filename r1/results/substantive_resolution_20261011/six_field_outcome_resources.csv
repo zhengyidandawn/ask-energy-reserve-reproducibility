@@ -1,0 +1,16 @@
+service,outcome,trials,median_service_seconds,mean_field_replacements,currency,mean_list_price_cost,numeric_observations,additional_replies
+deepseek,Boundary rejection,15,0.7721530999988317,,USD,6.1384e-05,0,0
+deepseek,Clarification,15,1.6147764000343159,3,USD,0.000154844,11,15
+deepseek,Correct accepted plan,45,0.878753500059247,0,USD,8.926399999999999e-05,45,0
+qwen,Boundary rejection,15,2.227241599932313,,CNY,0.0013487999999999998,0,0
+qwen,Clarification,15,5.171033099992201,0,CNY,0.0033995199999999996,10,15
+qwen,Correct accepted plan,45,2.399982300004922,0,CNY,0.0015981333333333332,45,0
+ernie,Boundary rejection,15,3.794428300112486,,CNY,0.00044229333333333334,0,0
+ernie,Clarification,15,7.720158299896866,4,CNY,0.0010345066666666667,11,15
+ernie,Correct accepted plan,17,4.0018910999642685,0,CNY,0.0005657411764705883,17,0
+ernie,Incomplete returned plan,28,3.47791714995401,6,CNY,0.00045420000000000004,0,0
+hunyuan,Boundary rejection,15,13.263295500073582,,CNY,0.005062466666666667,0,0
+hunyuan,Clarification,15,25.564896299969405,5,CNY,0.011302866666666666,15,15
+hunyuan,Correct accepted plan,42,13.253937000059523,0,CNY,0.005989285714285714,42,0
+hunyuan,Incomplete returned plan,2,13.139613149978686,6,CNY,0.0054935,0,0
+hunyuan,Incorrect returned plan,1,15.699010799988173,0,CNY,0.005954,0,0

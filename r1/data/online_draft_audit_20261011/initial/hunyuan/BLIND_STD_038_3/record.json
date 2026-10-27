@@ -1,0 +1,53 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_038",
+  "repeat": 3,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:47:53.064886+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "f1c665fcc2600f34e175d96bf306a01ffded24614f5285102bbcf0dc0fefb16d",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ISNE\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 40}, \"clarification_question\": null, \"reason\": \"Request provides valid supported region ISNE, horizon 120, shortfall cost 40; cost_reserve fixed at 1 by protocol. All explicit schema fields resolved, no conflicts. Legitimate negation 'do not estimate MW' preserved as instruction. No unsupported fields or bypass detected.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ISNE",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 40
+    },
+    "clarification_question": null,
+    "reason": "Request provides valid supported region ISNE, horizon 120, shortfall cost 40; cost_reserve fixed at 1 by protocol. All explicit schema fields resolved, no conflicts. Legitimate negation 'do not estimate MW' preserved as instruction. No unsupported fields or bypass detected.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 2183,
+    "total_tokens": 2580,
+    "prompt_tokens_details": {
+      "cached_tokens": 320
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2060
+    }
+  },
+  "response_sha256": "81b910daef2b4b4e3a9e3b2c03eec372091f7b68ee3168404a538c08a7486339",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 24.065942500019446,
+  "finished_at": "2026-10-11T15:48:17.131046+00:00"
+}

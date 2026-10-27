@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request requires clarification on the specific region, horizon, and cost parameters. Numerical outputs are produced by the verified workflow when all necessary details are provided.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator request is missing specific values for region, horizon, and cost. The term 'western public region' needs to be mapped to a valid region ID, and the exact horizon and cost values need to be specified.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 635,
+    "completion_tokens": 166,
+    "total_tokens": 801,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613965,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-c0276c28-0459-9cda-ba07-ebf3518982cc"
+}

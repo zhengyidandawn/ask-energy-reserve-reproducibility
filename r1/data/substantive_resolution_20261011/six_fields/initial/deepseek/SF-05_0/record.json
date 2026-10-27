@@ -1,0 +1,46 @@
+{
+  "case_id": "SF-05",
+  "service": "deepseek",
+  "repeat": 0,
+  "phase": "initial",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:54:49.367009+00:00",
+  "status": "success",
+  "request_sha256": "832d2d2df86c769315b6fc6347ae57b4510f34a5a4094bdf30059ef2febe0fc9",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 311,
+    "completion_tokens": 107,
+    "total_tokens": 418,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 183
+  },
+  "content": "{\n  \"decision\": \"accept\",\n  \"study\": {\n    \"region\": \"DE\",\n    \"horizon_minutes\": 60,\n    \"feature_mode\": \"history_calendar\",\n    \"shortfall_weight\": 20,\n    \"required_coverage\": 0.95,\n    \"reporting\": \"standard\",\n    \"human_authorization_required\": true\n  },\n  \"missing_fields\": [],\n  \"reason\": \"All required study fields are explicitly supplied and the request is supported.\"\n}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "DE",
+      "horizon_minutes": 60,
+      "feature_mode": "history_calendar",
+      "shortfall_weight": 20,
+      "required_coverage": 0.95,
+      "reporting": "standard",
+      "human_authorization_required": true
+    },
+    "missing_fields": [],
+    "reason": "All required study fields are explicitly supplied and the request is supported."
+  },
+  "checks": {
+    "decision": "accept",
+    "execution_ready": true,
+    "corrections": 0,
+    "rules": []
+  },
+  "response_sha256": "a51f55cf89dce7dec3de040dc09a4060bbb3a1ac44a93ffbc18a4d6e14927831",
+  "latency_seconds": 1.0417559000197798,
+  "request_finished_at": "2026-10-11T10:54:50.408459+00:00"
+}

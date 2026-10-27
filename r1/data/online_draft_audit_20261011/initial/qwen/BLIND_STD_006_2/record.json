@@ -1,0 +1,50 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_STD_006",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:38:08.226706+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "1761e9873ffada4980572a5b9f52f2adecd114db7c303414216560d2bc014db0",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid configuration for an energy study. The specified region, ERCO (ERCOT, Texas), is supported, the horizon of 120 minutes is within the supported range, and the shortfall cost of 10 is also supported. No estimation of MW was requested, which aligns with setting up the study parameters without computing specific numerical results.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "The request specifies a valid configuration for an energy study. The specified region, ERCO (ERCOT, Texas), is supported, the horizon of 120 minutes is within the supported range, and the shortfall cost of 10 is also supported. No estimation of MW was requested, which aligns with setting up the study parameters without computing specific numerical results.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 149,
+    "total_tokens": 553,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "af20275876088fac681132eb2f36cec1d0e235896af7c3d461adc4f0d6fe1233",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 4.041132700047456,
+  "finished_at": "2026-10-11T15:38:12.268012+00:00"
+}

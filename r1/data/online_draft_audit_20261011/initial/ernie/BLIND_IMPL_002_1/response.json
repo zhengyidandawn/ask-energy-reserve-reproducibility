@@ -1,0 +1,22 @@
+{
+  "id": "as-nzytg1vn1i",
+  "object": "chat.completion",
+  "created": 1791733025,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request specifies valid region and default penalty scheme but omits horizon and shortfall cost values. Computed results will follow authorized numerical execution once these fields are provided.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 118,
+    "total_tokens": 484
+  }
+}

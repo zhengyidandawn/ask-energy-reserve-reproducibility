@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_tool_call_EXT_OPR_022_r2",
+  "case_id": "EXT_OPR_022",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "tool_call",
+  "repeat": 2,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "c677df021c14f74e9361963b76cc1ab56c59973330a5c78cbc46c4e49bc28ba1",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:11:18.010344+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1521,
+    "completion_tokens": 147,
+    "total_tokens": 1668,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-3e378ce7-a81e-9c82-bf59-5beb6938b6a9",
+  "provider_created": 1791616283,
+  "system_fingerprint": null,
+  "response_sha256": "886526ab88d1dc7d53a6cc071654201307441a8515d2387d1d0a5735750c4c94",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_022",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The horizon for the study has not been specified. A valid horizon must be chosen from 60, 120, or 180 minutes to proceed. A numerical output policy is in place and requires a fully defined study schema, including a specific horizon, before the verified workflow can compute any results. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "The horizon for the study has not been specified. A valid horizon must be chosen from 60, 120, or 180 minutes to proceed.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "A numerical output policy is in place and requires a fully defined study schema, including a specific horizon, before the verified workflow can compute any results.",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": true
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 4.483508300036192,
+  "request_finished_at": "2026-10-10T07:11:22.494251+00:00"
+}

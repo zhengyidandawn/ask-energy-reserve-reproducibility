@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"invalid_horizon\", \"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"需要澄清的是，指定的调度窗口（45分钟）不符合允许的范围。仅接受60、120或180分钟作为调度研究的时长。此外，'安排'的具体含义不明确。数值输出将由已验证的工作流产生。\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"请求中提供了无效的时间窗口长度和一个不清楚的要求('安排')。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 643,
+    "completion_tokens": 173,
+    "total_tokens": 816,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614696,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-cdf68edc-f7f0-9f29-b546-4fa08894e9d6"
+}

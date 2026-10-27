@@ -1,0 +1,39 @@
+{
+  "id": "200f913b-f709-4788-9816-31a822f497c3",
+  "object": "chat.completion",
+  "created": 1791613154,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_qcxqqeyhQk0wHH4CVONu4007",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"The request specifies region_id=CISO and task_type=upward_reserve_sizing, but two required study fields are missing or ambiguous: horizon_minutes (no horizon stated; allowed values are 60, 120, or 180 minutes) and cost_shortfall (no shortfall cost stated; allowed values are 10.0, 20.0, or 40.0). The instruction to \\\"use the usual ones\\\" does not identify a unique admissible value for either field, and the kernel must not invent defaults. Please specify the horizon in minutes (60, 120, or 180) and the shortfall cost (10.0, 20.0, or 40.0).\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"No study schema is approved because the horizon and shortfall cost are ambiguous. Once the missing fields are supplied, the study would use only issue-time admissible variables and the fixed rolling design (train_days=730, cal_days=30, test_days=30, rolling_step_days=30). All numerical outputs — reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results — are produced only by the verified numerical workflow, never by this knowledge layer.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"missing_horizon_minutes\", \"missing_cost_shortfall\", \"no_invented_defaults\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1649,
+    "completion_tokens": 563,
+    "total_tokens": 2212,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 241
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

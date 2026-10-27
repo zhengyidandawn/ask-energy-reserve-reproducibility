@@ -1,0 +1,38 @@
+{
+  "case_id": "SF-13",
+  "service": "qwen",
+  "repeat": 1,
+  "phase": "initial",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:55:37.138137+00:00",
+  "status": "success",
+  "request_sha256": "3bbc166d0a1965716e5d7d985d722471add7a82833a7c6e9838e1b3fab315aa7",
+  "returned_model": "qwen-max",
+  "usage": {
+    "prompt_tokens": 313,
+    "completion_tokens": 61,
+    "total_tokens": 374,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    }
+  },
+  "content": "{\n  \"decision\": \"reject\",\n  \"study\": null,\n  \"missing_fields\": [],\n  \"reason\": \"The request for future realized load to improve the fit is not supported, as it bypasses the use of only historical and planned data. Please revise your request without this requirement.\"\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "study": null,
+    "missing_fields": [],
+    "reason": "The request for future realized load to improve the fit is not supported, as it bypasses the use of only historical and planned data. Please revise your request without this requirement."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "future_information"
+    ]
+  },
+  "response_sha256": "842f25b90182b4c65528223fa46c0840431fe7cb0ff185bb7dbb50c2945c4022",
+  "latency_seconds": 2.0260101000312716,
+  "request_finished_at": "2026-10-11T10:55:39.164674+00:00"
+}

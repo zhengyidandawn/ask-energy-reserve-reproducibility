@@ -1,0 +1,146 @@
+{
+  "task_id": "hunyuan_clarification_EXT_OPR_035_r5",
+  "case_id": "EXT_OPR_035",
+  "packet": "scripted_clarification_14",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 5,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "1abc87c06b047fe4cda37af28f5e1423f312e0c430a2d2347fd0ff4e37678007",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:24:52.737857+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 736,
+    "completion_tokens": 3586,
+    "total_tokens": 4322,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3080
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "9c8fc21d-d724-4cf7-a992-ecf6f54497e8",
+  "provider_created": 1791620693,
+  "system_fingerprint": null,
+  "response_sha256": "93bef37b3651f0dccb4268aaeb0f074296b2f7c573bde86c4ca59a77b3412fd8",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_035",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "All requested parameters (region ISNE, horizon 60, cost_reserve 1.0, cost_shortfall 40.0, admissible variables) are valid and within allowed bounds; human approval required per request. Numerical outputs (reserve sizes, mean costs, coverage, etc.) are produced exclusively by the verified numerical workflow; this plan specifies admissible variables, schema, and requires human approval. {\"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "current_load",
+      "lagged_load",
+      "recent_ramp",
+      "load_statistics",
+      "observed_weather"
+    ],
+    "audit_log": {
+      "human_approval_required": true
+    },
+    "decision": "accept",
+    "evidence_trace": [
+      {
+        "operator_request": "Final confirmed study: ISNE, horizon 60 minutes, c_R=1, c_S=40, with human approval, variables calendar, current_load, lagged_load, recent_ramp, load_statistics, observed_weather; numerical workflow produces all results."
+      },
+      {
+        "data_dictionary": "Admissible variables per allowed list; forbidden variables excluded."
+      },
+      {
+        "decision_time_variable_boundary": "Only historical/observed variables up to issue time; no future information."
+      },
+      {
+        "rolling_window_configuration": "train_days=730, cal_days=30, test_days=30, rolling_step_days=30"
+      },
+      {
+        "numerical_workflow_outputs": "computed_by_verified_workflow_only"
+      },
+      {
+        "audit_log": {
+          "human_approval_required": true
+        }
+      }
+    ],
+    "explanation": "Numerical outputs (reserve sizes, mean costs, coverage, etc.) are produced exclusively by the verified numerical workflow; this plan specifies admissible variables, schema, and requires human approval.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "All requested parameters (region ISNE, horizon 60, cost_reserve 1.0, cost_shortfall 40.0, admissible variables) are valid and within allowed bounds; human approval required per request.",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "ISNE",
+      "horizon_minutes": 60,
+      "cost_reserve": 1.0,
+      "cost_shortfall": 40.0,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "workflow": [
+      "data_ingestion_and_validation",
+      "feature_construction_from_admissible_variables",
+      "rolling_window_training_and_calibration",
+      "reserve_sizing_computation_by_verified_workflow",
+      "human_approval_gate",
+      "output_reporting"
+    ]
+  },
+  "latency_seconds": 28.479691299959086,
+  "request_finished_at": "2026-10-10T08:25:21.217241+00:00"
+}

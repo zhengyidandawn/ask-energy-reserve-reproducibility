@@ -1,0 +1,114 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 2,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:23.285445+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "99fd6a03f41dae9778f7e9e353315d53c1a69fc3a47cb7535ab728ca5359815c",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region (CAISO, identified as CISO) and horizon (两小时, which translates to 120 minutes). The user explicitly asks for the JSON schema only without numerical results, which is supported by the protocol.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a valid region (CAISO, identified as CISO) and horizon (两小时, which translates to 120 minutes). The user explicitly asks for the JSON schema only without numerical results, which is supported by the protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 123,
+      "total_tokens": 503,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "86cac3f59328ea7f4a7746b5b79a07d4ade039f030a0227de259a21672d5d857",
+    "diagnostics": {
+      "messages": [
+        "Execution validation returns reject: invalid_schema"
+      ],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.550186400068924,
+    "finished_at": "2026-10-11T15:37:26.835273+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 2,
+    "phase": "feedback",
+    "started_at": "2026-10-11T15:37:26.836787+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "0664f03a904361493ea8e9ca17e7e6bee1befa3e32489cd825ec2cb8a1dc0c25",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please confirm the cost shortfall value? It is currently unresolved. Supported values are 10, 20, and 40.\",\n  \"reason\": \"The schema is valid, but the cost shortfall value is required to complete the request. The user did not specify a cost shortfall, which needs to be one of the supported values: 10, 20, or 40.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Could you please confirm the cost shortfall value? It is currently unresolved. Supported values are 10, 20, and 40.",
+      "reason": "The schema is valid, but the cost shortfall value is required to complete the request. The user did not specify a cost shortfall, which needs to be one of the supported values: 10, 20, or 40.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 530,
+      "completion_tokens": 152,
+      "total_tokens": 682,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "response_sha256": "3128fe31b0e1d48e39e78dd2779e37489380775770a874c2746988c3238c5dc7",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.8050284000346437,
+    "finished_at": "2026-10-11T15:37:30.641968+00:00"
+  },
+  "online_calls": 2,
+  "total_service_seconds": 7.3552148001035675,
+  "transport_complete": true
+}

@@ -1,0 +1,37 @@
+{
+  "case_id": "SF-13",
+  "service": "ernie",
+  "repeat": 2,
+  "phase": "initial",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_started_at": "2026-10-11T10:55:57.096711+00:00",
+  "status": "success",
+  "request_sha256": "71b0e238eb9793f1fa531e46135daecd5d97206e0ee4735bca7636b52e9a7a8a",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 61,
+    "total_tokens": 371
+  },
+  "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\"future realized load\"],\n    \"reason\": \"Field 'future realized load' is not supported for inclusion in the study. Please provide clarification or remove this unsupported feature.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "future realized load"
+    ],
+    "reason": "Field 'future realized load' is not supported for inclusion in the study. Please provide clarification or remove this unsupported feature."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "future_information"
+    ]
+  },
+  "response_sha256": "b4818e6969c2de504524cdbb060c7b8587bda987073d718541d6d7f1f4b6317f",
+  "latency_seconds": 3.1033102999208495,
+  "request_finished_at": "2026-10-11T10:56:00.199837+00:00"
+}

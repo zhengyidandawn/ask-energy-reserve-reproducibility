@@ -1,0 +1,54 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_MIX_014",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:48.996504+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "29efcf4abf79e5df9e318e41e2499f8f21d49fc0fdbe3f877ef9327d79f44e47",
+  "returned_model": "deepseek-flash",
+  "content": "{\"decision\":\"clarify\",\"fields\":{\"region_id\":\"MISO\",\"horizon_minutes\":null,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":\"MISO is a supported region, but the request leaves the horizon and shortfall weight unresolved. Which supported horizon should be used: 60, 120, or 180 minutes? And which supported shortfall weight should be used: 10, 20, or 40?\",\"reason\":\"The region is explicit and supported, and cost_reserve is fixed at 1 by the study protocol. However, the horizon and shortfall weight are not specified, and the request asks the assistant to default them. Because these are explicit study fields that remain unresolved, the draft must be returned for clarification rather than filled with invented defaults.\",\"human_approval_required\":true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "MISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "MISO is a supported region, but the request leaves the horizon and shortfall weight unresolved. Which supported horizon should be used: 60, 120, or 180 minutes? And which supported shortfall weight should be used: 10, 20, or 40?",
+    "reason": "The region is explicit and supported, and cost_reserve is fixed at 1 by the study protocol. However, the horizon and shortfall weight are not specified, and the request asks the assistant to default them. Because these are explicit study fields that remain unresolved, the draft must be returned for clarification rather than filled with invented defaults.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 177,
+    "total_tokens": 575,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 270
+  },
+  "response_sha256": "17e48a6ab3d3997ec0da77623650efc1450d7ff021da97943d2a1184229bb194",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.6155045999912545,
+  "finished_at": "2026-10-11T15:36:50.612120+00:00"
+}

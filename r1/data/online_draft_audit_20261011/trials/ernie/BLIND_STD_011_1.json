@@ -1,0 +1,102 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_STD_011",
+  "repeat": 1,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_STD_011",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:27.680584+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "f3f8250438fabd867b52531f77309d30b07ae27eb2e3d8c4d0b84beb3c0b255d",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 180,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 10\n    },\n    \"clarification_question\": null,\n    \"reason\": \"The request specifies a supported region (ERCOT/ERCO), a valid horizon (180 minutes), and valid cost parameters (reserve cost 1, shortfall cost 10). No additional clarification is needed.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 180,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a supported region (ERCOT/ERCO), a valid horizon (180 minutes), and valid cost parameters (reserve cost 1, shortfall cost 10). No additional clarification is needed.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 135,
+      "total_tokens": 528
+    },
+    "response_sha256": "d6219cfbfb4e96145de5edae9f416e2a1e791c4c50f602ccdf68e577e9abec3d",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.746500000008382,
+    "finished_at": "2026-10-11T15:38:32.427393+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_STD_011",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:27.680584+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "f3f8250438fabd867b52531f77309d30b07ae27eb2e3d8c4d0b84beb3c0b255d",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 180,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 10\n    },\n    \"clarification_question\": null,\n    \"reason\": \"The request specifies a supported region (ERCOT/ERCO), a valid horizon (180 minutes), and valid cost parameters (reserve cost 1, shortfall cost 10). No additional clarification is needed.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 180,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a supported region (ERCOT/ERCO), a valid horizon (180 minutes), and valid cost parameters (reserve cost 1, shortfall cost 10). No additional clarification is needed.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 135,
+      "total_tokens": 528
+    },
+    "response_sha256": "d6219cfbfb4e96145de5edae9f416e2a1e791c4c50f602ccdf68e577e9abec3d",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.746500000008382,
+    "finished_at": "2026-10-11T15:38:32.427393+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 4.746500000008382,
+  "transport_complete": true
+}

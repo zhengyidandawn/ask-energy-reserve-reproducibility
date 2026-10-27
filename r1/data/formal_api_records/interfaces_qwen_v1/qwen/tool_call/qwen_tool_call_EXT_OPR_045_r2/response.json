@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": [\"future_information_rejection\"]}, \"decision\": \"reject\", \"evidence_trace\": [], \"explanation\": \"数值输出将由经过验证的工作流程生成。但是，此请求试图使用决策时刻之后的未来负荷信息，这是不允许的。因此，计划被拒绝。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"请求中包含了禁止使用的变量（在未来时段内的负荷信息）。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_631727b0d7364b33957baf",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1533,
+    "completion_tokens": 199,
+    "total_tokens": 1732,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616330,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-62be4701-a8fa-9847-99cf-76a08471b821"
+}

@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_REJ_010",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:45:27.511661+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "1c46c0858a36f94d118d4ac5f4375388905ea4d5ca5f005d6a7244bac382c851",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"SWPP\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Request specifies use of weather forecasts issued after decision timestamp, which are unsupported (protocol requires observed weather only) and constitute future information. Reject per study rules.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "SWPP",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "Request specifies use of weather forecasts issued after decision timestamp, which are unsupported (protocol requires observed weather only) and constitute future information. Reject per study rules.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 1418,
+    "total_tokens": 1789,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1321
+    }
+  },
+  "response_sha256": "9f1970fc26b91fee37485cd078456aec8d2c1fdd10514999a3ae893472ea872c",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 12.170843100058846,
+  "finished_at": "2026-10-11T15:45:39.682062+00:00"
+}

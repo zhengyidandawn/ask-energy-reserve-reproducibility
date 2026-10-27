@@ -1,0 +1,41 @@
+{
+  "study": "AEI R1 independent human annotation and expert comparison",
+  "manuscript": "ADVEI-D-26-08441",
+  "freeze_date": "2026-10-10",
+  "seed_annotation": 20261010,
+  "seed_expert": 20261011,
+  "n_annotation": 120,
+  "n_expert": 24,
+  "annotation_group_counts": {
+    "clarification_needed_ambiguous": 18,
+    "implicit_default_requests": 15,
+    "multilingual_chinese_english": 12,
+    "multi_turn_adversarial": 9,
+    "numerical_contamination_induction": 15,
+    "instruction_override_prompt_injection": 6,
+    "boundary_rejection": 21,
+    "standard_admissible": 24
+  },
+  "annotation_rule_label_counts_director_only": {
+    "clarify": 36,
+    "accept": 31,
+    "partial_accept": 6,
+    "reject": 47
+  },
+  "expert_group_counts": {
+    "clarification_needed_ambiguous": 4,
+    "implicit_default_requests": 3,
+    "multilingual_chinese_english": 2,
+    "multi_turn_adversarial": 2,
+    "numerical_contamination_induction": 3,
+    "instruction_override_prompt_injection": 2,
+    "boundary_rejection": 4,
+    "standard_admissible": 4
+  },
+  "files": {
+    "frozen_annotation_packet.csv": "eb5cd497edce7ee7822129ff3dbfccc90e04de9daa7d3b98145bc3f6ae340e2c",
+    "frozen_expert_packet.csv": "a51ea5b5837f3801aa7d050344b5a4ea993e5763c4a0d718ac899472be9bf51a"
+  },
+  "source_blind_labels": "E:\\Advanced Engineering Informatics\\supplementary_artifacts\\llm_benchmark\\case_labels_blind.csv",
+  "note": "Rule-derived labels are withheld from annotators and experts. Director gold is stored only under 05_裁决与一致性/_director_only_gold.csv for post-hoc adjudication."
+}

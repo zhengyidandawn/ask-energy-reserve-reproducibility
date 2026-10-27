@@ -1,0 +1,25 @@
+{
+  "id": "as-dt7m01ggfs",
+  "object": "chat.completion",
+  "created": 1791615585,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\n        \"calendar\",\n        \"cost_ratio\",\n        \"current_load\",\n        \"horizon\",\n        \"lagged_load\",\n        \"load_statistics\",\n        \"observed_weather\",\n        \"recent_ramp\",\n        \"region_id\"\n    ],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"decision\": \"accept\",\n    \"evidence_trace\": [\n        \"operator_request: SWPP three-hour upward reserve, 180 min, penalty 20. Wind is already sitting in the observed ramp we logged. If nobody named a rolling window, use the lab fixed setting.\",\n        \"data_dictionary: Admissible and forbidden variables validated against task requirements.\",\n        \"decision_time_variable_boundary: No future information or unavailable forecasts included.\",\n        \"rolling_window_configuration: train_days=730, cal_days=30, test_days=30, rolling_step_days=30 (lab fixed setting).\",\n        \"numerical_workflow_outputs: None (reserved for verified workflow).\",\n        \"audit_log: Compliance confirmed with all rules.\"\n    ],\n    \"explanation\": \"Numerical outputs are produced by the verified workflow only and are not included in this response.\",\n    \"forbidden_variables\": [\n        \"fabricated_result\",\n        \"future_load\",\n        \"future_weather\",\n        \"raw_data_modification\",\n        \"realized_target\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request complies with all task requirements, including region (SWPP), horizon (180 minutes), shortfall cost (20.0), and rolling window configuration.\",\n    \"study_schema\": {\n        \"task_type\": \"upward_reserve_sizing\",\n        \"region_id\": \"SWPP\",\n        \"horizon_minutes\": 180,\n        \"cost_reserve\": 1.0,\n        \"cost_shortfall\": 20.0,\n        \"rolling_window\": {\n            \"train_days\": 730,\n            \"cal_days\": 30,\n            \"test_days\": 30,\n            \"rolling_step_days\": 30\n        },\n        \"requires_human_approval\": true\n    },\n    \"workflow\": [\n        \"validate_input_parameters\",\n        \"check_compliance_with_audit_rules\",\n        \"prepare_study_schema\",\n        \"generate_evidence_trace\",\n        \"await_human_approval\"\n    ]\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 733,
+    "completion_tokens": 623,
+    "total_tokens": 1356,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

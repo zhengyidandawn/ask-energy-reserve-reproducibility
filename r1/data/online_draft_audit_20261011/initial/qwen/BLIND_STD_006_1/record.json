@@ -1,0 +1,50 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_STD_006",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:38:08.139431+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "1761e9873ffada4980572a5b9f52f2adecd114db7c303414216560d2bc014db0",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region (ERCO), a supported horizon (120 minutes), and an acceptable shortfall cost (10). The study does not require estimation of MW, which is in line with the instructions. All parameters are within the supported ranges and do not conflict.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "The request specifies a valid region (ERCO), a supported horizon (120 minutes), and an acceptable shortfall cost (10). The study does not require estimation of MW, which is in line with the instructions. All parameters are within the supported ranges and do not conflict.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 132,
+    "total_tokens": 536,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "b1eeed1a95f9cdc1fc5eb2ccc125d0b8f4dd06f332e9015da9df1453b14ac6f9",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 3.5276153000304475,
+  "finished_at": "2026-10-11T15:38:11.667133+00:00"
+}

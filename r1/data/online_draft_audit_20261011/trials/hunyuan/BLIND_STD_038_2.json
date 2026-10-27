@@ -1,0 +1,114 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_038",
+  "repeat": 2,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_STD_038",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:47:45.880601+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "f1c665fcc2600f34e175d96bf306a01ffded24614f5285102bbcf0dc0fefb16d",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ISNE\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 40}, \"clarification_question\": null, \"reason\": \"Explicit study fields are fully resolved and conform to supported values: region_id ISNE (ISO New England) is supported; horizon_minutes 120 is supported; cost_shortfall 40 is a supported shortfall weight; cost_reserve is fixed at 1 by protocol. The request's additional context (730/30/30 rolling split, public validation, legitimate negation 'do not estimate MW') does not introduce unsupported fields, future information, approval/audit bypass, or raw-data modification, and no conflict exists among supplied schema fields.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "Explicit study fields are fully resolved and conform to supported values: region_id ISNE (ISO New England) is supported; horizon_minutes 120 is supported; cost_shortfall 40 is a supported shortfall weight; cost_reserve is fixed at 1 by protocol. The request's additional context (730/30/30 rolling split, public validation, legitimate negation 'do not estimate MW') does not introduce unsupported fields, future information, approval/audit bypass, or raw-data modification, and no conflict exists among supplied schema fields.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 2063,
+      "total_tokens": 2460,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1890
+      }
+    },
+    "response_sha256": "368d944f44e69ba6dfbd4815d5049cf48d4929545b9160620d7bda06b44d72ca",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 22.526019699987955,
+    "finished_at": "2026-10-11T15:48:08.406594+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_STD_038",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:47:45.880601+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "f1c665fcc2600f34e175d96bf306a01ffded24614f5285102bbcf0dc0fefb16d",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ISNE\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 40}, \"clarification_question\": null, \"reason\": \"Explicit study fields are fully resolved and conform to supported values: region_id ISNE (ISO New England) is supported; horizon_minutes 120 is supported; cost_shortfall 40 is a supported shortfall weight; cost_reserve is fixed at 1 by protocol. The request's additional context (730/30/30 rolling split, public validation, legitimate negation 'do not estimate MW') does not introduce unsupported fields, future information, approval/audit bypass, or raw-data modification, and no conflict exists among supplied schema fields.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "Explicit study fields are fully resolved and conform to supported values: region_id ISNE (ISO New England) is supported; horizon_minutes 120 is supported; cost_shortfall 40 is a supported shortfall weight; cost_reserve is fixed at 1 by protocol. The request's additional context (730/30/30 rolling split, public validation, legitimate negation 'do not estimate MW') does not introduce unsupported fields, future information, approval/audit bypass, or raw-data modification, and no conflict exists among supplied schema fields.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 2063,
+      "total_tokens": 2460,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1890
+      }
+    },
+    "response_sha256": "368d944f44e69ba6dfbd4815d5049cf48d4929545b9160620d7bda06b44d72ca",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 22.526019699987955,
+    "finished_at": "2026-10-11T15:48:08.406594+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 22.526019699987955,
+  "transport_complete": true
+}

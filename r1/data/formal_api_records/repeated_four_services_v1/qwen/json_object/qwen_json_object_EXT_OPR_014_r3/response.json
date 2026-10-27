@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"unsupported_region\",\n      \"prohibited_output_request\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is for an unsupported region 'SPP' and includes a prohibited output request. Numerical outputs are produced by the verified workflow only, and direct manipulation or provision of specific reserve values (such as MW) is not allowed.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The region 'SPP' is not supported, and the explicit request to 'dump MW' is a request for a numerical output which is not permitted. The operator must use the defined study schema and let the verified numerical workflow compute any required outputs.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 201,
+    "total_tokens": 845,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613084,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-d78fa75a-989d-9719-ab7f-df0b1304d150"
+}

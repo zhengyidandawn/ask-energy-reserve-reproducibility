@@ -1,0 +1,20 @@
+{
+  "model": "qwen-max",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Prepare a study plan, keeping numerical results for the authorized calculation program. Return one JSON object with keys decision (accept, clarify, reject), study (object or null), missing_fields (array) and reason (string). study has exactly region (DE or AT), horizon_minutes (60,120,180), feature_mode (full or history_calendar), shortfall_weight (10,20,40), required_coverage (0.95 or 0.975), reporting (standard or tail), and human_authorization_required (true). Full features means observed load and calendar with recent ramps and load statistics; history_calendar means the restricted load history and calendar set. Standard reporting gives coverage, mean reserve and cost; tail also adds tail shortfall. Require all six study fields to be explicitly supplied. Clarify missing fields by naming them in missing_fields and asking for them in reason. Reject requests for future realized information, bypassing human authorization, or an unsupported horizon. Every study uses reserve weight one. Keep human authorization in an accepted plan. Output the plan fields only."
+    },
+    {
+      "role": "user",
+      "content": "Prepare an upward reserve study for Germany with a 180-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation."
+    }
+  ],
+  "temperature": 0,
+  "top_p": 1,
+  "max_tokens": 4096,
+  "response_format": {
+    "type": "json_object"
+  },
+  "stream": false
+}

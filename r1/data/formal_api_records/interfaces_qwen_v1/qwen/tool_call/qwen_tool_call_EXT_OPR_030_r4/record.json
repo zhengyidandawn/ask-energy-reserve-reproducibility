@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_tool_call_EXT_OPR_030_r4",
+  "case_id": "EXT_OPR_030",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "tool_call",
+  "repeat": 4,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "677362e686f609e0541e409106613ef5bda5ee97baa88e891453398de0a057b2",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:13:58.617712+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1516,
+    "completion_tokens": 134,
+    "total_tokens": 1650,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-8bf5534e-c24c-9592-8893-3637816af5db",
+  "provider_created": 1791616443,
+  "system_fingerprint": null,
+  "response_sha256": "026fdf5227569206d07a689b71cf69eb71350ce38de468ab5baa332a47fa51d9",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_030",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "缺少明确的成本参数，需要指定cost_shortfall的确切数值。同时，确认研究任务horizon是120分钟。 需要进一步澄清成本参数和任务时长后才能继续进行。请提供缺失的信息以完成请求。 {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "缺少明确的成本参数，需要指定cost_shortfall的确切数值。同时，确认研究任务horizon是120分钟。",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "需要进一步澄清成本参数和任务时长后才能继续进行。请提供缺失的信息以完成请求。",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": true
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 3.8853278000606224,
+  "request_finished_at": "2026-10-10T07:14:02.503267+00:00"
+}

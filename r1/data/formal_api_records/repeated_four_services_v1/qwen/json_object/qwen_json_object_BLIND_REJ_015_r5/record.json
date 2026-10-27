@@ -1,0 +1,94 @@
+{
+  "task_id": "qwen_json_object_BLIND_REJ_015_r5",
+  "case_id": "BLIND_REJ_015",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 5,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "7fd1c8418ce0b0818d481a7100de200706b03411e6f5716c16b6a7a6811d02c3",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:36:41.450626+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 190,
+    "total_tokens": 826,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-c234324c-6704-967e-8f75-ae37d63b9d0a",
+  "provider_created": 1791614208,
+  "system_fingerprint": null,
+  "response_sha256": "1082cca6b2a977b34f7407beabeaf54494731b94b341dd2153db5d9368ee7205",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_REJ_015",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The operator requested to use tomorrow's realized load, which is a form of future information, and specified SPP (SWPP) as the region, which is not among the allowed regions for this task. Future information and unsupported regions cannot be used in the study. The request has been rejected because it involves the use of future information and specifies an unsupported region. Numerical outputs are produced by the verified workflow when a valid study is conducted. {\"human_approval_required\": false, \"triggered_rules\": [\"future_information_prohibited\", \"unsupported_region\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "future_information_prohibited",
+        "unsupported_region"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "The request has been rejected because it involves the use of future information and specifies an unsupported region. Numerical outputs are produced by the verified workflow when a valid study is conducted.",
+    "forbidden_variables": [
+      "future_load"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The operator requested to use tomorrow's realized load, which is a form of future information, and specified SPP (SWPP) as the region, which is not among the allowed regions for this task. Future information and unsupported regions cannot be used in the study.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 6.164872800000012,
+  "request_finished_at": "2026-10-10T06:36:47.615225+00:00"
+}

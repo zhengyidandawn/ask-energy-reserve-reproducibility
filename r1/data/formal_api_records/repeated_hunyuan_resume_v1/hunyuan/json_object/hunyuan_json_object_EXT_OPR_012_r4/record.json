@@ -1,0 +1,145 @@
+{
+  "task_id": "hunyuan_json_object_EXT_OPR_012_r4",
+  "case_id": "EXT_OPR_012",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "4f06a7bf55696018d822535c2e8b217027465447455f2bd7e5162602d6257e47",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:50:10.950213+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 648,
+    "completion_tokens": 3086,
+    "total_tokens": 3734,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2560
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "9950fdee-382f-4759-accb-af8c9b46c5ff",
+  "provider_created": 1791618614,
+  "system_fingerprint": null,
+  "response_sha256": "de4d99c3f1bb377ee0bb84671f647603dbee43a1d988a80eb4d94ecf7ed6920e",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_012",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Valid task upward_reserve_sizing, allowed region ERCO, allowed horizon 180, allowed cost_shortfall 10.0 with cost_reserve 1.0, no prohibited elements, operator explicitly accepted entry with later computation. Operator requested acceptance of study entry for ERCOT (mapped to ERCO) three-hour (180 min) upward reserve sizing with shortfall penalty ten times reserve cost (cost_shortfall=10.0, cost_reserve=1.0). Numerical outputs (reserve values, mean costs, coverage, etc.) are produced exclusively by the verified workflow, not by this LLM. {\"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true
+    },
+    "decision": "accept",
+    "evidence_trace": [
+      {
+        "operator_request": "得把ERCOT三小时那档备上，缺额罚十倍那种。研究入口先收，数后面算。"
+      },
+      {
+        "data_dictionary": "Admissible variables per allowed list; forbidden variables excluded."
+      },
+      {
+        "decision_time_variable_boundary": "region_id=ERCO, horizon_minutes=180, cost_reserve=1.0, cost_shortfall=10.0"
+      },
+      {
+        "rolling_window_configuration": "train_days=730, cal_days=30, test_days=30, rolling_step_days=30"
+      },
+      {
+        "numerical_workflow_outputs": "computed_by_verified_workflow_only; not generated at schema entry"
+      },
+      {
+        "audit_log": {
+          "human_approval_required": true
+        }
+      }
+    ],
+    "explanation": "Operator requested acceptance of study entry for ERCOT (mapped to ERCO) three-hour (180 min) upward reserve sizing with shortfall penalty ten times reserve cost (cost_shortfall=10.0, cost_reserve=1.0). Numerical outputs (reserve values, mean costs, coverage, etc.) are produced exclusively by the verified workflow, not by this LLM.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Valid task upward_reserve_sizing, allowed region ERCO, allowed horizon 180, allowed cost_shortfall 10.0 with cost_reserve 1.0, no prohibited elements, operator explicitly accepted entry with later computation.",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "ERCO",
+      "horizon_minutes": 180,
+      "cost_reserve": 1.0,
+      "cost_shortfall": 10.0,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "workflow": [
+      "initialize_study_schema",
+      "execute_verified_numerical_workflow_on_demand"
+    ]
+  },
+  "latency_seconds": 29.401649400009774,
+  "request_finished_at": "2026-10-10T07:50:40.351704+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"The numerical outputs for the reserve sizing study will be produced by the verified workflow, based on the provided and clarified parameters.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The following required fields are missing or ambiguous: horizon. Please provide the specific value for the horizon from the allowed options [60, 120, 180] minutes.\", \"study_schema\": null, \"workflow\": []}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1497,
+    "completion_tokens": 208,
+    "total_tokens": 1705,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "created": 1791698060,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-a45e9f4f-a7b1-9280-8ab9-4feb8e804ab2"
+}

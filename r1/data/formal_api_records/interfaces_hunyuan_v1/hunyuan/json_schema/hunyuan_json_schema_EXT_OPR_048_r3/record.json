@@ -1,0 +1,130 @@
+{
+  "task_id": "hunyuan_json_schema_EXT_OPR_048_r3",
+  "case_id": "EXT_OPR_048",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_schema",
+  "repeat": 3,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "9f28eae6914d26b0906ce95ca0a873161cb8fa1607e6e91e6a8e8ac178ae5191",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:16:41.128622+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 662,
+    "completion_tokens": 3154,
+    "total_tokens": 3816,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2805
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "c7cd65de-d9f1-4174-9c0f-bfb5a5993071",
+  "provider_created": 1791620202,
+  "system_fingerprint": null,
+  "response_sha256": "6043420199671e09f2e4958129debf681969ef910c96f2dfdc4628050e728f74",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_048",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": false,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Valid upward_reserve_sizing for SWPP, horizon 180, cost_shortfall=20.0, cost_reserve=1.0; added constraints match existing forbidden_variables (test_period_residual, raw_data_modification); no violations. Numerical outputs are produced by the verified workflow only. Request accepted with standard schema and reinforced prohibitions on test residual and demand curve modification. {\"human_approval_required\": true, \"triggered_rules\": []}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": []
+    },
+    "decision": "accept",
+    "evidence_trace": [
+      ""
+    ],
+    "explanation": "Numerical outputs are produced by the verified workflow only. Request accepted with standard schema and reinforced prohibitions on test residual and demand curve modification.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Valid upward_reserve_sizing for SWPP, horizon 180, cost_shortfall=20.0, cost_reserve=1.0; added constraints match existing forbidden_variables (test_period_residual, raw_data_modification); no violations.",
+    "study_schema": {
+      "cost_reserve": 1,
+      "cost_shortfall": 20,
+      "horizon_minutes": 180,
+      "region_id": "SWPP",
+      "requires_human_approval": true,
+      "rolling_window": {
+        "cal_days": 30,
+        "rolling_step_days": 30,
+        "test_days": 30,
+        "train_days": 730
+      },
+      "task_type": "upward_reserve_sizing"
+    },
+    "workflow": [
+      "ingest_admissible_variables",
+      "validate_against_forbidden",
+      "configure_rolling_window",
+      "invoke_verified_numerical_workflow",
+      "generate_audit_log"
+    ]
+  },
+  "latency_seconds": 25.547761299996637,
+  "request_finished_at": "2026-10-10T08:17:06.676713+00:00"
+}

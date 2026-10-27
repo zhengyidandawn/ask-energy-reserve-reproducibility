@@ -1,0 +1,28 @@
+{
+  "id": "d54c2bdd-070c-4095-9336-ff805ce50963",
+  "object": "chat.completion",
+  "created": 1791733021,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"reject\",\"fields\":{\"region_id\":\"CISO\",\"horizon_minutes\":null,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The request asks to modify raw demand data before evaluation, which is a raw-data modification and is not permitted. The region CISO is supported, but the requested action is unsupported.\",\"human_approval_required\":true}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 91,
+    "total_tokens": 486,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 267
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

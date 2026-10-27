@@ -1,0 +1,22 @@
+{
+  "id": "as-9t0qn4vnqm",
+  "object": "chat.completion",
+  "created": 1791615511,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": false,\n        \"triggered_rules\": [\n            \"clarification_required\"\n        ]\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [],\n    \"explanation\": \"The operator request lacks a valid region_id, which is required for reserve sizing studies.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Missing required field: region_id. The region_id must be one of the following: CISO, ERCO, GD, ISNE, MISO, SWPP.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 703,
+    "completion_tokens": 178,
+    "total_tokens": 881
+  }
+}

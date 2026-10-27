@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_json_object_BLIND_CLAR_022_r3",
+  "case_id": "BLIND_CLAR_022",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 3,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "deb727e124061133b86931316c0b59608a11710d13c0081a5453328bf98e82dc",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:16:23.796276+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 638,
+    "completion_tokens": 140,
+    "total_tokens": 778,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-20c6f9d9-e760-9a7a-b916-cbc5a33275bc",
+  "provider_created": 1791612989,
+  "system_fingerprint": null,
+  "response_sha256": "182bc8e0dc50e83e8b14c16225720cb49716bf38174e78b70a2431795a11fbf1",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_CLAR_022",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The region_id is missing. This is a required parameter to define the scope of the study. The study cannot proceed without a specified region. The numerical outputs will be produced by the verified workflow once all required parameters are provided. {\"human_approval_required\": false, \"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "The study cannot proceed without a specified region. The numerical outputs will be produced by the verified workflow once all required parameters are provided.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The region_id is missing. This is a required parameter to define the scope of the study.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 4.587461900082417,
+  "request_finished_at": "2026-10-10T06:16:28.383998+00:00"
+}

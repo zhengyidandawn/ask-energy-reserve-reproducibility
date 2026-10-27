@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"在收到更详细的信息，如明确的region和horizon值之后，数值输出将由已验证的工作流程产生。\", \"forbidden_variables\": [], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"请求中缺少具体的地区(region)和时间范围(horizon)信息。这些是完成研究计划必要的参数。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_3132da9e02da4ad7aa3cef",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1519,
+    "completion_tokens": 136,
+    "total_tokens": 1655,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616380,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-eb74e852-0d53-9392-ade0-83b10ccdff3b"
+}

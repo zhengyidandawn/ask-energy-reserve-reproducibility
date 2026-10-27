@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 20\n  },\n  \"clarification_question\": \"Could you please specify the region for the analysis? (Supported regions: GD, ERCO, CISO, ISNE, MISO, SWPP)\",\n  \"reason\": \"The region is a required field and has not been specified in your request.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 118,
+    "total_tokens": 494,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "created": 1791733008,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-338d5455-11ec-926a-9cb5-7caff48ace30"
+}

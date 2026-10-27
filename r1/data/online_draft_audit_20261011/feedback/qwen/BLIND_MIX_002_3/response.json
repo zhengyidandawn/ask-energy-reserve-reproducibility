@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"The provided schema was rejected by the frozen checker. Could you please confirm if you need any specific value for the cost_shortfall, or should it be left as null?\",\n  \"reason\": \"The request specifies a valid region (CAISO, translated to CISO) and a supported horizon of 120 minutes. However, the frozen checker has returned an invalid_schema error, indicating that there might be a need for further clarification on the `cost_shortfall` field.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 531,
+    "completion_tokens": 164,
+    "total_tokens": 695,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733055,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-8e85146e-c38d-97bb-8feb-f105e88278f7"
+}

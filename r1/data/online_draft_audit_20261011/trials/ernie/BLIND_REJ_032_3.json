@@ -1,0 +1,106 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_REJ_032",
+  "repeat": 3,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_REJ_032",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:17.812478+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "de33f56fdaa304e31f82b3c8172768d26756f1b9c1449883011f8340494c6ca9",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Unsupported horizon value '45'. Supported horizons are 60, 120, and 180 minutes.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Unsupported horizon value '45'. Supported horizons are 60, 120, and 180 minutes.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 111,
+      "total_tokens": 479
+    },
+    "response_sha256": "78c3a496dff9786b98416a2247098814eab26f02dd1ae5b3a609021c3b81eae3",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.440477899974212,
+    "finished_at": "2026-10-11T15:38:22.253261+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_REJ_032",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:17.812478+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "de33f56fdaa304e31f82b3c8172768d26756f1b9c1449883011f8340494c6ca9",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Unsupported horizon value '45'. Supported horizons are 60, 120, and 180 minutes.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Unsupported horizon value '45'. Supported horizons are 60, 120, and 180 minutes.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 111,
+      "total_tokens": 479
+    },
+    "response_sha256": "78c3a496dff9786b98416a2247098814eab26f02dd1ae5b3a609021c3b81eae3",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.440477899974212,
+    "finished_at": "2026-10-11T15:38:22.253261+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 4.440477899974212,
+  "transport_complete": true
+}

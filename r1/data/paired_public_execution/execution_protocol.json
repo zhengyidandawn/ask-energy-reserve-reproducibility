@@ -1,0 +1,12 @@
+{
+  "frozen_at": "2026-10-10T07:33:19.099623+00:00",
+  "training_days": 180,
+  "calibration_days": 20,
+  "selection_days": 10,
+  "test_days": 30,
+  "common_selection_coverage": 0.95,
+  "target": "maximum future positive hourly increment",
+  "comparison": "paired actual service plans and independently labelled reference plans",
+  "wrong_plan_cost": "same-timestamp difference in reserve/shortfall loss under reference objective",
+  "all_scheduled_service_trials_retained": true
+}

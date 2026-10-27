@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_018_r1",
+  "case_id": "EXT_OPR_018",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 1,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "cca4c0bfdbc7fea39251583446f241e62e49b4f97fffe57d94ba3963bd0076c5",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:21:18.421191+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1498,
+    "completion_tokens": 1095,
+    "total_tokens": 2593,
+    "prompt_tokens_details": {
+      "cached_tokens": 1344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 871
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "724d9761-e0dc-41d5-b71b-0e308307c1da",
+  "provider_created": 1791620479,
+  "system_fingerprint": null,
+  "response_sha256": "da31a42708b5bade5b063bda19f134abfa29f4edd3fd904dec84d13f929b6ce1",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_018",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": false,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Region 'CAIOS' is not a supported region. Allowed regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. The request is rejected due to an unsupported region; no study schema is produced. Request rejected for an unsupported region; no numerical outputs are generated. Per policy, any numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) would be produced only by the verified numerical workflow, but none are computed here. {\"triggered_rules\": [\"unsupported_region: CAIOS not in allowed regions ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": false,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "reject",
+    "reason": "Region 'CAIOS' is not a supported region. Allowed regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. The request is rejected due to an unsupported region; no study schema is produced.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "Request rejected for an unsupported region; no numerical outputs are generated. Per policy, any numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) would be produced only by the verified numerical workflow, but none are computed here.",
+    "audit_log": {
+      "triggered_rules": [
+        "unsupported_region: CAIOS not in allowed regions ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']"
+      ],
+      "human_approval_required": false
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 7.883031000033952,
+  "request_finished_at": "2026-10-10T08:21:26.304123+00:00"
+}

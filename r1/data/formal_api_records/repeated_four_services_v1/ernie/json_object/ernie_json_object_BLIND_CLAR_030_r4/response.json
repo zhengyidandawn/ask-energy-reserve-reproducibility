@@ -1,0 +1,25 @@
+{
+  "id": "as-gsyurm56vr",
+  "object": "chat.completion",
+  "created": 1791614322,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"workflow\": [],\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Prepare the audit layer for the operator's normal reserve workflow without changing any defaults.\"\n        },\n        {\n            \"data_dictionary\": {\n                \"region_id\": \"Not specified\",\n                \"horizon_minutes\": \"Not specified\",\n                \"cost_reserve\": \"Not specified\",\n                \"cost_shortfall\": \"Not specified\"\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": \"No future or unavailable variables included in the request.\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        }\n    ],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"study_schema\": null,\n    \"decision\": \"clarify\",\n    \"reason\": \"Missing required fields: region_id, horizon_minutes, cost_reserve, cost_shortfall\",\n    \"explanation\": \"The operator request lacks required fields for a complete reserve sizing study. Numerical outputs are produced by the verified workflow once all parameters are properly specified.\",\n    \"audit_log.triggered_rules\": [\"clarification_required\"]\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 689,
+    "completion_tokens": 443,
+    "total_tokens": 1132,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

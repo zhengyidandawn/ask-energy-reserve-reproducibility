@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"future_information\", \"test_period_residual\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is rejected because it involves using future information (tomorrow's realized load) and potentially leaking test-period residuals, which are not allowed. Numerical outputs are produced by the verified workflow when a valid schema is provided.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The use of tomorrow's realized load is prohibited as it constitutes future information. Additionally, involving test-period residuals could lead to leakage, violating study integrity.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 647,
+    "completion_tokens": 201,
+    "total_tokens": 848,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613062,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-ee179d64-a56b-9adb-854d-cb2a42fa3a39"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "877017f1-1ae9-4402-ace8-632c75b3c43f",
+  "object": "chat.completion",
+  "created": 1791733012,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"clarify\",\"fields\":{\"region_id\":\"MISO\",\"horizon_minutes\":null,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":\"MISO is a supported region, but the request leaves the study horizon and shortfall weight unresolved. Which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be used?\",\"reason\":\"The region is explicitly supported, but 'usual setup' does not resolve the required horizon or shortfall weight, and the user asks the assistant to default them. The study protocol fixes cost_reserve at 1, but horizon_minutes and cost_shortfall must be explicit and supported.\",\"human_approval_required\":true}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 163,
+    "total_tokens": 561,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 270
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

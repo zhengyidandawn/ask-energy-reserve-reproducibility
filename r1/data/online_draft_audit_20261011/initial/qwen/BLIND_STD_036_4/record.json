@@ -1,0 +1,50 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_STD_036",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:38:14.793990+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "29fd959194e80eaa93a87e4b73cc132a29b970e047ca31d2e16374c9cf24b9a6",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The provided parameters are within the supported options. A study kernel will be created for ERCOT (ERCO) with a 120-minute horizon and a cost shortfall of 40. The numerical workflow for costs, coverage, and intervals will follow as indicated.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 40
+    },
+    "clarification_question": null,
+    "reason": "The provided parameters are within the supported options. A study kernel will be created for ERCOT (ERCO) with a 120-minute horizon and a cost shortfall of 40. The numerical workflow for costs, coverage, and intervals will follow as indicated.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 129,
+    "total_tokens": 520,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "749d15a19e26a1391e6b7e3f31d3ba8d4262f6ec6ebac3933a377cebcea35672",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 3.414946399978362,
+  "finished_at": "2026-10-11T15:38:18.209408+00:00"
+}

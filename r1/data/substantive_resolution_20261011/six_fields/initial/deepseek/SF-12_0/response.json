@@ -1,0 +1,28 @@
+{
+  "id": "79455811-a6a1-40d4-8549-6249e7873863",
+  "object": "chat.completion",
+  "created": 1791716101,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"accept\",\"study\":{\"region\":\"DE\",\"horizon_minutes\":60,\"feature_mode\":\"full\",\"shortfall_weight\":20,\"required_coverage\":0.95,\"reporting\":\"standard\",\"human_authorization_required\":true},\"missing_fields\":[],\"reason\":\"All six required study fields are explicitly supplied, the horizon is supported, and human authorization is retained.\"}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 80,
+    "total_tokens": 390,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 182
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

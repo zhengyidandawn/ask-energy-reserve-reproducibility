@@ -1,0 +1,101 @@
+{
+  "task_id": "deepseek_json_object_BLIND_REJ_031_r4",
+  "case_id": "BLIND_REJ_031",
+  "packet": "blind_original_200",
+  "service": "deepseek",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_sha256": "c3c0d00cf5f286c30491034d81277901bcd1c226dd34f3d6a2d3143d086bd401",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:11:37.730091+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 693,
+    "completion_tokens": 230,
+    "total_tokens": 923,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 181
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "deepseek-flash",
+  "provider_response_id": "929b936a-998a-4de9-aa41-65b40903bb10",
+  "provider_created": 1791612698,
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "response_sha256": "b3f6e6ec6a237cada2fcfa4096d5ba076e5275d1a00a141ae95e08dbb18d614d",
+  "checks": {
+    "service": "deepseek",
+    "case_id": "BLIND_REJ_031",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Weather forecasts issued after the decision timestamp are future information and unavailable at issue time; this violates the decision-time variable boundary. The request is rejected because it asks to use weather forecasts issued after the decision timestamp, which constitutes future information and unavailable issue-time forecasts. Numerical outputs are produced only by the verified workflow. {\"triggered_rules\": [\"future_information_rejected\", \"unavailable_issue_time_forecasts_rejected\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "future_information_rejected",
+        "unavailable_issue_time_forecasts_rejected"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "The request is rejected because it asks to use weather forecasts issued after the decision timestamp, which constitutes future information and unavailable issue-time forecasts. Numerical outputs are produced only by the verified workflow.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Weather forecasts issued after the decision timestamp are future information and unavailable at issue time; this violates the decision-time variable boundary.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 1.3145708000520244,
+  "request_finished_at": "2026-10-10T06:11:39.045134+00:00"
+}

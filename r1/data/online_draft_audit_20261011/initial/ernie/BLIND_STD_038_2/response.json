@@ -1,0 +1,25 @@
+{
+  "id": "as-fak9en2gtt",
+  "object": "chat.completion",
+  "created": 1791733121,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"ISNE\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 40\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request specifies supported region (ISNE), horizon (120 minutes), and shortfall cost (40). The cost_reserve is fixed at 1 by protocol. No numerical MW estimation requested, aligning with the user's instruction to avoid estimation.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "completion_tokens": 142,
+    "total_tokens": 544,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

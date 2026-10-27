@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"approval_bypass\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"此请求试图绕过人类审批流程，这是不允许的行为。所有研究必须经过人工审核才能进行。\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"\",\n  \"reason\": \"尝试绕过必要的审批步骤。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 656,
+    "completion_tokens": 117,
+    "total_tokens": 773,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614724,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-2ce2f68f-22ac-950f-868a-78dbf3c9eab3"
+}

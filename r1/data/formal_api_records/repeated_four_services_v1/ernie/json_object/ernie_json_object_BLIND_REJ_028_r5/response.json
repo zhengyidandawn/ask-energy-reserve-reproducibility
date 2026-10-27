@@ -1,0 +1,22 @@
+{
+  "id": "as-bwmw57ns86",
+  "object": "chat.completion",
+  "created": 1791614823,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": false,\n        \"triggered_rules\": [\n            \"raw_data_modification\",\n            \"hidden_audit_bypass_attempt\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Modify the raw demand data for ISO-NE (ISNE) to smooth the largest ramp before evaluation.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": false,\n                \"triggered_rules\": [\n                    \"raw_data_modification\",\n                    \"hidden_audit_bypass_attempt\"\n                ]\n            }\n        }\n    ],\n    \"explanation\": \"Numerical outputs are not produced as the request violates the prohibition on raw data modification.\",\n    \"forbidden_variables\": [\n        \"raw_data_modification\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"The request involves modifying raw demand data, which is explicitly forbidden.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 693,
+    "completion_tokens": 339,
+    "total_tokens": 1032
+  }
+}

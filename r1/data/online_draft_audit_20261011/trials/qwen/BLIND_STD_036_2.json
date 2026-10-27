@@ -1,0 +1,108 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_STD_036",
+  "repeat": 2,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_STD_036",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:13.511089+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "29fd959194e80eaa93a87e4b73cc132a29b970e047ca31d2e16374c9cf24b9a6",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The provided parameters are valid and within the supported options. The study for ERCO with a 120-minute horizon and a shortfall cost of 40 is set up correctly, pending numerical execution for costs, coverage, and intervals.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "The provided parameters are valid and within the supported options. The study for ERCO with a 120-minute horizon and a shortfall cost of 40 is set up correctly, pending numerical execution for costs, coverage, and intervals.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 123,
+      "total_tokens": 514,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "5f08dbdd9967f0ce406f27fc93786381b62bf0119c62730cf8bef7f2fb1f7f41",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.5045512000797316,
+    "finished_at": "2026-10-11T15:38:17.016045+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_STD_036",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:13.511089+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "29fd959194e80eaa93a87e4b73cc132a29b970e047ca31d2e16374c9cf24b9a6",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The provided parameters are valid and within the supported options. The study for ERCO with a 120-minute horizon and a shortfall cost of 40 is set up correctly, pending numerical execution for costs, coverage, and intervals.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "The provided parameters are valid and within the supported options. The study for ERCO with a 120-minute horizon and a shortfall cost of 40 is set up correctly, pending numerical execution for costs, coverage, and intervals.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 123,
+      "total_tokens": 514,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "5f08dbdd9967f0ce406f27fc93786381b62bf0119c62730cf8bef7f2fb1f7f41",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.5045512000797316,
+    "finished_at": "2026-10-11T15:38:17.016045+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 3.5045512000797316,
+  "transport_complete": true
+}

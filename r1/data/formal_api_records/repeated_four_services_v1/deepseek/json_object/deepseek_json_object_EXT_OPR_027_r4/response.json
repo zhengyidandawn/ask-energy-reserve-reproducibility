@@ -1,0 +1,28 @@
+{
+  "id": "29ffede5-afc4-4ba5-8a84-bfa462e462a1",
+  "object": "chat.completion",
+  "created": 1791612718,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\n    \"calendar\",\n    \"cost_ratio\",\n    \"current_load\",\n    \"horizon\",\n    \"lagged_load\",\n    \"load_statistics\",\n    \"observed_weather\",\n    \"recent_ramp\",\n    \"region_id\"\n  ],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"clarification_required\",\n      \"ambiguous_horizon\"\n    ]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request specifies region GD and shortfall cost 20.0, but the horizon is ambiguous because 'usual horizon' is not a defined value. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results are produced only by the verified numerical workflow.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Missing or ambiguous field: horizon_minutes. The operator used 'usual horizon' instead of an allowed horizon of 60, 120, or 180 minutes. Please specify the horizon in minutes.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 698,
+    "completion_tokens": 316,
+    "total_tokens": 1014,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 186
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

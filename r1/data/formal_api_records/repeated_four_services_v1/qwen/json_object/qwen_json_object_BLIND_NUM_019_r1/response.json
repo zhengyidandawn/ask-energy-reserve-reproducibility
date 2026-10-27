@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"partial_accept\"]\n  },\n  \"decision\": \"partial_accept\",\n  \"evidence_trace\": [\n    \"operator_request\",\n    \"data_dictionary\",\n    \"decision_time_variable_boundary\",\n    \"rolling_window_configuration\",\n    \"numerical_workflow_outputs\",\n    \"audit_log\"\n  ],\n  \"explanation\": \"The schema for the study is valid, but numerical outputs will be produced by the verified workflow. Fabricated numerical values are not allowed and will not be provided.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request has a valid schema, but no fabricated numerical values are provided as per policy.\",\n  \"study_schema\": {\n    \"task_type\": \"upward_reserve_sizing\",\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1.0,\n    \"cost_shortfall\": 10.0,\n    \"rolling_window\": {\n      \"train_days\": 730,\n      \"cal_days\": 30,\n      \"test_days\": 30,\n      \"rolling_step_days\": 30\n    },\n    \"requires_human_approval\": true\n  },\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 638,
+    "completion_tokens": 354,
+    "total_tokens": 992,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612712,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-3090ffd7-22b9-9e21-b6b3-633efdc02ba9"
+}

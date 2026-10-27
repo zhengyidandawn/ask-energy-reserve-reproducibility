@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_IMPL_002",
+  "repeat": 2,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_IMPL_002",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:46.550040+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "ba97e4c2fde16402b4a8a2b957842204e31fc164cfe261d3ceb175d12d22b18d",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request references a default split and default penalty but does not explicitly specify horizon_minutes (60, 120, or 180) or cost_shortfall (10, 20, or 40). Please provide explicit values for these required study fields for the CISO upward reserve request.\", \"reason\": \"Region CISO is explicitly supplied and cost_reserve is fixed at 1 by study protocol, but horizon_minutes and cost_shortfall are unresolved explicit study fields. Per protocol, clarify when explicit study fields are unresolved or conflicting.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The request references a default split and default penalty but does not explicitly specify horizon_minutes (60, 120, or 180) or cost_shortfall (10, 20, or 40). Please provide explicit values for these required study fields for the CISO upward reserve request.",
+      "reason": "Region CISO is explicitly supplied and cost_reserve is fixed at 1 by study protocol, but horizon_minutes and cost_shortfall are unresolved explicit study fields. Per protocol, clarify when explicit study fields are unresolved or conflicting.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 1557,
+      "total_tokens": 1925,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1390
+      }
+    },
+    "response_sha256": "d93f7fded4f74988fede1bbedc81dd0273969345315009ec96960c1d40765d14",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 22.017262700013816,
+    "finished_at": "2026-10-11T15:39:08.568077+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_IMPL_002",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:46.550040+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "ba97e4c2fde16402b4a8a2b957842204e31fc164cfe261d3ceb175d12d22b18d",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request references a default split and default penalty but does not explicitly specify horizon_minutes (60, 120, or 180) or cost_shortfall (10, 20, or 40). Please provide explicit values for these required study fields for the CISO upward reserve request.\", \"reason\": \"Region CISO is explicitly supplied and cost_reserve is fixed at 1 by study protocol, but horizon_minutes and cost_shortfall are unresolved explicit study fields. Per protocol, clarify when explicit study fields are unresolved or conflicting.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The request references a default split and default penalty but does not explicitly specify horizon_minutes (60, 120, or 180) or cost_shortfall (10, 20, or 40). Please provide explicit values for these required study fields for the CISO upward reserve request.",
+      "reason": "Region CISO is explicitly supplied and cost_reserve is fixed at 1 by study protocol, but horizon_minutes and cost_shortfall are unresolved explicit study fields. Per protocol, clarify when explicit study fields are unresolved or conflicting.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 1557,
+      "total_tokens": 1925,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1390
+      }
+    },
+    "response_sha256": "d93f7fded4f74988fede1bbedc81dd0273969345315009ec96960c1d40765d14",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 22.017262700013816,
+    "finished_at": "2026-10-11T15:39:08.568077+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 22.017262700013816,
+  "transport_complete": true
+}

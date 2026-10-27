@@ -1,0 +1,116 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_IMPL_014",
+  "repeat": 2,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_IMPL_014",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:15.501624+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "78a6f3a3e30640402284f27a3eea6271cfe0b954b9b9b1eb5a3548ac91473f38",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a MISO case with default c_R (cost_reserve) and c_S (cost_shortfall). The defaults for cost_reserve and cost_shortfall are 1 and 10, respectively. The horizon is set to the minimum supported value of 60 minutes. No additional information or unsupported fields were provided.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a MISO case with default c_R (cost_reserve) and c_S (cost_shortfall). The defaults for cost_reserve and cost_shortfall are 1 and 10, respectively. The horizon is set to the minimum supported value of 60 minutes. No additional information or unsupported fields were provided.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 370,
+      "completion_tokens": 140,
+      "total_tokens": 510,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "8b5bda853b954968ed366ea69a74de0d4aa9c1faf91c356ca2d5cf68d8111761",
+    "diagnostics": {
+      "messages": [
+        "Execution validation returns clarify: missing_explicit_fields, horizon_minutes, cost_shortfall"
+      ],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "missing_explicit_fields",
+          "horizon_minutes",
+          "cost_shortfall"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.800749000045471,
+    "finished_at": "2026-10-11T15:37:19.302383+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_IMPL_014",
+    "repeat": 2,
+    "phase": "feedback",
+    "started_at": "2026-10-11T15:37:19.303380+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "2aa1ae8dcfdfdd13267ce771604143911b877018b435769233344eca50c87ec2",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the horizon in minutes (60, 120, or 180) and the cost shortfall (10, 20, or 40)?\",\n  \"reason\": \"The request specifies a MISO case with default c_R (cost_reserve), but the horizon in minutes and the cost shortfall are not explicitly provided. These fields need to be resolved.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Could you please specify the horizon in minutes (60, 120, or 180) and the cost shortfall (10, 20, or 40)?",
+      "reason": "The request specifies a MISO case with default c_R (cost_reserve), but the horizon in minutes and the cost shortfall are not explicitly provided. These fields need to be resolved.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 546,
+      "completion_tokens": 147,
+      "total_tokens": 693,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "f2938d4f2675f38c7e35d1e83972c2bd7497c9265b11f9f32bdb599ce61a6ce5",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.9806535000680014,
+    "finished_at": "2026-10-11T15:37:23.284446+00:00"
+  },
+  "online_calls": 2,
+  "total_service_seconds": 7.781402500113472,
+  "transport_complete": true
+}

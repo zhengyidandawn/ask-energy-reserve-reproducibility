@@ -1,0 +1,28 @@
+{
+  "id": "002936d8-5ad4-497d-b313-e7834b3fe9ab",
+  "object": "chat.completion",
+  "created": 1791612704,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\":[\"calendar\",\"cost_ratio\",\"current_load\",\"horizon\",\"lagged_load\",\"load_statistics\",\"observed_weather\",\"recent_ramp\",\"region_id\"],\"audit_log\":{\"human_approval_required\":true,\"triggered_rules\":[\"clarification_required\"]},\"decision\":\"clarify\",\"evidence_trace\":[],\"explanation\":\"The request asks to convert an unspecified 'usual setup' for MISO into ASK JSON and to default the horizon and cost ratio. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results are produced only by the verified numerical workflow. Because the horizon and cost ratio were not explicitly provided and 'usual setup' is ambiguous, clarification is required before an auditable study schema can be accepted.\",\"forbidden_variables\":[\"fabricated_result\",\"future_load\",\"future_weather\",\"raw_data_modification\",\"realized_target\",\"test_period_residual\"],\"numerical_output_policy\":\"computed_by_verified_workflow_only\",\"reason\":\"Missing or ambiguous fields: horizon_minutes is not specified and cannot be safely defaulted without operator confirmation; cost_shortfall is not specified and cannot be safely defaulted without operator confirmation; cost_reserve is not specified and cannot be safely defaulted without operator confirmation; 'usual setup' is ambiguous and does not define the study configuration. Please provide region_id confirmation as MISO, horizon_minutes as one of 60, 120, or 180, cost_shortfall as one of 10.0, 20.0, or 40.0, and cost_reserve as 1.0.\",\"study_schema\":null,\"workflow\":[]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 698,
+    "completion_tokens": 361,
+    "total_tokens": 1059,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 186
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"The supported horizons are 60, 120, and 180 minutes. Could you please specify one of these durations for the upward reserve schema?\",\n  \"reason\": \"The requested horizon of 45 minutes is not among the supported values (60, 120, or 180 minutes).\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 136,
+    "total_tokens": 507,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733094,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-5cf9020e-45c0-94d2-8959-5034a9c1ecdf"
+}

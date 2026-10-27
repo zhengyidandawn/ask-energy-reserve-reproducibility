@@ -1,0 +1,46 @@
+{
+  "case_id": "SF-02",
+  "service": "deepseek",
+  "repeat": 0,
+  "phase": "initial",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:54:44.851387+00:00",
+  "status": "success",
+  "request_sha256": "b380bdd12c333aa19694fccdce9e994abbcd5bf26023d8f0da1eb3f1193f3db4",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 318,
+    "completion_tokens": 73,
+    "total_tokens": 391,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 190
+  },
+  "content": "{\"decision\":\"accept\",\"study\":{\"region\":\"AT\",\"horizon_minutes\":60,\"feature_mode\":\"full\",\"shortfall_weight\":20,\"required_coverage\":0.95,\"reporting\":\"standard\",\"human_authorization_required\":true},\"missing_fields\":[],\"reason\":\"All six study fields are explicitly supplied and the request is supported.\"}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "AT",
+      "horizon_minutes": 60,
+      "feature_mode": "full",
+      "shortfall_weight": 20,
+      "required_coverage": 0.95,
+      "reporting": "standard",
+      "human_authorization_required": true
+    },
+    "missing_fields": [],
+    "reason": "All six study fields are explicitly supplied and the request is supported."
+  },
+  "checks": {
+    "decision": "accept",
+    "execution_ready": true,
+    "corrections": 0,
+    "rules": []
+  },
+  "response_sha256": "2ba1b531737a7ce38b0f1ce46e1b22c11f88b08fed63575aa3a5a643c5eb7a65",
+  "latency_seconds": 0.7857068000594154,
+  "request_finished_at": "2026-10-11T10:54:45.637752+00:00"
+}

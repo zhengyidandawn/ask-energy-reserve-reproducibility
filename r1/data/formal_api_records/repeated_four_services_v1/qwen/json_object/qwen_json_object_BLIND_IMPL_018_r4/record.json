@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_json_object_BLIND_IMPL_018_r4",
+  "case_id": "BLIND_IMPL_018",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "53ae48616268f7e57049fcbdde71525e1b84b22461526f8ad10ae8f25de42b4d",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:20:59.709139+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 634,
+    "completion_tokens": 176,
+    "total_tokens": 810,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-48666f62-c92b-9881-bb65-6fc5c6bc2bad",
+  "provider_created": 1791613265,
+  "system_fingerprint": null,
+  "response_sha256": "ede02d7aded02e297e516cefc8bf0de0748057540bf078590816acc87e3a027a",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_IMPL_018",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The request does not specify the horizon, cost_reserve, and cost_shortfall. These values are required to proceed with the study. Additionally, the region 'ISO-NE' is not in the list of allowed regions. The operator request is missing or ambiguous regarding the specific horizon, cost_reserve, and cost_shortfall. The numerical outputs will be produced by the verified workflow once the necessary details are provided. {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "The operator request is missing or ambiguous regarding the specific horizon, cost_reserve, and cost_shortfall. The numerical outputs will be produced by the verified workflow once the necessary details are provided.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The request does not specify the horizon, cost_reserve, and cost_shortfall. These values are required to proceed with the study. Additionally, the region 'ISO-NE' is not in the list of allowed regions.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 4.9353958000428975,
+  "request_finished_at": "2026-10-10T06:21:04.645461+00:00"
+}

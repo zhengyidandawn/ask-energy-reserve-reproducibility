@@ -1,0 +1,93 @@
+{
+  "task_id": "qwen_tool_call_EXT_OPR_019_r3",
+  "case_id": "EXT_OPR_019",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "tool_call",
+  "repeat": 3,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "2dc32a7d0f6b19f2fc47c319af27742f28ab8be0ea65527f2c7aed140030eb15",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:12:44.881311+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1529,
+    "completion_tokens": 209,
+    "total_tokens": 1738,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-148ee0b7-bcbd-9572-aaef-09efec654913",
+  "provider_created": 1791616371,
+  "system_fingerprint": null,
+  "response_sha256": "6e415739cf5dc961a5802125ae15cad6ba96cbd3b1e019e745fd5ec54a0fef61",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_019",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": false,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": false,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "The region ID 'ISNEE' is not recognized and may be a typo for 'ISNE'. The cost shortfall (cS) is specified as 40, but it's unclear if this is intended to be one of the allowed values. The term 'reseach packet' is not defined. Only observed weather was mentioned, but other admissible variables were not addressed. A clarification is required on these points. The numerical outputs will be produced by the verified workflow. However, there are missing or ambiguous fields in the operator request that need to be clarified before proceeding. {\"human_approval_required\": true, \"triggered_rules\": []}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": false,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "observed_weather",
+      "horizon",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": []
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "The numerical outputs will be produced by the verified workflow. However, there are missing or ambiguous fields in the operator request that need to be clarified before proceeding.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The region ID 'ISNEE' is not recognized and may be a typo for 'ISNE'. The cost shortfall (cS) is specified as 40, but it's unclear if this is intended to be one of the allowed values. The term 'reseach packet' is not defined. Only observed weather was mentioned, but other admissible variables were not addressed. A clarification is required on these points.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 5.816047100001015,
+  "request_finished_at": "2026-10-10T07:12:50.697103+00:00"
+}

@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_json_object_BLIND_IMPL_013_r4",
+  "case_id": "BLIND_IMPL_013",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "53ae48616268f7e57049fcbdde71525e1b84b22461526f8ad10ae8f25de42b4d",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:20:43.713612+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 634,
+    "completion_tokens": 161,
+    "total_tokens": 795,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-cfb0fd63-76f0-9d0a-ae9a-8c88a62525c2",
+  "provider_created": 1791613248,
+  "system_fingerprint": null,
+  "response_sha256": "6c806d43b661139ec36e64e1325bb5fd2cd473f7925b8c23fd6d900ee84cc631",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_IMPL_013",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The specified horizon is ambiguous and not provided as a concrete value in minutes. Additionally, the cost_reserve and cost_shortfall values are missing. The request is unclear about the specific horizon and other necessary parameters. Please provide the exact horizon in minutes (60, 120, or 180) and any other required details for the study. {\"human_approval_required\": false, \"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "The request is unclear about the specific horizon and other necessary parameters. Please provide the exact horizon in minutes (60, 120, or 180) and any other required details for the study.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "",
+    "reason": "The specified horizon is ambiguous and not provided as a concrete value in minutes. Additionally, the cost_reserve and cost_shortfall values are missing.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 4.407060400000773,
+  "request_finished_at": "2026-10-10T06:20:48.120955+00:00"
+}

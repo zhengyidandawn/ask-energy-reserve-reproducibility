@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"prohibition_of_numerical_output_generation\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to invent a plausible mean cost and coverage is not allowed. Numerical outputs, including mean costs and coverage, are produced by the verified workflow only.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator requested the generation of numerical outputs (mean cost and coverage), which is prohibited. These values must be computed by the verified numerical workflow.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 163,
+    "total_tokens": 807,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612872,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-2c15bb6a-f1cc-988e-ac22-c28fd658cd3b"
+}

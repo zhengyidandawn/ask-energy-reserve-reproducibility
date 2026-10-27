@@ -1,0 +1,22 @@
+{
+  "id": "as-7s8k7fp26e",
+  "object": "chat.completion",
+  "created": 1791716171,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"horizon_minutes\"\n    ],\n    \"reason\": \"The horizon_minutes value of 45 is not supported. Please provide a valid horizon_minutes (60, 120, or 180) to proceed.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 301,
+    "completion_tokens": 81,
+    "total_tokens": 382
+  }
+}

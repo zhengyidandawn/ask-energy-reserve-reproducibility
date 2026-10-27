@@ -1,0 +1,116 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_CLAR_012",
+  "repeat": 1,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_CLAR_012",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:34.972585+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "e74dec6a3be2c7d338a71c9b54be3fb7355d5100c68f045869ef527afadb9669",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported region should be used (GD, ERCO, CISO, ISNE, MISO, or SWPP), and which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be applied?\",\n  \"reason\": \"The request refers to a standard reserve analysis with normal penalty and normal horizon, but the region is deferred and the horizon and shortfall weight are not explicitly resolved. The reserve cost is fixed at 1 by protocol, while the remaining study fields require clarification before a draft can be accepted.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Which supported region should be used (GD, ERCO, CISO, ISNE, MISO, or SWPP), and which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be applied?",
+      "reason": "The request refers to a standard reserve analysis with normal penalty and normal horizon, but the region is deferred and the horizon and shortfall weight are not explicitly resolved. The reserve cost is fixed at 1 by protocol, while the remaining study fields require clarification before a draft can be accepted.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 191,
+      "total_tokens": 586,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 139
+    },
+    "response_sha256": "440f8a79c95770b3dd97d14bb971b9bdfb6e09beeebfdbda8fb07f27335f98d7",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.6626246999949217,
+    "finished_at": "2026-10-11T15:36:36.634950+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_CLAR_012",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:34.972585+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "e74dec6a3be2c7d338a71c9b54be3fb7355d5100c68f045869ef527afadb9669",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported region should be used (GD, ERCO, CISO, ISNE, MISO, or SWPP), and which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be applied?\",\n  \"reason\": \"The request refers to a standard reserve analysis with normal penalty and normal horizon, but the region is deferred and the horizon and shortfall weight are not explicitly resolved. The reserve cost is fixed at 1 by protocol, while the remaining study fields require clarification before a draft can be accepted.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Which supported region should be used (GD, ERCO, CISO, ISNE, MISO, or SWPP), and which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be applied?",
+      "reason": "The request refers to a standard reserve analysis with normal penalty and normal horizon, but the region is deferred and the horizon and shortfall weight are not explicitly resolved. The reserve cost is fixed at 1 by protocol, while the remaining study fields require clarification before a draft can be accepted.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 191,
+      "total_tokens": 586,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 139
+    },
+    "response_sha256": "440f8a79c95770b3dd97d14bb971b9bdfb6e09beeebfdbda8fb07f27335f98d7",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.6626246999949217,
+    "finished_at": "2026-10-11T15:36:36.634950+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.6626246999949217,
+  "transport_complete": true
+}

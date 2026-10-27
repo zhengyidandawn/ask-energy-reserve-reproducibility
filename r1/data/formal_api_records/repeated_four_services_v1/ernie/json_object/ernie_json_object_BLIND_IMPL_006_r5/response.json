@@ -1,0 +1,25 @@
+{
+  "id": "as-0ibf2saa04",
+  "object": "chat.completion",
+  "created": 1791614751,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"ERCOT reserve schema, normal horizon, normal cS, standard public validation.\"\n        },\n        {\n            \"data_dictionary\": {\n                \"region_id\": \"ERCOT (invalid, must be 'ERCO')\",\n                \"horizon_minutes\": \"not specified\",\n                \"cost_shortfall\": \"not specified\"\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": \"No future or test-period residual variables detected.\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": \"Not computed due to rejection.\"\n        }\n    ],\n    \"explanation\": \"The request was rejected due to an invalid region identifier and missing required parameters for reserve sizing.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Region 'ERCOT' is invalid (must be 'ERCO'). Horizon and cost_shortfall are unspecified.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 688,
+    "completion_tokens": 435,
+    "total_tokens": 1123,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

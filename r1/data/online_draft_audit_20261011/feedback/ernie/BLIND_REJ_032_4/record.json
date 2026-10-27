@@ -1,0 +1,52 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_REJ_032",
+  "repeat": 4,
+  "phase": "feedback",
+  "started_at": "2026-10-11T15:38:22.446876+00:00",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "10df8f926334fb3a419d9837186808c53724f86084bc838bb2276f9f1612b662",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": 45,\n        \"cost_reserve\": 1.0,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"The requested horizon of 45 minutes is not supported. Supported horizons are 60, 120, and 180 minutes. Please confirm the desired horizon or provide a supported value.\",\n    \"reason\": \"The requested horizon is not supported, and clarification is needed to proceed with a valid schema.\",\n    \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 45,
+      "cost_reserve": 1.0,
+      "cost_shortfall": null
+    },
+    "clarification_question": "The requested horizon of 45 minutes is not supported. Supported horizons are 60, 120, and 180 minutes. Please confirm the desired horizon or provide a supported value.",
+    "reason": "The requested horizon is not supported, and clarification is needed to proceed with a valid schema.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 514,
+    "completion_tokens": 149,
+    "total_tokens": 663,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "f726c274b0399398baff78a23a44ae62d34d3972217e451239a24d75c23309bb",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 5.231384200043976,
+  "finished_at": "2026-10-11T15:38:27.678580+00:00"
+}

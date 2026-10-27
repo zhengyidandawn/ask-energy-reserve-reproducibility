@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the desired time horizon (60, 120, or 180 minutes) and the shortfall cost (10, 20, or 40)?\",\n  \"reason\": \"The request is missing explicit values for the horizon_minutes and cost_shortfall fields. These values are required to proceed with the energy study.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 525,
+    "completion_tokens": 139,
+    "total_tokens": 664,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733043,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-ec84de48-8220-9a67-8a21-56486f9f209d"
+}

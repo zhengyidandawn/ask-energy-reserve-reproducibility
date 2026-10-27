@@ -1,0 +1,25 @@
+{
+  "id": "as-wc3vn0rzd8",
+  "object": "chat.completion",
+  "created": 1791612871,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"SPP validation with default everything except keep audit logging on.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"triggered_rules\": [\"unsupported_region\"],\n                \"human_approval_required\": false\n            }\n        }\n    ],\n    \"explanation\": \"The region 'SPP' is not supported. Valid regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. Numerical outputs are produced by the verified workflow only when the study schema is accepted.\",\n    \"reason\": \"Unsupported region specified.\",\n    \"study_schema\": null,\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 683,
+    "completion_tokens": 343,
+    "total_tokens": 1026,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

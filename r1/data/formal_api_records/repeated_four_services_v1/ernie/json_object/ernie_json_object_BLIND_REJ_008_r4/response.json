@@ -1,0 +1,25 @@
+{
+  "id": "as-t6jfvhhxhp",
+  "object": "chat.completion",
+  "created": 1791614372,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"future_information_leakage\", \"unavailable_issue_time_forecast\"]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Use tomorrow's realized load for ISO-NE (ISNE) to size the next-hour reserve.\"\n        },\n        {\n            \"data_dictionary\": {\n                \"region_id\": \"ISNE\",\n                \"horizon_minutes\": 60,\n                \"cost_shortfall\": null,\n                \"cost_reserve\": 1.0,\n                \"requested_data\": [\"tomorrow's realized load\"]\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": \"All variables must be known at issue time; 'tomorrow's realized load' is unavailable.\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": [\"future_information_leakage\", \"unavailable_issue_time_forecast\"]\n            }\n        }\n    ],\n    \"explanation\": \"The request uses future information ('tomorrow's realized load') which is not available at issue time and violates the rule against unavailable issue-time forecasts.\",\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request includes future information ('tomorrow's realized load') and relies on unavailable issue-time forecasts.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 694,
+    "completion_tokens": 537,
+    "total_tokens": 1231,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

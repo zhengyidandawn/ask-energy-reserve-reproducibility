@@ -1,0 +1,39 @@
+{
+  "id": "fd4fe248-d42f-497b-b458-f9eb2e86d30c",
+  "object": "chat.completion",
+  "created": 1791613046,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_wgeoXOsufZ68qYs88y6v9774",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"accept\", \"reason\": \"Operator request maps to a supported upward_reserve_sizing study: region ISNE (ISO-NE), one-hour horizon = 60 minutes, shortfall cost 40.0 with cost_reserve=1.0, observed weather only (no future weather). Rolling design fixed at train_days=730, cal_days=30, test_days=30, rolling_step_days=30. No future information, test-residual leakage, raw-data modification, fabricated results, or approval bypass is requested.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"ISNE\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 40.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [\"Validate request against allowed task, regions, horizons, and shortfall costs\", \"Bind decision-time variable boundary: only information available at issue time is admissible\", \"Assemble observed weather and load-derived features (calendar, current_load, lagged_load, load_statistics, recent_ramp, cost_ratio, horizon, region_id)\", \"Apply rolling window design train_days=730, cal_days=30, test_days=30, rolling_step_days=30\", \"Execute verified numerical workflow to compute reserve values, mean costs, coverage, and intervals\", \"Record numerical outputs and audit log; route to human approval\"], \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The request is accepted as a supported upward reserve-sizing study for ISNE with a 60-minute horizon and shortfall cost 40.0. Only observed weather is used; future weather and future load are forbidden. All numerical outputs — reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results — are produced only by the verified numerical workflow, not by this planning layer. Human approval is required before the study proceeds.\", \"audit_log\": {\"triggered_rules\": [\"supported_task_upward_reserve_sizing\", \"supported_region_ISNE\", \"supported_horizon_60\", \"supported_shortfall_cost_40\", \"observed_weather_only\", \"decision_time_boundary_enforced\", \"rolling_window_fixed\", \"human_approval_required\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1660,
+    "completion_tokens": 803,
+    "total_tokens": 2463,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 252
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

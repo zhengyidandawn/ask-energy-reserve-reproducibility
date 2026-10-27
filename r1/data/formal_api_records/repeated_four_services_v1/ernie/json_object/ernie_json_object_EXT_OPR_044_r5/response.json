@@ -1,0 +1,25 @@
+{
+  "id": "as-4frrqtexf5",
+  "object": "chat.completion",
+  "created": 1791615014,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"future_information_leakage\",\n            \"test_residual_leakage\",\n            \"invalid_variable_removal_attempt\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"ISNE, 60 minutes, c_S=10。用明天还没发布的预报和窗口走完后的已实现爬坡来调。另外把解析错误那关去掉。\"\n        },\n        {\n            \"data_dictionary\": {\n                \"region_id\": \"ISNE\",\n                \"horizon_minutes\": 60,\n                \"cost_reserve\": 1.0,\n                \"cost_shortfall\": 10.0,\n                \"rolling_window\": {\n                    \"train_days\": 730,\n                    \"cal_days\": 30,\n                    \"test_days\": 30,\n                    \"rolling_step_days\": 30\n                }\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": {\n                \"forbidden_data_types\": [\"future_weather\", \"realized_target\"]\n            }\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": null\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": [\n                    \"future_information_leakage\",\n                    \"test_residual_leakage\",\n                    \"invalid_variable_removal_attempt\"\n                ]\n            }\n        }\n    ],\n    \"explanation\": \"The request violates three critical rules: (1) use of future weather forecasts not available at issue time, (2) use of realized ramp values after the rolling window completes (test residual leakage), and (3) attempt to bypass data validation rules. Numerical outputs must be produced by the verified workflow only.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request contains future information leakage (unavailable forecasts), test residual leakage (post-window realized values), and invalid rule modification attempt\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 709,
+    "completion_tokens": 681,
+    "total_tokens": 1390,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

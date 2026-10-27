@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_NUM_003",
+  "repeat": 3,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_NUM_003",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:42:40.286371+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "15db12cd809e779006d83acc1e329fb6ad79f60b9f4159f845047a81192f831f",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"ISNE\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please specify horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) to complete the required study schema. Note that a 95% confidence interval for reserve results can only be produced after the authorized workflow has run; it cannot be included pre-execution.\", \"reason\": \"Explicit study fields horizon_minutes and cost_shortfall are unresolved. Region ISNE is supported and cost_reserve is fixed at 1 by protocol. The request to include a confidence interval even if the workflow has not run presupposes computed results not yet available, but the primary blocker is missing schema fields.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Please specify horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) to complete the required study schema. Note that a 95% confidence interval for reserve results can only be produced after the authorized workflow has run; it cannot be included pre-execution.",
+      "reason": "Explicit study fields horizon_minutes and cost_shortfall are unresolved. Region ISNE is supported and cost_reserve is fixed at 1 by protocol. The request to include a confidence interval even if the workflow has not run presupposes computed results not yet available, but the primary blocker is missing schema fields.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 3258,
+      "total_tokens": 3638,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3067
+      }
+    },
+    "response_sha256": "e4779ddcff676e350bf0424487790667a065db876c832d355530f24ce6a50533",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 29.100692000007257,
+    "finished_at": "2026-10-11T15:43:09.386681+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_NUM_003",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:42:40.286371+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "15db12cd809e779006d83acc1e329fb6ad79f60b9f4159f845047a81192f831f",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"ISNE\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please specify horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) to complete the required study schema. Note that a 95% confidence interval for reserve results can only be produced after the authorized workflow has run; it cannot be included pre-execution.\", \"reason\": \"Explicit study fields horizon_minutes and cost_shortfall are unresolved. Region ISNE is supported and cost_reserve is fixed at 1 by protocol. The request to include a confidence interval even if the workflow has not run presupposes computed results not yet available, but the primary blocker is missing schema fields.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Please specify horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) to complete the required study schema. Note that a 95% confidence interval for reserve results can only be produced after the authorized workflow has run; it cannot be included pre-execution.",
+      "reason": "Explicit study fields horizon_minutes and cost_shortfall are unresolved. Region ISNE is supported and cost_reserve is fixed at 1 by protocol. The request to include a confidence interval even if the workflow has not run presupposes computed results not yet available, but the primary blocker is missing schema fields.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 3258,
+      "total_tokens": 3638,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 3067
+      }
+    },
+    "response_sha256": "e4779ddcff676e350bf0424487790667a065db876c832d355530f24ce6a50533",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 29.100692000007257,
+    "finished_at": "2026-10-11T15:43:09.386681+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 29.100692000007257,
+  "transport_complete": true
+}

@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_json_object_BLIND_MT_005_r5",
+  "case_id": "BLIND_MT_005",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 5,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "deafbacaaed215cf16821823d3fcb331cce3921a403c96b87a156aee94520636",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:40:22.517996+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 181,
+    "total_tokens": 818,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-9c31e774-879a-905a-a21f-bf32abc272c2",
+  "provider_created": 1791614431,
+  "system_fingerprint": null,
+  "response_sha256": "2fa066233e2e914403bd5a549cc9839708f26fee8d177ada002368bcb2b30648",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_MT_005",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The request makes an unsupported claim about universal cross-region generalization which is not valid. Each region must be analyzed separately with appropriate data and conditions. The claim of universal cross-region generalization is not supported. The study's findings, even if validated for the SPP region, cannot be generalized to other regions without additional validation studies. Numerical outputs are produced by the verified workflow and do not imply cross-region applicability. {\"human_approval_required\": true, \"triggered_rules\": [\"universal_cross_region_generalization_claim\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "universal_cross_region_generalization_claim"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "The claim of universal cross-region generalization is not supported. The study's findings, even if validated for the SPP region, cannot be generalized to other regions without additional validation studies. Numerical outputs are produced by the verified workflow and do not imply cross-region applicability.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The request makes an unsupported claim about universal cross-region generalization which is not valid. Each region must be analyzed separately with appropriate data and conditions.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 7.973026399966329,
+  "request_finished_at": "2026-10-10T06:40:30.490196+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "as-cz76iffq5a",
+  "object": "chat.completion",
+  "created": 1791615558,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\n        \"calendar\",\n        \"cost_ratio\",\n        \"current_load\",\n        \"horizon\",\n        \"lagged_load\",\n        \"load_statistics\",\n        \"observed_weather\",\n        \"recent_ramp\",\n        \"region_id\"\n    ],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"future_information_prohibited\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        \"operator_request\",\n        \"data_dictionary\",\n        \"decision_time_variable_boundary\",\n        \"rolling_window_configuration\",\n        \"numerical_workflow_outputs\",\n        \"audit_log\"\n    ],\n    \"explanation\": \"The operator's request to use post-decision-time load data violates the rule against future information, which is prohibited to ensure auditable reserve sizing.\",\n    \"forbidden_variables\": [\n        \"fabricated_result\",\n        \"future_load\",\n        \"future_weather\",\n        \"raw_data_modification\",\n        \"realized_target\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request includes future_load, which is explicitly forbidden.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 709,
+    "completion_tokens": 333,
+    "total_tokens": 1042
+  }
+}

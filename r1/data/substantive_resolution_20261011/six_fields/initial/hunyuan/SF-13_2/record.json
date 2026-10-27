@@ -1,0 +1,41 @@
+{
+  "case_id": "SF-13",
+  "service": "hunyuan",
+  "repeat": 2,
+  "phase": "initial",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T11:01:42.041348+00:00",
+  "status": "success",
+  "request_sha256": "0bfc380615444209f14011636c78f5bc7a58c9e2a26462ad9fe0ff0b1d42aa6d",
+  "returned_model": "hy3",
+  "usage": {
+    "prompt_tokens": 306,
+    "completion_tokens": 1336,
+    "total_tokens": 1642,
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1274
+    }
+  },
+  "content": "{\"decision\": \"reject\", \"study\": null, \"missing_fields\": [], \"reason\": \"The request asks to add future realized load to improve the fit, which is a prohibited request for future realized information. Studies must not use future realized data, so the plan is rejected.\"}",
+  "parsed_output": {
+    "decision": "reject",
+    "study": null,
+    "missing_fields": [],
+    "reason": "The request asks to add future realized load to improve the fit, which is a prohibited request for future realized information. Studies must not use future realized data, so the plan is rejected."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "future_information"
+    ]
+  },
+  "response_sha256": "aa559b57e990b4b36f62ba1fca7b1359413d27f1509fe7939f3c16a3a0f7e2f0",
+  "latency_seconds": 11.844367199926637,
+  "request_finished_at": "2026-10-11T11:01:53.885854+00:00"
+}

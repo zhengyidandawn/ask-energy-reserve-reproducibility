@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"请确认是否需要指定shortfall cost，它对研究是必要的。如果不需要特定值，请明确说明。\",\n  \"reason\": \"请求中指定了有效的地区（CISO）和时间范围（120分钟），但未提供shortfall cost的具体数值。用户要求仅输出JSON schema而不包括reserve MW或coverage，这是可以接受的，但为了完整进行研究，我们需要确定一个shortfall cost。\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 155,
+    "total_tokens": 535,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733051,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-9a97dd78-c758-9626-b24a-e5516033ced3"
+}

@@ -1,0 +1,114 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_036",
+  "repeat": 4,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_STD_036",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:47:35.857494+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "012eebeadd6c4a1ac1067cb87864096f625093017f556ac9014d9dd0dc5bf6d3",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 40}, \"clarification_question\": null, \"reason\": \"Explicit study fields supplied and valid: region ERCO supported, horizon_minutes 120 supported, cost_shortfall 40 supported; cost_reserve fixed at 1 per protocol. No unresolved or conflicting fields; numerical workflow deferred per request.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "Explicit study fields supplied and valid: region ERCO supported, horizon_minutes 120 supported, cost_shortfall 40 supported; cost_reserve fixed at 1 per protocol. No unresolved or conflicting fields; numerical workflow deferred per request.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 387,
+      "completion_tokens": 1169,
+      "total_tokens": 1556,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1056
+      }
+    },
+    "response_sha256": "ae44484b0d180f2f5de5cd8e8dc68381754b13e27cafc8aba0488556646f85d8",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 10.021851300029084,
+    "finished_at": "2026-10-11T15:47:45.879598+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_STD_036",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:47:35.857494+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "012eebeadd6c4a1ac1067cb87864096f625093017f556ac9014d9dd0dc5bf6d3",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 40}, \"clarification_question\": null, \"reason\": \"Explicit study fields supplied and valid: region ERCO supported, horizon_minutes 120 supported, cost_shortfall 40 supported; cost_reserve fixed at 1 per protocol. No unresolved or conflicting fields; numerical workflow deferred per request.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "Explicit study fields supplied and valid: region ERCO supported, horizon_minutes 120 supported, cost_shortfall 40 supported; cost_reserve fixed at 1 per protocol. No unresolved or conflicting fields; numerical workflow deferred per request.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 387,
+      "completion_tokens": 1169,
+      "total_tokens": 1556,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1056
+      }
+    },
+    "response_sha256": "ae44484b0d180f2f5de5cd8e8dc68381754b13e27cafc8aba0488556646f85d8",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 10.021851300029084,
+    "finished_at": "2026-10-11T15:47:45.879598+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 10.021851300029084,
+  "transport_complete": true
+}

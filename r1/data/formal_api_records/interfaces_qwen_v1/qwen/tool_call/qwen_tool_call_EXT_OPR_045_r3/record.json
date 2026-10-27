@@ -1,0 +1,108 @@
+{
+  "task_id": "qwen_tool_call_EXT_OPR_045_r3",
+  "case_id": "EXT_OPR_045",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "tool_call",
+  "repeat": 3,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "97023523f9075c3a16e26050b0ff09a5f0560da630d38b9e407d20c68a6d86e4",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:13:19.732892+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1533,
+    "completion_tokens": 190,
+    "total_tokens": 1723,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-557198ed-4f26-98ef-8bbd-37af31d6c6ff",
+  "provider_created": 1791616405,
+  "system_fingerprint": null,
+  "response_sha256": "076407d4776a64127753bb977815673242668abca362294884cc9b744f6e404e",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_045",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "请求中包含了被禁止的未来负荷数据，这违背了研究规则。 使用决策时刻之后的负荷信息违反了研究规则。数值输出必须由验证过的计算流程生成。 {\"human_approval_required\": true, \"triggered_rules\": [\"future_information_prohibited\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "future_information_prohibited"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "使用决策时刻之后的负荷信息违反了研究规则。数值输出必须由验证过的计算流程生成。",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "请求中包含了被禁止的未来负荷数据，这违背了研究规则。",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 4.954770799959078,
+  "request_finished_at": "2026-10-10T07:13:24.687187+00:00"
+}

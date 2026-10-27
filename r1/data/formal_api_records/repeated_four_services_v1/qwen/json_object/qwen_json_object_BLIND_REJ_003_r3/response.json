@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"future_information\",\n      \"unavailable_issue_time_forecasts\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The operator request is rejected because it involves using weather forecasts issued after the decision timestamp, which constitutes future information and violates the rule against using unavailable issue-time forecasts. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [\"future_weather\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator requested to use weather forecasts that were issued after the decision timestamp, which is not allowed as it involves future information and unavailable issue-time forecasts.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 181,
+    "total_tokens": 817,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613011,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-e6e39372-fc02-9e48-84aa-278ad834d350"
+}

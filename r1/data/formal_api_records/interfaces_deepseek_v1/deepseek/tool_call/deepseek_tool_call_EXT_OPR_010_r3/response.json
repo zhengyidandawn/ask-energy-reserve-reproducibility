@@ -1,0 +1,39 @@
+{
+  "id": "7d29d8f6-f0ca-428c-b7b1-11b27475e9c5",
+  "object": "chat.completion",
+  "created": 1791613107,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_ufF3DeVTxwCM8Yg5843G8431",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"accept\", \"reason\": \"Operator request maps to the allowed upward_reserve_sizing task with a supported region (MISO), a supported horizon (60 minutes), and a supported shortfall cost (40.0) with cost_reserve=1.0. The request explicitly restricts to allowed inputs, and the operator's stated intent to route the plan for approval is consistent with the mandatory human-approval gate. No future information, test-residual leakage, raw-data modification, fabricated results, or approval bypass is requested.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"MISO\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 40.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [\"Validate request against allowed task, region, horizon, and cost sets\", \"Bind decision-time variable boundary so only issue-time-available inputs are used\", \"Assemble rolling design with train_days=730, cal_days=30, test_days=30, rolling_step_days=30\", \"Fit and calibrate the upward reserve sizing model on admissible variables only\", \"Evaluate out-of-sample coverage and cost metrics on the held-out test window\", \"Emit numerical outputs (reserve values, mean costs, coverage, intervals) from the verified numerical workflow\", \"Route results to human approval before any operational use\"], \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The request is accepted as an upward reserve sizing study for MISO at a 60-minute horizon with cost_reserve=1.0 and cost_shortfall=40.0, using the fixed rolling design (730/30/30/30). Only admissible, issue-time-available variables are permitted; future load, future weather, realized targets, test-period residuals, raw-data modification, and fabricated results are forbidden. All numerical outputs — reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results — are produced only by the verified numerical workflow, not by this planning layer. The plan requires human approval and does not bypass any approval or audit control.\", \"audit_log\": {\"triggered_rules\": [\"allowed_task_upward_reserve_sizing\", \"supported_region_MISO\", \"supported_horizon_60\", \"supported_cost_shortfall_40\", \"cost_reserve_1.0\", \"rolling_window_fixed_730_30_30_30\", \"decision_time_information_boundary_enforced\", \"no_future_information\", \"no_test_residual_leakage\", \"no_raw_data_modification\", \"no_fabricated_results\", \"human_approval_required\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1667,
+    "completion_tokens": 886,
+    "total_tokens": 2553,
+    "prompt_tokens_details": {
+      "cached_tokens": 1533
+    },
+    "prompt_cache_hit_tokens": 1533,
+    "prompt_cache_miss_tokens": 134
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

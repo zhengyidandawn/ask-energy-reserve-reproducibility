@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"future_information\",\n      \"unavailable_issue_time_forecasts\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to use weather forecasts issued after the decision timestamp is rejected because it violates the rules against using future information and unavailable issue-time forecasts at the decision time. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request includes the use of weather forecasts issued after the decision timestamp, which is not allowed as per the rules for the study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 631,
+    "completion_tokens": 211,
+    "total_tokens": 842,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614255,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-ece8baf9-6675-99ed-bb62-698c3a3e0932"
+}

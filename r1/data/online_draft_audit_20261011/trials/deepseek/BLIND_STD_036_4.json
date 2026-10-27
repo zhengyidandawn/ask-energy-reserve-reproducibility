@@ -1,0 +1,112 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_STD_036",
+  "repeat": 4,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_STD_036",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:05.962988+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "642060b7fa02c97a34162a1fbbb57974918b3ad1f469b333a6f804ae66bea349",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request explicitly specifies a supported region (ERCO), a supported horizon (120 minutes), and a supported shortfall weight (40). The reserve cost is fixed at 1 by the study protocol. The request also correctly defers numerical costs, coverage, and intervals to the numerical workflow, so the study kernel can be accepted as a draft.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "The request explicitly specifies a supported region (ERCO), a supported horizon (120 minutes), and a supported shortfall weight (40). The reserve cost is fixed at 1 by the study protocol. The request also correctly defers numerical costs, coverage, and intervals to the numerical workflow, so the study kernel can be accepted as a draft.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 408,
+      "completion_tokens": 148,
+      "total_tokens": 556,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 152
+    },
+    "response_sha256": "4d9d7fe26c6ec0b1eb1952c2bd0ff75912e209742f91e22c4d4d083f01300146",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.3720177999930456,
+    "finished_at": "2026-10-11T15:37:07.335904+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_STD_036",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:05.962988+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "642060b7fa02c97a34162a1fbbb57974918b3ad1f469b333a6f804ae66bea349",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request explicitly specifies a supported region (ERCO), a supported horizon (120 minutes), and a supported shortfall weight (40). The reserve cost is fixed at 1 by the study protocol. The request also correctly defers numerical costs, coverage, and intervals to the numerical workflow, so the study kernel can be accepted as a draft.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "The request explicitly specifies a supported region (ERCO), a supported horizon (120 minutes), and a supported shortfall weight (40). The reserve cost is fixed at 1 by the study protocol. The request also correctly defers numerical costs, coverage, and intervals to the numerical workflow, so the study kernel can be accepted as a draft.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 408,
+      "completion_tokens": 148,
+      "total_tokens": 556,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 152
+    },
+    "response_sha256": "4d9d7fe26c6ec0b1eb1952c2bd0ff75912e209742f91e22c4d4d083f01300146",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.3720177999930456,
+    "finished_at": "2026-10-11T15:37:07.335904+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.3720177999930456,
+  "transport_complete": true
+}

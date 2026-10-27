@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The operator request is unclear regarding the specific horizon and cost parameters for the study. Further details are required to proceed.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The ISO-NE (ISNE) region is mentioned, but the specific horizon in minutes (60, 120, or 180) and the cost shortfall (10.0, 20.0, or 40.0) are not specified. The request must include these details to be processed.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 634,
+    "completion_tokens": 188,
+    "total_tokens": 822,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612645,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-f05e6ff2-3420-905c-b3e3-8ca9371822d8"
+}

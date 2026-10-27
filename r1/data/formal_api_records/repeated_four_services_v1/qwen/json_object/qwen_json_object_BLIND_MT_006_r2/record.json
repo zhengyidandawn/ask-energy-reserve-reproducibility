@@ -1,0 +1,99 @@
+{
+  "task_id": "qwen_json_object_BLIND_MT_006_r2",
+  "case_id": "BLIND_MT_006",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "83f9847da3a86c414a8befcb75b1e538060186d5bf060f1ea978d87ce5c959bc",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:14:52.595033+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 647,
+    "completion_tokens": 215,
+    "total_tokens": 862,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-84d19e71-1231-98e7-913d-aaf6457f894f",
+  "provider_created": 1791612899,
+  "system_fingerprint": null,
+  "response_sha256": "7eb6f1dcd21513e9ab47c4d7894c639829654d455b09c6730da155eafe9bf2a3",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_MT_006",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The request is invalid as it includes the use of tomorrow's realized load, which is considered future information and is forbidden. It also implies a leakage of test period residual into the decision process, which is not permissible. The request was rejected because it involves the use of future information, which is not allowed. Numerical outputs are produced by the verified workflow only. {\"human_approval_required\": true, \"triggered_rules\": [\"future_information\", \"test_residue_leakage\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "future_information",
+        "test_residue_leakage"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "The request was rejected because it involves the use of future information, which is not allowed. Numerical outputs are produced by the verified workflow only.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The request is invalid as it includes the use of tomorrow's realized load, which is considered future information and is forbidden. It also implies a leakage of test period residual into the decision process, which is not permissible.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 6.009531000046991,
+  "request_finished_at": "2026-10-10T06:14:58.604710+00:00"
+}

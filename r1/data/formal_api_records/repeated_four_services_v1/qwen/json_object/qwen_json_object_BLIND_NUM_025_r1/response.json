@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"hidden_audit_bypass\",\n      \"fabricated_result\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The numerical outputs, including reserve values, are produced by the verified workflow only. Fabricated results and hidden audit bypasses are not allowed.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"hidden_audit_bypass\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Request involves a hidden audit bypass and fabrication of results which are against the rules. Numerical outputs can only be computed by the verified workflow.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 176,
+    "total_tokens": 820,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612707,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-e148414b-5682-9458-9e83-b04d6f272c27"
+}

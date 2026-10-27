@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"成本短缺值未提供或不明确。请提供一个清晰的成本短缺值，允许的值为10.0, 20.0, 40.0。\", \"study_schema\": null, \"admissible_variables\": [], \"forbidden_variables\": [], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"对于向上备用容量的研究计划，数值输出将由已验证的工作流产生。当前请求由于成本短缺值不明确而无法接受，需要进一步澄清。\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}",
+              "name": "submit_plan"
+            },
+            "id": "call_251444ffe3ed439381502f",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1521,
+    "completion_tokens": 156,
+    "total_tokens": 1677,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616486,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-c0738985-c89c-9170-a3d1-0045e028c083"
+}

@@ -1,0 +1,109 @@
+{
+  "figures": [
+    {
+      "name": "R1_F7_Frozen_Policies",
+      "label": "fig:r1_frozen_policies",
+      "protocol": "Eight later windows beginning in 2020; country-specific frozen common margins; all 256 policy-window coverages >=0.95.",
+      "data_files": [
+        "R1_F7_Frozen_Policies_data.csv"
+      ],
+      "formats": [
+        "pdf",
+        "svg",
+        "png"
+      ]
+    },
+    {
+      "name": "R1_F8_Frozen_Cost_Gains",
+      "label": "fig:r1_frozen_gains",
+      "protocol": "Saved paired intervals: 3,000 circular three-window block draws and four-country Bonferroni adjustment; no resampling performed by plotting script.",
+      "data_files": [
+        "R1_F8_Frozen_Cost_Gains_windows_data.csv",
+        "R1_F8_Frozen_Cost_Gains_intervals_data.csv"
+      ],
+      "formats": [
+        "pdf",
+        "svg",
+        "png"
+      ]
+    },
+    {
+      "name": "R1_F9_Conditional_Reliability",
+      "label": "fig:r1_conditional_bandwidth",
+      "protocol": "2019 selected-local conditional coverage weighted by held-out regime counts; bandwidth means from the saved four-origin German diagnostic.",
+      "data_files": [
+        "R1_F9_Conditional_Reliability_regimes_data.csv",
+        "R1_F9_Conditional_Reliability_bandwidth_data.csv"
+      ],
+      "formats": [
+        "pdf",
+        "svg",
+        "png"
+      ]
+    },
+    {
+      "name": "R1_F10_Public_Reserve_Trajectory",
+      "label": "fig:r1_public_trajectory",
+      "protocol": "First seven days of the fourth later German window (fixed chronological choice). Cached reserves plus the saved common margin; full-window means, coverage and costs checked against formal CSV.",
+      "data_files": [
+        "R1_F10_Public_Reserve_Trajectory_data.csv"
+      ],
+      "formats": [
+        "pdf",
+        "svg",
+        "png"
+      ]
+    },
+    {
+      "name": "R1_F11_Field_Consequences",
+      "label": "fig:r1_field_consequences",
+      "protocol": "Panels a-c: controlled specifications evaluated on 2,880 common German reference timestamps and objective. Panel d: separate 22-request, five-trial-per-service replay; completed outputs reproduce each reference.",
+      "data_files": [
+        "R1_F11_Field_Consequences_fields_data.csv",
+        "R1_F11_Field_Consequences_completion_data.csv"
+      ],
+      "formats": [
+        "pdf",
+        "svg",
+        "png"
+      ]
+    }
+  ],
+  "sources": {
+    "results/evidence_completion_20261011/reliability/main/summary.csv": {
+      "sha256": "9c28c4465c79c98ffefe65b5dece70cb81773e942f7c01723e097b9756558e3a",
+      "bytes": 11898
+    },
+    "results/evidence_completion_20261011/reliability/main/window_results.csv": {
+      "sha256": "09d5e44345179ad82fc0a008648618990939e7b3a2fcf578f4058b0a4c5d0ac0",
+      "bytes": 175817
+    },
+    "results/positive_revision_20261011/frozen_paired_intervals.csv": {
+      "sha256": "32d2fa18b35a7986ee5305d2df85e8ee12f298b509fb27abf6ad22409edcbf55",
+      "bytes": 34597
+    },
+    "results/public_validation_r1/main/conditional_results.csv": {
+      "sha256": "aa641e19796daf1428ea5a3859659724e84e5743e5524a7d22b96210e7f0ca03",
+      "bytes": 342812
+    },
+    "results/strengthening_20261011/bandwidth_sensitivity_summary.csv": {
+      "sha256": "7ea5ca887fad1bbaaf72c6de1945a6051c8a6043a71fdf8c4eacaa762ee44852",
+      "bytes": 457
+    },
+    "results/substantive_resolution_20261011/six_field_consequences.csv": {
+      "sha256": "d0d1bde5f21c03b9035bc83043ace9b0a4a4a85a747524e5b02adeffa91b7f6c",
+      "bytes": 5087
+    },
+    "results/positive_revision_20261011/execution_resource_accounting.csv": {
+      "sha256": "42f5f479d31b0cebd530bb2ccad078be5579c7983104b418d392c334fc1adc37",
+      "bytes": 1103
+    },
+    "data/evidence_completion_20261011/prediction_cache/reliability/main/load_calendar/DE_w3_H60_cal30_K256_req0.95_ffull_cs20.npz": {
+      "sha256": "7c7e0f5bf3037f915c2df1f09f7939d845edae5d1cd84d7467728274f51a7944",
+      "bytes": 203215
+    }
+  },
+  "model_fits": 0,
+  "service_calls": 0,
+  "resampling_runs": 0
+}

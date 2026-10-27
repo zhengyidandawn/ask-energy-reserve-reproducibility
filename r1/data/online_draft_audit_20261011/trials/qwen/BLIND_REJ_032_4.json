@@ -1,0 +1,112 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_REJ_032",
+  "repeat": 4,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_REJ_032",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:05.703530+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "acdfe2625f95480ee3e9b9ad8bbfc85d2a3c8152e456fb8094bd832108575990",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"The requested horizon of 45 minutes is not among the supported options (60, 120, and 180 minutes). Could you please specify a supported horizon for the study?\",\n  \"reason\": \"The specified horizon of 45 minutes is not supported. Please choose from 60, 120, or 180 minutes.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The requested horizon of 45 minutes is not among the supported options (60, 120, and 180 minutes). Could you please specify a supported horizon for the study?",
+      "reason": "The specified horizon of 45 minutes is not supported. Please choose from 60, 120, or 180 minutes.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 371,
+      "completion_tokens": 142,
+      "total_tokens": 513,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "50f69ec7b0bf48db7f304337b4d4e40d39921aea9de64ca8964427c40fef82f3",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.290153600042686,
+    "finished_at": "2026-10-11T15:38:09.993146+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_REJ_032",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:05.703530+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "acdfe2625f95480ee3e9b9ad8bbfc85d2a3c8152e456fb8094bd832108575990",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"The requested horizon of 45 minutes is not among the supported options (60, 120, and 180 minutes). Could you please specify a supported horizon for the study?\",\n  \"reason\": \"The specified horizon of 45 minutes is not supported. Please choose from 60, 120, or 180 minutes.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The requested horizon of 45 minutes is not among the supported options (60, 120, and 180 minutes). Could you please specify a supported horizon for the study?",
+      "reason": "The specified horizon of 45 minutes is not supported. Please choose from 60, 120, or 180 minutes.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 371,
+      "completion_tokens": 142,
+      "total_tokens": 513,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "50f69ec7b0bf48db7f304337b4d4e40d39921aea9de64ca8964427c40fef82f3",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.290153600042686,
+    "finished_at": "2026-10-11T15:38:09.993146+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 4.290153600042686,
+  "transport_complete": true
+}

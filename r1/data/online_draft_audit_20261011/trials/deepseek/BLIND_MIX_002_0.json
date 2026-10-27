@@ -1,0 +1,118 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 0,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:46.228224+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "2cb920fb181fc22009951480182b64b9d7d60855815f9e6e695828e3392ccb15",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"CISO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The request specifies a supported region (CISO) and a supported horizon (120 minutes), and explicitly asks for JSON schema only without reserve MW or coverage. The reserve cost is fixed at 1 by protocol; the shortfall weight is not specified, so it remains unresolved.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a supported region (CISO) and a supported horizon (120 minutes), and explicitly asks for JSON schema only without reserve MW or coverage. The reserve cost is fixed at 1 by protocol; the shortfall weight is not specified, so it remains unresolved.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 399,
+      "completion_tokens": 108,
+      "total_tokens": 507,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 271
+    },
+    "response_sha256": "0bcb60a0dca05bf389bd686d305691257be8cb926dbba10b72a512c98232f0a1",
+    "diagnostics": {
+      "messages": [
+        "Execution validation returns reject: invalid_schema"
+      ],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.1395878999028355,
+    "finished_at": "2026-10-11T15:36:47.367512+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 0,
+    "phase": "feedback",
+    "started_at": "2026-10-11T15:36:47.368014+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "be163dd530bd64d1369002eec3aa4ea2595c4c529c9dea61e5f518e32a983718",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"reject\",\"fields\":{\"region_id\":\"CISO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The frozen deterministic checker reports invalid_schema for the prior draft. The request itself specifies a supported region (CISO) and a supported horizon (120 minutes), and explicitly asks for JSON schema only without reserve MW or coverage. However, the execution validation rejects the draft as invalid_schema, so the corrected disposition is reject. The explicitly supplied fields are preserved for analyst review: region_id CISO, horizon_minutes 120, cost_reserve fixed at 1 by protocol, and cost_shortfall unresolved.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The frozen deterministic checker reports invalid_schema for the prior draft. The request itself specifies a supported region (CISO) and a supported horizon (120 minutes), and explicitly asks for JSON schema only without reserve MW or coverage. However, the execution validation rejects the draft as invalid_schema, so the corrected disposition is reject. The explicitly supplied fields are preserved for analyst review: region_id CISO, horizon_minutes 120, cost_reserve fixed at 1 by protocol, and cost_shortfall unresolved.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 530,
+      "completion_tokens": 157,
+      "total_tokens": 687,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 146
+    },
+    "response_sha256": "9204db7fe4857cf0eba9c2f4d03aabca768ab7cfba2d9192c482fda0a8476ceb",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.6273361999774352,
+    "finished_at": "2026-10-11T15:36:48.995501+00:00"
+  },
+  "online_calls": 2,
+  "total_service_seconds": 2.7669240998802707,
+  "transport_complete": true
+}

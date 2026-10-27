@@ -1,0 +1,893 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2026-10-10T13:47:54Z",
+      "timestamp": 1791640074252,
+      "version": "4.3.4"
+    },
+    "reference-count": 67,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2024-05-01T00:00:00Z",
+          "timestamp": 1714521600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              19
+            ]
+          ],
+          "date-time": "2024-02-19T00:00:00Z",
+          "timestamp": 1708300800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100012331",
+        "name": "Vlaanderen Agentschap Innoveren & Ondernemen",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/100012331",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Applied Energy"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.apenergy.2024.122900",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          21
+        ]
+      ],
+      "date-time": "2024-02-21T17:55:09Z",
+      "timestamp": 1708538109000
+    },
+    "page": "122900",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 92,
+    "special_numbering": "C",
+    "title": [
+      "A novel day-ahead regional and probabilistic wind power forecasting framework using deep CNNs and conformalized regression forests"
+    ],
+    "prefix": "10.1016",
+    "volume": "361",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3608-0308",
+        "authenticated-orcid": false,
+        "given": "Jef",
+        "family": "Jonkers",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6215-6439",
+        "authenticated-orcid": false,
+        "given": "Diego Nieves",
+        "family": "Avendano",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9530-3466",
+        "authenticated-orcid": false,
+        "given": "Glenn",
+        "family": "Van Wallendael",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7865-6793",
+        "authenticated-orcid": false,
+        "given": "Sofie",
+        "family": "Van Hoecke",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b1",
+        "series-title": "Value of wind power forecasting",
+        "author": "Lew",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b2",
+        "doi-asserted-by": "crossref",
+        "first-page": "762",
+        "DOI": "10.1016/j.rser.2013.12.054",
+        "article-title": "Current status and future advances for wind speed and power forecasting",
+        "volume": "31",
+        "author": "Jung",
+        "year": "2014",
+        "journal-title": "Renew Sustain Energy Rev"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "255",
+        "DOI": "10.1016/j.rser.2014.01.033",
+        "article-title": "Review on probabilistic forecasting of wind power generation",
+        "volume": "32",
+        "author": "Zhang",
+        "year": "2014",
+        "journal-title": "Renew Sustain Energy Rev"
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.apenergy.2024.122900_b4",
+        "doi-asserted-by": "crossref",
+        "first-page": "1402",
+        "DOI": "10.3390/en10091402",
+        "article-title": "Towards improved understanding of the applicability of uncertainty forecasts in the electric power industry",
+        "volume": "10",
+        "author": "Bessa",
+        "year": "2017",
+        "journal-title": "Energies"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b5",
+        "series-title": "Renewable energy forecasting",
+        "first-page": "59",
+        "article-title": "3 - Wind power forecasting—a review of the state of the art",
+        "author": "Giebel",
+        "year": "2017"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.apenergy.2024.122900_b6",
+        "article-title": "Current advances and approaches in wind speed and wind power forecasting for improved renewable energy integration: A review",
+        "volume": "2",
+        "author": "Santhosh",
+        "year": "2020",
+        "journal-title": "Eng Rep"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.apenergy.2024.122900_b7",
+        "doi-asserted-by": "crossref",
+        "first-page": "13",
+        "DOI": "10.3390/electricity2010002",
+        "article-title": "Review of deterministic and probabilistic wind power forecasting: Models, methods, and future research",
+        "volume": "2",
+        "author": "Bazionis",
+        "year": "2021",
+        "journal-title": "Electricity"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b8",
+        "series-title": "2017 IEEE innovative smart grid technologies - Asia",
+        "first-page": "1",
+        "article-title": "Improved day-ahead predictions of load and renewable generation by optimally exploiting multi-scale dependencies",
+        "author": "Toubeau",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b9",
+        "series-title": "2017 international conference on circuits, devices and systems",
+        "first-page": "131",
+        "article-title": "Wind power prediction based on a convolutional neural network",
+        "author": "Zhu",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b10",
+        "series-title": "2019 IEEE 60th international scientific conference on power and electrical engineering of riga technical university (RTUCON)",
+        "first-page": "1",
+        "article-title": "Forecasting short term wind energy generation using machine learning",
+        "author": "Shabbir",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b11",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.jclepro.2020.121391",
+        "article-title": "Using of improved models of Gaussian processes in order to regional wind power forecasting",
+        "volume": "262",
+        "author": "Xue",
+        "year": "2020",
+        "journal-title": "J Clean Prod"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.apenergy.2024.122900_b12",
+        "doi-asserted-by": "crossref",
+        "first-page": "6117",
+        "DOI": "10.1109/TIA.2020.2992945",
+        "article-title": "Probabilistic prediction of regional wind power based on spatiotemporal quantile regression",
+        "volume": "56",
+        "author": "Yu",
+        "year": "2020",
+        "journal-title": "IEEE Trans Ind Appl"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.apenergy.2024.122900_b13",
+        "doi-asserted-by": "crossref",
+        "first-page": "2549",
+        "DOI": "10.1109/TPWRS.2020.2971607",
+        "article-title": "Improved deep mixture density network for regional wind power probabilistic forecasting",
+        "volume": "35",
+        "author": "Zhang",
+        "year": "2020",
+        "journal-title": "IEEE Trans Power Syst"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b14",
+        "doi-asserted-by": "crossref",
+        "first-page": "7675",
+        "DOI": "10.1016/j.egyr.2021.11.021",
+        "article-title": "Short-term regional wind power forecasting for small datasets with input data correction, hybrid neural network, and error analysis",
+        "volume": "7",
+        "author": "Dong",
+        "year": "2021",
+        "journal-title": "Energy Rep"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b15",
+        "series-title": "2021 3rd Asia energy and electrical engineering symposium (AEEES)",
+        "first-page": "713",
+        "article-title": "Regional wind power forecasting based on hierarchical clustering and upscaling method",
+        "author": "Wang",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b16",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.energy.2021.122045",
+        "article-title": "Regional wind power probabilistic forecasting based on an improved kernel density estimation, regular vine copulas, and ensemble learning",
+        "volume": "238",
+        "author": "Dong",
+        "year": "2022",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b17",
+        "doi-asserted-by": "crossref",
+        "first-page": "10786",
+        "DOI": "10.1016/j.egyr.2022.08.204",
+        "article-title": "Short-term regional wind power forecasting based on spatial–temporal correlation and dynamic clustering model",
+        "volume": "8",
+        "author": "Pei",
+        "year": "2022",
+        "journal-title": "Energy Rep"
+      },
+      {
+        "issue": "15",
+        "key": "10.1016/j.apenergy.2024.122900_b18",
+        "doi-asserted-by": "crossref",
+        "first-page": "1725",
+        "DOI": "10.1049/iet-rpg.2018.5282",
+        "article-title": "Short-term probabilistic forecasting for regional wind power using distance-weighted kernel density estimation",
+        "volume": "12",
+        "author": "Wang",
+        "year": "2018",
+        "journal-title": "IET Renew Power Gener"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b19",
+        "unstructured": "Pinson P, Kariniotakis G, Nielsen HA, Nielsen TS, Madsen H. Properties of quantile and interval forecasts of wind generation and their evaluation. In: Proceedings of the European wind energy conference & exhibition. 2006, p. 11."
+      },
+      {
+        "issue": "35",
+        "key": "10.1016/j.apenergy.2024.122900_b20",
+        "first-page": "983",
+        "article-title": "Quantile regression forests",
+        "volume": "7",
+        "author": "Meinshausen",
+        "year": "2006",
+        "journal-title": "J Mach Learn Res"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.apenergy.2024.122900_b21",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1115/1.4029378",
+        "article-title": "Photovoltaics energy prediction under complex conditions for a predictive energy management system",
+        "volume": "137",
+        "author": "Schmelas",
+        "year": "2015",
+        "journal-title": "J Solar Energy Eng"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b22",
+        "doi-asserted-by": "crossref",
+        "first-page": "11",
+        "DOI": "10.1016/j.renene.2017.05.063",
+        "article-title": "Physical and hybrid methods comparison for the day ahead PV output power forecast",
+        "volume": "113",
+        "author": "Ogliari",
+        "year": "2017",
+        "journal-title": "Renew Energy"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b23",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.apenergy.2020.116239",
+        "article-title": "Extensive comparison of physical models for photovoltaic power forecasting",
+        "volume": "283",
+        "author": "Mayer",
+        "year": "2021",
+        "journal-title": "Appl Energy"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b24",
+        "series-title": "2020 17th international conference on the European energy market (EEM)",
+        "first-page": "1",
+        "article-title": "Day-ahead wind power predictions at regional scales: Post-processing operational weather forecasts with a hybrid neural network",
+        "author": "Basu",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b25",
+        "series-title": "2020 17th international conference on the European energy market",
+        "first-page": "1",
+        "article-title": "Probabilistic forecasting of regional wind power generation for the EEM20 competition: a physics-oriented machine learning approach",
+        "author": "Bellinguer",
+        "year": "2020"
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.apenergy.2024.122900_b26",
+        "doi-asserted-by": "crossref",
+        "first-page": "968",
+        "DOI": "10.1002/we.2207",
+        "article-title": "Improved very short-term spatio-temporal wind forecasting using atmospheric regimes: Improved very short-term spatio-temporal wind forecasting using atmospheric regimes",
+        "volume": "21",
+        "author": "Browell",
+        "year": "2018",
+        "journal-title": "Wind Energy"
+      },
+      {
+        "issue": "8",
+        "key": "10.1016/j.apenergy.2024.122900_b27",
+        "doi-asserted-by": "crossref",
+        "first-page": "2164",
+        "DOI": "10.3390/en14082164",
+        "article-title": "Day-ahead wind power forecasting in Poland based on numerical weather prediction",
+        "volume": "14",
+        "author": "Bochenek",
+        "year": "2021",
+        "journal-title": "Energies"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b28",
+        "series-title": "Regional-scale day-ahead wind power forecasting using deep learning",
+        "author": "Lepetit",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b29",
+        "series-title": "2020 17th international conference on the European energy market",
+        "first-page": "1",
+        "article-title": "Quantile combination for the EEM20 wind power forecasting competition",
+        "author": "Browell",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b30",
+        "series-title": "2021 IEEE international conference on environment and electrical engineering and 2021 IEEE industrial and commercial power systems Europe",
+        "first-page": "1",
+        "article-title": "An advanced generative deep learning framework for probabilistic spatio-temporal wind power forecasting",
+        "author": "Jalali",
+        "year": "2021"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.apenergy.2024.122900_b31",
+        "doi-asserted-by": "crossref",
+        "first-page": "2814",
+        "DOI": "10.1109/TII.2022.3160696",
+        "article-title": "Probabilistic wind power forecasting using optimized deep auto-regressive recurrent neural networks",
+        "volume": "19",
+        "author": "Arora",
+        "year": "2023",
+        "journal-title": "IEEE Trans Ind Inf"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.apenergy.2024.122900_b32",
+        "doi-asserted-by": "crossref",
+        "first-page": "957",
+        "DOI": "10.1109/TSTE.2022.3141549",
+        "article-title": "Sparse variational Gaussian process based day-ahead probabilistic wind power forecasting",
+        "volume": "13",
+        "author": "Wen",
+        "year": "2022",
+        "journal-title": "IEEE Trans Sustain Energy"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.apenergy.2024.122900_b33",
+        "doi-asserted-by": "crossref",
+        "first-page": "8318",
+        "DOI": "10.1007/s10489-022-03958-7",
+        "article-title": "Deep neural networks for the quantile estimation of regional renewable energy production",
+        "volume": "53",
+        "author": "Alcántara",
+        "year": "2023",
+        "journal-title": "Appl Intell"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b34",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.energy.2023.129496",
+        "article-title": "Transferable wind power probabilistic forecasting based on multi-domain adversarial networks",
+        "volume": "285",
+        "author": "Dong",
+        "year": "2023",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b35",
+        "doi-asserted-by": "crossref",
+        "first-page": "642",
+        "DOI": "10.1016/j.renene.2021.11.072",
+        "article-title": "Short-term wind power forecasting based on meteorological feature extraction and optimization strategy",
+        "volume": "184",
+        "author": "Lu",
+        "year": "2022",
+        "journal-title": "Renew Energy"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b36",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.energy.2022.123497",
+        "article-title": "Conformalized temporal convolutional quantile regression networks for wind power interval forecasting",
+        "volume": "248",
+        "author": "Hu",
+        "year": "2022",
+        "journal-title": "Energy"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b37",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.apenergy.2022.120634",
+        "article-title": "Conformal asymmetric multi-quantile generative transformer for day-ahead wind power interval prediction",
+        "volume": "333",
+        "author": "Wang",
+        "year": "2023",
+        "journal-title": "Appl Energy"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.apenergy.2024.122900_b38",
+        "doi-asserted-by": "crossref",
+        "first-page": "1919",
+        "DOI": "10.1175/MWR-D-16-0417.1",
+        "article-title": "The HARMONIE–AROME model configuration in the ALADIN–HIRLAM NWP system",
+        "volume": "145",
+        "author": "Bengtsson",
+        "year": "2017",
+        "journal-title": "Mon Weather Rev"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b39",
+        "unstructured": "Juban J, Fugon L, Kariniotakis G. Uncertainty estimation of wind power forecasts: Comparison of probabilistic modelling approaches. In: European wind energy conference & exhibition EWEC 2008. 2008, p. 11."
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b40",
+        "doi-asserted-by": "crossref",
+        "first-page": "292",
+        "DOI": "10.1016/j.neucom.2019.10.110",
+        "article-title": "Computationally efficient versions of conformal predictive distributions",
+        "volume": "397",
+        "author": "Vovk",
+        "year": "2020",
+        "journal-title": "Neurocomputing"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b41",
+        "article-title": "Conformalized quantile regression",
+        "volume": "vol. 32",
+        "author": "Romano",
+        "year": "2019"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.apenergy.2024.122900_b42",
+        "doi-asserted-by": "crossref",
+        "first-page": "1490",
+        "DOI": "10.1016/j.rser.2010.01.005",
+        "article-title": "Wind power distributions: A review of their applications",
+        "volume": "14",
+        "author": "Villanueva",
+        "year": "2010",
+        "journal-title": "Renew Sustain Energy Rev"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b43",
+        "series-title": "Deep learning",
+        "author": "Goodfellow",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b44",
+        "series-title": "Computer vision – ECCV 2022",
+        "first-page": "466",
+        "article-title": "An impartial take to the CNN vs transformer robustness contest",
+        "author": "Pinto",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b45",
+        "series-title": "Proceedings of the IEEE/CVF conference on computer vision and pattern recognition",
+        "first-page": "11976",
+        "article-title": "A ConvNet for the 2020s",
+        "author": "Liu",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b46",
+        "series-title": "An image is worth 16x16 words: Transformers for image recognition at scale",
+        "author": "Dosovitskiy",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b47",
+        "series-title": "FlexiViT: One model for all patch sizes",
+        "author": "Beyer",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b48",
+        "series-title": "ImageNet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness",
+        "author": "Geirhos",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b49",
+        "series-title": "CvT: Introducing convolutions to vision transformers",
+        "author": "Wu",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b50",
+        "series-title": "MaxViT: Multi-axis vision transformer",
+        "author": "Tu",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b51",
+        "series-title": "Proceedings of the IEEE conference on computer vision and pattern recognition",
+        "first-page": "4700",
+        "article-title": "Densely connected convolutional networks",
+        "author": "Huang",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b52",
+        "series-title": "2016 IEEE conference on computer vision and pattern recognition",
+        "first-page": "770",
+        "article-title": "Deep residual learning for image recognition",
+        "author": "He",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b53",
+        "series-title": "Advances in knowledge discovery and data mining",
+        "first-page": "224",
+        "article-title": "Signed-error conformal regression",
+        "author": "Linusson",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b54",
+        "series-title": "Mondrian confidence machine",
+        "author": "Vovk",
+        "year": "2003"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b55",
+        "series-title": "Proceedings of the ninth symposium on conformal and probabilistic prediction and applications",
+        "first-page": "114",
+        "article-title": "Mondrian conformal regressors",
+        "author": "Boström",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b56",
+        "series-title": "Proceedings of the tenth symposium on conformal and probabilistic prediction and applications",
+        "first-page": "24",
+        "article-title": "Mondrian conformal predictive distributions",
+        "author": "Boström",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b57",
+        "doi-asserted-by": "crossref",
+        "first-page": "81",
+        "DOI": "10.1016/j.patrec.2022.02.003",
+        "article-title": "Calibrating probabilistic predictions of quantile regression forests with conformal predictive systems",
+        "volume": "156",
+        "author": "Wang",
+        "year": "2022",
+        "journal-title": "Pattern Recognit Lett"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b58",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1007/s10472-023-09847-0",
+        "article-title": "Conformal predictive distribution trees",
+        "author": "Johansson",
+        "year": "2023",
+        "journal-title": "Ann Math Artif Intell"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b59",
+        "series-title": "Distribution-free predictive inference for regression",
+        "author": "Lei",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b60",
+        "series-title": "Conformal prediction: a unified review of theory and new challenges",
+        "author": "Fontana",
+        "year": "2022"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b61",
+        "first-page": "2015",
+        "article-title": "Consistency of random forests and other averaging classifiers",
+        "volume": "9",
+        "author": "Biau",
+        "year": "2008",
+        "journal-title": "J Mach Learn Res"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.apenergy.2024.122900_b62",
+        "first-page": "1063",
+        "article-title": "Analysis of a random forests model",
+        "volume": "13",
+        "author": "Biau",
+        "year": "2012",
+        "journal-title": "J Mach Learn Res"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b63",
+        "unstructured": "Loshchilov I, Hutter F. Decoupled weight decay regularization. Tech. rep., 2019, arXiv. . URL."
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b64",
+        "series-title": "Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining",
+        "first-page": "785",
+        "article-title": "XGBoost: A scalable tree boosting system",
+        "author": "Chen",
+        "year": "2016"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.apenergy.2024.122900_b65",
+        "doi-asserted-by": "crossref",
+        "first-page": "211",
+        "DOI": "10.3150/10-BEJ267",
+        "article-title": "Estimating conditional quantiles with the help of the pinball loss",
+        "volume": "17",
+        "author": "Steinwart",
+        "year": "2011",
+        "journal-title": "Bernoulli"
+      },
+      {
+        "issue": "477",
+        "key": "10.1016/j.apenergy.2024.122900_b66",
+        "doi-asserted-by": "crossref",
+        "first-page": "359",
+        "DOI": "10.1198/016214506000001437",
+        "article-title": "Strictly proper scoring rules, prediction, and estimation",
+        "volume": "102",
+        "author": "Gneiting",
+        "year": "2007",
+        "journal-title": "J Amer Statist Assoc"
+      },
+      {
+        "key": "10.1016/j.apenergy.2024.122900_b67",
+        "series-title": "Proceedings of the ninth symposium on conformal and probabilistic prediction and applications",
+        "first-page": "134",
+        "article-title": "Evaluating different approaches to calibrating conformal predictive systems",
+        "author": "Werner",
+        "year": "2020"
+      }
+    ],
+    "container-title": [
+      "Applied Energy"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0306261924002836?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0306261924002836?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          22
+        ]
+      ],
+      "date-time": "2025-01-22T18:23:53Z",
+      "timestamp": 1737570233000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0306261924002836"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          5
+        ]
+      ]
+    },
+    "references-count": 67,
+    "alternative-id": [
+      "S0306261924002836"
+    ],
+    "URL": "https://doi.org/10.1016/j.apenergy.2024.122900",
+    "relation": {},
+    "ISSN": [
+      "0306-2619"
+    ],
+    "issn-type": [
+      {
+        "value": "0306-2619",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          5
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "A novel day-ahead regional and probabilistic wind power forecasting framework using deep CNNs and conformalized regression forests",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Applied Energy",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.apenergy.2024.122900",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2024 The Author(s). Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "122900"
+  }
+}

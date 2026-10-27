@@ -1,0 +1,40 @@
+{
+  "case_id": "SF-15",
+  "service": "ernie",
+  "repeat": 2,
+  "phase": "initial",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_started_at": "2026-10-11T10:56:11.267951+00:00",
+  "status": "success",
+  "request_sha256": "51c1f2251ed48d55e367d463d02a651133acc74ea7b868ef38561893cd8a182b",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "usage": {
+    "prompt_tokens": 301,
+    "completion_tokens": 82,
+    "total_tokens": 383,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    }
+  },
+  "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"horizon_minutes\"\n    ],\n    \"reason\": \"The horizon_minutes value of 45 is not supported. Please provide a valid horizon_minutes value (60, 120, or 180) to proceed.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "horizon_minutes"
+    ],
+    "reason": "The horizon_minutes value of 45 is not supported. Please provide a valid horizon_minutes value (60, 120, or 180) to proceed."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "unsupported_horizon"
+    ]
+  },
+  "response_sha256": "ccfd83c97994f705f0460aafeb5c71bb31cdce31d9afddccf080742821eb8a94",
+  "latency_seconds": 3.4332584000658244,
+  "request_finished_at": "2026-10-11T10:56:14.701042+00:00"
+}

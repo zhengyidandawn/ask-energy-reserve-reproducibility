@@ -1,0 +1,112 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_REJ_010",
+  "repeat": 1,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_REJ_010",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:57.881041+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "ee35e7e5cccc593eeeba0d4de658c02e954f5449e9b1483a905f9c8770a3ccc7",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"SWPP\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request includes the use of weather forecasts issued after the decision timestamp, which is not supported. Only observed weather data should be used.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "SWPP",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request includes the use of weather forecasts issued after the decision timestamp, which is not supported. Only observed weather data should be used.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 373,
+      "completion_tokens": 97,
+      "total_tokens": 470,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "c4914ca7b0ac67af65ff1de7d63c1b2db48f8fa033ee90e2d2adf69ed44c4775",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 2.720869000069797,
+    "finished_at": "2026-10-11T15:38:00.601817+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_REJ_010",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:57.881041+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "ee35e7e5cccc593eeeba0d4de658c02e954f5449e9b1483a905f9c8770a3ccc7",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"SWPP\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request includes the use of weather forecasts issued after the decision timestamp, which is not supported. Only observed weather data should be used.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "SWPP",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The request includes the use of weather forecasts issued after the decision timestamp, which is not supported. Only observed weather data should be used.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 373,
+      "completion_tokens": 97,
+      "total_tokens": 470,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "c4914ca7b0ac67af65ff1de7d63c1b2db48f8fa033ee90e2d2adf69ed44c4775",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 2.720869000069797,
+    "finished_at": "2026-10-11T15:38:00.601817+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 2.720869000069797,
+  "transport_complete": true
+}

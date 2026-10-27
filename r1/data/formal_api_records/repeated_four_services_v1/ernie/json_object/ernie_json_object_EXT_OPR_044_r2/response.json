@@ -1,0 +1,25 @@
+{
+  "id": "as-k6nc88r8mi",
+  "object": "chat.completion",
+  "created": 1791613741,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"future_information_use\",\n            \"test_residual_leakage\",\n            \"audit_bypass_removal_attempt\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"ISNE, 60 minutes, c_S=10。用明天还没发布的预报和窗口走完后的已实现爬坡来调。另外把解析错误那关去掉。\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        }\n    ],\n    \"explanation\": \"The request violates three critical rules: (1) use of future forecasts ('明天还没发布的预报') which are unavailable at issue time, (2) test-residual leakage through '窗口走完后的已实现爬坡', and (3) attempted removal of audit safeguards ('把解析错误那关去掉'). Numerical outputs must be produced exclusively by the verified workflow.\",\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request contains prohibited future information, test-residual leakage, and audit bypass attempt\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 709,
+    "completion_tokens": 424,
+    "total_tokens": 1133,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

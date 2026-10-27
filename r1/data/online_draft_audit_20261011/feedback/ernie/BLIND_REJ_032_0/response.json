@@ -1,0 +1,25 @@
+{
+  "id": "as-af5yij26xv",
+  "object": "chat.completion",
+  "created": 1791733104,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Unsupported horizon value '45'. Supported horizons are 60, 120, and 180 minutes. The cost_reserve is fixed at 1 by study protocol, but the horizon remains invalid.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 509,
+    "completion_tokens": 130,
+    "total_tokens": 639,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    }
+  }
+}

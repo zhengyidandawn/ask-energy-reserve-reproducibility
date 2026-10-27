@@ -1,0 +1,22 @@
+{
+  "id": "as-rqzfez7gju",
+  "object": "chat.completion",
+  "created": 1791716192,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"reporting\"\n    ],\n    \"reason\": \"Please provide the missing field: reporting.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 360,
+    "completion_tokens": 49,
+    "total_tokens": 409
+  }
+}

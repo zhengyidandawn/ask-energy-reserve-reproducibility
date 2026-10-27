@@ -1,0 +1,112 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_STD_006",
+  "repeat": 3,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_STD_006",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:26.019537+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "028813bc2d966356f3d34d8fe67dd182ca88a67de2847c1df3a99d774bb98507",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 10\n    },\n    \"clarification_question\": \"The region identifier 'ERCO' is not a supported value. Did you mean 'ERCOT'? Also, the '730/30/30 rolling split' appears to be a non-standard input for this study. Please confirm the region and clarify the intended use of the rolling split.\",\n    \"reason\": \"The region identifier 'ERCO' is not in the list of supported regions. The '730/30/30 rolling split' is not a recognized input for this study.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": "The region identifier 'ERCO' is not a supported value. Did you mean 'ERCOT'? Also, the '730/30/30 rolling split' appears to be a non-standard input for this study. Please confirm the region and clarify the intended use of the rolling split.",
+      "reason": "The region identifier 'ERCO' is not in the list of supported regions. The '730/30/30 rolling split' is not a recognized input for this study.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 400,
+      "completion_tokens": 191,
+      "total_tokens": 591,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "451de1dace66c5c7a1cc013bdd428acaf28728e4211076cab1f3768c8f90d2f6",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 7.061144100036472,
+    "finished_at": "2026-10-11T15:38:33.081427+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_STD_006",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:26.019537+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "028813bc2d966356f3d34d8fe67dd182ca88a67de2847c1df3a99d774bb98507",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 10\n    },\n    \"clarification_question\": \"The region identifier 'ERCO' is not a supported value. Did you mean 'ERCOT'? Also, the '730/30/30 rolling split' appears to be a non-standard input for this study. Please confirm the region and clarify the intended use of the rolling split.\",\n    \"reason\": \"The region identifier 'ERCO' is not in the list of supported regions. The '730/30/30 rolling split' is not a recognized input for this study.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": "The region identifier 'ERCO' is not a supported value. Did you mean 'ERCOT'? Also, the '730/30/30 rolling split' appears to be a non-standard input for this study. Please confirm the region and clarify the intended use of the rolling split.",
+      "reason": "The region identifier 'ERCO' is not in the list of supported regions. The '730/30/30 rolling split' is not a recognized input for this study.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 400,
+      "completion_tokens": 191,
+      "total_tokens": 591,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "451de1dace66c5c7a1cc013bdd428acaf28728e4211076cab1f3768c8f90d2f6",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 7.061144100036472,
+    "finished_at": "2026-10-11T15:38:33.081427+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 7.061144100036472,
+  "transport_complete": true
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"您希望使用的成本不足权重是多少？支持的选项为10、20和40。\",\n  \"reason\": \"用户请求了一个有效的研究方案，但是没有指定成本不足（cost_shortfall）的具体数值。根据要求，不会输出储备容量（MW）或覆盖率。\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 127,
+    "total_tokens": 507,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733052,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-f9a91cbe-9d5c-9b86-b6f4-63674338db58"
+}

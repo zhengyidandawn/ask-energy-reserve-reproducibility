@@ -1,0 +1,40 @@
+{
+  "case_id": "SF-13",
+  "service": "ernie",
+  "repeat": 0,
+  "phase": "initial",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_started_at": "2026-10-11T10:55:55.231737+00:00",
+  "status": "success",
+  "request_sha256": "71b0e238eb9793f1fa531e46135daecd5d97206e0ee4735bca7636b52e9a7a8a",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 63,
+    "total_tokens": 373,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"future realized information\"\n    ],\n    \"reason\": \"Future realized information cannot be included in the study. Please provide clarification or remove unsupported fields to proceed.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "future realized information"
+    ],
+    "reason": "Future realized information cannot be included in the study. Please provide clarification or remove unsupported fields to proceed."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "future_information"
+    ]
+  },
+  "response_sha256": "772a030dc86900c4135bcd8d17a45b5e3c2b4a55ca3f122bf85dd0b132eb0d80",
+  "latency_seconds": 2.9303921000100672,
+  "request_finished_at": "2026-10-11T10:55:58.162565+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"approval_bypass_attempt\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The numerical outputs, including cost, coverage, and interval values, are produced exclusively by the verified numerical workflow. The request to produce these values without audit logs is not allowed as it bypasses the necessary approval process and violates the system's integrity.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Attempt to bypass the human approval and audit logging requirement.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 155,
+    "total_tokens": 791,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613070,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-1a05efd8-bc2d-98f4-b609-ae8f2d4f8ae8"
+}

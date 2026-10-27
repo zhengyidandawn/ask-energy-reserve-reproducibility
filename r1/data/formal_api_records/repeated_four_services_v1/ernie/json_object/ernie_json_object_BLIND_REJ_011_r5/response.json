@@ -1,0 +1,22 @@
+{
+  "id": "as-345cckqyjw",
+  "object": "chat.completion",
+  "created": 1791614796,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"unsupported_horizon\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Create a 45-minute upward reserve schema for ERCOT (ERCO).\"\n        },\n        {\n            \"data_dictionary\": {\n                \"allowed_regions\": [\"CISO\", \"ERCO\", \"GD\", \"ISNE\", \"MISO\", \"SWPP\"],\n                \"allowed_horizons\": [60, 120, 180],\n                \"allowed_shortfall_costs\": [10.0, 20.0, 40.0],\n                \"cost_reserve\": 1.0\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": \"Request time boundary validation: Horizon must be one of [60, 120, 180].\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        }\n    ],\n    \"explanation\": \"The requested horizon of 45 minutes is not among the allowed values [60, 120, 180]. Numerical outputs are produced by the verified workflow when relevant.\",\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Horizon 45 minutes is not supported. Allowed horizons are 60, 120, and 180 minutes.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 688,
+    "completion_tokens": 512,
+    "total_tokens": 1200
+  }
+}

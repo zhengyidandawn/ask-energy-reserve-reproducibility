@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"triggered_rules\": [\"clarification_required\"],\n    \"human_approval_required\": false\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"数值输出将由验证过的工作流程产生，但当前请求中存在需要澄清的项目。\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"请求中的region和horizon未指定。这些是研究设计的关键部分，因此在继续之前需要具体的值。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 642,
+    "completion_tokens": 139,
+    "total_tokens": 781,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791615729,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-03c4e9c1-4f58-929e-bd6c-2e7a286bc6ee"
+}

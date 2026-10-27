@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": [\"multiple_regions_per_study_not_allowed\"]}, \"decision\": \"reject\", \"evidence_trace\": [], \"explanation\": \"研究计划请求被拒绝，因为不允许在一个研究中指定多个地区。数值输出由验证的工作流产生。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"请求了多于一个区域ERCOT和CISO进行单个研究，这违背了单一研究仅支持一个区域的规则。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_bf1daf8eaedd47e780a3ee",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1526,
+    "completion_tokens": 205,
+    "total_tokens": 1731,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616308,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-e4d291df-92bc-9d6f-92b5-63fd252e16f7"
+}

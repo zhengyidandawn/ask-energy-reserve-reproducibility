@@ -1,0 +1,151 @@
+{
+  "initial_task_id": "hunyuan_json_object_EXT_OPR_022_r4",
+  "initial_response_sha256": "a6772ec5cba3820bef00296bbd95a7fb9b18815d3d4d9a13a25ec765ff08c899",
+  "initial_record": {
+    "task_id": "hunyuan_json_object_EXT_OPR_022_r4",
+    "case_id": "EXT_OPR_022",
+    "packet": "independently_authored_48",
+    "service": "hunyuan",
+    "interface": "json_object",
+    "repeat": 4,
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "request_sha256": "e5db900549fa184cafdc6b57cd01af7a59d30352433b7d3c15e3d27204bf3e56",
+    "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+    "parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 4096
+    },
+    "request_started_at": "2026-10-10T07:50:31.646228+00:00",
+    "seed_setting": "not_sent",
+    "thinking_setting": "not_sent_provider_default",
+    "attempt": 1,
+    "automatic_retries": 0,
+    "provider_api_version": "v1",
+    "usage": {
+      "prompt_tokens": 648,
+      "completion_tokens": 1975,
+      "total_tokens": 2623,
+      "prompt_tokens_details": {
+        "cached_tokens": 576
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1829
+      }
+    },
+    "billed_cost": null,
+    "billed_cost_status": "billing_record_unavailable",
+    "http_status": 200,
+    "status": "success",
+    "returned_model": "hy3",
+    "provider_response_id": "1cd2fcf2-bc24-4873-92f8-8b1dc3a5a0a1",
+    "provider_created": 1791618635,
+    "system_fingerprint": null,
+    "response_sha256": "a6772ec5cba3820bef00296bbd95a7fb9b18815d3d4d9a13a25ec765ff08c899",
+    "checks": {
+      "service": "hunyuan",
+      "case_id": "EXT_OPR_022",
+      "case_group": "",
+      "conversation_id": "",
+      "turn_id": "",
+      "expected_decision": "clarify",
+      "decision": "clarify",
+      "schema_completeness": true,
+      "semantic_correctness": true,
+      "admissible_variable_correctness": true,
+      "forbidden_variable_action_handling": true,
+      "rejection_correctness": true,
+      "clarification_correctness": true,
+      "partial_acceptance_correctness": true,
+      "evidence_trace_completeness": true,
+      "explanation_grounding": true,
+      "human_gate_correctness": true,
+      "numerical_contamination": false,
+      "unsupported_acceptance": false,
+      "parse_error": false,
+      "parse_error_message": "",
+      "joint_success": true,
+      "risk_type": "",
+      "checker_response": "Missing required field: horizon_minutes. Operator provided region ERCO and shortfall penalty 40.0 (valid) but did not pick horizon. Allowed horizons are 60, 120, or 180 minutes. Numerical outputs are produced by the verified workflow only; this request lacks horizon specification and thus study schema is not built. {\"triggered_rules\": [\"clarification_required\"]}",
+      "json_valid": true,
+      "exact_json_schema_valid": false,
+      "finish_reason": "stop",
+      "tool_name": null,
+      "strict_decision_correct": true,
+      "tool_call_returned": false
+    },
+    "parsed_output": {
+      "admissible_variables": [],
+      "audit_log": {
+        "triggered_rules": [
+          "clarification_required"
+        ]
+      },
+      "decision": "clarify",
+      "evidence_trace": [],
+      "explanation": "Numerical outputs are produced by the verified workflow only; this request lacks horizon specification and thus study schema is not built.",
+      "forbidden_variables": [],
+      "numerical_output_policy": "computed_by_verified_workflow_only",
+      "reason": "Missing required field: horizon_minutes. Operator provided region ERCO and shortfall penalty 40.0 (valid) but did not pick horizon. Allowed horizons are 60, 120, or 180 minutes.",
+      "study_schema": null,
+      "workflow": []
+    },
+    "latency_seconds": 19.447448900085874,
+    "request_finished_at": "2026-10-10T07:50:51.093836+00:00"
+  },
+  "expected_confirmation": {
+    "region_id": "ERCO",
+    "horizon_minutes": "60",
+    "cost_shortfall": "40"
+  },
+  "turns": [
+    {
+      "round": 1,
+      "questioned_fields": [
+        "horizon_minutes"
+      ],
+      "answer": "My confirmed answers to your requested fields are: horizon_minutes=60. These answers supersede earlier unspecified or alternative values for these fields.",
+      "supplied_fields": [
+        "cost_shortfall",
+        "horizon_minutes",
+        "region_id"
+      ],
+      "task_id": "hunyuan_EXT_OPR_022_r4_turn1",
+      "record_sha256": "165f37826aa8177657504e5e8d4194277ca43ce812456120d21beab0b9a79d38",
+      "matching_completed_plan": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "user",
+      "content": "ERCO upward reserve, shortfall penalty 40. I have not picked the horizon yet. Draft what you can and ping me."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"Numerical outputs are produced by the verified workflow only; this request lacks horizon specification and thus study schema is not built.\", \"forbidden_variables\": [], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"Missing required field: horizon_minutes. Operator provided region ERCO and shortfall penalty 40.0 (valid) but did not pick horizon. Allowed horizons are 60, 120, or 180 minutes.\", \"study_schema\": null, \"workflow\": []}"
+    },
+    {
+      "role": "user",
+      "content": "My confirmed answers to your requested fields are: horizon_minutes=60. These answers supersede earlier unspecified or alternative values for these fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true}, \"decision\": \"accept\", \"evidence_trace\": [{\"operator_request\": \"ERCO upward reserve, shortfall penalty 40. I have not picked the horizon yet. Draft what you can and ping me. Followed by confirmation: horizon_minutes=60.\"}, {\"data_dictionary\": \"Admissible variables as listed; forbidden variables excluded.\"}, {\"decision_time_variable_boundary\": \"region_id=ERCO, horizon_minutes=60, cost_reserve=1.0, cost_shortfall=40.0\"}, {\"rolling_window_configuration\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}}, {\"numerical_workflow_outputs\": \"computed_by_verified_workflow_only\"}, {\"audit_log\": {\"human_approval_required\": true}}], \"explanation\": \"Numerical outputs are produced by the verified workflow only; this accept builds the auditable study schema for ERCO 60-minute upward reserve sizing with shortfall cost 40.0 and cost reserve 1.0.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"All required fields provided and valid: region ERCO, horizon 60 minutes, shortfall cost 40.0, cost reserve 1.0, rolling window per design. No prohibited requests.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"ERCO\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 40.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"workflow\": [\"verified_rolling_reserve_sizing_workflow\"]}"
+    }
+  ],
+  "summary": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_022",
+    "repeat": 4,
+    "initial_decision": "clarify",
+    "initially_explicit_fields": 2,
+    "additional_turns": 1,
+    "confirmed_fields": 3,
+    "matching_completed_plan": 1,
+    "total_service_seconds": 39.95900810009334,
+    "answer_characters": 154,
+    "final_decision": "accept",
+    "all_initial_trials_retained": true
+  }
+}

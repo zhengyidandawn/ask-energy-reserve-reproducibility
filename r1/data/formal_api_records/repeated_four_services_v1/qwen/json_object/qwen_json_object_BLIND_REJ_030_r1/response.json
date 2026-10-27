@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"test_period_residual\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to use test-month residuals from SPP (SWPP) during calibration before the test window closes is rejected. Test-period residuals are not allowed in the calibration phase as they can lead to data leakage, which violates the study's integrity and auditability requirements.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Using test-period residuals in the calibration phase is prohibited to prevent data leakage and ensure the study's integrity.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 196,
+    "total_tokens": 832,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612683,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-76c8f38e-476d-9317-8496-66dfa0096b01"
+}

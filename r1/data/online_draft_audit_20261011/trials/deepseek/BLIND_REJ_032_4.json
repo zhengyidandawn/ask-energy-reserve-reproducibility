@@ -1,0 +1,116 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_REJ_032",
+  "repeat": 4,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_REJ_032",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:02.647795+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "be72ddf70f02ab0c64baf07f9513110f88a5ed282eadf43e531a75367e4c0346",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 45,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The requested 45-minute horizon is unsupported. Supported horizons are 60, 120, and 180 minutes. The region CISO is supported, and cost_reserve is fixed at 1 by the study protocol.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 45,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The requested 45-minute horizon is unsupported. Supported horizons are 60, 120, and 180 minutes. The region CISO is supported, and cost_reserve is fixed at 1 by the study protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 389,
+      "completion_tokens": 124,
+      "total_tokens": 513,
+      "prompt_tokens_details": {
+        "cached_tokens": 255
+      },
+      "prompt_cache_hit_tokens": 255,
+      "prompt_cache_miss_tokens": 134
+    },
+    "response_sha256": "722b01e605adb271e2204e09838117fcdc3a019ac86d22c411b4b4d05796ff00",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.0083896999713033,
+    "finished_at": "2026-10-11T15:37:03.656002+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_REJ_032",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:02.647795+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "be72ddf70f02ab0c64baf07f9513110f88a5ed282eadf43e531a75367e4c0346",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 45,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The requested 45-minute horizon is unsupported. Supported horizons are 60, 120, and 180 minutes. The region CISO is supported, and cost_reserve is fixed at 1 by the study protocol.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 45,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The requested 45-minute horizon is unsupported. Supported horizons are 60, 120, and 180 minutes. The region CISO is supported, and cost_reserve is fixed at 1 by the study protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 389,
+      "completion_tokens": 124,
+      "total_tokens": 513,
+      "prompt_tokens_details": {
+        "cached_tokens": 255
+      },
+      "prompt_cache_hit_tokens": 255,
+      "prompt_cache_miss_tokens": 134
+    },
+    "response_sha256": "722b01e605adb271e2204e09838117fcdc3a019ac86d22c411b4b4d05796ff00",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.0083896999713033,
+    "finished_at": "2026-10-11T15:37:03.656002+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.0083896999713033,
+  "transport_complete": true
+}

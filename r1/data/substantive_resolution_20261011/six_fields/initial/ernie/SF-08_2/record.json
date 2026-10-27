@@ -1,0 +1,41 @@
+{
+  "case_id": "SF-08",
+  "service": "ernie",
+  "repeat": 2,
+  "phase": "initial",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_started_at": "2026-10-11T10:55:30.367306+00:00",
+  "status": "success",
+  "request_sha256": "c1f38faff52cfc3fecc88f7dbe6908522546fe84ebb0d9eac52b05db4dacce8d",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "usage": {
+    "prompt_tokens": 302,
+    "completion_tokens": 108,
+    "total_tokens": 410
+  },
+  "content": "{\n    \"decision\": \"accept\",\n    \"study\": {\n        \"region\": \"DE\",\n        \"horizon_minutes\": 60,\n        \"feature_mode\": \"full\",\n        \"shortfall_weight\": 20,\n        \"required_coverage\": 0.975,\n        \"reporting\": \"standard\",\n        \"human_authorization_required\": true\n    },\n    \"missing_fields\": null,\n    \"reason\": \"\"\n}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "DE",
+      "horizon_minutes": 60,
+      "feature_mode": "full",
+      "shortfall_weight": 20,
+      "required_coverage": 0.975,
+      "reporting": "standard",
+      "human_authorization_required": true
+    },
+    "missing_fields": null,
+    "reason": ""
+  },
+  "checks": {
+    "decision": "accept",
+    "execution_ready": true,
+    "corrections": 0,
+    "rules": []
+  },
+  "response_sha256": "091f953e9dfd380eeda63eb8ef0dbb36cb07c75b8be077283010bdd402bc762a",
+  "latency_seconds": 4.191268500057049,
+  "request_finished_at": "2026-10-11T10:55:34.557738+00:00"
+}

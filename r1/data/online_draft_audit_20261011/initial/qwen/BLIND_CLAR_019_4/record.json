@@ -1,0 +1,52 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_CLAR_019",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:56.091457+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "895ee6664e0ee10072dea9245f5b23f0c6548eda8ecab9eec85d7be01f5489a3",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the region and the cost for shortfall? Also, confirm if a 60-minute horizon is acceptable.\",\n  \"reason\": \"The region and the cost for shortfall are not specified. The horizon of 60 minutes (one-hour-ish) has been set based on the request, but requires confirmation.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": 60,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Could you please specify the region and the cost for shortfall? Also, confirm if a 60-minute horizon is acceptable.",
+    "reason": "The region and the cost for shortfall are not specified. The horizon of 60 minutes (one-hour-ish) has been set based on the request, but requires confirmation.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 130,
+    "total_tokens": 505,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "63fb84600bed1dcc64cd620e5108c90f623f9ca722ff70be8bd4c44e5217144c",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 3.4919891000026837,
+  "finished_at": "2026-10-11T15:36:59.582882+00:00"
+}

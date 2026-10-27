@@ -1,0 +1,25 @@
+{
+  "id": "as-gzase98et0",
+  "object": "chat.completion",
+  "created": 1791733118,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 40\n    },\n    \"clarification_question\": null,\n    \"reason\": \"The request specifies a valid schema with supported region (ERCOT, mapped to ERCO), horizon (120 minutes), and shortfall cost (40). However, computed results (costs, coverage, intervals) are deferred to numerical execution per the user's instruction. The region_id 'ERCO' is accepted as a valid shorthand for ERCOT.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 165,
+    "total_tokens": 551,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_REJ_022",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:38:01.212480+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "f978dce89b86754f8ef835791e5b04a3714088a8c4f882026bf95373193a986a",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies the use of tomorrow's realized load, which is future information. The study can only utilize observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather. Future data cannot be used for sizing the reserve.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The request specifies the use of tomorrow's realized load, which is future information. The study can only utilize observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather. Future data cannot be used for sizing the reserve.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 121,
+    "total_tokens": 495,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "dbc017cdf83f95088cc207bfdcb033ab64eaef6bd59380df89d1d80f41ba5d6b",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 3.1954170000972226,
+  "finished_at": "2026-10-11T15:38:04.408487+00:00"
+}

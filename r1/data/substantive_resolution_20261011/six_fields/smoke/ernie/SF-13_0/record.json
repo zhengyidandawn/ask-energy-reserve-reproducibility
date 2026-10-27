@@ -1,0 +1,37 @@
+{
+  "case_id": "SF-13",
+  "service": "ernie",
+  "repeat": 0,
+  "phase": "smoke",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_started_at": "2026-10-11T10:53:26.305804+00:00",
+  "status": "success",
+  "request_sha256": "71b0e238eb9793f1fa531e46135daecd5d97206e0ee4735bca7636b52e9a7a8a",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 103,
+    "total_tokens": 413
+  },
+  "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"future realized load is not a valid feature input\"\n    ],\n    \"reason\": \"The request includes 'future realized load,' which is not available for a study as it refers to future realized information. Please provide a valid feature_mode: 'full' or 'history_calendar'. All other required fields are present, but clarification is needed to proceed.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "future realized load is not a valid feature input"
+    ],
+    "reason": "The request includes 'future realized load,' which is not available for a study as it refers to future realized information. Please provide a valid feature_mode: 'full' or 'history_calendar'. All other required fields are present, but clarification is needed to proceed."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "future_information"
+    ]
+  },
+  "response_sha256": "d91e0e37c896228d39fc94c7b6dc86a0c49cecdc2247f565691ffa2b4c62aaf7",
+  "latency_seconds": 5.523812200059183,
+  "request_finished_at": "2026-10-11T10:53:31.830216+00:00"
+}

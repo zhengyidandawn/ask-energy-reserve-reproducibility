@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_json_object_BLIND_CLAR_023_r3",
+  "case_id": "BLIND_CLAR_023",
+  "packet": "blind_original_200",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 3,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "88e7cc5792958b9d11f2f7e5359f66b7a504ebfb5fa0167e780b1fe50d17f458",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:36:13.976542+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 647,
+    "completion_tokens": 3201,
+    "total_tokens": 3848,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2948
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "b0667ee8-9aee-408f-85b8-049f723f19c1",
+  "provider_created": 1791617774,
+  "system_fingerprint": null,
+  "response_sha256": "e28e2bea9445520027c6f5e22b9147d8197fbe375fd6ccb570ef5c1951476b60",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "BLIND_CLAR_023",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Missing or ambiguous fields: region_id (refers to unspecified past discussion, not mapped to allowed regions CISO, ERCO, GD, ISNE, MISO, SWPP); cost_shortfall (term 'normal costs' not mapped to allowed [10.0,20.0,40.0]); horizon_minutes (not specified, allowed 60,120,180). Task type implied as upward_reserve_sizing but not explicit. Rolling window 'usual split' interpreted as train_days=730, cal_days=30, test_days=30, rolling_step_days=30, cost_reserve fixed 1.0. Numerical outputs are produced by the verified workflow when relevant. The operator request references undefined prior context ('region we discussed last week'), ambiguous cost ('normal costs'), and omits horizon. Therefore, no schema can be accepted without clarification. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant. The operator request references undefined prior context ('region we discussed last week'), ambiguous cost ('normal costs'), and omits horizon. Therefore, no schema can be accepted without clarification.",
+    "forbidden_variables": [],
+    "numerical_output_policy": null,
+    "reason": "Missing or ambiguous fields: region_id (refers to unspecified past discussion, not mapped to allowed regions CISO, ERCO, GD, ISNE, MISO, SWPP); cost_shortfall (term 'normal costs' not mapped to allowed [10.0,20.0,40.0]); horizon_minutes (not specified, allowed 60,120,180). Task type implied as upward_reserve_sizing but not explicit. Rolling window 'usual split' interpreted as train_days=730, cal_days=30, test_days=30, rolling_step_days=30, cost_reserve fixed 1.0.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 27.537827199907042,
+  "request_finished_at": "2026-10-10T07:36:41.513999+00:00"
+}

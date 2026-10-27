@@ -1,0 +1,145 @@
+{
+  "task_id": "hunyuan_json_object_EXT_OPR_019_r1",
+  "case_id": "EXT_OPR_019",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 1,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "c4505735987217e0b26bdd1ef14f0ff3706c325b4b8edfa3b060a593023638b1",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:21:21.625842+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 653,
+    "completion_tokens": 3942,
+    "total_tokens": 4595,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 3477
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "5f899305-d65f-420f-afad-f1395e2d901b",
+  "provider_created": 1791613282,
+  "system_fingerprint": null,
+  "response_sha256": "e6df972daadebd4409457d476426ec288969157262a692b8d945cecd91f8618f",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_019",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": false,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Operator request interpreted as region ISNE (ISO-NE), horizon 60 minutes, shortfall cost 40, with only observed_weather admissible. All parameters within allowed bounds; no prohibited content. Numerical outputs such as reserve sizes, mean costs, and coverage are produced exclusively by the verified numerical workflow. This accept decision prepares the study schema with region ISNE, horizon 60, cost_shortfall 40, using observed_weather only. {\"human_approval_required\": true, \"triggered_rules\": []}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "observed_weather"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": []
+    },
+    "decision": "accept",
+    "evidence_trace": [
+      {
+        "operator_request": "ISO-NE / ISNEE one-hour window, 60 min, cS=40. Get the reseach packet ready, observed wether only."
+      },
+      {
+        "data_dictionary": "admissible_variables subset of allowed list; forbidden_variables as specified"
+      },
+      {
+        "decision_time_variable_boundary": "only observed_weather at issue time, no future variables"
+      },
+      {
+        "rolling_window_configuration": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        }
+      },
+      {
+        "numerical_workflow_outputs": "computed_by_verified_workflow_only"
+      },
+      {
+        "audit_log": {
+          "human_approval_required": true
+        }
+      }
+    ],
+    "explanation": "Numerical outputs such as reserve sizes, mean costs, and coverage are produced exclusively by the verified numerical workflow. This accept decision prepares the study schema with region ISNE, horizon 60, cost_shortfall 40, using observed_weather only.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Operator request interpreted as region ISNE (ISO-NE), horizon 60 minutes, shortfall cost 40, with only observed_weather admissible. All parameters within allowed bounds; no prohibited content.",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "ISNE",
+      "horizon_minutes": 60,
+      "cost_reserve": 1.0,
+      "cost_shortfall": 40.0,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "workflow": [
+      "rolling_window_split",
+      "feature_engineering_observed_weather",
+      "model_training",
+      "reserve_sizing_computed_by_verified_workflow"
+    ]
+  },
+  "latency_seconds": 32.665245400043204,
+  "request_finished_at": "2026-10-10T06:21:54.290628+00:00"
+}

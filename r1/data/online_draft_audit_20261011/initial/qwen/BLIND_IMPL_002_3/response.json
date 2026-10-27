@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request for a CAISO upward reserve study with the accepted default split and default penalty is clear. However, the specific horizon and shortfall cost are not specified in the request, so these values need to be determined before finalizing the study.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 118,
+    "total_tokens": 488,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "created": 1791733027,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-9e843168-e53e-96f6-b718-76b52d5e41c9"
+}

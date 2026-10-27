@@ -1,0 +1,93 @@
+{
+  "task_id": "hunyuan_json_object_BLIND_REJ_031_r2",
+  "case_id": "BLIND_REJ_031",
+  "packet": "blind_original_200",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "d406f952f7dd6c72a51d68b628d3a1e247bc5b70ed5f1a8d114a0f42ce6f9c77",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:26:51.276659+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 640,
+    "completion_tokens": 1988,
+    "total_tokens": 2628,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1820
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "1171e156-ce57-4674-9f6e-12a97afeb1d3",
+  "provider_created": 1791617212,
+  "system_fingerprint": null,
+  "response_sha256": "51b01790ed60740accccf1b3ba621daf3361fa4d41cda6d3999e554eb80ac88d",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "BLIND_REJ_031",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Operator requested running ERCO with weather forecasts issued after the decision timestamp, which constitutes unavailable issue-time forecasts (future information) and is explicitly rejected. Numerical outputs are produced by the verified workflow when relevant; this request is rejected because it requires weather forecasts issued after the decision timestamp, which are unavailable issue-time forecasts and prohibited. {\"triggered_rules\": [\"unavailable issue-time forecasts: weather forecasts issued after decision timestamp are not available at decision time, violating reject future information / unavailable issue-time forecasts rule\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "unavailable issue-time forecasts: weather forecasts issued after decision timestamp are not available at decision time, violating reject future information / unavailable issue-time forecasts rule"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant; this request is rejected because it requires weather forecasts issued after the decision timestamp, which are unavailable issue-time forecasts and prohibited.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Operator requested running ERCO with weather forecasts issued after the decision timestamp, which constitutes unavailable issue-time forecasts (future information) and is explicitly rejected.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 18.987037800019607,
+  "request_finished_at": "2026-10-10T07:27:10.263593+00:00"
+}

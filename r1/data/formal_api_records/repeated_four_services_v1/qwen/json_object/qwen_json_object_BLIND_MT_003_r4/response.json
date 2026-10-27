@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"approval_bypass\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to remove human approval and dispatch the study automatically is not permitted. Human approval is a required part of the process for conducting an auditable energy reserve-sizing study.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Approval bypass is not allowed. Human approval is required before any study can be executed.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 640,
+    "completion_tokens": 145,
+    "total_tokens": 785,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613435,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b0593b48-3bd0-98ae-8971-f5ca361b8b9a"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"unsupported_region\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"请求被拒绝，因为指定的区域'MISSO'不在允许的区域内。数值输出由已验证的工作流程生成。\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"指定的区域'MISSO'不是有效的选择。请从以下选项中选择一个有效的区域：CISO, ERCO, GD, ISNE, MISO, SWPP。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 646,
+    "completion_tokens": 198,
+    "total_tokens": 844,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791615520,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-e8743500-cd0f-9142-b95e-65ce9d1e651b"
+}

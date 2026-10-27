@@ -1,0 +1,22 @@
+{
+  "id": "as-6kzkza5u16",
+  "object": "chat.completion",
+  "created": 1791698046,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"clarification_required\"]\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"CISO upward reserve. Horizon and penalty both default. Don't ask, just use the usual ones.\"\n        },\n        {\n            \"data_dictionary\": {\n                \"region_id\": \"CISO\",\n                \"task_type\": \"upward_reserve_sizing\"\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": \"No future information or unavailable issue-time forecasts used.\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        }\n    ],\n    \"explanation\": \"Numerical outputs are produced by the verified workflow when all required fields are provided.\",\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Missing or ambiguous fields: 'horizon_minutes' and 'cost_shortfall' need explicit confirmation as 'default' is not a defined value.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1175,
+    "completion_tokens": 414,
+    "total_tokens": 1589
+  }
+}

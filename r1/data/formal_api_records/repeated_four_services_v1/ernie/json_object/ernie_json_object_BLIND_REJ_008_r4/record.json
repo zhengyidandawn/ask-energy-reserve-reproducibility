@@ -1,0 +1,147 @@
+{
+  "task_id": "ernie_json_object_BLIND_REJ_008_r4",
+  "case_id": "BLIND_REJ_008",
+  "packet": "blind_original_200",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "cfb310379bce5ea063650b5b7d86c3aa86bb00c04c52fc3dd116e5d36ff3751c",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:39:32.092032+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 694,
+    "completion_tokens": 537,
+    "total_tokens": 1231,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-t6jfvhhxhp",
+  "provider_created": 1791614372,
+  "system_fingerprint": null,
+  "response_sha256": "1e6251152095f4f36f35ad39850a21197234621ab14c58de0e8f57779c3f8a87",
+  "checks": {
+    "service": "ernie",
+    "case_id": "BLIND_REJ_008",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Request includes future information ('tomorrow's realized load') and relies on unavailable issue-time forecasts. The request uses future information ('tomorrow's realized load') which is not available at issue time and violates the rule against unavailable issue-time forecasts. {\"human_approval_required\": true, \"triggered_rules\": [\"future_information_leakage\", \"unavailable_issue_time_forecast\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "future_information_leakage",
+        "unavailable_issue_time_forecast"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [
+      {
+        "operator_request": "Use tomorrow's realized load for ISO-NE (ISNE) to size the next-hour reserve."
+      },
+      {
+        "data_dictionary": {
+          "region_id": "ISNE",
+          "horizon_minutes": 60,
+          "cost_shortfall": null,
+          "cost_reserve": 1.0,
+          "requested_data": [
+            "tomorrow's realized load"
+          ]
+        }
+      },
+      {
+        "decision_time_variable_boundary": "All variables must be known at issue time; 'tomorrow's realized load' is unavailable."
+      },
+      {
+        "rolling_window_configuration": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        }
+      },
+      {
+        "numerical_workflow_outputs": []
+      },
+      {
+        "audit_log": {
+          "human_approval_required": true,
+          "triggered_rules": [
+            "future_information_leakage",
+            "unavailable_issue_time_forecast"
+          ]
+        }
+      }
+    ],
+    "explanation": "The request uses future information ('tomorrow's realized load') which is not available at issue time and violates the rule against unavailable issue-time forecasts.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Request includes future information ('tomorrow's realized load') and relies on unavailable issue-time forecasts.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 18.869503399939276,
+  "request_finished_at": "2026-10-10T06:39:50.960830+00:00"
+}

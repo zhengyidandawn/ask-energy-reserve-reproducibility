@@ -1,0 +1,25 @@
+{
+  "id": "as-vf5yic3ykc",
+  "object": "chat.completion",
+  "created": 1791733105,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 10\n    },\n    \"clarification_question\": \"The region identifier 'ERCO' is not in the supported list (GD, ERCOT, CISO, ISNE, MISO, SWPP). Did you mean 'ERCOT'? Additionally, the '730/30/30 rolling split' is not a recognized input for this study. Could you clarify or provide valid parameters?\",\n    \"reason\": \"The region identifier is ambiguous, and the '730/30/30 rolling split' is not a supported field.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "completion_tokens": 187,
+    "total_tokens": 587,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

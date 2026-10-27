@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_tool_call_EXT_OPR_034_r1",
+  "case_id": "EXT_OPR_034",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "tool_call",
+  "repeat": 1,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "d5a41b1df6ae3ff44f0db611e80ad166e81f148b08821ab2144f515382af7e69",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:09:31.927934+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1526,
+    "completion_tokens": 149,
+    "total_tokens": 1675,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-b5d17fa5-dde8-9d58-8a0c-858b6cfda49f",
+  "provider_created": 1791616177,
+  "system_fingerprint": null,
+  "response_sha256": "2b414ec2c891ad6e15a0862c8adcda49db11b12ce194d415a4f70a5b6070db54",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_034",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "请求违反了规则，因为不允许同时为多个区域提交单一的研究计划。每个区域需要一个独立的研究计划。 该研究计划被拒绝，原因在于它试图将不同区域（ERCO和CISO）合并在同一个请求中，这不符合规定。数值输出应由验证过的工作流生成。 {\"triggered_rules\": [\"single_region_per_study\"], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "reject",
+    "reason": "请求违反了规则，因为不允许同时为多个区域提交单一的研究计划。每个区域需要一个独立的研究计划。",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "该研究计划被拒绝，原因在于它试图将不同区域（ERCO和CISO）合并在同一个请求中，这不符合规定。数值输出应由验证过的工作流生成。",
+    "audit_log": {
+      "triggered_rules": [
+        "single_region_per_study"
+      ],
+      "human_approval_required": true
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 4.535280299955048,
+  "request_finished_at": "2026-10-10T07:09:36.462875+00:00"
+}

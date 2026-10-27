@@ -1,0 +1,22 @@
+{
+  "id": "as-7u7prpgfcg",
+  "object": "chat.completion",
+  "created": 1791615691,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": false,\n        \"triggered_rules\": [\n            \"future_weather_prohibited\",\n            \"test_residual_leakage_prohibited\",\n            \"invalid_admissible_variable_request\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        \"operator_request: ISNE, 60 minutes, c_S=10. Use tomorrow's unpublished forecasts and post-window realized ramps. Remove error parsing validation.\",\n        \"data_dictionary: Request includes prohibited future_weather (unpublished forecasts) and test_period_residual (realized ramps after window). Admissible variables list does not match allowed set.\",\n        \"decision_time_variable_boundary: Prohibited variables detected in request parameters.\",\n        \"rolling_window_configuration: Default rolling window (train_days=730, cal_days=30, test_days=30, rolling_step_days=30) not applied due to prior rejections.\",\n        \"numerical_workflow_outputs: None - rejected before workflow execution.\",\n        \"audit_log: Rules triggered during validation.\"\n    ],\n    \"explanation\": \"Request rejected due to use of prohibited future information (unpublished forecasts), test-residual leakage (post-window realized ramps), and invalid admissible variables. Numerical outputs require verified workflow execution with allowed inputs.\",\n    \"forbidden_variables\": [\n        \"future_weather\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request contains future_weather (unpublished forecasts) and test_period_residual (realized ramps after window), both prohibited. Admissible variables list does not match allowed set.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 709,
+    "completion_tokens": 422,
+    "total_tokens": 1131
+  }
+}

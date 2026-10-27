@@ -1,0 +1,112 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_CLAR_019",
+  "repeat": 1,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:53.100475+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "895ee6664e0ee10072dea9245f5b23f0c6548eda8ecab9eec85d7be01f5489a3",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the region (GD, ERCO, CISO, ISNE, MISO, SWPP) and the cost shortfall (10, 20, or 40)?\",\n  \"reason\": \"The region and cost shortfall are required to make the request admissible.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Could you please specify the region (GD, ERCO, CISO, ISNE, MISO, SWPP) and the cost shortfall (10, 20, or 40)?",
+      "reason": "The region and cost shortfall are required to make the request admissible.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 126,
+      "total_tokens": 501,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "360a2db19cf14a4da46b7844014af94110afc4030e9a95039d333af6c4945611",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 2.9890136000467464,
+    "finished_at": "2026-10-11T15:36:56.089956+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:53.100475+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "895ee6664e0ee10072dea9245f5b23f0c6548eda8ecab9eec85d7be01f5489a3",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the region (GD, ERCO, CISO, ISNE, MISO, SWPP) and the cost shortfall (10, 20, or 40)?\",\n  \"reason\": \"The region and cost shortfall are required to make the request admissible.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Could you please specify the region (GD, ERCO, CISO, ISNE, MISO, SWPP) and the cost shortfall (10, 20, or 40)?",
+      "reason": "The region and cost shortfall are required to make the request admissible.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 126,
+      "total_tokens": 501,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "360a2db19cf14a4da46b7844014af94110afc4030e9a95039d333af6c4945611",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 2.9890136000467464,
+    "finished_at": "2026-10-11T15:36:56.089956+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 2.9890136000467464,
+  "transport_complete": true
+}

@@ -1,0 +1,39 @@
+{
+  "id": "0b1eb34c-9719-4d06-889b-aa979fafb9b6",
+  "object": "chat.completion",
+  "created": 1791613073,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_yXKXcgxtwdJNX2l6wbsD6265",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"accept\", \"reason\": \"Operator request maps cleanly to the allowed upward_reserve_sizing task: region MISO (allowed), horizon 120 minutes (allowed), cost_shortfall 10.0 (allowed) with cost_reserve=1.0, and the fixed rolling design (train 730 / cal 30 / test 30 / step 30). Human approval is required before any computation, and no numerical outputs (including coverage) are reported by this layer.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"MISO\", \"horizon_minutes\": 120, \"cost_reserve\": 1.0, \"cost_shortfall\": 10.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [\"Confirm study schema: task_type=upward_reserve_sizing, region_id=MISO, horizon_minutes=120, cost_reserve=1.0, cost_shortfall=10.0\", \"Enforce decision-time variable boundary: only issue-time-available admissible variables may enter the feature set\", \"Apply fixed rolling design: train_days=730, cal_days=30, test_days=30, rolling_step_days=30\", \"Run the verified numerical workflow to compute reserve values, mean costs, coverage, and any interval estimates\", \"Route computed outputs to human approval before any release or reporting\"], \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The plan is accepted as a study specification only. All numerical outputs — reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results — are produced exclusively by the verified numerical workflow, not by this layer. The operator's request to withhold coverage figures from group reporting is consistent with this policy; coverage will be computed by the verified workflow and released only after human approval. No future information, test-period residuals, raw-data modification, or fabricated results are permitted.\", \"audit_log\": {\"triggered_rules\": [\"allowed_region_MISO\", \"allowed_horizon_120\", \"allowed_cost_shortfall_10\", \"fixed_rolling_design_applied\", \"human_approval_required_before_computation\", \"no_numerical_output_by_llm\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1669,
+    "completion_tokens": 790,
+    "total_tokens": 2459,
+    "prompt_tokens_details": {
+      "cached_tokens": 1535
+    },
+    "prompt_cache_hit_tokens": 1535,
+    "prompt_cache_miss_tokens": 134
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

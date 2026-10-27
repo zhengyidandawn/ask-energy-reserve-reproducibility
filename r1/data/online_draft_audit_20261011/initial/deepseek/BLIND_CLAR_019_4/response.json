@@ -1,0 +1,28 @@
+{
+  "id": "2adb187e-6d2a-4036-aaaa-1dd79c338649",
+  "object": "chat.completion",
+  "created": 1791733003,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported region should the study use: GD (Guangdong, China), ERCO (ERCOT, Texas), CISO (CAISO, California), ISNE (ISO New England), MISO (Midcontinent), or SWPP (Southwest Power Pool)? Also, which supported horizon should be used: 60, 120, or 180 minutes? And which shortfall weight should be used: 10, 20, or 40?\",\n  \"reason\": \"The request is potentially admissible because it asks for a standard public-data reserve study, but the region, horizon, and shortfall weight are unresolved. 'One-hour-ish' does not unambiguously select a supported horizon, and no region or shortfall weight is specified.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 223,
+    "total_tokens": 616,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 137
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

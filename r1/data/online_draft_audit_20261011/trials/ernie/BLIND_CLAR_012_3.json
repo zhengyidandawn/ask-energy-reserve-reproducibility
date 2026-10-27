@@ -1,0 +1,106 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_CLAR_012",
+  "repeat": 3,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_CLAR_012",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:44.790054+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "ba961f8cdcb68454c4fedb2aa2a24787413f56f630e66d7db11f66cb54166ddf",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 20\n    },\n    \"clarification_question\": \"Please specify the region_id for the analysis.\",\n    \"reason\": \"The region_id is unresolved and is required for the analysis.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 20
+      },
+      "clarification_question": "Please specify the region_id for the analysis.",
+      "reason": "The region_id is unresolved and is required for the analysis.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 372,
+      "completion_tokens": 111,
+      "total_tokens": 483
+    },
+    "response_sha256": "2e53e545a194b14e4bb08712181ebcb73a0baf5acb8af8134f04789be8fd046f",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.214042499894276,
+    "finished_at": "2026-10-11T15:36:49.004387+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_CLAR_012",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:44.790054+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "ba961f8cdcb68454c4fedb2aa2a24787413f56f630e66d7db11f66cb54166ddf",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 20\n    },\n    \"clarification_question\": \"Please specify the region_id for the analysis.\",\n    \"reason\": \"The region_id is unresolved and is required for the analysis.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 20
+      },
+      "clarification_question": "Please specify the region_id for the analysis.",
+      "reason": "The region_id is unresolved and is required for the analysis.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 372,
+      "completion_tokens": 111,
+      "total_tokens": 483
+    },
+    "response_sha256": "2e53e545a194b14e4bb08712181ebcb73a0baf5acb8af8134f04789be8fd046f",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.214042499894276,
+    "finished_at": "2026-10-11T15:36:49.004387+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 4.214042499894276,
+  "transport_complete": true
+}

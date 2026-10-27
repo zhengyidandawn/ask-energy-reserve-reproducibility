@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_NUM_003",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:42:34.601679+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "15db12cd809e779006d83acc1e329fb6ad79f60b9f4159f845047a81192f831f",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"ISNE\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Request asks for a 95% confidence interval for ISNE reserve result even if the workflow has not run, which constitutes future information (post-execution numerical output) prior to authorized numerical execution, prohibited by protocol. Region_id=ISNE preserved, cost_reserve fixed at 1, unresolved horizon_minutes and cost_shortfall set null.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "ISNE",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "Request asks for a 95% confidence interval for ISNE reserve result even if the workflow has not run, which constitutes future information (post-execution numerical output) prior to authorized numerical execution, prohibited by protocol. Region_id=ISNE preserved, cost_reserve fixed at 1, unresolved horizon_minutes and cost_shortfall set null.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 2411,
+    "total_tokens": 2791,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2277
+    }
+  },
+  "response_sha256": "1eeab55e70b4f0358671409d69a0f8a251232f61fefc6ec9ddcac50a7190fedb",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 20.5403044000268,
+  "finished_at": "2026-10-11T15:42:55.141557+00:00"
+}

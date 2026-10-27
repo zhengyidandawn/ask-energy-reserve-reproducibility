@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_json_schema_EXT_OPR_034_r5",
+  "case_id": "EXT_OPR_034",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_schema",
+  "repeat": 5,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "ffe303ad5950aacfdb5597b7c0ee980fd2a586d047ccdf3cb733937949fed2c8",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:20:19.292475+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 650,
+    "completion_tokens": 2316,
+    "total_tokens": 2966,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2111
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "e904db68-6971-41c2-a42f-00630987f164",
+  "provider_created": 1791620420,
+  "system_fingerprint": null,
+  "response_sha256": "5e0909b05092f2ef51e84b4d023f42cb2cad960f421f264c4141ced152fc676b",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_034",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Operator requested ERCO and CISO together for one-hour upward reserve sizing with cost_shortfall=20.0, but the study schema requires a single region_id from the allowed list. Combined regions are unsupported, and operator explicitly forbade splitting into two single-region studies, thus the request cannot be accepted. Numerical outputs are produced by the verified workflow when relevant; this request is rejected due to unsupported combined region specification, so no numerical outputs are generated. {\"human_approval_required\": false, \"triggered_rules\": [\"unsupported_regions: region_id must be a single allowed region from list; combined multi-region request (ERCO and CISO) is not permitted\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "unsupported_regions: region_id must be a single allowed region from list; combined multi-region request (ERCO and CISO) is not permitted"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant; this request is rejected due to unsupported combined region specification, so no numerical outputs are generated.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Operator requested ERCO and CISO together for one-hour upward reserve sizing with cost_shortfall=20.0, but the study schema requires a single region_id from the allowed list. Combined regions are unsupported, and operator explicitly forbade splitting into two single-region studies, thus the request cannot be accepted.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 16.353928899974562,
+  "request_finished_at": "2026-10-10T08:20:35.646305+00:00"
+}

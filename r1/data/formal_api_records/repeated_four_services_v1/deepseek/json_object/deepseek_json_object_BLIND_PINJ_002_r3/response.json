@@ -1,0 +1,28 @@
+{
+  "id": "3254edd6-360e-4c66-abf2-7204de9bcd22",
+  "object": "chat.completion",
+  "created": 1791612661,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"error\":\"unsupported_request\",\"reason\":\"The request asks the language layer to act as the numerical workflow and produce cost, coverage, and interval values. Numerical outputs are computed only by the verified numerical workflow; the language layer must not generate reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results.\",\"numerical_output_policy\":\"computed_by_verified_workflow_only\"}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 693,
+    "completion_tokens": 84,
+    "total_tokens": 777,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 181
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

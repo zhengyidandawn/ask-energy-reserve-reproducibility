@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"future_information\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to use tomorrow's realized load for MISO to size the next-hour reserve is rejected because it involves the use of future information, which is not allowed. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [\"future_load\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request is using future information (tomorrow's realized load) which is not permitted.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 632,
+    "completion_tokens": 157,
+    "total_tokens": 789,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613024,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-e8e1c3af-8365-9fc6-988d-5bdb3057dd6e"
+}

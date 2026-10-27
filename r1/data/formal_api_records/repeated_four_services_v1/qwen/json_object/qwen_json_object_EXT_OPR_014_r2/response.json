@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"unsupported_region\",\n      \"clarification_required\"\n    ]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The region 'SPP' is not supported. Please specify a valid region and provide all necessary details as per the guidelines.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The region 'SPP' is not in the list of allowed regions. Additionally, the phrase 'Don't dump MW on me' requires clarification to understand the exact requirements or constraints it implies.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 168,
+    "total_tokens": 812,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612919,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b1fe36af-5def-9302-8016-2602b3b1da60"
+}

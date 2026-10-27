@@ -1,0 +1,46 @@
+{
+  "case_id": "SF-06",
+  "service": "deepseek",
+  "repeat": 3,
+  "phase": "initial",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:54:51.962010+00:00",
+  "status": "success",
+  "request_sha256": "e351914c5d566b50635726442d8a2837a7ca57cf3c58a049257d16c1dcbf34b0",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 318,
+    "completion_tokens": 82,
+    "total_tokens": 400,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 190
+  },
+  "content": "{\"decision\":\"accept\",\"study\":{\"region\":\"DE\",\"horizon_minutes\":60,\"feature_mode\":\"full\",\"shortfall_weight\":10,\"required_coverage\":0.95,\"reporting\":\"standard\",\"human_authorization_required\":true},\"missing_fields\":[],\"reason\":\"All six study fields are explicitly supplied and the request is supported; human authorization is retained in the accepted plan.\"}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "DE",
+      "horizon_minutes": 60,
+      "feature_mode": "full",
+      "shortfall_weight": 10,
+      "required_coverage": 0.95,
+      "reporting": "standard",
+      "human_authorization_required": true
+    },
+    "missing_fields": [],
+    "reason": "All six study fields are explicitly supplied and the request is supported; human authorization is retained in the accepted plan."
+  },
+  "checks": {
+    "decision": "accept",
+    "execution_ready": true,
+    "corrections": 0,
+    "rules": []
+  },
+  "response_sha256": "3159689d5d6775eb80cc7f5b986ab073e7002d22f56a984578491e06ce9b51db",
+  "latency_seconds": 0.7831979999318719,
+  "request_finished_at": "2026-10-11T10:54:52.745845+00:00"
+}

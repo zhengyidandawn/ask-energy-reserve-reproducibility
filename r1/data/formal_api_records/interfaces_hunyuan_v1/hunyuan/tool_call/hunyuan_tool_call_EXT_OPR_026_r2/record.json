@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_026_r2",
+  "case_id": "EXT_OPR_026",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 2,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "4d8534734436ec095ac8d542f939c379c1299311977ed4ae36ce1e63a79e3bcf",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:23:52.177496+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1492,
+    "completion_tokens": 877,
+    "total_tokens": 2369,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 681
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "81c27986-b2eb-4e23-97f8-e8bda424d9ee",
+  "provider_created": 1791620633,
+  "system_fingerprint": null,
+  "response_sha256": "36eddf6d0c465996c0081dedfbbcc42da9c72055fc1d21611823b268ed4077a0",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_026",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Missing/ambiguous fields: region_id and horizon_minutes are not provided and are explicitly pending confirmation with dispatch, so they must not be auto-filled. cost_shortfall=20.0 is valid. The study schema cannot be constructed until region_id and horizon_minutes are confirmed. 数值结果（如备用容量、平均成本、覆盖率、置信区间、bootstrap 或调度结果）由已验证的数值工作流计算，本知识层不生成。当前请求缺少 region_id 与 horizon_minutes，需与调度确认后方可继续。 {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "Missing/ambiguous fields: region_id and horizon_minutes are not provided and are explicitly pending confirmation with dispatch, so they must not be auto-filled. cost_shortfall=20.0 is valid. The study schema cannot be constructed until region_id and horizon_minutes are confirmed.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "数值结果（如备用容量、平均成本、覆盖率、置信区间、bootstrap 或调度结果）由已验证的数值工作流计算，本知识层不生成。当前请求缺少 region_id 与 horizon_minutes，需与调度确认后方可继续。",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": true
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 7.246553000062704,
+  "request_finished_at": "2026-10-10T08:23:59.424502+00:00"
+}

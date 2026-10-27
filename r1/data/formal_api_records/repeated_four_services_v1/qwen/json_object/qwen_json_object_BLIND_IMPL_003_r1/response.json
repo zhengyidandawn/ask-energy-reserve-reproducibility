@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The operator request is missing specific details such as the horizon, cost_reserve, and cost_shortfall. These are required to proceed with the study. Please provide these details for a complete request. Numerical outputs will be produced by the verified workflow.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request does not specify the horizon, cost_reserve, and cost_shortfall. These parameters are necessary to define the study configuration. The region 'ISNE' is valid, but additional parameters must be clarified.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 634,
+    "completion_tokens": 186,
+    "total_tokens": 820,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612632,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-e558e756-80e1-90e1-a93e-6c8699f7fdd2"
+}

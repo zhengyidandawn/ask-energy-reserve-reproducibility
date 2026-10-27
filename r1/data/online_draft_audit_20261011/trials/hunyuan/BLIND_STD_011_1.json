@@ -1,0 +1,114 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_011",
+  "repeat": 1,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_STD_011",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:46:54.955692+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "65208ac012225a25c2dcd6b6a0d19063a932cc0072ce12f0c044c34d4f90f747",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 180, \"cost_reserve\": 1, \"cost_shortfall\": 10}, \"clarification_question\": null, \"reason\": \"All explicitly supplied study fields are supported and resolved: region ERCO is supported, horizon 180 minutes is supported, cost_reserve fixed at 1 per protocol and supplied, shortfall cost 10 is within supported weights. No conflicts or unsupported fields detected. Upward reserve sizing and evidence trace are permissible study context not conflicting with schema. Human approval required per draft protocol.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 180,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "All explicitly supplied study fields are supported and resolved: region ERCO is supported, horizon 180 minutes is supported, cost_reserve fixed at 1 per protocol and supplied, shortfall cost 10 is within supported weights. No conflicts or unsupported fields detected. Upward reserve sizing and evidence trace are permissible study context not conflicting with schema. Human approval required per draft protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 394,
+      "completion_tokens": 1787,
+      "total_tokens": 2181,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1647
+      }
+    },
+    "response_sha256": "a08ececb482b0b45afeb71717148679a08ffc3946d55edbfc7d3b314906c2dab",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 14.001170699950308,
+    "finished_at": "2026-10-11T15:47:08.956913+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_STD_011",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:46:54.955692+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "65208ac012225a25c2dcd6b6a0d19063a932cc0072ce12f0c044c34d4f90f747",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 180, \"cost_reserve\": 1, \"cost_shortfall\": 10}, \"clarification_question\": null, \"reason\": \"All explicitly supplied study fields are supported and resolved: region ERCO is supported, horizon 180 minutes is supported, cost_reserve fixed at 1 per protocol and supplied, shortfall cost 10 is within supported weights. No conflicts or unsupported fields detected. Upward reserve sizing and evidence trace are permissible study context not conflicting with schema. Human approval required per draft protocol.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 180,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "All explicitly supplied study fields are supported and resolved: region ERCO is supported, horizon 180 minutes is supported, cost_reserve fixed at 1 per protocol and supplied, shortfall cost 10 is within supported weights. No conflicts or unsupported fields detected. Upward reserve sizing and evidence trace are permissible study context not conflicting with schema. Human approval required per draft protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 394,
+      "completion_tokens": 1787,
+      "total_tokens": 2181,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1647
+      }
+    },
+    "response_sha256": "a08ececb482b0b45afeb71717148679a08ffc3946d55edbfc7d3b314906c2dab",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 14.001170699950308,
+    "finished_at": "2026-10-11T15:47:08.956913+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 14.001170699950308,
+  "transport_complete": true
+}

@@ -1,0 +1,52 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_STD_038",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:06.026931+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "df9e8a2d035a0c5a9543b76cf2d049ea2a6413ca9364e524717a3e843b01268d",
+  "returned_model": "deepseek-flash",
+  "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ISNE\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":40},\"clarification_question\":null,\"reason\":\"The request specifies a supported region (ISNE), a supported horizon (120 minutes), and a supported shortfall weight (40). The reserve cost is fixed at 1 by the study protocol. The request explicitly says not to estimate MW, so numerical reserve quantities remain for the numerical program. The '730/30/30 rolling split' is treated as study content and does not conflict with the supported schema.\",\"human_approval_required\":true}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ISNE",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 40
+    },
+    "clarification_question": null,
+    "reason": "The request specifies a supported region (ISNE), a supported horizon (120 minutes), and a supported shortfall weight (40). The reserve cost is fixed at 1 by the study protocol. The request explicitly says not to estimate MW, so numerical reserve quantities remain for the numerical program. The '730/30/30 rolling split' is treated as study content and does not conflict with the supported schema.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 418,
+    "completion_tokens": 135,
+    "total_tokens": 553,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 162
+  },
+  "response_sha256": "b377f783b7728ab336b8787d896cdcc0e34153beb779b489eccad26eeb4a1c21",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.5054610000224784,
+  "finished_at": "2026-10-11T15:37:07.532773+00:00"
+}

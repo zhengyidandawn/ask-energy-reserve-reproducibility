@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"future_information\",\n      \"test_residual_leakage\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected due to the use of future information, which is not allowed, and the inclusion of test period residual, which constitutes a violation of the rule against using information from outside the specified rolling window. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator requested to use tomorrow's forecast, which has not been released yet, and realized target ramp after the end of the rolling window. These are prohibited pieces of future or out-of-window information.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 656,
+    "completion_tokens": 234,
+    "total_tokens": 890,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612940,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-75b6ffc8-8e2c-9752-b2ad-1b38e6db86e7"
+}

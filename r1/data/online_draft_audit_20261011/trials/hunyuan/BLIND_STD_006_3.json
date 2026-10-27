@@ -1,0 +1,114 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_006",
+  "repeat": 3,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_STD_006",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:46:38.214014+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a976caa09b42b054c3f3d85d35b63ab57837838701bc9b27cd266f7118f989c8",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 10}, \"clarification_question\": null, \"reason\": \"User explicitly supplied supported region ERCO, horizon 120 minutes, and shortfall cost 10. Cost_reserve fixed at 1 per protocol. Legitimate negation 'do not estimate MW' preserved as constraint. No unsupported fields, future info, bypass, or raw-data mod. All explicit study fields resolved; accept.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "User explicitly supplied supported region ERCO, horizon 120 minutes, and shortfall cost 10. Cost_reserve fixed at 1 per protocol. Legitimate negation 'do not estimate MW' preserved as constraint. No unsupported fields, future info, bypass, or raw-data mod. All explicit study fields resolved; accept.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 1503,
+      "total_tokens": 1900,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1373
+      }
+    },
+    "response_sha256": "52d2dc956a509342d9e7ab55b02ee34e0c300aebfef840f7b360fa378664a52e",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 16.739950700080954,
+    "finished_at": "2026-10-11T15:46:54.953694+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_STD_006",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:46:38.214014+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a976caa09b42b054c3f3d85d35b63ab57837838701bc9b27cd266f7118f989c8",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 10}, \"clarification_question\": null, \"reason\": \"User explicitly supplied supported region ERCO, horizon 120 minutes, and shortfall cost 10. Cost_reserve fixed at 1 per protocol. Legitimate negation 'do not estimate MW' preserved as constraint. No unsupported fields, future info, bypass, or raw-data mod. All explicit study fields resolved; accept.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "User explicitly supplied supported region ERCO, horizon 120 minutes, and shortfall cost 10. Cost_reserve fixed at 1 per protocol. Legitimate negation 'do not estimate MW' preserved as constraint. No unsupported fields, future info, bypass, or raw-data mod. All explicit study fields resolved; accept.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 1503,
+      "total_tokens": 1900,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1373
+      }
+    },
+    "response_sha256": "52d2dc956a509342d9e7ab55b02ee34e0c300aebfef840f7b360fa378664a52e",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 16.739950700080954,
+    "finished_at": "2026-10-11T15:46:54.953694+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 16.739950700080954,
+  "transport_complete": true
+}

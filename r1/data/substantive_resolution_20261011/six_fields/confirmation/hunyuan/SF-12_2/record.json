@@ -1,0 +1,47 @@
+{
+  "case_id": "SF-12",
+  "service": "hunyuan",
+  "repeat": 2,
+  "phase": "confirmation",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T11:04:19.419071+00:00",
+  "status": "success",
+  "request_sha256": "76eec89f2579235884b1e2c17e41c171ae229f79fccc26fa4b8cd290cb62e245",
+  "returned_model": "hy3",
+  "usage": {
+    "prompt_tokens": 347,
+    "completion_tokens": 1308,
+    "total_tokens": 1655,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1215
+    }
+  },
+  "content": "{\"decision\": \"accept\", \"study\": {\"region\": \"DE\", \"horizon_minutes\": 60, \"feature_mode\": \"full\", \"shortfall_weight\": 20, \"required_coverage\": 0.95, \"reporting\": \"standard\", \"human_authorization_required\": true}, \"missing_fields\": [], \"reason\": \"All required study fields explicitly supplied; human authorization required as requested; plan accepted.\"}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "DE",
+      "horizon_minutes": 60,
+      "feature_mode": "full",
+      "shortfall_weight": 20,
+      "required_coverage": 0.95,
+      "reporting": "standard",
+      "human_authorization_required": true
+    },
+    "missing_fields": [],
+    "reason": "All required study fields explicitly supplied; human authorization required as requested; plan accepted."
+  },
+  "checks": {
+    "decision": "accept",
+    "execution_ready": true,
+    "corrections": 0,
+    "rules": []
+  },
+  "response_sha256": "b3f48cea19dbc2bf9a503764e55552382d52c731c042ab7f3e6a78c6405df6ef",
+  "latency_seconds": 12.34555339999497,
+  "request_finished_at": "2026-10-11T11:04:31.764573+00:00"
+}

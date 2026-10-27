@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"unsupported_region\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request has been rejected due to an unsupported region. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The region 'GD' (Guangdong, China) is not supported. The allowed regions for the study are CISO, ERCO, GD, ISNE, MISO, and SWPP, but note that GD in this context refers to a different area than Guangdong, China.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 173,
+    "total_tokens": 818,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "created": 1791614643,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-4b3ffdd3-3885-9e97-8d30-7c0b64db37a4"
+}

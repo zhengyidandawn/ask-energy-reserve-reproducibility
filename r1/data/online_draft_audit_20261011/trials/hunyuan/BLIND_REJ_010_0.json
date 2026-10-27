@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_REJ_010",
+  "repeat": 0,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_REJ_010",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:45:12.526117+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "1c46c0858a36f94d118d4ac5f4375388905ea4d5ca5f005d6a7244bac382c851",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"SWPP\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Request specifies weather forecasts issued after decision timestamp, which constitutes future information and uses non-observed weather, both prohibited. Allowed data: observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather only. Region SWPP explicitly supplied; horizon_minutes and cost_shortfall unresolved (null); cost_reserve fixed at 1 by protocol.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "SWPP",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Request specifies weather forecasts issued after decision timestamp, which constitutes future information and uses non-observed weather, both prohibited. Allowed data: observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather only. Region SWPP explicitly supplied; horizon_minutes and cost_shortfall unresolved (null); cost_reserve fixed at 1 by protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 371,
+      "completion_tokens": 1260,
+      "total_tokens": 1631,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1120
+      }
+    },
+    "response_sha256": "8df2ff3864870a8131e3bc34c0de542bfbda77cc1c7b8bfb15c9a26fdf62d3f0",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 11.105504199978895,
+    "finished_at": "2026-10-11T15:45:23.631685+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_REJ_010",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:45:12.526117+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "1c46c0858a36f94d118d4ac5f4375388905ea4d5ca5f005d6a7244bac382c851",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"SWPP\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Request specifies weather forecasts issued after decision timestamp, which constitutes future information and uses non-observed weather, both prohibited. Allowed data: observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather only. Region SWPP explicitly supplied; horizon_minutes and cost_shortfall unresolved (null); cost_reserve fixed at 1 by protocol.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "SWPP",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Request specifies weather forecasts issued after decision timestamp, which constitutes future information and uses non-observed weather, both prohibited. Allowed data: observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather only. Region SWPP explicitly supplied; horizon_minutes and cost_shortfall unresolved (null); cost_reserve fixed at 1 by protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 371,
+      "completion_tokens": 1260,
+      "total_tokens": 1631,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1120
+      }
+    },
+    "response_sha256": "8df2ff3864870a8131e3bc34c0de542bfbda77cc1c7b8bfb15c9a26fdf62d3f0",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 11.105504199978895,
+    "finished_at": "2026-10-11T15:45:23.631685+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 11.105504199978895,
+  "transport_complete": true
+}

@@ -1,0 +1,108 @@
+{
+  "task_id": "qwen_json_object_EXT_OPR_011_r1",
+  "case_id": "EXT_OPR_011",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 1,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "f4dcc70304a3f34a8cce212e58529385a277ce44163923656141f39a393706f1",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:12:26.046582+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 218,
+    "total_tokens": 863,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-b6c0969f-29ff-9f1b-a0e3-3d3dc7e736a6",
+  "provider_created": 1791612752,
+  "system_fingerprint": null,
+  "response_sha256": "684a12c11c1ef0a3bce7e6e58e2f680fa13ba0654b0e9a7571b8901ea61ee7d7",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_011",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "请求中的区域（广东）不被支持。 数值输出将由验证过的计算工作流产生。由于请求的区域不在允许范围内，因此无法接受该任务。 {\"human_approval_required\": true, \"triggered_rules\": [\"unsupported_region\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "unsupported_region"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "数值输出将由验证过的计算工作流产生。由于请求的区域不在允许范围内，因此无法接受该任务。",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "请求中的区域（广东）不被支持。",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 5.660781900049187,
+  "request_finished_at": "2026-10-10T06:12:31.708032+00:00"
+}

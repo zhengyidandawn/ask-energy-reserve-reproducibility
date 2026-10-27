@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"observed_weather\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"The study plan has been put on hold for clarification. Once the necessary details are provided, the numerical outputs will be produced by the verified workflow.\", \"forbidden_variables\": [], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The region ID is ambiguous (ISO-NE / ISNEE), and there is a lack of information on cost_reserve, as well as the task_type which should be upward_reserve_sizing. The study schema cannot be finalized without these specifics. Also, admissible variables and forbidden variables need to be complete according to the allowed list.\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_ad8fef3b6e8e469ca0427a",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1529,
+    "completion_tokens": 181,
+    "total_tokens": 1710,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616481,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-fbb155ff-8c7a-9fe7-94cb-1a3018779650"
+}

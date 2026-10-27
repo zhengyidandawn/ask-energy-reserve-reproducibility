@@ -1,0 +1,106 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 1,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:18.412606+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "b012f26242c9487a6269f8e16b35a7be34e9470a6bbcafa9961434255b783339",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request explicitly asks for JSON schema only without computed reserve MW or coverage; valid schema fields retained.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "partial_accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Request explicitly asks for JSON schema only without computed reserve MW or coverage; valid schema fields retained.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 374,
+      "completion_tokens": 109,
+      "total_tokens": 483
+    },
+    "response_sha256": "17aad9a6fa904cd133f110ee6934c23c08434c501f0f85e6e9634d5c5f3e8734",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "partial_accept",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.117670000065118,
+    "finished_at": "2026-10-11T15:37:22.529875+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_MIX_002",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:18.412606+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "b012f26242c9487a6269f8e16b35a7be34e9470a6bbcafa9961434255b783339",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request explicitly asks for JSON schema only without computed reserve MW or coverage; valid schema fields retained.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "partial_accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Request explicitly asks for JSON schema only without computed reserve MW or coverage; valid schema fields retained.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 374,
+      "completion_tokens": 109,
+      "total_tokens": 483
+    },
+    "response_sha256": "17aad9a6fa904cd133f110ee6934c23c08434c501f0f85e6e9634d5c5f3e8734",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "partial_accept",
+        "execution_ready": false,
+        "blocking_rules": [
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.117670000065118,
+    "finished_at": "2026-10-11T15:37:22.529875+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 4.117670000065118,
+  "transport_complete": true
+}

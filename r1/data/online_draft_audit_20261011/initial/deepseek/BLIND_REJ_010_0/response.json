@@ -1,0 +1,28 @@
+{
+  "id": "26dd7914-79b5-45ae-b375-3cebeb215390",
+  "object": "chat.completion",
+  "created": 1791733022,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"SWPP\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request uses future information: weather forecasts issued after the decision timestamp are not allowed. Only observed weather may be used.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 102,
+    "total_tokens": 494,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 264
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "d2e248e2-7295-44e7-b7de-422ac9169132",
+  "object": "chat.completion",
+  "created": 1791733014,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"reject\",\"fields\":{\"region_id\":\"CISO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The request asks to reuse test residuals to tune the answer before reporting it, which is raw-data modification and audit bypass. The earlier accepted CAISO H=120 study fields are preserved for analyst review, but the new instruction is rejected.\",\"human_approval_required\":true}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "completion_tokens": 101,
+    "total_tokens": 501,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 144
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

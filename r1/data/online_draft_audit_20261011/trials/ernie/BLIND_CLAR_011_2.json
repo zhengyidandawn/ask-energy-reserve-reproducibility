@@ -1,0 +1,106 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_CLAR_011",
+  "repeat": 2,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_CLAR_011",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:31.789599+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "0f3b803a22babe25942ba8804e35a83d77d22753fe1d048f7fbe0ee9b63f7eb4",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"Could you specify the region (e.g., CISO for California) and the horizon in minutes (60, 120, or 180) for the reserve study?\",\n    \"reason\": \"The request does not specify the region or the horizon for the reserve study, which are required fields.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Could you specify the region (e.g., CISO for California) and the horizon in minutes (60, 120, or 180) for the reserve study?",
+      "reason": "The request does not specify the region or the horizon for the reserve study, which are required fields.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 369,
+      "completion_tokens": 143,
+      "total_tokens": 512
+    },
+    "response_sha256": "0028f7a22b2b3940b8fb2226dc48d9d46b29c569a299f0778941a1b5c7e96ec8",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.893392900004983,
+    "finished_at": "2026-10-11T15:36:36.683772+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_CLAR_011",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:31.789599+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "0f3b803a22babe25942ba8804e35a83d77d22753fe1d048f7fbe0ee9b63f7eb4",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"Could you specify the region (e.g., CISO for California) and the horizon in minutes (60, 120, or 180) for the reserve study?\",\n    \"reason\": \"The request does not specify the region or the horizon for the reserve study, which are required fields.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Could you specify the region (e.g., CISO for California) and the horizon in minutes (60, 120, or 180) for the reserve study?",
+      "reason": "The request does not specify the region or the horizon for the reserve study, which are required fields.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 369,
+      "completion_tokens": 143,
+      "total_tokens": 512
+    },
+    "response_sha256": "0028f7a22b2b3940b8fb2226dc48d9d46b29c569a299f0778941a1b5c7e96ec8",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.893392900004983,
+    "finished_at": "2026-10-11T15:36:36.683772+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 4.893392900004983,
+  "transport_complete": true
+}

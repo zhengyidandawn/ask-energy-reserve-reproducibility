@@ -77,6 +77,16 @@ python .\scripts\run_checker.py --service deepseek --outputs C:\path\to\model_ou
 The checker never calls an API and writes case-level results beside the input
 file.
 
+## R1 archived results
+
+The `r1/` directory contains the revision code, archived service responses,
+public-data caches, and result tables. It does not contain the manuscript,
+response letter, or compiled article PDFs. API credentials are not stored;
+set the environment variables named in `r1/src/ask/benchmark_config.py`.
+The Open Power System Data 15-minute load file is too large for GitHub.
+Download `time_series_15min_singleindex.csv` from OPSD and place it in
+`r1/data/public_validation_r1/`. See `r1/PUBLIC_DATA_NOTE.txt`.
+
 ## Frozen claim artifacts
 
 - `results/llm/blind_summary.csv`: four LLM services, 200 blind requests.

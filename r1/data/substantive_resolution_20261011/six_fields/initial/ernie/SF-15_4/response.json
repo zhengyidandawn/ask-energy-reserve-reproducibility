@@ -1,0 +1,22 @@
+{
+  "id": "as-qtgyp3a3qh",
+  "object": "chat.completion",
+  "created": 1791716174,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"horizon_minutes\"\n    ],\n    \"reason\": \"The horizon_minutes field is missing or unsupported. Please specify one of the following values: 60, 120, or 180.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 301,
+    "completion_tokens": 76,
+    "total_tokens": 377
+  }
+}

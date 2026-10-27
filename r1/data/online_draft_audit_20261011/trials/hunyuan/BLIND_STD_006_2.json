@@ -1,0 +1,114 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_006",
+  "repeat": 2,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_STD_006",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:46:28.249341+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a976caa09b42b054c3f3d85d35b63ab57837838701bc9b27cd266f7118f989c8",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 10}, \"clarification_question\": null, \"reason\": \"Valid schema: region ERCO supported, horizon 120 supported, shortfall cost 10 supported, cost_reserve fixed at 1 by protocol. User explicitly supplied region, horizon, shortfall cost; no unresolved or conflicting explicit study fields. Legitimate negation 'do not estimate MW' noted as constraint for execution.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "Valid schema: region ERCO supported, horizon 120 supported, shortfall cost 10 supported, cost_reserve fixed at 1 by protocol. User explicitly supplied region, horizon, shortfall cost; no unresolved or conflicting explicit study fields. Legitimate negation 'do not estimate MW' noted as constraint for execution.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 1525,
+      "total_tokens": 1922,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1395
+      }
+    },
+    "response_sha256": "6e39211d3c57bc40d6ad1b773b55bc66650962ab4f08f8341169c819eeafe796",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 15.654669599956833,
+    "finished_at": "2026-10-11T15:46:43.904150+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_STD_006",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:46:28.249341+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a976caa09b42b054c3f3d85d35b63ab57837838701bc9b27cd266f7118f989c8",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 10}, \"clarification_question\": null, \"reason\": \"Valid schema: region ERCO supported, horizon 120 supported, shortfall cost 10 supported, cost_reserve fixed at 1 by protocol. User explicitly supplied region, horizon, shortfall cost; no unresolved or conflicting explicit study fields. Legitimate negation 'do not estimate MW' noted as constraint for execution.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "Valid schema: region ERCO supported, horizon 120 supported, shortfall cost 10 supported, cost_reserve fixed at 1 by protocol. User explicitly supplied region, horizon, shortfall cost; no unresolved or conflicting explicit study fields. Legitimate negation 'do not estimate MW' noted as constraint for execution.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 1525,
+      "total_tokens": 1922,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1395
+      }
+    },
+    "response_sha256": "6e39211d3c57bc40d6ad1b773b55bc66650962ab4f08f8341169c819eeafe796",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 15.654669599956833,
+    "finished_at": "2026-10-11T15:46:43.904150+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 15.654669599956833,
+  "transport_complete": true
+}

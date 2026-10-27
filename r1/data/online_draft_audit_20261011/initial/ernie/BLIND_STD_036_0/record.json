@@ -1,0 +1,49 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_STD_036",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:38:32.428393+00:00",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "103891fc614322ee249e328e3e0e44748bae053ff5c233f4a255101d53906ce0",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 40\n    },\n    \"clarification_question\": \"Region identifier 'ERCO' is not supported. Did you mean 'ERCOT'?\",\n    \"reason\": \"The region identifier provided does not match any of the supported regions. Supported regions are GD, ERCOT, CISO, ISNE, MISO, and SWPP.\",\n    \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 40
+    },
+    "clarification_question": "Region identifier 'ERCO' is not supported. Did you mean 'ERCOT'?",
+    "reason": "The region identifier provided does not match any of the supported regions. Supported regions are GD, ERCOT, CISO, ISNE, MISO, and SWPP.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 141,
+    "total_tokens": 527
+  },
+  "response_sha256": "affe6f821f8eb16b7d911584a17358c6249b017db5cef9c43fca9cb77e55ba98",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 4.93497619999107,
+  "finished_at": "2026-10-11T15:38:37.363330+00:00"
+}

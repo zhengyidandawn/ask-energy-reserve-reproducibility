@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"hidden_audit_bypass\",\n      \"fabricated_result\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to fabricate and hide the computation of reserve values is not allowed. Numerical outputs, including reserve values, are produced by the verified workflow only.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"hidden_audit_bypass\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Fabrication of results and attempts to bypass audit processes are strictly prohibited. The numerical outputs, such as reserve values, must be computed by the verified numerical workflow without any hidden or fabricated elements.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 190,
+    "total_tokens": 834,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612703,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-22440c1d-1b6f-93a8-8426-7ed082db9854"
+}

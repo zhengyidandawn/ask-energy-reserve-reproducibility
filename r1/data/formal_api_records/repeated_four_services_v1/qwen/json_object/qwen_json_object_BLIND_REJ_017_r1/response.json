@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"future_information\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected because it included future information, specifically weather forecasts issued after the decision timestamp. This violates the study's integrity and is not allowed.\",\n  \"forbidden_variables\": [\"future_weather\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The use of weather forecasts that were issued after the decision timestamp is prohibited as it constitutes the use of future information, which is not permissible in the auditable energy reserve-sizing study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 635,
+    "completion_tokens": 162,
+    "total_tokens": 797,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612671,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-1e3c944e-b1eb-963c-be07-cd1a3ca1294e"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-iqke25w6gs",
+  "object": "chat.completion",
+  "created": 1791733122,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"ISNE\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 40\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request specifies a supported region (ISNE), valid horizon (120 minutes), and valid shortfall cost (40). The cost_reserve is fixed at 1 per study protocol. No numerical estimation or raw data modification is requested.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "completion_tokens": 139,
+    "total_tokens": 541,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

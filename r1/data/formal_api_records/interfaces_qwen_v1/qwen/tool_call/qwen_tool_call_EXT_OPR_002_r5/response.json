@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [], \"human_approval_required\": true}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The numerical outputs for the accepted study plan will be produced by the verified workflow.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The operator's request has been fully understood and is in compliance with the rules. The plan is accepted for a two-hour upward reserve sizing study for the ERCO region, with specified cost parameters and no future information or unissued forecasts are used.\", \"study_schema\": {\"cost_reserve\": 1, \"cost_shortfall\": 20, \"horizon_minutes\": 120, \"region_id\": \"ERCO\", \"requires_human_approval\": true, \"rolling_window\": {\"cal_days\": 30, \"rolling_step_days\": 30, \"test_days\": 30, \"train_days\": 730}, \"task_type\": \"upward_reserve_sizing\"}, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_382a915337a14e8a97049e",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1556,
+    "completion_tokens": 325,
+    "total_tokens": 1881,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616466,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-851834c0-4291-9e85-8953-da49bcfadee4"
+}

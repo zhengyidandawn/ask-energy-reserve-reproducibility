@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_json_schema_EXT_OPR_018_r2",
+  "case_id": "EXT_OPR_018",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_schema",
+  "repeat": 2,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "87aacf895975ba083aa170381161432a6ff08fdca418b4758d5ed73e92e59e07",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:11:44.992891+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 651,
+    "completion_tokens": 2204,
+    "total_tokens": 2855,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2028
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "d7f9a5ea-8c89-4e7f-9fda-902d0eb91c95",
+  "provider_created": 1791619906,
+  "system_fingerprint": null,
+  "response_sha256": "ab6c72cda1d561862c29d87e1f051d59687737960f5569066ffdb90ad387a76f",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_018",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": false,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Unsupported region 'CAIOS' provided; allowed regions are ['CISO','ERCO','GD','ISNE','MISO','SWPP']. Request rejected due to unsupported region 'CAIOS'. Numerical outputs are produced by the verified workflow only when a valid study is accepted; here no numerical outputs are computed. {\"human_approval_required\": false, \"triggered_rules\": [\"unsupported_region: 'CAIOS' not in allowed list ['CISO','ERCO','GD','ISNE','MISO','SWPP']\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "unsupported_region: 'CAIOS' not in allowed list ['CISO','ERCO','GD','ISNE','MISO','SWPP']"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Request rejected due to unsupported region 'CAIOS'. Numerical outputs are produced by the verified workflow only when a valid study is accepted; here no numerical outputs are computed.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Unsupported region 'CAIOS' provided; allowed regions are ['CISO','ERCO','GD','ISNE','MISO','SWPP'].",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 17.09401290002279,
+  "request_finished_at": "2026-10-10T08:12:02.088229+00:00"
+}

@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_json_object_BLIND_MT_001_r4",
+  "case_id": "BLIND_MT_001",
+  "packet": "blind_original_200",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "9b3d3c2078e26aeb807845538b2713a8700cd4947c675cd731d983ae02901b1e",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:48:52.457686+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 650,
+    "completion_tokens": 1837,
+    "total_tokens": 2487,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1677
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "0dd867b1-3981-4e2a-aeb3-0524dc99d771",
+  "provider_created": 1791618533,
+  "system_fingerprint": null,
+  "response_sha256": "7244c9da95337a5c4d4f892ef793b0ed68eb788f10a9464202e65d0b66d35f4f",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "BLIND_MT_001",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Request includes using tomorrow's realized load, which constitutes future information (forbidden variable future_load) and is rejected per study rules. Numerical outputs are produced by the verified workflow when relevant; this request is rejected because it seeks to use tomorrow's realized load, which is future information and not permitted. {\"human_approval_required\": false, \"triggered_rules\": [\"reject_future_information: use of tomorrow's realized load (future_load) is forbidden and violates reject future information policy\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "reject_future_information: use of tomorrow's realized load (future_load) is forbidden and violates reject future information policy"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant; this request is rejected because it seeks to use tomorrow's realized load, which is future information and not permitted.",
+    "forbidden_variables": [],
+    "numerical_output_policy": null,
+    "reason": "Request includes using tomorrow's realized load, which constitutes future information (forbidden variable future_load) and is rejected per study rules.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 17.248207900091074,
+  "request_finished_at": "2026-10-10T07:49:09.705416+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The numerical outputs, such as reserve values, mean costs, coverage values, confidence intervals, and bootstrap claims, are produced by the verified numerical workflow only. The current request is missing or has ambiguous information regarding the horizon, which is necessary to proceed.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The horizon (in minutes) is a required parameter that was not provided. It must be one of [60, 120, 180] corresponding to one-hour, two-hour, and three-hour respectively. Please specify the desired horizon.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 198,
+    "total_tokens": 842,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614667,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-290a1abf-8178-9692-8bae-3f958ad6b8c4"
+}

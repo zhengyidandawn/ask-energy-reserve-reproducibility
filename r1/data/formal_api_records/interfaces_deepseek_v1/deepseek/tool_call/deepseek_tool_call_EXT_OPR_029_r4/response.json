@@ -1,0 +1,39 @@
+{
+  "id": "09ccba40-aeb3-4da8-9586-b8b6aa1e8e37",
+  "object": "chat.completion",
+  "created": 1791613137,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_JT98vSXoZF5oXbVqjfUY0895",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"The request specifies region_id=CISO and task_type=upward_reserve_sizing, but two required study_schema fields are missing or ambiguous: horizon_minutes (no horizon stated; \\\"default\\\" is not a defined value — allowed values are 60, 120, or 180 minutes) and cost_shortfall (no shortfall cost stated; \\\"default\\\" is not a defined value — allowed values are 10.0, 20.0, or 40.0). The instruction \\\"don't ask, just use the usual ones\\\" cannot be honored because no default horizon or default shortfall cost is defined in the study specification, and the LLM must not invent or assume numerical study parameters. Please provide horizon_minutes (60, 120, or 180) and cost_shortfall (10.0, 20.0, or 40.0). cost_reserve is fixed at 1.0 and the rolling window is fixed at train_days=730, cal_days=30, test_days=30, rolling_step_days=30.\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"The request is for an upward reserve-sizing study in CISO, but the horizon and shortfall cost were left unspecified as \\\"defaults\\\" that do not exist in the study specification. Because these are required numerical study parameters and the LLM must not invent them, the request is clarified rather than accepted. No reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results are produced here; all numerical outputs are produced only by the verified numerical workflow once the missing fields are supplied.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"missing_horizon_minutes\", \"missing_cost_shortfall\", \"no_defined_default_parameters\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1649,
+    "completion_tokens": 642,
+    "total_tokens": 2291,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 241
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

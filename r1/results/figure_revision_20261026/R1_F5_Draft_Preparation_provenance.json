@@ -1,0 +1,55 @@
+{
+  "figure": "R1_F5_Draft_Preparation",
+  "artifacts": {
+    "pdf": {
+      "path": "results/figure_revision_20261026/R1_F5_Draft_Preparation.pdf",
+      "sha256": "54d4a8902ca4989b65ddb8c580510e55193ba06dd0c285b59d94f336c382e453"
+    },
+    "svg": {
+      "path": "results/figure_revision_20261026/R1_F5_Draft_Preparation.svg",
+      "sha256": "710f4bfae386646f0f34b8ff7c868e92de080fe0dfd8c85e397580166f29115d"
+    },
+    "png": {
+      "path": "results/figure_revision_20261026/R1_F5_Draft_Preparation.png",
+      "sha256": "c4dcd911a5fab141d7c7dba9cba26942b4d625c15966948f9a125bd25805fdee"
+    }
+  },
+  "data_csv": "results/figure_revision_20261026/R1_F5_Draft_Preparation_data.csv",
+  "data_sha256": "9a9b54fc48cd5f3deaa15cbb3facc32b2a6f8655bfb422e410819ab3941f812a",
+  "source_files": {
+    "draft_stages": {
+      "source": "results/online_draft_audit_20261011/stage_summary.csv",
+      "sha256": "9598c562a2930a0cab51c26b6287b0169e403d8b533cf7bdc504268ae80e003f",
+      "archived_csv": "source_csv/draft_stages.csv",
+      "package_source_path": "results/online_draft_audit_20261011/stage_summary.csv"
+    },
+    "draft_references": {
+      "source": "results/online_draft_audit_20261011/comparator_summary.csv",
+      "sha256": "56fce74bc1f79b1ae7de15560482903d1ff960a3657c19de91dab729527659d4",
+      "archived_csv": "source_csv/draft_references.csv",
+      "package_source_path": "results/online_draft_audit_20261011/comparator_summary.csv"
+    },
+    "expert_times": {
+      "source": "results/paired_evidence/expert_matched_summary.csv",
+      "sha256": "7104105f0c72076a4905e2cc1682734334e26059996be74582de62f286d89f13",
+      "archived_csv": "source_csv/expert_times.csv",
+      "package_source_path": "results/paired_evidence/expert_matched_summary.csv"
+    },
+    "expert_plans": {
+      "source": "data/human_r1/expert_plans_normalized.csv",
+      "sha256": "f213677237bc39003fddc1f31c1f765e7395b77cb6ea066800e1086256162bc8",
+      "archived_csv": "source_csv/expert_plans.csv",
+      "package_source_path": "data/human_r1/expert_plans_normalized.csv"
+    },
+    "evaluation_labels": {
+      "source": "data/human_r1/evaluation_labels.csv",
+      "sha256": "76c307bb6698d173c430dae855770846e5ffb3e5fc1e40756ff2ed18d307768a",
+      "archived_csv": "source_csv/evaluation_labels.csv",
+      "package_source_path": "data/human_r1/evaluation_labels.csv"
+    }
+  },
+  "figure_width_inches": 9.0,
+  "minimum_text_points": 12.0,
+  "intended_print_width_inches": 6.3,
+  "intervals": "Existing CSV endpoints only; no resampling."
+}

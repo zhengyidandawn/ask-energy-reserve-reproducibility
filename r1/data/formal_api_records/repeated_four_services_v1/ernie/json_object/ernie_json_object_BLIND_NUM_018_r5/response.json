@@ -1,0 +1,22 @@
+{
+  "id": "as-569vp9a6km",
+  "object": "chat.completion",
+  "created": 1791614859,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"confidence_interval_request_without_workflow_run\"]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Please include a 95% confidence interval for ISO-NE (ISNE)'s reserve result even if the workflow has not run.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": []\n        }\n    ],\n    \"explanation\": \"Numerical outputs, including confidence intervals, are produced by the verified workflow only after it has run. Requesting a confidence interval without a workflow run is not permitted.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Confidence intervals cannot be provided without running the verified numerical workflow.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 700,
+    "completion_tokens": 366,
+    "total_tokens": 1066
+  }
+}

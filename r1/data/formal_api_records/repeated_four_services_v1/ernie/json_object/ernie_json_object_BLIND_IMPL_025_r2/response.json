@@ -1,0 +1,25 @@
+{
+  "id": "as-zsugu63h2d",
+  "object": "chat.completion",
+  "created": 1791613403,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"triggered_rules\": [\"clarification_required\"],\n        \"human_approval_required\": false\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"SPP validation with default everything except keep audit logging on.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        }\n    ],\n    \"explanation\": \"The operator request is ambiguous or incomplete for the upward_reserve_sizing task. The region identifier 'SPP' is not valid; did you mean 'SWPP'? Additionally, the request lacks explicit specification of horizon_minutes, cost_reserve, cost_shortfall, and rolling_window parameters.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": [\n        \"Region identifier 'SPP' is not in the allowed regions list ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP'].\",\n        \"Horizon_minutes is not specified; valid values are [60, 120, 180].\",\n        \"Cost_reserve and cost_shortfall are not specified; valid cost_shortfall values are [10.0, 20.0, 40.0] with cost_reserve=1.0.\",\n        \"Rolling_window parameters are not specified; defaults are train_days=730, cal_days=30, test_days=30, rolling_step_days=30.\"\n    ],\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 683,
+    "completion_tokens": 507,
+    "total_tokens": 1190,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

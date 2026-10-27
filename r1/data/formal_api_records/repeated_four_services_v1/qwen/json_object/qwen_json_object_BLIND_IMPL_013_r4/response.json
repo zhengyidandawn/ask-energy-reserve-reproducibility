@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is unclear about the specific horizon and other necessary parameters. Please provide the exact horizon in minutes (60, 120, or 180) and any other required details for the study.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"\",\n  \"reason\": \"The specified horizon is ambiguous and not provided as a concrete value in minutes. Additionally, the cost_reserve and cost_shortfall values are missing.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 634,
+    "completion_tokens": 161,
+    "total_tokens": 795,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613248,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-cfb0fd63-76f0-9d0a-ae9a-8c88a62525c2"
+}

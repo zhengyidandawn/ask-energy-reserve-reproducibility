@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"数值输出将由验证过的工作流程生成。但是在进一步处理之前，我们需要具体明确一些参数值。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"请求中提到的'usual'时域和'usual'惩罚值不明确。需要具体的时域（60, 120 或 180 分钟）以及具体的惩罚成本（10.0, 20.0 或 40.0）。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_163cb9dbc53c4da8933976",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1517,
+    "completion_tokens": 230,
+    "total_tokens": 1747,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616395,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-169e2953-da7b-9f88-ab53-fb83eba19a7d"
+}

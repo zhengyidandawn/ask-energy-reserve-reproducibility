@@ -1,0 +1,25 @@
+{
+  "id": "as-dxc5ijdb3w",
+  "object": "chat.completion",
+  "created": 1791614407,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"unsupported_horizon\"]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Create a 45-minute upward reserve schema for CAISO (CISO).\"\n        },\n        {\n            \"data_dictionary\": {\n                \"region_id\": \"CISO\",\n                \"horizon_minutes\": 45\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": \"No future information or unavailable issue-time forecasts used.\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": \"Not applicable due to rejection.\"\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": [\"unsupported_horizon\"]\n            }\n        }\n    ],\n    \"explanation\": \"The requested horizon of 45 minutes is not supported. Valid horizons are 60, 120, and 180 minutes.\",\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"The horizon of 45 minutes is not in the allowed set of [60, 120, 180] minutes.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 689,
+    "completion_tokens": 480,
+    "total_tokens": 1169,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

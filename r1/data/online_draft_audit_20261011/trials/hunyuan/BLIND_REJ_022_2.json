@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_REJ_022",
+  "repeat": 2,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_REJ_022",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:45:39.684068+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "290eb3cb1172f14b8cec7323133e4644c13ace6093f41149dde92c59a7bf1f30",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": 60, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Request specifies 'tomorrow's realized load', which is future information not permitted by the study protocol (allowed sources: observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather). Draft rejected per reject-for-future-information rule. Explicitly supplied fields preserved: region_id=CISO, horizon_minutes=60 (next-hour), cost_reserve=1 (protocol fixed); cost_shortfall left null as unresolved.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Request specifies 'tomorrow's realized load', which is future information not permitted by the study protocol (allowed sources: observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather). Draft rejected per reject-for-future-information rule. Explicitly supplied fields preserved: region_id=CISO, horizon_minutes=60 (next-hour), cost_reserve=1 (protocol fixed); cost_shortfall left null as unresolved.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 372,
+      "completion_tokens": 1804,
+      "total_tokens": 2176,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1647
+      }
+    },
+    "response_sha256": "5ce180ee0a3e4cd87ca0c67f3b236c160e0d42c5ebc3681732ed947f14b2fdaf",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 14.048928100033663,
+    "finished_at": "2026-10-11T15:45:53.732973+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_REJ_022",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:45:39.684068+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "290eb3cb1172f14b8cec7323133e4644c13ace6093f41149dde92c59a7bf1f30",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": 60, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Request specifies 'tomorrow's realized load', which is future information not permitted by the study protocol (allowed sources: observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather). Draft rejected per reject-for-future-information rule. Explicitly supplied fields preserved: region_id=CISO, horizon_minutes=60 (next-hour), cost_reserve=1 (protocol fixed); cost_shortfall left null as unresolved.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Request specifies 'tomorrow's realized load', which is future information not permitted by the study protocol (allowed sources: observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather). Draft rejected per reject-for-future-information rule. Explicitly supplied fields preserved: region_id=CISO, horizon_minutes=60 (next-hour), cost_reserve=1 (protocol fixed); cost_shortfall left null as unresolved.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 372,
+      "completion_tokens": 1804,
+      "total_tokens": 2176,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1647
+      }
+    },
+    "response_sha256": "5ce180ee0a3e4cd87ca0c67f3b236c160e0d42c5ebc3681732ed947f14b2fdaf",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 14.048928100033663,
+    "finished_at": "2026-10-11T15:45:53.732973+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 14.048928100033663,
+  "transport_complete": true
+}

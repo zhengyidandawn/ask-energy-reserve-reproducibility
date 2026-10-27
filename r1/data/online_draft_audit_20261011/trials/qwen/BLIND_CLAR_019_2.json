@@ -1,0 +1,112 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_CLAR_019",
+  "repeat": 2,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:53.317461+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "895ee6664e0ee10072dea9245f5b23f0c6548eda8ecab9eec85d7be01f5489a3",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the region and the cost of shortfall (10, 20, or 40) for your energy study request?\",\n  \"reason\": \"The provided request does not specify the region or the cost of shortfall, which are necessary to proceed with the study.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Could you please specify the region and the cost of shortfall (10, 20, or 40) for your energy study request?",
+      "reason": "The provided request does not specify the region or the cost of shortfall, which are necessary to proceed with the study.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 123,
+      "total_tokens": 498,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "be4ef39b60adebbda5467c0e8974b17c505ffe9d032b16e53b5d88919e2429cd",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.563002100097947,
+    "finished_at": "2026-10-11T15:36:56.880395+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:53.317461+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "895ee6664e0ee10072dea9245f5b23f0c6548eda8ecab9eec85d7be01f5489a3",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the region and the cost of shortfall (10, 20, or 40) for your energy study request?\",\n  \"reason\": \"The provided request does not specify the region or the cost of shortfall, which are necessary to proceed with the study.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Could you please specify the region and the cost of shortfall (10, 20, or 40) for your energy study request?",
+      "reason": "The provided request does not specify the region or the cost of shortfall, which are necessary to proceed with the study.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 123,
+      "total_tokens": 498,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "be4ef39b60adebbda5467c0e8974b17c505ffe9d032b16e53b5d88919e2429cd",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.563002100097947,
+    "finished_at": "2026-10-11T15:36:56.880395+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 3.563002100097947,
+  "transport_complete": true
+}

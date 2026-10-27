@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"unsupported_region\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is rejected because SPP (Southwest Power Pool) is not an allowed region for this study. The numerical outputs are produced by the verified workflow when all requirements are met.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"SPP is not an admissible region. Allowed regions are CISO, ERCO, GD, ISNE, MISO, SWPP.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 629,
+    "completion_tokens": 159,
+    "total_tokens": 788,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613006,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-db63a2dd-6109-9a4d-bf18-5aa2a1f9a0cd"
+}

@@ -1,0 +1,52 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_REJ_010",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:57.873518+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "ee35e7e5cccc593eeeba0d4de658c02e954f5449e9b1483a905f9c8770a3ccc7",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"SWPP\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request uses future information (weather forecasts issued after the decision timestamp), which is not allowed. The study must only use observed weather.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "SWPP",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The request uses future information (weather forecasts issued after the decision timestamp), which is not allowed. The study must only use observed weather.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 97,
+    "total_tokens": 470,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "0fa8229c10d54aa1c78308072476f967179b59ca5133b94792d88fdda0ff5d5d",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 2.7275616000406444,
+  "finished_at": "2026-10-11T15:38:00.600814+00:00"
+}

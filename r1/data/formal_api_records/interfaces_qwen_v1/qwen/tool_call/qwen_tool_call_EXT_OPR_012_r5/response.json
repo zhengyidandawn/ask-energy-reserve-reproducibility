@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The numerical outputs for the study will be produced by the verified workflow, which includes reserve sizing, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"All the provided parameters are within the allowed constraints. The operator has selected a valid region (ERCO), horizon (180 minutes), and shortfall cost (10.0). No future or prohibited information is requested, and the rolling design is as per the standard configuration.\", \"study_schema\": {\"cost_reserve\": 1, \"cost_shortfall\": 10, \"horizon_minutes\": 180, \"region_id\": \"ERCO\", \"requires_human_approval\": true, \"rolling_window\": {\"cal_days\": 30, \"rolling_step_days\": 30, \"test_days\": 30, \"train_days\": 730}, \"task_type\": \"upward_reserve_sizing\"}, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_7ef721f976c04824afcb35",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1521,
+    "completion_tokens": 352,
+    "total_tokens": 1873,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616478,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-97fa2b8a-562e-942c-ad39-d1d1ae0f5fff"
+}

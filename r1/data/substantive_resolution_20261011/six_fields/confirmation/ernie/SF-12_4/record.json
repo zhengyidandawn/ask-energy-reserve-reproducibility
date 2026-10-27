@@ -1,0 +1,45 @@
+{
+  "case_id": "SF-12",
+  "service": "ernie",
+  "repeat": 4,
+  "phase": "confirmation",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_started_at": "2026-10-11T10:56:35.297913+00:00",
+  "status": "success",
+  "request_sha256": "da13a1641b3d0a3dc2f75528e00f1df88248aad6767f36bf42a0255158004698",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 115,
+    "total_tokens": 489,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"region\",\n        \"horizon_minutes\",\n        \"feature_mode\",\n        \"shortfall_weight\",\n        \"required_coverage\",\n        \"human_authorization_required\"\n    ],\n    \"reason\": \"Please provide all required study fields: region, horizon_minutes, feature_mode, shortfall_weight, required_coverage, and confirm human_authorization_required is true.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "region",
+      "horizon_minutes",
+      "feature_mode",
+      "shortfall_weight",
+      "required_coverage",
+      "human_authorization_required"
+    ],
+    "reason": "Please provide all required study fields: region, horizon_minutes, feature_mode, shortfall_weight, required_coverage, and confirm human_authorization_required is true."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "model_disposition"
+    ]
+  },
+  "response_sha256": "cd58c03b720fa9c6cda6ccedd4e0f27b011c030f88eeb4dae5eb1488c93c7e06",
+  "latency_seconds": 4.115895799943246,
+  "request_finished_at": "2026-10-11T10:56:39.413566+00:00"
+}

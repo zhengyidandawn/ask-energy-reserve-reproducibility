@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_035_r1",
+  "case_id": "EXT_OPR_035",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 1,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "331281fe08644cce8c82f0db6702afa07fcff4503f1477fbc7fdc1394e4f6dc9",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:21:34.925063+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1499,
+    "completion_tokens": 1784,
+    "total_tokens": 3283,
+    "prompt_tokens_details": {
+      "cached_tokens": 1344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1578
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "a8c01eb7-9546-49c2-9bf9-0d738c34006f",
+  "provider_created": 1791620495,
+  "system_fingerprint": null,
+  "response_sha256": "1a2ae8e67c35c4b84296382c0de180e9a517ff54e2c4ce14547645583ebef08b",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_035",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Horizon is ambiguous and partially unsupported. The request specifies a 60-minute study but then proposes 90 minutes 'if 60 does not feel enough.' 90 minutes is not an allowed horizon (allowed: 60, 120, 180). The condition 'if 60 does not feel enough' is subjective and cannot be evaluated by the kernel. Please clarify the intended horizon as one of the supported values (60, 120, or 180 minutes). Numerical outputs are produced by the verified workflow when relevant; this request requires clarification of the horizon before any study schema can be defined. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "Horizon is ambiguous and partially unsupported. The request specifies a 60-minute study but then proposes 90 minutes 'if 60 does not feel enough.' 90 minutes is not an allowed horizon (allowed: 60, 120, 180). The condition 'if 60 does not feel enough' is subjective and cannot be evaluated by the kernel. Please clarify the intended horizon as one of the supported values (60, 120, or 180 minutes).",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant; this request requires clarification of the horizon before any study schema can be defined.",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 11.96559260005597,
+  "request_finished_at": "2026-10-10T08:21:46.890333+00:00"
+}

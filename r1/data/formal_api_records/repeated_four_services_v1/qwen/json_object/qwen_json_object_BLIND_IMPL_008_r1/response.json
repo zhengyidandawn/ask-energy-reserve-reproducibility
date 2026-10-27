@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The numerical outputs are produced by the verified workflow, but the request is missing or has ambiguous fields that need clarification.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The region_id and the specific horizon in minutes (60, 120, 180) are not clearly specified. The term 'whatever the paper normally uses' for the horizon is ambiguous and needs to be clarified with an exact value from the allowed horizons.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 634,
+    "completion_tokens": 175,
+    "total_tokens": 809,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612640,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-eae11f6c-4606-9001-b915-f6e67b8b1234"
+}

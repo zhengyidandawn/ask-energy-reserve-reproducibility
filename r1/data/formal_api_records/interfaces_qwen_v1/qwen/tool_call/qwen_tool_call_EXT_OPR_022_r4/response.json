@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"The horizon is not specified. A valid horizon of 60, 120, or 180 minutes must be provided for the study to proceed.\", \"study_schema\": null, \"admissible_variables\": [], \"forbidden_variables\": [], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"A numerical workflow will compute the reserve sizing and associated outputs once a valid horizon is provided. The operator needs to specify a horizon from one of the allowed options before the plan can be accepted and processed.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}",
+              "name": "submit_plan"
+            },
+            "id": "call_2e1b47267d824eb0beca5f",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1521,
+    "completion_tokens": 157,
+    "total_tokens": 1678,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616438,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-5c245da6-2452-9a80-9ff4-c8225cdeb092"
+}

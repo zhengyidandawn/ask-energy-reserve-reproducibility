@@ -1,0 +1,54 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_CLAR_019",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:40.430815+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "eac6662b75e2cae7ae163dc583a79b2cc09ecc2d2d9c765168a9a64713325c84",
+  "returned_model": "deepseek-flash",
+  "content": "{\"decision\":\"clarify\",\"fields\":{\"region_id\":null,\"horizon_minutes\":null,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":\"Which supported region should the study use: GD, ERCO, CISO, ISNE, MISO, or SWPP? Also, which supported horizon should be used: 60, 120, or 180 minutes?\",\"reason\":\"The request is potentially admissible but leaves the region and exact horizon unresolved. 'One-hour-ish' does not map unambiguously to a supported horizon, and no region is specified. cost_reserve is fixed at 1 by protocol; cost_shortfall is unresolved.\",\"human_approval_required\":true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Which supported region should the study use: GD, ERCO, CISO, ISNE, MISO, or SWPP? Also, which supported horizon should be used: 60, 120, or 180 minutes?",
+    "reason": "The request is potentially admissible but leaves the region and exact horizon unresolved. 'One-hour-ish' does not map unambiguously to a supported horizon, and no region is specified. cost_reserve is fixed at 1 by protocol; cost_shortfall is unresolved.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 152,
+    "total_tokens": 545,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 137
+  },
+  "response_sha256": "091edb6aff3aefa7b36b773964addcf42508be5f3cf9755bc839deefe2b59fd2",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.5125019000843167,
+  "finished_at": "2026-10-11T15:36:41.943470+00:00"
+}

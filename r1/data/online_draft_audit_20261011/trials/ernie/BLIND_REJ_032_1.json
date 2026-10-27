@@ -1,0 +1,111 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_REJ_032",
+  "repeat": 1,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_REJ_032",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:17.288218+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "de33f56fdaa304e31f82b3c8172768d26756f1b9c1449883011f8340494c6ca9",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": null,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Horizon of 45 minutes is not supported. Supported horizons are 60, 120, and 180 minutes.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": null,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Horizon of 45 minutes is not supported. Supported horizons are 60, 120, and 180 minutes.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 113,
+      "total_tokens": 481,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "1e8df321161a093935f8de7cfc163ca202fa4f6b36585e88d076d488fc9392f4",
+    "diagnostics": {
+      "messages": [
+        "The frozen request parser recognizes cost_reserve=1.0; verify its source in the original request."
+      ],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.4723716999869794,
+    "finished_at": "2026-10-11T15:38:20.761031+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_REJ_032",
+    "repeat": 1,
+    "phase": "feedback",
+    "started_at": "2026-10-11T15:38:20.762035+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "6f4d6b52a2ca80d7cb22718610ab1954dbbcbefcf238bb4b264c39dc2f1c9087",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1.0,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Horizon of 45 minutes is not supported. Supported horizons are 60, 120, and 180 minutes. The cost_reserve value of 1.0 is recognized but cannot be applied without a valid horizon.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1.0,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Horizon of 45 minutes is not supported. Supported horizons are 60, 120, and 180 minutes. The cost_reserve value of 1.0 is recognized but cannot be applied without a valid horizon.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 512,
+      "completion_tokens": 137,
+      "total_tokens": 649
+    },
+    "response_sha256": "2e32afbcdafaa1103973b21afe97d0c4cff97f561057e43d90c05d2d5f8362a2",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 5.255869499989785,
+    "finished_at": "2026-10-11T15:38:26.017537+00:00"
+  },
+  "online_calls": 2,
+  "total_service_seconds": 8.728241199976765,
+  "transport_complete": true
+}

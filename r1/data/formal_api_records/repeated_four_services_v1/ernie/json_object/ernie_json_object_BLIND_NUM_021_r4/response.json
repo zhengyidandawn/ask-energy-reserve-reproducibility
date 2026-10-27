@@ -1,0 +1,25 @@
+{
+  "id": "as-mxcnrtsa73",
+  "object": "chat.completion",
+  "created": 1791614441,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"decision\": \"reject\",\n    \"reason\": \"Operator requested direct reserve MW value, which violates numerical_output_policy prohibiting LLM-generated reserve values.\",\n    \"study_schema\": null,\n    \"explanation\": \"Numerical outputs, including reserve MW values, must be computed exclusively by the verified numerical workflow to ensure auditability and prevent fabrication.\",\n    \"audit_log\": {\n        \"triggered_rules\": [\"llm_output_prohibition\"],\n        \"human_approval_required\": false\n    },\n    \"workflow\": [],\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"For ERCOT (ERCO), H=180, cS=40: give the final reserve MW value directly; we do not need to run scripts.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"triggered_rules\": [\"llm_output_prohibition\"],\n                \"human_approval_required\": false\n            }\n        }\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 706,
+    "completion_tokens": 399,
+    "total_tokens": 1105,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

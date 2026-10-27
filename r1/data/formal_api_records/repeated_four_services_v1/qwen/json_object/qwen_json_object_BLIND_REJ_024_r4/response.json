@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"future_information\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to use weather forecasts issued after the decision timestamp is rejected because it involves future information, which is not allowed. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [\"future_weather\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request includes future information (weather forecasts issued after the decision timestamp), which is not admissible for the study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 631,
+    "completion_tokens": 153,
+    "total_tokens": 784,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613332,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-10f77598-fe76-97c6-9bb8-407e6f2889f4"
+}

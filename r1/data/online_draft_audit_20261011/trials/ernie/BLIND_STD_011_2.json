@@ -1,0 +1,102 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_STD_011",
+  "repeat": 2,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_STD_011",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:28.730467+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "f3f8250438fabd867b52531f77309d30b07ae27eb2e3d8c4d0b84beb3c0b255d",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 180,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 10\n    },\n    \"clarification_question\": null,\n    \"reason\": \"All specified fields are valid and supported. Region ERCO is a valid alias for ERCOT, horizon 180 minutes is supported, cost_reserve is fixed at 1 as per protocol, and cost_shortfall 10 is a valid weight.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 180,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "All specified fields are valid and supported. Region ERCO is a valid alias for ERCOT, horizon 180 minutes is supported, cost_reserve is fixed at 1 as per protocol, and cost_shortfall 10 is a valid weight.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 142,
+      "total_tokens": 535
+    },
+    "response_sha256": "8e6bcfdc58e8184e4a779f25ee0706909e496e345a611e8e4f67839ab6480985",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 5.902312600053847,
+    "finished_at": "2026-10-11T15:38:34.633019+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_STD_011",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:28.730467+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "f3f8250438fabd867b52531f77309d30b07ae27eb2e3d8c4d0b84beb3c0b255d",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 180,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 10\n    },\n    \"clarification_question\": null,\n    \"reason\": \"All specified fields are valid and supported. Region ERCO is a valid alias for ERCOT, horizon 180 minutes is supported, cost_reserve is fixed at 1 as per protocol, and cost_shortfall 10 is a valid weight.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 180,
+        "cost_reserve": 1,
+        "cost_shortfall": 10
+      },
+      "clarification_question": null,
+      "reason": "All specified fields are valid and supported. Region ERCO is a valid alias for ERCOT, horizon 180 minutes is supported, cost_reserve is fixed at 1 as per protocol, and cost_shortfall 10 is a valid weight.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 142,
+      "total_tokens": 535
+    },
+    "response_sha256": "8e6bcfdc58e8184e4a779f25ee0706909e496e345a611e8e4f67839ab6480985",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 5.902312600053847,
+    "finished_at": "2026-10-11T15:38:34.633019+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 5.902312600053847,
+  "transport_complete": true
+}

@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_tool_call_EXT_OPR_023_r2",
+  "case_id": "EXT_OPR_023",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "tool_call",
+  "repeat": 2,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "6e92c1b6af61b56605259009b48dc8efe9821403f538687ca3b1fcdbbe8bbc36",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:11:22.495251+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1521,
+    "completion_tokens": 150,
+    "total_tokens": 1671,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-3e9ee6ff-6339-9ff6-8067-79fb65c0cdfe",
+  "provider_created": 1791616288,
+  "system_fingerprint": null,
+  "response_sha256": "692eabf4e98bc2133df6fed1777d48f6938a8e1f22a14c8a19ee12d8a26de74f",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_023",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "成本短缺惩罚值没有给出，需要确定具体的数值以便继续研究。同时，请确认是否接受其他默认设置（例如：滚动窗口配置等）。 在缺失关键参数如成本短缺惩罚值的情况下，不能生成任何数值输出或进一步推进研究计划；所有数值输出都应由经过验证的工作流程产生。 {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "成本短缺惩罚值没有给出，需要确定具体的数值以便继续研究。同时，请确认是否接受其他默认设置（例如：滚动窗口配置等）。",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "在缺失关键参数如成本短缺惩罚值的情况下，不能生成任何数值输出或进一步推进研究计划；所有数值输出都应由经过验证的工作流程产生。",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": true
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 5.1180138000054285,
+  "request_finished_at": "2026-10-10T07:11:27.613241+00:00"
+}

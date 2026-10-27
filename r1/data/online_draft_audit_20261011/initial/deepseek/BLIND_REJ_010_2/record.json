@@ -1,0 +1,54 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_REJ_010",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:00.131764+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "e4252515b8d83ff38d186ab7b95d9c03defff0581ab7f33234ba4d5eea1d2106",
+  "returned_model": "deepseek-flash",
+  "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"SWPP\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request uses weather forecasts issued after the decision timestamp, which is future information and is not allowed. Only observed weather may be used.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "SWPP",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The request uses weather forecasts issued after the decision timestamp, which is future information and is not allowed. Only observed weather may be used.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 105,
+    "total_tokens": 497,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 264
+  },
+  "response_sha256": "a7ec4e9d5eeafef2b4019a8572c5b0f92e8a455632c6ca2140cc7e008097b300",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.3336104999762028,
+  "finished_at": "2026-10-11T15:37:01.466264+00:00"
+}

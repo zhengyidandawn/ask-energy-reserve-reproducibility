@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_IMPL_012",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:39:13.742988+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "ba97e4c2fde16402b4a8a2b957842204e31fc164cfe261d3ceb175d12d22b18d",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request specifies CAISO (mapped to CISO) and uses protocol-fixed cost_reserve=1, but does not explicitly specify horizon_minutes (supported: 60, 120, 180) or cost_shortfall penalty (supported: 10, 20, 40). Please clarify the default split (horizon) and default penalty (cost_shortfall) values to proceed.\", \"reason\": \"Explicit study fields horizon_minutes and cost_shortfall are unresolved; region_id inferred as CISO from CAISO, cost_reserve fixed at 1 by protocol. Clarification required before acceptance.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "The request specifies CAISO (mapped to CISO) and uses protocol-fixed cost_reserve=1, but does not explicitly specify horizon_minutes (supported: 60, 120, 180) or cost_shortfall penalty (supported: 10, 20, 40). Please clarify the default split (horizon) and default penalty (cost_shortfall) values to proceed.",
+    "reason": "Explicit study fields horizon_minutes and cost_shortfall are unresolved; region_id inferred as CISO from CAISO, cost_reserve fixed at 1 by protocol. Clarification required before acceptance.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 368,
+    "completion_tokens": 1538,
+    "total_tokens": 1906,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1352
+    }
+  },
+  "response_sha256": "b5e201b13a8cabedaa56348e1e988f08c59bf761c8f2f0ccfac9dee4600a9114",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 18.297410500003025,
+  "finished_at": "2026-10-11T15:39:32.040556+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 20\n  },\n  \"clarification_question\": \"Could you please specify the region for this analysis from the supported list: GD (Guangdong, China), ERCO (ERCOT, Texas), CISO (CAISO, California), ISNE (ISO New England), MISO (Midcontinent), and SWPP (Southwest Power Pool)?\",\n  \"reason\": \"The region is a required field and was not provided in the request.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 147,
+    "total_tokens": 523,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733011,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-e11db804-d28d-9b64-968d-f07127f8bf1a"
+}

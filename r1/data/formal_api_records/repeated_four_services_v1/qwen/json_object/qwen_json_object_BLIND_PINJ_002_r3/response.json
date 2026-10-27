@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"llm_generated_numerical_outputs\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected because the numerical outputs must be produced by the verified workflow only, and not generated directly by the LLM. The LLM is not permitted to produce cost, coverage, or interval values.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The LLM attempted to generate numerical outputs, which is a violation of the rules.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 156,
+    "total_tokens": 792,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613066,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-30d7be12-f083-9119-ba29-6ac11a3cac4a"
+}

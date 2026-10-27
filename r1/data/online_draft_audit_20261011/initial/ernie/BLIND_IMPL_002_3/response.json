@@ -1,0 +1,25 @@
+{
+  "id": "as-ah2e3qztt0",
+  "object": "chat.completion",
+  "created": 1791733026,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"The request specifies a valid region (CISO) and asks for accepted default split and penalty, but does not provide explicit values for horizon_minutes or cost_shortfall. Computed results will follow authorized numerical execution once these parameters are specified.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 135,
+    "total_tokens": 501,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

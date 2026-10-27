@@ -1,0 +1,112 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_STD_036",
+  "repeat": 1,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_STD_036",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:04.985045+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "642060b7fa02c97a34162a1fbbb57974918b3ad1f469b333a6f804ae66bea349",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ERCO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":40},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported and resolved: region ERCO is supported, horizon 120 minutes is supported, shortfall weight 40 is supported, and reserve cost is fixed at 1 by protocol. The request explicitly defers numerical costs, coverage, and intervals to the numerical workflow, so no invented results are present.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "All explicit study fields are supported and resolved: region ERCO is supported, horizon 120 minutes is supported, shortfall weight 40 is supported, and reserve cost is fixed at 1 by protocol. The request explicitly defers numerical costs, coverage, and intervals to the numerical workflow, so no invented results are present.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 408,
+      "completion_tokens": 118,
+      "total_tokens": 526,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 280
+    },
+    "response_sha256": "ccd7a69c364bd58b644b0041b68bf9a8c2d63cfa1d2cc047f8c107e8999d4064",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.3142914000200108,
+    "finished_at": "2026-10-11T15:37:06.299044+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_STD_036",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:04.985045+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "642060b7fa02c97a34162a1fbbb57974918b3ad1f469b333a6f804ae66bea349",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ERCO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":40},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported and resolved: region ERCO is supported, horizon 120 minutes is supported, shortfall weight 40 is supported, and reserve cost is fixed at 1 by protocol. The request explicitly defers numerical costs, coverage, and intervals to the numerical workflow, so no invented results are present.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "All explicit study fields are supported and resolved: region ERCO is supported, horizon 120 minutes is supported, shortfall weight 40 is supported, and reserve cost is fixed at 1 by protocol. The request explicitly defers numerical costs, coverage, and intervals to the numerical workflow, so no invented results are present.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 408,
+      "completion_tokens": 118,
+      "total_tokens": 526,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 280
+    },
+    "response_sha256": "ccd7a69c364bd58b644b0041b68bf9a8c2d63cfa1d2cc047f8c107e8999d4064",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.3142914000200108,
+    "finished_at": "2026-10-11T15:37:06.299044+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.3142914000200108,
+  "transport_complete": true
+}

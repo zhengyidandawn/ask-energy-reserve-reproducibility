@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"unsupported_cost_shortfall\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The requested shortfall cost (17.0) is not within the allowed values [10.0, 20.0, 40.0]. Numerical outputs are produced by the verified workflow when all parameters comply with the study requirements.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The specified cost shortfall (17.0) is not an allowed value. Allowed values for cost shortfall are 10.0, 20.0, and 40.0.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 632,
+    "completion_tokens": 188,
+    "total_tokens": 820,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612860,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-8b38f31a-5acd-9ff3-8827-b3a1b818c77b"
+}

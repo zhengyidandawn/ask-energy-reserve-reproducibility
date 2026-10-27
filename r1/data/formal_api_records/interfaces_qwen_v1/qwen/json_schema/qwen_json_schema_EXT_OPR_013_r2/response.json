@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"accept\",\n  \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"],\n  \"explanation\": \"The study has been set up according to the request, and numerical outputs will be produced by the verified workflow.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"\",\n  \"study_schema\": {\n    \"task_type\": \"upward_reserve_sizing\",\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1.0,\n    \"cost_shortfall\": 40.0,\n    \"rolling_window\": {\n      \"train_days\": 730,\n      \"cal_days\": 30,\n      \"test_days\": 30,\n      \"rolling_step_days\": 30\n    },\n    \"requires_human_approval\": true\n  },\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 646,
+    "completion_tokens": 313,
+    "total_tokens": 959,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614765,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-7229013e-7900-9ec5-bddf-cd1b9fc8322c"
+}

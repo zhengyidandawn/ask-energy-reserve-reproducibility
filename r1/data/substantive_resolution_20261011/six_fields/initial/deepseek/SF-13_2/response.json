@@ -1,0 +1,28 @@
+{
+  "id": "4943e0bf-0069-4895-be67-24e61c82ac0a",
+  "object": "chat.completion",
+  "created": 1791716103,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"reject\",\n  \"study\": null,\n  \"missing_fields\": [],\n  \"reason\": \"The request asks to add future realized load, which is future realized information and is not allowed. The request is rejected.\"\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 327,
+    "completion_tokens": 51,
+    "total_tokens": 378,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 199
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

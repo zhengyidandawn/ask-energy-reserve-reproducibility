@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_011",
+  "repeat": 3,
+  "phase": "feedback",
+  "started_at": "2026-10-11T15:37:08.896082+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "3bae7eb61a493f48690261e61f6aac984727959ebafc741f5e5b55814f9b500b",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"western public region\", \"horizon_minutes\": null, \"cost_reserve\": 1.0, \"cost_shortfall\": null}, \"clarification_question\": \"The region described as 'western public region' is not an explicit supported region code (GD, ERCO, CISO, ISNE, MISO, SWPP). Please confirm the exact region_id (e.g., CISO for CAISO, California) and provide horizon_minutes (60, 120, or 180) for the study.\", \"reason\": \"User requested usual setup for western public region and study ready for tomorrow. Explicit region phrase provided but not mapped to supported code; horizon_minutes and cost_shortfall not supplied. cost_reserve set to 1.0 per study protocol fixed value. Clarification required to resolve region and missing parameters.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "western public region",
+      "horizon_minutes": null,
+      "cost_reserve": 1.0,
+      "cost_shortfall": null
+    },
+    "clarification_question": "The region described as 'western public region' is not an explicit supported region code (GD, ERCO, CISO, ISNE, MISO, SWPP). Please confirm the exact region_id (e.g., CISO for CAISO, California) and provide horizon_minutes (60, 120, or 180) for the study.",
+    "reason": "User requested usual setup for western public region and study ready for tomorrow. Explicit region phrase provided but not mapped to supported code; horizon_minutes and cost_shortfall not supplied. cost_reserve set to 1.0 per study protocol fixed value. Clarification required to resolve region and missing parameters.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 448,
+    "completion_tokens": 2697,
+    "total_tokens": 3145,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2500
+    }
+  },
+  "response_sha256": "a84890b660c87709eb19f00534631bfd50e764d977ac8c982df62bc4f2097d0b",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 22.34984889999032,
+  "finished_at": "2026-10-11T15:37:31.246700+00:00"
+}

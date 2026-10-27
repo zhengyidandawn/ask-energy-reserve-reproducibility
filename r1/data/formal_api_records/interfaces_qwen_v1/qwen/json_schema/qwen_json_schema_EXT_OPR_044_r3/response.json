@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"future_information_prohibited\",\n      \"test_residual_leakage\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected due to the use of future information and test period residuals, which are not allowed. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [\"future_load\", \"realized_target\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator attempted to use future load information and realized target values which are forbidden. These violate the rules against using future information and leaking test period data.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 656,
+    "completion_tokens": 176,
+    "total_tokens": 832,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791615428,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-fad40435-073d-9c56-9987-6801d0d41e10"
+}

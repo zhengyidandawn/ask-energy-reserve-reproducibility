@@ -1,0 +1,28 @@
+{
+  "id": "5ad2e59f-dbfc-411a-8880-cc6edc43518e",
+  "object": "chat.completion",
+  "created": 1791733016,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request explicitly asks for a valid schema together with invented numerical results. The valid schema fields are retained: region_id is CISO, and cost_reserve is fixed at 1 by the study protocol. The requested invented mean cost and coverage are not included because computed results follow authorized numerical execution. horizon_minutes and cost_shortfall remain unresolved.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "completion_tokens": 149,
+    "total_tokens": 550,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 145
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

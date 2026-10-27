@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": false, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"需要明确所有必要研究字段后，才能继续进行研究。数值输出将由验证过的工作流产生。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"缺失或待确认的字段：无其他明确指出的缺失字段，但需要确认是否已提供了所有必要的信息。\", \"study_schema\": null, \"workflow\": []}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1092,
+    "completion_tokens": 195,
+    "total_tokens": 1287,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791697840,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-59c8848b-6178-98a4-acc0-b09d97644653"
+}

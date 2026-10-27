@@ -1,0 +1,25 @@
+{
+  "id": "as-bbpj05scvf",
+  "object": "chat.completion",
+  "created": 1791613544,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"decision\": \"accept\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": {\n                \"region_id\": \"ISNE\",\n                \"horizon_minutes\": 180,\n                \"cost_shortfall\": 20.0,\n                \"cost_reserve\": 1.0,\n                \"forbidden_variables_requested\": [\"future_load\", \"future_weather\"]\n            }\n        },\n        {\n            \"data_dictionary\": {\n                \"region_id\": \"Valid region identifier (ISNE)\",\n                \"horizon_minutes\": \"Valid horizon (180 minutes)\",\n                \"cost_shortfall\": \"Valid shortfall cost (20.0)\",\n                \"cost_reserve\": \"Valid reserve cost (1.0)\",\n                \"forbidden_variables\": \"Prohibited variables correctly excluded\"\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": {\n                \"issue_time_data_boundary\": \"No future information or unavailable issue-time forecasts included\"\n            }\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": {\n                \"note\": \"Numerical outputs (reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, dispatch results) are computed by the verified workflow only and not generated here.\"\n            }\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": []\n            }\n        }\n    ],\n    \"explanation\": \"The request meets all criteria for an auditable reserve-sizing study. Numerical outputs are produced by the verified workflow only.\",\n    \"reason\": \"Request is valid with no prohibited variables or unsupported parameters.\",\n    \"study_schema\": {\n        \"task_type\": \"upward_reserve_sizing\",\n        \"region_id\": \"ISNE\",\n        \"horizon_minutes\": 180,\n        \"cost_reserve\": 1.0,\n        \"cost_shortfall\": 20.0,\n        \"rolling_window\": {\n            \"train_days\": 730,\n            \"cal_days\": 30,\n            \"test_days\": 30,\n            \"rolling_step_days\": 30\n        },\n        \"requires_human_approval\": true\n    },\n    \"workflow\": [\n        \"validate_request\",\n        \"check_forbidden_variables\",\n        \"check_region_horizon_cost\",\n        \"apply_rolling_window\",\n        \"generate_evidence_trace\",\n        \"require_human_approval\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    }\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 702,
+    "completion_tokens": 800,
+    "total_tokens": 1502,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

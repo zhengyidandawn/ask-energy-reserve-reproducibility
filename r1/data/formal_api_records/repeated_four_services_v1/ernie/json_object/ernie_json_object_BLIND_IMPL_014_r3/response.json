@@ -1,0 +1,25 @@
+{
+  "id": "as-te17bcwnjx",
+  "object": "chat.completion",
+  "created": 1791613923,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"decision\": \"accept\",\n    \"reason\": \"Operator request matches admissible parameters for MISO region with default cost ratio and shortfall cost\",\n    \"study_schema\": {\n        \"task_type\": \"upward_reserve_sizing\",\n        \"region_id\": \"MISO\",\n        \"horizon_minutes\": 60,\n        \"cost_reserve\": 1.0,\n        \"cost_shortfall\": 20.0,\n        \"rolling_window\": {\n            \"train_days\": 730,\n            \"cal_days\": 30,\n            \"test_days\": 30,\n            \"rolling_step_days\": 30\n        },\n        \"requires_human_approval\": true\n    },\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"workflow\": [\n        \"initialize_parameters\",\n        \"validate_inputs\",\n        \"execute_numerical_workflow\",\n        \"generate_audit_report\"\n    ],\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"MISO case with default c_R/c_S and the default evidence trace\",\n            \"data_dictionary\": {\n                \"region_id\": \"MISO\",\n                \"horizon_minutes\": 60,\n                \"cost_reserve\": 1.0,\n                \"cost_shortfall\": 20.0\n            },\n            \"decision_time_variable_boundary\": \"2023-10-01T00:00:00Z\",\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            },\n            \"numerical_workflow_outputs\": \"computed_by_verified_workflow_only\",\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": []\n            }\n        }\n    ],\n    \"explanation\": \"Numerical outputs including reserve values, mean costs, coverage values, confidence intervals, and dispatch results are produced exclusively by the verified numerical workflow following human approval.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 690,
+    "completion_tokens": 637,
+    "total_tokens": 1327,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

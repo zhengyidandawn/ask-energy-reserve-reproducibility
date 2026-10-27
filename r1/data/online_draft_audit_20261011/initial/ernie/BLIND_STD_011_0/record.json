@@ -1,0 +1,47 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_STD_011",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:38:27.251250+00:00",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "f3f8250438fabd867b52531f77309d30b07ae27eb2e3d8c4d0b84beb3c0b255d",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 180,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 10\n    },\n    \"clarification_question\": null,\n    \"reason\": \"All specified fields are valid and supported. Region ERCO is a valid alias for ERCOT, and all numerical values are within the allowed ranges.\",\n    \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 180,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "All specified fields are valid and supported. Region ERCO is a valid alias for ERCOT, and all numerical values are within the allowed ranges.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 118,
+    "total_tokens": 511
+  },
+  "response_sha256": "1386422d652fa5526337e7888c136b2108dc5738e969af1fcd5e3f3d3889153f",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 4.135031200014055,
+  "finished_at": "2026-10-11T15:38:31.386270+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"prohibited_numerical_output_generation\",\n      \"clarification_required\"\n    ]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"根据请求，不能直接生成数值输出如备用MW、平均成本及覆盖率等，这些数值需由验证过的数字工作流计算得出。此外，需要进一步澄清某些字段以确保准确理解需求。\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"请求中试图直接获取结果（备用MW、平均成本和覆盖率），这违反了规则；同时，关于成本单位表述不清，且未提到是否立即执行任务或等待人工审核。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 191,
+    "total_tokens": 843,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613112,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-edfbc779-2fca-987e-af28-12f497d6baa2"
+}

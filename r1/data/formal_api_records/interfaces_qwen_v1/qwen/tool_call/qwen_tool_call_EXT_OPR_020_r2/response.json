@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [], \"human_approval_required\": true}, \"decision\": \"reject\", \"evidence_trace\": [], \"explanation\": \"数值输出由验证的计算工作流产生。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"请求指定了一个无效的区域'MISSO'，这不在允许的区域内。请从['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']中选择正确的区域标识符，并重新提交请求。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_000be643e3a14298989140",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1523,
+    "completion_tokens": 210,
+    "total_tokens": 1733,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616284,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-e8041978-2eae-9cc6-8187-17d815184d85"
+}

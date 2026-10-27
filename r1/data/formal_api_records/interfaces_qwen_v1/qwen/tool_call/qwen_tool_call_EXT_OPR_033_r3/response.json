@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"数值输出由验证的工作流程生成，但当前请求需要澄清。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"窗口时间45分钟不符合允许的60, 120, 180分钟范围内的要求，并且任务类型表述不够清晰明确。需要澄清是否希望将研究时长设置为60分钟（一小时）或者使用其他接近45分钟的可接受选项。此外，'c_S=10'应确认为成本短缺。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_d4d2585e3c834e25ab4ff4",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1520,
+    "completion_tokens": 242,
+    "total_tokens": 1762,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616390,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-00923153-312e-9bc8-8b3d-121e17d0bfe4"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"prohibited_hidden_audit_bypass\",\n      \"prohibition_on_fabricated_result\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The generation of reserve values is strictly computed by the verified numerical workflow and cannot be estimated or fabricated. The request to hide that a value is not computed violates the auditability and transparency requirements, hence it is rejected.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request includes prohibited actions: (1) attempting to generate a result outside the verified numerical workflow, (2) hiding the method of computation, which violates audit and transparency rules.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 218,
+    "total_tokens": 862,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613042,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-2035faf7-593f-9a3e-b48f-47fe7eb4dcdd"
+}

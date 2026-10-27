@@ -1,0 +1,116 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_CLAR_019",
+  "repeat": 4,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:40.608985+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "eac6662b75e2cae7ae163dc583a79b2cc09ecc2d2d9c765168a9a64713325c84",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported region should the study use: GD (Guangdong, China), ERCO (ERCOT, Texas), CISO (CAISO, California), ISNE (ISO New England), MISO (Midcontinent), or SWPP (Southwest Power Pool)? Also, which supported horizon should be used: 60, 120, or 180 minutes? And which shortfall weight should be used: 10, 20, or 40?\",\n  \"reason\": \"The request is potentially admissible because it asks for a standard public-data reserve study, but the region, horizon, and shortfall weight are unresolved. 'One-hour-ish' does not unambiguously select a supported horizon, and no region or shortfall weight is specified.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Which supported region should the study use: GD (Guangdong, China), ERCO (ERCOT, Texas), CISO (CAISO, California), ISNE (ISO New England), MISO (Midcontinent), or SWPP (Southwest Power Pool)? Also, which supported horizon should be used: 60, 120, or 180 minutes? And which shortfall weight should be used: 10, 20, or 40?",
+      "reason": "The request is potentially admissible because it asks for a standard public-data reserve study, but the region, horizon, and shortfall weight are unresolved. 'One-hour-ish' does not unambiguously select a supported horizon, and no region or shortfall weight is specified.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 223,
+      "total_tokens": 616,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 137
+    },
+    "response_sha256": "27dee3a18bea4c9b4dfb5f6c7025ee1c0b294cb2db802217b83a31694c98c998",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.7537028000224382,
+    "finished_at": "2026-10-11T15:36:42.362644+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:40.608985+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "eac6662b75e2cae7ae163dc583a79b2cc09ecc2d2d9c765168a9a64713325c84",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported region should the study use: GD (Guangdong, China), ERCO (ERCOT, Texas), CISO (CAISO, California), ISNE (ISO New England), MISO (Midcontinent), or SWPP (Southwest Power Pool)? Also, which supported horizon should be used: 60, 120, or 180 minutes? And which shortfall weight should be used: 10, 20, or 40?\",\n  \"reason\": \"The request is potentially admissible because it asks for a standard public-data reserve study, but the region, horizon, and shortfall weight are unresolved. 'One-hour-ish' does not unambiguously select a supported horizon, and no region or shortfall weight is specified.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Which supported region should the study use: GD (Guangdong, China), ERCO (ERCOT, Texas), CISO (CAISO, California), ISNE (ISO New England), MISO (Midcontinent), or SWPP (Southwest Power Pool)? Also, which supported horizon should be used: 60, 120, or 180 minutes? And which shortfall weight should be used: 10, 20, or 40?",
+      "reason": "The request is potentially admissible because it asks for a standard public-data reserve study, but the region, horizon, and shortfall weight are unresolved. 'One-hour-ish' does not unambiguously select a supported horizon, and no region or shortfall weight is specified.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 223,
+      "total_tokens": 616,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "prompt_cache_hit_tokens": 256,
+      "prompt_cache_miss_tokens": 137
+    },
+    "response_sha256": "27dee3a18bea4c9b4dfb5f6c7025ee1c0b294cb2db802217b83a31694c98c998",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.7537028000224382,
+    "finished_at": "2026-10-11T15:36:42.362644+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.7537028000224382,
+  "transport_complete": true
+}

@@ -1,0 +1,116 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_IMPL_014",
+  "repeat": 1,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_IMPL_014",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:15.296759+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "78a6f3a3e30640402284f27a3eea6271cfe0b954b9b9b1eb5a3548ac91473f38",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 20\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The MISO region is supported, and default values for c_R (cost_reserve) and c_S (cost_shortfall) are 1 and 20, respectively. The evidence trace defaults to observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather, which are all supported.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": 60,
+        "cost_reserve": 1,
+        "cost_shortfall": 20
+      },
+      "clarification_question": null,
+      "reason": "The MISO region is supported, and default values for c_R (cost_reserve) and c_S (cost_shortfall) are 1 and 20, respectively. The evidence trace defaults to observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather, which are all supported.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 370,
+      "completion_tokens": 139,
+      "total_tokens": 509,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "response_sha256": "7a8d1a45ab2b00d6ad8b3fce667f583c55adc3407c0f11875b0fd24c3c1b5811",
+    "diagnostics": {
+      "messages": [
+        "Execution validation returns clarify: missing_explicit_fields, horizon_minutes, cost_shortfall"
+      ],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "missing_explicit_fields",
+          "horizon_minutes",
+          "cost_shortfall"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.668157000094652,
+    "finished_at": "2026-10-11T15:37:18.965291+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_IMPL_014",
+    "repeat": 1,
+    "phase": "feedback",
+    "started_at": "2026-10-11T15:37:18.966291+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "d6eaea46de742fe46b3a503bc7314d611ee5c47517fe7231d7d0e5f093172865",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Please specify the horizon in minutes (60, 120, or 180) and the cost of shortfall (10, 20, or 40).\",\n  \"reason\": \"The MISO region is supported, and default values for c_R (cost_reserve) are set to 1. However, explicit values for the horizon in minutes and the cost of shortfall are required.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Please specify the horizon in minutes (60, 120, or 180) and the cost of shortfall (10, 20, or 40).",
+      "reason": "The MISO region is supported, and default values for c_R (cost_reserve) are set to 1. However, explicit values for the horizon in minutes and the cost of shortfall are required.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 545,
+      "completion_tokens": 150,
+      "total_tokens": 695,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "27eed05e3cbfc1031e1e7a5f5de6a7f9edf1fa9150d06fde718faec348b9b4d7",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 4.146656900062226,
+    "finished_at": "2026-10-11T15:37:23.113461+00:00"
+  },
+  "online_calls": 2,
+  "total_service_seconds": 7.814813900156878,
+  "transport_complete": true
+}

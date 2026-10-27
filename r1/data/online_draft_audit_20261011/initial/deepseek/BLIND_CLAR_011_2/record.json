@@ -1,0 +1,54 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_CLAR_011",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:31.789599+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "266eb8dec5bce3b27a4bb68305723690b897de8c16fef9afdb267066f37fb784",
+  "returned_model": "deepseek-flash",
+  "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": null,\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported region should be used for the western public region: CISO (CAISO, California) or SWPP (Southwest Power Pool)? Also, which supported horizon should be used: 60, 120, or 180 minutes, and which shortfall weight should be used: 10, 20, or 40?\",\n  \"reason\": \"The request refers to a western public region, which is ambiguous between supported regions CISO and SWPP. The horizon and shortfall weight are also unresolved. cost_reserve is fixed at 1 by the study protocol.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Which supported region should be used for the western public region: CISO (CAISO, California) or SWPP (Southwest Power Pool)? Also, which supported horizon should be used: 60, 120, or 180 minutes, and which shortfall weight should be used: 10, 20, or 40?",
+    "reason": "The request refers to a western public region, which is ambiguous between supported regions CISO and SWPP. The horizon and shortfall weight are also unresolved. cost_reserve is fixed at 1 by the study protocol.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 188,
+    "total_tokens": 580,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 136
+  },
+  "response_sha256": "d30db95e87c0c399c4aca545f5da1258acec0f144bc9c40102c91e6b38448e29",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.7134838999481872,
+  "finished_at": "2026-10-11T15:36:33.504520+00:00"
+}

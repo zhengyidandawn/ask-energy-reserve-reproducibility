@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request for a 95% confidence interval for the reserve result of ISNE is accepted, but the actual numerical execution to compute this interval must follow an authorized run. The other fields are either unspecified or need to be resolved through the standard workflow.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 122,
+    "total_tokens": 505,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733066,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-a5364690-2878-9356-b7ec-a9ecc3fc2b50"
+}

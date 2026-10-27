@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"数值输出将由验证过的工作流生成。但是，当前请求中时域（horizon）的具体分钟数不明确。通常时域（usual horizon）需要转换为具体的分钟数以便进行准确的研究。请指明具体的时域（60、120或180分钟）。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"时域（horizon）未以可接受的格式给出。虽然提到了'平时那套usual horizon'，但没有具体说明是60、120还是180分钟。此信息对于准确执行研究至关重要。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_1edb4bb69d004edab3fdc7",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1521,
+    "completion_tokens": 266,
+    "total_tokens": 1787,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616493,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-2921e1a6-2407-9296-b756-55d1689773d8"
+}

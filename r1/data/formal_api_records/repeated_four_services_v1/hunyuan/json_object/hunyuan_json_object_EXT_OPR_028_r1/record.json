@@ -1,0 +1,111 @@
+{
+  "task_id": "hunyuan_json_object_EXT_OPR_028_r1",
+  "case_id": "EXT_OPR_028",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 1,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "d45e646480d8b1cf848a0ec8400d934e5f3e6e43b9f283984cf3d7f5d5f156af",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:21:35.237014+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 639,
+    "completion_tokens": 2325,
+    "total_tokens": 2964,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2076
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "1d16f96f-dcb2-4b6d-ae7d-e01a206f5fd6",
+  "provider_created": 1791613296,
+  "system_fingerprint": null,
+  "response_sha256": "3d0fa358552ed048ac387f874b64bf4ab96b0351caaeee484bee6d93d8d15714",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_028",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Ambiguous or missing field: cost_shortfall. Operator stated '成本按正常惩罚走就行' which does not map to an allowed shortfall cost from [10.0, 20.0, 40.0]. Region ERCO and horizon 60 minutes are valid, cost_reserve=1.0 is implied. Specify explicit shortfall cost to proceed. Numerical outputs are produced by the verified workflow; this request requires clarification on cost shortfall before scheduling. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow; this request requires clarification on cost shortfall before scheduling.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Ambiguous or missing field: cost_shortfall. Operator stated '成本按正常惩罚走就行' which does not map to an allowed shortfall cost from [10.0, 20.0, 40.0]. Region ERCO and horizon 60 minutes are valid, cost_reserve=1.0 is implied. Specify explicit shortfall cost to proceed.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 19.72456619993318,
+  "request_finished_at": "2026-10-10T06:21:54.962071+00:00"
+}

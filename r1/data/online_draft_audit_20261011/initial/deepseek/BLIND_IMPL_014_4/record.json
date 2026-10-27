@@ -1,0 +1,54 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_IMPL_014",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:46.148650+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "c41a31013f7013573bb9f01569d931e90dcc294bc1e0cc1f333b6a392a62fb70",
+  "returned_model": "deepseek-flash",
+  "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be used for this MISO study?\",\n  \"reason\": \"The request specifies MISO and default reserve cost, but the horizon and shortfall weight are unresolved. The study protocol fixes cost_reserve at 1, while cost_shortfall must be one of the supported weights.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "MISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be used for this MISO study?",
+    "reason": "The request specifies MISO and default reserve cost, but the horizon and shortfall weight are unresolved. The study protocol fixes cost_reserve at 1, while cost_shortfall must be one of the supported weights.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 159,
+    "total_tokens": 548,
+    "prompt_tokens_details": {
+      "cached_tokens": 255
+    },
+    "prompt_cache_hit_tokens": 255,
+    "prompt_cache_miss_tokens": 134
+  },
+  "response_sha256": "4d7bff9ef7b9fec90b3024df69f6225ecb253b31f8c7c2323c15b9aa51372cef",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.4701121000107378,
+  "finished_at": "2026-10-11T15:36:47.619793+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "b94c1ea0-aba8-40bb-9e2c-a144b7af2985",
+  "object": "chat.completion",
+  "created": 1791612565,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\":[\"calendar\",\"cost_ratio\",\"current_load\",\"horizon\",\"lagged_load\",\"load_statistics\",\"observed_weather\",\"recent_ramp\",\"region_id\"],\"audit_log\":{\"human_approval_required\":true,\"triggered_rules\":[\"approval_bypass_rejected\",\"human_approval_mandatory\"]},\"decision\":\"reject\",\"evidence_trace\":[\"operator_request\",\"data_dictionary\",\"decision_time_variable_boundary\",\"rolling_window_configuration\",\"numerical_workflow_outputs\",\"audit_log\"],\"explanation\":\"The request asks to bypass the mandatory human approval step and auto-release the reserve plan. Human approval is required for any accept or partial_accept outcome, and approval bypasses are prohibited. No numerical reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results are produced here; any such outputs must be computed only by the verified numerical workflow.\",\"forbidden_variables\":[\"fabricated_result\",\"future_load\",\"future_weather\",\"raw_data_modification\",\"realized_target\",\"test_period_residual\"],\"numerical_output_policy\":\"computed_by_verified_workflow_only\",\"reason\":\"Rejected because the operator explicitly requests skipping the approval gate and auto-releasing the plan, which violates the mandatory human-approval requirement and constitutes an approval bypass.\",\"study_schema\":null,\"workflow\":[]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 708,
+    "completion_tokens": 294,
+    "total_tokens": 1002,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 196
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

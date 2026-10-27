@@ -1,0 +1,112 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_STD_036",
+  "repeat": 0,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_STD_036",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:04.859604+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "642060b7fa02c97a34162a1fbbb57974918b3ad1f469b333a6f804ae66bea349",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ERCO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":40},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported and resolved: region ERCO, horizon 120 minutes, shortfall weight 40. Reserve cost is fixed at 1 by protocol. Numerical costs, coverage, and intervals are deferred to authorized numerical execution.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "All explicit study fields are supported and resolved: region ERCO, horizon 120 minutes, shortfall weight 40. Reserve cost is fixed at 1 by protocol. Numerical costs, coverage, and intervals are deferred to authorized numerical execution.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 408,
+      "completion_tokens": 101,
+      "total_tokens": 509,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 280
+    },
+    "response_sha256": "8128c495bfebe2f2c0434378d5956741dcd921375504cfe6115eb22158b56ced",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.1163884999696165,
+    "finished_at": "2026-10-11T15:37:05.976218+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_STD_036",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:04.859604+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "642060b7fa02c97a34162a1fbbb57974918b3ad1f469b333a6f804ae66bea349",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ERCO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":40},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported and resolved: region ERCO, horizon 120 minutes, shortfall weight 40. Reserve cost is fixed at 1 by protocol. Numerical costs, coverage, and intervals are deferred to authorized numerical execution.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "All explicit study fields are supported and resolved: region ERCO, horizon 120 minutes, shortfall weight 40. Reserve cost is fixed at 1 by protocol. Numerical costs, coverage, and intervals are deferred to authorized numerical execution.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 408,
+      "completion_tokens": 101,
+      "total_tokens": 509,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 280
+    },
+    "response_sha256": "8128c495bfebe2f2c0434378d5956741dcd921375504cfe6115eb22158b56ced",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.1163884999696165,
+    "finished_at": "2026-10-11T15:37:05.976218+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.1163884999696165,
+  "transport_complete": true
+}

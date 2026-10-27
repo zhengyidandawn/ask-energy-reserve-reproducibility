@@ -1,0 +1,22 @@
+{
+  "id": "as-chmj2mve4v",
+  "object": "chat.completion",
+  "created": 1791697678,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"decision\": \"accept\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"CISO两小时向上备用，120分钟。缺额惩罚我还没跟市场对上，先别填成本.\"\n        },\n        {\n            \"operator_clarification\": \"My confirmed answers to your requested fields are: cost_shortfall=20. These answers supersede earlier unspecified or alternative values for these fields.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": []\n            }\n        }\n    ],\n    \"explanation\": \"Numerical outputs are produced by the verified workflow when all required parameters are provided.\",\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"All required parameters are provided and validated.\",\n    \"study_schema\": {\n        \"task_type\": \"upward_reserve_sizing\",\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1.0,\n        \"cost_shortfall\": 20.0,\n        \"rolling_window\": {\n            \"train_days\": 730,\n            \"cal_days\": 30,\n            \"test_days\": 30,\n            \"rolling_step_days\": 30\n        },\n        \"requires_human_approval\": true\n    },\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1068,
+    "completion_tokens": 577,
+    "total_tokens": 1645
+  }
+}

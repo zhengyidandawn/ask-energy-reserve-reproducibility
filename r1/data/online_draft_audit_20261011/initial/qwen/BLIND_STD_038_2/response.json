@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region (ISNE), a supported horizon (120 minutes), and a valid shortfall cost (40). The study setup does not request any unsupported features, future information, or raw data modification. Since the user explicitly asked to set up the study without estimating MW, this is considered a public validation reserve study as requested, and no numerical execution for MW estimation is required.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 156,
+    "total_tokens": 561,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733106,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-3ac94680-2a5f-9ba5-98b1-b8cb57c08a79"
+}

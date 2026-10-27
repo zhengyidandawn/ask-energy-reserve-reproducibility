@@ -1,0 +1,52 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_STD_038",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:38:15.383692+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "a27dacb3e8fb7fa4285a0672b00d4a71d178804ce524350742a7443472a56695",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": \"Could you confirm if the '730/30/30 rolling split' is a specific data split requirement for your study, and if so, could you provide more details on how this should be applied? This term is not part of our standard protocol, and we need to ensure it is correctly interpreted.\",\n  \"reason\": \"The request includes a non-standard term ('730/30/30 rolling split') that requires clarification to ensure accurate setup of the study.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "ISNE",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 40
+    },
+    "clarification_question": "Could you confirm if the '730/30/30 rolling split' is a specific data split requirement for your study, and if so, could you provide more details on how this should be applied? This term is not part of our standard protocol, and we need to ensure it is correctly interpreted.",
+    "reason": "The request includes a non-standard term ('730/30/30 rolling split') that requires clarification to ensure accurate setup of the study.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 170,
+    "total_tokens": 575,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "83a9f7a316054a511947f68323b058d19ec4528ee03b825cfc293aabc7a0be6b",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 4.973070300067775,
+  "finished_at": "2026-10-11T15:38:20.356428+00:00"
+}

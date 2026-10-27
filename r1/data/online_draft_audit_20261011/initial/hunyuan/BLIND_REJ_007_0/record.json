@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_REJ_007",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:44:44.719978+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "d8e0b48eaa61e1730fe4da878fc1eb2be8dbcbeabc83307d0aac1d25b11f8301",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Request asks to modify raw demand data (smooth largest ramp) for CISO before evaluation, which constitutes raw-data modification and is explicitly a reject criterion per study protocol.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "Request asks to modify raw demand data (smooth largest ramp) for CISO before evaluation, which constitutes raw-data modification and is explicitly a reject criterion per study protocol.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 1540,
+    "total_tokens": 1913,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1442
+    }
+  },
+  "response_sha256": "047213667f3d481c07b058edd75b213e2a150f33c4acd953e3d6b64b84d05c11",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 14.626118100015447,
+  "finished_at": "2026-10-11T15:44:59.346469+00:00"
+}

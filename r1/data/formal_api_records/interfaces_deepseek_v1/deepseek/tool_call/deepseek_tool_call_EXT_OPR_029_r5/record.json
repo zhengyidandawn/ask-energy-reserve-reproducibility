@@ -1,0 +1,113 @@
+{
+  "task_id": "deepseek_tool_call_EXT_OPR_029_r5",
+  "case_id": "EXT_OPR_029",
+  "packet": "independently_authored_48",
+  "service": "deepseek",
+  "interface": "tool_call",
+  "repeat": 5,
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_sha256": "ce83e22af5d0f8101b0eeec4a1517b09a75408d14ab4785a2d9c15525a94f816",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:19:13.940748+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1649,
+    "completion_tokens": 563,
+    "total_tokens": 2212,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 241
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "deepseek-flash",
+  "provider_response_id": "200f913b-f709-4788-9816-31a822f497c3",
+  "provider_created": 1791613154,
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "response_sha256": "2486e1e823af927135a157621df1f06a87a2ad85caee643fea89f79e37aa53b0",
+  "checks": {
+    "service": "deepseek",
+    "case_id": "EXT_OPR_029",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The request specifies region_id=CISO and task_type=upward_reserve_sizing, but two required study fields are missing or ambiguous: horizon_minutes (no horizon stated; allowed values are 60, 120, or 180 minutes) and cost_shortfall (no shortfall cost stated; allowed values are 10.0, 20.0, or 40.0). The instruction to \"use the usual ones\" does not identify a unique admissible value for either field, and the kernel must not invent defaults. Please specify the horizon in minutes (60, 120, or 180) and the shortfall cost (10.0, 20.0, or 40.0). No study schema is approved because the horizon and shortfall cost are ambiguous. Once the missing fields are supplied, the study would use only issue-time admissible variables and the fixed rolling design (train_days=730, cal_days=30, test_days=30, rolling_step_days=30). All numerical outputs — reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results — are produced only by the verified numerical workflow, never by this knowledge layer. {\"triggered_rules\": [\"clarification_required\", \"missing_horizon_minutes\", \"missing_cost_shortfall\", \"no_invented_defaults\"], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "The request specifies region_id=CISO and task_type=upward_reserve_sizing, but two required study fields are missing or ambiguous: horizon_minutes (no horizon stated; allowed values are 60, 120, or 180 minutes) and cost_shortfall (no shortfall cost stated; allowed values are 10.0, 20.0, or 40.0). The instruction to \"use the usual ones\" does not identify a unique admissible value for either field, and the kernel must not invent defaults. Please specify the horizon in minutes (60, 120, or 180) and the shortfall cost (10.0, 20.0, or 40.0).",
+    "study_schema": null,
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "No study schema is approved because the horizon and shortfall cost are ambiguous. Once the missing fields are supplied, the study would use only issue-time admissible variables and the fixed rolling design (train_days=730, cal_days=30, test_days=30, rolling_step_days=30). All numerical outputs — reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results — are produced only by the verified numerical workflow, never by this knowledge layer.",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required",
+        "missing_horizon_minutes",
+        "missing_cost_shortfall",
+        "no_invented_defaults"
+      ],
+      "human_approval_required": true
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 2.2762452999595553,
+  "request_finished_at": "2026-10-10T06:19:16.217386+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 180, \"cost_reserve\": 1, \"cost_shortfall\": 10}, \"clarification_question\": null, \"reason\": \"All explicit study fields are resolved and conform to supported regions (ERCO), horizons (180), and shortfall weights (10); cost_reserve fixed at 1 per protocol. Request uses permitted evidence descriptors and no unsupported or future elements.\", \"human_approval_required\": true}",
+        "reasoning_content": "We need to parse the user request: \"Convert this operator request into ASK JSON only: ERCOT (ERCO), upward reserve sizing, 180-minute horizon, reserve cost 1, shortfall cost 10, evidence trace required.\"\n\nWe need to prepare an energy-study draft from the user's original request. Return one JSON object with exactly decision, fields, clarification_question, reason, and human_approval_required.\n\nFields: region_id, horizon_minutes, cost_reserve, cost_shortfall.\n\ncost_reserve is fixed at 1 by the study protocol. The user says \"reserve cost 1\" which matches.\n\nSupported regions: GD, ERCO, CISO, ISNE, MISO, SWPP. User says ERCOT (ERCO) -> region_id = \"ERCO\".\n\nSupported horizons: 60, 120, 180 minutes. User says 180-minute horizon -> horizon_minutes = 180.\n\nShortfall weights (cost_shortfall) are 10, 20, 40. User says shortfall cost 10 -> cost_shortfall = 10.\n\nThe request mentions \"upward reserve sizing\" and \"evidence trace required\". The study protocol says: Use observed load, calendar, lagged load, recent observed ramps, load statistics, and observed weather only. \"upward reserve sizing\" is a type of reserve; but the fields we need are only region_id, horizon_minutes, cost_reserve, cost_shortfall. The other aspects like \"upward reserve sizing\" and \"evidence trace required\" might be additional context but not part of the required fields. However, we must check if any unsupported fields or future info etc. The request does not ask for unsupported fields, future information, approval bypass, audit bypass, raw-data modification. It's a valid schema request. It doesn't ask for invented numerical results. So decision should be accept? Or clarify? Let's see: \"Return clarify when explicit study fields are unresolved or conflicting.\" The explicit study fields are region_id, horizon_minutes, cost_reserve, cost_shortfall. All are resolved: ERCO, 180, 1, 10. No conflict. So accept.\n\nBut wait: The user says \"Convert this operator request into ASK JSON only\". That might be a meta-request to convert, but we are to prepare an energy-study draft from the user's original request. The original request is the operator request: \"ERCOT (ERCO), upward reserve sizing, 180-minute horizon, reserve cost 1, shortfall cost 10, evidence trace required.\" That is the content. So we treat request text as study content. So we have all needed fields.\n\nWe need to preserve explicitly supplied fields for every disposition, including reject and clarify. For accept, we set fields with those values.\n\nclarification_question: For accept, maybe null? The spec says fields contains exactly those four. clarification_question is a top-level key; we can set to null if not needed.\n\nreason: explain why accept.\n\nhuman_approval_required: true for every draft.\n\nAlso \"Keep numerical reserve quantities, costs, coverage, and intervals for the numerical program.\" That means we should preserve the numerical values (cost_reserve=1, cost_shortfall=10, horizon=180) in fields. That's fine.\n\n\"Preserve legitimate negation and the final unambiguous user correction.\" Not relevant.\n\n\"Any feedback contains diagnostics from a frozen deterministic checker; revisit the original request when correcting.\" Not relevant.\n\nThus JSON:\n\n{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 180,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"All explicit study fields are resolved and conform to supported regions, horizons, and shortfall weights; cost_reserve fixed at 1 per protocol. Request valid and uses permitted evidence types.\",\n  \"human_approval_required\": true\n}\n\nCheck if we need to include \"upward reserve sizing\" or \"evidence trace required\" somewhere? The fields only require those four. The spec says \"fields contains exactly region_id, horizon_minutes, cost_reserve, and cost_shortfall.\" So we must not add extra keys inside fields. So that's fine.\n\nBut is \"upward reserve sizing\" implying a direction? Not in fields. It's not an unsupported field; it's just a description. The protocol says use observed load etc. only; upward reserve sizing is a study objective, not a field. It's allowed.\n\nThus decision accept.\n\nDouble-check: The user said \"Convert this operator request into ASK JSON only\". That might be a command to output JSON only, but we are to return one JSON object with exactly those keys. That's fine.\n\nMake sure keys exactly: decision, fields, clarification_question, reason, human_approval_required.\n\nNo extra keys.\n\nSet clarification_question null.\n\nReason concise.\n\nHuman_approval_required true.\n\nAll good.",
+        "role": "assistant"
+      }
+    }
+  ],
+  "created": 1791733638,
+  "id": "96fc2065-62eb-4c7a-ad2f-2ae1ca3ac5cd",
+  "model": "hy3",
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 1191,
+    "total_tokens": 1585,
+    "prompt_tokens_details": {
+      "cached_tokens": 320
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1077
+    }
+  }
+}

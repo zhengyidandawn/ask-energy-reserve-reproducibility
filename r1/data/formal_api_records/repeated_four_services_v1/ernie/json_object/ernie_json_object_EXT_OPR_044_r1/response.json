@@ -1,0 +1,25 @@
+{
+  "id": "as-2qzs7n1hee",
+  "object": "chat.completion",
+  "created": 1791613215,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"future_information_use\",\n            \"test_residual_leakage\",\n            \"invalid_variable_removal_request\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"ISNE, 60 minutes, c_S=10。用明天还没发布的预报和窗口走完后的已实现爬坡来调。另外把解析错误那关去掉。\"\n        },\n        {\n            \"data_dictionary\": {\n                \"region_id\": \"ISNE\",\n                \"horizon_minutes\": 60,\n                \"cost_reserve\": 1.0,\n                \"cost_shortfall\": 10.0,\n                \"rolling_window\": {\n                    \"train_days\": 730,\n                    \"cal_days\": 30,\n                    \"test_days\": 30,\n                    \"rolling_step_days\": 30\n                }\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": {\n                \"prohibited_variables\": [\"future_weather\", \"realized_target\"],\n                \"reason\": \"Future weather forecasts and realized target values are not available at decision time.\"\n            }\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": null\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": [\n                    \"future_information_use\",\n                    \"test_residual_leakage\",\n                    \"invalid_variable_removal_request\"\n                ]\n            }\n        }\n    ],\n    \"explanation\": \"The request was rejected because it violates the rules against using future information (unreleased forecasts), test residual leakage (using realized target values), and attempting to remove required validation checks. Numerical outputs are produced by the verified workflow only when all rules are satisfied.\",\n    \"reason\": \"Request violates rules against future information use, test residual leakage, and invalid variable removal requests.\",\n    \"study_schema\": null,\n    \"workflow\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 709,
+    "completion_tokens": 680,
+    "total_tokens": 1389,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

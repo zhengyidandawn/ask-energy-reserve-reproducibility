@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a MISO case with default c_R (cost_reserve) and c_S (cost_shortfall). The defaults for cost_reserve and cost_shortfall are 1 and 10, respectively. The horizon is set to the minimum supported value of 60 minutes. No additional information or unsupported fields were provided.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 140,
+    "total_tokens": 510,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733042,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-00277795-eefc-9609-a7fd-50883e88b51f"
+}

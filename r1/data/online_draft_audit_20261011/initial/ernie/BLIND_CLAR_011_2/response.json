@@ -1,0 +1,22 @@
+{
+  "id": "as-phkdrzf3av",
+  "object": "chat.completion",
+  "created": 1791732994,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"Could you specify the region (e.g., CISO for California) and the horizon in minutes (60, 120, or 180) for the reserve study?\",\n    \"reason\": \"The request does not specify the region or the horizon for the reserve study, which are required fields.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 143,
+    "total_tokens": 512
+  }
+}

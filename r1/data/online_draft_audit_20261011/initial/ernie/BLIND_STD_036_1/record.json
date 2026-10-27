@@ -1,0 +1,50 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_STD_036",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:38:33.082433+00:00",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "103891fc614322ee249e328e3e0e44748bae053ff5c233f4a255101d53906ce0",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 40\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request contains valid schema fields but explicitly defers numerical results (costs, coverage, intervals) to later computation. Valid schema fields are retained; computed results will follow authorized numerical execution.\",\n    \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "partial_accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 40
+    },
+    "clarification_question": null,
+    "reason": "Request contains valid schema fields but explicitly defers numerical results (costs, coverage, intervals) to later computation. Valid schema fields are retained; computed results will follow authorized numerical execution.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 128,
+    "total_tokens": 514,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "5c21d56d97cdc4fd7749786a0f994a445a992064b8f0c1e6f66970aed0152c59",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "partial_accept",
+      "execution_ready": false,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 5.0628987000091,
+  "finished_at": "2026-10-11T15:38:38.146045+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"The numerical outputs, including the reserve sizing, mean costs, coverage values, confidence intervals, and bootstrap claims, will be computed by the verified numerical workflow only.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The following fields are missing or ambiguous: cost_shortfall. Please provide a specific value for the cost of shortfall from the allowed options [10.0, 20.0, 40.0].\", \"study_schema\": null, \"workflow\": []}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 949,
+    "completion_tokens": 222,
+    "total_tokens": 1171,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791698017,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-1507d95a-f0b4-9324-a3a5-157609747ac6"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "09624cac-4995-4e52-90b1-4dcbbb802574",
+  "object": "chat.completion",
+  "created": 1791612718,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\n    \"calendar\",\n    \"cost_ratio\",\n    \"current_load\",\n    \"horizon\",\n    \"lagged_load\",\n    \"load_statistics\",\n    \"observed_weather\",\n    \"recent_ramp\",\n    \"region_id\"\n  ],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"clarification_required\"\n    ]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request specifies a one-hour upward reserve horizon (60 minutes) and a shortfall cost c_S=20, but the region is missing. The region is required to define the study schema and cannot be inferred. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results are produced only by the verified numerical workflow.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Missing required field: region_id. The operator said the region will be supplied later, so the study cannot be accepted or partially accepted yet. Please provide one of the allowed regions: CISO, ERCO, GD, ISNE, MISO, SWPP.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 703,
+    "completion_tokens": 335,
+    "total_tokens": 1038,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 191
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

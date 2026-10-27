@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"current_load\", \"lagged_load\", \"observed_weather\"], \"audit_log\": {\"triggered_rules\": [], \"human_approval_required\": true}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"数值输出将由验证过的流程计算得出。当前接受的方案符合规则，且没有使用未来信息或修改原始数据的行为。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"请求中提供的方案符合向上备用容量研究的要求，未发现违规情况。\", \"study_schema\": {\"cost_reserve\": 1, \"cost_shortfall\": 40, \"horizon_minutes\": 60, \"region_id\": \"ERCO\", \"requires_human_approval\": true, \"rolling_window\": {\"cal_days\": 30, \"rolling_step_days\": 30, \"test_days\": 30, \"train_days\": 730}, \"task_type\": \"upward_reserve_sizing\"}, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_c8bddca25a5148f7a1063f",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1540,
+    "completion_tokens": 284,
+    "total_tokens": 1824,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616352,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-a7e55348-5d76-9eb0-9c7e-ff40592191f4"
+}

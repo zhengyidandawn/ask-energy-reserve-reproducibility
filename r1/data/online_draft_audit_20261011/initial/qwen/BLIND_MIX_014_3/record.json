@@ -1,0 +1,52 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_MIX_014",
+  "repeat": 3,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:30.643475+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "57c3b23f35e6161101d4c0d3ebf12019956b7c868b5f5e3dbccdc0d34dfd7ddd",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"您希望使用哪个时间范围（60、120 或 180 分钟）和哪种成本比率（10、20 或 40）进行这项研究？\",\n  \"reason\": \"需要明确指定时间范围（horizon_minutes）和短缺成本比率（cost_shortfall）的具体数值。\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "MISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "您希望使用哪个时间范围（60、120 或 180 分钟）和哪种成本比率（10、20 或 40）进行这项研究？",
+    "reason": "需要明确指定时间范围（horizon_minutes）和短缺成本比率（cost_shortfall）的具体数值。",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 133,
+    "total_tokens": 512,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "a34eafe0c7a16067fc8ff1bbfc70ac9c71baebfd987159d4ca482eed02479039",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 3.275907799950801,
+  "finished_at": "2026-10-11T15:37:33.919343+00:00"
+}

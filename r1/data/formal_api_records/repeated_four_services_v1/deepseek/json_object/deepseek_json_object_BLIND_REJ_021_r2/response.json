@@ -1,0 +1,28 @@
+{
+  "id": "d30bf8f1-77b8-48b9-b980-ee9d98db763b",
+  "object": "chat.completion",
+  "created": 1791612592,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"raw_data_modification\",\n      \"unsupported_region\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request asks to modify raw demand data before evaluation, which is prohibited. Raw-data modification is not allowed, and ERCOT is not an allowed region identifier; the allowed regions are CISO, ERCO, GD, ISNE, MISO, and SWPP. Numerical outputs are produced only by the verified numerical workflow.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Rejected because the request requires raw_data_modification, which is forbidden, and uses an unsupported region identifier (ERCOT instead of ERCO).\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 696,
+    "completion_tokens": 259,
+    "total_tokens": 955,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 184
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

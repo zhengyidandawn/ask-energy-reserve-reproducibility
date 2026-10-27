@@ -1,0 +1,53 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_011",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:47:14.794569+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "65208ac012225a25c2dcd6b6a0d19063a932cc0072ce12f0c044c34d4f90f747",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 180, \"cost_reserve\": 1, \"cost_shortfall\": 10}, \"clarification_question\": null, \"reason\": \"All explicit study fields are resolved and conform to supported regions (ERCO), horizons (180), and shortfall weights (10); cost_reserve fixed at 1 per protocol. Request uses permitted evidence descriptors and no unsupported or future elements.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 180,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "All explicit study fields are resolved and conform to supported regions (ERCO), horizons (180), and shortfall weights (10); cost_reserve fixed at 1 per protocol. Request uses permitted evidence descriptors and no unsupported or future elements.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 1191,
+    "total_tokens": 1585,
+    "prompt_tokens_details": {
+      "cached_tokens": 320
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1077
+    }
+  },
+  "response_sha256": "d29dd11078a2d7e87b8bf13b5617b63ef2c9906ab865c90a3a8e14ef0ad4c64e",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 10.363051300053485,
+  "finished_at": "2026-10-11T15:47:25.157817+00:00"
+}

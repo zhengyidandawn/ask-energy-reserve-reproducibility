@@ -1,0 +1,34 @@
+{
+  "frozen_at": "2026-10-10T06:35:44.460265+00:00",
+  "countries": {
+    "DE": "Germany",
+    "AT": "Austria",
+    "BE": "Belgium",
+    "NL": "Netherlands"
+  },
+  "n_windows": 12,
+  "step_days": 30,
+  "first_test_start": "2019-01-01T00:00:00Z",
+  "test_days": 30,
+  "training_days": 700,
+  "calibration_days": 30,
+  "selection_days_within_calibration": 10,
+  "horizon_minutes": 60,
+  "cost_reserve": 1,
+  "cost_shortfall": 20,
+  "common_selection_coverage": 0.95,
+  "all_future_target_end_times_purged_at_block_boundaries": true,
+  "missing_data_policy": "exclude incomplete input or target rows; no imputation",
+  "model": "LightGBM quantile regression, 220 iterations, 63 leaves, learning rate 0.04, minimum 80 observations per leaf, seed 20261010 + window",
+  "neighborhood": 256,
+  "local_weights": "Gaussian kernel over standardized decision-time state and base prediction",
+  "shrinkage_grid": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "block_score": "maximum residual within complete nonoverlapping horizon-length timestamp blocks",
+  "source_sha256": "194f3ee7d110d04389751602132899172cdd8b7ca73c07d6e9009ddac066b2a1"
+}

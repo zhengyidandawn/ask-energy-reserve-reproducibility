@@ -1,0 +1,39 @@
+{
+  "id": "4a499cff-8cce-4bae-8b6d-04db9cb5df30",
+  "object": "chat.completion",
+  "created": 1791613084,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_UoaHgkqnMJfxhoUYA4uz7958",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"The request is missing or ambiguous in the following required fields: (1) region_id — \\\"CAIOS\\\" is not a supported region; allowed regions are CISO, ERCO, GD, ISNE, MISO, SWPP. If California ISO was intended, the correct identifier is CISO. (2) horizon_minutes — \\\"120-min\\\" is interpretable as 120 minutes, but it must be explicitly confirmed as the allowed value 120. (3) cost_shortfall — \\\"shortfal penalty 20\\\" is interpretable as 20.0, but must be explicitly confirmed as an allowed value (10.0, 20.0, 40.0). (4) cost_reserve — not stated; must be confirmed as 1.0. (5) rolling_window — not stated; must be confirmed as train_days=730, cal_days=30, test_days=30, rolling_step_days=30. No reserve MW values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results will be produced by this layer; those are computed only by the verified numerical workflow.\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"The request cannot yet be accepted because the region identifier is unsupported and several schema fields are unconfirmed. Numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap results, dispatch results) are produced only by the verified numerical workflow and are not generated here. Once the region is corrected to an allowed identifier and the horizon, shortfall cost, reserve cost, and rolling window are confirmed, the arrangement can be accepted for human approval.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"unsupported_region_identifier\", \"unconfirmed_horizon\", \"unconfirmed_cost_shortfall\", \"unconfirmed_cost_reserve\", \"unconfirmed_rolling_window\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1658,
+    "completion_tokens": 656,
+    "total_tokens": 2314,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 250
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_NUM_003",
+  "repeat": 4,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_NUM_003",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:42:49.494222+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "15db12cd809e779006d83acc1e329fb6ad79f60b9f4159f845047a81192f831f",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"ISNE\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Request asks for 95% confidence interval for ISNE reserve result even if workflow has not run, which constitutes an unsupported field (confidence interval not in schema) and future information (result before authorized execution). Protocol mandates reject for unsupported fields or future information. Supplied region_id ISNE preserved; cost_reserve fixed at 1 by study protocol; horizon_minutes and cost_shortfall unresolved (null).\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Request asks for 95% confidence interval for ISNE reserve result even if workflow has not run, which constitutes an unsupported field (confidence interval not in schema) and future information (result before authorized execution). Protocol mandates reject for unsupported fields or future information. Supplied region_id ISNE preserved; cost_reserve fixed at 1 by study protocol; horizon_minutes and cost_shortfall unresolved (null).",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 2075,
+      "total_tokens": 2455,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1927
+      }
+    },
+    "response_sha256": "48da083dc3c3c61a222613bee178f97910ba0843107c0e81551b944e1d3048f9",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 18.28300139994826,
+    "finished_at": "2026-10-11T15:43:07.777959+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_NUM_003",
+    "repeat": 4,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:42:49.494222+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "15db12cd809e779006d83acc1e329fb6ad79f60b9f4159f845047a81192f831f",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"ISNE\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Request asks for 95% confidence interval for ISNE reserve result even if workflow has not run, which constitutes an unsupported field (confidence interval not in schema) and future information (result before authorized execution). Protocol mandates reject for unsupported fields or future information. Supplied region_id ISNE preserved; cost_reserve fixed at 1 by study protocol; horizon_minutes and cost_shortfall unresolved (null).\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Request asks for 95% confidence interval for ISNE reserve result even if workflow has not run, which constitutes an unsupported field (confidence interval not in schema) and future information (result before authorized execution). Protocol mandates reject for unsupported fields or future information. Supplied region_id ISNE preserved; cost_reserve fixed at 1 by study protocol; horizon_minutes and cost_shortfall unresolved (null).",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 2075,
+      "total_tokens": 2455,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1927
+      }
+    },
+    "response_sha256": "48da083dc3c3c61a222613bee178f97910ba0843107c0e81551b944e1d3048f9",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 18.28300139994826,
+    "finished_at": "2026-10-11T15:43:07.777959+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 18.28300139994826,
+  "transport_complete": true
+}

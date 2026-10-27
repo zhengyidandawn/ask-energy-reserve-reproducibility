@@ -1,0 +1,39 @@
+{
+  "id": "d7f4d4ab-cf06-436d-b946-89d32f2c9a41",
+  "object": "chat.completion",
+  "created": 1791613089,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_TIjb663g8MXIvFsB0bHJ3086",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"Missing required fields: region_id is not specified (operator states region is still being confirmed with dispatch), and horizon_minutes is not specified (operator states horizon is still being confirmed with dispatch). cost_shortfall=20.0 is provided and valid. Please supply region_id from ['CISO','ERCO','GD','ISNE','MISO','SWPP'] and horizon_minutes from [60,120,180].\", \"study_schema\": null, \"admissible_variables\": [], \"forbidden_variables\": [], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"The request is an upward_reserve_sizing study with cost_shortfall=20.0, but region_id and horizon_minutes are unresolved, so no study schema can be fixed yet. No numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced here; all such outputs are produced only by the verified numerical workflow once the schema is complete and approved.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"missing_region_id\", \"missing_horizon_minutes\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1652,
+    "completion_tokens": 405,
+    "total_tokens": 2057,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 244
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "b53a8f28-a5b8-4761-8238-63e7bf9dabe3",
+  "object": "chat.completion",
+  "created": 1791613025,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_0Ds7r3nSCg83d33ESXdt1398",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"accept\", \"reason\": \"Operator request maps cleanly to the allowed upward_reserve_sizing task: region ERCO, horizon 120 minutes (two-hour), cost_reserve=1.0, cost_shortfall=20.0. The request is for a research plan only, explicitly excludes future load and unissued forecasts, and requires no numerical outputs from the language layer.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"ERCO\", \"horizon_minutes\": 120, \"cost_reserve\": 1.0, \"cost_shortfall\": 20.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [\"Confirm task_type=upward_reserve_sizing, region_id=ERCO, horizon_minutes=120, cost_reserve=1.0, cost_shortfall=20.0 against the allowed study envelope.\", \"Assemble the issue-time information set using only admissible variables: calendar, cost_ratio, current_load, horizon, lagged_load, load_statistics, observed_weather, recent_ramp, region_id.\", \"Enforce the decision-time variable boundary: exclude future_load, future_weather, realized_target, test_period_residual, fabricated_result, and raw_data_modification; admit only forecasts already issued at decision time.\", \"Configure the rolling design as train_days=730, cal_days=30, test_days=30, rolling_step_days=30.\", \"Execute the verified numerical workflow to compute reserve values, mean costs, coverage, and any uncertainty summaries; the language layer must not generate these numbers.\", \"Record the numerical workflow outputs and the audit log, and route the study to human approval before any operational use.\"], \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"This is a research plan for the two-hour upward reserve case in ERCO. All numerical outputs — reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results — are produced only by the verified numerical workflow, not by the language layer. The plan admits only issue-time information and excludes future load and any forecast not yet issued at decision time. Human approval is required before operational use.\", \"audit_log\": {\"triggered_rules\": [\"allowed_task_upward_reserve_sizing\", \"allowed_region_ERCO\", \"allowed_horizon_120\", \"allowed_cost_shortfall_20\", \"cost_reserve_1.0\", \"rolling_window_730_30_30_30\", \"decision_time_variable_boundary_enforced\", \"future_information_rejected\", \"unissued_forecast_rejected\", \"numerical_outputs_verified_workflow_only\", \"human_approval_required\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1689,
+    "completion_tokens": 892,
+    "total_tokens": 2581,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536
+    },
+    "prompt_cache_hit_tokens": 1536,
+    "prompt_cache_miss_tokens": 153
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

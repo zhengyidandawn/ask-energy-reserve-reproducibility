@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"test_period_residual\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to use test-month residuals from ERCOT (ERCO) during calibration before the test window closes was rejected. Test-period residuals cannot be used in the calibration process as this would lead to data leakage and compromise the integrity of the model evaluation.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Using test-period residuals for calibration is not allowed, as it can introduce a risk of overfitting and invalidates the independence of the test set.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 215,
+    "total_tokens": 851,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613019,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-14ed977d-b8d3-971b-9917-6feb1d5d2cf8"
+}

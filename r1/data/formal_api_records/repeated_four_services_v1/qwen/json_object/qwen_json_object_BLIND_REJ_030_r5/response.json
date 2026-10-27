@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"test_period_residual\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to use test-month residuals from SPP (SWPP) during calibration before the test window closes is not allowed. The study does not permit the use of future information or test-period residuals, as this could lead to data leakage and compromise the integrity of the study.\",\n  \"forbidden_variables\": [\"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Request involves the use of test-period residuals which is prohibited.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 165,
+    "total_tokens": 801,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614273,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-019e86c4-bd21-9c37-9be8-4902151b0311"
+}

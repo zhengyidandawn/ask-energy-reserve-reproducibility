@@ -1,0 +1,56 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_IMPL_012",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:13.533738+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "7024d0421b0f29aaf15d948f534064698b06be8c0a2312f02be0fc414c36c99e",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request for CAISO with the default settings (60 minutes horizon, and a cost shortfall of 10) is valid. The user has not specified a different time horizon or shortfall cost, thus defaults are used.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 60,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "The request for CAISO with the default settings (60 minutes horizon, and a cost shortfall of 10) is valid. The user has not specified a different time horizon or shortfall cost, thus defaults are used.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 119,
+    "total_tokens": 489,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "c442d899abd20e18bc49fd748dfa8e0293e17234caae3d2be9987f3639b7cb52",
+  "diagnostics": {
+    "messages": [
+      "Execution validation returns clarify: missing_explicit_fields, horizon_minutes, cost_shortfall"
+    ],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "missing_explicit_fields",
+        "horizon_minutes",
+        "cost_shortfall"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 3.7565291998907924,
+  "finished_at": "2026-10-11T15:37:17.289578+00:00"
+}

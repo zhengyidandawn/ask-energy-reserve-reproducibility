@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"future_information\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected because it involves the use of future information, specifically tomorrow's realized load, which is not permissible. Numerical outputs are produced by the verified workflow when the criteria are met.\",\n  \"forbidden_variables\": [\"future_load\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request to use tomorrow's realized load for CAISO (CISO) to size the next-hour reserve includes future information, which is prohibited.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 164,
+    "total_tokens": 800,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613329,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b6b728eb-3f0a-96a4-965a-703a62b62426"
+}

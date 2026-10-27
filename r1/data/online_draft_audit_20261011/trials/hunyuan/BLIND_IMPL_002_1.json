@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_IMPL_002",
+  "repeat": 1,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_IMPL_002",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:40.842680+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "ba97e4c2fde16402b4a8a2b957842204e31fc164cfe261d3ceb175d12d22b18d",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please confirm the explicit horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) to be used, as the referenced 'accepted default split' and 'default penalty' are not defined as explicit values in the study schema.\", \"reason\": \"Region_id CISO is supported and cost_reserve is fixed at 1 by protocol, but horizon_minutes and cost_shortfall are unresolved because the request relies on unspecified defaults ('default split' and 'default penalty') rather than explicit field values. Protocol requires clarify when explicit study fields are unresolved.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Please confirm the explicit horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) to be used, as the referenced 'accepted default split' and 'default penalty' are not defined as explicit values in the study schema.",
+      "reason": "Region_id CISO is supported and cost_reserve is fixed at 1 by protocol, but horizon_minutes and cost_shortfall are unresolved because the request relies on unspecified defaults ('default split' and 'default penalty') rather than explicit field values. Protocol requires clarify when explicit study fields are unresolved.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 1212,
+      "total_tokens": 1580,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1029
+      }
+    },
+    "response_sha256": "24a55f58e50ffc97a922dc52e82f7b049351daef8632e5944c32a316abd56936",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 17.591961199999787,
+    "finished_at": "2026-10-11T15:38:58.434607+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_IMPL_002",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:40.842680+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "ba97e4c2fde16402b4a8a2b957842204e31fc164cfe261d3ceb175d12d22b18d",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please confirm the explicit horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) to be used, as the referenced 'accepted default split' and 'default penalty' are not defined as explicit values in the study schema.\", \"reason\": \"Region_id CISO is supported and cost_reserve is fixed at 1 by protocol, but horizon_minutes and cost_shortfall are unresolved because the request relies on unspecified defaults ('default split' and 'default penalty') rather than explicit field values. Protocol requires clarify when explicit study fields are unresolved.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Please confirm the explicit horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) to be used, as the referenced 'accepted default split' and 'default penalty' are not defined as explicit values in the study schema.",
+      "reason": "Region_id CISO is supported and cost_reserve is fixed at 1 by protocol, but horizon_minutes and cost_shortfall are unresolved because the request relies on unspecified defaults ('default split' and 'default penalty') rather than explicit field values. Protocol requires clarify when explicit study fields are unresolved.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 1212,
+      "total_tokens": 1580,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1029
+      }
+    },
+    "response_sha256": "24a55f58e50ffc97a922dc52e82f7b049351daef8632e5944c32a316abd56936",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 17.591961199999787,
+    "finished_at": "2026-10-11T15:38:58.434607+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 17.591961199999787,
+  "transport_complete": true
+}

@@ -1,0 +1,47 @@
+{
+  "case_id": "SF-12",
+  "service": "deepseek",
+  "repeat": 1,
+  "phase": "confirmation",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:55:07.960676+00:00",
+  "status": "success",
+  "request_sha256": "46fb1702dc5707c6986c1894ce354707f66e03b4b430d8988805debf4d14b935",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 108,
+    "total_tokens": 503,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 139
+  },
+  "content": "{\"decision\":\"clarify\",\"study\":null,\"missing_fields\":[\"region\",\"horizon_minutes\",\"feature_mode\",\"shortfall_weight\",\"required_coverage\",\"reporting\"],\"reason\":\"Please provide the six study fields: region (DE or AT), horizon_minutes (60, 120, or 180), feature_mode (full or history_calendar), shortfall_weight (10, 20, or 40), required_coverage (0.95 or 0.975), and reporting (standard or tail).\"}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "region",
+      "horizon_minutes",
+      "feature_mode",
+      "shortfall_weight",
+      "required_coverage",
+      "reporting"
+    ],
+    "reason": "Please provide the six study fields: region (DE or AT), horizon_minutes (60, 120, or 180), feature_mode (full or history_calendar), shortfall_weight (10, 20, or 40), required_coverage (0.95 or 0.975), and reporting (standard or tail)."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "model_disposition"
+    ]
+  },
+  "response_sha256": "0fff294a2f538ca89ddb4ed52243eccdd13731db959e0a0a7eb5621051116dd3",
+  "latency_seconds": 1.0053185001015663,
+  "request_finished_at": "2026-10-11T10:55:08.965902+00:00"
+}

@@ -1,0 +1,128 @@
+{
+  "task_id": "ernie_json_object_BLIND_REJ_026_r4",
+  "case_id": "BLIND_REJ_026",
+  "packet": "blind_original_200",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "a0988af4f28893bd1db7a0434bd4a21d2b1da0b3558887593928ba7abf5df265",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:39:56.378183+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 519,
+    "total_tokens": 1210
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-i8gybznzct",
+  "provider_created": 1791614396,
+  "system_fingerprint": null,
+  "response_sha256": "ab49f8bdd87b0d52c024c0adf224032f318c41612fb574b375cba2fb83763c33",
+  "checks": {
+    "service": "ernie",
+    "case_id": "BLIND_REJ_026",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Unsupported cost_shortfall value (17.0) and incorrect region identifier (ERCOT instead of ERCO). Numerical outputs are produced by the verified workflow only. The request was rejected due to unsupported cost_shortfall value and incorrect region identifier. {\"triggered_rules\": [\"Unsupported cost_shortfall value (17.0 not in [10.0, 20.0, 40.0])\", \"Unsupported region identifier (ERCOT instead of ERCO)\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "decision": "reject",
+    "reason": "Unsupported cost_shortfall value (17.0) and incorrect region identifier (ERCOT instead of ERCO).",
+    "audit_log": {
+      "triggered_rules": [
+        "Unsupported cost_shortfall value (17.0 not in [10.0, 20.0, 40.0])",
+        "Unsupported region identifier (ERCOT instead of ERCO)"
+      ],
+      "human_approval_required": false
+    },
+    "evidence_trace": [
+      {
+        "operator_request": "Set c_R=1 and c_S=17 for ERCOT (ERCO)."
+      },
+      {
+        "data_dictionary": {
+          "cost_reserve": "Must be 1.0",
+          "cost_shortfall": "Must be in [10.0, 20.0, 40.0]",
+          "region_id": "Must be in ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']"
+        }
+      },
+      {
+        "decision_time_variable_boundary": "No future information, unavailable issue-time forecasts, or forbidden variables included."
+      },
+      {
+        "rolling_window_configuration": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        }
+      }
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "explanation": "Numerical outputs are produced by the verified workflow only. The request was rejected due to unsupported cost_shortfall value and incorrect region identifier.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 19.365720100002363,
+  "request_finished_at": "2026-10-10T06:40:15.744157+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"unsupported_region\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The region PJM is not an approved region for the ASK reserve framework. The numerical outputs are produced by the verified workflow, but the request cannot be processed due to an unsupported region.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"PJM is not among the allowed regions ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP'].\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 163,
+    "total_tokens": 799,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612858,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-99031d29-f23a-9724-9ee6-6ac7f98c916d"
+}

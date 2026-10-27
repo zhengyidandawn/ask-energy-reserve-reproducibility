@@ -1,0 +1,100 @@
+{
+  "task_id": "hunyuan_EXT_OPR_031_r4_turn1",
+  "case_id": "EXT_OPR_031",
+  "packet": "question_driven_clarification_14",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "b6799f65dd0726f1cb59d8a82a563066e74c9ba469d2bb9597a9513d38764d00",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-11T05:55:42.876032+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 853,
+    "completion_tokens": 1830,
+    "total_tokens": 2683,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1630
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "b10cd442-3323-4b49-b5ca-1d9d6de89cdb",
+  "provider_created": 1791698144,
+  "system_fingerprint": null,
+  "response_sha256": "37808403adc2366cc15513000126b53662daecd648b87477cc0b8abd106e99f0",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_031",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Missing or ambiguous fields: horizon_minutes (operator said 'usual' which is not among allowed [60,120,180]); cost_shortfall (operator said 'usual' not among allowed [10.0,20.0,40.0]); explicit task_type not stated but inferred as upward_reserve_sizing. Provide clear horizon_minutes and cost_shortfall. Clarification required for missing or ambiguous study fields; numerical outputs are produced by the verified workflow when relevant. {\"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "Clarification required for missing or ambiguous study fields; numerical outputs are produced by the verified workflow when relevant.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "none",
+    "reason": "Missing or ambiguous fields: horizon_minutes (operator said 'usual' which is not among allowed [60,120,180]); cost_shortfall (operator said 'usual' not among allowed [10.0,20.0,40.0]); explicit task_type not stated but inferred as upward_reserve_sizing. Provide clear horizon_minutes and cost_shortfall.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 18.339884800021537,
+  "request_finished_at": "2026-10-11T05:56:01.215197+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "as-cigzh5ymwy",
+  "object": "chat.completion",
+  "created": 1791733054,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"accept\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request specifies valid region_id (CISO) and horizon_minutes (120) as recognized by the frozen request parser. No raw-data modification or unsupported fields are present.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 536,
+    "completion_tokens": 126,
+    "total_tokens": 662
+  }
+}

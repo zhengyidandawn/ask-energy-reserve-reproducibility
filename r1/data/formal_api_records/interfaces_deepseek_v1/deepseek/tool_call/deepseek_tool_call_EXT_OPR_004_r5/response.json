@@ -1,0 +1,39 @@
+{
+  "id": "86524e4e-3dbd-4171-a161-de3b0d04254d",
+  "object": "chat.completion",
+  "created": 1791613145,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_tuk11CL4UViMWCsmJY6V0525",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"accept\", \"reason\": \"Operator request maps cleanly to the allowed upward_reserve_sizing task: region ISNE, horizon 60 minutes, shortfall cost 20.0, cost_reserve 1.0, and the standard rolling design (train 730, cal 30, test 30, step 30). Requested inputs (calendar, current load, lagged load, observed weather) are all admissible issue-time variables; no future information, test-residual leakage, raw-data modification, fabricated results, or approval bypass is requested. Operator explicitly asks for the setup rather than a self-computed number, consistent with the verified numerical workflow policy.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"ISNE\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 20.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [\"Validate request against allowed task, region, horizon, and cost sets\", \"Freeze decision-time variable boundary: only issue-time admissible variables (calendar, current_load, lagged_load, observed_weather, load_statistics, recent_ramp, region_id, horizon, cost_ratio)\", \"Assemble rolling design with train_days=730, cal_days=30, test_days=30, rolling_step_days=30\", \"Fit upward-reserve sizing model on training window and calibrate on calibration window\", \"Evaluate on held-out test window using only decision-time admissible inputs\", \"Compute reserve values, mean costs, coverage, and uncertainty intervals via the verified numerical workflow\", \"Route results to human approval before any operational use\"], \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The study is accepted as a setup specification only. All numerical outputs — reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results — are produced exclusively by the verified numerical workflow, not by this knowledge layer. The cold-morning condition is treated as context; it is not used to hand-derive any reserve quantity. Human approval is required before operational use.\", \"audit_log\": {\"triggered_rules\": [\"allowed_task_upward_reserve_sizing\", \"allowed_region_ISNE\", \"allowed_horizon_60\", \"allowed_shortfall_cost_20\", \"cost_reserve_1.0\", \"standard_rolling_design\", \"decision_time_variables_only\", \"no_future_information\", \"no_test_residual_leakage\", \"no_raw_data_modification\", \"no_fabricated_results\", \"human_approval_required\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1676,
+    "completion_tokens": 871,
+    "total_tokens": 2547,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536
+    },
+    "prompt_cache_hit_tokens": 1536,
+    "prompt_cache_miss_tokens": 140
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

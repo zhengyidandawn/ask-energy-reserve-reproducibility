@@ -1,0 +1,116 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_REJ_032",
+  "repeat": 1,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_REJ_032",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:02.066358+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "be72ddf70f02ab0c64baf07f9513110f88a5ed282eadf43e531a75367e4c0346",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"reject\",\"fields\":{\"region_id\":\"CISO\",\"horizon_minutes\":45,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The requested 45-minute horizon is unsupported; supported horizons are 60, 120, and 180 minutes.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 45,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The requested 45-minute horizon is unsupported; supported horizons are 60, 120, and 180 minutes.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 389,
+      "completion_tokens": 78,
+      "total_tokens": 467,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 261
+    },
+    "response_sha256": "f1601c181a4fd9e07a23302dc2dbad2947f0441f0bab3e9a2d83b755b5f5c118",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.1680435000453144,
+    "finished_at": "2026-10-11T15:37:03.234030+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_REJ_032",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:02.066358+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "be72ddf70f02ab0c64baf07f9513110f88a5ed282eadf43e531a75367e4c0346",
+    "returned_model": "deepseek-flash",
+    "content": "{\"decision\":\"reject\",\"fields\":{\"region_id\":\"CISO\",\"horizon_minutes\":45,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The requested 45-minute horizon is unsupported; supported horizons are 60, 120, and 180 minutes.\",\"human_approval_required\":true}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 45,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "The requested 45-minute horizon is unsupported; supported horizons are 60, 120, and 180 minutes.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 389,
+      "completion_tokens": 78,
+      "total_tokens": 467,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 261
+    },
+    "response_sha256": "f1601c181a4fd9e07a23302dc2dbad2947f0441f0bab3e9a2d83b755b5f5c118",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.1680435000453144,
+    "finished_at": "2026-10-11T15:37:03.234030+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.1680435000453144,
+  "transport_complete": true
+}

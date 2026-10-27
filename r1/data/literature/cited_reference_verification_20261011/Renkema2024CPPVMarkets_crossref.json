@@ -1,0 +1,521 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          9
+        ]
+      ],
+      "date-time": "2026-10-09T07:23:32Z",
+      "timestamp": 1791530612944,
+      "version": "4.3.4"
+    },
+    "reference-count": 28,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2024-09-01T00:00:00Z",
+          "timestamp": 1725148800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2024-09-01T00:00:00Z",
+          "timestamp": 1725148800000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              6,
+              18
+            ]
+          ],
+          "date-time": "2024-06-18T00:00:00Z",
+          "timestamp": 1718668800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Electric Power Systems Research"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.epsr.2024.110750",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          22
+        ]
+      ],
+      "date-time": "2024-06-22T13:49:13Z",
+      "timestamp": 1719064153000
+    },
+    "page": "110750",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 34,
+    "special_numbering": "C",
+    "title": [
+      "Conformal prediction for stochastic decision-making of PV power in electricity markets"
+    ],
+    "prefix": "10.1016",
+    "volume": "234",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0001-8445-4397",
+        "authenticated-orcid": false,
+        "given": "Yvet",
+        "family": "Renkema",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9973-2890",
+        "authenticated-orcid": false,
+        "given": "Nico",
+        "family": "Brinkel",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1780-4553",
+        "authenticated-orcid": false,
+        "given": "Tarek",
+        "family": "Alskaif",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.epsr.2024.110750_b1",
+        "series-title": "The European power exchange",
+        "author": "EPEX SPOT",
+        "year": "2023"
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.epsr.2024.110750_b2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1009",
+        "DOI": "10.1049/iet-rpg.2018.5649",
+        "article-title": "Review on forecasting of photovoltaic power generation based on machine learning and metaheuristic techniques",
+        "volume": "13",
+        "author": "Akhter",
+        "year": "2019",
+        "journal-title": "IET Renew. Power Gener."
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "60",
+        "DOI": "10.1016/j.solener.2017.11.023",
+        "article-title": "History and trends in solar irradiance and PV power forecasting: A preliminary assessment and review using text mining",
+        "volume": "168",
+        "author": "Yang",
+        "year": "2018",
+        "journal-title": "Sol. Energy"
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b4",
+        "doi-asserted-by": "crossref",
+        "first-page": "1484",
+        "DOI": "10.1016/j.rser.2017.05.212",
+        "article-title": "Review on probabilistic forecasting of photovoltaic power production and electricity consumption",
+        "volume": "81",
+        "author": "Van der Meer",
+        "year": "2018",
+        "journal-title": "Renew. Sustain. Energy Rev."
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b5",
+        "series-title": "Integrating Renewables in Electricity Markets: Operational Problems",
+        "author": "Morales",
+        "year": "2013"
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b6",
+        "series-title": "A gentle introduction to conformal prediction and distribution-free uncertainty quantification",
+        "author": "Angelopoulos",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b7",
+        "series-title": "Conformal and Probabilistic Prediction and Applications",
+        "first-page": "72",
+        "article-title": "Conformal uncertainty sets for robust optimization",
+        "author": "Johnstone",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b8",
+        "series-title": "Proceedings of the Eleventh Symposium on Conformal and Probabilistic Prediction with Applications",
+        "first-page": "169",
+        "article-title": "Robust gas demand forecasting with conformal prediction",
+        "volume": "vol. 179",
+        "author": "Mendil",
+        "year": "2022"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.epsr.2024.110750_b9",
+        "doi-asserted-by": "crossref",
+        "first-page": "178",
+        "DOI": "10.1016/j.ijforecast.2019.04.015",
+        "article-title": "Combining prediction intervals in the M4 competition",
+        "volume": "36",
+        "author": "Grushka-Cockayne",
+        "year": "2020",
+        "journal-title": "Int. J. Forecast."
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b10",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M. Jain, T. AlSkaif, S. Dev, Are deep learning models more effective against traditional models for load demand forecasting?, in: 2022 International Conference on Smart Energy Systems and Technologies, SEST, 2022, pp. 1–6.",
+        "DOI": "10.1109/SEST53650.2022.9898424"
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b11",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1016/j.renene.2021.10.102",
+        "article-title": "Operational day-ahead solar power forecasting for aggregated PV systems with a varying spatial distribution",
+        "volume": "183",
+        "author": "Visser",
+        "year": "2022",
+        "journal-title": "Renew. Energy"
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b12",
+        "first-page": "507",
+        "article-title": "Why do tree-based models still outperform deep learning on typical tabular data?",
+        "volume": "35",
+        "author": "Grinsztajn",
+        "year": "2022",
+        "journal-title": "Adv. Neural Inf. Process. Syst."
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b13",
+        "doi-asserted-by": "crossref",
+        "first-page": "155",
+        "DOI": "10.1007/s10994-014-5453-0",
+        "article-title": "Regression conformal prediction with random forests",
+        "volume": "97",
+        "author": "Johansson",
+        "year": "2014",
+        "journal-title": "Mach. Learn."
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b14",
+        "series-title": "Conformal and Probabilistic Prediction and Applications",
+        "first-page": "24",
+        "article-title": "Mondrian conformal predictive distributions",
+        "author": "Boström",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b15",
+        "series-title": "Conformal and probabilistic prediction and applications",
+        "first-page": "82",
+        "article-title": "Nonparametric predictive distributions based on conformal prediction",
+        "author": "Vovk",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b16",
+        "doi-asserted-by": "crossref",
+        "first-page": "292",
+        "DOI": "10.1016/j.neucom.2019.10.110",
+        "article-title": "Computationally efficient versions of conformal predictive distributions",
+        "volume": "397",
+        "author": "Vovk",
+        "year": "2020",
+        "journal-title": "Neurocomputing"
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b17",
+        "doi-asserted-by": "crossref",
+        "first-page": "250",
+        "DOI": "10.2307/1906813",
+        "article-title": "Optimal inventory policy",
+        "author": "Arrow",
+        "year": "1951",
+        "journal-title": "Econometrica"
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.epsr.2024.110750_b18",
+        "doi-asserted-by": "crossref",
+        "first-page": "909",
+        "DOI": "10.1002/we.1531",
+        "article-title": "Trading wind energy on the basis of probabilistic forecasts both of wind generation and of market quantities",
+        "volume": "16",
+        "author": "Zugno",
+        "year": "2013",
+        "journal-title": "Wind Energy"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.epsr.2024.110750_b19",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.21314/JOR.2000.038",
+        "article-title": "Optimization of conditional value-at-risk",
+        "volume": "2",
+        "author": "Rockafellar",
+        "year": "2000",
+        "journal-title": "J. Risk"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.epsr.2024.110750_b20",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1063/5.0100939",
+        "article-title": "Open-source quality control routine and multi-year power generation data of 175 PV systems",
+        "volume": "14",
+        "author": "Visser",
+        "year": "2022",
+        "journal-title": "J. Renew. Sustain. Energy"
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b21",
+        "doi-asserted-by": "crossref",
+        "first-page": "12",
+        "DOI": "10.1016/j.renene.2020.01.150",
+        "article-title": "A systematic analysis of meteorological variables for PV output power estimation",
+        "volume": "153",
+        "author": "AlSkaif",
+        "year": "2020",
+        "journal-title": "Renew. Energy"
+      },
+      {
+        "issue": "29",
+        "key": "10.1016/j.epsr.2024.110750_b22",
+        "doi-asserted-by": "crossref",
+        "first-page": "884",
+        "DOI": "10.21105/joss.00884",
+        "article-title": "Pvlib python: A python package for modeling solar energy systems",
+        "volume": "3",
+        "author": "Holmgren",
+        "year": "2018",
+        "journal-title": "J. Open Source Softw."
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b23",
+        "series-title": "European centre for medium-range weather forecasts, ECMWF",
+        "author": "ECMWF",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b24",
+        "series-title": "Prices of activated balancing energy legacy",
+        "author": "ENTSO-E",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b25",
+        "series-title": "Export data",
+        "author": "TenneT",
+        "year": "2023"
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b26",
+        "first-page": "1",
+        "article-title": "Crepes: a python package for generating conformal regressors and predictive systems",
+        "volume": "179",
+        "author": "Boström",
+        "year": "2022",
+        "journal-title": "Conformal Probabilistic Predict. Appl."
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b27",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pcbi.1008618",
+        "article-title": "Evaluating epidemic forecasts in an interval format",
+        "volume": "17",
+        "author": "Bracher",
+        "year": "2021",
+        "journal-title": "PLoS Comput. Biol."
+      },
+      {
+        "key": "10.1016/j.epsr.2024.110750_b28",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.segan.2024.101368",
+        "article-title": "Research areas and methods of interest in European intraday electricity market research—A systematic literature review",
+        "author": "Birkeland",
+        "year": "2024",
+        "journal-title": "Sustain. Energy Grids Netw."
+      }
+    ],
+    "container-title": [
+      "Electric Power Systems Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0378779624006369?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0378779624006369?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          7,
+          26
+        ]
+      ],
+      "date-time": "2024-07-26T03:17:10Z",
+      "timestamp": 1721963830000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0378779624006369"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          9
+        ]
+      ]
+    },
+    "references-count": 28,
+    "alternative-id": [
+      "S0378779624006369"
+    ],
+    "URL": "https://doi.org/10.1016/j.epsr.2024.110750",
+    "relation": {},
+    "ISSN": [
+      "0378-7796"
+    ],
+    "issn-type": [
+      {
+        "value": "0378-7796",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          9
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Conformal prediction for stochastic decision-making of PV power in electricity markets",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Electric Power Systems Research",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.epsr.2024.110750",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2024 The Author(s). Published by Elsevier B.V.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "110750"
+  }
+}

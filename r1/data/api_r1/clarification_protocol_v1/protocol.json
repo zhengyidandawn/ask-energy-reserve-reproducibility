@@ -1,0 +1,72 @@
+{
+  "protocol_version": "aei-r1-clarification-v1",
+  "frozen_at": "2026-10-10T06:51:26.601708+00:00",
+  "services": {
+    "deepseek": {
+      "requested_model": "deepseek-chat",
+      "endpoint": "https://api.deepseek.com/v1/chat/completions",
+      "credential_name": "DEEPSEEK_API_KEY",
+      "historical_returned_model": "deepseek-v4-flash"
+    },
+    "qwen": {
+      "requested_model": "qwen-max",
+      "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "credential_name": "DASHSCOPE_API_KEY",
+      "historical_returned_model": "qwen-max"
+    },
+    "ernie": {
+      "requested_model": "ernie-4.5-turbo-32k",
+      "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+      "credential_name": "QIANFAN_API_KEY",
+      "historical_returned_model": "ernie-4.5-turbo-32k"
+    },
+    "hunyuan": {
+      "requested_model": "hy3",
+      "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+      "credential_name": "HUNYUAN_API_KEY",
+      "historical_returned_model": "hy3-preview"
+    }
+  },
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "timeout_seconds": 120,
+  "initial_concurrency_per_service": 3,
+  "maximum_concurrency_per_service": 10,
+  "independent_repeats": 5,
+  "automatic_retries": 0,
+  "primary_inference_unit": "unique_request_text_cluster",
+  "bootstrap_draws": 3000,
+  "bootstrap_seed": 20261010,
+  "pairwise_test": "paired_cluster_sign_permutation",
+  "multiplicity": "Holm over six service pairs within each endpoint and packet",
+  "test_failures_count_as_failures": true,
+  "developer_smoke_excluded_from_formal_scores": true,
+  "historical_model_identifiers_preserved": true,
+  "human_time_measure": "estimated_minutes_reported_separately_from_API_latency",
+  "form_reference": "expert-entered study fields on the 24 matched requests; human transcription required",
+  "api_cost_measure": "provider usage retained; billed amount reported only if provided by provider or billing record",
+  "cases": [
+    "EXT_OPR_021",
+    "EXT_OPR_022",
+    "EXT_OPR_023",
+    "EXT_OPR_024",
+    "EXT_OPR_025",
+    "EXT_OPR_026",
+    "EXT_OPR_027",
+    "EXT_OPR_028",
+    "EXT_OPR_029",
+    "EXT_OPR_030",
+    "EXT_OPR_031",
+    "EXT_OPR_032",
+    "EXT_OPR_035",
+    "EXT_OPR_036"
+  ],
+  "answer_source": "scripted analyst confirmation, not observed operator dialogue",
+  "initial_trial_source": "repeated_four_services_v1, five responses per case and service",
+  "turns": "original request, saved service response, scripted confirmation, new service response",
+  "initial_response_not_dropped_when_wrong": true,
+  "terminal_scoring": "confirmed request under unchanged validation rules"
+}

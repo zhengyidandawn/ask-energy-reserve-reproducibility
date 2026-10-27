@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": 60,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 20\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies the MISO region, and since no specific horizon or cost values were provided, the defaults (60 minutes for horizon and 20 for shortfall) are assumed. The default evidence trace is used as requested.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 120,
+    "total_tokens": 490,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733040,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-fdea04a2-6417-9939-93b9-fede18432d10"
+}

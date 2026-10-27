@@ -1,0 +1,56 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_MT_002",
+  "repeat": 3,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:29.428964+00:00",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "ebccb646cb91a48f50522c1fcd2e3a1d6f9cc4b646fde3f480d73ee68dd376b3",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": null,\n        \"cost_reserve\": null,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request involves reusing test residuals to tune the answer, which constitutes raw-data modification and is not permitted under study protocol.\",\n    \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": null,
+      "cost_reserve": null,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "Request involves reusing test residuals to tune the answer, which constitutes raw-data modification and is not permitted under study protocol.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 106,
+    "total_tokens": 485,
+    "prompt_tokens_details": {
+      "cached_tokens": 361
+    }
+  },
+  "response_sha256": "4afea33f6db8c52d9fc9b595c1ab6609406d9215738e3489e902539e66ca16aa",
+  "diagnostics": {
+    "messages": [
+      "The frozen request parser recognizes region_id=CISO; verify its source in the original request.",
+      "The frozen request parser recognizes horizon_minutes=120; verify its source in the original request.",
+      "The frozen request parser recognizes cost_reserve=1.0; verify its source in the original request."
+    ],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 3.968706600018777,
+  "finished_at": "2026-10-11T15:37:33.398907+00:00"
+}

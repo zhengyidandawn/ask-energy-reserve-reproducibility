@@ -1,0 +1,22 @@
+{
+  "id": "as-dn0dd7mb49",
+  "object": "chat.completion",
+  "created": 1791614961,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"广东那边一小时向上备用帮我排上，缺了按二十罚。研究怎么做写清楚就行，别现在甩数字过来。\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        }\n    ],\n    \"explanation\": \"The operator request contains an unsupported region ('广东' is not in the allowed regions list) and lacks specific required parameters for reserve sizing study configuration.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Region '广东' is not in the allowed regions list ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. The request also lacks required parameters such as task_type, region_id, horizon_minutes, cost_reserve, cost_shortfall, and rolling_window configuration.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 699,
+    "completion_tokens": 393,
+    "total_tokens": 1092
+  }
+}

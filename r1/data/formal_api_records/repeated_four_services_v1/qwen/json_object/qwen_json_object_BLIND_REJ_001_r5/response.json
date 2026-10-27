@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"future_information_prohibited\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to use tomorrow's realized load is not allowed as it involves future information, which is strictly prohibited. Numerical outputs are produced by the verified workflow, and no part of the input data can include future or forecasted data beyond the issue-time.\",\n  \"forbidden_variables\": [\"future_load\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Use of future information (tomorrow's realized load) is not permitted. The study must rely on available and admissible variables at the time of decision making, without knowledge of future events or data.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 189,
+    "total_tokens": 825,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614134,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-e972c3e5-e465-93be-b9d5-555dfb76d6b5"
+}

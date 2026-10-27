@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"数值输出将由经过验证的工作流生成，但目前需要澄清一些细节。\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"\",\n  \"reason\": \"时域（horizon）不明确。请指定具体的分钟数，比如60、120或180分钟。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 130,
+    "total_tokens": 774,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613508,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-edbe4531-90d3-9aa3-ad1a-4245366b1fd9"
+}

@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_012",
+  "repeat": 0,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_CLAR_012",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:53.881811+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "e8070584da6b434a011065cd9d67b367f90032769da35687e9fcb4e32fd4a4a9",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please specify region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP), horizon_minutes from (60, 120, 180), and cost_shortfall from (10, 20, 40). The terms 'normal horizon' and 'normal penalty' are not mapped to supported explicit values, and region was deferred.\", \"reason\": \"Explicit study fields are unresolved or conflicting: region_id deferred, horizon_minutes and cost_shortfall described as 'normal' which do not map to supported numeric values (horizons 60,120,180; shortfall weights 10,20,40). Clarification required when explicit study fields are unresolved.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Please specify region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP), horizon_minutes from (60, 120, 180), and cost_shortfall from (10, 20, 40). The terms 'normal horizon' and 'normal penalty' are not mapped to supported explicit values, and region was deferred.",
+      "reason": "Explicit study fields are unresolved or conflicting: region_id deferred, horizon_minutes and cost_shortfall described as 'normal' which do not map to supported numeric values (horizons 60,120,180; shortfall weights 10,20,40). Clarification required when explicit study fields are unresolved.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 374,
+      "completion_tokens": 1705,
+      "total_tokens": 2079,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1505
+      }
+    },
+    "response_sha256": "4596915bad406f63c8809b3fb7a21e975b367e3f7aa9fdf546acb41c4ab3c2fc",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 15.901025799917988,
+    "finished_at": "2026-10-11T15:37:09.782471+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_CLAR_012",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:53.881811+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "e8070584da6b434a011065cd9d67b367f90032769da35687e9fcb4e32fd4a4a9",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please specify region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP), horizon_minutes from (60, 120, 180), and cost_shortfall from (10, 20, 40). The terms 'normal horizon' and 'normal penalty' are not mapped to supported explicit values, and region was deferred.\", \"reason\": \"Explicit study fields are unresolved or conflicting: region_id deferred, horizon_minutes and cost_shortfall described as 'normal' which do not map to supported numeric values (horizons 60,120,180; shortfall weights 10,20,40). Clarification required when explicit study fields are unresolved.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Please specify region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP), horizon_minutes from (60, 120, 180), and cost_shortfall from (10, 20, 40). The terms 'normal horizon' and 'normal penalty' are not mapped to supported explicit values, and region was deferred.",
+      "reason": "Explicit study fields are unresolved or conflicting: region_id deferred, horizon_minutes and cost_shortfall described as 'normal' which do not map to supported numeric values (horizons 60,120,180; shortfall weights 10,20,40). Clarification required when explicit study fields are unresolved.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 374,
+      "completion_tokens": 1705,
+      "total_tokens": 2079,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1505
+      }
+    },
+    "response_sha256": "4596915bad406f63c8809b3fb7a21e975b367e3f7aa9fdf546acb41c4ab3c2fc",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 15.901025799917988,
+    "finished_at": "2026-10-11T15:37:09.782471+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 15.901025799917988,
+  "transport_complete": true
+}

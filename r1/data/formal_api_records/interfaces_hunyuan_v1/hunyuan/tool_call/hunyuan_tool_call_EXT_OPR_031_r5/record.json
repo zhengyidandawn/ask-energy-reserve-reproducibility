@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_031_r5",
+  "case_id": "EXT_OPR_031",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 5,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "31973a382636a7b797d9a4447c7a5f02c432dc58a3b11e2ec8dc3d6314827101",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:30:21.482399+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1491,
+    "completion_tokens": 1227,
+    "total_tokens": 2718,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1012
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "07516e0f-7b7f-442a-aca4-2dd74af7cdc3",
+  "provider_created": 1791621022,
+  "system_fingerprint": null,
+  "response_sha256": "9cf4c7f00389451c47770d16e0755971ea8c2b6e976226ab0a453946b6ee7f6a",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_031",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Region MISO and the fixed rolling-window procedure are specified, but two required schema fields are ambiguous: horizon_minutes is given as 'usual' (must be one of 60, 120, 180 minutes) and cost_shortfall is given as 'usual' (must be one of 10.0, 20.0, 40.0). These values must be explicitly selected before the study can be accepted. Numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced exclusively by the verified numerical workflow; this kernel only validates the study schema and does not compute them. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "Region MISO and the fixed rolling-window procedure are specified, but two required schema fields are ambiguous: horizon_minutes is given as 'usual' (must be one of 60, 120, 180 minutes) and cost_shortfall is given as 'usual' (must be one of 10.0, 20.0, 40.0). These values must be explicitly selected before the study can be accepted.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "Numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced exclusively by the verified numerical workflow; this kernel only validates the study schema and does not compute them.",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 8.7365601999918,
+  "request_finished_at": "2026-10-10T08:30:30.218957+00:00"
+}

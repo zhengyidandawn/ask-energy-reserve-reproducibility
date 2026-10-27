@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 20\n  },\n  \"clarification_question\": \"Could you please specify the horizon in minutes (60, 120, or 180) for your request?\",\n  \"reason\": \"The schema is invalid due to the unspecified horizon_minutes. The region_id and cost_shortfall are correctly provided, but a valid horizon is required to proceed.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 528,
+    "completion_tokens": 130,
+    "total_tokens": 658,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733038,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-05ce6f6f-6873-9563-9df6-e559b827db69"
+}

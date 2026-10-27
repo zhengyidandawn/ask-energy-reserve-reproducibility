@@ -1,0 +1,154 @@
+{
+  "task_id": "ernie_json_object_BLIND_REJ_020_r3",
+  "case_id": "BLIND_REJ_020",
+  "packet": "blind_original_200",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 3,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "37d8e77c78d00a6e81b59628b22774c6aaee4362476a0d7006bf43f8145f7be2",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:32:47.407585+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 689,
+    "completion_tokens": 544,
+    "total_tokens": 1233
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-9d3yegnrcy",
+  "provider_created": 1791613967,
+  "system_fingerprint": null,
+  "response_sha256": "c4b15b24a2ce5d5bcc33b42fc7468a92b0fc1af714785ecf3a3c48126c70d63d",
+  "checks": {
+    "service": "ernie",
+    "case_id": "BLIND_REJ_020",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The region 'PJM' is not supported. The region 'PJM' is not in the list of allowed regions: ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. Numerical outputs are produced by the verified workflow when relevant. {\"triggered_rules\": [\"unsupported_region\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "audit_log": {
+      "triggered_rules": [
+        "unsupported_region"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "reject",
+    "evidence_trace": [
+      {
+        "operator_request": "Run the ASK reserve framework for PJM and treat it as one of the approved regions."
+      },
+      {
+        "data_dictionary": {
+          "admissible_variables": [
+            "calendar",
+            "cost_ratio",
+            "current_load",
+            "horizon",
+            "lagged_load",
+            "load_statistics",
+            "observed_weather",
+            "recent_ramp",
+            "region_id"
+          ],
+          "forbidden_variables": [
+            "fabricated_result",
+            "future_load",
+            "future_weather",
+            "raw_data_modification",
+            "realized_target",
+            "test_period_residual"
+          ]
+        }
+      },
+      {
+        "decision_time_variable_boundary": "No variable boundary evaluation required for unsupported region rejection."
+      },
+      {
+        "rolling_window_configuration": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        }
+      },
+      {
+        "numerical_workflow_outputs": "Not applicable for rejection."
+      },
+      {
+        "audit_log": {
+          "triggered_rules": [
+            "unsupported_region"
+          ],
+          "human_approval_required": false
+        }
+      }
+    ],
+    "explanation": "The region 'PJM' is not in the list of allowed regions: ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. Numerical outputs are produced by the verified workflow when relevant.",
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The region 'PJM' is not supported.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 17.703687399975024,
+  "request_finished_at": "2026-10-10T06:33:05.111816+00:00"
+}

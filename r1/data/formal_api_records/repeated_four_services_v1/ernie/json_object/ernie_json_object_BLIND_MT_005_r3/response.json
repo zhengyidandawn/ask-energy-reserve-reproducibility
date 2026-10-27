@@ -1,0 +1,25 @@
+{
+  "id": "as-b1ivydvqjk",
+  "object": "chat.completion",
+  "created": 1791614075,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"triggered_rules\": [\n            \"clarification_required\",\n            \"unsupported_generalization_claim\",\n            \"missing_region_specification\"\n        ],\n        \"human_approval_required\": false\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Earlier turn: SPP standard validation. New turn: claim it proves universal cross-region generalization.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        }\n    ],\n    \"explanation\": \"The operator request lacks a specific region and contains an unsupported generalization claim. Numerical outputs are produced by the verified workflow only after valid schema parameters are provided.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": [\n        \"Missing region_id specification\",\n        \"Ambiguous claim of universal cross-region generalization without supporting evidence\",\n        \"No valid horizon_minutes or cost parameters provided\"\n    ],\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 313,
+    "total_tokens": 1004,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

@@ -1,0 +1,428 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          11
+        ]
+      ],
+      "date-time": "2026-10-11T02:10:32Z",
+      "timestamp": 1791684632629,
+      "version": "4.3.4"
+    },
+    "publisher-location": "New York, NY, USA",
+    "reference-count": 25,
+    "publisher": "ACM",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              8,
+              13
+            ]
+          ],
+          "date-time": "2017-08-13T00:00:00Z",
+          "timestamp": 1502582400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 365,
+        "URL": "http://www.acm.org/publications/policies/copyright_policy#Background"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000006",
+        "name": "Office of Naval Research",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "N000141010672"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "N000141010672"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000006",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "1258741"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "1258741"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "dl.acm.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          13
+        ]
+      ]
+    },
+    "DOI": "10.1145/2939672.2939785",
+    "type": "proceedings-article",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          8
+        ]
+      ],
+      "date-time": "2016-08-08T14:33:46Z",
+      "timestamp": 1470666826000
+    },
+    "page": "785-794",
+    "update-policy": "https://doi.org/10.1145/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 49163,
+    "title": [
+      "XGBoost"
+    ],
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Tianqi",
+        "family": "Chen",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Washington, Seattle, WA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Carlos",
+        "family": "Guestrin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Washington, Seattle, WA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          13
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_3_2_2_1_1",
+        "unstructured": "R. Bekkerman. The present and the future of the kdd cup competition: an outsider's perspective."
+      },
+      {
+        "key": "e_1_3_2_2_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/2124408"
+      },
+      {
+        "key": "e_1_3_2_2_3_1",
+        "first-page": "3",
+        "volume-title": "Proceedings of the KDD Cup Workshop 2007",
+        "author": "Bennett J.",
+        "year": "2007",
+        "unstructured": "J. Bennett and S. Lanning. The netflix prize. In Proceedings of the KDD Cup Workshop 2007, pages 3--6, New York, Aug. 2007."
+      },
+      {
+        "key": "e_1_3_2_2_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1010933404324"
+      },
+      {
+        "key": "e_1_3_2_2_5_1",
+        "first-page": "23",
+        "article-title": "From ranknet to lambdarank to lambdamart: An overview",
+        "volume": "11",
+        "author": "Burges C.",
+        "year": "2010",
+        "unstructured": "C. Burges. From ranknet to lambdarank to lambdamart: An overview. Learning, 11:23--581, 2010.",
+        "journal-title": "Learning"
+      },
+      {
+        "key": "e_1_3_2_2_6_1",
+        "volume-title": "Yahoo! Learning to Rank Challenge Overview. Journal of Machine Learning Research - W & CP, 14:1--24",
+        "author": "Chapelle O.",
+        "year": "2011",
+        "unstructured": "O. Chapelle and Y. Chang. Yahoo! Learning to Rank Challenge Overview. Journal of Machine Learning Research - W & CP, 14:1--24, 2011."
+      },
+      {
+        "key": "e_1_3_2_2_7_1",
+        "first-page": "436",
+        "volume-title": "Proceeding of 30th International Conference on Machine Learning (ICML'13)",
+        "volume": "1",
+        "author": "Chen T.",
+        "year": "2013",
+        "unstructured": "T. Chen, H. Li, Q. Yang, and Y. Yu. General functional matrix factorization using gradient boosting. In Proceeding of 30th International Conference on Machine Learning (ICML'13), volume 1, pages 436--444, 2013."
+      },
+      {
+        "key": "e_1_3_2_2_8_1",
+        "volume-title": "Proceeding of 18th Artificial Intelligence and Statistics Conference (AISTATS'15)",
+        "volume": "1",
+        "author": "Chen T.",
+        "year": "2015",
+        "unstructured": "T. Chen, S. Singh, B. Taskar, and C. Guestrin. Efficient second-order gradient boosting for conditional random fields. In Proceeding of 18th Artificial Intelligence and Statistics Conference (AISTATS'15), volume 1, 2015."
+      },
+      {
+        "key": "e_1_3_2_2_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/1390681.1442794"
+      },
+      {
+        "key": "e_1_3_2_2_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/aos/1013203451"
+      },
+      {
+        "key": "e_1_3_2_2_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0167-9473(01)00065-2"
+      },
+      {
+        "key": "e_1_3_2_2_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/aos/1016218223"
+      },
+      {
+        "key": "e_1_3_2_2_13_1",
+        "volume-title": "Importance sampled learning ensembles",
+        "author": "Friedman J. H.",
+        "year": "2003",
+        "unstructured": "J. H. Friedman and B. E. Popescu. Importance sampled learning ensembles, 2003."
+      },
+      {
+        "key": "e_1_3_2_2_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/375663.375670"
+      },
+      {
+        "key": "e_1_3_2_2_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2648584.2648589"
+      },
+      {
+        "key": "e_1_3_2_2_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/3023549.3023585"
+      },
+      {
+        "key": "e_1_3_2_2_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/2981562.2981675"
+      },
+      {
+        "key": "e_1_3_2_2_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/2946645.2946679"
+      },
+      {
+        "key": "e_1_3_2_2_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14778/1687553.1687569"
+      },
+      {
+        "key": "e_1_3_2_2_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5555/1953048.2078195"
+      },
+      {
+        "key": "e_1_3_2_2_21_1",
+        "unstructured": "G. Ridgeway. Generalized Boosted Models: A guide to the gbm package."
+      },
+      {
+        "key": "e_1_3_2_2_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1963405.1963461"
+      },
+      {
+        "key": "e_1_3_2_2_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1645953.1646301"
+      },
+      {
+        "key": "e_1_3_2_2_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SSDBM.2007.27"
+      },
+      {
+        "issue": "5",
+        "key": "e_1_3_2_2_25_1",
+        "article-title": "Learning nonlinear functions using regularized greedy forest",
+        "volume": "36",
+        "author": "Zhang T.",
+        "year": "2014",
+        "unstructured": "T. Zhang and R. Johnson. Learning nonlinear functions using regularized greedy forest. IEEE Transactions on Pattern Analysis and Machine Intelligence, 36(5), 2014.",
+        "journal-title": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+      }
+    ],
+    "event": {
+      "name": "KDD '16: The 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining",
+      "location": "San Francisco California USA",
+      "acronym": "KDD '16",
+      "sponsor": [
+        "SIGMOD ACM Special Interest Group on Management of Data",
+        "SIGKDD ACM Special Interest Group on Knowledge Discovery in Data"
+      ]
+    },
+    "container-title": [
+      "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://dl.acm.org/doi/10.1145/2939672.2939785",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/2939672.2939785",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://dl.acm.org/doi/pdf/10.1145/2939672.2939785",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          18
+        ]
+      ],
+      "date-time": "2025-11-18T09:38:23Z",
+      "timestamp": 1763458703000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dl.acm.org/doi/10.1145/2939672.2939785"
+      }
+    },
+    "subtitle": [
+      "A Scalable Tree Boosting System"
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          13
+        ]
+      ]
+    },
+    "references-count": 25,
+    "alternative-id": [
+      "10.1145/2939672.2939785",
+      "10.1145/2939672"
+    ],
+    "URL": "https://doi.org/10.1145/2939672.2939785",
+    "relation": {
+      "is-referenced-by": [
+        {
+          "id-type": "doi",
+          "id": "10.1186/s13007-026-01545-2",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.1007/s43621-026-03407-2",
+          "asserted-by": "object"
+        }
+      ],
+      "has-part": [
+        {
+          "id-type": "doi",
+          "id": "10.5194/acp-20-8063-2020",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          8,
+          13
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2016-08-13",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  }
+}

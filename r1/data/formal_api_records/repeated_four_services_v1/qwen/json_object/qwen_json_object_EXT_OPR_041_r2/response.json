@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"approval_bypass_attempt\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to auto-issue the reserve and skip the human review is not allowed. All studies require human approval before final issuance, as per the defined study policies.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator attempted to bypass the required human approval step, which is not permissible within the established guidelines of the study policy.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 651,
+    "completion_tokens": 151,
+    "total_tokens": 802,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612936,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-8ad65118-0eb5-9bd5-bc24-454a266284b2"
+}

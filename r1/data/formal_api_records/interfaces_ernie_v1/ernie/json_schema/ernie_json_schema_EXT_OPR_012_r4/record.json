@@ -1,0 +1,117 @@
+{
+  "task_id": "ernie_json_schema_EXT_OPR_012_r4",
+  "case_id": "EXT_OPR_012",
+  "packet": "independently_authored_48",
+  "service": "ernie",
+  "interface": "json_schema",
+  "repeat": 4,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "1a5744b128b33962b8c7b4d36cea36f0f688da5f6ca7f7e7f277b0723aed4f31",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:58:13.656471+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 698,
+    "completion_tokens": 599,
+    "total_tokens": 1297,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-pm1iyd9vjw",
+  "provider_created": 1791615494,
+  "system_fingerprint": null,
+  "response_sha256": "d367b245ffab8ace9be6da30aa302b6af463f901bc596a4c448507e0c5868bac",
+  "checks": {
+    "service": "ernie",
+    "case_id": "EXT_OPR_012",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Invalid cost_shortfall value (100 not in [10.0, 20.0, 40.0]); region_id must be one of ['CISO', 'ERCOT', 'GD', 'ISNE', 'MISO', 'SWPP'] (ERCO is not valid); potential implied use of future information. The request was rejected due to invalid cost_shortfall value (100 not in [10.0, 20.0, 40.0]), unsupported region abbreviation (ERCO instead of ERCOT is not a validation error but cost_shortfall is), and implied use of future information (though none was explicitly detected, the phrasing suggested potential forward-looking assumptions). Numerical outputs must be computed by the verified workflow only after valid parameters are provided. {\"human_approval_required\": true, \"triggered_rules\": [\"region_id_validation\", \"horizon_validation\", \"cost_shortfall_validation\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "region_id_validation",
+        "horizon_validation",
+        "cost_shortfall_validation"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [
+      "operator_request: '得把ERCOT三小时那档备上，缺额罚十倍那种。研究入口先收，数后面算。'",
+      "data_dictionary: 'region_id=ERCO, horizon_minutes=180, cost_shortfall=100 (10x10), cost_reserve=1'",
+      "decision_time_variable_boundary: 'No future information or unavailable forecasts used'",
+      "rolling_window_configuration: 'train_days=730, cal_days=30, test_days=30, rolling_step_days=30'",
+      "numerical_workflow_outputs: 'Not computed due to rejection'",
+      "audit_log: 'See triggered_rules for rejection reasons'"
+    ],
+    "explanation": "The request was rejected due to invalid cost_shortfall value (100 not in [10.0, 20.0, 40.0]), unsupported region abbreviation (ERCO instead of ERCOT is not a validation error but cost_shortfall is), and implied use of future information (though none was explicitly detected, the phrasing suggested potential forward-looking assumptions). Numerical outputs must be computed by the verified workflow only after valid parameters are provided.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Invalid cost_shortfall value (100 not in [10.0, 20.0, 40.0]); region_id must be one of ['CISO', 'ERCOT', 'GD', 'ISNE', 'MISO', 'SWPP'] (ERCO is not valid); potential implied use of future information.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 22.215894200024195,
+  "request_finished_at": "2026-10-10T06:58:35.872358+00:00"
+}

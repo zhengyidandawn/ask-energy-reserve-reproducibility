@@ -1,0 +1,22 @@
+{
+  "id": "as-az64f42mwa",
+  "object": "chat.completion",
+  "created": 1791716136,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"study\": null,\n    \"missing_fields\": [\n        \"feature_mode\",\n        \"reporting\",\n        \"human_authorization_required\"\n    ],\n    \"reason\": \"Please specify the feature_mode (full or history_calendar), reporting (standard or tail), and confirm human_authorization_required (true).\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 306,
+    "completion_tokens": 86,
+    "total_tokens": 392
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-52hgp0vyid",
+  "object": "chat.completion",
+  "created": 1791733052,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": null,\n        \"cost_reserve\": null,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request involves reusing test residuals to tune the answer, which constitutes raw-data modification and is not permitted under study protocol.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 106,
+    "total_tokens": 485,
+    "prompt_tokens_details": {
+      "cached_tokens": 361
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_MIX_014",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:31.510042+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "57c3b23f35e6161101d4c0d3ebf12019956b7c868b5f5e3dbccdc0d34dfd7ddd",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"您能具体说明一下想使用的预测时间范围（60、120 或 180 分钟）和短缺成本权重（10、20 或 40）吗？这将帮助我们更准确地配置您的请求。\",\n  \"reason\": \"horizon_minutes 和 cost_shortfall 参数需要明确指定以完成 JSON 的构建。\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "MISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "您能具体说明一下想使用的预测时间范围（60、120 或 180 分钟）和短缺成本权重（10、20 或 40）吗？这将帮助我们更准确地配置您的请求。",
+    "reason": "horizon_minutes 和 cost_shortfall 参数需要明确指定以完成 JSON 的构建。",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 140,
+    "total_tokens": 519,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "06d97f182ee783da726a866c5cc8614d10768d5f727f864f8b225049b0d06370",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 4.489579500048421,
+  "finished_at": "2026-10-11T15:37:36.000193+00:00"
+}

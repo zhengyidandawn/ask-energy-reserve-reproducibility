@@ -1,0 +1,38 @@
+{
+  "case_id": "SF-13",
+  "service": "qwen",
+  "repeat": 4,
+  "phase": "initial",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:55:39.300732+00:00",
+  "status": "success",
+  "request_sha256": "3bbc166d0a1965716e5d7d985d722471add7a82833a7c6e9838e1b3fab315aa7",
+  "returned_model": "qwen-max",
+  "usage": {
+    "prompt_tokens": 313,
+    "completion_tokens": 46,
+    "total_tokens": 359,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "content": "{\n  \"decision\": \"reject\",\n  \"study\": null,\n  \"missing_fields\": [],\n  \"reason\": \"The request includes future realized load, which is not supported. Please revise the request without this requirement.\"\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "study": null,
+    "missing_fields": [],
+    "reason": "The request includes future realized load, which is not supported. Please revise the request without this requirement."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "future_information"
+    ]
+  },
+  "response_sha256": "40ac2f3b9bb6cbbbb9d63225c7befc164a86fb9c1cf132d71c245c44a543cd67",
+  "latency_seconds": 1.4723869999870658,
+  "request_finished_at": "2026-10-11T10:55:40.773952+00:00"
+}

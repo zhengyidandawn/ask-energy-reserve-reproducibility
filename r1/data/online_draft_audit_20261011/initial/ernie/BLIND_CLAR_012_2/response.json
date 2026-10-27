@@ -1,0 +1,22 @@
+{
+  "id": "as-1sdsrhkpcx",
+  "object": "chat.completion",
+  "created": 1791733005,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"Please specify the region_id (GD, ERCO, CISO, ISNE, MISO, SWPP) and confirm the cost_shortfall (10, 20, or 40).\",\n    \"reason\": \"The region_id is required but not provided, and the cost_shortfall is not specified.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 150,
+    "total_tokens": 522
+  }
+}

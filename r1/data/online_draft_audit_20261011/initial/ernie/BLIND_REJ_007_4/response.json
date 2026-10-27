@@ -1,0 +1,25 @@
+{
+  "id": "as-i3sqsa7hgv",
+  "object": "chat.completion",
+  "created": 1791733088,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": null,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request involves modification of raw data, which is not permitted under study protocol.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 99,
+    "total_tokens": 470,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

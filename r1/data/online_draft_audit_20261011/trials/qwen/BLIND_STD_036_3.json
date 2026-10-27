@@ -1,0 +1,108 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_STD_036",
+  "repeat": 3,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_STD_036",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:14.122397+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "29fd959194e80eaa93a87e4b73cc132a29b970e047ca31d2e16374c9cf24b9a6",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region (ERCO), a supported horizon (120 minutes), and a supported shortfall cost (40). The cost_reserve is fixed at 1 as per the study protocol. No numerical results are provided in the request, which is consistent with the user's statement that these will be computed later in the numerical workflow.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a valid region (ERCO), a supported horizon (120 minutes), and a supported shortfall cost (40). The cost_reserve is fixed at 1 as per the study protocol. No numerical results are provided in the request, which is consistent with the user's statement that these will be computed later in the numerical workflow.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 145,
+      "total_tokens": 536,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "0ea236e59cde777df8acc6b11759a59536d8b09c458aa6f1c9ce5f53ef97f6b6",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.6209159999853,
+    "finished_at": "2026-10-11T15:38:17.743774+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_STD_036",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:14.122397+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "29fd959194e80eaa93a87e4b73cc132a29b970e047ca31d2e16374c9cf24b9a6",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region (ERCO), a supported horizon (120 minutes), and a supported shortfall cost (40). The cost_reserve is fixed at 1 as per the study protocol. No numerical results are provided in the request, which is consistent with the user's statement that these will be computed later in the numerical workflow.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a valid region (ERCO), a supported horizon (120 minutes), and a supported shortfall cost (40). The cost_reserve is fixed at 1 as per the study protocol. No numerical results are provided in the request, which is consistent with the user's statement that these will be computed later in the numerical workflow.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 145,
+      "total_tokens": 536,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "0ea236e59cde777df8acc6b11759a59536d8b09c458aa6f1c9ce5f53ef97f6b6",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.6209159999853,
+    "finished_at": "2026-10-11T15:38:17.743774+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 3.6209159999853,
+  "transport_complete": true
+}

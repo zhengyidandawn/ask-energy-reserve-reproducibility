@@ -1,0 +1,9 @@
+method,requests,trials,decision_accuracy,field_accuracy,unsafe_ready,false_clarification,time_value,time_unit
+EXP-1,24,24,1.0,1.0,0,0,3.029166666666667,estimated minutes
+EXP-2,24,24,1.0,1.0,0,0,2.9291666666666667,estimated minutes
+EXP-3,24,24,1.0,0.825,0,0,3.2541666666666664,estimated minutes
+Deterministic parser,24,24,1.0,0.5,0,0,0.2771500148810446,measured milliseconds
+deepseek,24,120,0.7916666666666666,0.75,0,0,2.1341906000161543,measured seconds
+qwen,24,120,0.7666666666666667,0.545,0,0,5.83362875005696,measured seconds
+ernie,24,120,0.5583333333333333,0.595,0,0,16.30140619992744,measured seconds
+hunyuan,24,120,0.575,0.39,0,0,21.372023850039113,measured seconds

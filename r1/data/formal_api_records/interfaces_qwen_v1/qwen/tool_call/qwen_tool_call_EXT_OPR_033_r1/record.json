@@ -1,0 +1,108 @@
+{
+  "task_id": "qwen_tool_call_EXT_OPR_033_r1",
+  "case_id": "EXT_OPR_033",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "tool_call",
+  "repeat": 1,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "bca846dde0f99e07b6c02fbdf0d8382a5a8978dac0bfeb09897fec1c1c1b521d",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:09:28.374303+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1520,
+    "completion_tokens": 225,
+    "total_tokens": 1745,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-25c9e4f1-30fe-9ae0-b406-98ca5bba2b70",
+  "provider_created": 1791616176,
+  "system_fingerprint": null,
+  "response_sha256": "0a8af625e9253180535e66c986edf922d6b5ded038fa54739e21ce2bb71290c3",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_033",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": false,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "请求中的滚动窗口时间（45分钟）与支持的时间范围不匹配，需要明确是使用最接近的允许值还是有其他意图。 由于要求的窗口时间45分钟不在允许的范围[60, 120, 180]内，因此需要进一步澄清。数值输出将由经过验证的工作流程生成。 {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": false,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": true
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "由于要求的窗口时间45分钟不在允许的范围[60, 120, 180]内，因此需要进一步澄清。数值输出将由经过验证的工作流程生成。",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "请求中的滚动窗口时间（45分钟）与支持的时间范围不匹配，需要明确是使用最接近的允许值还是有其他意图。",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 6.765608999994583,
+  "request_finished_at": "2026-10-10T07:09:35.139471+00:00"
+}

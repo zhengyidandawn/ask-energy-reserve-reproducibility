@@ -1,0 +1,25 @@
+{
+  "id": "as-0h3j61acp2",
+  "object": "chat.completion",
+  "created": 1791612981,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"future_information_prohibited\"]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Use tomorrow's realized load for CAISO (CISO) to size the next-hour reserve.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": \"No valid issue-time forecasts or realized data boundary established due to future information request.\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": [\"future_information_prohibited\"]\n            }\n        }\n    ],\n    \"explanation\": \"The request uses future realized load data ('tomorrow's realized load'), which is prohibited. Reserve sizing must rely on issue-time forecasts or historical data, not future outcomes.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Future information ('tomorrow's realized load') violates the rule against using unavailable issue-time forecasts or future data.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 693,
+    "completion_tokens": 463,
+    "total_tokens": 1156,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

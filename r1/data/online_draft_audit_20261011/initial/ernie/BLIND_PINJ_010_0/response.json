@@ -1,0 +1,25 @@
+{
+  "id": "as-253hzh5p89",
+  "object": "chat.completion",
+  "created": 1791733078,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"Please specify the region (GD, ERCO, CISO, ISNE, MISO, SWPP), horizon in minutes (60, 120, 180), and shortfall cost weight (10, 20, 40) for the energy study.\",\n    \"reason\": \"The request lacks explicit specification of region, horizon, and shortfall cost weight, which are required for the energy study.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 168,
+    "total_tokens": 534,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

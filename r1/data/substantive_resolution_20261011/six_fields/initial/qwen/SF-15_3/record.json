@@ -1,0 +1,41 @@
+{
+  "case_id": "SF-15",
+  "service": "qwen",
+  "repeat": 3,
+  "phase": "initial",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:55:45.853122+00:00",
+  "status": "success",
+  "request_sha256": "f81e2c738d24da8311ff82e511e465d240b4161966776afd613cd985e516e5a8",
+  "returned_model": "qwen-max",
+  "usage": {
+    "prompt_tokens": 304,
+    "completion_tokens": 66,
+    "total_tokens": 370,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "content": "{\n  \"decision\": \"clarify\",\n  \"study\": null,\n  \"missing_fields\": [\"horizon_minutes\", \"reporting\"],\n  \"reason\": \"Please specify a supported horizon (60, 120, or 180 minutes) and the reporting type (standard or tail).\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "horizon_minutes",
+      "reporting"
+    ],
+    "reason": "Please specify a supported horizon (60, 120, or 180 minutes) and the reporting type (standard or tail)."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "unsupported_horizon"
+    ]
+  },
+  "response_sha256": "66bfed9e20cfaefd90d9cd4c8415705953be5e8fbfa93fca208ff8b0a71443f2",
+  "latency_seconds": 1.7863414000021294,
+  "request_finished_at": "2026-10-11T10:55:47.639218+00:00"
+}

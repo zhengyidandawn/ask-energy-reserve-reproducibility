@@ -1,0 +1,52 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_REJ_007",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:57.202440+00:00",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "8027675f88fabcf3a4e881c39a94ec6d135f518dd076bcc9c8bbc38f153a636c",
+  "returned_model": "qwen-max",
+  "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request involves modifying raw demand data, which is not allowed. The study must use observed load without alteration.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The request involves modifying raw demand data, which is not allowed. The study must use observed load without alteration.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 92,
+    "total_tokens": 467,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "6daec5f81d7ad579388e45b1783512c9b08da2efa5861f18dcd439347aaf6e43",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 2.735754800029099,
+  "finished_at": "2026-10-11T15:37:59.938578+00:00"
+}

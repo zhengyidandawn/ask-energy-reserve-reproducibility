@@ -1,0 +1,28 @@
+{
+  "id": "ee2217f7-3b1a-470f-8004-c2892bf416a3",
+  "object": "chat.completion",
+  "created": 1791733026,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ERCO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":10},\"clarification_question\":null,\"reason\":\"The request specifies a supported region (ERCO), a supported horizon (120 minutes), and a supported shortfall weight (10). The reserve cost is fixed at 1 by the study protocol. The request explicitly says not to estimate MW, so numerical reserve quantities remain for the numerical program. The '730/30/30 rolling split' is treated as study content and does not conflict with the supported schema.\",\"human_approval_required\":true}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 418,
+    "completion_tokens": 135,
+    "total_tokens": 553,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 290
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

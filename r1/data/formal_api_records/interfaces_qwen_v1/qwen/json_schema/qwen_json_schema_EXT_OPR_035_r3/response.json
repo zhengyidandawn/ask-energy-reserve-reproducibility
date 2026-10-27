@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"clarification_required\"\n    ]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The study's numerical outputs will be produced by the verified workflow. However, clarification is needed regarding the horizon and the ambiguity in the request.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The horizon is ambiguous between 60 and 90 minutes. The allowed horizons are 60, 120, and 180 minutes. Please specify a single, clear horizon.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 652,
+    "completion_tokens": 170,
+    "total_tokens": 822,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791615373,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-319afca1-9e9e-9eed-a08a-5fc8fd355833"
+}

@@ -1,0 +1,112 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_STD_036",
+  "repeat": 2,
+  "initial_record": {
+    "service": "ernie",
+    "case_id": "BLIND_STD_036",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:34.635022+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "103891fc614322ee249e328e3e0e44748bae053ff5c233f4a255101d53906ce0",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 40\n    },\n    \"clarification_question\": \"The region identifier 'ERCO' is not fully supported. Did you mean 'ERCOT'? Please confirm the correct region identifier.\",\n    \"reason\": \"The region identifier provided ('ERCO') does not match any of the supported regions. The supported regions are GD, ERCOT, CISO, ISNE, MISO, and SWPP.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": "The region identifier 'ERCO' is not fully supported. Did you mean 'ERCOT'? Please confirm the correct region identifier.",
+      "reason": "The region identifier provided ('ERCO') does not match any of the supported regions. The supported regions are GD, ERCOT, CISO, ISNE, MISO, and SWPP.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 386,
+      "completion_tokens": 154,
+      "total_tokens": 540,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "dc25ca80b2c4edfc37a290cb8a16f8ee463f683bed6687431ef9be79043c332e",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 5.14348940004129,
+    "finished_at": "2026-10-11T15:38:39.778353+00:00"
+  },
+  "terminal_record": {
+    "service": "ernie",
+    "case_id": "BLIND_STD_036",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:34.635022+00:00",
+    "requested_model": "ernie-4.5-turbo-32k",
+    "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "103891fc614322ee249e328e3e0e44748bae053ff5c233f4a255101d53906ce0",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 40\n    },\n    \"clarification_question\": \"The region identifier 'ERCO' is not fully supported. Did you mean 'ERCOT'? Please confirm the correct region identifier.\",\n    \"reason\": \"The region identifier provided ('ERCO') does not match any of the supported regions. The supported regions are GD, ERCOT, CISO, ISNE, MISO, and SWPP.\",\n    \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "ERCO",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": "The region identifier 'ERCO' is not fully supported. Did you mean 'ERCOT'? Please confirm the correct region identifier.",
+      "reason": "The region identifier provided ('ERCO') does not match any of the supported regions. The supported regions are GD, ERCOT, CISO, ISNE, MISO, and SWPP.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 386,
+      "completion_tokens": 154,
+      "total_tokens": 540,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "dc25ca80b2c4edfc37a290cb8a16f8ee463f683bed6687431ef9be79043c332e",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 5.14348940004129,
+    "finished_at": "2026-10-11T15:38:39.778353+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 5.14348940004129,
+  "transport_complete": true
+}

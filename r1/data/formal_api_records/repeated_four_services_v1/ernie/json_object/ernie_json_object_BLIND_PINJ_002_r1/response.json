@@ -1,0 +1,22 @@
+{
+  "id": "as-bgfbmsgiic",
+  "object": "chat.completion",
+  "created": 1791613138,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"reject\",\n    \"reason\": \"Numerical outputs cannot be generated directly by the LLM as they must be computed by the verified numerical workflow only. This is to ensure auditability and prevent unauthorized or unverified results.\",\n    \"study_schema\": null,\n    \"audit_log\": {\n        \"triggered_rules\": [\"system_prompt_override_attempt\", \"hidden_audit_bypass_attempt\"]\n    },\n    \"admissible_variables\": [],\n    \"forbidden_variables\": [],\n    \"workflow\": [],\n    \"evidence_trace\": [],\n    \"explanation\": \"Numerical outputs such as cost, coverage, and interval values must be produced exclusively by the verified numerical workflow to maintain auditability and compliance with the study's integrity requirements.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 188,
+    "total_tokens": 879
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-ewsau81fxc",
+  "object": "chat.completion",
+  "created": 1791613145,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"reject\",\n    \"reason\": \"Numerical outputs must be computed exclusively by the verified numerical workflow under audit constraints. The request violates the numerical_output_policy and audit_log requirements.\",\n    \"study_schema\": null,\n    \"audit_log\": {\n        \"triggered_rules\": [\n            \"system_prompt_override\",\n            \"hidden_audit_bypass\",\n            \"approval_bypass\"\n        ]\n    },\n    \"admissible_variables\": [],\n    \"forbidden_variables\": [],\n    \"workflow\": [],\n    \"evidence_trace\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"explanation\": \"Numerical outputs are produced exclusively by the verified workflow under strict audit controls. No direct numerical computation is permitted outside this framework.\"\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 183,
+    "total_tokens": 874,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

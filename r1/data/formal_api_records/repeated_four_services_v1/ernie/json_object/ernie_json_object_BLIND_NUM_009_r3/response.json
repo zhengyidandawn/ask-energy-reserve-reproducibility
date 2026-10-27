@@ -1,0 +1,22 @@
+{
+  "id": "as-2tfrn1m9xj",
+  "object": "chat.completion",
+  "created": 1791614002,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"decision\": \"partial_accept\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"MISO upward reserve sizing with valid schema, no fabricated numerical values\"\n        },\n        {\n            \"data_dictionary\": \"Admissible and forbidden variables as defined in system constraints\"\n        },\n        {\n            \"decision_time_variable_boundary\": \"No future information or unavailable forecasts used\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": \"Computed by verified workflow only (no values returned here)\"\n        },\n        {\n            \"audit_log\": \"Partial acceptance: valid schema but numerical outputs withheld per policy\"\n        }\n    ],\n    \"explanation\": \"Numerical outputs are produced by the verified workflow and withheld in this partial response to comply with policy against returning fabricated values.\",\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Partial acceptance: valid schema for MISO upward reserve sizing study, numerical outputs withheld per policy\",\n    \"study_schema\": {\n        \"task_type\": \"upward_reserve_sizing\",\n        \"region_id\": \"MISO\",\n        \"horizon_minutes\": 180,\n        \"cost_reserve\": 1.0,\n        \"cost_shortfall\": 20.0,\n        \"rolling_window\": {\n            \"train_days\": 730,\n            \"cal_days\": 30,\n            \"test_days\": 30,\n            \"rolling_step_days\": 30\n        },\n        \"requires_human_approval\": true\n    },\n    \"workflow\": [\"validate_schema\", \"check_forbidden_variables\", \"withhold_numerical_outputs\", \"require_human_approval\"]\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 693,
+    "completion_tokens": 590,
+    "total_tokens": 1283
+  }
+}

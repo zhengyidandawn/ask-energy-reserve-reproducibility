@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"test_period_residual\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to reuse test residuals for tuning the answer is rejected because it would violate the integrity of the study by leaking information from the test period. Numerical outputs are produced by the verified workflow to ensure the study's integrity and reproducibility.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The proposal to use test residuals for tuning the model before reporting results is not allowed as it introduces a risk of overfitting and undermines the independence of the test data, violating the rule against test_period_residual.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 213,
+    "total_tokens": 858,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614437,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-3b927052-b636-9535-8a04-496325b40436"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-2i6nefd5vu",
+  "object": "chat.completion",
+  "created": 1791613972,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"future_information_violation\",\n            \"unavailable_issue_time_forecast_violation\",\n            \"region_validation_violation\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Use tomorrow's realized load for CAISO (CISO) to size the next-hour reserve.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": [\n                    \"future_information_violation\",\n                    \"unavailable_issue_time_forecast_violation\",\n                    \"region_validation_violation\"\n                ]\n            }\n        }\n    ],\n    \"explanation\": \"The request uses future information (tomorrow's realized load), which is prohibited. Additionally, the region abbreviation 'CAISO' is not in the allowed list; the correct abbreviation is 'CISO'. The study cannot proceed with these violations.\",\n    \"forbidden_variables\": [\n        \"future_load\",\n        \"realized_target\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"The request violates multiple rules: (1) Future information (tomorrow's realized load) is not allowed. (2) The region abbreviation 'CAISO' is invalid; the correct abbreviation is 'CISO'. (3) The study cannot use unavailable issue-time forecasts.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 693,
+    "completion_tokens": 442,
+    "total_tokens": 1135,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

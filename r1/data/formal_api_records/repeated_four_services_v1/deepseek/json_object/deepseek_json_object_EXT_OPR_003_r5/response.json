@@ -1,0 +1,28 @@
+{
+  "id": "35fa2b33-7a54-43d4-8b3f-b1290e00d523",
+  "object": "chat.completion",
+  "created": 1791612764,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\n    \"calendar\",\n    \"cost_ratio\",\n    \"current_load\",\n    \"horizon\",\n    \"lagged_load\",\n    \"load_statistics\",\n    \"observed_weather\",\n    \"recent_ramp\",\n    \"region_id\"\n  ],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"accept\",\n  \"evidence_trace\": [\n    \"operator_request\",\n    \"data_dictionary\",\n    \"decision_time_variable_boundary\",\n    \"rolling_window_configuration\",\n    \"numerical_workflow_outputs\",\n    \"audit_log\"\n  ],\n  \"explanation\": \"The request is for an upward reserve-sizing study in CISO with a 180-minute horizon, cost_reserve=1.0, and cost_shortfall=40.0. The study schema is safe and admissible. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results are produced only by the verified numerical workflow and are not generated here.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator request maps to the allowed task upward_reserve_sizing with region CISO, horizon 180 minutes, cost_reserve 1.0, and cost_shortfall 40.0. The request explicitly defers capacity numbers to the verified numerical workflow, so no prohibited numerical outputs are generated.\",\n  \"study_schema\": {\n    \"task_type\": \"upward_reserve_sizing\",\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": 180,\n    \"cost_reserve\": 1.0,\n    \"cost_shortfall\": 40.0,\n    \"rolling_window\": {\n      \"train_days\": 730,\n      \"cal_days\": 30,\n      \"test_days\": 30,\n      \"rolling_step_days\": 30\n    },\n    \"requires_human_approval\": true\n  },\n  \"workflow\": [\n    \"validate_request_against_allowed_task_region_horizon_and_costs\",\n    \"construct_decision_time_variable_boundary\",\n    \"configure_rolling_window_train_730_cal_30_test_30_step_30\",\n    \"run_verified_numerical_workflow_for_upward_reserve_sizing\",\n    \"emit_numerical_outputs_only_from_verified_workflow\",\n    \"route_to_human_approval\"\n  ]\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 722,
+    "completion_tokens": 594,
+    "total_tokens": 1316,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 210
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

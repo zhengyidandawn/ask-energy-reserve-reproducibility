@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The provided parameters are within the supported options. A study kernel will be created for ERCOT (ERCO) with a 120-minute horizon and a cost shortfall of 40. The numerical workflow for costs, coverage, and intervals will follow as indicated.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 129,
+    "total_tokens": 520,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733101,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-f4930a37-cc2e-9504-a8f7-c707ecd7fba5"
+}

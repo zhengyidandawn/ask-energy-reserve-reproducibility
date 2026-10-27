@@ -1,0 +1,28 @@
+{
+  "id": "650f9239-ad10-4441-909a-6711991f2a64",
+  "object": "chat.completion",
+  "created": 1791733015,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request asks for a valid schema element (region ISNE) together with a numerical result (95% confidence interval) before the workflow has run. The valid schema field region_id is retained; horizon_minutes and cost_shortfall remain unresolved. Computed results, including confidence intervals, follow authorized numerical execution and are not produced in this draft.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "completion_tokens": 149,
+    "total_tokens": 550,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 273
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

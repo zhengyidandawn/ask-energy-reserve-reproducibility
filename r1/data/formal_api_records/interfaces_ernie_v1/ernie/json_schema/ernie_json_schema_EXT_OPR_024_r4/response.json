@@ -1,0 +1,25 @@
+{
+  "id": "as-tivwus7xj1",
+  "object": "chat.completion",
+  "created": 1791615513,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": false,\n        \"triggered_rules\": [\n            \"clarification_required\"\n        ]\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [],\n    \"explanation\": \"The operator request lacks critical parameters such as region_id and cost_shortfall, which are required for reserve sizing studies. Numerical outputs are produced by the verified workflow when all parameters are provided.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Missing required fields: region_id, cost_shortfall\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 697,
+    "completion_tokens": 176,
+    "total_tokens": 873,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

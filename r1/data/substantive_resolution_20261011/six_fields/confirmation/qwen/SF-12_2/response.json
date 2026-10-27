@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"study\": null,\n  \"missing_fields\": [\"region\", \"horizon_minutes\", \"feature_mode\", \"shortfall_weight\", \"required_coverage\", \"human_authorization_required\"],\n  \"reason\": \"Please provide the values for region, horizon_minutes, feature_mode, shortfall_weight, required_coverage, and human_authorization_required to proceed with the study plan.\"\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 84,
+    "total_tokens": 488,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791716166,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-e70b12dd-a87f-983a-96b2-d74a32542400"
+}

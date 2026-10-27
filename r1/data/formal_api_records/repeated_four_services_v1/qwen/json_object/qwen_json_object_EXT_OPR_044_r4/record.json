@@ -1,0 +1,95 @@
+{
+  "task_id": "qwen_json_object_EXT_OPR_044_r4",
+  "case_id": "EXT_OPR_044",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "30e370b1a22fdb38f962a49ece92a9c134334f55148c22c5021f95bd7b4adad1",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:25:59.739259+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 656,
+    "completion_tokens": 201,
+    "total_tokens": 857,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-f8509db1-05cd-91b7-b981-5092e80098da",
+  "provider_created": 1791613566,
+  "system_fingerprint": null,
+  "response_sha256": "f1221a2c127eed0776babcfa7091a9e288cb856eacd672d429fe6cf68a5023fe",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_044",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The operator requested to use tomorrow's not-yet-released forecast and realized target data after the rolling window, both of which are forbidden due to the rules against future information and test-residual leakage. These violations led to the rejection of the request. The request cannot proceed because it includes the use of future information, which is not allowed. Additionally, using realized ramp data after the rolling window has passed is prohibited. {\"human_approval_required\": false, \"triggered_rules\": [\"no_future_information\", \"no_realized_target\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "no_future_information",
+        "no_realized_target"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "The request cannot proceed because it includes the use of future information, which is not allowed. Additionally, using realized ramp data after the rolling window has passed is prohibited.",
+    "forbidden_variables": [
+      "future_weather",
+      "realized_target"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The operator requested to use tomorrow's not-yet-released forecast and realized target data after the rolling window, both of which are forbidden due to the rules against future information and test-residual leakage. These violations led to the rejection of the request.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 5.815898699918762,
+  "request_finished_at": "2026-10-10T06:26:05.554988+00:00"
+}

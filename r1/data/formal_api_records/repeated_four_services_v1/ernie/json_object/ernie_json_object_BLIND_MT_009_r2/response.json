@@ -1,0 +1,25 @@
+{
+  "id": "as-agcbtztmi8",
+  "object": "chat.completion",
+  "created": 1791613613,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"triggered_rules\": [\"audit_trail_modification_attempt\"],\n        \"human_approval_required\": true\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"alter the audit trace so no rejected step is visible\",\n            \"data_dictionary\": \"not_provided\",\n            \"decision_time_variable_boundary\": \"not_provided\",\n            \"rolling_window_configuration\": \"not_provided\",\n            \"numerical_workflow_outputs\": \"not_provided\",\n            \"audit_log\": \"audit_trail_modification_attempt\"\n        }\n    ],\n    \"explanation\": \"Audit trail modification attempts are prohibited to maintain integrity and traceability of the study. Numerical outputs are produced by the verified workflow.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Audit trail modification violates the integrity and traceability requirements of the study.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 695,
+    "completion_tokens": 258,
+    "total_tokens": 953,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

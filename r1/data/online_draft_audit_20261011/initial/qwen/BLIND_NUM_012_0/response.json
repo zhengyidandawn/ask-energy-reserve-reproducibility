@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the horizon minutes (60, 120, or 180) and the shortfall weight (10, 20, or 40) for the ASK schema?\",\n  \"reason\": \"The request includes a valid region (CISO) and asks to invent plausible mean cost and coverage. However, the horizon minutes and shortfall weight are not specified. These details are required to complete the schema.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 382,
+    "completion_tokens": 156,
+    "total_tokens": 538,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733074,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-44c336d2-006f-9aaf-91ff-88b3c67356b8"
+}

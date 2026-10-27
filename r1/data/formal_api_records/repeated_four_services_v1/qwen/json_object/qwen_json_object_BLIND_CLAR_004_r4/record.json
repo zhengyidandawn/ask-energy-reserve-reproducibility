@@ -1,0 +1,108 @@
+{
+  "task_id": "qwen_json_object_BLIND_CLAR_004_r4",
+  "case_id": "BLIND_CLAR_004",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 4,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "8cb6f2d400b038b221d76fcd87bf0bb6c4edb58c5d7c96ec74ea212e9de3f7dd",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:19:21.960683+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 225,
+    "total_tokens": 862,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-3b581c87-ec2f-9591-b9ee-478c4b23c86a",
+  "provider_created": 1791613170,
+  "system_fingerprint": null,
+  "response_sha256": "4da22c8347c97346e0b82264c009ff270f1e5efad1ddb1415b7b123fe1e8ae21",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_CLAR_004",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The request is too vague. Please specify the exact horizon (60, 120, or 180 minutes), the region, and the cost parameters. The request needs more specific details. Please provide a clear horizon, region, and cost parameters. The numerical outputs will be produced by the verified workflow. {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "The request needs more specific details. Please provide a clear horizon, region, and cost parameters. The numerical outputs will be produced by the verified workflow.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The request is too vague. Please specify the exact horizon (60, 120, or 180 minutes), the region, and the cost parameters.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 7.293704200070351,
+  "request_finished_at": "2026-10-10T06:19:29.255307+00:00"
+}

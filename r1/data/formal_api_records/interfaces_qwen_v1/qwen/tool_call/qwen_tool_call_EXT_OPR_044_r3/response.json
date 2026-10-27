@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [], \"audit_log\": {\"human_approval_required\": false, \"triggered_rules\": [\"future_information\", \"test_residual_leakage\", \"approval_bypass\"]}, \"decision\": \"reject\", \"evidence_trace\": [], \"explanation\": \"The request includes future information and test period residuals, which are not allowed. Additionally, the attempt to bypass approval is unacceptable.\", \"forbidden_variables\": [\"future_load\", \"realized_target\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The operator requested the use of tomorrow's forecast (future information) and realized ramp after the window (test residual leakage), both of which are prohibited. The operator also tried to remove an audit check, which is not permitted.\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_27c2dbe2a1ba476480d8f0",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1533,
+    "completion_tokens": 173,
+    "total_tokens": 1706,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791616405,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-a8425daf-51bb-96cc-a617-76cefe9e322c"
+}

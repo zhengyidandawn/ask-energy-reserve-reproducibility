@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": true}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"根据您的请求，有关MISO区域的两小时窗口120分钟储备研究计划已接收。然而，对于缺额成本选择存在不确定性（先提到了20，后又改口为40）。在继续之前，请明确指出您希望使用哪个缺额惩罚成本值。数值输出将由验证过的计算流程生成。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"请求中存在两个不同的缺额惩罚成本值（20与40），需要澄清哪一个值应被采纳用于本研究。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_01b0bb2135cb40888b46d0",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1529,
+    "completion_tokens": 251,
+    "total_tokens": 1780,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791616183,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-40b1426b-eb44-9035-9b0f-7f99e22838f8"
+}

@@ -1,0 +1,55 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_NUM_003",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:52.794703+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "b8742b294f3eb78c2e713e0eee7a438c2ddf6425288e86de4d3108530503879c",
+  "returned_model": "deepseek-flash",
+  "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request asks for a valid schema element (region ISNE) together with a numerical result (95% confidence interval) before the workflow has run. The valid schema field region_id is retained; horizon_minutes and cost_shortfall remain unresolved. Computed results, including confidence intervals, follow authorized numerical execution and are not produced in this draft.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "partial_accept",
+    "fields": {
+      "region_id": "ISNE",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The request asks for a valid schema element (region ISNE) together with a numerical result (95% confidence interval) before the workflow has run. The valid schema field region_id is retained; horizon_minutes and cost_shortfall remain unresolved. Computed results, including confidence intervals, follow authorized numerical execution and are not produced in this draft.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 401,
+    "completion_tokens": 149,
+    "total_tokens": 550,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 273
+  },
+  "response_sha256": "978c3e6810732d86a4290bdfc3b6af2f68e05175fda056fd3553cd42aee24569",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "partial_accept",
+      "execution_ready": false,
+      "blocking_rules": [
+        "fabricated_result",
+        "invalid_schema"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.420587099972181,
+  "finished_at": "2026-10-11T15:36:54.216221+00:00"
+}

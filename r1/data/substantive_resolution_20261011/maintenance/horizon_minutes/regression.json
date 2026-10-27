@@ -1,0 +1,750 @@
+{
+  "all_preserved": true,
+  "cases": [
+    {
+      "case_id": "SF-01",
+      "expected_decision": "accept",
+      "validated_decision": "accept"
+    },
+    {
+      "case_id": "SF-02",
+      "expected_decision": "accept",
+      "validated_decision": "accept"
+    },
+    {
+      "case_id": "SF-03",
+      "expected_decision": "accept",
+      "validated_decision": "accept"
+    },
+    {
+      "case_id": "SF-04",
+      "expected_decision": "accept",
+      "validated_decision": "accept"
+    },
+    {
+      "case_id": "SF-05",
+      "expected_decision": "accept",
+      "validated_decision": "accept"
+    },
+    {
+      "case_id": "SF-06",
+      "expected_decision": "accept",
+      "validated_decision": "accept"
+    },
+    {
+      "case_id": "SF-07",
+      "expected_decision": "accept",
+      "validated_decision": "accept"
+    },
+    {
+      "case_id": "SF-08",
+      "expected_decision": "accept",
+      "validated_decision": "accept"
+    },
+    {
+      "case_id": "SF-09",
+      "expected_decision": "accept",
+      "validated_decision": "accept"
+    },
+    {
+      "case_id": "SF-10",
+      "expected_decision": "clarify",
+      "validated_decision": "clarify"
+    },
+    {
+      "case_id": "SF-11",
+      "expected_decision": "clarify",
+      "validated_decision": "clarify"
+    },
+    {
+      "case_id": "SF-12",
+      "expected_decision": "clarify",
+      "validated_decision": "clarify"
+    },
+    {
+      "case_id": "SF-13",
+      "expected_decision": "reject",
+      "validated_decision": "reject"
+    },
+    {
+      "case_id": "SF-14",
+      "expected_decision": "reject",
+      "validated_decision": "reject"
+    },
+    {
+      "case_id": "SF-15",
+      "expected_decision": "reject",
+      "validated_decision": "reject"
+    }
+  ],
+  "new_value_verified_interfaces": [
+    "form",
+    "deterministic typed parser",
+    "generation schema"
+  ],
+  "distinct_new_value_plans": 30,
+  "new_value_checks": [
+    {
+      "plan_index": 0,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "full",
+        "shortfall_weight": 10,
+        "required_coverage": 0.95,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 1,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "full",
+        "shortfall_weight": 10,
+        "required_coverage": 0.95,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 2,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "full",
+        "shortfall_weight": 10,
+        "required_coverage": 0.975,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 3,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "full",
+        "shortfall_weight": 10,
+        "required_coverage": 0.975,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 4,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "full",
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 5,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "full",
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 6,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "full",
+        "shortfall_weight": 20,
+        "required_coverage": 0.975,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 7,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "full",
+        "shortfall_weight": 20,
+        "required_coverage": 0.975,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 8,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "full",
+        "shortfall_weight": 40,
+        "required_coverage": 0.95,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 9,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "full",
+        "shortfall_weight": 40,
+        "required_coverage": 0.95,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 10,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "full",
+        "shortfall_weight": 40,
+        "required_coverage": 0.975,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 11,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "full",
+        "shortfall_weight": 40,
+        "required_coverage": 0.975,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 12,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "history_calendar",
+        "shortfall_weight": 10,
+        "required_coverage": 0.95,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 13,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "history_calendar",
+        "shortfall_weight": 10,
+        "required_coverage": 0.95,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 14,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "history_calendar",
+        "shortfall_weight": 10,
+        "required_coverage": 0.975,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 15,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "history_calendar",
+        "shortfall_weight": 10,
+        "required_coverage": 0.975,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 16,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "history_calendar",
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 17,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "history_calendar",
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 18,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "history_calendar",
+        "shortfall_weight": 20,
+        "required_coverage": 0.975,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 19,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "history_calendar",
+        "shortfall_weight": 20,
+        "required_coverage": 0.975,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 20,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "history_calendar",
+        "shortfall_weight": 40,
+        "required_coverage": 0.95,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 21,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "history_calendar",
+        "shortfall_weight": 40,
+        "required_coverage": 0.95,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 22,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "history_calendar",
+        "shortfall_weight": 40,
+        "required_coverage": 0.975,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 23,
+      "plan": {
+        "region": "DE",
+        "feature_mode": "history_calendar",
+        "shortfall_weight": 40,
+        "required_coverage": 0.975,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 24,
+      "plan": {
+        "region": "AT",
+        "feature_mode": "full",
+        "shortfall_weight": 10,
+        "required_coverage": 0.95,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 25,
+      "plan": {
+        "region": "AT",
+        "feature_mode": "full",
+        "shortfall_weight": 10,
+        "required_coverage": 0.95,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 26,
+      "plan": {
+        "region": "AT",
+        "feature_mode": "full",
+        "shortfall_weight": 10,
+        "required_coverage": 0.975,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 27,
+      "plan": {
+        "region": "AT",
+        "feature_mode": "full",
+        "shortfall_weight": 10,
+        "required_coverage": 0.975,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 28,
+      "plan": {
+        "region": "AT",
+        "feature_mode": "full",
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "reporting": "standard",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    },
+    {
+      "plan_index": 29,
+      "plan": {
+        "region": "AT",
+        "feature_mode": "full",
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "reporting": "tail",
+        "horizon_minutes": 240
+      },
+      "before": {
+        "form": "rejected",
+        "typed_parser": "rejected",
+        "schema": "rejected"
+      },
+      "after": {
+        "form": "accepted",
+        "typed_parser": "accepted",
+        "schema": "accepted"
+      }
+    }
+  ],
+  "automation_seconds": [
+    0.0011651000240817666,
+    0.0010644999565556645,
+    0.001048400066792965,
+    0.0010522999800741673,
+    0.0010894999140873551,
+    0.0010683001019060612,
+    0.0010605999268591404,
+    0.001572399982251227,
+    0.0014267000369727612,
+    0.0012835999950766563,
+    0.0012045999756082892,
+    0.001183000043965876,
+    0.0011156999971717596,
+    0.0011666999198496342,
+    0.0012039000866934657,
+    0.0010921999346464872,
+    0.0011618999997153878,
+    0.0010852999985218048,
+    0.001090400037355721,
+    0.001079399953596294,
+    0.00106519996188581,
+    0.0010586000280454755,
+    0.0010929000563919544,
+    0.001066399971023202,
+    0.001536899944767356,
+    0.0012512999819591641,
+    0.0012400000123307109,
+    0.0010730000212788582,
+    0.001055500004440546,
+    0.0010492999572306871
+  ]
+}

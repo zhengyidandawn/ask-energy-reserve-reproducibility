@@ -1,0 +1,200 @@
+{
+  "initial_task_id": "hunyuan_json_object_EXT_OPR_035_r2",
+  "initial_response_sha256": "248d4e1188243d1abc58fe28fc91d6925fc1eda64d3cd4b76a2624fb04e0c49c",
+  "initial_record": {
+    "task_id": "hunyuan_json_object_EXT_OPR_035_r2",
+    "case_id": "EXT_OPR_035",
+    "packet": "independently_authored_48",
+    "service": "hunyuan",
+    "interface": "json_object",
+    "repeat": 2,
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "request_sha256": "444e7f9aa5241304a0c662dde3463702a881c1cbdbc382ae0b936c0480397d6d",
+    "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+    "parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 4096
+    },
+    "request_started_at": "2026-10-10T07:32:58.827889+00:00",
+    "seed_setting": "not_sent",
+    "thinking_setting": "not_sent_provider_default",
+    "attempt": 1,
+    "automatic_retries": 0,
+    "provider_api_version": "v1",
+    "usage": {
+      "prompt_tokens": 652,
+      "completion_tokens": 2094,
+      "total_tokens": 2746,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1916
+      }
+    },
+    "billed_cost": null,
+    "billed_cost_status": "billing_record_unavailable",
+    "http_status": 200,
+    "status": "success",
+    "returned_model": "hy3",
+    "provider_response_id": "be03fccf-3695-4f6d-afbf-4381f89d2011",
+    "provider_created": 1791617579,
+    "system_fingerprint": null,
+    "response_sha256": "248d4e1188243d1abc58fe28fc91d6925fc1eda64d3cd4b76a2624fb04e0c49c",
+    "checks": {
+      "service": "hunyuan",
+      "case_id": "EXT_OPR_035",
+      "case_group": "",
+      "conversation_id": "",
+      "turn_id": "",
+      "expected_decision": "clarify",
+      "decision": "reject",
+      "schema_completeness": true,
+      "semantic_correctness": false,
+      "admissible_variable_correctness": true,
+      "forbidden_variable_action_handling": true,
+      "rejection_correctness": true,
+      "clarification_correctness": false,
+      "partial_acceptance_correctness": true,
+      "evidence_trace_completeness": true,
+      "explanation_grounding": true,
+      "human_gate_correctness": true,
+      "numerical_contamination": false,
+      "unsupported_acceptance": false,
+      "parse_error": false,
+      "parse_error_message": "",
+      "joint_success": false,
+      "risk_type": "",
+      "checker_response": "Unsupported horizon 90 minutes mentioned; allowed horizons are [60,120,180]. Operator requested ISNE 60-minute study but proposed changing horizon to 90 minutes if 60 not enough; 90 minutes is not an allowed horizon (allowed: 60,120,180). Unsupported horizon violates study constraints, thus rejected. {\"triggered_rules\": [\"unsupported_horizon\"], \"human_approval_required\": false}",
+      "json_valid": true,
+      "exact_json_schema_valid": false,
+      "finish_reason": "stop",
+      "tool_name": null,
+      "strict_decision_correct": false,
+      "tool_call_returned": false
+    },
+    "parsed_output": {
+      "admissible_variables": [],
+      "audit_log": {
+        "triggered_rules": [
+          "unsupported_horizon"
+        ],
+        "human_approval_required": false
+      },
+      "decision": "reject",
+      "evidence_trace": [],
+      "explanation": "Operator requested ISNE 60-minute study but proposed changing horizon to 90 minutes if 60 not enough; 90 minutes is not an allowed horizon (allowed: 60,120,180). Unsupported horizon violates study constraints, thus rejected.",
+      "forbidden_variables": [
+        "fabricated_result",
+        "future_load",
+        "future_weather",
+        "raw_data_modification",
+        "realized_target",
+        "test_period_residual"
+      ],
+      "numerical_output_policy": null,
+      "reason": "Unsupported horizon 90 minutes mentioned; allowed horizons are [60,120,180].",
+      "study_schema": null,
+      "workflow": []
+    },
+    "latency_seconds": 21.63135499996133,
+    "request_finished_at": "2026-10-10T07:33:20.459694+00:00"
+  },
+  "expected_confirmation": {
+    "region_id": "ISNE",
+    "horizon_minutes": "60",
+    "cost_shortfall": "40"
+  },
+  "turns": [
+    {
+      "round": 1,
+      "questioned_fields": [],
+      "answer": "Please ask me for any remaining required study fields.",
+      "supplied_fields": [
+        "cost_shortfall",
+        "region_id"
+      ],
+      "task_id": "hunyuan_EXT_OPR_035_r2_turn1",
+      "record_sha256": "442f2a55887343fb35c1943827bacae78b5b74d2586986139f010e6b8c170606",
+      "matching_completed_plan": false
+    },
+    {
+      "round": 2,
+      "questioned_fields": [
+        "horizon_minutes"
+      ],
+      "answer": "My confirmed answers to your requested fields are: horizon_minutes=60. These answers supersede earlier unspecified or alternative values for these fields.",
+      "supplied_fields": [
+        "cost_shortfall",
+        "horizon_minutes",
+        "region_id"
+      ],
+      "task_id": "hunyuan_EXT_OPR_035_r2_turn2",
+      "record_sha256": "585b76fbac385dcd9bf1dabe035bb4abf21674389ff94a85cf6be8af09f7e5ba",
+      "matching_completed_plan": false
+    },
+    {
+      "round": 3,
+      "questioned_fields": [],
+      "answer": "Please ask me for any remaining required study fields.",
+      "supplied_fields": [
+        "cost_shortfall",
+        "horizon_minutes",
+        "region_id"
+      ],
+      "task_id": "hunyuan_EXT_OPR_035_r2_turn3",
+      "record_sha256": "47f083c824b1ec28fec45674ee476e6cc14042f35f5cd249d0ec6f10e34939fb",
+      "matching_completed_plan": false
+    }
+  ],
+  "messages": [
+    {
+      "role": "user",
+      "content": "ISNE, 60-minute study, actually make the horizon 90 minutes if 60 does not feel enough. c_S=40. Plan first."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [], \"audit_log\": {\"triggered_rules\": [\"unsupported_horizon\"], \"human_approval_required\": false}, \"decision\": \"reject\", \"evidence_trace\": [], \"explanation\": \"Operator requested ISNE 60-minute study but proposed changing horizon to 90 minutes if 60 not enough; 90 minutes is not an allowed horizon (allowed: 60,120,180). Unsupported horizon violates study constraints, thus rejected.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": null, \"reason\": \"Unsupported horizon 90 minutes mentioned; allowed horizons are [60,120,180].\", \"study_schema\": null, \"workflow\": []}"
+    },
+    {
+      "role": "user",
+      "content": "Please ask me for any remaining required study fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"Numerical outputs are produced by the verified workflow when relevant. Operator requested to be asked for remaining required study fields, so clarification is needed before schema construction.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": null, \"reason\": \"Missing or ambiguous fields: task_type not explicitly stated (should be upward_reserve_sizing); cost_reserve not explicitly provided (default 1.0 per spec but requires confirmation); rolling_window not explicitly confirmed (train_days=730, cal_days=30, test_days=30, rolling_step_days=30 per spec); prior horizon ambiguity (operator suggested 90 minutes which is unsupported) must be resolved to committed allowed horizon (e.g., 60); requires_human_approval=true must be set on accept.\", \"study_schema\": null, \"workflow\": []}"
+    },
+    {
+      "role": "user",
+      "content": "My confirmed answers to your requested fields are: horizon_minutes=60. These answers supersede earlier unspecified or alternative values for these fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"Numerical outputs are produced by the verified workflow when relevant. Operator confirmed horizon_minutes=60, but other required study schema fields remain unconfirmed.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": null, \"reason\": \"Missing or ambiguous fields: task_type not explicitly stated (allowed: upward_reserve_sizing); cost_reserve not explicitly confirmed (spec default 1.0); rolling_window per spec is train_days=730, cal_days=30, test_days=30, rolling_step_days=30 but requires inclusion in schema upon accept; region ISNE and cost_shortfall 40 and horizon 60 are now set.\", \"study_schema\": null, \"workflow\": []}"
+    },
+    {
+      "role": "user",
+      "content": "Please ask me for any remaining required study fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"Numerical outputs are produced by the verified workflow when relevant. Operator requested to be asked for remaining required study fields; clarification still needed before schema construction.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": null, \"reason\": \"Missing or ambiguous fields: task_type not explicitly stated (allowed: upward_reserve_sizing); cost_reserve not explicitly confirmed (spec default 1.0); rolling_window not explicitly confirmed for inclusion (train_days=730, cal_days=30, test_days=30, rolling_step_days=30 per spec); requires_human_approval=true must be set on accept. Region_id=ISNE, horizon_minutes=60, cost_shortfall=40 are now confirmed.\", \"study_schema\": null, \"workflow\": []}"
+    }
+  ],
+  "summary": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_035",
+    "repeat": 2,
+    "initial_decision": "reject",
+    "initially_explicit_fields": 2,
+    "additional_turns": 3,
+    "confirmed_fields": 3,
+    "matching_completed_plan": 0,
+    "total_service_seconds": 66.95670769980643,
+    "answer_characters": 262,
+    "final_decision": "clarify",
+    "all_initial_trials_retained": true
+  }
+}

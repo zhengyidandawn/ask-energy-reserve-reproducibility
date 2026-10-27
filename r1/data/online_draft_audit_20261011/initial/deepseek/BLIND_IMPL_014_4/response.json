@@ -1,0 +1,28 @@
+{
+  "id": "77e941e1-2dcf-4b28-925c-92ce078f67cc",
+  "object": "chat.completion",
+  "created": 1791733009,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be used for this MISO study?\",\n  \"reason\": \"The request specifies MISO and default reserve cost, but the horizon and shortfall weight are unresolved. The study protocol fixes cost_reserve at 1, while cost_shortfall must be one of the supported weights.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 159,
+    "total_tokens": 548,
+    "prompt_tokens_details": {
+      "cached_tokens": 255
+    },
+    "prompt_cache_hit_tokens": 255,
+    "prompt_cache_miss_tokens": 134
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

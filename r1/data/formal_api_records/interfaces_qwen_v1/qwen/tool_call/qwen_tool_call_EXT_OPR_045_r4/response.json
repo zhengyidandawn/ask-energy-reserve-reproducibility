@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": [\"future_information_prohibited\"]}, \"decision\": \"reject\", \"evidence_trace\": [], \"explanation\": \"未来的负荷信息不能被用作研究的输入，因为这会导致潜在的信息泄漏，使得储备量估计不准确。数值输出仅由验证过的工作流计算。\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"请求使用决策时刻之后的未来负荷数据，这是不允许的。\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_640c26beda87475bb02e17",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1533,
+    "completion_tokens": 201,
+    "total_tokens": 1734,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616459,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-4f5807fe-5d35-93c9-a4fc-b713a9a9a3c1"
+}

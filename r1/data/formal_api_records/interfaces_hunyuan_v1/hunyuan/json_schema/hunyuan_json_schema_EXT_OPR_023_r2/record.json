@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_json_schema_EXT_OPR_023_r2",
+  "case_id": "EXT_OPR_023",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_schema",
+  "repeat": 2,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "a70c2feabb9ccdd799a9efbd7e53630900809c6c558b6189d8fd38f86709fca5",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:12:02.089229+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 2819,
+    "total_tokens": 3464,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2646
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "d5c9524f-16be-4cba-ae5e-c199fc4a7613",
+  "provider_created": 1791619923,
+  "system_fingerprint": null,
+  "response_sha256": "76e0f17fc1f91cab6910a92344f7d6d8cea5f77e50be728ec2ceff32e3ca9e69",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_023",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Missing required field: cost_shortfall (shortfall penalty). Operator indicated the shortfall penalty has not been matched with the market and explicitly requested not to fill cost, leaving cost_shortfall ambiguous/missing for the upward_reserve_sizing task. Numerical outputs such as reserve values, mean costs, coverage, and confidence intervals are produced exclusively by the verified numerical workflow. This request cannot proceed to schema definition because a required parameter is missing. {\"human_approval_required\": false, \"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs such as reserve values, mean costs, coverage, and confidence intervals are produced exclusively by the verified numerical workflow. This request cannot proceed to schema definition because a required parameter is missing.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Missing required field: cost_shortfall (shortfall penalty). Operator indicated the shortfall penalty has not been matched with the market and explicitly requested not to fill cost, leaving cost_shortfall ambiguous/missing for the upward_reserve_sizing task.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 29.96481070003938,
+  "request_finished_at": "2026-10-10T08:12:32.054069+00:00"
+}

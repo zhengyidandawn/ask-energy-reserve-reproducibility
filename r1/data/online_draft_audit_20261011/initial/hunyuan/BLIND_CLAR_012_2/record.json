@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_012",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:11.119009+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "e8070584da6b434a011065cd9d67b367f90032769da35687e9fcb4e32fd4a4a9",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request references 'normal penalty' and 'normal horizon' and defers region specification. Please explicitly specify region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP), horizon_minutes from (60, 120, 180), and cost_shortfall (shortfall weight) from (10, 20, 40) so the study can proceed.\", \"reason\": \"Explicit study fields are unresolved or ambiguous: region_id not supplied (deferred), horizon_minutes not given as a supported numeric value ('normal horizon' undefined), and cost_shortfall not given as a supported weight ('normal penalty' undefined). Protocol requires explicit supported values for these fields; clarification is required before acceptance.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "The request references 'normal penalty' and 'normal horizon' and defers region specification. Please explicitly specify region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP), horizon_minutes from (60, 120, 180), and cost_shortfall (shortfall weight) from (10, 20, 40) so the study can proceed.",
+    "reason": "Explicit study fields are unresolved or ambiguous: region_id not supplied (deferred), horizon_minutes not given as a supported numeric value ('normal horizon' undefined), and cost_shortfall not given as a supported weight ('normal penalty' undefined). Protocol requires explicit supported values for these fields; clarification is required before acceptance.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 1731,
+    "total_tokens": 2105,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1524
+    }
+  },
+  "response_sha256": "e3474d00c704d5e52bc724fd1b06f551f6497c3f681bf5854ad3baecbc5095c5",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 16.42961470002774,
+  "finished_at": "2026-10-11T15:37:27.548478+00:00"
+}

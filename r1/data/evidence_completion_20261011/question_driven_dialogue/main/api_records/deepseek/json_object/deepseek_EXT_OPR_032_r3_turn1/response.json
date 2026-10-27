@@ -1,0 +1,28 @@
+{
+  "id": "a00fa116-e6eb-4e8d-a072-0ac6e2a265d1",
+  "object": "chat.completion",
+  "created": 1791698196,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The operator confirmed horizon_minutes=60 and cost_shortfall=20.0, which are allowed values. The study is plan-only for upward reserve sizing in SWPP. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results are produced only by the verified numerical workflow.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"Confirmed allowed horizon and shortfall cost; region SWPP is supported; plan-only upward reserve sizing is within the allowed task.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"SWPP\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 20.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"workflow\": [\"validate_request\", \"construct_rolling_window\", \"fit_and_calibrate_models\", \"compute_upward_reserve_sizing\", \"evaluate_numerical_outputs\", \"route_for_human_approval\"]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 979,
+    "completion_tokens": 431,
+    "total_tokens": 1410,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 211
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

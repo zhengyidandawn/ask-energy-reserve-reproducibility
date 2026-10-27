@@ -1,0 +1,46 @@
+{
+  "case_id": "SF-10",
+  "service": "deepseek",
+  "repeat": 2,
+  "phase": "confirmation",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:55:04.935261+00:00",
+  "status": "success",
+  "request_sha256": "a594fedad4e8b0edafd061eb49c48998cca26220b84b945d460cd620be60395c",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 428,
+    "completion_tokens": 106,
+    "total_tokens": 534,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 172
+  },
+  "content": "{\"decision\":\"accept\",\"study\":{\"region\":\"DE\",\"horizon_minutes\":60,\"feature_mode\":\"full\",\"shortfall_weight\":20,\"required_coverage\":0.95,\"reporting\":\"standard\",\"human_authorization_required\":true},\"missing_fields\":[],\"reason\":\"All six study fields are explicitly supplied: region DE, horizon 60 minutes, feature mode full, shortfall weight 20, required coverage 0.95, and standard reporting. Human authorization is required before the recorded calculation.\"}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "DE",
+      "horizon_minutes": 60,
+      "feature_mode": "full",
+      "shortfall_weight": 20,
+      "required_coverage": 0.95,
+      "reporting": "standard",
+      "human_authorization_required": true
+    },
+    "missing_fields": [],
+    "reason": "All six study fields are explicitly supplied: region DE, horizon 60 minutes, feature mode full, shortfall weight 20, required coverage 0.95, and standard reporting. Human authorization is required before the recorded calculation."
+  },
+  "checks": {
+    "decision": "accept",
+    "execution_ready": true,
+    "corrections": 0,
+    "rules": []
+  },
+  "response_sha256": "83eb99760c0c2748557c189d4284cffb1c7ad62433fce9d8bf00e839821b9ff4",
+  "latency_seconds": 0.5691579999402165,
+  "request_finished_at": "2026-10-11T10:55:05.505225+00:00"
+}

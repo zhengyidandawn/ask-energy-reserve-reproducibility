@@ -1,0 +1,52 @@
+{
+  "snapshot_date": "2026-10-11",
+  "unit": "published currency per million tokens",
+  "deepseek": {
+    "url": "https://api-docs.deepseek.com/quick_start/pricing",
+    "returned_model": "deepseek-flash",
+    "currency": "USD",
+    "off_peak_rates": [
+      0.15,
+      0.6,
+      0.003
+    ],
+    "peak_multiplier": 2
+  },
+  "qwen": {
+    "url": "https://help.aliyun.com/zh/model-studio/model-pricing",
+    "returned_model": "qwen-max",
+    "currency": "CNY",
+    "rates": [
+      2.4,
+      9.6,
+      2.4
+    ]
+  },
+  "ernie": {
+    "url": "https://cloud.baidu.com/doc/qianfan/s/wmh4sv6ya",
+    "returned_model": "ernie-4.5-turbo-32k",
+    "currency": "CNY",
+    "rates": [
+      0.8,
+      3.2,
+      0.2
+    ]
+  },
+  "hunyuan": {
+    "url": "https://cloud.tencent.com/document/product/1823/130055",
+    "returned_model": "hy3",
+    "currency": "CNY",
+    "rates": [
+      1.0,
+      4.0,
+      0.25
+    ]
+  },
+  "interpretation": "list-price estimates from observed usage; account credits and negotiated discounts affect invoices",
+  "source_hashes": {
+    "deepseek.html": "210f102275ccf1a6542f08a3bc9e4b4c7c83278cb74b35217bffa112df6363b2",
+    "ernie.html": "6c30fe9932085024024b8bfdc896cb0960f5f5a4f4f5c0429451fe6e2e463d18",
+    "hunyuan.html": "fbe0cc2dcea949e7f007249d288bcb3eb8eda961575bbe5733533f3c47746be9",
+    "qwen.html": "2288f8a06d3a69844ba8a932e0672332ded494ee40fa3a74ccf473062d7defab"
+  }
+}

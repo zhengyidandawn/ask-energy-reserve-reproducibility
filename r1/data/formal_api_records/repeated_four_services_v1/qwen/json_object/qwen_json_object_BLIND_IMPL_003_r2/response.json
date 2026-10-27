@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is missing specific details such as the horizon, cost parameters, and explicit mention of which variables are to be used. These need to be provided for a proper study setup. Numerical outputs will be produced by the verified workflow once the clarification is provided and the study is accepted.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The horizon is unspecified (stated as 'whatever the paper normally uses'). Specific values for the horizon, cost_reserve, and cost_shortfall are required. The region ID, although implied by the ISO-NE reference, should also be explicitly stated as per the allowed regions list. Additionally, it's not clear which admissible variables are intended for this study. This information is necessary for the study configuration.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 634,
+    "completion_tokens": 233,
+    "total_tokens": 867,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612834,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-72a8f9f1-71af-92d9-9996-b2c49e47dbb8"
+}

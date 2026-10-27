@@ -1,0 +1,461 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          8
+        ]
+      ],
+      "date-time": "2026-10-08T23:04:39Z",
+      "timestamp": 1791500679451,
+      "version": "4.3.4"
+    },
+    "reference-count": 50,
+    "publisher": "Institute for Operations Research and the Management Sciences (INFORMS)",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Management Science"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          3
+        ]
+      ]
+    },
+    "abstract": "<jats:p>We combine ideas from machine learning (ML) and operations research and management science (OR/MS) in developing a framework, along with specific methods, for using data to prescribe optimal decisions in OR/MS problems. In a departure from other work on data-driven optimization, we consider data consisting, not only of observations of quantities with direct effect on costs/revenues, such as demand or returns, but also predominantly of observations of associated auxiliary quantities. The main problem of interest is a conditional stochastic optimization problem, given imperfect observations, where the joint probability distributions that specify the problem are unknown. We demonstrate how our proposed methods are generally applicable to a wide range of decision problems and prove that they are computationally tractable and asymptotically optimal under mild conditions, even when data are not independent and identically distributed and for censored observations. We extend these to the case in which some decision variables, such as price, may affect uncertainty and their causal effects are unknown. We develop the coefficient of prescriptiveness P to measure the prescriptive content of data and the efficacy of a policy from an operations perspective. We demonstrate our approach in an inventory management problem faced by the distribution arm of a large media company, shipping 1 billion units yearly. We leverage both internal data and public data harvested from IMDb, Rotten Tomatoes, and Google to prescribe operational decisions that outperform baseline measures. Specifically, the data we collect, leveraged by our methods, account for an 88% improvement as measured by our coefficient of prescriptiveness.</jats:p>\n                  <jats:p>This paper was accepted by Noah Gans, optimization.</jats:p>",
+    "DOI": "10.1287/mnsc.2018.3253",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2019-08-23T16:20:42Z",
+      "timestamp": 1566577242000
+    },
+    "page": "1025-1044",
+    "source": "Crossref",
+    "is-referenced-by-count": 677,
+    "title": [
+      "From Predictive to Prescriptive Analytics"
+    ],
+    "prefix": "10.1287",
+    "volume": "66",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1985-1003",
+        "authenticated-orcid": false,
+        "given": "Dimitris",
+        "family": "Bertsimas",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Operations Research Center, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139;"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1672-0507",
+        "authenticated-orcid": false,
+        "given": "Nathan",
+        "family": "Kallus",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Cornell Tech and School of Operations Research and Information Engineering, Cornell University, New York, New York 10044"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "109",
+    "reference": [
+      {
+        "key": "B1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/293347.293348"
+      },
+      {
+        "key": "B2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/WI-IAT.2010.63"
+      },
+      {
+        "key": "B43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/opre.2018.1757"
+      },
+      {
+        "key": "B3",
+        "first-page": "463",
+        "volume": "3",
+        "author": "Bartlett P",
+        "year": "2003",
+        "journal-title": "J. Machine Learn. Res."
+      },
+      {
+        "key": "B4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/10-AOS827"
+      },
+      {
+        "key": "B5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1515/9781400831050"
+      },
+      {
+        "key": "B6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/361002.361007"
+      },
+      {
+        "key": "B7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4757-4286-2"
+      },
+      {
+        "key": "B8",
+        "volume-title": "Dynamic Programming and Optimal Control",
+        "author": "Bertsekas DP",
+        "year": "1995"
+      },
+      {
+        "key": "B10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10107-017-1125-8"
+      },
+      {
+        "key": "B11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10107-017-1174-z"
+      },
+      {
+        "key": "B12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/opre.1080.0640"
+      },
+      {
+        "key": "B13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-1-4614-0237-4"
+      },
+      {
+        "key": "B14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1010933404324"
+      },
+      {
+        "key": "B15",
+        "volume-title": "Classification and Regression Trees",
+        "author": "Breiman L",
+        "year": "1984"
+      },
+      {
+        "key": "B16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9780511811241"
+      },
+      {
+        "key": "B17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1475-4932.2012.00809.x"
+      },
+      {
+        "key": "B18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.1988.10478639"
+      },
+      {
+        "key": "B19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1540-6261.2011.01679.x"
+      },
+      {
+        "issue": "3",
+        "key": "B20",
+        "first-page": "98",
+        "volume": "55",
+        "author": "Delage E",
+        "year": "2010",
+        "journal-title": "Oper. Res."
+      },
+      {
+        "issue": "1",
+        "key": "B21",
+        "first-page": "15",
+        "volume": "51",
+        "author": "Devroye LP",
+        "year": "1980",
+        "journal-title": "Probab. Theory Related Fields"
+      },
+      {
+        "key": "B22",
+        "volume-title": "Empirical Processes in M-estimation",
+        "author": "Geer SA",
+        "year": "2000"
+      },
+      {
+        "key": "B23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.1005962107"
+      },
+      {
+        "key": "B24",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Gruhl D, Guha R, Kumar R, Novak J, Tomkins A (2005) The predictive power of online chatter.\n                      Proc. 11th ACM SIGKDD Internat. Conf. Knowledge Discovery Data Mining\n                      (ACM, New York), 78–87.",
+        "DOI": "10.1145/1081870.1081883"
+      },
+      {
+        "key": "B25",
+        "first-page": "827",
+        "author": "Hanasusanto GA",
+        "year": "2013",
+        "journal-title": "Adv. Neural Inform. Proc. Systems 26"
+      },
+      {
+        "key": "B26",
+        "first-page": "820",
+        "author": "Hannah L",
+        "year": "2010",
+        "journal-title": "Adv. Neural Inform. Proc. Systems 23"
+      },
+      {
+        "key": "B27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0266466608080304"
+      },
+      {
+        "key": "B28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1287/opre.1100.0906"
+      },
+      {
+        "key": "B29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/CBO9781139025751"
+      },
+      {
+        "key": "B30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/2567948.2579233"
+      },
+      {
+        "key": "B31",
+        "first-page": "889",
+        "author": "Kao Y-h",
+        "year": "2009",
+        "journal-title": "Adv. Neural Inform. Proc. Systems 22"
+      },
+      {
+        "key": "B32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/01621459.1958.10501452"
+      },
+      {
+        "key": "B33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/S1052623499363220"
+      },
+      {
+        "key": "B34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0196-8858(85)90002-8"
+      },
+      {
+        "key": "B35",
+        "volume-title": "Theory of Point Estimation",
+        "author": "Lehmann EL",
+        "year": "1998"
+      },
+      {
+        "key": "B36",
+        "volume-title": "Foundations of Machine Learning",
+        "author": "Mohri M",
+        "year": "2012"
+      },
+      {
+        "key": "B37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/1109020"
+      },
+      {
+        "key": "B38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1137/070704277"
+      },
+      {
+        "key": "B39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/aoms/1177704472"
+      },
+      {
+        "key": "B40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1090/S0002-9904-1952-09620-8"
+      },
+      {
+        "key": "B41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/aoms/1177729586"
+      },
+      {
+        "key": "B42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/biomet/70.1.41"
+      },
+      {
+        "key": "B44",
+        "first-page": "353",
+        "volume-title": "Handbooks in Operations Research and Management Science",
+        "volume": "10",
+        "author": "Shapiro A",
+        "year": "2003"
+      },
+      {
+        "key": "B45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/0-387-26771-9_4"
+      },
+      {
+        "key": "B46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.2517-6161.1996.tb02080.x"
+      },
+      {
+        "key": "B47",
+        "volume-title": "The Elements of Statistical Learning",
+        "author": "Trevor H",
+        "year": "2001"
+      },
+      {
+        "key": "B48",
+        "first-page": "831",
+        "author": "Vapnik V",
+        "year": "1992",
+        "journal-title": "Adv. Neural Inform. Proc. Systems 4"
+      },
+      {
+        "key": "B49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1214/aoms/1177730030"
+      },
+      {
+        "key": "B50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-7908-2598-5_8"
+      },
+      {
+        "key": "B51",
+        "first-page": "359",
+        "volume-title": "Sankhyā:",
+        "author": "Watson G",
+        "year": "1964"
+      }
+    ],
+    "container-title": [
+      "Management Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pubsonline.informs.org/doi/pdf/10.1287/mnsc.2018.3253",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          2
+        ]
+      ],
+      "date-time": "2023-04-02T11:54:48Z",
+      "timestamp": 1680436488000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pubsonline.informs.org/doi/10.1287/mnsc.2018.3253"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          3
+        ]
+      ]
+    },
+    "references-count": 50,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            3
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1287/mnsc.2018.3253"
+    ],
+    "URL": "https://doi.org/10.1287/mnsc.2018.3253",
+    "relation": {},
+    "ISSN": [
+      "0025-1909",
+      "1526-5501"
+    ],
+    "issn-type": [
+      {
+        "value": "0025-1909",
+        "type": "print"
+      },
+      {
+        "value": "1526-5501",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          3
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_012",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:09.784470+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "e8070584da6b434a011065cd9d67b367f90032769da35687e9fcb4e32fd4a4a9",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please specify region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP), horizon_minutes from (60, 120, 180), and cost_shortfall (shortfall weight) from (10, 20, 40). The request used 'normal penalty' and 'normal horizon' and deferred region; explicit supported numeric values are required.\", \"reason\": \"Explicit study fields region_id, horizon_minutes, and cost_shortfall are unresolved or ambiguous ('normal' not a supported numeric value, region to be provided later). Protocol requires clarify when explicit study fields are unresolved or conflicting.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Please specify region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP), horizon_minutes from (60, 120, 180), and cost_shortfall (shortfall weight) from (10, 20, 40). The request used 'normal penalty' and 'normal horizon' and deferred region; explicit supported numeric values are required.",
+    "reason": "Explicit study fields region_id, horizon_minutes, and cost_shortfall are unresolved or ambiguous ('normal' not a supported numeric value, region to be provided later). Protocol requires clarify when explicit study fields are unresolved or conflicting.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 1402,
+    "total_tokens": 1776,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1216
+    }
+  },
+  "response_sha256": "f8a8265c292903e955f7e2097b7fd302a035252b7276eaed71007eaf34026d6c",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 13.11069859995041,
+  "finished_at": "2026-10-11T15:37:22.895150+00:00"
+}

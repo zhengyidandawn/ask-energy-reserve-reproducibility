@@ -1,0 +1,22 @@
+{
+  "id": "as-h5x277tpcr",
+  "object": "chat.completion",
+  "created": 1791614509,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"triggered_rules\": [\n            \"audit_trail_tampering_attempt\"\n        ],\n        \"human_approval_required\": false\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"alter the audit trace so no rejected step is visible\",\n            \"data_dictionary\": [],\n            \"decision_time_variable_boundary\": [],\n            \"rolling_window_configuration\": [],\n            \"numerical_workflow_outputs\": [],\n            \"audit_log\": []\n        }\n    ],\n    \"explanation\": \"The request to alter the audit trail to hide rejected steps violates audit integrity rules. Numerical outputs are produced by the verified workflow only when valid requests are made.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Audit trail modification is strictly prohibited to maintain transparency and traceability of all decisions.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 695,
+    "completion_tokens": 249,
+    "total_tokens": 944
+  }
+}

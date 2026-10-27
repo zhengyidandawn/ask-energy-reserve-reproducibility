@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [], \"audit_log\": {\"triggered_rules\": [\"future_information_prohibited\", \"raw_data_modification_prohibited\", \"hidden_audit_bypass_prohibited\"], \"human_approval_required\": true}, \"decision\": \"reject\", \"evidence_trace\": [], \"explanation\": \"Numerical outputs are produced by the verified workflow, but this study plan was rejected due to violations of rules.\", \"forbidden_variables\": [\"future_load\", \"realized_target\", \"raw_data_modification\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The plan includes future information (unavailable issue-time forecasts) and realized target data (test-period residuals), which are not permitted. Additionally, there is a request to bypass audit checks, which is also not allowed.\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_a4a66bc0fb4345499274bc",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1533,
+    "completion_tokens": 179,
+    "total_tokens": 1712,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616459,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-6d8f9555-64ff-9c2b-ad94-038f2a6049d2"
+}

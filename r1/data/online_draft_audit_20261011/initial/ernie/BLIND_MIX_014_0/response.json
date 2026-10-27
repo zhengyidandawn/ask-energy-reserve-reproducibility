@@ -1,0 +1,25 @@
+{
+  "id": "as-12m79cf1kq",
+  "object": "chat.completion",
+  "created": 1791733046,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"MISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": \"Please specify the horizon_minutes (supported values: 60, 120, 180) and cost_shortfall (supported values: 10, 20, 40).\",\n    \"reason\": \"The horizon_minutes and cost_shortfall fields are unresolved. The cost_reserve is fixed at 1 as per the study protocol.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 158,
+    "total_tokens": 530,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

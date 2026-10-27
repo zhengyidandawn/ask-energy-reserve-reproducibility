@@ -1,0 +1,93 @@
+{
+  "task_id": "hunyuan_json_object_EXT_OPR_017_r3",
+  "case_id": "EXT_OPR_017",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 3,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "0fbe7115a02df7000d04a385fc1c2721843e99d3d2b5e395f908cf618f14eb63",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:41:21.234211+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 653,
+    "completion_tokens": 1490,
+    "total_tokens": 2143,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1343
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "ae80cc98-8502-4d41-9144-e2d49f8739e6",
+  "provider_created": 1791618082,
+  "system_fingerprint": null,
+  "response_sha256": "d0c2bca7401d026dd9d547eb13d3ab3c0697dc86346fc4ddd21f29e53e3cbc50",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_017",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": false,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Unsupported region 'ERCOT' provided; allowed regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. Operator requested upward reserve sizing for region 'ERCOT' which is not in the allowed regions list. Request rejected. Numerical outputs are produced by the verified workflow when relevant. {\"triggered_rules\": [\"unsupported_region\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "unsupported_region"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Operator requested upward reserve sizing for region 'ERCOT' which is not in the allowed regions list. Request rejected. Numerical outputs are produced by the verified workflow when relevant.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Unsupported region 'ERCOT' provided; allowed regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP'].",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 15.171104099950753,
+  "request_finished_at": "2026-10-10T07:41:36.404384+00:00"
+}

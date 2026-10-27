@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region (ERCO), a supported horizon (120 minutes), and an acceptable shortfall cost (10). The study does not require estimation of MW, which is in line with the instructions. All parameters are within the supported ranges and do not conflict.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 132,
+    "total_tokens": 536,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733094,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-7ee387d9-f0a8-9e80-879d-f8d99cb9977d"
+}

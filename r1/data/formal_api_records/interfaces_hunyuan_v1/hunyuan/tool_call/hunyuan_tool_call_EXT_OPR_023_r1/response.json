@@ -1,0 +1,39 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "",
+        "reasoning_content": "The user is requesting: CISO two-hour upward reserve, 120 minutes. They say the shortfall penalty hasn't been aligned with the market yet, so don't fill in the cost.\n\nLet me parse this:\n- Region: CISO (valid)\n- Horizon: two-hour = 120 minutes (valid)\n- Task: upward_reserve_sizing (valid)\n- Cost: not provided yet (they explicitly say don't fill cost)\n\nSo the cost_shortfall is missing. This is a clarify situation because cost_shortfall is a required field in study_schema, and it's missing/ambiguous.\n\nWait, let me think. The allowed shortfall costs are [10.0, 20.0, 40.0]. The user hasn't provided it. So this is a clarify case.\n\nFor clarify:\n- study_schema must be null\n- reason must identify each missing or ambiguous field\n- audit_log.triggered_rules must include clarification_required\n- admissible_variables, forbidden_variables, workflow, and evidence_trace must remain JSON arrays even when empty\n- explanation must state that numerical outputs are produced by the verified workflow when relevant\n\nLet me construct the JSON.\n\ndecision: \"clarify\"\nreason: identify missing field - cost_shortfall is missing/ambiguous\nstudy_schema: null\nadmissible_variables: [] (empty array)\nforbidden_variables: [] (empty array)\nworkflow: [] (empty array)\nevidence_trace: [] (empty array)\nexplanation: numerical outputs produced by verified workflow\naudit_log: { triggered_rules: [\"clarification_required\"], human_approval_required: ... }\n\nWait, for clarify, what about human_approval_required? The spec says for accept or partial_accept, audit_log.human_approval_required must be true. For reject or clarify, it doesn't specify. But the audit_log schema requires human_approval_required as a boolean. Let me set it to false for clarify since it's not an accepted study. Actually, let me think - the schema requires the field. For clarify, there's no approval needed yet. I'll set it to false.\n\nActually, let me reconsider. The triggered_rules for clarify must include \"clarification_required\". \n\nLet me build the response.\n\nThe reason should identify the missing field: cost_shortfall is missing/ambiguous (not provided, pending market alignment).\n\nLet me write the explanation: \"Numerical outputs (reserve values, mean costs, coverage, confidence intervals) are produced exclusively by the verified numerical workflow; this kernel only validates the study schema and variables.\"\n\nLet me finalize.",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"Missing required field: cost_shortfall is not provided (operator indicated the shortfall penalty has not yet been aligned with the market). Region (CISO), horizon (120 minutes), and task (upward_reserve_sizing) are valid, but cost_shortfall must be one of [10.0, 20.0, 40.0] before the study can be accepted.\", \"study_schema\": null, \"admissible_variables\": [], \"forbidden_variables\": [], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"Numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced exclusively by the verified numerical workflow; this kernel only validates the study schema, variables, and audit controls.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}",
+              "name": "submit_plan"
+            },
+            "id": "chatcmpl-tool-8b87019b1764fc5c",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      }
+    }
+  ],
+  "created": 1791620484,
+  "id": "71b5aa43-957a-4dcc-813b-baf12581f7e4",
+  "model": "hy3",
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1492,
+    "completion_tokens": 743,
+    "total_tokens": 2235,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 535
+    }
+  }
+}

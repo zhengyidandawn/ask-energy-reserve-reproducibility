@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is unclear regarding specific parameters such as the horizon, cost_reserve, and cost_shortfall. Numerical outputs are produced by the verified workflow, but first, we need clarification on the missing details.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The horizon, cost_reserve, and cost_shortfall values are not specified in the request. Also, the correct region abbreviation should be used (ISNE for ISO-NE).\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 634,
+    "completion_tokens": 172,
+    "total_tokens": 806,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613225,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-d8e96e91-b89e-98d2-a42e-dd0642f99a6f"
+}

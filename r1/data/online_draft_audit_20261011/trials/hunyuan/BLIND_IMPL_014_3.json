@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_IMPL_014",
+  "repeat": 3,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_IMPL_014",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:39:53.045666+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "421dc075bcdf70eeb7f3b475290b0c2b266681b22148dd85b219988f02abd76b",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"MISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The MISO region is valid and cost_reserve is fixed at 1, but horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) are not explicitly specified. Please provide the required horizon and shortfall weight (or confirm explicit numeric defaults) to proceed.\", \"reason\": \"Region MISO is supported and cost_reserve is set to 1 per study protocol. However, horizon_minutes is omitted and cost_shortfall is not explicitly supplied as a supported numeric weight (the phrase 'default c_R/c_S' does not resolve to a specific allowed value). Explicit study fields are unresolved, requiring clarification.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The MISO region is valid and cost_reserve is fixed at 1, but horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) are not explicitly specified. Please provide the required horizon and shortfall weight (or confirm explicit numeric defaults) to proceed.",
+      "reason": "Region MISO is supported and cost_reserve is set to 1 per study protocol. However, horizon_minutes is omitted and cost_shortfall is not explicitly supplied as a supported numeric weight (the phrase 'default c_R/c_S' does not resolve to a specific allowed value). Explicit study fields are unresolved, requiring clarification.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 1485,
+      "total_tokens": 1853,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1287
+      }
+    },
+    "response_sha256": "d34682c8241c2d6eb3681720003036300a6eb63066c2bbda04a5e6f199a91b42",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 13.664602400036529,
+    "finished_at": "2026-10-11T15:40:06.710272+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_IMPL_014",
+    "repeat": 3,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:39:53.045666+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "421dc075bcdf70eeb7f3b475290b0c2b266681b22148dd85b219988f02abd76b",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"MISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The MISO region is valid and cost_reserve is fixed at 1, but horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) are not explicitly specified. Please provide the required horizon and shortfall weight (or confirm explicit numeric defaults) to proceed.\", \"reason\": \"Region MISO is supported and cost_reserve is set to 1 per study protocol. However, horizon_minutes is omitted and cost_shortfall is not explicitly supplied as a supported numeric weight (the phrase 'default c_R/c_S' does not resolve to a specific allowed value). Explicit study fields are unresolved, requiring clarification.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The MISO region is valid and cost_reserve is fixed at 1, but horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) are not explicitly specified. Please provide the required horizon and shortfall weight (or confirm explicit numeric defaults) to proceed.",
+      "reason": "Region MISO is supported and cost_reserve is set to 1 per study protocol. However, horizon_minutes is omitted and cost_shortfall is not explicitly supplied as a supported numeric weight (the phrase 'default c_R/c_S' does not resolve to a specific allowed value). Explicit study fields are unresolved, requiring clarification.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 1485,
+      "total_tokens": 1853,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1287
+      }
+    },
+    "response_sha256": "d34682c8241c2d6eb3681720003036300a6eb63066c2bbda04a5e6f199a91b42",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 13.664602400036529,
+    "finished_at": "2026-10-11T15:40:06.710272+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 13.664602400036529,
+  "transport_complete": true
+}

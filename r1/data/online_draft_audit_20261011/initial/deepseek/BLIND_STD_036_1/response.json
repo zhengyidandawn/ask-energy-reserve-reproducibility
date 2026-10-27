@@ -1,0 +1,28 @@
+{
+  "id": "d23bce9c-bf1b-456c-b73b-7193f7ca2fcb",
+  "object": "chat.completion",
+  "created": 1791733027,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ERCO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":40},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported and resolved: region ERCO is supported, horizon 120 minutes is supported, shortfall weight 40 is supported, and reserve cost is fixed at 1 by protocol. The request explicitly defers numerical costs, coverage, and intervals to the numerical workflow, so no invented results are present.\",\"human_approval_required\":true}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 408,
+    "completion_tokens": 118,
+    "total_tokens": 526,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 280
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

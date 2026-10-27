@@ -1,0 +1,25 @@
+{
+  "id": "as-6ximguy3cx",
+  "object": "chat.completion",
+  "created": 1791615296,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": false,\n        \"triggered_rules\": [\n            \"clarification_required\"\n        ]\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [],\n    \"explanation\": \"The operator request is incomplete and requires clarification on the region_id field before proceeding with the upward reserve sizing study.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Missing required field: region_id. The region_id must be specified from the allowed regions ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP'] to proceed with the study.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 703,
+    "completion_tokens": 195,
+    "total_tokens": 898,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": \"Could you confirm if the '730/30/30 rolling split' is a specific data split requirement for your study, and if so, could you provide more details on how this should be applied? This term is not part of our standard protocol, and we need to ensure it is correctly interpreted.\",\n  \"reason\": \"The request includes a non-standard term ('730/30/30 rolling split') that requires clarification to ensure accurate setup of the study.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 170,
+    "total_tokens": 575,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733103,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-644a0b01-ba60-90d6-9111-b1959d5398af"
+}

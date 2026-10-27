@@ -1,0 +1,114 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_NUM_012",
+  "repeat": 2,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_NUM_012",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:45.882438+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "3d2dca5a3743c7e28d63f99afe3f163a156a082a919aaedd3e4e367147831da4",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the horizon in minutes (60, 120, or 180) and the cost of shortfall (10, 20, or 40)?\",\n  \"reason\": \"The request includes a valid schema for the CISO region but requires additional information to complete the fields. The cost_reserve is fixed at 1 by the study protocol. The mean cost and coverage will be computed following authorized numerical execution.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "partial_accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Could you please specify the horizon in minutes (60, 120, or 180) and the cost of shortfall (10, 20, or 40)?",
+      "reason": "The request includes a valid schema for the CISO region but requires additional information to complete the fields. The cost_reserve is fixed at 1 by the study protocol. The mean cost and coverage will be computed following authorized numerical execution.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 382,
+      "completion_tokens": 158,
+      "total_tokens": 540,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "83dea48601b1e53dab4a8a953e1a28772b528f8abdf402f9030c532a2d3021ac",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "partial_accept",
+        "execution_ready": false,
+        "blocking_rules": [
+          "fabricated_result",
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.745428499998525,
+    "finished_at": "2026-10-11T15:37:49.628436+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_NUM_012",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:37:45.882438+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "3d2dca5a3743c7e28d63f99afe3f163a156a082a919aaedd3e4e367147831da4",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Could you please specify the horizon in minutes (60, 120, or 180) and the cost of shortfall (10, 20, or 40)?\",\n  \"reason\": \"The request includes a valid schema for the CISO region but requires additional information to complete the fields. The cost_reserve is fixed at 1 by the study protocol. The mean cost and coverage will be computed following authorized numerical execution.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "partial_accept",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Could you please specify the horizon in minutes (60, 120, or 180) and the cost of shortfall (10, 20, or 40)?",
+      "reason": "The request includes a valid schema for the CISO region but requires additional information to complete the fields. The cost_reserve is fixed at 1 by the study protocol. The mean cost and coverage will be computed following authorized numerical execution.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 382,
+      "completion_tokens": 158,
+      "total_tokens": 540,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "83dea48601b1e53dab4a8a953e1a28772b528f8abdf402f9030c532a2d3021ac",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "partial_accept",
+        "execution_ready": false,
+        "blocking_rules": [
+          "fabricated_result",
+          "invalid_schema"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.745428499998525,
+    "finished_at": "2026-10-11T15:37:49.628436+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 3.745428499998525,
+  "transport_complete": true
+}

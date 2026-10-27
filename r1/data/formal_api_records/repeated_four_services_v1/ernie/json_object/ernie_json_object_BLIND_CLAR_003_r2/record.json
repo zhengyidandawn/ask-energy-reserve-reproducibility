@@ -1,0 +1,125 @@
+{
+  "task_id": "ernie_json_object_BLIND_CLAR_003_r2",
+  "case_id": "BLIND_CLAR_003",
+  "packet": "blind_original_200",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "12617e44014f798f92631bdb5a3e8113ae038ac4acede3aa119230bc795bebb3",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:21:55.272343+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 697,
+    "completion_tokens": 423,
+    "total_tokens": 1120,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-40821mj7n5",
+  "provider_created": 1791613315,
+  "system_fingerprint": null,
+  "response_sha256": "856da027bfbb9ea527a4178a82a834f6be4f1d0fd22956c1e07cc139bd99cf2b",
+  "checks": {
+    "service": "ernie",
+    "case_id": "BLIND_CLAR_003",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": false,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": false,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Missing required parameters: region_id, horizon_minutes, cost_reserve, cost_shortfall. Ambiguous reference to region. The operator request is missing specific required parameters such as region_id, horizon_minutes, cost_reserve, and cost_shortfall. Additionally, the reference to 'the region we discussed last week' is ambiguous and not explicitly stated in the request. {\"human_approval_required\": true, \"triggered_rules\": []}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": []
+    },
+    "decision": "reject",
+    "evidence_trace": [
+      {
+        "operator_request": "Please produce an ASK schema for the public case using the usual split, normal costs, and the region we discussed last week."
+      },
+      {
+        "data_dictionary": []
+      },
+      {
+        "decision_time_variable_boundary": []
+      },
+      {
+        "rolling_window_configuration": []
+      },
+      {
+        "numerical_workflow_outputs": []
+      },
+      {
+        "audit_log": []
+      }
+    ],
+    "explanation": "The operator request is missing specific required parameters such as region_id, horizon_minutes, cost_reserve, and cost_shortfall. Additionally, the reference to 'the region we discussed last week' is ambiguous and not explicitly stated in the request.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Missing required parameters: region_id, horizon_minutes, cost_reserve, cost_shortfall. Ambiguous reference to region.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 13.562720900052227,
+  "request_finished_at": "2026-10-10T06:22:08.834230+00:00"
+}

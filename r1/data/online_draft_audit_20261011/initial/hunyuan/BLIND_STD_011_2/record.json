@@ -1,0 +1,53 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_011",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:47:02.838806+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "65208ac012225a25c2dcd6b6a0d19063a932cc0072ce12f0c044c34d4f90f747",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 180, \"cost_reserve\": 1, \"cost_shortfall\": 10}, \"clarification_question\": null, \"reason\": \"All explicit study fields are resolved and supported: region ERCO is supported, horizon 180 minutes is supported, cost_reserve fixed at 1 per protocol (supplied as 1), cost_shortfall 10 is within supported weights {10,20,40}. No unsupported fields, future information, approval/audit bypass, or raw-data modification requested. Additional descriptors (upward reserve sizing, evidence trace) do not conflict with schema.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 180,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "All explicit study fields are resolved and supported: region ERCO is supported, horizon 180 minutes is supported, cost_reserve fixed at 1 per protocol (supplied as 1), cost_shortfall 10 is within supported weights {10,20,40}. No unsupported fields, future information, approval/audit bypass, or raw-data modification requested. Additional descriptors (upward reserve sizing, evidence trace) do not conflict with schema.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 1676,
+    "total_tokens": 2070,
+    "prompt_tokens_details": {
+      "cached_tokens": 320
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1522
+    }
+  },
+  "response_sha256": "54f542cb91c343dbf3c91231c36f112f793ee6b1014a73d54c6038bb9266236c",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 12.971364099998027,
+  "finished_at": "2026-10-11T15:47:15.808899+00:00"
+}

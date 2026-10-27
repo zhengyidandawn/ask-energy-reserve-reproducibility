@@ -1,0 +1,28 @@
+{
+  "id": "ad7eb2dd-cb4d-4c2c-accc-d45294d6cc70",
+  "object": "chat.completion",
+  "created": 1791615463,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\":[\"calendar\",\"cost_ratio\",\"current_load\",\"horizon\",\"lagged_load\",\"load_statistics\",\"observed_weather\",\"recent_ramp\",\"region_id\"],\"audit_log\":{\"human_approval_required\":true,\"triggered_rules\":[]},\"decision\":\"accept\",\"evidence_trace\":[\"operator_request\",\"data_dictionary\",\"decision_time_variable_boundary\",\"rolling_window_configuration\",\"numerical_workflow_outputs\",\"audit_log\"],\"explanation\":\"The confirmed study is an upward reserve sizing task for ERCO with horizon 60 minutes, cost_reserve 1.0, and cost_shortfall 40.0. The plan uses only admissible decision-time variables: calendar, current_load, lagged_load, recent_ramp, load_statistics, observed_weather, region_id, horizon, and cost_ratio. Future information, unavailable issue-time forecasts, test-period residuals, raw-data modification, fabricated results, and approval bypasses are excluded. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, and dispatch results are produced only by the verified numerical workflow. Human approval is required before execution.\",\"forbidden_variables\":[\"fabricated_result\",\"future_load\",\"future_weather\",\"raw_data_modification\",\"realized_target\",\"test_period_residual\"],\"numerical_output_policy\":\"computed_by_verified_workflow_only\",\"reason\":\"All required fields are confirmed and supported: region ERCO, horizon 60 minutes, cost_reserve 1.0, cost_shortfall 40.0, and admissible decision-time variables. The study is accepted subject to human approval.\",\"study_schema\":{\"task_type\":\"upward_reserve_sizing\",\"region_id\":\"ERCO\",\"horizon_minutes\":60,\"cost_reserve\":1.0,\"cost_shortfall\":40.0,\"rolling_window\":{\"train_days\":730,\"cal_days\":30,\"test_days\":30,\"rolling_step_days\":30},\"requires_human_approval\":true},\"workflow\":[\"validate_request_against_allowed_task_region_horizon_and_costs\",\"confirm_decision_time_variable_boundary_and_exclude_future_or_test_residual_information\",\"configure_rolling_window_train_730_cal_30_test_30_step_30\",\"run_verified_numerical_workflow_to_compute_all_numerical_outputs\",\"record_audit_log_and_require_human_approval_before_execution\"]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1060,
+    "completion_tokens": 529,
+    "total_tokens": 1589,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 420
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

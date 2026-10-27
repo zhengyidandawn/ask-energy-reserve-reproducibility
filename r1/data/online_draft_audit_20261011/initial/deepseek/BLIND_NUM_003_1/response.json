@@ -1,0 +1,28 @@
+{
+  "id": "916d5ad2-3ddf-4ae4-ae0b-f57146f7b454",
+  "object": "chat.completion",
+  "created": 1791733015,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"reject\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request asks for a 95% confidence interval for the reserve result before the workflow has run, which requires future information and computed numerical results that are not available. The region ISNE is supported, but the requested interval is outside the authorized numerical execution and cannot be produced in this draft.\",\n  \"human_approval_required\": true\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "completion_tokens": 136,
+    "total_tokens": 537,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 273
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

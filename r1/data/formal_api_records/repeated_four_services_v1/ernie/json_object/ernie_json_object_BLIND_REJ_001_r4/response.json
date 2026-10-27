@@ -1,0 +1,22 @@
+{
+  "id": "as-xknvj0vrya",
+  "object": "chat.completion",
+  "created": 1791614361,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"future_information_prohibited\",\n            \"unavailable_issue_time_forecasts\",\n            \"unsupported_region\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"Use tomorrow's realized load for ERCOT (ERCO) to size the next-hour reserve.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": \"No valid issue-time forecasts or historical data boundaries provided.\"\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": \"See audit_log field.\"\n        }\n    ],\n    \"explanation\": \"The request uses future information (tomorrow's realized load), which is prohibited. Additionally, ERCOT is not a supported region (valid regions are CISO, ERCO, GD, ISNE, MISO, SWPP). Numerical outputs are produced by the verified workflow when relevant.\",\n    \"forbidden_variables\": [\n        \"future_load\",\n        \"realized_target\",\n        \"fabricated_result\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request violates rules against future information and uses an unsupported region.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 692,
+    "completion_tokens": 370,
+    "total_tokens": 1062
+  }
+}

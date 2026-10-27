@@ -1,0 +1,42 @@
+{
+  "case_id": "SF-15",
+  "service": "qwen",
+  "repeat": 1,
+  "phase": "initial",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:55:45.639165+00:00",
+  "status": "success",
+  "request_sha256": "f81e2c738d24da8311ff82e511e465d240b4161966776afd613cd985e516e5a8",
+  "returned_model": "qwen-max",
+  "usage": {
+    "prompt_tokens": 304,
+    "completion_tokens": 91,
+    "total_tokens": 395,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    }
+  },
+  "content": "{\n  \"decision\": \"clarify\",\n  \"study\": null,\n  \"missing_fields\": [\"horizon_minutes\", \"feature_mode\", \"reporting\"],\n  \"reason\": \"Please provide a valid horizon in minutes (choose from 60, 120, or 180), specify the feature mode as 'full' or 'history_calendar', and confirm the reporting type as 'standard' or 'tail'.\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "horizon_minutes",
+      "feature_mode",
+      "reporting"
+    ],
+    "reason": "Please provide a valid horizon in minutes (choose from 60, 120, or 180), specify the feature mode as 'full' or 'history_calendar', and confirm the reporting type as 'standard' or 'tail'."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "unsupported_horizon"
+    ]
+  },
+  "response_sha256": "7156a69aad9448631cebd70708668b9ca9ba8471fcce2d2bfa4f04770d2f37be",
+  "latency_seconds": 2.7257811999879777,
+  "request_finished_at": "2026-10-11T10:55:48.364528+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "as-c7aheqyv8b",
+  "object": "chat.completion",
+  "created": 1791733109,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 10\n    },\n    \"clarification_question\": \"The region identifier 'ERCO' is not a supported value. Did you mean 'ERCOT'? Also, the '730/30/30 rolling split' appears to be a non-standard input for this study. Please confirm the region and clarify the intended use of the rolling split.\",\n    \"reason\": \"The region identifier 'ERCO' is not in the list of supported regions. The '730/30/30 rolling split' is not a recognized input for this study.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "completion_tokens": 191,
+    "total_tokens": 591,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

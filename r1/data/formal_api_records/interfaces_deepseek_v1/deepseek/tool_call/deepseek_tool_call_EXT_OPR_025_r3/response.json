@@ -1,0 +1,39 @@
+{
+  "id": "260a933b-e45e-4fc3-995b-bb453ae67f07",
+  "object": "chat.completion",
+  "created": 1791613116,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_aO1iRA54fTV2xjEX7j9S0834",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"The request is missing or ambiguous on required fields: (1) horizon_minutes is not specified — the operator says it \\\"depends on how the evening peak looks\\\" and explicitly instructs not to assume 60, so no allowed horizon (60, 120, or 180) can be selected; (2) cost_reserve is not stated (only cost_shortfall c_S=10 is given), and cost_reserve must be 1.0; (3) the rolling window configuration is not confirmed (defaults train_days=730, cal_days=30, test_days=30, rolling_step_days=30). Region SWPP and cost_shortfall=10 are valid and preserved. Please confirm the horizon in minutes (60, 120, or 180), confirm cost_reserve=1.0, and confirm the rolling window.\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"No numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, or dispatch results) are produced here; all such quantities are computed only by the verified numerical workflow. The request cannot be accepted as-is because the horizon is undetermined and cost_reserve and the rolling window are unconfirmed. Region SWPP and cost_shortfall=10 are valid and retained for the eventual schema.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"horizon_minutes_unspecified\", \"cost_reserve_unspecified\", \"rolling_window_unconfirmed\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1658,
+    "completion_tokens": 578,
+    "total_tokens": 2236,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 250
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

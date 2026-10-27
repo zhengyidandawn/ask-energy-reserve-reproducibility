@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Please specify the horizon in minutes (60, 120, or 180) and the cost shortfall (10, 20, or 40).\",\n  \"reason\": \"The request specifies a MISO case but does not provide explicit values for the horizon in minutes and the cost shortfall. These fields are required to proceed with the energy study.\",\n  \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 558,
+    "completion_tokens": 143,
+    "total_tokens": 701,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "created": 1791733047,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-321ef93e-d7d7-9c7b-ac10-69c3cdc10681"
+}

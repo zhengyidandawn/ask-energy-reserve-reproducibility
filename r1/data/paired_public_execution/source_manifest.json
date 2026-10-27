@@ -1,0 +1,56 @@
+{
+  "source": "EIA v2 electricity/rto/region-data/data",
+  "type": "actual demand",
+  "source_units": "MWh in one-hour intervals",
+  "derived_units": "hourly average MW",
+  "start": "2023-01-01 00:00:00+00:00",
+  "end": "2024-01-10 23:00:00+00:00",
+  "n_rows": 45000,
+  "pages": [
+    {
+      "file": "page_000000.json",
+      "sha256": "22918385fba38399b55d8c14920b30fd59d5c3aec3ffb716ad523ae8dcd47750",
+      "rows": 5000
+    },
+    {
+      "file": "page_005000.json",
+      "sha256": "ffe945eaae54dcbfe22820dbd9852f8373c8fe4fff956d3ffb77edac4c89d563",
+      "rows": 5000
+    },
+    {
+      "file": "page_010000.json",
+      "sha256": "6d0b2c9f22ff2de362ffd57acdd6870e419e5264160da04437ac9d121ed22b2b",
+      "rows": 5000
+    },
+    {
+      "file": "page_015000.json",
+      "sha256": "f6263f39cd11d403c8114b435d1d3571394a9ab9b1f392aa3d118a50df7fae7c",
+      "rows": 5000
+    },
+    {
+      "file": "page_020000.json",
+      "sha256": "7f227d0a6402f7e8e22b5a75283804a1f9f2c0412140e28565d906396ce9df32",
+      "rows": 5000
+    },
+    {
+      "file": "page_025000.json",
+      "sha256": "d596e32a561983df3db9f31a0c4928ff167975e2a6bee7e075afdffea35feb61",
+      "rows": 5000
+    },
+    {
+      "file": "page_030000.json",
+      "sha256": "9ca35fc687442c1e570cc58a8db892125fc70454d4143d05530f09fb21bb4ee9",
+      "rows": 5000
+    },
+    {
+      "file": "page_035000.json",
+      "sha256": "47c22b4e8885e8a9597219a7b3f1f47c0e506f05d0fe7161b1d46a92f452b1d6",
+      "rows": 5000
+    },
+    {
+      "file": "page_040000.json",
+      "sha256": "e14c2e880cc41aa60e05e9b32bbb9feea0035a83bb8f9e257b3230ed2edcae85",
+      "rows": 5000
+    }
+  ]
+}

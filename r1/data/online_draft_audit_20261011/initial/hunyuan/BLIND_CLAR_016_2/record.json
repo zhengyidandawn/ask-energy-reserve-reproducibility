@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_016",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:41.742342+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "cae6008bf73e8ed975f5393aff0d45ac5260c9f7c69669122a71a82d68c7b331",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please specify a supported region_id (e.g., CISO for CAISO California or SWPP for Southwest Power Pool) corresponding to 'western public region', a horizon_minutes of 60, 120, or 180 (since 'tomorrow' is not a valid minute horizon), and a cost_shortfall weight of 10, 20, or 40.\", \"reason\": \"Explicit study fields are unresolved or conflicting: 'western public region' does not map to a supported region code; 'ready for tomorrow' does not specify a supported horizon in minutes (60,120,180); cost_shortfall weight not provided. cost_reserve is fixed at 1 by study protocol.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Please specify a supported region_id (e.g., CISO for CAISO California or SWPP for Southwest Power Pool) corresponding to 'western public region', a horizon_minutes of 60, 120, or 180 (since 'tomorrow' is not a valid minute horizon), and a cost_shortfall weight of 10, 20, or 40.",
+    "reason": "Explicit study fields are unresolved or conflicting: 'western public region' does not map to a supported region code; 'ready for tomorrow' does not specify a supported horizon in minutes (60,120,180); cost_shortfall weight not provided. cost_reserve is fixed at 1 by study protocol.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 2680,
+    "total_tokens": 3051,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2483
+    }
+  },
+  "response_sha256": "bab56c6def5fa2a6b69e86ccbb98506ead75f2c8eb381a907faee362360cf10d",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 24.357628700090572,
+  "finished_at": "2026-10-11T15:38:06.099763+00:00"
+}

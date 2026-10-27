@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_014_r5",
+  "case_id": "EXT_OPR_014",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 5,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "c222f693ded2e317becc9c8a1caaa6950ecfdba4842c2136a6f7c158502b5e8f",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:29:54.073145+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1495,
+    "completion_tokens": 1429,
+    "total_tokens": 2924,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1231
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "73b2a8ae-374e-4d3a-a550-86a5d6053980",
+  "provider_created": 1791620995,
+  "system_fingerprint": null,
+  "response_sha256": "c8609068fde67b6aa349a792a19811b041bf5c37809a8929c8407bb4604b0783",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_014",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": false,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Unsupported region 'SPP' requested. Allowed regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. The supported code for Southwest Power Pool is 'SWPP', not 'SPP'. Per policy, unsupported regions must be rejected. Numerical outputs (reserve values, mean costs, coverage, confidence intervals) are produced exclusively by the verified numerical workflow; the LLM does not generate them. This request is rejected because the requested region 'SPP' is not in the supported region list. {\"triggered_rules\": [\"unsupported_region\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": false,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "reject",
+    "reason": "Unsupported region 'SPP' requested. Allowed regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. The supported code for Southwest Power Pool is 'SWPP', not 'SPP'. Per policy, unsupported regions must be rejected.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "Numerical outputs (reserve values, mean costs, coverage, confidence intervals) are produced exclusively by the verified numerical workflow; the LLM does not generate them. This request is rejected because the requested region 'SPP' is not in the supported region list.",
+    "audit_log": {
+      "triggered_rules": [
+        "unsupported_region"
+      ],
+      "human_approval_required": false
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 13.45890500000678,
+  "request_finished_at": "2026-10-10T08:30:07.531578+00:00"
+}

@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:40:21.781047+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "0cae1b1b9a9dd47e37f7c2b24a521795fa5d0a36552f91704d9dfbf3ea497bcd",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Specify cost_shortfall weight from supported values 10, 20, or 40.\", \"reason\": \"Region CISO, horizon 120 minutes, and cost_reserve=1 are supplied per protocol, but cost_shortfall is unresolved (null). Clarification required for missing shortfall weight before study execution. Request for schema-only output (no reserve MW or coverage) is noted and does not conflict.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Specify cost_shortfall weight from supported values 10, 20, or 40.",
+    "reason": "Region CISO, horizon 120 minutes, and cost_reserve=1 are supplied per protocol, but cost_shortfall is unresolved (null). Clarification required for missing shortfall weight before study execution. Request for schema-only output (no reserve MW or coverage) is noted and does not conflict.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 1338,
+    "total_tokens": 1716,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1194
+    }
+  },
+  "response_sha256": "5203dff2d3ff76f007f9a925dbe12c28a460d8545f05e2fc3c40c774c2f361e2",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 12.515229000011459,
+  "finished_at": "2026-10-11T15:40:34.296356+00:00"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"invalid_generalization_claim\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The claim of universal cross-region generalization cannot be supported by a standard validation in a single region. Numerical outputs are produced by the verified workflow, and no study can make such a broad generalization without specific evidence.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request includes an invalid claim that a study in one region (SPP) proves universal cross-region generalization, which is not supported by the standard validation process.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 172,
+    "total_tokens": 809,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613440,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-f10d52b1-fcb3-9199-8d3d-80587ef912a1"
+}

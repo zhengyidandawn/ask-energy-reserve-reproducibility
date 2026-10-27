@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"unsupported_region\", \"clarification_required\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is rejected because SPP (Southwest Power Pool) is not an allowed region for the study, and there is no valid evidence to support a claim of universal cross-region generalization. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The specified region 'SPP' is not in the list of supported regions, and the claim about proving universal cross-region generalization is not substantiated with the provided details or within the constraints of the study. Additional information is needed to assess the validity of such a broad claim.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 203,
+    "total_tokens": 840,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612902,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b08bfa3a-8380-9046-8d7c-41f0702c3864"
+}

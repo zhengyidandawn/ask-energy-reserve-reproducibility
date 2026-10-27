@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"horizon_mismatch\",\n      \"clarification_required\"\n    ]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"请求中的窗口时间与所需的一小时（60分钟）不匹配，且指定了一个不允许的滚动窗口期。同时，'先安排'表述不清楚，需要进一步澄清。\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"所请求的向上备用研究指定的时间窗口为45分钟，而允许的最小时间为60分钟。此外，'先安排'的具体含义不明确。\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 643,
+    "completion_tokens": 179,
+    "total_tokens": 822,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612768,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-d75fe5a4-124c-9e8a-a47a-c5a4a39a0347"
+}

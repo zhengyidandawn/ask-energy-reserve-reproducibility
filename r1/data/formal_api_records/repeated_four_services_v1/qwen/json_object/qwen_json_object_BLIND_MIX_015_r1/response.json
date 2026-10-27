@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"reject_unsupported_region\",\n      \"no_coverage_number_generation\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request for a coverage number is not allowed as numerical outputs, including coverage values, are produced by the verified workflow only. Additionally, SPP (SWPP) is an unsupported region for this task.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Unsupported region and request for generation of numerical output (coverage number).\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 640,
+    "completion_tokens": 161,
+    "total_tokens": 801,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612721,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-87acd44e-44c7-99e4-9a2b-ea2079e89d0c"
+}

@@ -1,0 +1,49 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_CLAR_012",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:40.574151+00:00",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "ba961f8cdcb68454c4fedb2aa2a24787413f56f630e66d7db11f66cb54166ddf",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "content": "{\n    \"decision\": \"clarify\",\n    \"fields\": {\n        \"region_id\": null,\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 20\n    },\n    \"clarification_question\": \"Please specify the region_id from the supported regions: GD, ERCO, CISO, ISNE, MISO, or SWPP.\",\n    \"reason\": \"The region_id is required to proceed with the energy study but was not provided in the request.\",\n    \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 20
+    },
+    "clarification_question": "Please specify the region_id from the supported regions: GD, ERCO, CISO, ISNE, MISO, or SWPP.",
+    "reason": "The region_id is required to proceed with the energy study but was not provided in the request.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 137,
+    "total_tokens": 509
+  },
+  "response_sha256": "373f3967154d9764c7dbced3d674ffdf43efc2d0fd68fc5d866449c0a5c20f20",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 4.2132051000371575,
+  "finished_at": "2026-10-11T15:36:44.787541+00:00"
+}

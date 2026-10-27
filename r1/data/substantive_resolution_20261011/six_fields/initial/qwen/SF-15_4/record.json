@@ -1,0 +1,43 @@
+{
+  "case_id": "SF-15",
+  "service": "qwen",
+  "repeat": 4,
+  "phase": "initial",
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:55:47.640222+00:00",
+  "status": "success",
+  "request_sha256": "f81e2c738d24da8311ff82e511e465d240b4161966776afd613cd985e516e5a8",
+  "returned_model": "qwen-max",
+  "usage": {
+    "prompt_tokens": 304,
+    "completion_tokens": 108,
+    "total_tokens": 412,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "content": "{\n  \"decision\": \"clarify\",\n  \"study\": null,\n  \"missing_fields\": [\"horizon_minutes\", \"feature_mode\", \"reporting\", \"human_authorization_required\"],\n  \"reason\": \"Could you please confirm the horizon in minutes (60, 120, or 180), specify if the feature mode is 'full' or 'history_calendar', indicate whether the reporting should be 'standard' or 'tail', and explicitly state if human authorization before the recorded calculation is required?\"\n}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "horizon_minutes",
+      "feature_mode",
+      "reporting",
+      "human_authorization_required"
+    ],
+    "reason": "Could you please confirm the horizon in minutes (60, 120, or 180), specify if the feature mode is 'full' or 'history_calendar', indicate whether the reporting should be 'standard' or 'tail', and explicitly state if human authorization before the recorded calculation is required?"
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "unsupported_horizon"
+    ]
+  },
+  "response_sha256": "a4515eee905285945e9e74c38e575deb6569a70f6401588cea9941e932bbfd37",
+  "latency_seconds": 3.259165499941446,
+  "request_finished_at": "2026-10-11T10:55:50.898988+00:00"
+}

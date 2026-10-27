@@ -1,0 +1,101 @@
+{
+  "task_id": "hunyuan_json_object_BLIND_REJ_009_r1",
+  "case_id": "BLIND_REJ_009",
+  "packet": "blind_original_200",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 1,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "a84c4e0e37efc090d9d59f094a92cb8b5433e1e2481e38c5c6e928cbcf5fac8e",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:16:49.087706+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 636,
+    "completion_tokens": 2256,
+    "total_tokens": 2892,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2079
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "9323a76a-91ea-43a9-b2ea-6b80a55898a3",
+  "provider_created": 1791613009,
+  "system_fingerprint": null,
+  "response_sha256": "28a71fb2f78059c606cb1c0a717c68741b9bf35f3ec31e121cf86af594f07255",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "BLIND_REJ_009",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Operator requested use of test-month residuals from MISO during calibration before test window closes, which constitutes test-residual leakage violating forbidden variable 'test_period_residual' and rejection policy. Numerical outputs are produced by the verified workflow when relevant; request rejected due to prohibited use of test-period residuals. {\"triggered_rules\": [\"test_residual_leakage\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "test_residual_leakage"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant; request rejected due to prohibited use of test-period residuals.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Operator requested use of test-month residuals from MISO during calibration before test window closes, which constitutes test-residual leakage violating forbidden variable 'test_period_residual' and rejection policy.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 19.855167400091887,
+  "request_finished_at": "2026-10-10T06:17:08.943888+00:00"
+}

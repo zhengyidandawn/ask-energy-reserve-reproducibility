@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_MIX_014",
+  "repeat": 1,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_MIX_014",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:40:37.852694+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "27761da36b713ae392b4b406a38931e052ccdb845ecd6fd5631b3e30d0998f31",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"MISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request specifies region MISO and asks the system to default horizon and cost ratio. Explicit values for horizon_minutes (supported: 60, 120, 180) and cost_shortfall (supported weights: 10, 20, 40) are required for the study draft. Please provide these values or confirm acceptable defaults.\", \"reason\": \"Region MISO is supported and cost_reserve is fixed at 1 by study protocol. However, horizon_minutes and cost_shortfall are not explicitly supplied; the user delegated defaulting to the system, leaving explicit study fields unresolved, which requires clarification per draft rules.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The request specifies region MISO and asks the system to default horizon and cost ratio. Explicit values for horizon_minutes (supported: 60, 120, 180) and cost_shortfall (supported weights: 10, 20, 40) are required for the study draft. Please provide these values or confirm acceptable defaults.",
+      "reason": "Region MISO is supported and cost_reserve is fixed at 1 by study protocol. However, horizon_minutes and cost_shortfall are not explicitly supplied; the user delegated defaulting to the system, leaving explicit study fields unresolved, which requires clarification per draft rules.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 377,
+      "completion_tokens": 1956,
+      "total_tokens": 2333,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1769
+      }
+    },
+    "response_sha256": "fda2bbf2c64533501dcf4d08a9dc69557b54de661d899ba3dbc10d01ab080572",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 21.068310000002384,
+    "finished_at": "2026-10-11T15:40:58.920292+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_MIX_014",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:40:37.852694+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "27761da36b713ae392b4b406a38931e052ccdb845ecd6fd5631b3e30d0998f31",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"MISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request specifies region MISO and asks the system to default horizon and cost ratio. Explicit values for horizon_minutes (supported: 60, 120, 180) and cost_shortfall (supported weights: 10, 20, 40) are required for the study draft. Please provide these values or confirm acceptable defaults.\", \"reason\": \"Region MISO is supported and cost_reserve is fixed at 1 by study protocol. However, horizon_minutes and cost_shortfall are not explicitly supplied; the user delegated defaulting to the system, leaving explicit study fields unresolved, which requires clarification per draft rules.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The request specifies region MISO and asks the system to default horizon and cost ratio. Explicit values for horizon_minutes (supported: 60, 120, 180) and cost_shortfall (supported weights: 10, 20, 40) are required for the study draft. Please provide these values or confirm acceptable defaults.",
+      "reason": "Region MISO is supported and cost_reserve is fixed at 1 by study protocol. However, horizon_minutes and cost_shortfall are not explicitly supplied; the user delegated defaulting to the system, leaving explicit study fields unresolved, which requires clarification per draft rules.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 377,
+      "completion_tokens": 1956,
+      "total_tokens": 2333,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1769
+      }
+    },
+    "response_sha256": "fda2bbf2c64533501dcf4d08a9dc69557b54de661d899ba3dbc10d01ab080572",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 21.068310000002384,
+    "finished_at": "2026-10-11T15:40:58.920292+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 21.068310000002384,
+  "transport_complete": true
+}

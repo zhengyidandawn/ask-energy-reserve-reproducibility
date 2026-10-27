@@ -1,0 +1,114 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_038",
+  "repeat": 0,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_STD_038",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:47:36.176222+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "f1c665fcc2600f34e175d96bf306a01ffded24614f5285102bbcf0dc0fefb16d",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ISNE\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 40}, \"clarification_question\": null, \"reason\": \"User explicitly provided supported region ISNE, horizon 120 minutes, and shortfall cost 40. Cost_reserve is fixed at 1 by study protocol. No unsupported fields, conflicts, or requests for invented results. The negation 'do not estimate MW' is preserved as study content but does not affect required schema. Draft is valid for approval.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "User explicitly provided supported region ISNE, horizon 120 minutes, and shortfall cost 40. Cost_reserve is fixed at 1 by study protocol. No unsupported fields, conflicts, or requests for invented results. The negation 'do not estimate MW' is preserved as study content but does not affect required schema. Draft is valid for approval.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 1565,
+      "total_tokens": 1962,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1430
+      }
+    },
+    "response_sha256": "bf64e06e7a2304443ba4584e65ab577fd7dbe477ae9ff83410efea36d8dfe082",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 16.887739299912937,
+    "finished_at": "2026-10-11T15:47:53.063883+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_STD_038",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:47:36.176222+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "f1c665fcc2600f34e175d96bf306a01ffded24614f5285102bbcf0dc0fefb16d",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ISNE\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 40}, \"clarification_question\": null, \"reason\": \"User explicitly provided supported region ISNE, horizon 120 minutes, and shortfall cost 40. Cost_reserve is fixed at 1 by study protocol. No unsupported fields, conflicts, or requests for invented results. The negation 'do not estimate MW' is preserved as study content but does not affect required schema. Draft is valid for approval.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "User explicitly provided supported region ISNE, horizon 120 minutes, and shortfall cost 40. Cost_reserve is fixed at 1 by study protocol. No unsupported fields, conflicts, or requests for invented results. The negation 'do not estimate MW' is preserved as study content but does not affect required schema. Draft is valid for approval.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 1565,
+      "total_tokens": 1962,
+      "prompt_tokens_details": {
+        "cached_tokens": 320
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1430
+      }
+    },
+    "response_sha256": "bf64e06e7a2304443ba4584e65ab577fd7dbe477ae9ff83410efea36d8dfe082",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 16.887739299912937,
+    "finished_at": "2026-10-11T15:47:53.063883+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 16.887739299912937,
+  "transport_complete": true
+}

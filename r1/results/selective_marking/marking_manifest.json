@@ -1,0 +1,1606 @@
+{
+  "mode": "reviewer-related selective marking",
+  "files": [
+    {
+      "file": "main.tex",
+      "accepted_content_matches_clean": true,
+      "source_sha256": "d1b16689a929976814eaebbecb14a4c8726091b607ed8555242d3b96e3dc0922"
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "accepted_content_matches_clean": true,
+      "source_sha256": "8c450298072db687e9f59846734028a7e714bd8fdf3ed90beaa95660da2c814c"
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "accepted_content_matches_clean": true,
+      "source_sha256": "81c4f40230e735fdac9349a3862298252de4880173cbca9efc80380cb7827279"
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "accepted_content_matches_clean": true,
+      "source_sha256": "b6c007f300cbcc7025f60a9141229529d0a4c58dd2ba6da62628cb62bf7a1fb6"
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "accepted_content_matches_clean": true,
+      "source_sha256": "12d99fc565ac44ea174e63306cd2eae0893b24af2892d665c1e10652665d6e9f"
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "accepted_content_matches_clean": true,
+      "source_sha256": "753a01ee99b5dae8d1f5d74adb2f7e5573fc3127aaf49beafe0c94ff8d879cea"
+    },
+    {
+      "file": "sections/07_R1_Conditions.tex",
+      "accepted_content_matches_clean": true,
+      "source_sha256": "955870b9d0273e416e716f167bc434790327479b942e4c2821cadf7b3ceb6595"
+    },
+    {
+      "file": "sections/08_R1_Conclusions.tex",
+      "accepted_content_matches_clean": true,
+      "source_sha256": "ea7e3934d8f715e4a73fb2cadec27c09837d15114d3c530e11823c6b635d894f"
+    },
+    {
+      "file": "sections/01_Introduction.tex",
+      "accepted_content_matches_clean": true,
+      "source_sha256": "49b7a27ff19dc9d716adc77615a108051cb4b4406589418d6f79654825ead350"
+    }
+  ],
+  "marks": [
+    {
+      "file": "main.tex",
+      "anchor": "The evaluation combines",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The evaluation combines a frozen 200-request benchmark, three independent annotations of 168 requests, 48 independently authored requests, repeated large language model (LLM) calls, matched interfaces, expert preparation, and paired clarification. Fleiss' kappa reaches 0.932 on the independently authored set. The matched service replay records zero unsafe execution-ready plans across 480 service trials on the 24-request comparison.",
+      "deleted": "Joint success ranges from 0.705 to 0.885.",
+      "deletion_source": {
+        "text": "Joint success ranges from 0.705 to 0.885.",
+        "original_text": "Joint success ranges from 0.705 to 0.885.",
+        "original_file": "main.tex",
+        "original_anchor": "Joint success ranges from 0.705 to 0.885",
+        "sentences": 1,
+        "reviewer": "2-3"
+      }
+    },
+    {
+      "file": "main.tex",
+      "anchor": "Three experts prepare",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "Three experts prepare 72 plans, and 24 written reviews record authorization, clarification, or rejection. Public quarter-hourly load from four countries provides 138,240 held-out decisions under common reliability selection rules. A subsequent frozen-margin comparison brings all 256 policy-window combinations above 0.95 empirical coverage.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "main.tex",
+      "anchor": "Nine study-plan traces",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "Nine study-plan traces link changes in region, horizon, variables, costs, reliability, and reporting to computed results.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "main.tex",
+      "anchor": "Complete drafts preserve",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Complete drafts preserve 75.1--98.1 percent of 265 variable inputs per service for verification under a separate frozen protocol. Field-correction counts and conditional total-time analysis quantify study preparation.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "main.tex",
+      "anchor": "Selected-local mean cost gains over global calibration",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "Selected-local mean cost gains over global calibration are 0.000187 (0.68 percent) in Austria and 0.000163 (0.81 percent) in the Netherlands, with positive family-adjusted interval endpoints.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "The fixed validation layer applies",
+      "sentences": 1,
+      "reviewer": "1-1",
+      "added": "The fixed validation layer applies the same admissibility rules to every structured plan and assigns an accept, clarify, or reject status.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "The numerical layer reads",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "The numerical layer reads only an accepted plan and produces the target, reserve decisions, costs, reliability measures, and figures. The LLM supplies candidate structured fields and post-calculation explanations; fixed validation rules and the numerical program determine whether execution can start and which quantitative results are reported.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "\\citet{Lim2021TemporalFusion} develop",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "\\citet{Lim2021TemporalFusion} develop an interpretable multi-horizon forecasting architecture. Their inputs distinguish static covariates, known future inputs, and exogenous series observed historically.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "\\citet{Nikseresht2025Hydrogen} study",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "\\citet{Nikseresht2025Hydrogen} study hybrid time-series models for dynamic hydrogen demand. \\citet{Vazquez2019DemandResponse} review reinforcement-learning algorithms and modelling for demand response. \\citet{Yin2024EnergyWater} study coupled operation and planning for water demand and renewable production.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "\\citet{Elmachtoub2022Smart} define",
+      "sentences": 1,
+      "reviewer": "3-9",
+      "added": "\\citet{Elmachtoub2022Smart} define prediction loss through the decision error induced in an optimization problem.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "\\citet{Bertsimas2020Prescriptive} formulate",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "\\citet{Bertsimas2020Prescriptive} formulate conditional stochastic optimization using auxiliary observations. \\citet{Smets2025Storage} apply decision-focused electricity-price forecasting to storage optimization, and \\citet{Hai2026Arbitrage} connect probabilistic forecasting with risk-averse stochastic energy arbitrage.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "\\citet{Taylor2003WeatherEnsemble} study",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "\\citet{Taylor2003WeatherEnsemble} study weather-ensemble inputs for electricity-demand forecasting. \\citet{Fajardo2024SpatialTemporalLoad} integrate spatial and temporal information through a graph neural network for electricity-demand prediction.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "We denote the common empirical coverage requirement",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "We denote the common empirical coverage requirement by $\\tau_{\\mathrm{req}}=0.95$.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "Cost is the primary criterion after",
+      "sentences": 1,
+      "reviewer": "1-2",
+      "added": "Cost is the primary criterion after the common empirical selection constraint is satisfied.",
+      "deleted": "Cost is the primary criterion because it represents the reserve-shortfall trade-off in Eq.~(2). Coverage and pinball loss describe the frequency and magnitude of reserve errors.",
+      "deletion_source": {
+        "text": "Cost is the primary criterion because it represents the reserve-shortfall trade-off in Eq.~(2). Coverage and pinball loss describe the frequency and magnitude of reserve errors.",
+        "original_text": "Cost is the primary criterion because it represents the reserve-shortfall trade-off in Eq.~\\eqref{eq:decision_cost}. Coverage and pinball loss describe the frequency and magnitude of reserve errors.",
+        "original_file": "sections/02_Problem_Formulation.tex",
+        "original_anchor": "Cost is the primary criterion because",
+        "sentences": 2,
+        "reviewer": "1-2"
+      }
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "Each candidate receives a nonnegative residual offset",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Each candidate receives a nonnegative residual offset sufficient to meet the same selection requirement. The subsequent test period supplies the reported cost, coverage, and shortfall CVaR.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "The residual-state procedure adds a controlled sensitivity diagnostic",
+      "sentences": 2,
+      "reviewer": "3-12",
+      "added": "The residual-state procedure adds a controlled sensitivity diagnostic: it scrambles the selected calibration state while holding the base prediction fixed. This diagnostic describes how the reserve calculation changes under a specified state perturbation.",
+      "deleted": "The counterfactual analysis identifies the source of the calibration gain.",
+      "deletion_source": {
+        "text": "The counterfactual analysis identifies the source of the calibration gain.",
+        "original_text": "The counterfactual analysis identifies the source of the calibration gain.",
+        "original_file": "sections/06_Discussion.tex",
+        "original_anchor": "The counterfactual analysis identifies the source",
+        "sentences": 1,
+        "reviewer": "3-12"
+      }
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "The input categories of \\citet{Lim2021TemporalFusion}",
+      "sentences": 1,
+      "reviewer": "2-6",
+      "added": "The input categories of \\citet{Lim2021TemporalFusion} motivate checking availability at the decision time: calendar variables can be specified in advance, and realized load enters after observation.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "The decision-error objective of",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The decision-error objective of \\citet{Elmachtoub2022Smart} motivates reporting reserve cost and shortfall alongside prediction loss. Conditional optimization in \\citet{Bertsimas2020Prescriptive} motivates relating residual calibration to observed decision-time states. We implement these principles through explicit variable availability, a common selection-period reliability requirement, and controlled changes to the study fields.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "The sensitivity procedure perturbs",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "The sensitivity procedure perturbs the selected residual state while holding the base prediction fixed.",
+      "deleted": "This test distinguishes information used by the base forecast from information that improves residual calibration.",
+      "deletion_source": {
+        "text": "This test distinguishes information used by the base forecast from information that improves residual calibration.",
+        "original_text": "This test distinguishes information used by the base forecast from information that improves residual calibration.",
+        "original_file": "sections/02_Problem_Formulation.tex",
+        "original_anchor": "This test distinguishes information used by the base forecast",
+        "sentences": 1,
+        "reviewer": "3-12"
+      }
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "The work has two focused contributions",
+      "sentences": 5,
+      "reviewer": null,
+      "added": "The work has two focused contributions. First, it introduces a decision-time validation layer that turns an energy study request into a checked specification of the reserve task, data boundary, cost setting, and required evidence. Second, it connects that specification to reproducible reserve-calibration comparisons and traces changes in the study fields to their numerical consequences. Interface comparisons evaluate interpretation, admissibility, completion, and preparation workload. Public-data policy comparisons evaluate reserve cost, empirical coverage, and tail shortfall under common reliability requirements; a separate controlled residual-state diagnostic examines calibration sensitivity in the archived regional study.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "In the public quarter-hourly comparison",
+      "sentences": 6,
+      "reviewer": null,
+      "added": "In the public quarter-hourly comparison, 700 days fit the base upper-quantile model, followed by 20 days for calibration fitting, ten days for selection, and 30 days for testing. Residuals are realized ramps minus their base predictions. Global calibration uses one upper residual quantile; local calibration uses residuals from observations with a similar decision-time state. The public selected-local policy uses a fixed load, ramp, calendar, and predicted-quantile state and selects its shrinkage value on the ten-day selection block. Its calibration residuals remain those from the earlier 20 days. The archived regional adaptive procedure also selects a residual-state representation and subsequently refits its chosen calibrator on the full 30-day calibration block.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "Within each numerical protocol",
+      "sentences": 6,
+      "reviewer": null,
+      "added": "Within each numerical protocol, reserve policies share the target, decision-time information boundary, evaluation windows, and cost function. The comparison includes different prediction and calibration rules. In the eight-policy public comparison, seven policies share the base quantile prediction, while the static policy estimates a target quantile directly from the calibration-fit observations. All eight use the same calibration-fit and selection periods and empirical selection requirement. The request-validation procedure is evaluated first as a request-processing procedure. Accepted study fields then specify the numerical calculation and remain linked to its outputs.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "For the public-data selection screen",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "For the public-data selection screen, let $\\mathcal{P}$ denote the evaluated policy configurations.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "The archived regional comparison set contains",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "The archived regional comparison set contains a static reserve rule, a linear quantile-regression policy, and weather-informed and weather-agnostic histogram-gradient-boosting quantile models.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "The public-data comparison evaluates eight policies",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "The public-data comparison evaluates eight policies: a static target quantile, the base quantile predictor, global calibration, local calibration, selected-local shrinkage, horizon-block maximum calibration, scenario quantiles, and scenario maxima. Its selected-local policy chooses a direct mixture of local and global residual quantiles. Scenario pools use four states defined by whether current load and recent observed ramps exceed their training-period 80th percentiles. The Supplementary Material specifies the candidate mixtures, neighborhood weighting, and common selection offset.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "The archived regional study defines four diagnostic regimes",
+      "sentences": 5,
+      "reviewer": null,
+      "added": "The archived regional study defines four diagnostic regimes from each model-fitting sample: \\textit{high load}, \\textit{hot and humid}, \\textit{compound heat-stress}, and \\textit{volatile}. The threshold for each component is the 80th percentile of the corresponding model-fitting distribution. The compound heat-stress regime requires high temperature, high humidity, and high load simultaneously. These regimes locate concentrations of coverage errors and cost reductions and provide the historical stochastic and robust residual scenario pools. The public-data diagnostics instead report seasonal groups and high-ramp periods defined from recent observed ramps, alongside the four load--ramp states used for its scenario policies.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "The LLM prepares the study settings",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "The LLM prepares the study settings, list of available variables, list of disallowed variables and actions, calculation steps, evidence requirements, explanation fields, request record, and human-authorization requirement. Together, these fields describe the requested study and the conditions that must be met before calculation.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "The historical replay tests a simulated Boolean approval gate",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "The historical replay tests a simulated Boolean approval gate, while the separate written-review study records a reviewer's authorization, return, or rejection.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/02_Problem_Formulation.tex",
+      "anchor": "Figure~\\ref{fig:method_flow} traces",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "Figure~\\ref{fig:method_flow} traces the checked fields through the public reserve calculation. Region, horizon, variables, cost weights, reliability requirement, and reporting determine the study specification; the chronological numerical protocol produces the reserve series and its requested evidence. Source identifiers and output hashes preserve the link between the specification and calculation.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "The German weather diagnostic combines",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "The German weather diagnostic combines the public load series with equal-weight temperature and humidity observations from six official German Weather Service stations. A one-hour availability lag determines when each weather observation can enter the feature vector.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "The historical and repeated evaluations retain",
+      "sentences": 1,
+      "reviewer": "3-2",
+      "added": "The historical and repeated evaluations retain their respective requested and returned model identifiers, dates, prompts, decoding parameters, response metadata, latency, token usage, and integrity hashes.",
+      "deleted": "The Supplementary Material records the requested and returned model identifiers so that the tests can be repeated with the same service versions.",
+      "deletion_source": {
+        "text": "The Supplementary Material records the requested and returned model identifiers so that the tests can be repeated with the same service versions.",
+        "original_text": "The Supplementary Material records the requested and returned model identifiers so that the tests can be repeated with the same service versions.",
+        "original_file": "sections/03_Data_and_Experimental_Design.tex",
+        "original_anchor": "The Supplementary Material records the requested and returned model identifiers so",
+        "sentences": 1,
+        "reviewer": "3-2"
+      }
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "The repeated protocol uses five independent calls",
+      "sentences": 2,
+      "reviewer": "3-3",
+      "added": "The repeated protocol uses five independent calls per request with temperature zero, top-p one, and a maximum of 4096 output tokens. It covers the original 200-request blind set and 48 independently authored requests.",
+      "deleted": "All services receive the same request-validation instruction, response format, generation settings, and scoring rules.",
+      "deletion_source": {
+        "text": "All services receive the same request-validation instruction, response format, generation settings, and scoring rules.",
+        "original_text": "All services receive the same request-validation instruction, response format, generation settings, and scoring rules.",
+        "original_file": "sections/03_Data_and_Experimental_Design.tex",
+        "original_anchor": "All services receive the same request-validation instruction",
+        "sentences": 1,
+        "reviewer": "3-3"
+      }
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "Confidence intervals resample exact request-text clusters",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Confidence intervals resample exact request-text clusters, and paired comparisons permute cluster-level differences. Holm adjustment applies within each endpoint and request set.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "The independent annotation study samples",
+      "sentences": 3,
+      "reviewer": "2-2",
+      "added": "The independent annotation study samples 120 blind requests and adds 48 study-preparation requests independently written by an operations analyst using the study instructions. Three annotators with backgrounds in electricity-market operations, grid reliability, and energy forecasting label all 168 requests separately. They use the same information-availability instructions and submit their records before discussing disagreements.",
+      "deleted": "The independent blind set was created after the framework instruction and validation rules were fixed.",
+      "deletion_source": {
+        "text": "The independent blind set was created after the framework instruction and validation rules were fixed.",
+        "original_text": "The independent blind set was created after the framework instruction and validation rules were fixed.",
+        "original_file": "sections/04_Primary_Results.tex",
+        "original_anchor": "The independent blind set was created after",
+        "sentences": 1,
+        "reviewer": "2-2"
+      }
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "A coordinator adjudicates",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "A coordinator adjudicates the three nonunanimous independent requests.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "The independent-request comparison adds",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The independent-request comparison adds a deterministic parser with alias recognition, numerical extraction, negation handling, conflict detection, and explicit-field validation. It also compares JavaScript Object Notation (JSON) object generation, supported JSON-schema requests, and function calling with the same fields and checks. Three experts each prepare a structured form for 24 matched requests.",
+      "deleted": "The third identifies regions, horizons, costs, and prohibited phrases through fixed word matching.",
+      "deletion_source": {
+        "text": "The third identifies regions, horizons, costs, and prohibited phrases through fixed word matching.",
+        "original_text": "The third identifies regions, horizons, costs, and prohibited phrases through fixed word matching.",
+        "original_file": "sections/03_Data_and_Experimental_Design.tex",
+        "original_anchor": "The third identifies regions, horizons, costs",
+        "sentences": 1,
+        "reviewer": "2-1"
+      }
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "The independent-request evaluation separately measures",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "The independent-request evaluation separately measures false clarification among accepted requests and missed ambiguity among clarification requests. Its 14 clarification cases include absent fields and conflicting alternatives as well as explicit defaults.",
+      "deleted": "The added check identifies requests that use terms such as usual, normal, standard, or default and leave the region, horizon, or shortfall cost unclear. These requests are returned for clarification.",
+      "deletion_source": {
+        "text": "The added check identifies requests that use terms such as usual, normal, standard, or default and leave the region, horizon, or shortfall cost unclear. These requests are returned for clarification.",
+        "original_text": "The added check identifies requests that use terms such as usual, normal, standard, or default and leave the region, horizon, or shortfall cost unclear. These requests are returned for clarification.",
+        "original_file": "sections/03_Data_and_Experimental_Design.tex",
+        "original_anchor": "The added check identifies requests that use terms",
+        "sentences": 2,
+        "reviewer": "2-4"
+      }
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "In the paired dialogue, each saved initial response",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "In the paired dialogue, each saved initial response receives one prespecified confirmation, and the final response is re-evaluated under unchanged validation rules. We retain every initial trial when computing final completion and response burden.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "A separate written approval study records",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "A separate written approval study records 24 review decisions from the request, available study fields, information-boundary rules, and evidence requirements.",
+      "deleted": "The approval status is recorded as a Boolean value before calculation. The reported effect uses fixed numerical outcomes.",
+      "deletion_source": {
+        "text": "The approval status is recorded as a Boolean value before calculation. The reported effect uses fixed numerical outcomes.",
+        "original_text": "The approval status is recorded as a Boolean value before calculation. The reported effect uses fixed numerical outcomes.",
+        "original_file": "sections/04_Primary_Results.tex",
+        "original_anchor": "The approval status is recorded as a Boolean value before calculation",
+        "sentences": 2,
+        "reviewer": "3-15"
+      }
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "A separate online experiment prepares complete drafts",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "A separate online experiment prepares complete drafts for the same 24 expert requests. The instruction preserves every supplied region, horizon, and shortfall weight under acceptance, clarification, rejection, and partial acceptance. Unresolved fields retain a null value, and reserve weight remains fixed at one. Each service receives five trials under a frozen prompt, temperature zero, top-p one, and a 4,096-token output limit.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "The main reserve evaluation uses public quarter-hourly national load",
+      "sentences": 5,
+      "reviewer": null,
+      "added": "The main reserve evaluation uses public quarter-hourly national load for Germany, Austria, Belgium, and the Netherlands from the Open Power System Data (OPSD) time-series package. Twelve 30-day test windows per country beginning in January 2019 provide 138,240 held-out decisions. A frozen-margin extension evaluates eight later windows per country beginning in January 2020, providing 92,160 further decisions. Load, reserve, and shortfall are expressed in megawatts (MW). Section~\\ref{subsec:overall_results} reports both comparisons.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "The public evaluation uses chronological",
+      "sentences": 5,
+      "reviewer": null,
+      "added": "The public evaluation uses chronological 700-day fitting, 20-day residual-calibration, ten-day selection, and 30-day test blocks. Target end times precede the next block's first decision time. Calibration residuals determine global and local corrections, block maxima, and scenario pools; the selection block determines shrinkage and the offset required for 0.95 selection coverage. The fitted model, residual pool, and selected settings remain fixed during testing. Twelve 2019 test windows per country provide the initial benchmark.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "For the later-window comparison, each country receives",
+      "sentences": 5,
+      "reviewer": null,
+      "added": "For the later-window comparison, each country receives a margin estimated from the 2019 benchmark. For each benchmark policy and window, we compute the 95th percentile of realized target-minus-reserve differences, truncate it at zero, and divide by that window's calibration-fit mean load. The largest fraction across the eight policies and twelve benchmark windows is then held fixed across eight test windows beginning in January 2020. Cost intervals use 3,000 circular moving-block draws with three consecutive windows per block and Bonferroni adjustment across four countries. Separate checks vary the block length.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "The archived anonymized study uses",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The archived anonymized study uses 700 fitting days, 30 calibration days, 30 test days, and a 30-day rolling step, yielding 86 test windows. Its adaptive residual-state procedure divides calibration into 20 fitting days and ten selection days, then refits the selected calibrator on all 30 days. Its original uncertainty summaries use 20,000 resamples of the 86 windows with replacement.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "Figure~\\ref{fig:state_density} relates",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "Figure~\\ref{fig:state_density} relates two observed calibration-state components to the realized reserve target in the public benchmark. Each country contributes 34,560 held-out decisions from twelve 2019 windows. The horizontal axis gives current load, the vertical axis gives the largest observed positive ramp over the twelve most recent quarter-hour observations, and color gives the mean subsequent one-hour target within each populated hexagon. Load and recent ramps are available at the decision time; the subsequent target enters the descriptive summary after realization.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/03_Data_and_Experimental_Design.tex",
+      "anchor": "Target magnitudes vary across load--ramp states",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "Target magnitudes vary across load--ramp states and countries. The public local calibrator combines load and ramp statistics with calendar coordinates and the base quantile prediction. The policy comparison evaluates the cost and reliability of the resulting residual corrections. Weather-based residual-state diagnostics from the original regional study are retained in the Supplementary Material.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The independent annotation study contains",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "The independent annotation study contains 120 requests sampled from the frozen blind benchmark and 48 requests written by an additional operations analyst. Three annotators assessed every request separately.",
+      "deleted": "The designed validation set contains 180 cases and reaches 1.000 on structure, meaning, decision-time variables, rejection, evidence, explanation grounding, and approval-status correctness. It produces zero numerical outputs before calculation and zero requests accepted without the required support.",
+      "deletion_source": {
+        "text": "The designed validation set contains 180 cases and reaches 1.000 on structure, meaning, decision-time variables, rejection, evidence, explanation grounding, and approval-status correctness. It produces zero numerical outputs before calculation and zero requests accepted without the required support.",
+        "original_text": "The designed validation set contains 180 cases and reaches 1.000 on structure, meaning, decision-time variables, rejection, evidence, explanation grounding, and approval-status correctness. It produces zero numerical outputs before calculation and zero requests accepted without the required support.",
+        "original_file": "sections/04_Primary_Results.tex",
+        "original_anchor": "The designed validation set contains 180 cases",
+        "sentences": 2,
+        "reviewer": "2-2"
+      }
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "On the independently authored requests, 45 of 48",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "On the independently authored requests, 45 of 48 decisions were unanimous and Fleiss' kappa was 0.932. Adjudication resolved the remaining three decisions.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "Nine labels in the 120-request sample",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Nine labels in the 120-request sample differ from the original benchmark labels. We use the independently adjudicated labels for the new comparisons and retain the original labels for the historical comparison.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The independently authored set contains",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "The independently authored set contains 25 accepted, 14 clarification, and 9 rejected requests. All 48 texts are distinct.",
+      "deleted": "The blind set contains 200 cases created after the request-validation instruction and request checks were fixed. It covers ambiguous defaults, incomplete plans, requests that should be accepted or rejected, requests for numerical results before calculation, bilingual requests, and requests that try to change the study instructions.",
+      "deletion_source": {
+        "text": "The blind set contains 200 cases created after the request-validation instruction and request checks were fixed. It covers ambiguous defaults, incomplete plans, requests that should be accepted or rejected, requests for numerical results before calculation, bilingual requests, and requests that try to change the study instructions.",
+        "original_text": "The blind set contains 200 cases created after the request-validation instruction and request checks were fixed. It covers ambiguous defaults, incomplete plans, requests that should be accepted or rejected, requests for numerical results before calculation, bilingual requests, and requests that try to change the study instructions.",
+        "original_file": "sections/03_Data_and_Experimental_Design.tex",
+        "original_anchor": "The blind set contains 200 cases created after",
+        "sentences": 2,
+        "reviewer": "3-1"
+      }
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "Its wording includes operational shorthand",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "Its wording includes operational shorthand, paraphrases, typographical errors, mixed Chinese and English, unspecified fields, conflicting corrections, and requests to bypass controls.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The five-run historical comparison yields",
+      "sentences": 3,
+      "reviewer": "2-3",
+      "added": "The five-run historical comparison yields joint-success estimates of 0.772 for DeepSeek, 0.751 for Qwen, 0.703 for ERNIE, and 0.661 for Hunyuan. Cluster intervals are [0.658, 0.885], [0.644, 0.858], [0.587, 0.814], and [0.588, 0.737], respectively. The six paired service tests have Holm-adjusted probabilities from 0.346 to 0.938.",
+      "deleted": "Hunyuan has the highest semantic accuracy (0.905), clarification accuracy (0.831), evidence completeness (1.000), and joint success (0.885); Qwen has the highest rejection accuracy (0.949). DeepSeek and ERNIE each reach 0.705 joint success.",
+      "deletion_source": {
+        "text": "Hunyuan has the highest semantic accuracy (0.905), clarification accuracy (0.831), evidence completeness (1.000), and joint success (0.885); Qwen has the highest rejection accuracy (0.949). DeepSeek and ERNIE each reach 0.705 joint success.",
+        "original_text": "Hunyuan has the highest semantic accuracy (0.905), clarification accuracy (0.831), evidence completeness (1.000), and joint success (0.885); Qwen has the highest rejection accuracy (0.949). DeepSeek and ERNIE each reach 0.705 joint success.",
+        "original_file": "sections/04_Primary_Results.tex",
+        "original_anchor": "Hunyuan has the highest semantic accuracy",
+        "sentences": 2,
+        "reviewer": "2-3"
+      }
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The Supplementary Material reports class-specific confusion matrices",
+      "sentences": 1,
+      "reviewer": "3-4",
+      "added": "The Supplementary Material reports class-specific confusion matrices, ambiguity detection, false clarification, response consistency, token consumption, latency distributions, and paired statistical comparisons.",
+      "deleted": "All four services record zero numerical outputs before calculation and zero parsing errors. Requests accepted without the required support range from 10 to 42 cases.",
+      "deletion_source": {
+        "text": "All four services record zero numerical outputs before calculation and zero parsing errors. Requests accepted without the required support range from 10 to 42 cases.",
+        "original_text": "All four services record zero numerical outputs before calculation and zero parsing errors. Requests accepted without the required support range from 10 to 42 cases.",
+        "original_file": "sections/04_Primary_Results.tex",
+        "original_anchor": "All four services record zero numerical outputs before calculation and zero parsing errors",
+        "sentences": 2,
+        "reviewer": "3-4"
+      }
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "Hunyuan decision accuracy is 0.663",
+      "sentences": 2,
+      "reviewer": "2-1",
+      "added": "Hunyuan decision accuracy is 0.663 with JSON objects, 0.833 with JSON schema, and 0.904 with function calling. Both paired accuracy comparisons have Holm-adjusted probabilities below 0.001.",
+      "deleted": "The rule-based parser completes 58 of 80 valid requests.",
+      "deletion_source": {
+        "text": "The rule-based parser completes 58 of 80 valid requests.",
+        "original_text": "The rule-based parser completes 58 of 80 valid requests.",
+        "original_file": "sections/04_Primary_Results.tex",
+        "original_anchor": "The rule-based parser completes 58 of 80 valid requests",
+        "sentences": 1,
+        "reviewer": "2-1"
+      }
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "Its finite-state workflow records",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Its finite-state workflow records drafting, clarification, review, authorization, and blocking, with transitions checked before execution. The parser recognizes regional aliases, numerical expressions, negation, incompatible fields, prohibited actions, and missing information.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The paired parser comparison evaluates",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "The paired parser comparison evaluates each interface on the same 48 independently authored requests. Five service responses are averaged within each request before pairing with the parser. For Hunyuan function calling, the observed original-disposition gain is 0.133, with a 95-percent paired interval of [0.000, 0.267] and a Holm-adjusted probability of 0.679. After validation, the difference is 0.033, with an interval of [-0.075, 0.142].",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The three experts, identified as EXP-1",
+      "sentences": 2,
+      "reviewer": "3-5",
+      "added": "The three experts, identified as EXP-1, EXP-2, and EXP-3, prepare plans with perfect agreement on the final disposition in the 24-request comparison. Their reported preparation estimates range from 2.93 to 3.25 minutes per request.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "In the same replay, final dispositions after validation",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "In the same replay, final dispositions after validation agree with the reference in 120/120 DeepSeek trials, 109/120 Qwen trials, 102/120 ERNIE trials, and 74/120 Hunyuan trials. The four accepted requests contribute twenty trials per service; execution readiness occurs in 20/20, 20/20, 20/20, and 17/20 trials, respectively. The matched-disposition table in the Supplementary Material distinguishes the original and validated decisions.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "We quantify the field corrections identified",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "We quantify the field corrections identified by the reference plans in Table~\\ref{tab:r1_review_workload}. Each service has 200 reference-specified field comparisons across 120 trials. DeepSeek supplies 150 correct fields, Qwen 109, ERNIE 119, and Hunyuan 78. The corresponding correction counts are 50, 91, 81, and 122; disposition corrections number 25, 28, 53, and 51.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "For request $i$, let $E_i$",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "For request $i$, let $E_i$ be the mean expert preparation estimate in seconds and $A_{ij}$ the measured return latency for service trial $j$. The derived review-time budget is $B_{ij}=E_i-A_{ij}$. A preparation workflow with review time $V_{ij}$ has total time $A_{ij}+V_{ij}$ and falls below $E_i$ when $V_{ij}<B_{ij}$. Median paired budgets are 175.4, 170.3, 160.6, and 155.6 seconds for DeepSeek, Qwen, ERNIE, and Hunyuan.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The resource comparison also expresses",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The resource comparison also expresses recorded tokens as application programming interface (API) fees. Provider-specific online tariffs, returned models, observed cache use, and the request time give list-price estimates for each service. Across 240 independent-request trials, the estimates total 0.082259 United States dollars (USD) for DeepSeek, and 0.946202, 0.491117, and 2.597703 Chinese yuan (CNY) for Qwen, ERNIE, and Hunyuan.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The matched input comparison counts",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "The matched input comparison counts 265 variable entries per service across the same 120 trials. These comprise dispositions and reference-specified regions, horizons, and shortfall weights. Minimum reference-label replacements number 70, 96, 116, and 140 for DeepSeek, Qwen, ERNIE, and Hunyuan. Correct entries retained from the draft therefore reduce required data entry by 73.6, 63.8, 56.2, and 47.2 percent.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The 24 requests contain 21 distinct texts",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The 24 requests contain 21 distinct texts. Resampling these texts together with all associated trials gives 95-percent input-reuse intervals of [60.4, 85.0], [47.9, 78.2], [38.2, 72.6], and [31.8, 62.0] percent. Task-specific results locate the reusable content: DeepSeek preserves 100.0 percent of reference inputs on accepted requests, 66.7 percent on clarification requests, 50.0 percent on rejected requests, and 100.0 percent on partial acceptance.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "Six recorded maintenance changes",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "Six recorded maintenance changes each add one shared declaration value, with two added lines and one removed line in its stored difference. Each change regenerates three interfaces, passes ninety new-value checks, and preserves all fifteen regression outcomes. The six tasks therefore provide 540 new-value checks and ninety preserved request outcomes. This evidence quantifies declaration maintenance and automated regression for the implemented interfaces.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The experiment on complete drafts preserves supplied fields",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The experiment on complete drafts preserves supplied fields under every disposition on the same 24 expert requests. Its 480 initial responses and 54 automatic feedback responses form a separate frozen online protocol. Table~\\ref{tab:r1_online_draft_quality} reports final results.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "These reusable proportions are",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "These reusable proportions are 96.2, 92.5, 75.1, and 98.1 percent, respectively. Higher field agreement and input reuse indicate that more supplied content reaches human review correctly.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "Measured median service time includes",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "Measured median service time includes the feedback call when required: 1.42, 3.90, 4.92, and 15.89 seconds. Final valid-request readiness is 16/20, 19/20, 10/20, and 20/20. Every request marked ready for execution has a valid accept reference.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The complete time analysis adds review",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "The complete time analysis adds review, correction, and the remaining preparation tasks to measured service time. For trial $j$ of request $i$, let $m_{ij}$ count reviewed entries and $r_{ij}$ count minimum replacements. With review time $v$ per entry, correction time $c$ per replacement, and other preparation time $o$, the conditional total is $T_{ij}=A_{ij}+vm_{ij}+cr_{ij}+o$. The grid uses five review values from 10 to 60 seconds, three correction values from 5 to 30 seconds, and three other-task values from 0 to 60 seconds, giving 180 service-specific conditions.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The check returns 41 ambiguous requests",
+      "sentences": 1,
+      "reviewer": "3-6",
+      "added": "The check returns 41 ambiguous requests for clarification and reduces rule-violating calculations from 0.205 to zero.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The remaining 14 stop at the request stage",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "The remaining 14 stop at the request stage: four carry the accept label and ten carry the partial-accept label in the original benchmark; six belong to numerical-induction cases and eight to multilingual cases. The case-level table in the Supplementary Material records the service disposition and trigger for every case.",
+      "deleted": "The paired blind replay gives the same direction: adding the unresolved-default check reduces calculations that violate a stated rule from 0.205 to 0.000 while preserving 48 completed results among 62 eligible requests (0.774).",
+      "deletion_source": {
+        "text": "The paired blind replay gives the same direction: adding the unresolved-default check reduces calculations that violate a stated rule from 0.205 to 0.000 while preserving 48 completed results among 62 eligible requests (0.774).",
+        "original_text": "The paired blind replay gives the same direction: adding the unresolved-default check reduces calculations that violate a stated rule from 0.205 to 0.000 while preserving 48 completed results among 62 eligible requests (0.774).",
+        "original_file": "sections/04_Primary_Results.tex",
+        "original_anchor": "The paired blind replay gives the same direction",
+        "sentences": 1,
+        "reviewer": "2-4"
+      }
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "Each initial response receives one prespecified analyst confirmation",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "Each initial response receives one prespecified analyst confirmation that supplies the region, horizon, and cost setting and resolves alternatives. The original request, saved response, confirmation, and final response form a paired dialogue. Every request receives five trials under unchanged decoding settings.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The confirmation burden is one reply",
+      "sentences": 1,
+      "reviewer": "3-7",
+      "added": "The confirmation burden is one reply averaging 380 characters.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "Explicit mention of every required field occurs",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Explicit mention of every required field occurs in 0.857 of DeepSeek trials, 0.686 of Qwen trials, 0.543 of ERNIE trials, and 0.586 of Hunyuan trials. Required-field mention recall is 1.000, 0.760, 0.760, and 0.670, respectively.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The question-driven follow-up audit retains",
+      "sentences": 4,
+      "reviewer": "2-4",
+      "added": "The question-driven follow-up audit retains the same 280 initial trials and evaluates a field-limited dialogue. The analyst reply supplies only a field explicitly requested by the preceding response, with at most three follow-up turns. All 421 follow-up calls returned a successful service status. Matching requires an accepted final disposition, the expected region, horizon, and shortfall-cost fields, and the human-authorization requirement.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "The reviewer uses the request, extracted study settings",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "The reviewer uses the request, extracted study settings, decision-time information rules, evidence requirements, and approval requirement.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "Four decisions authorize execution",
+      "sentences": 2,
+      "reviewer": "3-15",
+      "added": "Four decisions authorize execution, nine return the request for clarification, and eleven block execution. The written record identifies the permitted corrections and the next workflow state.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "Figure~\\ref{fig:r1_service_interfaces} separates",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Figure~\\ref{fig:r1_service_interfaces} separates historical joint success from independently labelled disposition accuracy. The paired interface--parser differences change after validation; all ten Holm-adjusted parser comparisons exceed 0.05 at each endpoint.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "Figure~\\ref{fig:r1_draft_preparation} compares",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Figure~\\ref{fig:r1_draft_preparation} compares these preparation measures on the common request packet. ERNIE supplies 193/200 correct fields while 10/20 accepted-request trials are ready for execution, illustrating the different information conveyed by field agreement and valid-request readiness.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/04_R1_Results.tex",
+      "anchor": "Figure~\\ref{fig:r1_clarification} separates",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Figure~\\ref{fig:r1_clarification} separates the archived blocking replay from the independent clarification protocols. Qwen and Hunyuan produce 65 and 62 accepted terminal responses in the question-driven dialogue, respectively, of which 64 and 59 also match the required fields and human-authorization requirement.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "The public validation uses quarter-hourly national load",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "The public validation uses quarter-hourly national load for Germany (DE), Austria (AT), Belgium (BE), and the Netherlands (NL) from the Open Power System Data (OPSD) time-series package. Load is measured in megawatts (MW).",
+      "deleted": "External validity is evaluated on the harmonized hourly five-region panel described in Section~3.1. Figure~10 shows that adaptive LightGBM local conformal calibration has the lowest mean decision cost in all five validation systems. In the anonymized China-province system, the adaptive method has the lowest cost and the fixed local method is close.",
+      "deletion_source": {
+        "text": "External validity is evaluated on the harmonized hourly five-region panel described in Section~3.1. Figure~10 shows that adaptive LightGBM local conformal calibration has the lowest mean decision cost in all five validation systems. In the anonymized China-province system, the adaptive method has the lowest cost and the fixed local method is close.",
+        "original_text": "External validity is evaluated on the harmonized hourly five-region panel described in Section~\\ref{subsec:data}. Figure~\\ref{fig:cross_region} shows that adaptive LightGBM local conformal calibration has the lowest mean decision cost in all five validation systems. In the anonymized China-province system, the adaptive method has the lowest cost and the fixed local method is close.",
+        "original_file": "sections/05_Deployment_and_Generalization.tex",
+        "original_anchor": "External validity is evaluated on the harmonized hourly five-region panel",
+        "sentences": 3,
+        "reviewer": "2-9"
+      }
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "We evaluate twelve successive 30-day test windows",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "We evaluate twelve successive 30-day test windows per country, beginning on 1 January 2019. Each country contributes 34,560 held-out decisions.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "All eight policies use the same chronological data blocks",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "All eight policies use the same chronological data blocks and 0.95 empirical selection requirement. Seven policies use a common base quantile predictor; the static policy uses a target quantile from the calibration-fit block.",
+      "deleted": "Its mean cost is 87.53 below robust optimization, which reaches a cost of 1965.58 and coverage of 0.937.",
+      "deletion_source": {
+        "text": "Its mean cost is 87.53 below robust optimization, which reaches a cost of 1965.58 and coverage of 0.937.",
+        "original_text": "Its mean cost is 87.53 below robust optimization, which reaches a cost of 1965.58 and coverage of 0.937.",
+        "original_file": "sections/04_Primary_Results.tex",
+        "original_anchor": "Its mean cost is 87.53 below robust optimization",
+        "sentences": 1,
+        "reviewer": "3-11"
+      }
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Target end times are purged",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "Target end times are purged at every training, calibration, selection, and test boundary.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "The cost index divides",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "The cost index divides mean weighted reserve and shortfall by mean load in the calibration-fit block.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "In the 2019 selection-screened benchmark, selected-local mean test coverage",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "In the 2019 selection-screened benchmark, selected-local mean test coverage is 0.954 in Germany, 0.953 in Belgium, and 0.963 in the Netherlands, with corresponding cost indices of 0.01815, 0.03007, and 0.01536. In Austria, selected-local coverage is 0.947, compared with 0.956 for global calibration. A paired moving-block bootstrap gives a positive global-minus-selected cost interval for Germany in this benchmark; Austria's interval spans zero.",
+      "deleted": "Its mean cost is 83.32 below robust optimization and 98.50 below global conformal calibration. Mean shortfall decreases from 24.40 under robust optimization to 19.13, and the 95\\% conditional value at risk (CVaR$_{95}$) of shortfall decreases from 399.61 to 288.03.",
+      "deletion_source": {
+        "text": "Its mean cost is 83.32 below robust optimization and 98.50 below global conformal calibration. Mean shortfall decreases from 24.40 under robust optimization to 19.13, and the 95\\% conditional value at risk (CVaR$_{95}$) of shortfall decreases from 399.61 to 288.03.",
+        "original_text": "Its mean cost is 83.32 below robust optimization and 98.50 below global conformal calibration. Mean shortfall decreases from 24.40 under robust optimization to 19.13, and the 95\\% conditional value at risk (CVaR$_{95}$) of shortfall decreases from 399.61 to 288.03.",
+        "original_file": "sections/04_Primary_Results.tex",
+        "original_anchor": "Its mean cost is 83.32 below robust optimization",
+        "sentences": 2,
+        "reviewer": "3-11"
+      }
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "For each country, we estimated a nonnegative reliability margin",
+      "sentences": 3,
+      "reviewer": "3-11",
+      "added": "For each country, we estimated a nonnegative reliability margin from the 2019 benchmark windows as a fraction of calibration-fit mean load. This fraction is common to all eight policies and is held fixed for eight later windows beginning in 2020. All 256 policy-window combinations reached at least 0.95 empirical coverage; the lowest window coverage was 0.952.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Under the frozen-margin protocol, selected-local mean cost gains",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "Under the frozen-margin protocol, selected-local mean cost gains over global calibration are 0.000026, 0.000187, 0.000068, and 0.000163 in Germany, Austria, Belgium, and the Netherlands. These are reductions of 0.13, 0.68, 0.20, and 0.81 percent relative to global cost, respectively. Table~\\ref{tab:r1_frozen_intervals} reports paired intervals from 3,000 circular moving-block draws, using three consecutive monthly windows and Bonferroni adjustment for the four-country comparison. Only the Austria and Netherlands intervals have positive lower endpoints.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "An auxiliary weather diagnostic uses",
+      "sentences": 3,
+      "reviewer": "2-9",
+      "added": "An auxiliary weather diagnostic uses equal-weight temperature and relative humidity from six official German Weather Service stations, with a one-hour availability lag. Across eight 30-day windows and 23,040 decisions per variant, adding weather reduces base-predictor pinball loss from 31.10 to 30.56 MW and selected-local cost index from 0.01968 to 0.01953. Both input variants have coverage below 0.95 in several test windows; their minimum window coverages are 0.922 for calendar-only inputs and 0.919 with weather.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Table~\\ref{tab:r1_physical} expresses reserve",
+      "sentences": 3,
+      "reviewer": "3-13",
+      "added": "Table~\\ref{tab:r1_physical} expresses reserve and shortfall in MW for the 2019 benchmark. The tail measure averages the largest five percent of shortfalls, with fractional weighting at the quantile boundary. The cost index uses reserve holding weight one and shortfall weight twenty.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "The block comparison uses the maximum calibration residual",
+      "sentences": 2,
+      "reviewer": "2-8",
+      "added": "The block comparison uses the maximum calibration residual within complete, nonoverlapping horizon-length groups. It provides a dependence-aware empirical calibration reference.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "The Supplementary Material reports these correlations",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "The Supplementary Material reports these correlations, effective neighborhood size, seasonal and high-ramp prediction loss and calibrated reliability, and sensitivities to calibration length, neighborhood size, effective sample size, and reliability threshold. High-ramp states use a threshold estimated from the training period.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Conditional results in the 2019 selection-screened benchmark reveal",
+      "sentences": 1,
+      "reviewer": "3-14",
+      "added": "Conditional results in the 2019 selection-screened benchmark reveal variation across operating regimes: selected-local coverage is 0.918 in the Austria spring group and 0.915 in its high-ramp group.",
+      "deleted": "Local coverage ranges from 0.940 in spring to 0.949 in winter. The smaller spring gain coincides with the largest local coverage gap, which indicates less stable upper-tail calibration during seasonal transition.",
+      "deletion_source": {
+        "text": "Local coverage ranges from 0.940 in spring to 0.949 in winter. The smaller spring gain coincides with the largest local coverage gap, which indicates less stable upper-tail calibration during seasonal transition.",
+        "original_text": "Local coverage ranges from 0.940 in spring to 0.949 in winter. The smaller spring gain coincides with the largest local coverage gap, which indicates less stable upper-tail calibration during seasonal transition.",
+        "original_file": "sections/05_Deployment_and_Generalization.tex",
+        "original_anchor": "Local coverage ranges from 0.940 in spring",
+        "sentences": 2,
+        "reviewer": "3-14"
+      }
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "The bandwidth study keeps",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The bandwidth study keeps the 256-neighbor state definition and varies the Gaussian bandwidth multiplier over 0.5, 1.0, and 2.0 at four German test origins in 2019. Mean coverage is 0.967, 0.969, and 0.969; mean normalized cost is 0.01653, 0.01656, and 0.01656; mean effective sample size is 199.6, 251.4, and 255.7. All twelve runs satisfy the selection-period requirement, and all four test windows for each factor reach 0.95 test coverage.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "A separate block-length check on the twelve-window 2019 benchmark",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "A separate block-length check on the twelve-window 2019 benchmark gives positive German global-minus-selected cost-gain intervals at block lengths of 1, 2, 3, 4, and 6 months; the Austrian intervals span zero.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "The calculation replay transfers region, horizon, and shortfall weight",
+      "sentences": 3,
+      "reviewer": "3-8",
+      "added": "The calculation replay transfers region, horizon, and shortfall weight directly from service responses for 22 independently authored requests with public United States load data. Five responses per service produce 110 paired trials. This protocol uses 180 days for fitting, 20 for residual calibration, ten for selection, and 30 for testing.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Nine checked public-data study plans vary",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "Nine checked public-data study plans vary region, horizon, admissible variables, shortfall weight, reliability requirement, and reporting requirements.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "A change in region changes the load series",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "A change in region changes the load series and calibration distribution. A change from 60 to 120 or 180 minutes changes the future target construction. Restricting the variables to load history and calendar changes the fitted predictor. Changing the shortfall weight changes the quantile objective.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Changing the reliability requirement changes",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Changing the reliability requirement changes the common selection offset. Adding tail-shortfall reporting changes the returned evidence while retaining the same reserve series.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Under a common German reference target",
+      "sentences": 2,
+      "reviewer": "2-7",
+      "added": "Under a common German reference target with 2,880 decision timestamps, changing the region to Austria lowers reference-target coverage to 0.430 and raises the normalized cost difference to +0.10153. Extending the horizon to 120 and 180 minutes raises mean reserve by 207.3 and 460.2 MW and raises the cost difference by +0.00293 and +0.00660.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Reducing the predictor variables",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "Reducing the predictor variables to load history and calendar changes mean reserve by 13.7 MW and cost by +0.00028. Increasing the shortfall weight to 40 changes cost by +0.00118, while weight 10 changes it by -0.00002. Raising the required coverage to 0.975 changes mean reserve by 84.0 MW and cost by +0.00073.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Across the four-service replay's 440 trials, 266 pass validation",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Across the four-service replay's 440 trials, 266 pass validation and enter the offline numerical replay, 174 return for further preparation, and 362 produce a numerically interpretable candidate plan. Interpretable candidates supply the field comparison; the fixed checks determine execution eligibility.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Completed validated plans reproduce the reference reserve series and have zero paired cost difference",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Completed validated plans reproduce the reference reserve series and have zero paired cost difference. The supplementary outcome table reports measured service time, token budget, and field corrections for executed and returned plans.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "The six-field extension connects actual service responses",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "The six-field extension connects actual service responses to all six categories of study specification through offline calculation replay. Its nine complete requests produce 180 initial trials, of which 149 pass field validation and select their recorded numerical calculation. Complete-request executions number 45, 45, 17, and 42 out of 45 for DeepSeek, Qwen, ERNIE, and Hunyuan. The three omission requests produce sixty initial trials and sixty confirmation responses; 47 confirmed plans reach calculation, with service counts of 11, 10, 11, and 15 out of 15.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Each of the nine complete specifications produces",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "Each of the nine complete specifications produces at least thirteen actual executions across the services. The executed records preserve source-response hashes, target and reserve hashes, and the requested numerical report. Tail reporting adds the tail-shortfall result while retaining the same reserve series.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "We also inject one field deviation",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "We also inject one field deviation into an actual accepted response while keeping its request fixed. Six categories produce 95 controlled deviations, and validation returns all 95 for confirmation. The region deviation would give 0.430 reference-target coverage and a +0.101534 cost difference; the horizon, variable, weight, and reliability deviations would give +0.002925, +0.000285, +0.001176, and +0.000734. Removing requested tail reporting changes the report contents while preserving reserve and cost.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "The original anonymized load-weather study provides",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "The original anonymized load-weather study provides additional regional evidence across 86 rolling windows. The Supplementary Material archives its policy results, residual-state sensitivity diagnostic, harmonized hourly regional evaluation, and illustrative resource accounting on their original study scales.",
+      "deleted": "The adaptive method has a lower mean resource-allocation cost than robust optimization in every reported region--portfolio combination. Mean gains range from about 5 in ISO-NE to about 184--190 in the anonymized China-province system. Gains relative to the fixed local method are smaller.",
+      "deletion_source": {
+        "text": "The adaptive method has a lower mean resource-allocation cost than robust optimization in every reported region--portfolio combination. Mean gains range from about 5 in ISO-NE to about 184--190 in the anonymized China-province system. Gains relative to the fixed local method are smaller.",
+        "original_text": "The adaptive method has a lower mean resource-allocation cost than robust optimization in every reported region--portfolio combination. Mean gains range from about 5 in ISO-NE to about 184--190 in the anonymized China-province system. Gains relative to the fixed local method are smaller.",
+        "original_file": "sections/05_Deployment_and_Generalization.tex",
+        "original_anchor": "The adaptive method has a lower mean resource-allocation cost",
+        "sentences": 3,
+        "reviewer": "2-10"
+      }
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "The first 20 of the 30 calibration days supply residuals",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The first 20 of the 30 calibration days supply residuals. The final ten days choose shrinkage for the selected-local policy and each policy's nonnegative offset needed to meet the coverage requirement. These residual corrections and selected settings are then applied to the test period.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Among all eight policies, the lowest mean cost",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "Among all eight policies, the lowest mean cost is achieved by the quantile predictor in Germany, the scenario quantile in Austria and Belgium, and selected-local calibration in the Netherlands. Relative to each country's lowest-cost policy, selected-local cost is 1.03, 1.26, and 2.07 percent higher in Germany, Austria, and Belgium, while tail shortfall is 10.53, 4.46, and 19.18 percent lower. For example, Germany's selected-local tail shortfall is 106.18 MW, compared with 118.67 MW for the quantile predictor. In the Netherlands, selected-local cost is 0.26 percent below the next-lowest cost, obtained by ordinary local calibration.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Incomplete or conflicting plans remain",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "Incomplete or conflicting plans remain at the validation or clarification state; complete validated fields select the offline calculation while retaining the plan's human-authorization requirement.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Figure~\\ref{fig:r1_frozen_policies} compares",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "Figure~\\ref{fig:r1_frozen_policies} compares the full set of eight policies under the frozen margins. The cost minima differ by country, while the coverage and tail-shortfall panels show the reliability associated with each cost. The mean and minimum window coverages distinguish aggregate service from the least-covered later window.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Figure~\\ref{fig:r1_frozen_gains} shows",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "Figure~\\ref{fig:r1_frozen_gains} shows the sign and magnitude of the paired cost differences in each later window alongside the family-adjusted intervals. Window-level reversals coexist with positive mean gains. The Austria and Netherlands intervals remain above zero, whereas the Germany and Belgium intervals include zero.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Figure~\\ref{fig:r1_conditional_bandwidth} places",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "Figure~\\ref{fig:r1_conditional_bandwidth} places the 2019 conditional coverage beside the German bandwidth results. Austria's spring and high-ramp groups remain below the overall 0.95 target. Increasing the bandwidth broadens the effective residual neighborhood, while mean cost changes from 0.01653 to 0.01656 across the three factors.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "The time profile in Figure~\\ref{fig:r1_public_trajectory} uses",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The time profile in Figure~\\ref{fig:r1_public_trajectory} uses the first seven days of the fourth later German window. The reserve trajectories include the frozen common margin. State-dependent calibration raises and lowers reserve relative to global correction at different decision times, while the quantile predictor supplies the lowest-cost German reference in the eight-policy comparison.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/05_R1_Application.tex",
+      "anchor": "Figure~\\ref{fig:r1_field_consequences} connects",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "Figure~\\ref{fig:r1_field_consequences} connects the controlled specification changes to their numerical consequences and shows completion in the separate independent-request replay. A reporting-only change preserves reserve and cost. Region and horizon changes alter the calculated decision, while the service completion counts identify how many validated plans reach their request-specific offline calculation.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "Every interface then requires the same check",
+      "sentences": 4,
+      "reviewer": "2-5",
+      "added": "Every interface then requires the same check of decision-time information, supported parameters, evidence, and authorization. On the 48 independently authored requests, the tested language-service configurations have zero unsafe execution-ready plans, while the parser retains four after the same validation checks. Expert-entered forms also have zero unsafe readiness in the 24-request comparison. These outcomes reflect the combination of request interpretation and subsequent validation.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "Function calling can produce an exact schema",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Function calling can produce an exact schema while the proposed disposition remains incorrect. A model can also identify the appropriate disposition and return a structure that needs repair.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "Returning an incomplete request protects",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "Returning an incomplete request protects the calculation boundary; successful completion depends on the supplied confirmation and the final structured response.",
+      "deleted": "The unresolved-default check also returns ambiguous requests for clarification without reducing the number of completed results for eligible requests.",
+      "deletion_source": {
+        "text": "The unresolved-default check also returns ambiguous requests for clarification without reducing the number of completed results for eligible requests.",
+        "original_text": "The unresolved-default check also returns ambiguous requests for clarification without reducing the number of completed results for eligible requests.",
+        "original_file": "sections/06_Discussion.tex",
+        "original_anchor": "The unresolved-default check also returns ambiguous requests",
+        "sentences": 1,
+        "reviewer": "3-7"
+      }
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "Similar decision-time states supply residual observations",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Similar decision-time states supply residual observations that adjust the upper quantile according to the local residual distribution. Selected shrinkage combines that local estimate with a global correction.",
+      "deleted": "State-dependent conformal calibration lowers mean cost relative to global calibration and robust optimization in the primary rolling comparison. The lowest-cost configuration falls below the stated coverage level. Applying the empirical coverage requirement raises coverage above 0.95 and retains a lower mean cost than robust optimization in this dataset.",
+      "deletion_source": {
+        "text": "State-dependent conformal calibration lowers mean cost relative to global calibration and robust optimization in the primary rolling comparison. The lowest-cost configuration falls below the stated coverage level. Applying the empirical coverage requirement raises coverage above 0.95 and retains a lower mean cost than robust optimization in this dataset.",
+        "original_text": "State-dependent conformal calibration lowers mean cost relative to global calibration and robust optimization in the primary rolling comparison. The lowest-cost configuration falls below the stated coverage level. Applying the empirical coverage requirement raises coverage above 0.95 and retains a lower mean cost than robust optimization in this dataset.",
+        "original_file": "sections/06_Discussion.tex",
+        "original_anchor": "State-dependent conformal calibration lowers mean cost",
+        "sentences": 3,
+        "reviewer": "1-2"
+      }
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "All methods use the same selection requirement",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "All methods use the same selection requirement. Subsequent empirical coverage is an outcome of chronological testing, and distribution changes can shift that outcome after selection.",
+      "deleted": "The five-region analysis supports transfer through local re-estimation. The adaptive method has the lowest mean cost in each reported hourly region, with positive bootstrap gains over robust optimization.",
+      "deletion_source": {
+        "text": "The five-region analysis supports transfer through local re-estimation. The adaptive method has the lowest mean cost in each reported hourly region, with positive bootstrap gains over robust optimization.",
+        "original_text": "The five-region analysis supports transfer through local re-estimation. The adaptive method has the lowest mean cost in each reported hourly region, with positive bootstrap gains over robust optimization.",
+        "original_file": "sections/06_Discussion.tex",
+        "original_anchor": "The five-region analysis supports transfer through local re-estimation",
+        "sentences": 2,
+        "reviewer": "2-10"
+      }
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "Request validation establishes the calculation boundary",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "Request validation establishes the calculation boundary. Prediction and calibration produce the reserve and its observed performance.",
+      "deleted": "Within the reported setting, the evidence supports a complete energy-informatics sequence: a validated study request, calibrated reserve sizing, reliability evaluation, and resource-allocation analysis.",
+      "deletion_source": {
+        "text": "Within the reported setting, the evidence supports a complete energy-informatics sequence: a validated study request, calibrated reserve sizing, reliability evaluation, and resource-allocation analysis.",
+        "original_text": "Within the reported setting, the evidence supports a complete energy-informatics sequence: a validated study request, calibrated reserve sizing, reliability evaluation, and resource-allocation analysis.",
+        "original_file": "sections/06_Discussion.tex",
+        "original_anchor": "Within the reported setting, the evidence supports a complete energy-informatics sequence",
+        "sentences": 1,
+        "reviewer": "3-8"
+      }
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "The frozen-margin extension gives a second reliability comparison",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "The frozen-margin extension gives a second reliability comparison. A country-specific common margin estimated from the 2019 benchmark is carried into eight later windows for each policy. The resulting 256 policy-window combinations all reach 0.95 coverage, with a minimum of 0.952. Selected-local mean cost is lower than global cost by approximately 0.13, 0.68, 0.20, and 0.81 percent in Germany, Austria, Belgium, and the Netherlands, respectively.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "The matched comparison identifies the work carried",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "The matched comparison identifies the work carried into that review. Across 200 reference-specified field comparisons per service, corrections range from 50 to 122, and disposition corrections range from 25 to 53. The case-paired review-time budget combines the expert preparation estimate with service return latency. Its median ranges from 155.6 to 175.4 seconds.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "The variable-input count gives",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "The variable-input count gives a complementary preparation measure for the original matched replay. Among 265 disposition and field entries per service, the drafts preserve 195, 169, 149, and 125 reference-correct entries. These retained proportions are 73.6, 63.8, 56.2, and 47.2 percent, respectively. The remaining entries require replacement, and the analyst verifies every entry.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "The experiment on complete drafts evaluates",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The experiment on complete drafts evaluates how much supplied content reaches review under a separate field-preserving protocol. Acceptance, rejection, and clarification all preserve supplied fields, allowing the analyst to review available information alongside the disposition. Correct fields reach 200, 195, 193, and 198 of 200 comparisons, and minimum replacements range from five to 66 among 265 variable entries.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "The distributed-weather diagnostic combines",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The distributed-weather diagnostic combines observations from six official stations into a spatial average with a one-hour lag. The added variables reduce aggregate pinball loss and the selected-local cost index in Germany. Several individual windows remain below the 0.95 coverage target, identifying periods in which the weather extension requires further reliability adjustment.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "The actual-response extension broadens",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "The actual-response extension broadens this connection to the variable set, reliability target, and requested report. Across its complete and confirmed requests, 196 numerical outputs reproduce their request-specific reference. Every complete specification has actual executions. The 95 single-field deviations quantify the check at the same hand-off: changing a numerical field alters the prospective reserve objective, and omitting a requested diagnostic alters its report.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "The parser preserves 52 of 53 variable inputs",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "The parser preserves 52 of 53 variable inputs on the same 24 requests, giving 98.1-percent reuse compared with 75.1--98.1 percent for the services.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/06_R1_Discussion.tex",
+      "anchor": "Request interpretation and validation determine",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "Request interpretation and validation determine the study fields and execution eligibility; numerical prediction and calibration determine reserve cost, coverage, and shortfall.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/07_R1_Conditions.tex",
+      "anchor": "The independently authored requests and scripted confirmations represent",
+      "sentences": 1,
+      "reviewer": "3-1",
+      "added": "The independently authored requests and scripted confirmations represent a research-preparation workflow.",
+      "deleted": "The reported request-check results apply to the saved request sets, labels, LLM outputs, request-validation instruction, fixed request rules, and scoring rules. The blind comparison contains 200 requests per service, and the controlled comparison contains 150 requests per service. The paired calculation result measures the unresolved-default check by using the same saved responses in both policies.",
+      "deletion_source": {
+        "text": "The reported request-check results apply to the saved request sets, labels, LLM outputs, request-validation instruction, fixed request rules, and scoring rules. The blind comparison contains 200 requests per service, and the controlled comparison contains 150 requests per service. The paired calculation result measures the unresolved-default check by using the same saved responses in both policies.",
+        "original_text": "The reported request-check results apply to the saved request sets, labels, LLM outputs, request-validation instruction, fixed request rules, and scoring rules. The blind comparison contains 200 requests per service, and the controlled comparison contains 150 requests per service. The paired calculation result measures the unresolved-default check by using the same saved responses in both policies.",
+        "original_file": "sections/07_Scope_Conditions.tex",
+        "original_anchor": "The reported request-check results apply to the saved request sets",
+        "sentences": 3,
+        "reviewer": "3-1"
+      }
+    },
+    {
+      "file": "sections/07_R1_Conditions.tex",
+      "anchor": "Coverage is the empirical fraction of realized targets covered",
+      "sentences": 2,
+      "reviewer": "3-10",
+      "added": "Coverage is the empirical fraction of realized targets covered during each chronological test period. The frozen-margin comparison applies a common minimum requirement of 0.95 and reports the resulting cost and tail shortfall alongside actual test coverage.",
+      "deleted": "The empirical coverage requirement is evaluated on these rolling results. It determines whether a verified result is reported under the stated data and must be recalibrated for a new region, horizon, objective, or reliability requirement.",
+      "deletion_source": {
+        "text": "The empirical coverage requirement is evaluated on these rolling results. It determines whether a verified result is reported under the stated data and must be recalibrated for a new region, horizon, objective, or reliability requirement.",
+        "original_text": "The empirical coverage requirement is evaluated on these rolling results. It determines whether a verified result is reported under the stated data and must be recalibrated for a new region, horizon, objective, or reliability requirement.",
+        "original_file": "sections/07_Scope_Conditions.tex",
+        "original_anchor": "The empirical coverage requirement is evaluated on these rolling results",
+        "sentences": 2,
+        "reviewer": "3-10"
+      }
+    },
+    {
+      "file": "sections/07_R1_Conditions.tex",
+      "anchor": "The later-window comparison holds",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "The later-window comparison holds each country's load-scaled margin fixed after estimation from the 2019 benchmark. The German weather diagnostic uses equal-weight observations from six stations with a one-hour availability lag. Both analyses evaluate archived data offline. The study plan records the regional data source, availability times, cost weights, reliability requirement, requested outputs, and human-authorization requirement used by each calculation.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/08_R1_Conclusions.tex",
+      "anchor": "The independent study includes 168 requests",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "The independent study includes 168 requests assessed by three annotators, with Fleiss' kappa of 0.932 on the 48 independently authored requests. The matched expert packet contains 72 plans and 24 written review decisions.",
+      "deleted": "Joint success ranges from 0.705 to 0.885 across four LLM services on the 200-case blind set.",
+      "deletion_source": {
+        "text": "Joint success ranges from 0.705 to 0.885 across four LLM services on the 200-case blind set.",
+        "original_text": "Joint success ranges from 0.705 to 0.885 across four LLM services on the 200-case blind set.",
+        "original_file": "sections/08_Conclusions.tex",
+        "original_anchor": "Joint success ranges from 0.705 to 0.885 across",
+        "sentences": 1,
+        "reviewer": "2-3"
+      }
+    },
+    {
+      "file": "sections/08_R1_Conclusions.tex",
+      "anchor": "Public quarter-hourly load from four countries",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "Public quarter-hourly load from four countries supplies 138,240 held-out reserve decisions under common selection rules. The selected local policy reaches mean empirical coverage of 0.954, 0.953, and 0.963 in Germany, Belgium, and the Netherlands in the initial selection-screened benchmark. The subsequent frozen-margin comparison places all eight policies above 0.95 in each later test window.",
+      "deleted": "Across 86 rolling windows, the configuration selected for lowest cost reaches a mean cost of 1760.87 and coverage of 0.938. The configuration that requires empirical coverage of at least 0.95 reaches a cost of 1878.05 and coverage of 0.953. Robust optimization reaches a cost of 1965.58 and coverage of 0.937. Scrambling the selected calibration state raises mean cost by 175.58 with the base prediction fixed.",
+      "deletion_source": {
+        "text": "Across 86 rolling windows, the configuration selected for lowest cost reaches a mean cost of 1760.87 and coverage of 0.938. The configuration that requires empirical coverage of at least 0.95 reaches a cost of 1878.05 and coverage of 0.953. Robust optimization reaches a cost of 1965.58 and coverage of 0.937. Scrambling the selected calibration state raises mean cost by 175.58 with the base prediction fixed.",
+        "original_text": "Across 86 rolling windows, the configuration selected for lowest cost reaches a mean cost of 1760.87 and coverage of 0.938. The configuration that requires empirical coverage of at least 0.95 reaches a cost of 1878.05 and coverage of 0.953. Robust optimization reaches a cost of 1965.58 and coverage of 0.937. Scrambling the selected calibration state raises mean cost by 175.58 with the base prediction fixed.",
+        "original_file": "sections/08_Conclusions.tex",
+        "original_anchor": "Across 86 rolling windows, the configuration selected for lowest cost",
+        "sentences": 4,
+        "reviewer": "3-11"
+      }
+    },
+    {
+      "file": "sections/08_R1_Conclusions.tex",
+      "anchor": "The checked-field experiment connects changes",
+      "sentences": 2,
+      "reviewer": "3-16",
+      "added": "The checked-field experiment connects changes in study specifications to changes in the executed reserve calculation. Together, these findings support traceable preparation and validation for the evaluated energy studies.",
+      "deleted": "The contribution joins a decision-time validation layer with an operational reserve study: the first establishes whether a calculation is admissible, and the second quantifies the resulting cost and reliability trade-off.",
+      "deletion_source": {
+        "text": "The contribution joins a decision-time validation layer with an operational reserve study: the first establishes whether a calculation is admissible, and the second quantifies the resulting cost and reliability trade-off.",
+        "original_text": "The contribution joins a decision-time validation layer with an operational reserve study: the first establishes whether a calculation is admissible, and the second quantifies the resulting cost and reliability trade-off.",
+        "original_file": "sections/08_Conclusions.tex",
+        "original_anchor": "The contribution joins a decision-time validation layer",
+        "sentences": 1,
+        "reviewer": "3-16"
+      }
+    },
+    {
+      "file": "sections/08_R1_Conclusions.tex",
+      "anchor": "The frozen-margin extension provides",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The frozen-margin extension provides a common empirical reliability check across 256 later-window policy comparisons, with a minimum window coverage of 0.952. Selected-local mean cost gains over global calibration range from 0.13 to 0.81 percent across the four countries, with positive family-adjusted interval endpoints in Austria and the Netherlands. Among all eight policies, selected-local calibration has the lowest mean cost in the Netherlands; the quantile predictor has the lowest mean cost in Germany, and the scenario quantile does so in Austria and Belgium.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/08_R1_Conclusions.tex",
+      "anchor": "The separately frozen protocol for complete drafts includes",
+      "sentences": 4,
+      "reviewer": null,
+      "added": "The separately frozen protocol for complete drafts includes 480 initial and 54 automatic feedback responses on the expert packet. Correct specified fields range from 193 to 200 of 200 comparisons, and 75.1--98.1 percent of variable inputs remain available for verification. Disposition, valid-request completion, and input reuse describe complementary aspects of preparation quality. Measured online time and explicit review, correction, and authorization conditions connect this content to the complete preparation task.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/08_R1_Conclusions.tex",
+      "anchor": "Across 265 variable entries per service in the original expert-matched replay",
+      "sentences": 1,
+      "reviewer": null,
+      "added": "Across 265 variable entries per service in the original expert-matched replay, 47.2--73.6 percent of draft entries agree with the reference and remain available for verification.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/01_Introduction.tex",
+      "anchor": "A natural-language request allows",
+      "sentences": 2,
+      "reviewer": null,
+      "added": "A natural-language request allows the analyst to express and revise these choices in operational terms. It can also leave a default unclear, refer to observations realized after the decision, or state a numerical result before the calculation exists.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/01_Introduction.tex",
+      "anchor": "The study plan records the permitted load history",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The study plan records the permitted load history, recent ramps, weather observations where available, and reserve-to-shortfall cost ratio, together with the time at which each input becomes observable. The numerical program then produces the reserve evidence. Future realized load enters model fitting or evaluation only after the corresponding outcome has been observed.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/01_Introduction.tex",
+      "anchor": "A large language model (LLM) can interpret",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "A large language model (LLM) can interpret paraphrases, mixed-language wording, and corrections to prepare candidate study fields for review. A structured form collects these fields through explicit entry, while a deterministic parser extracts them using predefined rules. Comparing these interfaces under shared validation requirements identifies their respective contributions to interpretation, completion, and preparation workload.",
+      "deleted": null,
+      "deletion_source": null
+    },
+    {
+      "file": "sections/01_Introduction.tex",
+      "anchor": "The contribution is a traceable preparation",
+      "sentences": 3,
+      "reviewer": null,
+      "added": "The contribution is a traceable preparation and validation workflow for an established energy operation. Interface performance is assessed through interpretation, admissibility, completion, and preparation workload. Numerical policy performance is assessed through reserve cost, empirical coverage, and shortfall severity under common reliability requirements.",
+      "deleted": null,
+      "deletion_source": null
+    }
+  ],
+  "reviewer_tags": {
+    "1-1": 1,
+    "3-9": 1,
+    "1-2": 1,
+    "3-12": 1,
+    "2-6": 1,
+    "2-10": 1,
+    "3-2": 1,
+    "3-3": 1,
+    "2-2": 1,
+    "2-3": 1,
+    "3-4": 1,
+    "2-1": 1,
+    "3-5": 1,
+    "3-6": 1,
+    "3-7": 1,
+    "2-4": 1,
+    "3-15": 1,
+    "3-11": 1,
+    "2-9": 1,
+    "3-13": 1,
+    "2-8": 1,
+    "3-14": 1,
+    "3-8": 1,
+    "2-7": 1,
+    "2-5": 1,
+    "3-1": 1,
+    "3-10": 1,
+    "3-16": 1
+  },
+  "table_numeric_cells": {
+    "bandwidth_sensitivity": 15,
+    "clarification": 16,
+    "execution": 20,
+    "expert": 28,
+    "frozen_comparison": 24,
+    "frozen_intervals": 8,
+    "input_workload": 16,
+    "interfaces": 40,
+    "nonllm": 7,
+    "online_draft_quality": 20,
+    "physical": 16,
+    "public": 49,
+    "repeat_120": 17,
+    "repeat_48": 17,
+    "review_workload": 16,
+    "revision_joint": 17,
+    "six_field_execution": 12
+  },
+  "substantive_text_spans": 141,
+  "deletion_spans": 30,
+  "deleted_sentences": 52,
+  "deletion_reviewer_comments": [
+    "1-2",
+    "2-1",
+    "2-10",
+    "2-2",
+    "2-3",
+    "2-4",
+    "2-9",
+    "3-1",
+    "3-10",
+    "3-11",
+    "3-12",
+    "3-14",
+    "3-15",
+    "3-16",
+    "3-2",
+    "3-3",
+    "3-4",
+    "3-7",
+    "3-8"
+  ],
+  "accepted_content_verified": true,
+  "grouped_reviewer_tags": 0
+}

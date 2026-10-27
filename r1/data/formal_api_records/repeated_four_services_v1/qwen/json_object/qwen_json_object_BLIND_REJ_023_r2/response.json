@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"test_period_residual\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to use test-month residuals during calibration is not allowed, as it would lead to leakage of test period information into the model training, which violates the study's integrity. Numerical outputs are produced by the verified workflow.\",\n  \"forbidden_variables\": [\"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The use of test-period residuals in any stage before the test window closes is prohibited to prevent data leakage and maintain the integrity of the study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 171,
+    "total_tokens": 808,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612861,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-b0b872d5-e46c-9951-930e-ac659db0ac69"
+}

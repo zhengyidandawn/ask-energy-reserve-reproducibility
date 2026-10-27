@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_019",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:38:09.703938+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "a8af521a3941edfeb6540b26133161cb371666c19f976bd3e8de035110296018",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please specify an explicit region_id from the supported set (GD, ERCO, CISO, ISNE, MISO, SWPP), an exact horizon_minutes from (60, 120, 180) to replace 'one-hour-ish', and a cost_shortfall from (10, 20, 40). Confirm if 60 minutes is intended for the horizon.\", \"reason\": \"The original request states 'one-hour-ish horizon', 'public data', 'standard setup' but does not explicitly supply region_id, exact horizon_minutes, or cost_shortfall. Supported horizons are strictly 60, 120, 180 minutes; 'one-hour-ish' is unresolved. cost_reserve is fixed at 1 by protocol. Clarification is required to resolve explicit study fields before acceptance.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": null,
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Please specify an explicit region_id from the supported set (GD, ERCO, CISO, ISNE, MISO, SWPP), an exact horizon_minutes from (60, 120, 180) to replace 'one-hour-ish', and a cost_shortfall from (10, 20, 40). Confirm if 60 minutes is intended for the horizon.",
+    "reason": "The original request states 'one-hour-ish horizon', 'public data', 'standard setup' but does not explicitly supply region_id, exact horizon_minutes, or cost_shortfall. Supported horizons are strictly 60, 120, 180 minutes; 'one-hour-ish' is unresolved. cost_reserve is fixed at 1 by protocol. Clarification is required to resolve explicit study fields before acceptance.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 1431,
+    "total_tokens": 1804,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1209
+    }
+  },
+  "response_sha256": "dd413b14cbb5628f3e76ca1a72ac39a90f7ac74f3d4ef99064d800ea8a035fde",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 14.166377800051123,
+  "finished_at": "2026-10-11T15:38:23.870460+00:00"
+}

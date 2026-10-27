@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [], \"human_approval_required\": true}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"The numerical outputs for the upward reserve sizing study, including the reserve values, mean costs, coverage values, confidence intervals, and bootstrap claims, are produced by the verified workflow only.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The request adheres to all guidelines and constraints. It specifies a valid region, horizon, and cost shortfall, and does not include any prohibited variables or methods. The study schema is properly defined, and the rolling window configuration matches the required standard. All necessary fields are present, clear, and unambiguous, warranting an accept decision.\", \"study_schema\": {\"cost_reserve\": 1.0, \"cost_shortfall\": 10.0, \"horizon_minutes\": 60, \"region_id\": \"CISO\", \"requires_human_approval\": true, \"rolling_window\": {\"cal_days\": 30, \"rolling_step_days\": 30, \"test_days\": 30, \"train_days\": 730}, \"task_type\": \"upward_reserve_sizing\"}, \"workflow\": [\"verify_input_data_integrity\", \"define_decision_time_variable_boundary\", \"apply_rolling_window_configuration\", \"validate_study_schema\", \"conduct_upward_reserve_sizing_analysis\", \"produce_numerical_workflow_outputs\", \"ensure_adherence_to_numerical_output_policy\"]}",
+              "name": "submit_plan"
+            },
+            "id": "call_61d0d53133c5473dbfd56e",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1515,
+    "completion_tokens": 416,
+    "total_tokens": 1931,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616496,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-a0bb9a2f-a0dc-9e54-96b3-bd5d43185542"
+}

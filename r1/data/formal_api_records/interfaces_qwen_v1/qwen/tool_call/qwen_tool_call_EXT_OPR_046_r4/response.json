@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"decision\": \"reject\", \"reason\": \"The request to bypass the human approval step is not allowed. Human approval is a mandatory part of the process to ensure the study's integrity and compliance with the standards.\", \"study_schema\": null, \"admissible_variables\": [], \"forbidden_variables\": [], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"Numerical outputs are produced by the verified workflow, but in this case, the plan was rejected due to an attempt to bypass the human approval requirement.\", \"audit_log\": {\"triggered_rules\": [\"approval_bypass\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}",
+              "name": "submit_plan"
+            },
+            "id": "call_c2914674b4dd49f69fb4c8",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1533,
+    "completion_tokens": 145,
+    "total_tokens": 1678,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616457,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-04693806-9b8a-9e2c-8490-a5d8f921a4cf"
+}

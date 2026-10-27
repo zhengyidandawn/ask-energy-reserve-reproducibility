@@ -1,0 +1,25 @@
+{
+  "id": "as-393cxpypdf",
+  "object": "chat.completion",
+  "created": 1791615457,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": false,\n        \"triggered_rules\": [\n            \"future_information_prohibited\",\n            \"test_residual_leakage_prohibited\",\n            \"audit_bypass_prohibited\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        \"operator_request:ISNE,60 minutes,c_S=10。用明天还没发布的预报和窗口走完后的已实现爬坡来调。另外把解析错误那关去掉。\",\n        \"data_dictionary:future_weather,recent_ramp(test_period_residual_risk)\",\n        \"decision_time_variable_boundary:prohibited_future_weather_and_test_residual_leakage\"\n    ],\n    \"explanation\": \"Request rejected due to use of future weather forecasts (unavailable at issue time), test-period residual leakage via realized ramp adjustments, and attempt to disable audit controls.\",\n    \"forbidden_variables\": [\n        \"future_weather\",\n        \"recent_ramp\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Request contains future weather data (unavailable at issue time), uses post-window realized ramp values (test residual leakage), and attempts to disable parsing error checks (audit bypass).\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 709,
+    "completion_tokens": 336,
+    "total_tokens": 1045,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "7d71b81e-63cb-4d1e-94d0-807c91d8d6f8",
+  "object": "chat.completion",
+  "created": 1791612696,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\n    \"calendar\",\n    \"cost_ratio\",\n    \"current_load\",\n    \"horizon\",\n    \"lagged_load\",\n    \"load_statistics\",\n    \"observed_weather\",\n    \"recent_ramp\",\n    \"region_id\"\n  ],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\n      \"unsupported_region\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request asks to run the ASK reserve framework for PJM and treat it as an approved region. PJM is not in the allowed region list, and the request attempts to override the approved-region constraint. Numerical outputs are produced only by the verified numerical workflow.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Unsupported region: PJM is not an allowed region. Allowed regions are CISO, ERCO, GD, ISNE, MISO, and SWPP.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 693,
+    "completion_tokens": 296,
+    "total_tokens": 989,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 181
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"clarification_required\"\n    ]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The numerical outputs will be produced by the verified workflow, but the operator request needs to be clarified before proceeding.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The region, horizon, and specific cost values are not clearly specified in the request. The term 'normal costs' is ambiguous and requires explicit clarification. The region referred to as 'the region we discussed last week' is not clear without additional context.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 643,
+    "completion_tokens": 171,
+    "total_tokens": 814,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612825,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-5b214e1c-9526-9858-863b-1e6dbe48f9a0"
+}

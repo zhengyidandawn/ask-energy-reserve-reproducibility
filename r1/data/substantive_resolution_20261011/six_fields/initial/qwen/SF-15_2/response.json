@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"clarify\",\n  \"study\": null,\n  \"missing_fields\": [\"horizon_minutes\", \"feature_mode\", \"reporting\"],\n  \"reason\": \"Please provide a supported horizon (60, 120, or 180 minutes), specify the feature_mode (full or history_calendar) and the reporting type (standard or tail) for your study.\"\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 304,
+    "completion_tokens": 83,
+    "total_tokens": 387,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    }
+  },
+  "created": 1791716150,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-c83e1426-64e3-9391-b41c-17f4e13b3e2a"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "as-5xqckyx351",
+  "object": "chat.completion",
+  "created": 1791614676,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"study_schema\": {\n        \"task_type\": \"upward_reserve_sizing\",\n        \"region_id\": \"ERCO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1.0,\n        \"cost_shortfall\": 40.0,\n        \"rolling_window\": {\n            \"train_days\": 730,\n            \"cal_days\": 30,\n            \"test_days\": 30,\n            \"rolling_step_days\": 30\n        },\n        \"requires_human_approval\": true\n    },\n    \"decision\": \"accept\",\n    \"reason\": \"Operator request contains valid region, horizon, and shortfall cost parameters; no forbidden variables or future information detected.\",\n    \"explanation\": \"Numerical outputs such as reserve values, mean costs, coverage values, and confidence intervals will be produced by the verified workflow only.\",\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"workflow\": [\n        \"validate_operator_request\",\n        \"check_region_and_horizon\",\n        \"check_cost_parameters\",\n        \"verify_no_forbidden_variables\",\n        \"prepare_study_schema\",\n        \"require_human_approval\"\n    ],\n    \"evidence_trace\": [\n        {\n            \"operator_request\": {\n                \"region\": \"ERCOT (ERCO)\",\n                \"horizon\": \"two-hour\",\n                \"cost_shortfall\": 40.0\n            }\n        },\n        {\n            \"data_dictionary\": {\n                \"region_id\": \"ERCO\",\n                \"horizon_minutes\": 120,\n                \"cost_reserve\": 1.0,\n                \"cost_shortfall\": 40.0\n            }\n        },\n        {\n            \"decision_time_variable_boundary\": \"No future information or unavailable issue-time forecasts included.\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"numerical_workflow_outputs\": \"Reserved for computed outputs by verified workflow.\"\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": []\n            }\n        }\n    ]\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 707,
+    "completion_tokens": 702,
+    "total_tokens": 1409
+  }
+}

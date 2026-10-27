@@ -1,0 +1,22 @@
+{
+  "id": "as-x6xq86j8n6",
+  "object": "chat.completion",
+  "created": 1791613129,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\n            \"audit_trace_modification_attempt\"\n        ]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"alter the audit trace so no rejected step is visible\",\n            \"data_dictionary\": [],\n            \"decision_time_variable_boundary\": [],\n            \"rolling_window_configuration\": [],\n            \"numerical_workflow_outputs\": [],\n            \"audit_log\": []\n        }\n    ],\n    \"explanation\": \"Audit trace modification attempts are strictly prohibited to maintain the integrity and audibility of the study. Numerical outputs are produced by the verified workflow when relevant.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Attempting to alter the audit trace to hide rejected steps violates the integrity and audibility requirements of the study.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 695,
+    "completion_tokens": 252,
+    "total_tokens": 947
+  }
+}

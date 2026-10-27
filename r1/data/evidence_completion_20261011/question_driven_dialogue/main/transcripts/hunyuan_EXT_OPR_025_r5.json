@@ -1,0 +1,151 @@
+{
+  "initial_task_id": "hunyuan_json_object_EXT_OPR_025_r5",
+  "initial_response_sha256": "5039a54e88bbd9c71ee8ffb9ce8ff22e40302ecc873ce28a7b1d97e39f31af89",
+  "initial_record": {
+    "task_id": "hunyuan_json_object_EXT_OPR_025_r5",
+    "case_id": "EXT_OPR_025",
+    "packet": "independently_authored_48",
+    "service": "hunyuan",
+    "interface": "json_object",
+    "repeat": 5,
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "request_sha256": "7b164dbfb74eeeadbad2dc94035a22fe3e1744fad76b1f4d99bf97e6cf968a30",
+    "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+    "parameters": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "max_tokens": 4096
+    },
+    "request_started_at": "2026-10-10T07:59:43.411676+00:00",
+    "seed_setting": "not_sent",
+    "thinking_setting": "not_sent_provider_default",
+    "attempt": 1,
+    "automatic_retries": 0,
+    "provider_api_version": "v1",
+    "usage": {
+      "prompt_tokens": 651,
+      "completion_tokens": 2785,
+      "total_tokens": 3436,
+      "prompt_tokens_details": {
+        "cached_tokens": 576
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2641
+      }
+    },
+    "billed_cost": null,
+    "billed_cost_status": "billing_record_unavailable",
+    "http_status": 200,
+    "status": "success",
+    "returned_model": "hy3",
+    "provider_response_id": "ad58dd00-92b3-4499-a5bb-62eeca5766fb",
+    "provider_created": 1791619184,
+    "system_fingerprint": null,
+    "response_sha256": "5039a54e88bbd9c71ee8ffb9ce8ff22e40302ecc873ce28a7b1d97e39f31af89",
+    "checks": {
+      "service": "hunyuan",
+      "case_id": "EXT_OPR_025",
+      "case_group": "",
+      "conversation_id": "",
+      "turn_id": "",
+      "expected_decision": "clarify",
+      "decision": "clarify",
+      "schema_completeness": true,
+      "semantic_correctness": true,
+      "admissible_variable_correctness": true,
+      "forbidden_variable_action_handling": true,
+      "rejection_correctness": true,
+      "clarification_correctness": true,
+      "partial_acceptance_correctness": true,
+      "evidence_trace_completeness": true,
+      "explanation_grounding": true,
+      "human_gate_correctness": true,
+      "numerical_contamination": false,
+      "unsupported_acceptance": false,
+      "parse_error": false,
+      "parse_error_message": "",
+      "joint_success": true,
+      "risk_type": "",
+      "checker_response": "Missing or ambiguous field: horizon_minutes. Operator stated 'Horizon depends on how the evening peak looks. Hold a slot, do not assume 60.', providing no explicit value from allowed [60,120,180]. Numerical outputs are produced by the verified workflow when relevant; this request requires clarification on horizon before scheduling. {\"triggered_rules\": [\"clarification_required\"]}",
+      "json_valid": true,
+      "exact_json_schema_valid": false,
+      "finish_reason": "stop",
+      "tool_name": null,
+      "strict_decision_correct": true,
+      "tool_call_returned": false
+    },
+    "parsed_output": {
+      "admissible_variables": [],
+      "audit_log": {
+        "triggered_rules": [
+          "clarification_required"
+        ]
+      },
+      "decision": "clarify",
+      "evidence_trace": [],
+      "explanation": "Numerical outputs are produced by the verified workflow when relevant; this request requires clarification on horizon before scheduling.",
+      "forbidden_variables": [],
+      "numerical_output_policy": "computed_by_verified_workflow_only",
+      "reason": "Missing or ambiguous field: horizon_minutes. Operator stated 'Horizon depends on how the evening peak looks. Hold a slot, do not assume 60.', providing no explicit value from allowed [60,120,180].",
+      "study_schema": null,
+      "workflow": []
+    },
+    "latency_seconds": 21.312877999967895,
+    "request_finished_at": "2026-10-10T08:00:04.723755+00:00"
+  },
+  "expected_confirmation": {
+    "region_id": "SWPP",
+    "horizon_minutes": "60",
+    "cost_shortfall": "10"
+  },
+  "turns": [
+    {
+      "round": 1,
+      "questioned_fields": [
+        "horizon_minutes"
+      ],
+      "answer": "My confirmed answers to your requested fields are: horizon_minutes=60. These answers supersede earlier unspecified or alternative values for these fields.",
+      "supplied_fields": [
+        "cost_shortfall",
+        "horizon_minutes",
+        "region_id"
+      ],
+      "task_id": "hunyuan_EXT_OPR_025_r5_turn1",
+      "record_sha256": "c8148b4de1892826988b9bc87a74116f19f7aa91efbd6ad7cf34f51413ff6fa3",
+      "matching_completed_plan": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "user",
+      "content": "SWPP, c_S=10, upward reserve. Horizon depends on how the evening peak looks. Hold a slot, do not assume 60."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [], \"audit_log\": {\"triggered_rules\": [\"clarification_required\"]}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"Numerical outputs are produced by the verified workflow when relevant; this request requires clarification on horizon before scheduling.\", \"forbidden_variables\": [], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"Missing or ambiguous field: horizon_minutes. Operator stated 'Horizon depends on how the evening peak looks. Hold a slot, do not assume 60.', providing no explicit value from allowed [60,120,180].\", \"study_schema\": null, \"workflow\": []}"
+    },
+    {
+      "role": "user",
+      "content": "My confirmed answers to your requested fields are: horizon_minutes=60. These answers supersede earlier unspecified or alternative values for these fields."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"accept\", \"evidence_trace\": [\"operator_request\", \"data_dictionary\", \"decision_time_variable_boundary\", \"rolling_window_configuration\", \"numerical_workflow_outputs\", \"audit_log\"], \"explanation\": \"Numerical outputs are produced by the verified workflow when relevant. Accepted upward reserve sizing for SWPP region, 60-minute horizon, cost_shortfall=10.0, cost_reserve=1.0.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"All required parameters provided and valid; no prohibited requests detected.\", \"study_schema\": {\"task_type\": \"upward_reserve_sizing\", \"region_id\": \"SWPP\", \"horizon_minutes\": 60, \"cost_reserve\": 1.0, \"cost_shortfall\": 10.0, \"rolling_window\": {\"train_days\": 730, \"cal_days\": 30, \"test_days\": 30, \"rolling_step_days\": 30}, \"requires_human_approval\": true}, \"workflow\": [\"ingest_data\", \"apply_verified_numerical_workflow\"]}"
+    }
+  ],
+  "summary": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_025",
+    "repeat": 5,
+    "initial_decision": "clarify",
+    "initially_explicit_fields": 2,
+    "additional_turns": 1,
+    "confirmed_fields": 3,
+    "matching_completed_plan": 1,
+    "total_service_seconds": 44.23524239996914,
+    "answer_characters": 154,
+    "final_decision": "accept",
+    "all_initial_trials_retained": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_006",
+  "repeat": 0,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:46:22.126793+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "a976caa09b42b054c3f3d85d35b63ab57837838701bc9b27cd266f7118f989c8",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 10}, \"clarification_question\": null, \"reason\": \"User explicitly supplied supported region ERCO, horizon 120 minutes, and shortfall cost 10. Cost_reserve is fixed at 1 by study protocol. The 730/30/30 rolling split and 'do not estimate MW' constraint are additional instructions consistent with allowed data sources and legitimate negation; no explicit schema fields unresolved or conflicting.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "User explicitly supplied supported region ERCO, horizon 120 minutes, and shortfall cost 10. Cost_reserve is fixed at 1 by study protocol. The 730/30/30 rolling split and 'do not estimate MW' constraint are additional instructions consistent with allowed data sources and legitimate negation; no explicit schema fields unresolved or conflicting.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 1580,
+    "total_tokens": 1977,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1445
+    }
+  },
+  "response_sha256": "06d58de476eada077bf7be0d36d1b44c9fd01d28680dd8e53e4d300145f91e91",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 16.085725800017826,
+  "finished_at": "2026-10-11T15:46:38.213010+00:00"
+}

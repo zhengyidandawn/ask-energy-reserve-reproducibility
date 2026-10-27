@@ -1,0 +1,22 @@
+{
+  "id": "as-0bpg4ssb6c",
+  "object": "chat.completion",
+  "created": 1791614780,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"study_schema\": null,\n    \"decision\": \"reject\",\n    \"reason\": \"Region 'SPP' is not in the allowed regions list; region must be one of ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']\",\n    \"explanation\": \"Numerical outputs are produced by the verified workflow only after valid inputs are provided.\",\n    \"audit_log\": {\n        \"triggered_rules\": [\"unsupported_region\"],\n        \"human_approval_required\": false\n    },\n    \"workflow\": [],\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"SPP validation with default everything except keep audit logging on.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"triggered_rules\": [\"unsupported_region\"],\n                \"human_approval_required\": false\n            }\n        }\n    ]\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 683,
+    "completion_tokens": 376,
+    "total_tokens": 1059
+  }
+}

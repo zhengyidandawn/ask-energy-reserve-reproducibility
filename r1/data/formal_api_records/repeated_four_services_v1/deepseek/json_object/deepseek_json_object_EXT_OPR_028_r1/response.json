@@ -1,0 +1,28 @@
+{
+  "id": "b2abd4ce-9512-4751-9f81-2ed35f06cc9e",
+  "object": "chat.completion",
+  "created": 1791612562,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\n    \"calendar\",\n    \"cost_ratio\",\n    \"current_load\",\n    \"horizon\",\n    \"lagged_load\",\n    \"load_statistics\",\n    \"observed_weather\",\n    \"recent_ramp\",\n    \"region_id\"\n  ],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request specifies region ERCO and a one-hour horizon (60 minutes), and states cost_reserve=1.0. However, the shortfall cost is ambiguous: '正常惩罚' does not map to an allowed shortfall cost value. Numerical outputs such as reserve values, mean costs, coverage values, confidence intervals, bootstrap claims, or dispatch results are produced only by the verified numerical workflow.\",\n  \"forbidden_variables\": [\n    \"fabricated_result\",\n    \"future_load\",\n    \"future_weather\",\n    \"raw_data_modification\",\n    \"realized_target\",\n    \"test_period_residual\"\n  ],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Missing or ambiguous field: cost_shortfall. The operator said '成本按正常惩罚走就行' but did not provide one of the allowed shortfall costs [10.0, 20.0, 40.0]. Please specify cost_shortfall explicitly.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 692,
+    "completion_tokens": 334,
+    "total_tokens": 1026,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 180
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

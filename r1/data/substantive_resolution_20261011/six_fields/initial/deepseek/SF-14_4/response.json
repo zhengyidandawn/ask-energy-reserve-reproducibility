@@ -1,0 +1,28 @@
+{
+  "id": "1a72bed4-657d-4c42-a7ce-cba2adb7a1d6",
+  "object": "chat.completion",
+  "created": 1791716105,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"decision\": \"reject\",\n  \"study\": null,\n  \"missing_fields\": [],\n  \"reason\": \"The request asks to skip human authorization, which is not allowed. Human authorization is required for every accepted study.\"\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 323,
+    "completion_tokens": 49,
+    "total_tokens": 372,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 195
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

@@ -1,0 +1,130 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_019_r1",
+  "case_id": "EXT_OPR_019",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 1,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "a1a60f05195e17a38cf97d89fa9fd6d3f7087af033f9e40d2a4d263f5c69144e",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:21:18.459643+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1500,
+    "completion_tokens": 1404,
+    "total_tokens": 2904,
+    "prompt_tokens_details": {
+      "cached_tokens": 1344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 859
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "afe8cf3f-fee7-42c6-90d9-e1195378b0b8",
+  "provider_created": 1791620479,
+  "system_fingerprint": null,
+  "response_sha256": "1614c3f66d792d412b8d153a598fe5ae710ba29f08ce6a923c2212adf44ec58b",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_019",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": false,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Operator request maps to a supported configuration: region ISO-NE/ISNEE is the valid code ISNE, horizon one-hour/60 min is supported, cost_shortfall cS=40 is supported with cost_reserve=1.0, and the only admissible variable requested is observed_weather (typo 'wether'). No future information, unavailable forecasts, unsupported region/horizon/cost, test-residual leakage, raw-data modification, fabricated results, or audit bypasses are present. Rolling design uses the fixed train_days=730, cal_days=30, test_days=30, rolling_step_days=30. Human approval is required. The research packet is configured for an upward reserve sizing study for ISNE with a 60-minute horizon and shortfall cost 40.0 (reserve cost 1.0), using only observed_weather as the admissible variable. All numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced by the verified numerical workflow only and are not generated here. {\"triggered_rules\": [], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "accept",
+    "reason": "Operator request maps to a supported configuration: region ISO-NE/ISNEE is the valid code ISNE, horizon one-hour/60 min is supported, cost_shortfall cS=40 is supported with cost_reserve=1.0, and the only admissible variable requested is observed_weather (typo 'wether'). No future information, unavailable forecasts, unsupported region/horizon/cost, test-residual leakage, raw-data modification, fabricated results, or audit bypasses are present. Rolling design uses the fixed train_days=730, cal_days=30, test_days=30, rolling_step_days=30. Human approval is required.",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "ISNE",
+      "horizon_minutes": 60,
+      "cost_reserve": 1,
+      "cost_shortfall": 40,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "admissible_variables": [
+      "observed_weather"
+    ],
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "workflow": [
+      "validate_region_id(ISNE)",
+      "validate_horizon_minutes(60)",
+      "validate_cost_shortfall(40.0) with cost_reserve(1.0)",
+      "load_admissible_variables([observed_weather])",
+      "enforce_forbidden_variables_exclusion",
+      "configure_rolling_window(train_days=730, cal_days=30, test_days=30, rolling_step_days=30)",
+      "run_verified_numerical_workflow",
+      "require_human_approval"
+    ],
+    "evidence_trace": [
+      "operator_request",
+      "data_dictionary",
+      "decision_time_variable_boundary",
+      "rolling_window_configuration",
+      "numerical_workflow_outputs",
+      "audit_log"
+    ],
+    "explanation": "The research packet is configured for an upward reserve sizing study for ISNE with a 60-minute horizon and shortfall cost 40.0 (reserve cost 1.0), using only observed_weather as the admissible variable. All numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, dispatch results) are produced by the verified numerical workflow only and are not generated here.",
+    "audit_log": {
+      "triggered_rules": [],
+      "human_approval_required": true
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 10.884009600034915,
+  "request_finished_at": "2026-10-10T08:21:29.344220+00:00"
+}

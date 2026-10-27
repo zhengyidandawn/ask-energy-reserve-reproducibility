@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": false,\n    \"triggered_rules\": [\"bootstrap_claims\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to include a 95% confidence interval for the reserve result is rejected because numerical outputs, including confidence intervals, are produced by the verified workflow only. The system cannot generate such outputs without the verified numerical workflow being executed.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request attempted to bypass the verified numerical workflow to obtain a confidence interval, which is not allowed.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 645,
+    "completion_tokens": 189,
+    "total_tokens": 834,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613039,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-3b4b19c2-cc1b-9cf3-8606-29c6879a104c"
+}

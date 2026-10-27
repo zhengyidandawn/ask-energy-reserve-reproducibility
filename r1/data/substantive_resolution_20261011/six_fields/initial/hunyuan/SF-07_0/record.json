@@ -1,0 +1,47 @@
+{
+  "case_id": "SF-07",
+  "service": "hunyuan",
+  "repeat": 0,
+  "phase": "initial",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:57:54.162809+00:00",
+  "status": "success",
+  "request_sha256": "ec9daa7ec39a15f1d48ba30e89071fdeeb561ac1719cab51ce7a94c67844261b",
+  "returned_model": "hy3",
+  "usage": {
+    "prompt_tokens": 297,
+    "completion_tokens": 1452,
+    "total_tokens": 1749,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1321
+    }
+  },
+  "content": "{\"decision\": \"accept\", \"study\": {\"region\": \"DE\", \"horizon_minutes\": 60, \"feature_mode\": \"full\", \"shortfall_weight\": 40, \"required_coverage\": 0.95, \"reporting\": \"standard\", \"human_authorization_required\": true}, \"missing_fields\": [], \"reason\": \"All required study fields explicitly supplied: region DE from Germany, horizon 60, feature_mode full as described, shortfall_weight 40, required_coverage 0.95, reporting standard, human_authorization_required true. Request compliant with supported horizon and authorization retention.\"}",
+  "parsed_output": {
+    "decision": "accept",
+    "study": {
+      "region": "DE",
+      "horizon_minutes": 60,
+      "feature_mode": "full",
+      "shortfall_weight": 40,
+      "required_coverage": 0.95,
+      "reporting": "standard",
+      "human_authorization_required": true
+    },
+    "missing_fields": [],
+    "reason": "All required study fields explicitly supplied: region DE from Germany, horizon 60, feature_mode full as described, shortfall_weight 40, required_coverage 0.95, reporting standard, human_authorization_required true. Request compliant with supported horizon and authorization retention."
+  },
+  "checks": {
+    "decision": "accept",
+    "execution_ready": true,
+    "corrections": 0,
+    "rules": []
+  },
+  "response_sha256": "462b3f5a0790358afdba800be1fa3ce018413b4429d65f4775867dd102301778",
+  "latency_seconds": 13.305922600091435,
+  "request_finished_at": "2026-10-11T10:58:07.468728+00:00"
+}

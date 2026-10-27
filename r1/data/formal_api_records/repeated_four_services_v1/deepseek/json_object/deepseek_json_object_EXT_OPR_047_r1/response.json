@@ -1,0 +1,28 @@
+{
+  "id": "1125ac0c-4074-4e1b-8e11-f158c55c9991",
+  "object": "chat.completion",
+  "created": 1791612566,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"admissible_variables\":[\"calendar\",\"cost_ratio\",\"current_load\",\"horizon\",\"lagged_load\",\"load_statistics\",\"observed_weather\",\"recent_ramp\",\"region_id\"],\"audit_log\":{\"human_approval_required\":true,\"triggered_rules\":[\"numerical_output_policy_violation\",\"reserve_values_requested\",\"confidence_interval_requested\",\"verified_workflow_required\"]},\"decision\":\"partial_accept\",\"evidence_trace\":[\"operator_request\",\"data_dictionary\",\"decision_time_variable_boundary\",\"rolling_window_configuration\",\"numerical_workflow_outputs\",\"audit_log\"],\"explanation\":\"The request to write reserve MW values and intervals directly into the memo is rejected because numerical outputs such as reserve values and confidence intervals are produced only by the verified numerical workflow, not by the LLM. The safe study schema for CISO with a 180-minute horizon and cost_shortfall=40 is preserved, and the prohibited part is identified in audit_log.triggered_rules.\",\"forbidden_variables\":[\"fabricated_result\",\"future_load\",\"future_weather\",\"raw_data_modification\",\"realized_target\",\"test_period_residual\"],\"numerical_output_policy\":\"computed_by_verified_workflow_only\",\"reason\":\"The operator asks to place reserve MW and intervals into the memo immediately without waiting for the program. This is a prohibited request for numerical outputs that must be computed only by the verified numerical workflow. The prior-round CISO 180-minute c_S=40 configuration is otherwise complete, so the safe schema is preserved while the prohibited numerical-output part is rejected.\",\"study_schema\":{\"task_type\":\"upward_reserve_sizing\",\"region_id\":\"CISO\",\"horizon_minutes\":180,\"cost_reserve\":1.0,\"cost_shortfall\":40.0,\"rolling_window\":{\"train_days\":730,\"cal_days\":30,\"test_days\":30,\"rolling_step_days\":30},\"requires_human_approval\":true},\"workflow\":[\"validate_request_against_allowed_task_region_horizon_cost\",\"enforce_decision_time_variable_boundary\",\"apply_rolling_window_configuration\",\"run_verified_numerical_workflow_for_reserve_sizing\",\"route_outputs_to_human_approval\"]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 708,
+    "completion_tokens": 482,
+    "total_tokens": 1190,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 196
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

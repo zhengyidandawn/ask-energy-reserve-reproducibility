@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"clarification_required\"]\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The operator request is missing specific details such as the region, exact horizon in minutes, and the cost parameters. These details are necessary to determine if the study can proceed. The numerical outputs will be produced by the verified workflow when all required information is provided.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request is ambiguous regarding the region, horizon (specified as 'one-hour-ish' without a precise value), and cost parameters. Please provide these details for the study to be admissible.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 184,
+    "total_tokens": 821,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612993,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-0817c080-e89b-9c1d-b092-ea46a3e5d56c"
+}

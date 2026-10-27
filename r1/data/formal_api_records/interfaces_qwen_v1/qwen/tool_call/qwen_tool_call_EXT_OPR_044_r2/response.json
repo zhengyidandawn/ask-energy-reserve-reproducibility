@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [], \"audit_log\": {\"triggered_rules\": [\"future_information_prohibited\", \"test_period_residual_leakage_prohibited\", \"approval_bypass_attempt\"], \"human_approval_required\": true}, \"decision\": \"reject\", \"evidence_trace\": [], \"explanation\": \"Numerical outputs are produced by the verified workflow, and this request has been rejected due to the use of prohibited future information, test-period residual leakage, and an attempt to bypass approval steps. The study cannot proceed as requested.\", \"forbidden_variables\": [\"future_load\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"The request is using prohibited future load forecasts, which are not available at issue time, and attempting to use realized target (ramp) from after the rolling window, which could lead to test-period residual leakage. Additionally, there was an attempt to bypass a critical approval step (parsing error check). These all violate the study's integrity policies.\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_31cbdbe66eea4f5781b6d3",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1533,
+    "completion_tokens": 227,
+    "total_tokens": 1760,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616331,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-44899dc8-f5fa-9570-83bb-689a06872d6e"
+}

@@ -1,0 +1,126 @@
+{
+  "task_id": "ernie_json_object_EXT_OPR_011_r3",
+  "case_id": "EXT_OPR_011",
+  "packet": "independently_authored_48",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 3,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "d752b1fcde6955d39c6d0f2536465a0bf4419fd9a2c49d18f8bbfa1b34f53a8f",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:35:21.506327+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 699,
+    "completion_tokens": 435,
+    "total_tokens": 1134
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-8qn5kajiy1",
+  "provider_created": 1791614122,
+  "system_fingerprint": null,
+  "response_sha256": "5bfc8593fb2f8b19adf2e151dc20a239ef817f9e5bf0f0a1555bd4d0c7e49fdb",
+  "checks": {
+    "service": "ernie",
+    "case_id": "EXT_OPR_011",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": false,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "[\"Region '广东' is not in the allowed regions list ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP'].\", 'The request does not specify a valid horizon in minutes (60, 120, 180).', 'The request does not specify a valid shortfall cost (10.0, 20.0, 40.0).'] The operator request lacks specific and required fields for a valid upward reserve sizing study. Clarification is needed to proceed with the study. {\"human_approval_required\": true, \"triggered_rules\": []}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": []
+    },
+    "decision": "clarify",
+    "evidence_trace": [
+      {
+        "operator_request": "广东那边一小时向上备用帮我排上，缺了按二十罚。研究怎么做写清楚就行，别现在甩数字过来。"
+      },
+      {
+        "data_dictionary": []
+      },
+      {
+        "decision_time_variable_boundary": []
+      },
+      {
+        "rolling_window_configuration": []
+      },
+      {
+        "numerical_workflow_outputs": []
+      },
+      {
+        "audit_log": []
+      }
+    ],
+    "explanation": "The operator request lacks specific and required fields for a valid upward reserve sizing study. Clarification is needed to proceed with the study.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": [
+      "Region '广东' is not in the allowed regions list ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP'].",
+      "The request does not specify a valid horizon in minutes (60, 120, 180).",
+      "The request does not specify a valid shortfall cost (10.0, 20.0, 40.0)."
+    ],
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 14.94279700005427,
+  "request_finished_at": "2026-10-10T06:35:36.449537+00:00"
+}

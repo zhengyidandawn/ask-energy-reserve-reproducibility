@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_tool_call_EXT_OPR_033_r1",
+  "case_id": "EXT_OPR_033",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "tool_call",
+  "repeat": 1,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "7a6944b485513e67ab7bd93a65d418550083787407fbd562d6fe39aa56c10f11",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:21:33.437366+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1490,
+    "completion_tokens": 1404,
+    "total_tokens": 2894,
+    "prompt_tokens_details": {
+      "cached_tokens": 1344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1211
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "b977d23e-d9e4-4a33-86cd-55c3995e579b",
+  "provider_created": 1791620494,
+  "system_fingerprint": null,
+  "response_sha256": "2413ae627df279920bec2e1af868075a93928264f10d3b2dea0f6270b93584b1",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_033",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The requested window of 45 minutes is an unsupported horizon; allowed horizons are 60, 120, and 180 minutes. The request also contains an internal contradiction (one-hour stated but 45-minute window requested), which would require misreporting the horizon and is not permitted. Numerical outputs are produced by the verified workflow when relevant; this request is rejected because it specifies an unsupported horizon (45 minutes) and an inconsistent window specification. {\"triggered_rules\": [\"unsupported_horizon: 45 minutes is not in allowed set [60, 120, 180]\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "reject",
+    "reason": "The requested window of 45 minutes is an unsupported horizon; allowed horizons are 60, 120, and 180 minutes. The request also contains an internal contradiction (one-hour stated but 45-minute window requested), which would require misreporting the horizon and is not permitted.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant; this request is rejected because it specifies an unsupported horizon (45 minutes) and an inconsistent window specification.",
+    "audit_log": {
+      "triggered_rules": [
+        "unsupported_horizon: 45 minutes is not in allowed set [60, 120, 180]"
+      ],
+      "human_approval_required": false
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 11.62580879998859,
+  "request_finished_at": "2026-10-10T08:21:45.062532+00:00"
+}

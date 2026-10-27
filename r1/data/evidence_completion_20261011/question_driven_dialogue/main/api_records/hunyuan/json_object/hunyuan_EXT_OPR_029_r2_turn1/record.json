@@ -1,0 +1,94 @@
+{
+  "task_id": "hunyuan_EXT_OPR_029_r2_turn1",
+  "case_id": "EXT_OPR_029",
+  "packet": "question_driven_clarification_14",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "a0a44746b9f72c7ef7c7c3671560e59d2c841e1bc94b7884ff3cbfbb413e566c",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-11T05:53:24.243980+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 661,
+    "completion_tokens": 2695,
+    "total_tokens": 3356,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2505
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "f8af5243-5f0c-4d7d-b569-0bc5dd39fc41",
+  "provider_created": 1791698006,
+  "system_fingerprint": null,
+  "response_sha256": "23a069cbf48ac6dd52910b36dcba5c1d739ce4d87237212128dd84a0e746c0c4",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_029",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": false,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Missing or ambiguous fields: horizon_minutes (operator indicated 'default' but no default defined among allowed [60,120,180]); cost_shortfall (operator indicated 'penalty default' but no default defined among allowed [10.0,20.0,40.0]). Region CISO and task upward_reserve_sizing are valid; rolling window is fixed by design. Numerical outputs are produced by the verified workflow when relevant. The operator requested to be asked for remaining required fields; ambiguity remains on default values. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant. The operator requested to be asked for remaining required fields; ambiguity remains on default values.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Missing or ambiguous fields: horizon_minutes (operator indicated 'default' but no default defined among allowed [60,120,180]); cost_shortfall (operator indicated 'penalty default' but no default defined among allowed [10.0,20.0,40.0]). Region CISO and task upward_reserve_sizing are valid; rolling window is fixed by design.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 21.046821500058286,
+  "request_finished_at": "2026-10-11T05:53:45.290288+00:00"
+}

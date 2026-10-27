@@ -1,0 +1,28 @@
+{
+  "id": "cf96488d-fd40-4cde-9d6f-e73a03d96fca",
+  "object": "chat.completion",
+  "created": 1791733030,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"decision\":\"accept\",\"fields\":{\"region_id\":\"ISNE\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":40},\"clarification_question\":null,\"reason\":\"All explicit study fields are supported and resolved: region ISNE, horizon 120 minutes, and shortfall weight 40. The reserve cost is fixed at 1 by protocol. The request explicitly says not to estimate MW, so numerical reserve quantities remain for authorized numerical execution.\",\"human_approval_required\":true}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 418,
+    "completion_tokens": 108,
+    "total_tokens": 526,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 162
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

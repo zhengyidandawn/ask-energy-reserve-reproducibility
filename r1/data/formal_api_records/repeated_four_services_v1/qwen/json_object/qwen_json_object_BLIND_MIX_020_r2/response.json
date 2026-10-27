@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\"prohibited_output_request\", \"approval_bypass_attempt\"]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request was rejected because it included an attempt to bypass the approved process for generating numerical outputs, and also requested a prohibited output (coverage number). Numerical outputs, including coverage values, are produced by the verified workflow only.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The request attempted to bypass the audit and approval process. It is against the policy to provide any numerical outputs, such as a coverage number, outside of the verified numerical workflow.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 640,
+    "completion_tokens": 181,
+    "total_tokens": 821,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612897,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-5b3e7ce7-df58-928d-8c4b-0003dd7d23bd"
+}

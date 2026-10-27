@@ -1,0 +1,39 @@
+{
+  "id": "86353924-2217-4a7d-8e3a-81261eacd078",
+  "object": "chat.completion",
+  "created": 1791613152,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_bbQ4stos6jKBSbnPiiyj7154",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"Missing required field: cost_shortfall (shortfall penalty cost). The operator explicitly states the shortfall penalty has not been reconciled with the market and should not be filled in. Allowed shortfall costs are [10.0, 20.0, 40.0]; without a specified value the study schema cannot be completed. Region (CISO) and horizon (120 minutes) are unambiguous and valid, but cost_shortfall remains missing/ambiguous.\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"The request is for an upward reserve sizing study in region CISO with a 120-minute horizon, which are supported. However, the shortfall penalty cost is a required schema field and the operator has not provided it (and asked not to fill it in). Clarification is required before the study can proceed. No numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, or dispatch results) are produced here; all such outputs are computed only by the verified numerical workflow.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"missing_cost_shortfall\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1652,
+    "completion_tokens": 495,
+    "total_tokens": 2147,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 244
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

@@ -1,0 +1,54 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_MIX_014",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:49.910017+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "29efcf4abf79e5df9e318e41e2499f8f21d49fc0fdbe3f877ef9327d79f44e47",
+  "returned_model": "deepseek-flash",
+  "content": "{\"decision\":\"clarify\",\"fields\":{\"region_id\":\"MISO\",\"horizon_minutes\":null,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":\"MISO is a supported region, but the request leaves the horizon and shortfall weight unresolved. Which supported horizon should be used: 60, 120, or 180 minutes? Which supported shortfall weight should be used: 10, 20, or 40?\",\"reason\":\"The region is explicit and supported, and cost_reserve is fixed at 1 by the study protocol. However, the request asks to default the horizon and cost ratio, which are unresolved explicit study fields. Supported horizons are 60, 120, and 180 minutes, and supported shortfall weights are 10, 20, and 40. Because these fields are unresolved, the draft is clarify rather than accept.\",\"human_approval_required\":true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "MISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "MISO is a supported region, but the request leaves the horizon and shortfall weight unresolved. Which supported horizon should be used: 60, 120, or 180 minutes? Which supported shortfall weight should be used: 10, 20, or 40?",
+    "reason": "The region is explicit and supported, and cost_reserve is fixed at 1 by the study protocol. However, the request asks to default the horizon and cost ratio, which are unresolved explicit study fields. Supported horizons are 60, 120, and 180 minutes, and supported shortfall weights are 10, 20, and 40. Because these fields are unresolved, the draft is clarify rather than accept.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 194,
+    "total_tokens": 592,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 142
+  },
+  "response_sha256": "55a4b7ed8dcf8465a266c7593a3e28df618b9f2811bc1fbf2ba05f08c7160dd1",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.6428833999671042,
+  "finished_at": "2026-10-11T15:36:51.553018+00:00"
+}

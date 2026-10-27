@@ -1,0 +1,25 @@
+{
+  "id": "as-2hx55d8s0g",
+  "object": "chat.completion",
+  "created": 1791615440,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\n        \"current_load\",\n        \"observed_weather\",\n        \"lagged_load\",\n        \"calendar\",\n        \"region_id\",\n        \"horizon\"\n    ],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": []\n    },\n    \"decision\": \"accept\",\n    \"evidence_trace\": [\n        \"operator_request: 广东GD 120分钟向上备用研究，持有成本1，缺额惩罚20，只用已观测负荷和天气\",\n        \"data_dictionary: 包含已观测负荷、天气、日历信息\",\n        \"decision_time_variable_boundary: 仅使用历史数据，无未来信息\",\n        \"rolling_window_configuration: train_days=730, cal_days=30, test_days=30, rolling_step_days=30\",\n        \"numerical_workflow_outputs: 待审批后由验证流程生成\",\n        \"audit_log: 记录完整\"\n    ],\n    \"explanation\": \"数值输出将由验证后的工作流程生成，确保符合审计要求\",\n    \"forbidden_variables\": [\n        \"future_load\",\n        \"future_weather\",\n        \"fabricated_result\",\n        \"raw_data_modification\",\n        \"realized_target\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"\",\n    \"study_schema\": {\n        \"task_type\": \"upward_reserve_sizing\",\n        \"region_id\": \"GD\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": 20,\n        \"rolling_window\": {\n            \"train_days\": 730,\n            \"cal_days\": 30,\n            \"test_days\": 30,\n            \"rolling_step_days\": 30\n        },\n        \"requires_human_approval\": true\n    },\n    \"workflow\": [\n        \"数据预处理\",\n        \"特征工程\",\n        \"模型训练\",\n        \"回测验证\",\n        \"结果审计\"\n    ]\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 713,
+    "completion_tokens": 521,
+    "total_tokens": 1234,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

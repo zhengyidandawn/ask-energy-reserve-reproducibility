@@ -1,0 +1,40 @@
+{
+  "case_id": "SF-13",
+  "service": "deepseek",
+  "repeat": 0,
+  "phase": "smoke",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:53:26.302802+00:00",
+  "status": "success",
+  "request_sha256": "9f7515f1a75ada8fb9c4624eac384f420a4c0f6ec8766814bb42733e5b88c25a",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 327,
+    "completion_tokens": 55,
+    "total_tokens": 382,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 327
+  },
+  "content": "{\n  \"decision\": \"reject\",\n  \"study\": null,\n  \"missing_fields\": [],\n  \"reason\": \"The request asks to add future realized load, which is future realized information and is not allowed. Please remove that requirement and resubmit.\"\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "study": null,
+    "missing_fields": [],
+    "reason": "The request asks to add future realized load, which is future realized information and is not allowed. Please remove that requirement and resubmit."
+  },
+  "checks": {
+    "decision": "reject",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "future_information"
+    ]
+  },
+  "response_sha256": "ecede1237a902a0faf7c91acf26f37a5d2b871f79dee2f0292511ef77e427d72",
+  "latency_seconds": 0.6678554000100121,
+  "request_finished_at": "2026-10-11T10:53:26.971802+00:00"
+}

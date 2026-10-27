@@ -1,0 +1,92 @@
+{
+  "task_id": "qwen_json_schema_EXT_OPR_014_r2",
+  "case_id": "EXT_OPR_014",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "json_schema",
+  "repeat": 2,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "65aab969654e839b2d2fc07c49967cc7a1d987846c7391747b291c52baaa02a7",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:45:57.262846+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 168,
+    "total_tokens": 812,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-a3dd653d-d844-9172-86c8-75798faecd25",
+  "provider_created": 1791614762,
+  "system_fingerprint": null,
+  "response_sha256": "556e3f76495837d31a55cc3fe9b52525677bd30d84a25183ca3507b107c808de",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_014",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": false,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "The region SPP is not supported. Additionally, the term 'don't dump MW on me' needs clarification. Please specify the exact requirements for this study. The operator's request could not be fully processed due to an unsupported region and missing or ambiguous information. The numerical outputs, including reserve values and costs, are produced by the verified workflow. {\"human_approval_required\": true, \"triggered_rules\": [\"unsupported_region\", \"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "unsupported_region",
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "The operator's request could not be fully processed due to an unsupported region and missing or ambiguous information. The numerical outputs, including reserve values and costs, are produced by the verified workflow.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The region SPP is not supported. Additionally, the term 'don't dump MW on me' needs clarification. Please specify the exact requirements for this study.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 4.791371800005436,
+  "request_finished_at": "2026-10-10T06:46:02.053809+00:00"
+}

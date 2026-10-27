@@ -1,0 +1,146 @@
+{
+  "task_id": "ernie_EXT_OPR_021_r5_turn1",
+  "case_id": "EXT_OPR_021",
+  "packet": "question_driven_clarification_14",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 5,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "87a7e68caa159a0d5b35d8e8398147374cce4aeb1652634afe1cda9fd8e70b7c",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-11T05:47:06.323163+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 1075,
+    "completion_tokens": 558,
+    "total_tokens": 1633
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-ufnbu5auf0",
+  "provider_created": 1791697628,
+  "system_fingerprint": null,
+  "response_sha256": "b9eece18633b2472fa0b33b59b3e84ba27d10dc5ae89d46070fd3024e2dc01c6",
+  "checks": {
+    "service": "ernie",
+    "case_id": "EXT_OPR_021",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "accept",
+    "decision": "accept",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "All required fields are provided and valid. Numerical outputs are produced by the verified workflow once all required inputs are provided and validated. {\"triggered_rules\": [], \"human_approval_required\": true}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "audit_log": {
+      "triggered_rules": [],
+      "human_approval_required": true
+    },
+    "decision": "accept",
+    "evidence_trace": [
+      {
+        "operator_request": "一小时向上备用，60分钟，c_S=20。区域我回头补，先按这个时域和成本把安排起草了。"
+      },
+      {
+        "updated_fields": "region_id=GD"
+      },
+      {
+        "data_dictionary": []
+      },
+      {
+        "decision_time_variable_boundary": []
+      },
+      {
+        "rolling_window_configuration": {
+          "train_days": 730,
+          "cal_days": 30,
+          "test_days": 30,
+          "rolling_step_days": 30
+        }
+      },
+      {
+        "numerical_workflow_outputs": []
+      },
+      {
+        "audit_log": {
+          "triggered_rules": [],
+          "human_approval_required": true
+        }
+      }
+    ],
+    "explanation": "Numerical outputs are produced by the verified workflow once all required inputs are provided and validated.",
+    "reason": "All required fields are provided and valid.",
+    "study_schema": {
+      "task_type": "upward_reserve_sizing",
+      "region_id": "GD",
+      "horizon_minutes": 60,
+      "cost_reserve": 1.0,
+      "cost_shortfall": 20.0,
+      "rolling_window": {
+        "train_days": 730,
+        "cal_days": 30,
+        "test_days": 30,
+        "rolling_step_days": 30
+      },
+      "requires_human_approval": true
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "workflow": []
+  },
+  "latency_seconds": 16.612015600083396,
+  "request_finished_at": "2026-10-11T05:47:22.935351+00:00"
+}

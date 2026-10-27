@@ -1,0 +1,25 @@
+{
+  "id": "as-g9icya4unw",
+  "object": "chat.completion",
+  "created": 1791733042,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"decision\": \"partial_accept\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": 120,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request explicitly asks for JSON schema only without reserve MW or coverage values; valid schema fields are retained and computed results will follow authorized numerical execution.\",\n    \"human_approval_required\": true\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 374,
+    "completion_tokens": 118,
+    "total_tokens": 492,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  }
+}

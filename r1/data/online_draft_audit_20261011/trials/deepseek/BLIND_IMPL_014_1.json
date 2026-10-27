@@ -1,0 +1,116 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_IMPL_014",
+  "repeat": 1,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_IMPL_014",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:44.979573+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "c41a31013f7013573bb9f01569d931e90dcc294bc1e0cc1f333b6a392a62fb70",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Please specify the study horizon in minutes (supported: 60, 120, or 180) and the shortfall weight (supported: 10, 20, or 40).\",\n  \"reason\": \"The region is supported and cost_reserve is fixed at 1 by protocol, but horizon_minutes and cost_shortfall are unresolved because 'default' values are not defined in the supported schema.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Please specify the study horizon in minutes (supported: 60, 120, or 180) and the shortfall weight (supported: 10, 20, or 40).",
+      "reason": "The region is supported and cost_reserve is fixed at 1 by protocol, but horizon_minutes and cost_shortfall are unresolved because 'default' values are not defined in the supported schema.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 389,
+      "completion_tokens": 156,
+      "total_tokens": 545,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 261
+    },
+    "response_sha256": "ccbae9b27a10d17cb641ac03f0ed789e580567fac90c4220a69818a31dce8bff",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.385789499967359,
+    "finished_at": "2026-10-11T15:36:46.365492+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_IMPL_014",
+    "repeat": 1,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:44.979573+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "c41a31013f7013573bb9f01569d931e90dcc294bc1e0cc1f333b6a392a62fb70",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"MISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Please specify the study horizon in minutes (supported: 60, 120, or 180) and the shortfall weight (supported: 10, 20, or 40).\",\n  \"reason\": \"The region is supported and cost_reserve is fixed at 1 by protocol, but horizon_minutes and cost_shortfall are unresolved because 'default' values are not defined in the supported schema.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "MISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Please specify the study horizon in minutes (supported: 60, 120, or 180) and the shortfall weight (supported: 10, 20, or 40).",
+      "reason": "The region is supported and cost_reserve is fixed at 1 by protocol, but horizon_minutes and cost_shortfall are unresolved because 'default' values are not defined in the supported schema.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 389,
+      "completion_tokens": 156,
+      "total_tokens": 545,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 261
+    },
+    "response_sha256": "ccbae9b27a10d17cb641ac03f0ed789e580567fac90c4220a69818a31dce8bff",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.385789499967359,
+    "finished_at": "2026-10-11T15:36:46.365492+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.385789499967359,
+  "transport_complete": true
+}

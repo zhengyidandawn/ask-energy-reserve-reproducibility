@@ -1,0 +1,54 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_MIX_002",
+  "repeat": 1,
+  "phase": "feedback",
+  "started_at": "2026-10-11T15:36:47.601210+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "3c144dce9024c3ab7ee048750638d817e8ac02390d530738fc5e98fa92c96858",
+  "returned_model": "deepseek-flash",
+  "content": "{\"decision\":\"reject\",\"fields\":{\"region_id\":\"CISO\",\"horizon_minutes\":120,\"cost_reserve\":1,\"cost_shortfall\":null},\"clarification_question\":null,\"reason\":\"The frozen deterministic checker reports invalid_schema for the prior draft. The original request asks for output JSON schema only and explicitly excludes reserve MW or coverage, but it does not supply a supported shortfall weight, so the required study fields are unresolved. Under the protocol, unresolved explicit study fields require clarification rather than acceptance; the corrected disposition is reject for invalid_schema.\",\"human_approval_required\":true}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "The frozen deterministic checker reports invalid_schema for the prior draft. The original request asks for output JSON schema only and explicitly excludes reserve MW or coverage, but it does not supply a supported shortfall weight, so the required study fields are unresolved. Under the protocol, unresolved explicit study fields require clarification rather than acceptance; the corrected disposition is reject for invalid_schema.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 529,
+    "completion_tokens": 127,
+    "total_tokens": 656,
+    "prompt_tokens_details": {
+      "cached_tokens": 384
+    },
+    "prompt_cache_hit_tokens": 384,
+    "prompt_cache_miss_tokens": 145
+  },
+  "response_sha256": "56e27ebed4639ad8a0c4b9d412646745e7283a8e0f0e654e153ca32a5673ec49",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.5976465999847278,
+  "finished_at": "2026-10-11T15:36:49.199243+00:00"
+}

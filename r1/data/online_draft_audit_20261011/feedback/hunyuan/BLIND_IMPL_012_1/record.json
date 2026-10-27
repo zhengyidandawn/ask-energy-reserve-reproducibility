@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_IMPL_012",
+  "repeat": 1,
+  "phase": "feedback",
+  "started_at": "2026-10-11T15:39:38.085170+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "70de7631f040c351044a8341303b18196f224a877872f129310de1330556d59b",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please provide explicit horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) because these study fields are unresolved. Region recognized as CISO from original 'CAISO'.\", \"reason\": \"Original request stated 'CAISO upward reserve request: use the accepted default split and default penalty.' The frozen checker parsed region_id as CISO (CAISO, California) from that text. Horizon_minutes and cost_shortfall were not explicitly specified; cost_reserve is fixed at 1 by protocol. Explicit study fields horizon_minutes and cost_shortfall remain unresolved, requiring clarification.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Please provide explicit horizon_minutes (60, 120, or 180) and cost_shortfall (10, 20, or 40) because these study fields are unresolved. Region recognized as CISO from original 'CAISO'.",
+    "reason": "Original request stated 'CAISO upward reserve request: use the accepted default split and default penalty.' The frozen checker parsed region_id as CISO (CAISO, California) from that text. Horizon_minutes and cost_shortfall were not explicitly specified; cost_reserve is fixed at 1 by protocol. Explicit study fields horizon_minutes and cost_shortfall remain unresolved, requiring clarification.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 573,
+    "completion_tokens": 1330,
+    "total_tokens": 1903,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1141
+    }
+  },
+  "response_sha256": "da7597da3589f40871215cd0f2efe5fa1b01b78394a420a6a706b7e070117de1",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 14.695191399892792,
+  "finished_at": "2026-10-11T15:39:52.779886+00:00"
+}

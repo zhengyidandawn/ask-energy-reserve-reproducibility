@@ -1,0 +1,116 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_IMPL_012",
+  "repeat": 0,
+  "initial_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_IMPL_012",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:43.302019+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "105dea2e12056d4d7aa694bb939dac1f28db6be83b8d6b244bedcf81c61b3c2d",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be used?\",\n  \"reason\": \"The request names CAISO and relies on defaults, but the horizon and shortfall weight are unresolved and no accepted default values are defined in the study protocol.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be used?",
+      "reason": "The request names CAISO and relies on defaults, but the horizon and shortfall weight are unresolved and no accepted default values are defined in the study protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 389,
+      "completion_tokens": 141,
+      "total_tokens": 530,
+      "prompt_tokens_details": {
+        "cached_tokens": 255
+      },
+      "prompt_cache_hit_tokens": 255,
+      "prompt_cache_miss_tokens": 134
+    },
+    "response_sha256": "a79a6c7d40c1b0fd3fbc4080835c743a3847fb8ef94ce3741112fa90826e4f03",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.4655232999939471,
+    "finished_at": "2026-10-11T15:36:44.767533+00:00"
+  },
+  "terminal_record": {
+    "service": "deepseek",
+    "case_id": "BLIND_IMPL_012",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:36:43.302019+00:00",
+    "requested_model": "deepseek-chat",
+    "endpoint": "https://api.deepseek.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "105dea2e12056d4d7aa694bb939dac1f28db6be83b8d6b244bedcf81c61b3c2d",
+    "returned_model": "deepseek-flash",
+    "content": "{\n  \"decision\": \"clarify\",\n  \"fields\": {\n    \"region_id\": \"CISO\",\n    \"horizon_minutes\": null,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": null\n  },\n  \"clarification_question\": \"Which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be used?\",\n  \"reason\": \"The request names CAISO and relies on defaults, but the horizon and shortfall weight are unresolved and no accepted default values are defined in the study protocol.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "Which supported horizon (60, 120, or 180 minutes) and shortfall weight (10, 20, or 40) should be used?",
+      "reason": "The request names CAISO and relies on defaults, but the horizon and shortfall weight are unresolved and no accepted default values are defined in the study protocol.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 389,
+      "completion_tokens": 141,
+      "total_tokens": 530,
+      "prompt_tokens_details": {
+        "cached_tokens": 255
+      },
+      "prompt_cache_hit_tokens": 255,
+      "prompt_cache_miss_tokens": 134
+    },
+    "response_sha256": "a79a6c7d40c1b0fd3fbc4080835c743a3847fb8ef94ce3741112fa90826e4f03",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 1.4655232999939471,
+    "finished_at": "2026-10-11T15:36:44.767533+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 1.4655232999939471,
+  "transport_complete": true
+}

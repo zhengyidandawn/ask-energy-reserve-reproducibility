@@ -1,0 +1,52 @@
+{
+  "service": "deepseek",
+  "case_id": "BLIND_STD_006",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:37:03.236040+00:00",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "ea7e9baa0a2be6bf0804c3f71f53271fbdb00d5e3b5058ceb303f215b0b51a9d",
+  "returned_model": "deepseek-flash",
+  "content": "{\n  \"decision\": \"partial_accept\",\n  \"fields\": {\n    \"region_id\": \"ERCO\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 10\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a supported region (ERCO), a supported horizon (120 minutes), and a supported shortfall weight (10). The 'standard 730/30/30 rolling split' is not a recognized study field and is treated as study content; numerical reserve quantities, costs, coverage, and intervals are reserved for the numerical program. The instruction 'do not estimate MW' is preserved as a legitimate negation. The valid schema fields are retained; computed results follow authorized numerical execution.\",\n  \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "partial_accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "The request specifies a supported region (ERCO), a supported horizon (120 minutes), and a supported shortfall weight (10). The 'standard 730/30/30 rolling split' is not a recognized study field and is treated as study content; numerical reserve quantities, costs, coverage, and intervals are reserved for the numerical program. The instruction 'do not estimate MW' is preserved as a legitimate negation. The valid schema fields are retained; computed results follow authorized numerical execution.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 418,
+    "completion_tokens": 178,
+    "total_tokens": 596,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 290
+  },
+  "response_sha256": "16f7be36c8dfb5d2a0e36ca9827f77a98754dcbb39efc7987c705003942794b0",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "partial_accept",
+      "execution_ready": false,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 1.5932427000952885,
+  "finished_at": "2026-10-11T15:37:04.829887+00:00"
+}

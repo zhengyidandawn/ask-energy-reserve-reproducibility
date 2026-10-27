@@ -1,0 +1,43 @@
+{
+  "case_id": "SF-10",
+  "service": "hunyuan",
+  "repeat": 2,
+  "phase": "initial",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:59:55.235123+00:00",
+  "status": "success",
+  "request_sha256": "d9d1f70fd5f8aad145b816befae30b9d502ba2dc4010fd0789a0c7dfa728599a",
+  "returned_model": "hy3",
+  "usage": {
+    "prompt_tokens": 281,
+    "completion_tokens": 1520,
+    "total_tokens": 1801,
+    "prompt_tokens_details": {
+      "cached_tokens": 192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1467
+    }
+  },
+  "content": "{\"decision\": \"clarify\", \"study\": null, \"missing_fields\": [\"feature_mode\"], \"reason\": \"Missing required study field: feature_mode (must be 'full' or 'history_calendar'). Please specify it to proceed.\"}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "feature_mode"
+    ],
+    "reason": "Missing required study field: feature_mode (must be 'full' or 'history_calendar'). Please specify it to proceed."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 5,
+    "rules": [
+      "feature_mode"
+    ]
+  },
+  "response_sha256": "9c48b623703aa2072f9e22acb26ecf52c6995965cef296427823c6f0de04c589",
+  "latency_seconds": 12.934553200029768,
+  "request_finished_at": "2026-10-11T11:00:08.169904+00:00"
+}

@@ -1,0 +1,42 @@
+{
+  "case_id": "SF-10",
+  "service": "deepseek",
+  "repeat": 3,
+  "phase": "initial",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:54:57.424051+00:00",
+  "status": "success",
+  "request_sha256": "87fc327368e4d25899e52714e240ed5ef47d7a66c81a5bb1fdf830fe02366b03",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 302,
+    "completion_tokens": 76,
+    "total_tokens": 378,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 174
+  },
+  "content": "{\"decision\":\"clarify\",\"study\":null,\"missing_fields\":[\"feature_mode\"],\"reason\":\"Please specify feature_mode: full or history_calendar. All other required study fields are provided: region DE, horizon_minutes 60, shortfall_weight 20, required_coverage 0.95, reporting standard, and human_authorization_required true.\"}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "feature_mode"
+    ],
+    "reason": "Please specify feature_mode: full or history_calendar. All other required study fields are provided: region DE, horizon_minutes 60, shortfall_weight 20, required_coverage 0.95, reporting standard, and human_authorization_required true."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 5,
+    "rules": [
+      "feature_mode"
+    ]
+  },
+  "response_sha256": "778acb4cbaef885e557be04311540c95ba3cbe16159af363892a9d487305a5ae",
+  "latency_seconds": 0.7718471999978647,
+  "request_finished_at": "2026-10-11T10:54:58.196345+00:00"
+}

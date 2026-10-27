@@ -1,0 +1,42 @@
+{
+  "case_id": "SF-12",
+  "service": "deepseek",
+  "repeat": 3,
+  "phase": "confirmation",
+  "requested_model": "deepseek-chat",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "request_started_at": "2026-10-11T10:55:08.343012+00:00",
+  "status": "success",
+  "request_sha256": "86c04e7133b5964bb55073eae2759f4f12d161c8269bab78e586332d067f05c4",
+  "returned_model": "deepseek-flash",
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 46,
+    "total_tokens": 443,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 141
+  },
+  "content": "{\"decision\":\"clarify\",\"study\":null,\"missing_fields\":[\"reporting\"],\"reason\":\"Please specify reporting: standard or tail. Standard reporting gives coverage, mean reserve and cost; tail also adds tail shortfall.\"}",
+  "parsed_output": {
+    "decision": "clarify",
+    "study": null,
+    "missing_fields": [
+      "reporting"
+    ],
+    "reason": "Please specify reporting: standard or tail. Standard reporting gives coverage, mean reserve and cost; tail also adds tail shortfall."
+  },
+  "checks": {
+    "decision": "clarify",
+    "execution_ready": false,
+    "corrections": 6,
+    "rules": [
+      "model_disposition"
+    ]
+  },
+  "response_sha256": "dc02ac4ed3b5c04606819a4c8fb62bb9cf19e81567123a400bf029ea8d4b3012",
+  "latency_seconds": 0.7009355999762192,
+  "request_finished_at": "2026-10-11T10:55:09.044519+00:00"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "b659db3e-880b-447d-96e2-6d52480e4e05",
+  "object": "chat.completion",
+  "created": 1791613137,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "index": 0,
+            "id": "call_00_w7zKDeqPi6VIVfuA49nx5645",
+            "type": "function",
+            "function": {
+              "name": "submit_plan",
+              "arguments": "{\"decision\": \"clarify\", \"reason\": \"Missing or ambiguous fields: (1) cost_shortfall is not specified — the request says \\\"the usual set from your lab,\\\" which is not a resolvable value; allowed shortfall costs are 10.0, 20.0, or 40.0. (2) cost_reserve is not stated; the study requires cost_reserve=1.0. (3) The rolling window configuration is not stated; the required design is train_days=730, cal_days=30, test_days=30, rolling_step_days=30. Region (ISNE) and horizon (120 minutes) are valid and unambiguous.\", \"study_schema\": null, \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"workflow\": [], \"evidence_trace\": [], \"explanation\": \"The request is partially specified: region ISNE and horizon 120 minutes are valid, but the shortfall cost is ambiguous (\\\"the usual set\\\") and the reserve cost and rolling window are unstated. No numerical outputs (reserve values, mean costs, coverage, confidence intervals, bootstrap claims, or dispatch results) are produced here; all numerical outputs are produced only by the verified numerical workflow once the schema is fully specified and human approval is obtained.\", \"audit_log\": {\"triggered_rules\": [\"clarification_required\", \"ambiguous_cost_shortfall\", \"missing_cost_reserve\", \"missing_rolling_window_configuration\"], \"human_approval_required\": true}, \"numerical_output_policy\": \"computed_by_verified_workflow_only\"}"
+            }
+          }
+        ]
+      },
+      "logprobs": null,
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1647,
+    "completion_tokens": 537,
+    "total_tokens": 2184,
+    "prompt_tokens_details": {
+      "cached_tokens": 1408
+    },
+    "prompt_cache_hit_tokens": 1408,
+    "prompt_cache_miss_tokens": 239
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

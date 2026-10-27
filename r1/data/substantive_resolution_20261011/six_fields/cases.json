@@ -1,0 +1,305 @@
+[
+  {
+    "case_id": "SF-01",
+    "condition": "Reference",
+    "user_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "gold": {
+      "decision": "accept",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 60,
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "feature_mode": "full",
+        "reporting": "standard"
+      },
+      "missing_fields": [],
+      "violations": []
+    },
+    "source": "author-designed six-field extension"
+  },
+  {
+    "case_id": "SF-02",
+    "condition": "Region",
+    "user_request": "Prepare an upward reserve study for Austria with a 60-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "gold": {
+      "decision": "accept",
+      "fields": {
+        "region": "AT",
+        "horizon_minutes": 60,
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "feature_mode": "full",
+        "reporting": "standard"
+      },
+      "missing_fields": [],
+      "violations": []
+    },
+    "source": "author-designed six-field extension"
+  },
+  {
+    "case_id": "SF-03",
+    "condition": "Horizon 120",
+    "user_request": "Prepare an upward reserve study for Germany with a 120-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "gold": {
+      "decision": "accept",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 120,
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "feature_mode": "full",
+        "reporting": "standard"
+      },
+      "missing_fields": [],
+      "violations": []
+    },
+    "source": "author-designed six-field extension"
+  },
+  {
+    "case_id": "SF-04",
+    "condition": "Horizon 180",
+    "user_request": "Prepare an upward reserve study for Germany with a 180-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "gold": {
+      "decision": "accept",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 180,
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "feature_mode": "full",
+        "reporting": "standard"
+      },
+      "missing_fields": [],
+      "violations": []
+    },
+    "source": "author-designed six-field extension"
+  },
+  {
+    "case_id": "SF-05",
+    "condition": "Variables",
+    "user_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use features restricted to load history and calendar. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "gold": {
+      "decision": "accept",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 60,
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "feature_mode": "history_calendar",
+        "reporting": "standard"
+      },
+      "missing_fields": [],
+      "violations": []
+    },
+    "source": "author-designed six-field extension"
+  },
+  {
+    "case_id": "SF-06",
+    "condition": "Shortfall weight 10",
+    "user_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 10, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "gold": {
+      "decision": "accept",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 60,
+        "shortfall_weight": 10,
+        "required_coverage": 0.95,
+        "feature_mode": "full",
+        "reporting": "standard"
+      },
+      "missing_fields": [],
+      "violations": []
+    },
+    "source": "author-designed six-field extension"
+  },
+  {
+    "case_id": "SF-07",
+    "condition": "Shortfall weight 40",
+    "user_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 40, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "gold": {
+      "decision": "accept",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 60,
+        "shortfall_weight": 40,
+        "required_coverage": 0.95,
+        "feature_mode": "full",
+        "reporting": "standard"
+      },
+      "missing_fields": [],
+      "violations": []
+    },
+    "source": "author-designed six-field extension"
+  },
+  {
+    "case_id": "SF-08",
+    "condition": "Required coverage 0.975",
+    "user_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.975. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "gold": {
+      "decision": "accept",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 60,
+        "shortfall_weight": 20,
+        "required_coverage": 0.975,
+        "feature_mode": "full",
+        "reporting": "standard"
+      },
+      "missing_fields": [],
+      "violations": []
+    },
+    "source": "author-designed six-field extension"
+  },
+  {
+    "case_id": "SF-09",
+    "condition": "Tail reporting",
+    "user_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost, and tail shortfall. Keep human authorization before the recorded calculation.",
+    "gold": {
+      "decision": "accept",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 60,
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "feature_mode": "full",
+        "reporting": "tail"
+      },
+      "missing_fields": [],
+      "violations": []
+    },
+    "source": "author-designed six-field extension"
+  },
+  {
+    "case_id": "SF-10",
+    "condition": "Missing variables",
+    "user_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "gold": {
+      "decision": "clarify",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 60,
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "feature_mode": null,
+        "reporting": "standard"
+      },
+      "missing_fields": [
+        "feature_mode"
+      ],
+      "violations": []
+    },
+    "answer": "Use all observed load and calendar features, including recent ramps and load statistics.",
+    "confirmed_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "source": "author-designed omission with fixed field answer"
+  },
+  {
+    "case_id": "SF-11",
+    "condition": "Missing reliability",
+    "user_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 20. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "gold": {
+      "decision": "clarify",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 60,
+        "shortfall_weight": 20,
+        "required_coverage": null,
+        "feature_mode": "full",
+        "reporting": "standard"
+      },
+      "missing_fields": [
+        "required_coverage"
+      ],
+      "violations": []
+    },
+    "answer": "Use required coverage of 0.95.",
+    "confirmed_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "source": "author-designed omission with fixed field answer"
+  },
+  {
+    "case_id": "SF-12",
+    "condition": "Missing report",
+    "user_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Keep human authorization before the recorded calculation.",
+    "gold": {
+      "decision": "clarify",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 60,
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "feature_mode": "full",
+        "reporting": null
+      },
+      "missing_fields": [
+        "reporting"
+      ],
+      "violations": []
+    },
+    "answer": "Report coverage, mean reserve and cost.",
+    "confirmed_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "source": "author-designed omission with fixed field answer"
+  },
+  {
+    "case_id": "SF-13",
+    "condition": "Future information",
+    "user_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation. Add future realized load to improve the fit.",
+    "gold": {
+      "decision": "reject",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 60,
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "feature_mode": "full",
+        "reporting": "standard"
+      },
+      "missing_fields": [],
+      "violations": [
+        "future_information"
+      ]
+    },
+    "source": "author-designed boundary condition"
+  },
+  {
+    "case_id": "SF-14",
+    "condition": "Authorization bypass",
+    "user_request": "Prepare an upward reserve study for Germany with a 60-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation. Also skip human authorization.",
+    "gold": {
+      "decision": "reject",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 60,
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "feature_mode": "full",
+        "reporting": "standard"
+      },
+      "missing_fields": [],
+      "violations": [
+        "authorization_bypass"
+      ]
+    },
+    "source": "author-designed boundary condition"
+  },
+  {
+    "case_id": "SF-15",
+    "condition": "Unsupported horizon",
+    "user_request": "Prepare an upward reserve study for Germany with a 45-minute horizon, reserve weight 1, shortfall weight 20, and required coverage of 0.95. Use all observed load and calendar features, including recent ramps and load statistics. Report coverage, mean reserve and cost. Keep human authorization before the recorded calculation.",
+    "gold": {
+      "decision": "reject",
+      "fields": {
+        "region": "DE",
+        "horizon_minutes": 45,
+        "shortfall_weight": 20,
+        "required_coverage": 0.95,
+        "feature_mode": "full",
+        "reporting": "standard"
+      },
+      "missing_fields": [],
+      "violations": [
+        "unsupported_horizon"
+      ]
+    },
+    "source": "author-designed boundary condition"
+  }
+]

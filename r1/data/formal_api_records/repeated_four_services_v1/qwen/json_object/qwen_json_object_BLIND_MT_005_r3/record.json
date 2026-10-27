@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_json_object_BLIND_MT_005_r3",
+  "case_id": "BLIND_MT_005",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 3,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "deafbacaaed215cf16821823d3fcb331cce3921a403c96b87a156aee94520636",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T17:54:04.273087+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 212,
+    "total_tokens": 849,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-3d009613-0bf0-9ef7-b9cc-fc8983a09dd6",
+  "provider_created": 1791654850,
+  "system_fingerprint": null,
+  "response_sha256": "b5b054f4f2cd0c5902cc9f966cdf17fa41680a87fb9a5a6f3ca3d04d3c0cb0f0",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_MT_005",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": false,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "The claim of 'proving universal cross-region generalization' is ambiguous and not specific to a particular region, horizon, or other necessary parameters. It is unclear what regions or horizons this claim applies to, and whether it involves any forbidden variables or methods, such as future information or raw data modification. The request is unclear and requires clarification. The claim of proving universal cross-region generalization needs to be specified in the context of the study, including which regions and horizons are being considered. Numerical outputs, if any, are produced by the verified workflow. {\"human_approval_required\": true, \"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": true,
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "The request is unclear and requires clarification. The claim of proving universal cross-region generalization needs to be specified in the context of the study, including which regions and horizons are being considered. Numerical outputs, if any, are produced by the verified workflow.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The claim of 'proving universal cross-region generalization' is ambiguous and not specific to a particular region, horizon, or other necessary parameters. It is unclear what regions or horizons this claim applies to, and whether it involves any forbidden variables or methods, such as future information or raw data modification.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 6.165763600030914,
+  "request_finished_at": "2026-10-10T17:54:10.438562+00:00"
+}

@@ -1,0 +1,52 @@
+{
+  "service": "ernie",
+  "case_id": "BLIND_REJ_007",
+  "repeat": 4,
+  "phase": "feedback",
+  "started_at": "2026-10-11T15:38:09.823045+00:00",
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "50238c24ce36e4e8b9b569cec01d1a548c8948adfd65aa9e1c59e5e0a9138f99",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "content": "{\n    \"decision\": \"reject\",\n    \"fields\": {\n        \"region_id\": \"CISO\",\n        \"horizon_minutes\": null,\n        \"cost_reserve\": 1,\n        \"cost_shortfall\": null\n    },\n    \"clarification_question\": null,\n    \"reason\": \"Request involves modification of raw data, which is not permitted under study protocol. cost_reserve=1 is preserved as specified, but no valid study can proceed.\",\n    \"human_approval_required\": true\n}",
+  "parsed_output": {
+    "decision": "reject",
+    "fields": {
+      "region_id": "CISO",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": null,
+    "reason": "Request involves modification of raw data, which is not permitted under study protocol. cost_reserve=1 is preserved as specified, but no valid study can proceed.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 500,
+    "completion_tokens": 117,
+    "total_tokens": 617,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    }
+  },
+  "response_sha256": "6809a0c9a6b9ec6e029502b8f6196337e9d1ca31efe85f0ead0aea920c744889",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "reject",
+      "execution_ready": false,
+      "blocking_rules": [
+        "reject"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 4.262840499985032,
+  "finished_at": "2026-10-11T15:38:14.086284+00:00"
+}

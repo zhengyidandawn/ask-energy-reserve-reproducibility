@@ -1,0 +1,25 @@
+{
+  "id": "as-u59s4qwbbb",
+  "object": "chat.completion",
+  "created": 1791698244,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\n        \"calendar\",\n        \"cost_ratio\",\n        \"current_load\",\n        \"horizon\",\n        \"lagged_load\",\n        \"load_statistics\",\n        \"observed_weather\",\n        \"recent_ramp\",\n        \"region_id\"\n    ],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"clarification_required\"]\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"SWPP, use the usual horizon and the default shortfall. Upward reserve study, plan only.\"\n        },\n        {\n            \"data_dictionary\": \"Not provided in operator request; inferred from defaults.\"\n        },\n        {\n            \"decision_time_variable_boundary\": \"No future information or unavailable issue-time forecasts included.\"\n        },\n        {\n            \"rolling_window_configuration\": {\n                \"train_days\": 730,\n                \"cal_days\": 30,\n                \"test_days\": 30,\n                \"rolling_step_days\": 30\n            }\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": [\"clarification_required\"]\n            }\n        }\n    ],\n    \"explanation\": \"The operator request is missing some required study fields for a complete upward reserve sizing study. Please provide the following details to proceed.\",\n    \"forbidden_variables\": [\n        \"fabricated_result\",\n        \"future_load\",\n        \"future_weather\",\n        \"raw_data_modification\",\n        \"realized_target\",\n        \"test_period_residual\"\n    ],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Missing or ambiguous fields: While the region (SWPP), horizon (assumed 180 minutes as 'usual'), and default shortfall cost (assumed 20.0) are inferred, please confirm these values and provide any additional specific requirements or constraints for the upward reserve sizing study, such as any particular cost ratios or load statistics of interest.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1476,
+    "completion_tokens": 524,
+    "total_tokens": 2000,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

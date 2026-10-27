@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"triggered_rules\": [\"clarification_required\"],\n    \"human_approval_required\": false\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is missing specific details required for the study, such as horizon, cost ratio, and region. The numerical outputs will be produced by the verified workflow once all necessary information is provided.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator's request does not specify the horizon, cost ratio, or explicitly name a valid region (CAISO instead of CISO). Further clarification is needed to proceed with the study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 632,
+    "completion_tokens": 170,
+    "total_tokens": 802,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791614042,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-50f6126a-8a46-97b0-956d-57a96f635571"
+}

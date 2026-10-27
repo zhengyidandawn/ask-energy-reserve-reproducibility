@@ -1,0 +1,25 @@
+{
+  "id": "as-cdxip2a8ur",
+  "object": "chat.completion",
+  "created": 1791613197,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"default_parameter_usage_requires_explicit_confirmation\"]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        {\n            \"operator_request\": \"CISO upward reserve. Horizon and penalty both default. Don't ask, just use the usual ones.\"\n        },\n        {\n            \"data_dictionary\": []\n        },\n        {\n            \"decision_time_variable_boundary\": []\n        },\n        {\n            \"rolling_window_configuration\": []\n        },\n        {\n            \"numerical_workflow_outputs\": []\n        },\n        {\n            \"audit_log\": {\n                \"human_approval_required\": true,\n                \"triggered_rules\": [\"default_parameter_usage_requires_explicit_confirmation\"]\n            }\n        }\n    ],\n    \"explanation\": \"Default parameters for horizon and penalty cost require explicit confirmation to ensure auditability and prevent unintended assumptions. Numerical outputs are produced by the verified workflow when relevant.\",\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Operator request uses default parameters without explicit confirmation, violating audit rule default_parameter_usage_requires_explicit_confirmation.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 694,
+    "completion_tokens": 404,
+    "total_tokens": 1098,
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    }
+  }
+}

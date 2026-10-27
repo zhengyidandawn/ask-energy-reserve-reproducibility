@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_011",
+  "repeat": 4,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:51.731671+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "cae6008bf73e8ed975f5393aff0d45ac5260c9f7c69669122a71a82d68c7b331",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"western public region\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request references 'western public region' but does not specify a supported region code (GD, ERCO, CISO, ISNE, MISO, SWPP). Please confirm the exact region_id (e.g., CISO for CAISO California) and provide horizon_minutes (60, 120, or 180) and cost_shortfall weight (10, 20, or 40) to finalize the draft.\", \"reason\": \"Explicit study fields are unresolved or not mapped to supported values: region_id supplied as 'western public region' is not a supported code, horizon_minutes and cost_shortfall are unspecified. Clarification required per protocol.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "western public region",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "The request references 'western public region' but does not specify a supported region code (GD, ERCO, CISO, ISNE, MISO, SWPP). Please confirm the exact region_id (e.g., CISO for CAISO California) and provide horizon_minutes (60, 120, or 180) and cost_shortfall weight (10, 20, or 40) to finalize the draft.",
+    "reason": "Explicit study fields are unresolved or not mapped to supported values: region_id supplied as 'western public region' is not a supported code, horizon_minutes and cost_shortfall are unspecified. Clarification required per protocol.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 2260,
+    "total_tokens": 2631,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2065
+    }
+  },
+  "response_sha256": "7e849dda70254835e7fc82ea053daf29084b28a895812a56a2aaa17e9d3e0a6d",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 19.38620519998949,
+  "finished_at": "2026-10-11T15:37:11.117507+00:00"
+}

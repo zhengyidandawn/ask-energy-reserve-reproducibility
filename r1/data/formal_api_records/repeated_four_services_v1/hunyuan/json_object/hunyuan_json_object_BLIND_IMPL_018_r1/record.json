@@ -1,0 +1,111 @@
+{
+  "task_id": "hunyuan_json_object_BLIND_IMPL_018_r1",
+  "case_id": "BLIND_IMPL_018",
+  "packet": "blind_original_200",
+  "service": "hunyuan",
+  "interface": "json_object",
+  "repeat": 1,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "e272be67ecdb74ece9e42c1ed414febf2c462f7b822f9ca2d69b9ad6a28bfd90",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:15:46.719959+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 638,
+    "completion_tokens": 2822,
+    "total_tokens": 3460,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2551
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "cd32a341-75ce-40f4-b434-7f46b66c7046",
+  "provider_created": 1791612947,
+  "system_fingerprint": null,
+  "response_sha256": "f50209c8078eddcea0a62c60bb220beaee8b506856a57be545ac86111c173acc",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "BLIND_IMPL_018",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": false,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": false,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": false,
+    "risk_type": "",
+    "checker_response": "Unsupported region 'ISO-NE' provided; allowed regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. Request also lacks explicit horizon from allowed [60,120,180] but primary violation is unsupported region. Numerical outputs are produced by the verified workflow when relevant. Request rejected because provided region 'ISO-NE' is not in the allowed list ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']; horizon was also ambiguous but region violation alone mandates reject. {\"triggered_rules\": [\"unsupported_region\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": false,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "triggered_rules": [
+        "unsupported_region"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when relevant. Request rejected because provided region 'ISO-NE' is not in the allowed list ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']; horizon was also ambiguous but region violation alone mandates reject.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Unsupported region 'ISO-NE' provided; allowed regions are ['CISO', 'ERCO', 'GD', 'ISNE', 'MISO', 'SWPP']. Request also lacks explicit horizon from allowed [60,120,180] but primary violation is unsupported region.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 28.07015769998543,
+  "request_finished_at": "2026-10-10T06:16:14.790931+00:00"
+}

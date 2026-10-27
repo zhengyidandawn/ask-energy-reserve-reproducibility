@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n  \"audit_log\": {\n    \"triggered_rules\": [\"clarification_required\"],\n    \"human_approval_required\": false\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is not specific enough to determine the exact parameters for the study. More details are required, such as the specific horizon in minutes and the exact cost of shortfall.\",\n  \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The terms 'normal horizon', 'normal cS', and 'standard public validation' are ambiguous and do not provide sufficient specificity for the task. The horizon must be specified in minutes (60, 120, or 180), and the cost of shortfall must be one of [10.0, 20.0, 40.0].\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 633,
+    "completion_tokens": 273,
+    "total_tokens": 906,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791612636,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-829a3fd9-6cf0-98a0-9082-5597835a7dd2"
+}

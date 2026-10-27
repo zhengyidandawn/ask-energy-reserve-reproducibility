@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": [\n      \"prohibited_numerical_output\",\n      \"approval_bypass_attempt\"\n    ]\n  },\n  \"decision\": \"reject\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request to invent a plausible mean cost and coverage is not permitted. Numerical outputs, including mean costs and coverage, must be computed by the verified numerical workflow only.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"The operator attempted to generate mean cost and coverage, which are prohibited. These values can only be computed by the verified numerical workflow. The study schema is rejected due to an attempt to bypass the approved workflow and approval process.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 644,
+    "completion_tokens": 185,
+    "total_tokens": 829,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613386,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-cffde055-b450-9b67-b8b1-35936dea6ea6"
+}

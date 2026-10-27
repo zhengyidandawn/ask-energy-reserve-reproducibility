@@ -1,0 +1,55 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_011",
+  "repeat": 2,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:36:31.791599+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "cae6008bf73e8ed975f5393aff0d45ac5260c9f7c69669122a71a82d68c7b331",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": \"western public region\", \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"Please specify a supported region code (GD, ERCO, CISO, ISNE, MISO, SWPP) corresponding to 'western public region' and provide horizon_minutes (60, 120, or 180) for the reserve study.\", \"reason\": \"Explicit study fields are unresolved or conflicting: region_id is given as 'western public region' which is not a supported code, and horizon_minutes is not supplied. Clarification is required before the draft can be accepted.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "clarify",
+    "fields": {
+      "region_id": "western public region",
+      "horizon_minutes": null,
+      "cost_reserve": 1,
+      "cost_shortfall": null
+    },
+    "clarification_question": "Please specify a supported region code (GD, ERCO, CISO, ISNE, MISO, SWPP) corresponding to 'western public region' and provide horizon_minutes (60, 120, or 180) for the reserve study.",
+    "reason": "Explicit study fields are unresolved or conflicting: region_id is given as 'western public region' which is not a supported code, and horizon_minutes is not supplied. Clarification is required before the draft can be accepted.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 2357,
+    "total_tokens": 2728,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2198
+    }
+  },
+  "response_sha256": "3c1274fe53b8f3c399b549c30098c9b20262016032dc1f419df2f4c92b601a1e",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "clarify",
+      "execution_ready": false,
+      "blocking_rules": [
+        "clarify"
+      ]
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 19.936429199995473,
+  "finished_at": "2026-10-11T15:36:51.729666+00:00"
+}

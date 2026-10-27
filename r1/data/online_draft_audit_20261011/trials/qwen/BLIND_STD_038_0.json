@@ -1,0 +1,108 @@
+{
+  "service": "qwen",
+  "case_id": "BLIND_STD_038",
+  "repeat": 0,
+  "initial_record": {
+    "service": "qwen",
+    "case_id": "BLIND_STD_038",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:15.308333+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a27dacb3e8fb7fa4285a0672b00d4a71d178804ce524350742a7443472a56695",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region (ISNE), horizon (120 minutes), and shortfall cost (40). The study will use the standard 730/30/30 rolling split as requested. No MW estimation is required.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a valid region (ISNE), horizon (120 minutes), and shortfall cost (40). The study will use the standard 730/30/30 rolling split as requested. No MW estimation is required.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 126,
+      "total_tokens": 531,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "fa8f8843e6e603df86e3f6be4062a4681b30ec78c25ee30c4b3de242f4599250",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.24493720009923,
+    "finished_at": "2026-10-11T15:38:18.553248+00:00"
+  },
+  "terminal_record": {
+    "service": "qwen",
+    "case_id": "BLIND_STD_038",
+    "repeat": 0,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:15.308333+00:00",
+    "requested_model": "qwen-max",
+    "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a27dacb3e8fb7fa4285a0672b00d4a71d178804ce524350742a7443472a56695",
+    "returned_model": "qwen-max",
+    "content": "{\n  \"decision\": \"accept\",\n  \"fields\": {\n    \"region_id\": \"ISNE\",\n    \"horizon_minutes\": 120,\n    \"cost_reserve\": 1,\n    \"cost_shortfall\": 40\n  },\n  \"clarification_question\": null,\n  \"reason\": \"The request specifies a valid region (ISNE), horizon (120 minutes), and shortfall cost (40). The study will use the standard 730/30/30 rolling split as requested. No MW estimation is required.\",\n  \"human_approval_required\": true\n}",
+    "parsed_output": {
+      "decision": "accept",
+      "fields": {
+        "region_id": "ISNE",
+        "horizon_minutes": 120,
+        "cost_reserve": 1,
+        "cost_shortfall": 40
+      },
+      "clarification_question": null,
+      "reason": "The request specifies a valid region (ISNE), horizon (120 minutes), and shortfall cost (40). The study will use the standard 730/30/30 rolling split as requested. No MW estimation is required.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 126,
+      "total_tokens": 531,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      }
+    },
+    "response_sha256": "fa8f8843e6e603df86e3f6be4062a4681b30ec78c25ee30c4b3de242f4599250",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "accept",
+        "execution_ready": true,
+        "blocking_rules": []
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 3.24493720009923,
+    "finished_at": "2026-10-11T15:38:18.553248+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 3.24493720009923,
+  "transport_complete": true
+}

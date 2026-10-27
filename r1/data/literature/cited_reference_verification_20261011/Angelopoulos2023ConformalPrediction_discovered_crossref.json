@@ -1,0 +1,1251 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          10
+        ]
+      ],
+      "date-time": "2026-10-10T18:10:44Z",
+      "timestamp": 1791655844328,
+      "version": "4.3.4"
+    },
+    "reference-count": 132,
+    "publisher": "Emerald",
+    "issue": "4",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          27
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Black-box machine learning models are now routinely used in high-risk settings, like medical diagnostics, which demand uncertainty quantification to avoid consequential model failures. Conformal prediction (a.k.a. conformal inference) is a user-friendly paradigm for creating statistically rigorous uncertainty sets/intervals for the predictions of such models. Critically, the sets are valid in a distribution-free sense: they possess explicit, non-asymptotic guarantees even without distributional assumptions or model assumptions. One can use conformal prediction with any pre-trained model, such as a neural network, to produce sets that are guaranteed to contain the ground truth with a user-specified probability, such as 90%. It is easy-to-understand, easy-to-use, and general, applying naturally to problems arising in the fields of computer vision, natural language processing, deep reinforcement learning, and so on.</jats:p>\n                  <jats:p>This hands-on introduction is aimed to provide the reader a working understanding of conformal prediction and related distribution-free uncertainty quantification techniques with one self-contained document. We lead the reader through practical theory for and examples of conformal prediction and describe its extensions to complex machine learning tasks involving structured outputs, distribution shift, timeseries, outliers, models that abstain, and more. Throughout, there are many explanatory illustrations, examples, and code samples in Python. With each code sample comes a Jupyter notebook implementing the method on a real-data example; the notebooks can be accessed and easily run by following the code footnotes.&amp;lt;/&amp;gt;</jats:p>",
+    "DOI": "10.1561/2200000101",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          27
+        ]
+      ],
+      "date-time": "2023-03-27T03:29:31Z",
+      "timestamp": 1679887771000
+    },
+    "page": "494-591",
+    "source": "Crossref",
+    "is-referenced-by-count": 785,
+    "title": [
+      "Conformal Prediction: A Gentle Introduction"
+    ],
+    "prefix": "10.1108",
+    "volume": "16",
+    "author": [
+      {
+        "given": "Anastasios N.",
+        "family": "Angelopoulos",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of California , ,",
+            "place": [
+              "Berkeley, USA"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephen",
+        "family": "Bates",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of California , ,",
+            "place": [
+              "Berkeley, USA"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "140",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          27
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2026033012313615600_ref001",
+        "first-page": "1198",
+        "volume-title": "Exchangeability and related topics",
+        "author": "Aldous"
+      },
+      {
+        "key": "2026033012313615600_ref002",
+        "volume-title": "Learn then test: Calibrating predictive algorithms to achieve risk control",
+        "author": "Angelopoulos",
+        "year": "2021"
+      },
+      {
+        "key": "2026033012313615600_ref003",
+        "volume-title": "Conformal risk control",
+        "author": "Angelopoulos",
+        "year": "2022"
+      },
+      {
+        "key": "2026033012313615600_ref004",
+        "volume-title": "Private prediction sets",
+        "author": "Angelopoulos",
+        "year": "2021"
+      },
+      {
+        "key": "2026033012313615600_ref005",
+        "article-title": "Image-to-image regression with distribution-free uncertainty quantification and applications in imaging",
+        "author": "Angelopoulos",
+        "year": "2022"
+      },
+      {
+        "key": "2026033012313615600_ref006",
+        "volume-title": "Uncertainty sets for image classifiers using conformal prediction",
+        "author": "Angelopoulos"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref007",
+        "doi-asserted-by": "crossref",
+        "first-page": "486",
+        "DOI": "10.1214/20-AOS1965",
+        "article-title": "Predictive inference with the jackknife+",
+        "volume": "49",
+        "author": "Barber",
+        "year": "2021",
+        "journal-title": "The Annals of Statistics"
+      },
+      {
+        "key": "2026033012313615600_ref008",
+        "volume-title": "Conformal prediction beyond exchangeability",
+        "author": "Barber",
+        "year": "2022"
+      },
+      {
+        "key": "2026033012313615600_ref009",
+        "doi-asserted-by": "crossref",
+        "volume-title": "Practical adversarial multivalid conformal prediction",
+        "author": "Bastani",
+        "DOI": "10.52202/068431-2129"
+      },
+      {
+        "issue": "6",
+        "key": "2026033012313615600_ref010",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1145/3478535",
+        "article-title": "Distribution-free, risk-controlling prediction sets",
+        "volume": "68",
+        "author": "Bates",
+        "year": "2021",
+        "journal-title": "Journal of the Association for Computing Machinery"
+      },
+      {
+        "key": "2026033012313615600_ref011",
+        "volume-title": "Testing for outliers with conformal p-values",
+        "author": "Bates",
+        "year": "2021"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref012",
+        "doi-asserted-by": "crossref",
+        "first-page": "125",
+        "DOI": "10.1007/s10472-017-9539-9",
+        "article-title": "Accelerating difficulty estimation for conformal regression forests",
+        "volume": "81",
+        "author": "Boström",
+        "year": "2017",
+        "journal-title": "Annals of Mathematics and Artificial Intelligence"
+      },
+      {
+        "issue": "4",
+        "key": "2026033012313615600_ref013",
+        "doi-asserted-by": "crossref",
+        "first-page": "586",
+        "DOI": "10.1002/sim.3495",
+        "article-title": "A graphical approach to sequentially rejective multiple test procedures",
+        "volume": "28",
+        "author": "Bretz",
+        "year": "2009",
+        "journal-title": "Statistics in Medicine"
+      },
+      {
+        "key": "2026033012313615600_ref014",
+        "volume-title": "Conformalized survival analysis",
+        "author": "Candès",
+        "year": "2021"
+      },
+      {
+        "key": "2026033012313615600_ref015",
+        "volume-title": "Robust validation: Confident predictions even when distributions shift",
+        "author": "Cauchois",
+        "year": "2020"
+      },
+      {
+        "key": "2026033012313615600_ref016",
+        "volume-title": "Knowing what you know: Valid and validated confidence sets in multiclass and multilabel prediction",
+        "author": "Cauchois",
+        "year": "2020"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref017",
+        "doi-asserted-by": "crossref",
+        "first-page": "349",
+        "DOI": "10.1214/08-AOAS197",
+        "article-title": "Distribution-free cumulative sum control charts using bootstrap-based control limits",
+        "volume": "3",
+        "author": "Chatterjee",
+        "year": "2009",
+        "journal-title": "The Annals of Applied Statistics"
+      },
+      {
+        "issue": "2",
+        "key": "2026033012313615600_ref018",
+        "doi-asserted-by": "crossref",
+        "first-page": "246",
+        "DOI": "10.1016/0047-259X(91)90100-G",
+        "article-title": "Global nonparametric estimation of conditional quantile functions and their derivatives",
+        "volume": "39",
+        "author": "Chaudhuri",
+        "year": "1991",
+        "journal-title": "Journal of Multivariate Analysis"
+      },
+      {
+        "key": "2026033012313615600_ref019",
+        "unstructured": "J.\n              Cherian\n             and L.Bronner, “How the Washington Post estimates outstanding votes for the 2020 presidential election,” Washington Post, 2021. URL: https://s3.us-east-1.amazonaws.com/elex-models-prod/2020-general/write-up/election_model_writeup.pdf."
+      },
+      {
+        "key": "2026033012313615600_ref020",
+        "first-page": "732",
+        "volume-title": "Exact and robust conformal inference methods for predictive machine learning with dependent data",
+        "author": "Chernozhukov"
+      },
+      {
+        "key": "2026033012313615600_ref021",
+        "first-page": "1",
+        "article-title": "An exact and robust conformal inference method for counterfactual and synthetic controls",
+        "volume-title": "Journal of the American Statistical Association",
+        "author": "Chernozhukov",
+        "year": "2021"
+      },
+      {
+        "issue": "2",
+        "key": "2026033012313615600_ref022",
+        "doi-asserted-by": "crossref",
+        "first-page": "484",
+        "DOI": "10.1214/13-AOS1090",
+        "article-title": "Exact and asymptotically robust permutation tests",
+        "volume": "41",
+        "author": "Chung",
+        "year": "2013",
+        "journal-title": "The Annals of Statistics"
+      },
+      {
+        "issue": "2",
+        "key": "2026033012313615600_ref023",
+        "doi-asserted-by": "crossref",
+        "first-page": "130",
+        "DOI": "10.1090/S0002-9904-1940-07154-X",
+        "article-title": "On the concept of a random sequence",
+        "volume": "46",
+        "author": "Church",
+        "year": "1940",
+        "journal-title": "Bul letin of the American Mathematical Society"
+      },
+      {
+        "key": "2026033012313615600_ref024",
+        "first-page": "179",
+        "volume-title": "Funzione caratteristica di un fenomeno aleatorio",
+        "author": "De Finetti"
+      },
+      {
+        "key": "2026033012313615600_ref025",
+        "volume-title": "Bert: Pre-training of deep bidirectional transformers for language understanding",
+        "author": "Devlin",
+        "year": "2018"
+      },
+      {
+        "key": "2026033012313615600_ref026",
+        "first-page": "745",
+        "article-title": "Finite exchangeable sequences",
+        "volume-title": "The Annals of Probability",
+        "author": "Diaconis",
+        "year": "1980"
+      },
+      {
+        "key": "2026033012313615600_ref027",
+        "volume-title": "Adaptive conformal prediction for motion planning among dynamic agents",
+        "author": "Dixit",
+        "year": "2022"
+      },
+      {
+        "key": "2026033012313615600_ref028",
+        "unstructured": "E.\n              Dobriban\n            \n          , Topics in Modern Statistical Learning (STAT 991, UPenn, 2022 Spring), Dec.2022. URL: https://github.com/dobriban/Topics-In-Modern-Statistical-Learning."
+      },
+      {
+        "key": "2026033012313615600_ref029",
+        "volume-title": "Catboost: Gradient boosting with categorical features support",
+        "author": "Dorogush",
+        "year": "2018"
+      },
+      {
+        "key": "2026033012313615600_ref030",
+        "volume-title": "Distribution-free prediction sets with random effects",
+        "author": "Dunn",
+        "year": "2018"
+      },
+      {
+        "key": "2026033012313615600_ref031",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1201/9780429246593",
+        "volume-title": "An introduction to the bootstrap",
+        "author": "Efron",
+        "year": "1994"
+      },
+      {
+        "key": "2026033012313615600_ref032",
+        "volume-title": "Kol lektivmasslehre",
+        "author": "Fechner",
+        "year": "1897"
+      },
+      {
+        "key": "2026033012313615600_ref033",
+        "volume-title": "Improving conditional coverage via orthogonal quantile regression",
+        "author": "Feldman"
+      },
+      {
+        "key": "2026033012313615600_ref034",
+        "first-page": "3329",
+        "volume-title": "Few-shot conformal prediction with auxiliary tasks",
+        "author": "Fisch"
+      },
+      {
+        "key": "2026033012313615600_ref035",
+        "volume-title": "Efficient conformal prediction via cascaded inference with expanded admission",
+        "author": "Fisch"
+      },
+      {
+        "issue": "3923",
+        "key": "2026033012313615600_ref036",
+        "doi-asserted-by": "crossref",
+        "first-page": "554",
+        "DOI": "10.1136/bmj.1.3923.554-a",
+        "article-title": "Design of experiments",
+        "volume": "1",
+        "author": "Fisher",
+        "year": "1936",
+        "journal-title": "British Medical Journal"
+      },
+      {
+        "issue": "2",
+        "key": "2026033012313615600_ref037",
+        "doi-asserted-by": "crossref",
+        "first-page": "455",
+        "DOI": "10.1093/imaiai/iaaa017",
+        "article-title": "The limits of distribution-free conditional predictive inference",
+        "volume": "10",
+        "author": "Foygel Barber",
+        "year": "2021",
+        "journal-title": "Information and Inference: A Journal of the IMA"
+      },
+      {
+        "key": "2026033012313615600_ref038",
+        "first-page": "956",
+        "article-title": "Bernard Friedman’s urn",
+        "volume-title": "The Annals of Mathematical Statistics",
+        "author": "Freedman",
+        "year": "1965"
+      },
+      {
+        "key": "2026033012313615600_ref039",
+        "first-page": "148",
+        "volume-title": "Learning by transduction",
+        "author": "Gammerman"
+      },
+      {
+        "key": "2026033012313615600_ref040",
+        "volume-title": "Adaptive conformal inference under distribution shift",
+        "author": "Gibbs",
+        "year": "2021"
+      },
+      {
+        "key": "2026033012313615600_ref041",
+        "volume-title": "Conformal inference for online prediction with arbitrary distribution shifts",
+        "author": "Gibbs",
+        "year": "2022"
+      },
+      {
+        "key": "2026033012313615600_ref042",
+        "volume-title": "Conformal prediction with localization",
+        "author": "Guan",
+        "year": "2020"
+      },
+      {
+        "key": "2026033012313615600_ref043",
+        "volume-title": "Prediction and outlier detection in classification problems",
+        "author": "Guan",
+        "year": "2019"
+      },
+      {
+        "key": "2026033012313615600_ref044",
+        "first-page": "108",
+        "article-title": "Nested conformal prediction and quantile out-of-bag ensemble methods",
+        "volume-title": "Pattern Recognition",
+        "author": "Gupta",
+        "year": "2021"
+      },
+      {
+        "key": "2026033012313615600_ref045",
+        "first-page": "3942",
+        "volume-title": "Distribution-free calibration guarantees for histogram binning without sample splitting",
+        "author": "Gupta"
+      },
+      {
+        "key": "2026033012313615600_ref046",
+        "unstructured": "L.\n              Hanu\n             and Unitary team, Detoxify, 2020. URL: https://github.com/unitaryai/detoxify."
+      },
+      {
+        "key": "2026033012313615600_ref047",
+        "volume-title": "Cautious deep learning",
+        "author": "Hechtlinger",
+        "year": "2018"
+      },
+      {
+        "issue": "2",
+        "key": "2026033012313615600_ref048",
+        "doi-asserted-by": "crossref",
+        "first-page": "470",
+        "DOI": "10.1090/S0002-9947-1955-0076206-8",
+        "article-title": "Symmetric measures on Cartesian products",
+        "volume": "80",
+        "author": "Hewitt",
+        "year": "1955",
+        "journal-title": "Transactions of the American Mathematical Society"
+      },
+      {
+        "key": "2026033012313615600_ref049",
+        "volume-title": "Bayes-optimal prediction with frequentist coverage control",
+        "author": "Hoff",
+        "year": "2021"
+      },
+      {
+        "key": "2026033012313615600_ref050",
+        "volume-title": "A distribution-free test of covariate shift using conformal prediction",
+        "author": "Hu",
+        "year": "2020"
+      },
+      {
+        "key": "2026033012313615600_ref051",
+        "first-page": "3068",
+        "volume-title": "Flexible distributionfree conditional predictive bands using density estimators",
+        "author": "Izbicki"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref052",
+        "doi-asserted-by": "crossref",
+        "first-page": "155",
+        "DOI": "10.1007/s10994-014-5453-0",
+        "article-title": "Regression conformal prediction with random forests",
+        "volume": "97",
+        "author": "Johansson",
+        "year": "2014",
+        "journal-title": "Machine learning"
+      },
+      {
+        "key": "2026033012313615600_ref053",
+        "volume-title": "Batch multivalid conformal prediction",
+        "author": "Jung",
+        "year": "2022"
+      },
+      {
+        "issue": "2",
+        "key": "2026033012313615600_ref054",
+        "doi-asserted-by": "crossref",
+        "first-page": "183",
+        "DOI": "10.1214/aop/1176995566",
+        "article-title": "Uses of exchangeability",
+        "volume": "6",
+        "author": "Kingman",
+        "year": "1978",
+        "journal-title": "The Annals of Probability"
+      },
+      {
+        "key": "2026033012313615600_ref055",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1017/CBO9780511754098",
+        "volume-title": "Quantile Regression",
+        "author": "Koenker",
+        "year": "2005"
+      },
+      {
+        "issue": "3",
+        "key": "2026033012313615600_ref056",
+        "doi-asserted-by": "crossref",
+        "first-page": "239",
+        "DOI": "10.1214/10-BJPS131",
+        "article-title": "Additive models for quantile regression: Model selection and confidence bandaids",
+        "volume": "25",
+        "author": "Koenker",
+        "year": "2011",
+        "journal-title": "Brazilian Journal of Probability and Statistics"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref057",
+        "doi-asserted-by": "crossref",
+        "first-page": "33",
+        "DOI": "10.2307/1913643",
+        "article-title": "Regression quantiles",
+        "volume": "46",
+        "author": "Koenker",
+        "year": "1978",
+        "journal-title": "Econometrica: Journal of the Econometric Society"
+      },
+      {
+        "key": "2026033012313615600_ref058",
+        "volume-title": "Handbook of quantile regression",
+        "author": "Koenker",
+        "year": "2018"
+      },
+      {
+        "key": "2026033012313615600_ref059",
+        "first-page": "56375664",
+        "volume-title": "Wilds: A benchmark of in-the-wild distribution shifts",
+        "author": "Koh"
+      },
+      {
+        "issue": "5",
+        "key": "2026033012313615600_ref060",
+        "doi-asserted-by": "crossref",
+        "first-page": "662",
+        "DOI": "10.1109/TIT.1968.1054210",
+        "article-title": "Logical basis for information theory and probability theory",
+        "volume": "14",
+        "author": "Kolmogorov",
+        "year": "1968",
+        "journal-title": "IEEE Transactions on Information Theory"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref061",
+        "first-page": "1",
+        "article-title": "Three approaches to the quantitative definition of information",
+        "volume": "1",
+        "author": "Kolmogorov",
+        "year": "1965",
+        "journal-title": "Problems of Information Transmission"
+      },
+      {
+        "issue": "4",
+        "key": "2026033012313615600_ref062",
+        "doi-asserted-by": "crossref",
+        "first-page": "29",
+        "DOI": "10.1070/RM1983v038n04ABEH004203",
+        "article-title": "Combinatorial foundations of information theory and the calculus of probabilities",
+        "volume": "38",
+        "author": "Kolmogorov",
+        "year": "1983",
+        "journal-title": "Russian Mathematical Surveys"
+      },
+      {
+        "key": "2026033012313615600_ref063",
+        "volume-title": "Nested conformal prediction sets for classification with applications to probation data",
+        "author": "Kuchibhotla",
+        "year": "2021"
+      },
+      {
+        "key": "2026033012313615600_ref064",
+        "volume-title": "Distribution-free inference for regression: Discrete, continuous, and in between",
+        "author": "Lee",
+        "year": "2021"
+      },
+      {
+        "key": "2026033012313615600_ref065",
+        "first-page": "23",
+        "article-title": "The power of rank tests",
+        "volume-title": "The Annals of Mathematical Statistics",
+        "author": "Lehmann",
+        "year": "1953"
+      },
+      {
+        "issue": "4",
+        "key": "2026033012313615600_ref066",
+        "doi-asserted-by": "publisher",
+        "first-page": "755",
+        "DOI": "10.1093/biomet/asu038",
+        "article-title": "Classification with confidence",
+        "volume": "101",
+        "author": "Lei",
+        "year": "2014",
+        "journal-title": "Biometrika"
+      },
+      {
+        "issue": "4",
+        "key": "2026033012313615600_ref067",
+        "doi-asserted-by": "crossref",
+        "first-page": "749",
+        "DOI": "10.1093/biomet/asz046",
+        "article-title": "Fast exact conformalization of the lasso using piecewise linear homotopy",
+        "volume": "106",
+        "author": "Lei",
+        "year": "2019",
+        "journal-title": "Biometrika"
+      },
+      {
+        "issue": "523",
+        "key": "2026033012313615600_ref068",
+        "doi-asserted-by": "publisher",
+        "first-page": "1094",
+        "DOI": "10.1080/01621459.2017.1307116.",
+        "article-title": "Distribution-free predictive inference for regression",
+        "volume": "113",
+        "author": "Lei",
+        "year": "2018",
+        "journal-title": "Journal of the American Statistical Association"
+      },
+      {
+        "key": "2026033012313615600_ref069",
+        "doi-asserted-by": "publisher",
+        "first-page": "29",
+        "DOI": "10.1007/s10472-013-9366-6",
+        "article-title": "A conformal prediction approach to explore functional data",
+        "volume-title": "Annals of Mathematics and Artificial Intelligence",
+        "author": "Lei",
+        "year": "2015"
+      },
+      {
+        "key": "2026033012313615600_ref070",
+        "volume-title": "Efficient nonparametric conformal prediction regions",
+        "author": "Lei",
+        "year": "2011"
+      },
+      {
+        "issue": "501",
+        "key": "2026033012313615600_ref071",
+        "doi-asserted-by": "crossref",
+        "first-page": "278",
+        "DOI": "10.1080/01621459.2012.751873",
+        "article-title": "Distribution-free prediction sets",
+        "volume": "108",
+        "author": "Lei",
+        "year": "2013",
+        "journal-title": "Journal of the American Statistical Association"
+      },
+      {
+        "key": "2026033012313615600_ref072",
+        "first-page": "71",
+        "article-title": "Distribution-free prediction bands for non-parametric regression",
+        "volume-title": "Journal of the Royal Statistical Society: Series B: Statistical Methodology",
+        "author": "Lei",
+        "year": "2014"
+      },
+      {
+        "key": "2026033012313615600_ref073",
+        "volume-title": "Conformal inference of counterfactuals and individual treatment effects",
+        "author": "Lei",
+        "year": "2020"
+      },
+      {
+        "key": "2026033012313615600_ref074",
+        "first-page": "740",
+        "volume-title": "Microsoft COCO: Common objects in context",
+        "author": "Lin"
+      },
+      {
+        "key": "2026033012313615600_ref075",
+        "volume-title": "Safe planning in dynamic environments using conformal prediction",
+        "author": "Lindemann",
+        "year": "2022"
+      },
+      {
+        "key": "2026033012313615600_ref076",
+        "first-page": "154",
+        "volume-title": "On the calibration of aggregated conformal predictors",
+        "author": "Linusson"
+      },
+      {
+        "key": "2026033012313615600_ref077",
+        "volume-title": "Distribution-free federated learning with conformal predictions",
+        "author": "Lu",
+        "year": "2021"
+      },
+      {
+        "key": "2026033012313615600_ref078",
+        "volume-title": "Fair conformal predictors for applications in medical imaging",
+        "author": "Lu",
+        "year": "2021"
+      },
+      {
+        "key": "2026033012313615600_ref079",
+        "volume-title": "Shifts: A dataset of real distributional shift across multiple large-scale tasks",
+        "author": "Malinin",
+        "year": "2021"
+      },
+      {
+        "key": "2026033012313615600_ref080",
+        "first-page": "50",
+        "article-title": "On a test of whether one of two random variables is stochastically larger than the other",
+        "volume-title": "The Annals of Mathematical Statistics",
+        "author": "Mann",
+        "year": "1947"
+      },
+      {
+        "key": "2026033012313615600_ref081",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5281/zenodo.6467205",
+        "volume-title": "Awesome Conformal Prediction",
+        "author": "Manokhin",
+        "year": "2022"
+      },
+      {
+        "key": "2026033012313615600_ref082",
+        "first-page": "360",
+        "volume-title": "Comparing the bayes and typicalness frameworks",
+        "author": "Melluish"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref083",
+        "doi-asserted-by": "crossref",
+        "first-page": "52",
+        "DOI": "10.1007/BF01203155",
+        "article-title": "Grundlagen der wahrscheinlichkeitsrechnung",
+        "volume": "5",
+        "author": "von Mises",
+        "year": "1919",
+        "journal-title": "Mathematische Zeitschrift"
+      },
+      {
+        "key": "2026033012313615600_ref084",
+        "first-page": "172",
+        "volume-title": "Sophistication as randomness deficiency",
+        "author": "Mota"
+      },
+      {
+        "key": "2026033012313615600_ref085",
+        "volume-title": "Computing full conformal prediction set with approximate homotopy",
+        "author": "Ndiaye"
+      },
+      {
+        "key": "2026033012313615600_ref086",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10994-022-06233-5",
+        "article-title": "Root-finding approaches for computing conformal prediction set",
+        "volume-title": "Machine Learning",
+        "author": "Ndiaye",
+        "year": "2022"
+      },
+      {
+        "key": "2026033012313615600_ref087",
+        "volume-title": "Split conformal prediction for dependent data",
+        "author": "Oliveira",
+        "year": "2022"
+      },
+      {
+        "key": "2026033012313615600_ref088",
+        "first-page": "345",
+        "volume-title": "Inductive confidence machines for regression",
+        "author": "Papadopoulos"
+      },
+      {
+        "key": "2026033012313615600_ref089",
+        "volume-title": "PAC confidence predictions for deep neural network classifiers",
+        "author": "Park"
+      },
+      {
+        "key": "2026033012313615600_ref090",
+        "doi-asserted-by": "crossref",
+        "unstructured": "M. A.\n              Pimentel\n            , D. A.Clifton, L.Clifton, and L.Tarassenko, “A review of novelty detection,” Signal Processing, vol. 99, 2014, pp. 215–249. DOI: https://doi.org/10.1016/j.sigpro.2013.12.026.",
+        "DOI": "10.1016/j.sigpro.2013.12.026"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref091",
+        "first-page": "119",
+        "article-title": "Significance tests which may be applied to samples from any populations",
+        "volume": "4",
+        "author": "Pitman",
+        "year": "1937",
+        "journal-title": "Supplement to the Journal of the Royal Statistical Society"
+      },
+      {
+        "key": "2026033012313615600_ref092",
+        "first-page": "507",
+        "volume-title": "Distribution-free distribution regression",
+        "author": "Póczos"
+      },
+      {
+        "key": "2026033012313615600_ref093",
+        "volume-title": "Tracking the risk of a deployed model and detecting harmful distribution shifts",
+        "author": "Podkopaev",
+        "year": "2021"
+      },
+      {
+        "issue": "3",
+        "key": "2026033012313615600_ref094",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1017/S0960129512000801",
+        "article-title": "Kolmogorov on the role of randomness in probability theory",
+        "volume": "24",
+        "author": "Porter",
+        "year": "2014",
+        "journal-title": "Mathematical Structures in Computer Science"
+      },
+      {
+        "issue": "2",
+        "key": "2026033012313615600_ref095",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/99608f92.03f00592",
+        "article-title": "With malice toward none: Assessing uncertainty via equalized coverage",
+        "volume": "2",
+        "author": "Romano",
+        "year": "2020",
+        "journal-title": "Harvard Data Science Review"
+      },
+      {
+        "key": "2026033012313615600_ref096",
+        "first-page": "3543",
+        "volume-title": "Conformalized quantile regression",
+        "author": "Romano"
+      },
+      {
+        "key": "2026033012313615600_ref097",
+        "volume-title": "Classification with valid and adaptive coverage",
+        "author": "Romano",
+        "year": "2020"
+      },
+      {
+        "key": "2026033012313615600_ref098",
+        "first-page": "223",
+        "article-title": "Least ambiguous setvalued classifiers with bounded error levels",
+        "volume-title": "Journal of the American Statistical Association",
+        "author": "Sadinle",
+        "year": "2019"
+      },
+      {
+        "key": "2026033012313615600_ref099",
+        "volume-title": "Transduction with confidence and credibility",
+        "author": "Saunders",
+        "year": "1999"
+      },
+      {
+        "key": "2026033012313615600_ref100",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.18653/v1/2021.emnlp-main.406",
+        "article-title": "Consistent accelerated inference via confident adaptive transformers",
+        "volume-title": "Empirical Methods in Natural Language Processing",
+        "author": "Schuster",
+        "year": "2021"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref101",
+        "doi-asserted-by": "crossref",
+        "first-page": "70",
+        "DOI": "10.1214/088342305000000467",
+        "article-title": "The sources of Kolmogorov’s Grundbegriffe",
+        "volume": "21",
+        "author": "Shafer",
+        "year": "2006",
+        "journal-title": "Statistical Science"
+      },
+      {
+        "issue": "Mar",
+        "key": "2026033012313615600_ref102",
+        "first-page": "371",
+        "article-title": "A tutorial on conformal prediction",
+        "volume": "9",
+        "author": "Shafer",
+        "year": "2008",
+        "journal-title": "Journal of Machine Learning Research"
+      },
+      {
+        "key": "2026033012313615600_ref103",
+        "volume-title": "Theory of rank tests",
+        "author": "Sidak",
+        "year": "1999"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref104",
+        "first-page": "211",
+        "article-title": "Estimating conditional quantiles with the help of the pinball loss",
+        "volume": "17",
+        "author": "Steinwart",
+        "year": "2011",
+        "journal-title": "Bernoul li"
+      },
+      {
+        "key": "2026033012313615600_ref105",
+        "volume-title": "Learning optimal conformal classifiers",
+        "author": "Stutz"
+      },
+      {
+        "key": "2026033012313615600_ref106",
+        "first-page": "1231",
+        "article-title": "Nonparametric quantile estimation",
+        "volume": "7",
+        "author": "Takeuchi",
+        "year": "2006",
+        "journal-title": "Journal of Machine Learning Research"
+      },
+      {
+        "key": "2026033012313615600_ref107",
+        "first-page": "2530",
+        "volume-title": "Conformal prediction under covariate shift",
+        "author": "Tibshirani"
+      },
+      {
+        "issue": "4",
+        "key": "2026033012313615600_ref108",
+        "doi-asserted-by": "publisher",
+        "first-page": "529",
+        "DOI": "10.1214/aoms/1177730343",
+        "article-title": "Non-parametric estimation II. Statistically equivalent blocks and tolerance regions-the continuous case",
+        "volume": "18",
+        "author": "Tukey",
+        "year": "1947",
+        "journal-title": "Annals of Mathematical Statistics"
+      },
+      {
+        "issue": "11",
+        "key": "2026033012313615600_ref109",
+        "doi-asserted-by": "crossref",
+        "first-page": "824",
+        "DOI": "10.1090/S0002-9904-1939-07089-4",
+        "article-title": "Etude critique de la notion de collectif",
+        "volume": "45",
+        "author": "Ville",
+        "year": "1939",
+        "journal-title": "Bull. Amer. Math. Soc"
+      },
+      {
+        "key": "2026033012313615600_ref110",
+        "first-page": "132",
+        "volume-title": "Inductive conformal martingales for change-point detection",
+        "author": "Volkhonskiy"
+      },
+      {
+        "key": "2026033012313615600_ref111",
+        "first-page": "51",
+        "article-title": "Kolmogorov’s complexity conception of probability",
+        "volume-title": "Synthese Library",
+        "author": "Vovk",
+        "year": "2001"
+      },
+      {
+        "key": "2026033012313615600_ref112",
+        "first-page": "187",
+        "volume-title": "On-line confidence machines are well-calibrated",
+        "author": "Vovk"
+      },
+      {
+        "key": "2026033012313615600_ref113",
+        "first-page": "475",
+        "volume-title": "Conditional validity of inductive conformal predictors",
+        "author": "Vovk"
+      },
+      {
+        "issue": "1-2",
+        "key": "2026033012313615600_ref114",
+        "doi-asserted-by": "crossref",
+        "first-page": "9",
+        "DOI": "10.1007/s10472-013-9368-4",
+        "article-title": "Cross-conformal predictors",
+        "volume": "74",
+        "author": "Vovk",
+        "year": "2015",
+        "journal-title": "Annals of Mathematics and Artificial Intelligence"
+      },
+      {
+        "issue": "4",
+        "key": "2026033012313615600_ref115",
+        "doi-asserted-by": "crossref",
+        "first-page": "595",
+        "DOI": "10.1214/20-STS817",
+        "article-title": "Testing randomness online",
+        "volume": "36",
+        "author": "Vovk",
+        "year": "2021",
+        "journal-title": "Statistical Science"
+      },
+      {
+        "key": "2026033012313615600_ref116",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/b106715",
+        "volume-title": "Algorithmic Learning in a Random World",
+        "author": "Vovk",
+        "year": "2005"
+      },
+      {
+        "key": "2026033012313615600_ref117",
+        "first-page": "444",
+        "volume-title": "Machine-learning applications of algorithmic randomness",
+        "author": "Vovk"
+      },
+      {
+        "key": "2026033012313615600_ref118",
+        "first-page": "768",
+        "volume-title": "Testing exchangeability on-line",
+        "author": "Vovk"
+      },
+      {
+        "key": "2026033012313615600_ref119",
+        "volume-title": "Venn-Abers predictors",
+        "author": "Vovk",
+        "year": "2012"
+      },
+      {
+        "key": "2026033012313615600_ref120",
+        "first-page": "1133",
+        "volume-title": "Self-calibrating probability forecasting",
+        "author": "Vovk"
+      },
+      {
+        "key": "2026033012313615600_ref121",
+        "first-page": "1",
+        "article-title": "Nonparametric predictive distributions based on conformal prediction",
+        "volume-title": "Machine Learning",
+        "author": "Vovk",
+        "year": "2017"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref122",
+        "doi-asserted-by": "crossref",
+        "first-page": "247",
+        "DOI": "10.1070/RM1986v041n01ABEH003237",
+        "article-title": "On the concept of the Bernoulli property",
+        "volume": "41",
+        "author": "Vovk",
+        "year": "1986",
+        "journal-title": "Russian Mathematical Surveys"
+      },
+      {
+        "issue": "38-72",
+        "key": "2026033012313615600_ref123",
+        "first-page": "37",
+        "article-title": "Die widerspruchfreiheit des kollectivbegriffes der wahrscheinlichkeitsrechnung",
+        "volume": "8",
+        "author": "Wald",
+        "year": "1937",
+        "journal-title": "Ergebnisse Eines Mathematischen Kol loquiums"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref124",
+        "doi-asserted-by": "publisher",
+        "first-page": "45",
+        "DOI": "10.1214/aoms/1177731491",
+        "article-title": "An extension of Wilks’ method for setting tolerance limits",
+        "volume": "14",
+        "author": "Wald",
+        "year": "1943",
+        "journal-title": "Annals of Mathematical Statistics"
+      },
+      {
+        "issue": "3",
+        "key": "2026033012313615600_ref125",
+        "doi-asserted-by": "crossref",
+        "first-page": "322",
+        "DOI": "10.1214/11-STS352C",
+        "article-title": "Frasian inference",
+        "volume": "26",
+        "author": "Wasserman",
+        "year": "2011",
+        "journal-title": "Statistical Science"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref126",
+        "doi-asserted-by": "publisher",
+        "first-page": "91",
+        "DOI": "10.1214/aoms/1177731788",
+        "article-title": "Determination of sample sizes for setting tolerance limits",
+        "volume": "12",
+        "author": "Wilks",
+        "year": "1941",
+        "journal-title": "Annals of Mathematical Statistics"
+      },
+      {
+        "issue": "4",
+        "key": "2026033012313615600_ref127",
+        "doi-asserted-by": "publisher",
+        "first-page": "400",
+        "DOI": "10.1214/aoms/1177731537",
+        "article-title": "Statistical prediction with special reference to the problem of tolerance limits",
+        "volume": "13",
+        "author": "Wilks",
+        "year": "1942",
+        "journal-title": "Annals of Mathematical Statistics"
+      },
+      {
+        "key": "2026033012313615600_ref128",
+        "first-page": "11559",
+        "volume-title": "Conformal prediction interval for dynamic time-series",
+        "author": "Xu"
+      },
+      {
+        "key": "2026033012313615600_ref129",
+        "volume-title": "Conformal sensitivity analysis for individual treatment effects",
+        "author": "Yin",
+        "year": "2021"
+      },
+      {
+        "key": "2026033012313615600_ref130",
+        "first-page": "25834",
+        "volume-title": "Adaptive conformal predictions for time series",
+        "author": "Zaffran"
+      },
+      {
+        "issue": "1",
+        "key": "2026033012313615600_ref131",
+        "doi-asserted-by": "crossref",
+        "first-page": "287",
+        "DOI": "10.1214/aos/1033066210",
+        "article-title": "Direct use of regression quantiles to construct confidence sets in linear models",
+        "volume": "24",
+        "author": "Zhou",
+        "year": "1996",
+        "journal-title": "The Annals of Statistics"
+      },
+      {
+        "issue": "3",
+        "key": "2026033012313615600_ref132",
+        "doi-asserted-by": "crossref",
+        "first-page": "239",
+        "DOI": "10.1080/10485259808832745",
+        "article-title": "Statistical inference on het- eroscedastic models based on regression quantiles",
+        "volume": "9",
+        "author": "Zhou",
+        "year": "1998",
+        "journal-title": "Journal of Nonparametric Statistics"
+      }
+    ],
+    "container-title": [
+      "Foundations and Trends® in Machine Learning"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.emerald.com/ftmal/article-pdf/16/4/494/11155920/2200000101en.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://www.emerald.com/ftmal/article-pdf/16/4/494/11155920/2200000101en.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          29
+        ]
+      ],
+      "date-time": "2026-04-29T18:10:44Z",
+      "timestamp": 1777486244000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.emerald.com/ftmal/article/16/4/494/1332423/Conformal-Prediction-A-Gentle-Introduction"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          27
+        ]
+      ]
+    },
+    "references-count": 132,
+    "journal-issue": {
+      "issue": "4",
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            27
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1561/2200000101",
+    "relation": {},
+    "ISSN": [
+      "1935-8237",
+      "1935-8245"
+    ],
+    "issn-type": [
+      {
+        "value": "1935-8237",
+        "type": "print"
+      },
+      {
+        "value": "1935-8245",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          27
+        ]
+      ]
+    }
+  }
+}

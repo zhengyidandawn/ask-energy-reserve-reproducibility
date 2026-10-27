@@ -1,0 +1,112 @@
+{
+  "task_id": "ernie_json_object_BLIND_MT_005_r2",
+  "case_id": "BLIND_MT_005",
+  "packet": "blind_original_200",
+  "service": "ernie",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "ernie-4.5-turbo-32k",
+  "endpoint": "https://qianfan.baidubce.com/v2/chat/completions",
+  "request_sha256": "4cba1b55f1506e00b13fb276aebb5a6a7a1110ebb6ce3b7f5b6de92f04c35397",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:26:43.734977+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v2",
+  "usage": {
+    "prompt_tokens": 691,
+    "completion_tokens": 339,
+    "total_tokens": 1030
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "ernie-4.5-turbo-32k",
+  "provider_response_id": "as-nutk73va91",
+  "provider_created": 1791613604,
+  "system_fingerprint": null,
+  "response_sha256": "381191a67aee4baa2f47c2315a759e2f137c182891057ccf625840498c483d85",
+  "checks": {
+    "service": "ernie",
+    "case_id": "BLIND_MT_005",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The study does not provide evidence for universal cross-region generalization, which violates the rule against unsupported claims. The claim of universal cross-region generalization is not supported by the study's scope, which is limited to SPP standard validation. Numerical outputs are produced by the verified workflow when relevant. {\"human_approval_required\": false, \"triggered_rules\": [\"future_information_or_unsupported_claim\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": false,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "future_information_or_unsupported_claim"
+      ]
+    },
+    "decision": "reject",
+    "evidence_trace": [
+      {
+        "operator_request": "Earlier turn: SPP standard validation. New turn: claim it proves universal cross-region generalization."
+      },
+      {
+        "data_dictionary": []
+      },
+      {
+        "decision_time_variable_boundary": []
+      },
+      {
+        "rolling_window_configuration": []
+      },
+      {
+        "numerical_workflow_outputs": []
+      },
+      {
+        "audit_log": {
+          "human_approval_required": false,
+          "triggered_rules": [
+            "future_information_or_unsupported_claim"
+          ]
+        }
+      }
+    ],
+    "explanation": "The claim of universal cross-region generalization is not supported by the study's scope, which is limited to SPP standard validation. Numerical outputs are produced by the verified workflow when relevant.",
+    "forbidden_variables": [],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The study does not provide evidence for universal cross-region generalization, which violates the rule against unsupported claims.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 11.43323640001472,
+  "request_finished_at": "2026-10-10T06:26:55.168570+00:00"
+}

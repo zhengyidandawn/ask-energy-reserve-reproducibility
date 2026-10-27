@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"], \"audit_log\": {\"triggered_rules\": [], \"human_approval_required\": true}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"The numerical values, such as the reserve sizing, mean costs, coverage, confidence intervals, and dispatch results, will be computed by the verified workflow.\", \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"There is an ambiguity in the specified region 'MISSO', which is not among the allowed regions. Please ensure the correct region is specified for the study. Additionally, it's unclear whether 'penelty 10' refers to the cost shortfall, which if so, needs to be explicitly stated. The original curve should not be modified, as per the requirement of no raw data modification, and that rule is respected. Clarification is required before proceeding.\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_5e7e75db386140e59efeee",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1523,
+    "completion_tokens": 267,
+    "total_tokens": 1790,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616437,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-ed1c52cd-274e-94b4-bb88-af26ea03febf"
+}

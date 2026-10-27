@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_CLAR_019",
+  "repeat": 2,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:13.598674+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a8af521a3941edfeb6540b26133161cb371666c19f976bd3e8de035110296018",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request mentions 'one-hour-ish horizon', 'public data', 'standard setup' but does not specify required explicit fields. Please provide: region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP); exact horizon_minutes (60, 120, or 180) instead of 'one-hour-ish'; and cost_shortfall weight (10, 20, or 40). cost_reserve is fixed at 1.\", \"reason\": \"Explicit study fields are unresolved: region_id missing, horizon_minutes ambiguous ('one-hour-ish' not a supported exact 60/120/180), cost_shortfall missing. cost_reserve preserved as 1 per protocol. Public data and standard setup are consistent with permitted inputs (observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather). Clarification required before acceptance.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The request mentions 'one-hour-ish horizon', 'public data', 'standard setup' but does not specify required explicit fields. Please provide: region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP); exact horizon_minutes (60, 120, or 180) instead of 'one-hour-ish'; and cost_shortfall weight (10, 20, or 40). cost_reserve is fixed at 1.",
+      "reason": "Explicit study fields are unresolved: region_id missing, horizon_minutes ambiguous ('one-hour-ish' not a supported exact 60/120/180), cost_shortfall missing. cost_reserve preserved as 1 per protocol. Public data and standard setup are consistent with permitted inputs (observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather). Clarification required before acceptance.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 373,
+      "completion_tokens": 2059,
+      "total_tokens": 2432,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1817
+      }
+    },
+    "response_sha256": "9900d11443e027e1df231571f3b901ed97c1cd2f507e98ae6f3d6c6782b0f882",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 20.936810499988496,
+    "finished_at": "2026-10-11T15:38:34.536099+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_CLAR_019",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:38:13.598674+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "a8af521a3941edfeb6540b26133161cb371666c19f976bd3e8de035110296018",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"clarify\", \"fields\": {\"region_id\": null, \"horizon_minutes\": null, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": \"The request mentions 'one-hour-ish horizon', 'public data', 'standard setup' but does not specify required explicit fields. Please provide: region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP); exact horizon_minutes (60, 120, or 180) instead of 'one-hour-ish'; and cost_shortfall weight (10, 20, or 40). cost_reserve is fixed at 1.\", \"reason\": \"Explicit study fields are unresolved: region_id missing, horizon_minutes ambiguous ('one-hour-ish' not a supported exact 60/120/180), cost_shortfall missing. cost_reserve preserved as 1 per protocol. Public data and standard setup are consistent with permitted inputs (observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather). Clarification required before acceptance.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "clarify",
+      "fields": {
+        "region_id": null,
+        "horizon_minutes": null,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": "The request mentions 'one-hour-ish horizon', 'public data', 'standard setup' but does not specify required explicit fields. Please provide: region_id from supported set (GD, ERCO, CISO, ISNE, MISO, SWPP); exact horizon_minutes (60, 120, or 180) instead of 'one-hour-ish'; and cost_shortfall weight (10, 20, or 40). cost_reserve is fixed at 1.",
+      "reason": "Explicit study fields are unresolved: region_id missing, horizon_minutes ambiguous ('one-hour-ish' not a supported exact 60/120/180), cost_shortfall missing. cost_reserve preserved as 1 per protocol. Public data and standard setup are consistent with permitted inputs (observed load, calendar, lagged load, recent observed ramps, load statistics, observed weather). Clarification required before acceptance.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 373,
+      "completion_tokens": 2059,
+      "total_tokens": 2432,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1817
+      }
+    },
+    "response_sha256": "9900d11443e027e1df231571f3b901ed97c1cd2f507e98ae6f3d6c6782b0f882",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "clarify",
+        "execution_ready": false,
+        "blocking_rules": [
+          "clarify"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 20.936810499988496,
+    "finished_at": "2026-10-11T15:38:34.536099+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 20.936810499988496,
+  "transport_complete": true
+}

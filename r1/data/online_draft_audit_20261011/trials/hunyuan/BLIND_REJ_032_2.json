@@ -1,0 +1,118 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_REJ_032",
+  "repeat": 2,
+  "initial_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_REJ_032",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:46:04.039495+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "8a55cace33ab6cb0aff19dc181b69426bd3470aa844663c69e40828dbeb96c0a",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": 45, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Unsupported horizon_minutes=45; supported horizons are 60, 120, 180 minutes. Request rejected per protocol for unsupported fields.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 45,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Unsupported horizon_minutes=45; supported horizons are 60, 120, 180 minutes. Request rejected per protocol for unsupported fields.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 1210,
+      "total_tokens": 1578,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1117
+      }
+    },
+    "response_sha256": "bf7d8f09fcb87f2f78d7335a8b337578fafd7da0a895eca84142f01e37ae6ae1",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 12.280953599954955,
+    "finished_at": "2026-10-11T15:46:16.320001+00:00"
+  },
+  "terminal_record": {
+    "service": "hunyuan",
+    "case_id": "BLIND_REJ_032",
+    "repeat": 2,
+    "phase": "initial",
+    "started_at": "2026-10-11T15:46:04.039495+00:00",
+    "requested_model": "hy3",
+    "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+    "parameters": {
+      "temperature": 0,
+      "top_p": 1,
+      "max_tokens": 4096
+    },
+    "status": "success",
+    "request_sha256": "8a55cace33ab6cb0aff19dc181b69426bd3470aa844663c69e40828dbeb96c0a",
+    "returned_model": "hy3",
+    "content": "{\"decision\": \"reject\", \"fields\": {\"region_id\": \"CISO\", \"horizon_minutes\": 45, \"cost_reserve\": 1, \"cost_shortfall\": null}, \"clarification_question\": null, \"reason\": \"Unsupported horizon_minutes=45; supported horizons are 60, 120, 180 minutes. Request rejected per protocol for unsupported fields.\", \"human_approval_required\": true}",
+    "parsed_output": {
+      "decision": "reject",
+      "fields": {
+        "region_id": "CISO",
+        "horizon_minutes": 45,
+        "cost_reserve": 1,
+        "cost_shortfall": null
+      },
+      "clarification_question": null,
+      "reason": "Unsupported horizon_minutes=45; supported horizons are 60, 120, 180 minutes. Request rejected per protocol for unsupported fields.",
+      "human_approval_required": true
+    },
+    "usage": {
+      "prompt_tokens": 368,
+      "completion_tokens": 1210,
+      "total_tokens": 1578,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1117
+      }
+    },
+    "response_sha256": "bf7d8f09fcb87f2f78d7335a8b337578fafd7da0a895eca84142f01e37ae6ae1",
+    "diagnostics": {
+      "messages": [],
+      "validation": {
+        "decision": "reject",
+        "execution_ready": false,
+        "blocking_rules": [
+          "reject"
+        ]
+      },
+      "reference_labels_used": false
+    },
+    "latency_seconds": 12.280953599954955,
+    "finished_at": "2026-10-11T15:46:16.320001+00:00"
+  },
+  "online_calls": 1,
+  "total_service_seconds": 12.280953599954955,
+  "transport_complete": true
+}

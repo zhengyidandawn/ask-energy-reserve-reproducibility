@@ -1,0 +1,22 @@
+{
+  "id": "as-ytcf5zffh3",
+  "object": "chat.completion",
+  "created": 1791614084,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [\"calendar\", \"cost_ratio\", \"current_load\", \"horizon\", \"lagged_load\", \"load_statistics\", \"observed_weather\", \"recent_ramp\", \"region_id\"],\n    \"forbidden_variables\": [\"fabricated_result\", \"future_load\", \"future_weather\", \"raw_data_modification\", \"realized_target\", \"test_period_residual\"],\n    \"audit_log\": {\n        \"human_approval_required\": true,\n        \"triggered_rules\": [\"test_residual_leakage\"]\n    },\n    \"decision\": \"reject\",\n    \"evidence_trace\": [\n        \"operator_request\",\n        \"data_dictionary\",\n        \"decision_time_variable_boundary\",\n        \"rolling_window_configuration\",\n        \"numerical_workflow_outputs\",\n        \"audit_log\"\n    ],\n    \"explanation\": \"Numerical outputs are produced by the verified workflow only. The request to reuse test residuals violates the prohibition on test-residual leakage.\",\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Test residuals cannot be reused for tuning as they constitute test-period residual leakage, which is forbidden.\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 700,
+    "completion_tokens": 292,
+    "total_tokens": 992
+  }
+}

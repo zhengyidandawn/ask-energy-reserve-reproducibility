@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "message": {
+        "content": "",
+        "role": "assistant",
+        "tool_calls": [
+          {
+            "function": {
+              "arguments": "{\"admissible_variables\": [\"observed_weather\"], \"audit_log\": {\"human_approval_required\": true, \"triggered_rules\": []}, \"decision\": \"clarify\", \"evidence_trace\": [], \"explanation\": \"The numerical outputs will be produced by the verified workflow, but first the operator request requires additional details for a complete study plan.\", \"forbidden_variables\": [], \"numerical_output_policy\": \"computed_by_verified_workflow_only\", \"reason\": \"Region ID is not clearly specified, it should be 'ISNE' as per ISO-NE. The task type, cost_reserve, and other required parameters are missing. Furthermore, there are potential typos like 'reseach' and 'wether', which need clarification. The admissible variables list is not fully provided, only allowing 'observed_weather'. To proceed with the study, we need a full and clear set of the admissible variables that comply with the allowed list.\", \"study_schema\": null, \"workflow\": []}",
+              "name": "submit_plan"
+            },
+            "id": "call_888ef01bf0234157a0c8ce",
+            "index": 0,
+            "type": "function"
+          }
+        ]
+      },
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 1529,
+    "completion_tokens": 207,
+    "total_tokens": 1736,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "created": 1791616278,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-da0495bf-6d51-99e6-92b5-8a58d24c0aec"
+}

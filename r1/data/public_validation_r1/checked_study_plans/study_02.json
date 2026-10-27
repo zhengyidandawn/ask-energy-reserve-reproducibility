@@ -1,0 +1,16 @@
+{
+  "region": "Austria",
+  "horizon_minutes": 60,
+  "admissible_variables": "full",
+  "reserve_cost_weight": 1,
+  "shortfall_cost_weight": 20.0,
+  "required_coverage": 0.95,
+  "reporting_requirements": [
+    "coverage",
+    "mean_reserve_MW",
+    "normalized_cost",
+    "mean_shortfall_MW"
+  ],
+  "human_review_required": true,
+  "calibration_days": 30
+}

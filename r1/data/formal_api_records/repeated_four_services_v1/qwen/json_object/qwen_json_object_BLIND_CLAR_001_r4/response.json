@@ -1,0 +1,26 @@
+{
+  "choices": [
+    {
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"admissible_variables\": [],\n  \"audit_log\": {\n    \"human_approval_required\": true,\n    \"triggered_rules\": []\n  },\n  \"decision\": \"clarify\",\n  \"evidence_trace\": [],\n  \"explanation\": \"The request is missing specific details such as the region, horizon, and cost parameters. These are required to proceed with the reserve sizing study. Numerical outputs will be produced by the verified workflow once the necessary details are provided.\",\n  \"forbidden_variables\": [],\n  \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n  \"reason\": \"Missing or ambiguous fields: region_id, horizon_minutes, cost_shortfall. The operator needs to specify these parameters for the study.\",\n  \"study_schema\": null,\n  \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null
+    }
+  ],
+  "object": "chat.completion",
+  "usage": {
+    "prompt_tokens": 635,
+    "completion_tokens": 162,
+    "total_tokens": 797,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "created": 1791613164,
+  "system_fingerprint": null,
+  "model": "qwen-max",
+  "id": "chatcmpl-73c22695-9990-9a86-a266-76371651a85a"
+}

@@ -1,0 +1,53 @@
+{
+  "service": "hunyuan",
+  "case_id": "BLIND_STD_006",
+  "repeat": 1,
+  "phase": "initial",
+  "started_at": "2026-10-11T15:46:27.391787+00:00",
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "parameters": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 4096
+  },
+  "status": "success",
+  "request_sha256": "a976caa09b42b054c3f3d85d35b63ab57837838701bc9b27cd266f7118f989c8",
+  "returned_model": "hy3",
+  "content": "{\"decision\": \"accept\", \"fields\": {\"region_id\": \"ERCO\", \"horizon_minutes\": 120, \"cost_reserve\": 1, \"cost_shortfall\": 10}, \"clarification_question\": null, \"reason\": \"Request supplies supported region ERCO, horizon 120 minutes, shortfall cost 10; cost_reserve fixed at 1 per protocol. Explicit fields resolved with no conflict. Legitimate negation 'do not estimate MW' preserved; standard 730/30/30 rolling split noted as study configuration but not required in schema. Uses allowed observed data sources.\", \"human_approval_required\": true}",
+  "parsed_output": {
+    "decision": "accept",
+    "fields": {
+      "region_id": "ERCO",
+      "horizon_minutes": 120,
+      "cost_reserve": 1,
+      "cost_shortfall": 10
+    },
+    "clarification_question": null,
+    "reason": "Request supplies supported region ERCO, horizon 120 minutes, shortfall cost 10; cost_reserve fixed at 1 per protocol. Explicit fields resolved with no conflict. Legitimate negation 'do not estimate MW' preserved; standard 730/30/30 rolling split noted as study configuration but not required in schema. Uses allowed observed data sources.",
+    "human_approval_required": true
+  },
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 1912,
+    "total_tokens": 2309,
+    "prompt_tokens_details": {
+      "cached_tokens": 320
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1775
+    }
+  },
+  "response_sha256": "7f4e1c4e88fe20eaa8a0ba13047a527af4dfb4b10eeb3ee751d2a9cb5279f6c2",
+  "diagnostics": {
+    "messages": [],
+    "validation": {
+      "decision": "accept",
+      "execution_ready": true,
+      "blocking_rules": []
+    },
+    "reference_labels_used": false
+  },
+  "latency_seconds": 19.358102799975313,
+  "finished_at": "2026-10-11T15:46:46.750371+00:00"
+}

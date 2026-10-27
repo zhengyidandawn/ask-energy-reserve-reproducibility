@@ -1,0 +1,22 @@
+{
+  "id": "as-ri22jnyww4",
+  "object": "chat.completion",
+  "created": 1791615416,
+  "model": "ernie-4.5-turbo-32k",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n    \"admissible_variables\": [],\n    \"audit_log\": {\n        \"human_approval_required\": false,\n        \"triggered_rules\": [\n            \"clarification_required\"\n        ]\n    },\n    \"decision\": \"clarify\",\n    \"evidence_trace\": [],\n    \"explanation\": \"The operator request lacks specific details for region_id and cost_shortfall, which are required for reserve sizing.\",\n    \"forbidden_variables\": [],\n    \"numerical_output_policy\": \"computed_by_verified_workflow_only\",\n    \"reason\": \"Missing required fields: region_id, cost_shortfall\",\n    \"study_schema\": null,\n    \"workflow\": []\n}"
+      },
+      "finish_reason": "stop",
+      "flag": 0
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 697,
+    "completion_tokens": 160,
+    "total_tokens": 857
+  }
+}

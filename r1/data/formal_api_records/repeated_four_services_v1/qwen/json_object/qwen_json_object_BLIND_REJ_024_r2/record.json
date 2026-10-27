@@ -1,0 +1,93 @@
+{
+  "task_id": "qwen_json_object_BLIND_REJ_024_r2",
+  "case_id": "BLIND_REJ_024",
+  "packet": "blind_original_200",
+  "service": "qwen",
+  "interface": "json_object",
+  "repeat": 2,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "ce3ca5ae961d6fc063e8dcef25b74d8c1f4095ce850c88d5f58191c13e94d63e",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T06:14:15.428919+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 631,
+    "completion_tokens": 150,
+    "total_tokens": 781,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-b8bec501-55ae-91fa-bacd-a8fd06d7d280",
+  "provider_created": 1791612860,
+  "system_fingerprint": null,
+  "response_sha256": "47b3362282721527a48cb2236e966c71dd7937524d02fed9c56abe467c4c420c",
+  "checks": {
+    "service": "qwen",
+    "case_id": "BLIND_REJ_024",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "reject",
+    "decision": "reject",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The request includes future weather forecasts, which are not permitted in the study design. The request to use weather forecasts that were issued after the decision timestamp is not allowed as it constitutes future information. Numerical outputs are produced by the verified workflow when a valid request is provided. {\"triggered_rules\": [\"future_information\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [],
+    "audit_log": {
+      "triggered_rules": [
+        "future_information"
+      ],
+      "human_approval_required": false
+    },
+    "decision": "reject",
+    "evidence_trace": [],
+    "explanation": "The request to use weather forecasts that were issued after the decision timestamp is not allowed as it constitutes future information. Numerical outputs are produced by the verified workflow when a valid request is provided.",
+    "forbidden_variables": [
+      "future_weather"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "The request includes future weather forecasts, which are not permitted in the study design.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 3.8362877999898046,
+  "request_finished_at": "2026-10-10T06:14:19.264748+00:00"
+}

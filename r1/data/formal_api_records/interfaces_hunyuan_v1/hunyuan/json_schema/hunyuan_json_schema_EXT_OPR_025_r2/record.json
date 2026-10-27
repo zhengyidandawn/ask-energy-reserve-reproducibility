@@ -1,0 +1,111 @@
+{
+  "task_id": "hunyuan_json_schema_EXT_OPR_025_r2",
+  "case_id": "EXT_OPR_025",
+  "packet": "independently_authored_48",
+  "service": "hunyuan",
+  "interface": "json_schema",
+  "repeat": 2,
+  "requested_model": "hy3",
+  "endpoint": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "request_sha256": "f0e7e851e357c758c856060cb00688be2eb77fce9ad68df9cf8008695f57ac0d",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T08:12:06.729198+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 651,
+    "completion_tokens": 2839,
+    "total_tokens": 3490,
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 2611
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "hy3",
+  "provider_response_id": "a3033b96-58d2-435f-af77-9e4ff45c20fa",
+  "provider_created": 1791619927,
+  "system_fingerprint": null,
+  "response_sha256": "74ab382d359e1ede58768cffa0019c045bae360dea0c9886c432ac35b326edbf",
+  "checks": {
+    "service": "hunyuan",
+    "case_id": "EXT_OPR_025",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "Missing or ambiguous field: horizon_minutes. Operator stated 'Horizon depends on how the evening peak looks. Hold a slot, do not assume 60.' but did not select an allowed horizon from [60,120,180] minutes. Numerical outputs are produced by the verified workflow when the study is properly specified; currently clarification is required before any workflow execution. {\"human_approval_required\": false, \"triggered_rules\": [\"clarification_required\"]}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "stop",
+    "tool_name": null,
+    "strict_decision_correct": true,
+    "tool_call_returned": false
+  },
+  "parsed_output": {
+    "admissible_variables": [
+      "calendar",
+      "cost_ratio",
+      "current_load",
+      "horizon",
+      "lagged_load",
+      "load_statistics",
+      "observed_weather",
+      "recent_ramp",
+      "region_id"
+    ],
+    "audit_log": {
+      "human_approval_required": false,
+      "triggered_rules": [
+        "clarification_required"
+      ]
+    },
+    "decision": "clarify",
+    "evidence_trace": [],
+    "explanation": "Numerical outputs are produced by the verified workflow when the study is properly specified; currently clarification is required before any workflow execution.",
+    "forbidden_variables": [
+      "fabricated_result",
+      "future_load",
+      "future_weather",
+      "raw_data_modification",
+      "realized_target",
+      "test_period_residual"
+    ],
+    "numerical_output_policy": "computed_by_verified_workflow_only",
+    "reason": "Missing or ambiguous field: horizon_minutes. Operator stated 'Horizon depends on how the evening peak looks. Hold a slot, do not assume 60.' but did not select an allowed horizon from [60,120,180] minutes.",
+    "study_schema": null,
+    "workflow": []
+  },
+  "latency_seconds": 23.716017900034785,
+  "request_finished_at": "2026-10-10T08:12:30.444899+00:00"
+}

@@ -1,0 +1,91 @@
+{
+  "task_id": "qwen_tool_call_EXT_OPR_025_r4",
+  "case_id": "EXT_OPR_025",
+  "packet": "independently_authored_48",
+  "service": "qwen",
+  "interface": "tool_call",
+  "repeat": 4,
+  "requested_model": "qwen-max",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "request_sha256": "e84b11b2f2c84a00f64a425d359ac034782002be23b8fbe12a38c9d143005817",
+  "system_prompt_sha256": "1dd8d6126d853ff6bbfab24e86e579c282d4c04bbb055da86a32439237f8588e",
+  "parameters": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "max_tokens": 4096
+  },
+  "request_started_at": "2026-10-10T07:13:56.133343+00:00",
+  "seed_setting": "not_sent",
+  "thinking_setting": "not_sent_provider_default",
+  "attempt": 1,
+  "automatic_retries": 0,
+  "provider_api_version": "v1",
+  "usage": {
+    "prompt_tokens": 1526,
+    "completion_tokens": 203,
+    "total_tokens": 1729,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024
+    }
+  },
+  "billed_cost": null,
+  "billed_cost_status": "billing_record_unavailable",
+  "http_status": 200,
+  "status": "success",
+  "returned_model": "qwen-max",
+  "provider_response_id": "chatcmpl-c981f760-a289-9984-9f89-e6ef5922e85c",
+  "provider_created": 1791616442,
+  "system_fingerprint": null,
+  "response_sha256": "abb7c74c9da1c1f50772957a9bbae26d8e3ff9accdc41ef576e3c2a9141974ac",
+  "checks": {
+    "service": "qwen",
+    "case_id": "EXT_OPR_025",
+    "case_group": "",
+    "conversation_id": "",
+    "turn_id": "",
+    "expected_decision": "clarify",
+    "decision": "clarify",
+    "schema_completeness": true,
+    "semantic_correctness": true,
+    "admissible_variable_correctness": true,
+    "forbidden_variable_action_handling": true,
+    "rejection_correctness": true,
+    "clarification_correctness": true,
+    "partial_acceptance_correctness": true,
+    "evidence_trace_completeness": true,
+    "explanation_grounding": true,
+    "human_gate_correctness": true,
+    "numerical_contamination": false,
+    "unsupported_acceptance": false,
+    "parse_error": false,
+    "parse_error_message": "",
+    "joint_success": true,
+    "risk_type": "",
+    "checker_response": "The horizon is not clearly defined. It must be one of the allowed values: 60, 120, or 180 minutes. Additionally, the cost shortfall (c_S) needs to be specified as a numeric value from the permitted set [10.0, 20.0, 40.0], and the term 'evening peak' is too vague and cannot be used in the current schema. Clarification is required on the horizon and cost shortfall before proceeding. The numerical outputs will be produced by the verified workflow based on the clarified inputs. {\"triggered_rules\": [\"clarification_required\"], \"human_approval_required\": false}",
+    "json_valid": true,
+    "exact_json_schema_valid": true,
+    "finish_reason": "tool_calls",
+    "tool_name": "submit_plan",
+    "strict_decision_correct": true,
+    "tool_call_returned": true
+  },
+  "parsed_output": {
+    "decision": "clarify",
+    "reason": "The horizon is not clearly defined. It must be one of the allowed values: 60, 120, or 180 minutes. Additionally, the cost shortfall (c_S) needs to be specified as a numeric value from the permitted set [10.0, 20.0, 40.0], and the term 'evening peak' is too vague and cannot be used in the current schema.",
+    "study_schema": null,
+    "admissible_variables": [],
+    "forbidden_variables": [],
+    "workflow": [],
+    "evidence_trace": [],
+    "explanation": "Clarification is required on the horizon and cost shortfall before proceeding. The numerical outputs will be produced by the verified workflow based on the clarified inputs.",
+    "audit_log": {
+      "triggered_rules": [
+        "clarification_required"
+      ],
+      "human_approval_required": false
+    },
+    "numerical_output_policy": "computed_by_verified_workflow_only"
+  },
+  "latency_seconds": 5.8074185999576,
+  "request_finished_at": "2026-10-10T07:14:01.941263+00:00"
+}
